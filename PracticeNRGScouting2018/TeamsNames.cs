@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace NRGScoutingApp
+namespace PracticeNRGScouting2018
 {
     public class TeamsNames
     {
