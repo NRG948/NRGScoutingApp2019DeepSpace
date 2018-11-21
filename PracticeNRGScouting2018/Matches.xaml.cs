@@ -11,5 +11,10 @@ namespace PracticeNRGScouting2018
         {
             InitializeComponent();
         }
+
+        void newMatch(object sender, System.EventArgs e)
+        {
+            Navigation.PushAsync(new MainPage());
+        }
     }
 }
