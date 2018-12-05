@@ -10,11 +10,12 @@ namespace PracticeNRGScouting2018
         public Matches()
         {
             InitializeComponent();
+        
         }
 
-        void newMatch(object sender, System.EventArgs e)
+         void newMatch(object sender, Xamarin.Forms.ItemTappedEventArgs e)
         {
-            Navigation.PushAsync(new MainPage());
+            Navigation.PushAsync(new TeamSelection());
         }
     }
 }

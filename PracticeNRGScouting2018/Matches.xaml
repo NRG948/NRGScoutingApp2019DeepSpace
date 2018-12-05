@@ -3,14 +3,16 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              x:Class="PracticeNRGScouting2018.Matches"
               xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
-             ios:Page.UseSafeArea="true">
+             ios:Page.UseSafeArea="true"
+             Title="Matches">
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="+" Clicked="newMatch"/>
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
-        <ScrollView>
+        <StackLayout>
+            <Button Text="+" Clicked="newMatch"/>
             <Label Text="Shay ramble" 
                    TextColor="#000000"/>
-        </ScrollView>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>

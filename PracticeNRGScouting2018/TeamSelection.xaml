@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PracticeNRGScouting2018.TeamSelection"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             Title="New Match"
+             ios:Page.UseSafeArea="true">
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView x:Name="TeamsList"
+                      IsPullToRefreshEnabled="False"
+                      ItemTapped="TeamsList_ItemTapped" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

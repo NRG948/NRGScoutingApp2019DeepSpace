@@ -11,7 +11,7 @@ namespace PracticeNRGScouting2018
         {
             InitializeComponent();
 
-            MainPage = new Matches();
+            MainPage =new NavigationPage( new Matches());
         }
 
         protected override void OnStart()

@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PracticeNRGScouting2018.MatchTimer"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             ios:Page.UseSafeArea="true">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid HorizontalOptions="Center"
+                      VerticalOptions="Center"
+                      RowSpacing="5"
+                      Margin="5,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="2*" />
+                </Grid.ColumnDefinitions>
+
+                <Button BackgroundColor="#fdad13"
+                        x:Name="resetTimer"
+                        Text="Reset Timer"
+                        TextColor="White"
+                        Grid.Row="0"
+                        Grid.Column="0"
+                        ContentLayout="Top,0"
+                        Clicked="ResetTimer_Clicked"
+                        FontSize="Small"
+                        Margin="0"/>
+                <Button BackgroundColor="#fdad13"
+                        x:Name="timeStart"
+                        Text="Time Start"
+                        TextColor="White"
+                        Grid.Row="0"
+                        Grid.Column="1"
+                        ContentLayout="Top,0"
+                        Clicked="TimeStart_Clicked"
+                        FontSize="Medium"
+                        Margin="0"/>
+                <Button BackgroundColor="Gray"
+                        x:Name="climbStart"
+                        Text="Climb Start"
+                        TextColor="White"
+                        Grid.Row="1"
+                        Grid.Column="0"
+                        ContentLayout="Top,0"
+                        Clicked="ClimbStart_Clicked"
+                        FontSize="Small"
+                        Margin="0"/>
+                <Button BackgroundColor="Gray"
+                        x:Name="cubePicked"
+                        Text="Cube Picked"
+                        TextColor="White"
+                        Grid.Row="1"
+                        Grid.Column="1"
+                        ContentLayout="Top,0"
+                        Clicked="CubePicked_Clicked"
+                        FontSize="Medium"
+                        Margin="0"/>
+            </Grid>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
