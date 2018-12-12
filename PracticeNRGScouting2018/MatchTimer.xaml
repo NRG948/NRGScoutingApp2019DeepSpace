@@ -7,7 +7,7 @@
     <ContentPage.Content>
         <ScrollView Margin="10">
             <StackLayout HorizontalOptions="CenterAndExpand">
-            <Label Text="0:00.000"
+            <Label Text="0:00.00"
                    TextColor="#fdad13"
                    FontSize="48"
                    HorizontalOptions="CenterAndExpand"
@@ -43,13 +43,13 @@
                         Margin="0"/>
                 <Button BackgroundColor="#fdad13"
                         x:Name="timeStart"
-                        Text="Time Start"
+                        Text="Start Timer"
                         TextColor="White"
                         Grid.Row="0"
                         Grid.Column="1"
                         ContentLayout="Top,0"
                         Clicked="TimeStart_Clicked"
-                        FontSize="24"
+                        FontSize="12"
                         Margin="0"/>
                 <Button BackgroundColor="Gray"
                         x:Name="climbStart"
