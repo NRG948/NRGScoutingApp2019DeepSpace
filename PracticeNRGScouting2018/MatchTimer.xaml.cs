@@ -60,6 +60,7 @@ namespace PracticeNRGScouting2018
             timerValue += 50;
             timeValue.Text = numToTime(timerValue);
             timeSlider.Value = timerValue;
+            timeValue.TextColor = Color.FromRgb(255, (int) (timerValue * 200 / matchLengthMs), 0);
         }
 
         private void ClimbStart_Clicked(object sender, EventArgs e)
@@ -76,6 +77,7 @@ namespace PracticeNRGScouting2018
         {
             timeValue.Text = numToTime(e.NewValue);
             timerValue = (int) e.NewValue;
+            timeValue.TextColor = Color.Gray;
         }
         public static String numToTime(double a)
         {

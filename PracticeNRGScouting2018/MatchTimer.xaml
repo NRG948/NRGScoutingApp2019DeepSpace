@@ -8,7 +8,7 @@
         <ScrollView Margin="10">
             <StackLayout HorizontalOptions="CenterAndExpand">
             <Label Text="0:00.00"
-                   TextColor="#fdad13"
+                   TextColor="Gray"
                    FontSize="48"
                    HorizontalOptions="CenterAndExpand"
                    x:Name="timeValue"/>
