@@ -16,7 +16,8 @@
                     Maximum="150000"
                     Minimum="0"
                     ValueChanged="TimeSlider_ValueChanged"
-                    Margin="0, 20, 0, 10"/>
+                    Margin="0, 20, 0, 10"
+                    />
             
             <Grid HorizontalOptions="Center"
                       VerticalOptions="Center"

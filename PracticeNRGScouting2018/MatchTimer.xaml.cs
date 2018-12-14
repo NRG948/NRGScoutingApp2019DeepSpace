@@ -16,7 +16,12 @@ namespace PracticeNRGScouting2018
         public static readonly String cubeDroppedText = "Cube Dropped";
         public static readonly String timerStart = "Start Timer";
         public static readonly String timerPause = "Pause Timer";
+        public static readonly String cubePick = "Cube Pick";
+        public static readonly String cubeDrop = "Cube Drop";
+
+        public static readonly int timerDelay = 50;
         private int timerValue = 0;
+        public static bool timerRunning = false;
 
         public MatchTimer ()
 		{
@@ -30,15 +35,16 @@ namespace PracticeNRGScouting2018
 
         private void TimeStart_Clicked(object sender, EventArgs e)
         {
-            if (timeStart.Text.Equals(timerStart)) //timerStart
+            timerRunning = true;
+            if (timeStart.Text.Equals(timerStart))
             {
-                Device.StartTimer(TimeSpan.FromMilliseconds(50), () =>
+                timeStart.Text = timerPause;
+                Device.StartTimer(TimeSpan.FromMilliseconds(timerDelay), () =>
                 {
-                    if (timerValue >= matchLengthMs || timeStart.Text.Equals(timerPause))
+                    if (timerValue >= matchLengthMs || timeStart.Text.Equals(timerStart) || !timerRunning)
                     {
-                        timeStart.Text = timerPause;
-                        timerValue = matchLengthMs;
                         timeValue.Text = numToTime(timerValue);
+                        timeStart.Text = timerStart;
                         return false;
                     }
                     timerElapsed();
@@ -51,14 +57,13 @@ namespace PracticeNRGScouting2018
             }
             else
             {
-
+                timeStart.Text = timerStart;
             }
         }
 
         private void timerElapsed()
         {
-            timerValue += 50;
-            timeValue.Text = numToTime(timerValue);
+            timerValue += timerDelay;
             timeSlider.Value = timerValue;
             timeValue.TextColor = Color.FromRgb(255, (int) (timerValue * 200 / matchLengthMs), 0);
         }
@@ -70,14 +75,29 @@ namespace PracticeNRGScouting2018
 
         private void CubePicked_Clicked(object sender, EventArgs e)
         {
-
+            if (cubePicked.Text.Equals(cubePick))
+            {
+                cubePicked.Text = cubeDrop;
+            }
+            else if (cubePicked.Text.Equals(cubeDrop))
+            {
+                cubePicked.Text = cubePick;
+            }
+            else
+            {
+                cubePicked.Text = cubePick;
+            }
         }
 
         private void TimeSlider_ValueChanged(object sender, ValueChangedEventArgs e)
         {
+            if (timeSlider.Value != timerValue)
+            {
+                timeValue.TextColor = Color.FromRgb(225, 0, 0);
+                timerRunning = false;
+            }
             timeValue.Text = numToTime(e.NewValue);
             timerValue = (int) e.NewValue;
-            timeValue.TextColor = Color.Gray;
         }
         public static String numToTime(double a)
         {
