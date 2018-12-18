@@ -6,7 +6,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticeNRGScouting2018.And
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticeNRGScouting2018.iOS", "PracticeNRGScouting2018.iOS\PracticeNRGScouting2018.iOS.csproj", "{1E7C5C47-37B2-4A73-8F37-DE48DA69A3B3}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PracticeNRGScouting2018", "PracticeNRGScouting2018\PracticeNRGScouting2018.csproj", "{4DB9F345-6DBD-4F08-AE5A-B4CCD092F2E1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticeNRGScouting2018", "PracticeNRGScouting2018\PracticeNRGScouting2018.csproj", "{4DB9F345-6DBD-4F08-AE5A-B4CCD092F2E1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

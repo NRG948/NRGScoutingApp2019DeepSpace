@@ -10,9 +10,7 @@
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <StackLayout>
-            <Button Text="+" Clicked="newMatch"/>
-            <Label Text="Shay ramble" 
-                   TextColor="#000000"/>
+            <ListView></ListView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
