@@ -1,5 +1,18 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="PracticeNRGScouting2018.MainTabPage">
-    <ContentPage.Content>
-    </ContentPage.Content>
-</ContentPage>
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xf:BottomBarPage xmlns="http://xamarin.com/schemas/2014/forms" 
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+            xmlns:local="clr-namespace:NRGScoutingApp;assembly=NRGScoutingApp" 
+            x:Class="PracticeNRGScouting2018.MainPageTab"
+            xmlns:xf="clr-namespace:BottomBar.XamarinForms" 
+            Title="NRG Scouting">
+  <local:Matches 
+    xf:BottomBarPageExtensions.TabColor="{StaticResource Primary}"/>
+
+    <local:Rankings
+        xf:BottomBarPageExtensions.TabColor="{StaticResource Primary}" />
+   
+</xf:BottomBarPage>
+<!--xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+android:TabbedPage.ToolbarPlacement="Bottom"
+            android:TabbedPage.BarSelectedItemColor="Gray"-->
