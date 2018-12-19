@@ -36,15 +36,18 @@ namespace PracticeNRGScouting2018
         private void TimeStart_Clicked(object sender, EventArgs e)
         {
             timerRunning = true;
+            timeSlider.IsEnabled = false;
             if (timeStart.Text.Equals(timerStart))
             {
                 timeStart.Text = timerPause;
                 Device.StartTimer(TimeSpan.FromMilliseconds(timerDelay), () =>
                 {
-                    if (timerValue >= matchLengthMs || timeStart.Text.Equals(timerStart) || !timerRunning)
+                    if (timerValue >= matchLengthMs || timeStart.Text.Equals(timerStart))
                     {
                         timeValue.Text = numToTime(timerValue);
                         timeStart.Text = timerStart;
+                        timeSlider.IsEnabled = true;
+                        timerRunning = false;
                         return false;
                     }
                     timerElapsed();
@@ -94,7 +97,6 @@ namespace PracticeNRGScouting2018
             if (timeSlider.Value != timerValue)
             {
                 timeValue.TextColor = Color.FromRgb(225, 0, 0);
-                timerRunning = false;
             }
             timeValue.Text = numToTime(e.NewValue);
             timerValue = (int) e.NewValue;
