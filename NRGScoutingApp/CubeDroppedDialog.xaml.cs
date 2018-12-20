@@ -18,7 +18,6 @@ namespace NRGScoutingApp
         }
         void scaleClicked(object sender, System.EventArgs e)
         {
-            App.matchEvents += "cubeDroppedScale" + NewMatchStart.dropNum + ":" + NewMatchStart.droppedTime + "||";
             saveEvents();
             setDropTime();
             NewMatchStart.dropNum++;
@@ -26,7 +25,6 @@ namespace NRGScoutingApp
         }
         void allySwitchClicked(object sender, System.EventArgs e)
         {
-            App.matchEvents += "cubeDroppedAllySwitch" + NewMatchStart.dropNum + ":" + NewMatchStart.droppedTime + "||";
             saveEvents();
             setDropTime();
             NewMatchStart.dropNum++;
@@ -34,7 +32,6 @@ namespace NRGScoutingApp
         }
         void noneClicked(object sender, System.EventArgs e)
         {
-            App.matchEvents += "cubeDroppedNone" + NewMatchStart.dropNum + ":" + NewMatchStart.droppedTime + "||";
             saveEvents();
             setDropTime();
             NewMatchStart.dropNum++;
@@ -42,7 +39,6 @@ namespace NRGScoutingApp
         }
         void oppSwitchClicked(object sender, System.EventArgs e)
         {
-            App.matchEvents += "cubeDroppedOppSwitch" + NewMatchStart.dropNum + ":" + NewMatchStart.droppedTime + "||";
             saveEvents();
             setDropTime();
             NewMatchStart.dropNum++;
@@ -50,7 +46,6 @@ namespace NRGScoutingApp
         }
         void exchangeClicked(object sender, System.EventArgs e)
         {
-            App.matchEvents += "cubeDroppedExchange" + NewMatchStart.dropNum + ":" + NewMatchStart.droppedTime + "||";
             saveEvents();
             setDropTime();
             NewMatchStart.dropNum++;
@@ -59,12 +54,10 @@ namespace NRGScoutingApp
         void backClicked(object sender, System.EventArgs e)
         {
             Button cubePicked = (Button)sender;
-           //cubePicked.Text = "New Value";
-            //App.matchEvents += "cubeDropped:back||";
 
         }
         public static void saveEvents(){
-            App.Current.Properties["tempEventString"] = App.matchEvents;
+          //  App.Current.Properties["tempEventString"] = App.matchEvents;
             App.Current.SavePropertiesAsync();
         }
         public static void setDropTime(){

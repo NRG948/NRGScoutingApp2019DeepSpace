@@ -56,7 +56,6 @@ namespace NRGScoutingApp
                 App.Current.Properties["lastCubePicked"] = 0;
                 App.Current.Properties["lastCubeDropped"] = 0;
                 App.Current.Properties["tempEventString"] = "(";
-                App.matchEvents = "(";
                 await App.Current.SavePropertiesAsync();
                if (Matches.appRestore == false)
                 {
@@ -91,7 +90,7 @@ namespace NRGScoutingApp
 
             }
             else{
-                if (String.IsNullOrWhiteSpace(App.matchEvents)){}
+               /* if (String.IsNullOrWhiteSpace(App.matchEvents)){}
                 else if (App.matchEvents[0] != '(' && App.matchEvents[0] != '*')
                 {
                     App.matchEvents = "(" + App.matchEvents;
@@ -111,8 +110,8 @@ namespace NRGScoutingApp
                 {
 
                 }
+                */
                 App.Current.Properties["tempEventString"] = "(";
-                //App.Current.Properties["param+event"] = param + ":::" + (String)App.matchEvents;
                 await App.Current.SavePropertiesAsync();
                 if (Matches.appRestore == false)
                 {

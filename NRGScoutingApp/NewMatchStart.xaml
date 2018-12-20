@@ -12,15 +12,12 @@
                    <StackLayout HorizontalOptions="CenterAndExpand">
             
           <Label Text="0:00.00"
-                  x:Name="timerValue"
+                  x:Name="timerText"
                   VerticalOptions="Start" 
                   HorizontalOptions="Center"                  
                   TextColor="#fdad13" 
                   FontSize="60"
                   Margin="0,20,0,10"/>
-                     
-           <Button x:Name="testButton" Text="Click Here"/>
-                     
             <Slider x:Name="timeSlider"
                     ValueChanged="timerValueChanged"
                     Margin="20,5,20,5"
