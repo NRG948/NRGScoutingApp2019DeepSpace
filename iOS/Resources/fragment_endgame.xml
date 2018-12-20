@@ -1,0 +1,272 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.competitionapp.nrgscouting.EndgameEntry">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="10sp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Match Number: "
+                android:layout_gravity="center_vertical"
+                android:textSize="18sp"
+                android:layout_marginTop="0dp"
+                />
+
+            <EditText
+                android:id="@+id/matchNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="8"
+                android:hint="(Type here)"
+                android:inputType="number"
+
+                android:textColor="@color/colorPrimaryDark" />
+
+        </LinearLayout>
+
+        <Spinner
+        android:id="@+id/teamPosition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/spinnerItems"
+            android:layout_marginTop="15dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Autonomous"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="25sp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            />
+        <CheckBox
+            android:id="@+id/baseline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Crossed Baseline"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp"
+            android:layout_marginTop="15dp"/>
+        <CheckBox
+            android:id="@+id/autoSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Switch"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            />
+        <CheckBox
+            android:id="@+id/autoScale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Scale"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            />
+        <CheckBox
+            android:id="@+id/autoFarSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Far Switch"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            />
+        <CheckBox
+            android:id="@+id/autoFarScale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Far Scale"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="In-Game"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="25sp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Defensive Strategy Strength:"
+            android:textSize="16sp" />
+
+        <RatingBar
+            android:id="@+id/rate"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:rating="0"
+            android:stepSize="0.5" />
+        <CheckBox
+            android:id="@+id/death"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Death"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp"
+            android:layout_marginTop="5dp"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="End-Game"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="25sp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            />
+
+
+        <CheckBox
+            android:id="@+id/soloClimb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Solo Climb"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp"
+            android:layout_marginTop="15dp"/>
+        <CheckBox
+            android:id="@+id/astClimb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Assisted Climb"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp" />
+        <CheckBox
+            android:id="@+id/needAstClimb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Needed Assisted Climb"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp" />
+        <CheckBox
+            android:id="@+id/platform"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="On Platform"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp" />
+        <CheckBox
+            android:id="@+id/needLevitate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Didn't Climb"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fouls"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="25sp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Fouls:"
+            android:textSize="16sp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+
+            <EditText
+                android:id="@+id/penalties"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="4"
+                android:inputType="number"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark" />
+
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/cardyellow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Received Yellow Card"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/cardred"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Received Red Card"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Extra Comments:" />
+
+        <EditText
+            android:id="@+id/comments"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:ems="10"
+            android:maxLines="4"
+            android:maxLength="2000"
+            android:inputType="textCapSentences|textMultiLine"
+            android:hint="Type Here!"
+            android:layout_marginBottom="40dp"/>
+
+    </LinearLayout>
+</ScrollView>

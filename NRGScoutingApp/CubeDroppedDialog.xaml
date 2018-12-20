@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pages:PopupPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="NRGScoutingApp.CubeDroppedDialog"
+             xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+             xmlns:animations="clr-namespace:Rg.Plugins.Popup.Animations;assembly=Rg.Plugins.Popup">
+        <pages:PopupPage.Animation>
+        <animations:ScaleAnimation DurationIn="100"
+                                   DurationOut="30"
+                                   EasingIn="SinOut"
+                                   EasingOut="SinIn"
+                                   HasBackgroundAnimation="True"
+                                   PositionIn="Center"
+                                   PositionOut="Center"
+                                   ScaleIn="1.2"
+                                   ScaleOut="0.8" />
+    </pages:PopupPage.Animation>
+    <ScrollView>
+    <Frame HorizontalOptions="Center"
+             VerticalOptions="Center"
+           BackgroundColor="#ffffff"
+           HasShadow="true"
+           CornerRadius="4"
+           Margin="5,0"
+           Padding="10,10,10,-30">
+  <!--  <StackLayout RowSpacing="5" 
+                 ColumnSpacing="5">-->
+            
+            <OnPlatform x:TypeArguments="View">
+                <OnPlatform.iOS>
+                        <Grid HorizontalOptions="Center"
+                      VerticalOptions="Center">
+                  <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                  </Grid.RowDefinitions>
+                  <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                  </Grid.ColumnDefinitions>
+            <Frame BackgroundColor="#fdad13"
+                       HasShadow="false"
+                      Padding="10,0"
+                      HorizontalOptions="Fill"
+                      VerticalOptions="Fill"
+                      Grid.Row="0" 
+                      Grid.Column="1">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="scaleClicked"/>
+                    </Frame.GestureRecognizers>
+            <StackLayout Spacing="-25">
+                    <Image Source="ic_scale.png" Scale=".5" Margin="0"/>
+                <Button
+                    x:Name="scaleDropIOS"
+                    Text="Scale"
+                    FontSize="15"
+                    Clicked="scaleClicked"
+                    Margin="0,10,0,5"
+                    TextColor="White"
+                    BackgroundColor="#fdad13"/>
+                </StackLayout>
+                </Frame>
+                <Frame BackgroundColor="#fdad13"
+                       HasShadow="false"
+                       Padding="6,1"
+                       HorizontalOptions="Fill"
+                       VerticalOptions="Fill"
+                       Grid.Row="1" 
+                       Grid.Column="0">
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="allySwitchClicked"/>
+                </Frame.GestureRecognizers>
+        <StackLayout Spacing="-25">
+                <Image Source="ic_switch.png" Scale=".5" Margin="0"/>
+            <Button
+                x:Name="allySwitchDropIOS"
+                Text="Ally Switch"
+                FontSize="15"
+                Clicked="allySwitchClicked"
+                Margin="0,10"
+                TextColor="White"
+                BackgroundColor="#fdad13"/>
+            </StackLayout>
+                </Frame>
+                    <Frame BackgroundColor="#fdad13"
+                       HasShadow="false"
+                       Padding="17,0"
+                       HorizontalOptions="Fill"
+                       VerticalOptions="Fill"
+                       Grid.Row="1"
+                       Grid.Column="1">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="noneClicked"/>
+                    </Frame.GestureRecognizers>
+            <StackLayout Spacing="-25">
+                    <Image Source="ic_cancel.png" Scale=".5" Margin="0"/>
+                <Button
+                    x:Name="noneDropIOS"
+                    Text="None"
+                    FontSize="15"
+                    Clicked="noneClicked"
+                    Margin="-3,11"
+                    TextColor="White"
+                    BackgroundColor="#fdad13"/>
+                </StackLayout>
+                    </Frame>
+                    <Frame BackgroundColor="#fdad13"
+                       HasShadow="false"
+                      Padding="6,1"
+                       HorizontalOptions="Fill"
+                       VerticalOptions="Fill"
+                           Grid.Row="1"
+                           Grid.Column="2">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="oppSwitchClicked"/>
+                    </Frame.GestureRecognizers>
+            <StackLayout Spacing="-25">
+                    <Image Source="ic_switch.png" Scale=".5" Margin="0"/>
+                <Button
+                    x:Name="oppSwitchDropIOS"
+                    Text="Opp. Switch"
+                    FontSize="15"
+                    Clicked="oppSwitchClicked"
+                    Margin="0,11"
+                    TextColor="White"
+                    BackgroundColor="#fdad13"/>
+                </StackLayout>
+                    </Frame>
+                    <Frame BackgroundColor="#fdad13"
+                       HasShadow="false"
+                      Padding="6,2"
+                      HorizontalOptions="Fill"
+                       VerticalOptions="Fill"
+                           Grid.Row="2"
+                           Grid.Column="1">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="exchangeClicked"/>
+                    </Frame.GestureRecognizers>
+            <StackLayout Spacing="-25">
+                    <Image Source="ic_exchange.png" Scale=".5" Margin="0"/>
+                <Button
+                    x:Name="exchangeDropIOS"
+                    Text="Exchange"
+                    FontSize="15"
+                    Clicked="exchangeClicked"
+                    Margin="0,10"
+                    TextColor="White"
+                    BackgroundColor="#fdad13"/>
+                </StackLayout>
+                </Frame>
+            <Button Text="Cancel" 
+                    VerticalOptions="StartAndExpand"
+                    Font="15"
+                    Margin="0,0"
+                    Clicked="backClicked"
+                    Grid.Row="3"
+                    Grid.Column="2"/>
+            </Grid>
+                </OnPlatform.iOS>
+                <OnPlatform.Android>
+                     <Grid HorizontalOptions="Center"
+                    VerticalOptions="Center">
+                  <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                  </Grid.RowDefinitions>
+                  <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                  </Grid.ColumnDefinitions>
+                  
+                  <Button BackgroundColor="#fdad13"
+                          x:Name="scaleDropAndroid"
+                          TextColor="White"
+                          Text="Scale"
+                          Grid.Row="0"
+                          Grid.Column="1"
+                          ContentLayout="Top,0"                               
+                          Image="ic_scale.png"
+                          Clicked="scaleClicked"/>
+                  
+                  <Button BackgroundColor="#fdad13"
+                          x:Name="allySwitchDropAndroid"
+                          TextColor="White"
+                          Text="Ally Switch"
+                          Grid.Row="1"
+                          Grid.Column="0"
+                          ContentLayout="Top,0"                               
+                          Image="ic_switch.png"
+                          Clicked="allySwitchClicked"/>
+                  
+                  <Button BackgroundColor="#fdad13"
+                          x:Name="noneDropAndroid"
+                          TextColor="White"
+                          Text="None"
+                          Grid.Row="1"
+                          Grid.Column="1"
+                          ContentLayout="Top,0"                               
+                          Image="ic_cancel.png"
+                          Clicked="noneClicked"/>
+                  
+                  <Button BackgroundColor="#fdad13"
+                          x:Name="oppSwitchDropAndroid"
+                          TextColor="White"
+                          Text="Opp. Switch"
+                          Grid.Row="1"
+                          Grid.Column="2"
+                          ContentLayout="Top,0"                               
+                          Image="ic_switch.png"
+                          Clicked="oppSwitchClicked"/>
+                  
+                  <Button BackgroundColor="#fdad13"
+                          x:Name="exchangeDropAndroid"
+                          TextColor="White"
+                          Text="Exchange"
+                          Grid.Row="2"
+                          Grid.Column="1"
+                          ContentLayout="Top,0"                               
+                          Image="ic_exchange.png"
+                          Clicked="exchangeClicked"/>    
+                        
+                         <Button Text="DONT CLICK" 
+                          VerticalOptions="StartAndExpand"
+                          Font="15"
+                          Margin="0,0"
+                          Clicked="backClicked"
+                          Grid.Row="3"
+                          Grid.Column="2"/>
+                   
+                  
+            </Grid>
+                </OnPlatform.Android>
+                </OnPlatform>
+              
+        </Frame>
+    </ScrollView>
+</pages:PopupPage>
+<!--xmlns:animations="clr-namespace:Rg.Plugins.Popup.Animations;assembly=Rg.Plugins.Popup"
+                 ios:Page.UseSafeArea="true"
+                 ios:NavigationPage.PrefersLargeTitles="true">
+    -->
+    <!--     AlignItems="Center"-->
+    
+ 
