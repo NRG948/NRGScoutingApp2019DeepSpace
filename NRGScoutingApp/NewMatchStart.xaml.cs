@@ -20,10 +20,10 @@ namespace NRGScoutingApp
 {
 
     /* NOTICE: REFERENCE 
-     * resetTimerIOS and resetTimerAndroid when changing reset Timer text
-     * startTimerIOS and startTimerAndroid when changing start timer text
-     * climbStartIOS and climbStartAndroid when changing climb timer text
-     * cubePickedIOS and cubePickedAndroid when changing cube picked/dropped text
+     * resetTimer when changing reset Timer text
+     * startTimer when changing start timer text
+     * climbStart when changing climb timer text
+     * cubePicked when changing cube picked/dropped text
      * To change images for buttons, use the android names above, and use iosCubeImage.Source for the ios cube image
      */
     public partial class NewMatchStart : ContentPage
@@ -59,11 +59,12 @@ namespace NRGScoutingApp
         public static double droppedTime = 0;
         public static int pickNum = 0, dropNum = 0;
         int climbTime = 0;
+        private static Boolean isTimerRunning = false;
 
         void resetClicked(object sender, System.EventArgs e)
         {
-            if (timerText.Text == "0:00.00" || (startTimerAndroid.Text == timerPause || startTimerIOS.Text == timerPause)) {}
-            else if (startTimerAndroid.Text == timerStart || startTimerIOS.Text == timerStart)
+            if (timerText.Text == "0:00.00" || isTimerRunning) {}
+            else if (!isTimerRunning)
             {
                 timeSlider.Value = 0;
                 min = 0; sec = 0; ms = 0;
@@ -76,7 +77,7 @@ namespace NRGScoutingApp
 
         void startClicked(object sender, System.EventArgs e)
         {
-            if (startTimerAndroid.Text == timerStart || startTimerIOS.Text == timerStart) 
+            if (!isTimerRunning) 
             {
                 if (!App.Current.Properties.ContainsKey("timerValue")) {
                     App.Current.Properties["timerValue"] = (int) 0;
@@ -89,15 +90,14 @@ namespace NRGScoutingApp
                     firstTimerStart = false;
                 }
                 timeSlider.IsEnabled = false;
-                startTimerIOS.Text = timerPause;
-                startTimerAndroid.Text = timerPause;
+                isTimerRunning = true;
+                startTimer.Text = timerPause;
                 if (Device.RuntimePlatform == "iOS"){
                     Device.StartTimer(TimeSpan.FromMilliseconds(timerIntervaliOS), () =>
                     {
-                        if ((timerValue >= matchSpanMs) || (startTimerAndroid.Text == timerStart || startTimerIOS.Text == timerStart))
+                        if (timerValue >= matchSpanMs || !isTimerRunning)
                         {
-                            startTimerIOS.Text = timerStart;
-                            startTimerAndroid.Text = timerStart;
+                            startTimer.Text = timerStart;
                             return false;
                         }
                         Timer_Elapsed(); return true;
@@ -106,11 +106,9 @@ namespace NRGScoutingApp
                 else if (Device.RuntimePlatform == "Android"){
                     Device.StartTimer(TimeSpan.FromMilliseconds(timerIntervalAndroid), () =>
                     {
-                        if ((timerValue >= matchSpanMs) || (startTimerAndroid.Text == timerStart || startTimerIOS.Text == timerStart))
+                        if (timerValue >= matchSpanMs || !isTimerRunning)
                         {
-                            startTimerIOS.Text = timerStart;
-                            startTimerAndroid.Text = timerStart;
-                            timeSlider.IsEnabled = true;
+                            startTimer.Text = timerStart;
                             return false;
                         }
                         Timer_Elapsed(); 
@@ -119,10 +117,10 @@ namespace NRGScoutingApp
                 }
 
             }
-            else if (startTimerAndroid.Text == timerPause || startTimerIOS.Text == timerPause)
+            else if (isTimerRunning)
             {
-                startTimerIOS.Text = timerStart;
-                startTimerAndroid.Text = timerStart;
+                startTimer.Text = timerStart;
+                isTimerRunning = false;
                 timeSlider.IsEnabled = true;
             }
         }
@@ -176,7 +174,7 @@ namespace NRGScoutingApp
 
         void climbClicked(object sender, System.EventArgs e)
         {
-            if (startTimerAndroid.Text == timerStart || startTimerIOS.Text == timerStart) //
+            if (!isTimerRunning)
             {
                 DisplayAlert("Error", "Timer not Started", "OK");
             }
@@ -190,12 +188,12 @@ namespace NRGScoutingApp
 
         void cubeClicked(object sender, System.EventArgs e)
         {
-            if (startTimerAndroid.Text == timerStart || startTimerIOS.Text == timerStart)
+            if (!isTimerRunning)
             {
                 DisplayAlert("Error", "Timer not Started", "OK");
             }
 
-            else if (cubePickedAndroid.Text == cubePickedText || cubePickedIOS.Text == cubePickedText)
+            else if (cubePicked.Text == cubePickedText || cubePicked.Text == cubePickedText)
             {
                 //Performs actions to open popup for adding cube dropped, etc
                 pickedTime = (int)timerValue;
@@ -204,22 +202,18 @@ namespace NRGScoutingApp
                 CubeDroppedDialog.saveEvents();
                 pickNum++;
                 cubeDropValue = cubeDroppedText;
-                cubePickedAndroid.Image = "ic_drop_cube.png";
-                iosCubeImage.Source = "ic_drop_cube.png";
-                cubePickedAndroid.Text = cubeDroppedText;
-                cubePickedIOS.Text = cubeDroppedText;
+                cubePicked.Image = "ic_drop_cube.png";
+                cubePicked.Text = cubeDroppedText;
 
             }
-            else if (cubePickedAndroid.Text == cubeDroppedText || cubePickedIOS.Text == cubeDroppedText)
+            else if (cubePicked.Text == cubeDroppedText)
             {
                 //Performs action/s to open popup for adding cube dropped, etc
                 droppedTime =(int)timerValue;
                 PopupNavigation.Instance.PushAsync(new CubeDroppedDialog());
                 cubeDropValue = cubePickedText;
-                cubePickedAndroid.Image = "ic_picked_cube.png";
-                iosCubeImage.Source = "ic_picked_cube.png";
-                cubePickedAndroid.Text = cubePickedText;
-                cubePickedIOS.Text = cubePickedText;
+                cubePicked.Image = "ic_picked_cube.png";
+                cubePicked.Text = cubePickedText;
             }
         }
 
@@ -237,10 +231,8 @@ namespace NRGScoutingApp
             }
             else if(Convert.ToInt32(App.Current.Properties["lastCubePicked"]) == 0 || Convert.ToInt32(App.Current.Properties["lastCubeDropped"]) == 0){}
             else if(Convert.ToInt32(App.Current.Properties["lastCubePicked"]) > Convert.ToInt32(App.Current.Properties["lastCubeDropped"])){
-                cubePickedAndroid.Image = "ic_drop_cube.png";
-                iosCubeImage.Source = "ic_drop_cube.png";
-                cubePickedAndroid.Text = cubeDroppedText;
-                cubePickedIOS.Text = cubeDroppedText;
+                cubePicked.Image = "ic_drop_cube.png";
+                cubePicked.Text = cubeDroppedText;
             }
 
             if (!App.Current.Properties.ContainsKey("timerValue"))
