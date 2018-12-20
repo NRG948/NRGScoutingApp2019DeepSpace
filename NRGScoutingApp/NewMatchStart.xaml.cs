@@ -10,7 +10,6 @@ using System.Text;
 using Newtonsoft.Json;
 using System.Threading.Tasks;
 using System.Linq;
-using System.Timers;
 using Rg.Plugins.Popup.Services;
 using System.Linq.Expressions;
 using System.Security.AccessControl;

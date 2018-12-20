@@ -66,14 +66,14 @@
             <Button x:Name="climbStart"
                     BackgroundColor="#fdad13"                         
                     TextColor="White"
-                    Text="Climb Start"
+                    Text="Climb"
                     Grid.Row="1"
                     Grid.Column="0"
                     ContentLayout="Top,0"                               
                     Image="ic_climb.png"
                     Clicked="climbClicked"
                     FontSize="Small"
-                    Margin="10"/>
+                    Margin="0"/>
 
             <Button x:Name="cubePicked"
                     BackgroundColor="#fdad13"
