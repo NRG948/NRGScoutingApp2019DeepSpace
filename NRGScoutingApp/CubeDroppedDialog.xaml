@@ -1,29 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pages:PopupPage xmlns="http://xamarin.com/schemas/2014/forms" 
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              x:Class="NRGScoutingApp.CubeDroppedDialog"
              xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
-             xmlns:animations="clr-namespace:Rg.Plugins.Popup.Animations;assembly=Rg.Plugins.Popup">
-        <pages:PopupPage.Animation>
-        <animations:ScaleAnimation DurationIn="100"
-                                   DurationOut="30"
-                                   EasingIn="SinOut"
-                                   EasingOut="SinIn"
-                                   HasBackgroundAnimation="True"
-                                   PositionIn="Center"
-                                   PositionOut="Center"
-                                   ScaleIn="1.2"
-                                   ScaleOut="0.8" />
-    </pages:PopupPage.Animation>
+             xmlns:animations="clr-namespace:Rg.Plugins.Popup.Animations;assembly=Rg.Plugins.Popup"
+             Title="Choose Drop Location">
     <ScrollView>
-    <Frame HorizontalOptions="Center"
+<!--    <Frame HorizontalOptions="Center"
              VerticalOptions="Center"
            BackgroundColor="#ffffff"
            HasShadow="true"
            CornerRadius="4"
            Margin="5,0"
            Padding="10,10,10,-30">
-  <!--  <StackLayout RowSpacing="5" 
+ <StackLayout RowSpacing="5" 
                  ColumnSpacing="5">-->
             
             <OnPlatform x:TypeArguments="View">
@@ -225,7 +215,7 @@
                           Image="ic_exchange.png"
                           Clicked="exchangeClicked"/>    
                         
-                         <Button Text="DONT CLICK" 
+                         <Button Text="Cancel" 
                           VerticalOptions="StartAndExpand"
                           Font="15"
                           Margin="0,0"
@@ -238,9 +228,9 @@
                 </OnPlatform.Android>
                 </OnPlatform>
               
-        </Frame>
+     <!--   </Frame>-->
     </ScrollView>
-</pages:PopupPage>
+</ContentPage>
 <!--xmlns:animations="clr-namespace:Rg.Plugins.Popup.Animations;assembly=Rg.Plugins.Popup"
                  ios:Page.UseSafeArea="true"
                  ios:NavigationPage.PrefersLargeTitles="true">

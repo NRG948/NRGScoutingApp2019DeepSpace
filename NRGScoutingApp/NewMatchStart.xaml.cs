@@ -58,7 +58,18 @@ namespace NRGScoutingApp
         public static double droppedTime = 0;
         public static int pickNum = 0, dropNum = 0;
         int climbTime = 0;
+        public static Boolean cubeSetDrop = false;
         private static Boolean isTimerRunning = false;
+
+        protected override void OnAppearing()
+        {
+            if (cubeSetDrop)
+            {
+                cubePicked.Text = cubeDroppedText;
+                cubePicked.Image = "ic_drop_cube.png";
+                cubeSetDrop = false;
+            }
+        }
 
         void resetClicked(object sender, System.EventArgs e)
         {
@@ -200,7 +211,6 @@ namespace NRGScoutingApp
                 App.Current.SavePropertiesAsync();
                 CubeDroppedDialog.saveEvents();
                 pickNum++;
-                cubeDropValue = cubeDroppedText;
                 cubePicked.Image = "ic_drop_cube.png";
                 cubePicked.Text = cubeDroppedText;
 
@@ -209,8 +219,7 @@ namespace NRGScoutingApp
             {
                 //Performs action/s to open popup for adding cube dropped, etc
                 droppedTime =(int)timerValue;
-                PopupNavigation.Instance.PushAsync(new CubeDroppedDialog());
-                cubeDropValue = cubePickedText;
+                Navigation.PushAsync(new CubeDroppedDialog());
                 cubePicked.Image = "ic_picked_cube.png";
                 cubePicked.Text = cubePickedText;
             }
