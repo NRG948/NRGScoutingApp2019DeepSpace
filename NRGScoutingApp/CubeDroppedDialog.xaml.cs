@@ -14,9 +14,23 @@ namespace NRGScoutingApp
             BindingContext = this; 
             InitializeComponent();
         }
+
+        public static int drop_none = 0;
+        public static int drop_1 = 1;
+        public static int drop_2 = 2;
+        public static int drop_3 = 3;
+        public static int drop_4 = 4;
+        /*
+         * None = 0       
+         * Scale = 1
+         * Ally Switch = 2        
+         * Opp. Switch = 3
+         * Exchange = 4
+         */
         void scaleClicked(object sender, System.EventArgs e)
         {
             saveEvents();
+            NewMatchStart.matchEvents += NewMatchStart.ITEM_DROP + "_" + drop_1 + ":" + NewMatchStart.droppedTime;
             setDropTime();
             NewMatchStart.dropNum++;
             Navigation.PopAsync(true);
@@ -24,6 +38,7 @@ namespace NRGScoutingApp
         void allySwitchClicked(object sender, System.EventArgs e)
         {
             saveEvents();
+            NewMatchStart.matchEvents += NewMatchStart.ITEM_DROP + "_" + drop_2 + ":" + NewMatchStart.droppedTime;
             setDropTime();
             NewMatchStart.dropNum++;
             Navigation.PopAsync(true);
@@ -31,6 +46,7 @@ namespace NRGScoutingApp
         void noneClicked(object sender, System.EventArgs e)
         {
             saveEvents();
+            NewMatchStart.matchEvents += NewMatchStart.ITEM_DROP + "_" + drop_none + ":" + NewMatchStart.droppedTime;
             setDropTime();
             NewMatchStart.dropNum++;
             Navigation.PopAsync(true);
@@ -38,6 +54,7 @@ namespace NRGScoutingApp
         void oppSwitchClicked(object sender, System.EventArgs e)
         {
             saveEvents();
+            NewMatchStart.matchEvents += NewMatchStart.ITEM_DROP + "_" + drop_3 + ":" + NewMatchStart.droppedTime;
             setDropTime();
             NewMatchStart.dropNum++;
             Navigation.PopAsync(true);
@@ -45,6 +62,7 @@ namespace NRGScoutingApp
         void exchangeClicked(object sender, System.EventArgs e)
         {
             saveEvents();
+            NewMatchStart.matchEvents += NewMatchStart.ITEM_DROP + "_" + drop_4 + ":" + NewMatchStart.droppedTime;
             setDropTime();
             NewMatchStart.dropNum++;
             Navigation.PopAsync(true);

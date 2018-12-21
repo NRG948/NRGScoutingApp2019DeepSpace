@@ -9,21 +9,25 @@ namespace NRGScoutingApp
 {
     public partial class MatchParameters : ContentPage
     {
-        public static String pickerS;
+        public static int pickerS;
         public static bool crossedB, switchB, scaleB, fswitchB, fscaleB, deathB, soloB, assistedB, neededB, platformB, 
         noclimbB, recyellowB, recredB;
+        public String teamName = App.Current.Properties["teamStart"].ToString();
         public ParametersFormat paramFormat = new ParametersFormat();
         public MatchEventsFormat eventsFormat = new MatchEventsFormat();
 
         public MatchParameters()
         {
-            //NavigationPage.SetHasBackButton(this, false);
             InitializeComponent();
+        }
+
+        public class eventFormat
+        {
+
         }
 
         public MatchParameters(ArrayList list)
         {
-            NavigationPage.SetHasBackButton(this, false);
             InitializeComponent();
             matchnum.Text = list[0].ToString();
             PositionPicker.Items[PositionPicker.SelectedIndex] = list[1].ToString();
@@ -74,43 +78,23 @@ namespace NRGScoutingApp
 
         async void saveClicked(object sender, System.EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(matchnum.Text)||string.IsNullOrWhiteSpace(pickerS)) //Checks if Match Number or Picker is Present
+            if (string.IsNullOrWhiteSpace(matchnum.Text)|| PositionPicker.SelectedIndex < 0) //Checks if Match Number or Picker is Present
             {
-                if (string.IsNullOrWhiteSpace(matchnum.Text) && string.IsNullOrWhiteSpace(pickerS)){
+                if (string.IsNullOrWhiteSpace(matchnum.Text) && PositionPicker.SelectedIndex < 0)
+                {
                     await DisplayAlert("Alert!", "Please Enter Match Number and Position", "OK");
                 }
                 else if (string.IsNullOrWhiteSpace(matchnum.Text))
                 {
                     await DisplayAlert("Alert!", "Please Enter Match Number", "OK");
                 }
-                else if (string.IsNullOrWhiteSpace(pickerS))
+                else if (PositionPicker.SelectedIndex < 0)
                 {
                     await DisplayAlert("Alert!", "Please Enter Position", "OK");
                 }
 
             }
             else{
-               /* if (String.IsNullOrWhiteSpace(App.matchEvents)){}
-                else if (App.matchEvents[0] != '(' && App.matchEvents[0] != '*')
-                {
-                    App.matchEvents = "(" + App.matchEvents;
-                }
-                App.matchEvents += ")";
-                App.Current.Properties["teamStart"] = "";
-                App.Current.Properties["appState"] = 0;
-                App.Current.Properties["timerValue"] = 0;
-                App.Current.Properties["newAppear"] = 1;
-                App.Current.Properties["lastCubePicked"] = 0;
-                App.Current.Properties["lastCubeDropped"] = 0;
-                if (App.matchEvents.Contains("*"))
-                {
-
-                }
-                else if (!App.matchEvents.Contains("*"))
-                {
-
-                }
-                */
                 App.Current.Properties["tempEventString"] = "(";
                 await App.Current.SavePropertiesAsync();
                 if (Matches.appRestore == false)
@@ -128,9 +112,8 @@ namespace NRGScoutingApp
 
         void Handle_SelectedIndexChanged(object sender, System.EventArgs e)
         {
-            var pos = PositionPicker.Items[PositionPicker.SelectedIndex];
+            var pos = PositionPicker.SelectedIndex;
             pickerS = pos;
-            DisplayAlert(pickerS, "Position Selected", "OK");
         }
 
         void Handle_Toggled(object sender, Xamarin.Forms.ToggledEventArgs e)
