@@ -4,26 +4,44 @@ using System.Collections;
 using Xamarin.Forms;
 using System.ComponentModel;
 using NRGScoutingApp;
+using System.Security.Cryptography;
+using Newtonsoft.Json;
 
 namespace NRGScoutingApp
 {
     public partial class MatchParameters : ContentPage
     {
-        public static int pickerS;
-        public static bool crossedB, switchB, scaleB, fswitchB, fscaleB, deathB, soloB, assistedB, neededB, platformB, 
-        noclimbB, recyellowB, recredB;
         public String teamName = App.Current.Properties["teamStart"].ToString();
         public ParametersFormat paramFormat = new ParametersFormat();
         public MatchEventsFormat eventsFormat = new MatchEventsFormat();
+        MatchFormat.EntryParams Entry = new MatchFormat.EntryParams {
+        team = App.Current.Properties["teamStart"].ToString(),
+        matchNum = 0,
+        side = 0,
+
+        crossedB = false,
+        allyItem1 = false,
+        allyItem2 = false,
+        oppItem1 = false,
+        oppItem2 = false,
+
+        death = false,
+        noClimb = false,
+        soloClimb = false,
+        giveAssistClimb = false,
+        needAssistClimb = false,
+        onClimbArea = false,
+
+        fouls = 0,
+        yellowCard = false,
+        redCard = false,
+        comments = ""
+
+    };
 
         public MatchParameters()
         {
             InitializeComponent();
-        }
-
-        public class eventFormat
-        {
-
         }
 
         public MatchParameters(ArrayList list)
@@ -95,12 +113,13 @@ namespace NRGScoutingApp
 
             }
             else{
+                string json = JsonConvert.SerializeObject(Entry, Formatting.Indented);
+                Console.WriteLine(json);
                 App.Current.Properties["tempEventString"] = "(";
                 await App.Current.SavePropertiesAsync();
                 if (Matches.appRestore == false)
                 {
-                    Matches.appRestore = false;
-                    await  Navigation.PopToRootAsync(true);
+                 await  Navigation.PopToRootAsync(true);
                 }
                 else if (Matches.appRestore == true)
                 {
@@ -110,89 +129,134 @@ namespace NRGScoutingApp
             }
         }
 
+
+
         void Handle_SelectedIndexChanged(object sender, System.EventArgs e)
         {
-            var pos = PositionPicker.SelectedIndex;
-            pickerS = pos;
+            Entry.side = PositionPicker.SelectedIndex;
+            onParamUpdate();
         }
 
         void Handle_Toggled(object sender, Xamarin.Forms.ToggledEventArgs e)
         {
-            var crossed = crossbase.IsToggled;
-            crossedB = crossed;
+            Entry.crossedB = e.Value;
+            onParamUpdate();
         }
 
         void Handle_Toggled_1(object sender, Xamarin.Forms.ToggledEventArgs e)
         {
-            var y = switchP.IsToggled;
-            switchB = y;
+            Entry.allyItem1 = e.Value;
+            onParamUpdate();
         }
 
         void Handle_Toggled_2(object sender, Xamarin.Forms.ToggledEventArgs e)
         {
-            var y = scale.IsToggled;
-            scaleB = y;
+            Entry.allyItem2 = e.Value;
+            onParamUpdate();
         }
 
         void Handle_Toggled_3(object sender, Xamarin.Forms.ToggledEventArgs e)
         {
-            var y = farswitch.IsToggled;
-            fswitchB = y;
+            Entry.oppItem1 = e.Value;
+            onParamUpdate();
         }
 
         void Handle_Toggled_4(object sender, Xamarin.Forms.ToggledEventArgs e)
         {
-            var y = farscale.IsToggled;
-            fscaleB = y;
+            Entry.oppItem2 = e.Value;
+            onParamUpdate();
         }
 
         void Handle_Toggled_5(object sender, Xamarin.Forms.ToggledEventArgs e)
         {
-            var y = death.IsToggled;
-            deathB = y;
+           Entry.death = e.Value;
+            onParamUpdate();
         }
 
         void Handle_Toggled_6(object sender, Xamarin.Forms.ToggledEventArgs e)
         {
-            var y = solo.IsToggled;
-            soloB = y;
+            Entry.soloClimb = e.Value;
+            onParamUpdate();
         }
 
         void Handle_Toggled_7(object sender, Xamarin.Forms.ToggledEventArgs e)
         {
-            var y = assisted.IsToggled;
-            assistedB = y;
+            Entry.giveAssistClimb = e.Value; 
+            onParamUpdate();
         }
 
         void Handle_Toggled_8(object sender, Xamarin.Forms.ToggledEventArgs e)
         {
-            var y = needed.IsToggled;
-            neededB = y;
+            Entry.needAssistClimb = e.Value;
+            onParamUpdate();
         }
 
         void Handle_Toggled_9(object sender, Xamarin.Forms.ToggledEventArgs e)
         {
-            var y = platform.IsToggled;
-            platformB = y;
+            Entry.onClimbArea = e.Value;
+            onParamUpdate();
         }
 
         void Handle_Toggled_10(object sender, Xamarin.Forms.ToggledEventArgs e)
         {
-            var y = noclimb.IsToggled;
-            noclimbB = y;
+            Entry.noClimb = e.Value;
+            onParamUpdate();
         }
 
         void Handle_Toggled_11(object sender, Xamarin.Forms.ToggledEventArgs e)
         {
-            var y = yellow.IsToggled;
-            recyellowB = y;
+            Entry.yellowCard = e.Value;
+            onParamUpdate();
         }
 
         void Handle_Toggled_12(object sender, Xamarin.Forms.ToggledEventArgs e)
         {
-            var y = red.IsToggled;
-            recredB = y;
+            Entry.redCard = e.Value;
+            onParamUpdate();
         }
-      }
+
+        void Comment_Box_Updated(object sender, Xamarin.Forms.TextChangedEventArgs e)
+        {
+            Entry.comments = e.NewTextValue;
+            onParamUpdate();
+        }
+        void Match_Num_Updated(object sender, Xamarin.Forms.TextChangedEventArgs e)
+        {
+            try
+            {
+                Entry.matchNum = Convert.ToInt32(e.NewTextValue);
+            }
+            catch (FormatException)
+            {
+                if (!String.IsNullOrWhiteSpace(e.NewTextValue))
+                {
+                    DisplayAlert("Warning", "Match Number Contains Letters. Did Not Update Value", "OK");
+                }
+            }
+
+            onParamUpdate();
+        }
+        void Fouls_Updated(object sender, Xamarin.Forms.TextChangedEventArgs e)
+        {
+            try
+            {
+                Entry.fouls = Convert.ToInt32(e.NewTextValue);
+            }
+            catch (FormatException)
+            {
+                if (!String.IsNullOrWhiteSpace(e.NewTextValue))
+                {
+                    DisplayAlert("Warning", "Match Number Contains Letters. Did Not Update Value", "OK");
+                }
+            }
+            onParamUpdate();
+        }
+
+        void onParamUpdate() {
+            App.Current.Properties["tempParams"] = Entry;
+            App.Current.SavePropertiesAsync();
+        }
+    }
 }
+
                                   

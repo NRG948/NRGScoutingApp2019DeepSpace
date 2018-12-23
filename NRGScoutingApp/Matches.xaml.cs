@@ -62,8 +62,6 @@ namespace NRGScoutingApp
                 App.Current.Properties["teamStart"] = "";
                 App.Current.Properties["newAppear"] = 0;
                 App.Current.Properties["tempEventString"] = "(";
-                listView.ItemsSource = MatchFormat.matchesToSimpleData(MatchFormat.mainStringToSplit(App.Current.Properties["matchEventsString"].ToString()));
-                matches = MatchFormat.matchesToSimpleData(MatchFormat.mainStringToSplit(App.Current.Properties["matchEventsString"].ToString()));
                 if (!App.Current.Properties["matchEventsString"].ToString().Contains("|"))
                 {
                     matches = null;
@@ -72,8 +70,7 @@ namespace NRGScoutingApp
                 App.Current.SavePropertiesAsync();
             }
             else if(App.Current.Properties["newAppear"].ToString() == "0"){
-                listView.ItemsSource = MatchFormat.matchesToSimpleData(MatchFormat.mainStringToSplit(App.Current.Properties["matchEventsString"].ToString()));
-                matches = MatchFormat.matchesToSimpleData(MatchFormat.mainStringToSplit(App.Current.Properties["matchEventsString"].ToString()));
+
             }
         }
 

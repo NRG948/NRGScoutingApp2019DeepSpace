@@ -16,6 +16,5 @@ namespace NRGScoutingApp
     public class MatchEventsFormat
     {
 
-        public MatchEventsFormat() { }
     }
 }

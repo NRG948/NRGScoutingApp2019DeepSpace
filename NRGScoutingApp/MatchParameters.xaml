@@ -18,6 +18,7 @@
                    FontSize="20"/>
         <Entry Placeholder="(Type Here)"
                x:Name="matchnum"
+               TextChanged="Match_Num_Updated"
                Keyboard="Numeric"/>
                 </FlexLayout>
             <Picker x:Name="PositionPicker"
@@ -186,6 +187,7 @@
             <Entry Placeholder="0"
                    x:Name="fouls"
                Keyboard="Numeric"
+                   TextChanged="Fouls_Updated"
                    HorizontalOptions="StartAndExpand"
                    Margin="10,5,0,0"
                    WidthRequest="50"/>
@@ -214,13 +216,14 @@
             <Label Text="Extra Comments:"
                    Margin="10"
                    FontSize="20"/>
-            <Editor Text="Type Here!" 
-                    x:Name="comments"
-                    AutoSize="TextChanges" 
+            <Editor x:Name="comments"
+                    MinimumWidthRequest="1000"
+                    MinimumHeightRequest="300"
                     Margin="10,5,0,0" 
-                    HorizontalOptions="StartAndExpand"
+                    Placeholder="Type Here!"
+                    TextChanged="Comment_Box_Updated"
                     Keyboard="Text"/>
-             <FlexLayout 
+                <FlexLayout 
                 Direction="Row"
                 AlignItems="Center"
                 JustifyContent="Center">
@@ -231,3 +234,5 @@
           </ScrollView>
     </ContentPage.Content>
 </ContentPage>
+<!--AutoSize="TextChanges"
+HorizontalOptions="StartAndExpand"-->

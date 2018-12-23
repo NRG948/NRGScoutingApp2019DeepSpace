@@ -13,7 +13,6 @@ using System.Linq;
 using Rg.Plugins.Popup.Services;
 using System.Linq.Expressions;
 using System.Security.AccessControl;
-using Java.Util;
 
 
 
@@ -40,6 +39,8 @@ namespace NRGScoutingApp
         public static readonly String TIMER_PAUSE = "Pause Timer";
 
         public static readonly String ITEM_PICK = "itemPick";
+        public static readonly String ITEM_DROP = "itemDrop";
+        public static readonly String ROBOT_CLIMB = "robotclimb";
         public static readonly int NUM_DROP_OPTIONS = 4;
         public static readonly String SEPARATOR = "####";
 
@@ -199,6 +200,7 @@ namespace NRGScoutingApp
             {
                 //Adds info to to JSON about climb
                 climbTime = (int)timerValue;
+                NewMatchStart.matchEvents += ROBOT_CLIMB + ":" + climbTime;
                 CubeDroppedDialog.saveEvents();
             }
         }
@@ -217,7 +219,7 @@ namespace NRGScoutingApp
                 App.Current.Properties["lastCubePicked"] = (int)pickedTime;
                 App.Current.SavePropertiesAsync();
                 CubeDroppedDialog.saveEvents();
-                matchEvents += ITEM_PICK + ":" + pickedTime;
+                matchEvents += ITEM_PICK + ":" + pickedTime + SEPARATOR;
                 pickNum++;
                 cubePicked.Image = "ic_drop_cube.png";
                 cubePicked.Text = ITME_DROPPED_TEXT;
