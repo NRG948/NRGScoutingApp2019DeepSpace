@@ -20,7 +20,6 @@ namespace NRGScoutingApp
 
         public MatchEntryStart()
         {
-          // 
             InitializeComponent();
             MatchesList.ItemsSource = TeamsNames.teams;
         }
@@ -30,8 +29,8 @@ namespace NRGScoutingApp
         protected override void OnAppearing()
         {
             if (goBack == true){
-                Navigation.PopAsync();
                 goBack = false;
+                Navigation.PopAsync();
             }
             MatchesList.ItemsSource = TeamsNames.teams;
         }

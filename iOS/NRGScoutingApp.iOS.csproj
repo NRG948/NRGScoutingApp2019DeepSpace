@@ -193,7 +193,7 @@
     <BundleResource Include="Resources\ic_export_web.png" />
     <BundleResource Include="Resources\ic_import_web.png" />
     <BundleResource Include="Resources\ic_leader.png" />
-    <BundleResource Include="Resources\ic_dropped_cube_yellow.png" />
+    <BundleResource Include="Resources\ic_drop_cube_yellow.png" />
     <BundleResource Include="Resources\ic_timer_icon.png" />
     <BundleResource Include="Resources\ic_climb_yellow.png" />
     <BundleResource Include="Resources\ic_drop_cube.png" />

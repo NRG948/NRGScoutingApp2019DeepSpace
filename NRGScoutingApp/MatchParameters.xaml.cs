@@ -6,6 +6,7 @@ using System.ComponentModel;
 using NRGScoutingApp;
 using System.Security.Cryptography;
 using Newtonsoft.Json;
+using System.Xml;
 
 namespace NRGScoutingApp
 {
@@ -42,6 +43,7 @@ namespace NRGScoutingApp
         public MatchParameters()
         {
             InitializeComponent();
+            cacheCheck();
         }
 
         public MatchParameters(ArrayList list)
@@ -110,12 +112,14 @@ namespace NRGScoutingApp
                 {
                     await DisplayAlert("Alert!", "Please Enter Position", "OK");
                 }
-
             }
             else{
-                string json = JsonConvert.SerializeObject(Entry, Formatting.Indented);
-                Console.WriteLine(json);
-                App.Current.Properties["tempEventString"] = "(";
+                String parameters = JsonConvert.SerializeObject(Entry, Newtonsoft.Json.Formatting.Indented);
+                Console.WriteLine(parameters);
+                string events = MatchFormat.eventsListToJSONEvents(NewMatchStart.events);
+                Console.WriteLine(events);
+                App.Current.Properties["tempParams"] = "";
+                App.Current.Properties["tempMatchEvents"] = "";
                 await App.Current.SavePropertiesAsync();
                 if (Matches.appRestore == false)
                 {
@@ -128,8 +132,6 @@ namespace NRGScoutingApp
                 }
             }
         }
-
-
 
         void Handle_SelectedIndexChanged(object sender, System.EventArgs e)
         {
@@ -145,13 +147,13 @@ namespace NRGScoutingApp
 
         void Handle_Toggled_1(object sender, Xamarin.Forms.ToggledEventArgs e)
         {
-            Entry.allyItem1 = e.Value;
+            Entry.allyItem2 = e.Value;
             onParamUpdate();
         }
 
         void Handle_Toggled_2(object sender, Xamarin.Forms.ToggledEventArgs e)
         {
-            Entry.allyItem2 = e.Value;
+            Entry.allyItem1 = e.Value;
             onParamUpdate();
         }
 
@@ -255,6 +257,33 @@ namespace NRGScoutingApp
         void onParamUpdate() {
             App.Current.Properties["tempParams"] = Entry;
             App.Current.SavePropertiesAsync();
+            Console.WriteLine(JsonConvert.SerializeObject((MatchFormat.EntryParams)App.Current.Properties["tempParams"], Newtonsoft.Json.Formatting.Indented));
+        }
+
+        void cacheCheck() {
+            if (!String.IsNullOrWhiteSpace(App.Current.Properties["tempParams"].ToString())) {
+                MatchFormat.EntryParams entries = (MatchFormat.EntryParams)App.Current.Properties["tempParams"];
+                matchnum.Text = entries.matchNum.ToString();
+                PositionPicker.SelectedIndex = entries.side;
+                crossbase.IsToggled = entries.crossedB;
+                switchP.IsToggled = entries.allyItem2;
+                scale.IsToggled = entries.allyItem1;
+                farswitch.IsToggled = entries.oppItem1;
+                farscale.IsToggled = entries.oppItem2;
+                death.IsToggled = entries.death;
+
+                solo.IsToggled = entries.soloClimb;
+                assisted.IsToggled = entries.giveAssistClimb;
+                needed.IsToggled = entries.needAssistClimb;
+                platform.IsToggled = entries.onClimbArea;
+                noclimb.IsToggled = entries.noClimb;
+
+                fouls.Text = entries.fouls.ToString();
+                yellow.IsToggled = entries.yellowCard;
+                red.IsToggled = entries.redCard;
+                comments.Text = entries.comments;
+                Entry = entries;
+            }
         }
     }
 }

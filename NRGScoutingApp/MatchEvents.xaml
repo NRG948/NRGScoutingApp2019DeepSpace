@@ -10,6 +10,7 @@
     
     <ContentPage.Content>
         <StackLayout>
+            <Button Text="Update" Clicked="Handle_Tapped"/>
             <ListView x:Name="listView" Margin="0,10,10,10">
                 <ListView.ItemTemplate>
                   <DataTemplate>
@@ -31,17 +32,17 @@
                                     <Image 
                                         Grid.RowSpan="2" 
                                         Grid.Column="0"
-                                        Source="ic_dropped_cube_yellow.png"/>
-                                   <Label Text="{Binding Path=Key}"
+                                        Source="{Binding image}"/>
+                                   <Label Text="{Binding eventName}"
                                            x:Name="key"
                                            Grid.Row="0" 
                                            Grid.Column="1"
-                                           HorizontalTextAlignment="End"/>
-                                    <Label Text="{Binding Path=Value}"
+                                           HorizontalTextAlignment="Start"/>
+                                    <Label Text="{Binding timeOccur}"
                                            x:Name="value"
                                            Grid.Row="1" 
                                            Grid.Column="1"
-                                           HorizontalTextAlignment="End"/>
+                                           HorizontalTextAlignment="Start"/>
                                     </Grid>
                         </ContentView>
                       </ViewCell>

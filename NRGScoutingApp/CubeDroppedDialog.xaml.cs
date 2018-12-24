@@ -28,28 +28,28 @@ namespace NRGScoutingApp
 
         void drop1(object sender, System.EventArgs e)
         {
-            NewMatchStart.matchEvents += NewMatchStart.ITEM_DROP + "_" + MatchFormat.DROP_TYPE.drop1 + ":" + NewMatchStart.droppedTime;
+            NewMatchStart.events.Add(new MatchFormat.Data { time = NewMatchStart.droppedTime, type = (int)MatchFormat.DROP_TYPE.drop1 });
             setDropTime();
             saveEvents();
             Navigation.PopAsync(true);
         }
         void drop2(object sender, System.EventArgs e)
         {
-            NewMatchStart.matchEvents += NewMatchStart.ITEM_DROP + "_" + MatchFormat.DROP_TYPE.drop2 + ":" + NewMatchStart.droppedTime;
+            NewMatchStart.events.Add(new MatchFormat.Data { time = NewMatchStart.droppedTime, type = (int)MatchFormat.DROP_TYPE.drop2 });
             setDropTime();
             saveEvents();
             Navigation.PopAsync(true);
         }
         void noneClicked(object sender, System.EventArgs e)
         {
-            NewMatchStart.matchEvents += NewMatchStart.ITEM_DROP + "_" + MatchFormat.DROP_TYPE.dropNone + ":" + NewMatchStart.droppedTime;
+            NewMatchStart.events.Add(new MatchFormat.Data { time = NewMatchStart.droppedTime, type = (int)MatchFormat.DROP_TYPE.dropNone });
             saveEvents();
             setDropTime();
             Navigation.PopAsync(true);
         }
         void drop3(object sender, System.EventArgs e)
         {
-            NewMatchStart.matchEvents += NewMatchStart.ITEM_DROP + "_" + MatchFormat.DROP_TYPE.drop3 + ":" + NewMatchStart.droppedTime;
+            NewMatchStart.events.Add(new MatchFormat.Data { time = NewMatchStart.droppedTime, type = (int)MatchFormat.DROP_TYPE.drop3 });
             saveEvents();
             setDropTime();
             NewMatchStart.dropNum++;
@@ -57,7 +57,7 @@ namespace NRGScoutingApp
         }
         void dropItemCollector(object sender, System.EventArgs e)
         {
-            NewMatchStart.matchEvents += NewMatchStart.ITEM_DROP + "_" + MatchFormat.DROP_TYPE.dropItemCollector + ":" + NewMatchStart.droppedTime;
+            NewMatchStart.events.Add(new MatchFormat.Data { time = NewMatchStart.droppedTime, type = (int)MatchFormat.DROP_TYPE.dropItemCollector });
             saveEvents();
             setDropTime();
             NewMatchStart.dropNum++;
@@ -71,7 +71,7 @@ namespace NRGScoutingApp
 
         }
         public static void saveEvents(){
-            App.Current.Properties["matchEventString"] = NewMatchStart.matchEvents;
+            App.Current.Properties["tempMatchEvents"] = NewMatchStart.events;
             App.Current.SavePropertiesAsync();
         }
         private void setDropTime(){

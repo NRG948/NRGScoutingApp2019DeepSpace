@@ -106,7 +106,8 @@ namespace NRGScoutingApp
                 App.Current.Properties["appState"] = 0;
                 App.Current.Properties["teamStart"] = "";
                 App.Current.Properties["timerValue"] = (int)0;
-                App.Current.Properties["matchEventsString"] = "";
+                App.Current.Properties["tempParams"] = "";
+                App.Current.Properties["tempMatchEvents"] = "";
                 App.Current.SavePropertiesAsync();
             }
 
@@ -121,13 +122,14 @@ namespace NRGScoutingApp
                 App.Current.Properties["appState"] = 0;
                 App.Current.Properties["timerValue"] = (int) 0;
                 App.Current.Properties["teamStart"] = "";
-                App.Current.Properties["tempEventString"] = "";
+                App.Current.Properties["tempMatchEvents"] = "";
+                App.Current.Properties["tempParams"] = "";
                 App.Current.SavePropertiesAsync();
             }
             if (!App.Current.Properties.ContainsKey("matchEventsString"))
             {
                 App.Current.Properties["matchEventsString"] = "";
-                App.Current.Properties["tempEventString"] = "(";
+                App.Current.Properties["tempMatchEvents"] = "";
                 App.Current.SavePropertiesAsync();
             }
         }

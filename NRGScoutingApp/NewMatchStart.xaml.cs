@@ -13,8 +13,7 @@ using System.Linq;
 using Rg.Plugins.Popup.Services;
 using System.Linq.Expressions;
 using System.Security.AccessControl;
-
-
+using System.Collections;
 
 namespace NRGScoutingApp
 {
@@ -34,7 +33,7 @@ namespace NRGScoutingApp
         public static readonly double MIN_MS = 60000;
         public static readonly double SEC_MS = 1000;
         public static readonly String ITEM_PICKED_TEXT = "Cube Picked";
-        public static readonly String ITME_DROPPED_TEXT = "Cube Dropped";
+        public static readonly String ITEM_DROPPED_TEXT = "Cube Dropped";
         public static readonly String TIMER_START = "Start Timer";
         public static readonly String TIMER_PAUSE = "Pause Timer";
 
@@ -42,10 +41,11 @@ namespace NRGScoutingApp
         public static readonly String ITEM_DROP = "itemDrop";
         public static readonly String ROBOT_CLIMB = "robotclimb";
         public static readonly int NUM_DROP_OPTIONS = 4;
-        public static readonly String SEPARATOR = "####";
 
         public static readonly int TIMER_INTERVAL_ANDROID = 100;
         public static readonly int TIMER_INTERVAL_IOS = 1;
+
+        public static readonly String pickItemImage = "";
 
         public NewMatchStart()
         {
@@ -61,19 +61,19 @@ namespace NRGScoutingApp
         private static int min = 0, sec = 0, ms = 0; //Values for Timer
         public static int timerValue = 0;
         private Boolean firstTimerStart = true;
-        public static double pickedTime = 0;
-        public static double droppedTime = 0;
+        public static int pickedTime = 0;
+        public static int droppedTime = 0;
         public static int pickNum = 0, dropNum = 0;
         int climbTime = 0;
         public static Boolean cubeSetDrop = false;
         private static Boolean isTimerRunning = false;
-        public static String matchEvents = "";
+        public static List<MatchFormat.Data> events = new List<MatchFormat.Data>();
 
         protected override void OnAppearing()
         {
             if (cubeSetDrop)
             {
-                cubePicked.Text = ITME_DROPPED_TEXT;
+                cubePicked.Text = ITEM_DROPPED_TEXT;
                 cubePicked.Image = "ic_drop_cube.png";
                 cubeSetDrop = false;
             }
@@ -200,7 +200,7 @@ namespace NRGScoutingApp
             {
                 //Adds info to to JSON about climb
                 climbTime = (int)timerValue;
-                NewMatchStart.matchEvents += ROBOT_CLIMB + ":" + climbTime;
+                events.Add(new MatchFormat.Data { time = climbTime, type = (int)MatchFormat.ACTION_TYPE.startClimb });
                 CubeDroppedDialog.saveEvents();
             }
         }
@@ -217,15 +217,16 @@ namespace NRGScoutingApp
                 //Performs actions to open popup for adding cube dropped, etc
                 pickedTime = (int)timerValue;
                 App.Current.Properties["lastCubePicked"] = (int)pickedTime;
+                events.Add(new MatchFormat.Data { time = (int)pickedTime, type = (int)MatchFormat.ACTION_TYPE.pickItem });
                 App.Current.SavePropertiesAsync();
                 CubeDroppedDialog.saveEvents();
-                matchEvents += ITEM_PICK + ":" + pickedTime + SEPARATOR;
+
                 pickNum++;
                 cubePicked.Image = "ic_drop_cube.png";
-                cubePicked.Text = ITME_DROPPED_TEXT;
+                cubePicked.Text = ITEM_DROPPED_TEXT;
 
             }
-            else if (cubePicked.Text == ITME_DROPPED_TEXT)
+            else if (cubePicked.Text == ITEM_DROPPED_TEXT)
             {
                 //Performs action/s to open popup for adding cube dropped, etc
                 droppedTime =(int)timerValue;
@@ -244,13 +245,13 @@ namespace NRGScoutingApp
                 App.Current.Properties["lastCubePicked"] = 0;
                 App.Current.Properties["lastCubeDropped"] = 0;
                 App.Current.Properties["tempEventString"] = "";
-                App.Current.Properties["matchEventsString"] = "";
+                App.Current.Properties["tempMatchEvents"] = "";
                 App.Current.SavePropertiesAsync();
             }
             else if(Convert.ToInt32(App.Current.Properties["lastCubePicked"]) == 0 || Convert.ToInt32(App.Current.Properties["lastCubeDropped"]) == 0){}
             else if(Convert.ToInt32(App.Current.Properties["lastCubePicked"]) > Convert.ToInt32(App.Current.Properties["lastCubeDropped"])){
                 cubePicked.Image = "ic_drop_cube.png";
-                cubePicked.Text = ITME_DROPPED_TEXT;
+                cubePicked.Text = ITEM_DROPPED_TEXT;
             }
 
             if (!App.Current.Properties.ContainsKey("timerValue"))
