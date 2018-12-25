@@ -28,30 +28,11 @@ namespace NRGScoutingApp
     public partial class NewMatchStart : ContentPage
     {
 
-        //INTERNAL VARIABLES FOR SETTING IMPORTANT TIMER AND BUTTON VALUES (DO NOT CHANGE THIS)
-        public static readonly double MATCH_SPAN_MS = 150000;
-        public static readonly double MIN_MS = 60000;
-        public static readonly double SEC_MS = 1000;
-        public static readonly String ITEM_PICKED_TEXT = "Cube Picked";
-        public static readonly String ITEM_DROPPED_TEXT = "Cube Dropped";
-        public static readonly String TIMER_START = "Start Timer";
-        public static readonly String TIMER_PAUSE = "Pause Timer";
-
-        public static readonly String ITEM_PICK = "itemPick";
-        public static readonly String ITEM_DROP = "itemDrop";
-        public static readonly String ROBOT_CLIMB = "robotclimb";
-        public static readonly int NUM_DROP_OPTIONS = 4;
-
-        public static readonly int TIMER_INTERVAL_ANDROID = 100;
-        public static readonly int TIMER_INTERVAL_IOS = 1;
-
-        public static readonly String pickItemImage = "";
-
         public NewMatchStart()
         {
             BindingContext = this;
             InitializeComponent();
-            timeSlider.Maximum = MATCH_SPAN_MS;
+            timeSlider.Maximum = ConstantVars.MATCH_SPAN_MS;
             App.Current.Properties["appState"] = "1";
             App.Current.SavePropertiesAsync();
             NavigationPage.SetHasBackButton(this, false);
@@ -73,7 +54,7 @@ namespace NRGScoutingApp
         {
             if (cubeSetDrop)
             {
-                cubePicked.Text = ITEM_DROPPED_TEXT;
+                cubePicked.Text = ConstantVars.ITEM_DROPPED_TEXT;
                 cubePicked.Image = "ic_drop_cube.png";
                 cubeSetDrop = false;
             }
@@ -109,24 +90,24 @@ namespace NRGScoutingApp
                 }
                 timeSlider.IsEnabled = false;
                 isTimerRunning = true;
-                startTimer.Text = TIMER_PAUSE;
+                startTimer.Text = ConstantVars.TIMER_PAUSE;
                 if (Device.RuntimePlatform == "iOS"){
-                    Device.StartTimer(TimeSpan.FromMilliseconds(TIMER_INTERVAL_IOS), () =>
+                    Device.StartTimer(TimeSpan.FromMilliseconds(ConstantVars.TIMER_INTERVAL_IOS), () =>
                     {
-                        if (timerValue >= MATCH_SPAN_MS || !isTimerRunning)
+                        if (timerValue >= ConstantVars.MATCH_SPAN_MS || !isTimerRunning)
                         {
-                            startTimer.Text = TIMER_START;
+                            startTimer.Text = ConstantVars.TIMER_START;
                             return false;
                         }
                         Timer_Elapsed(); return true;
                     });
                 }
                 else if (Device.RuntimePlatform == "Android"){
-                    Device.StartTimer(TimeSpan.FromMilliseconds(TIMER_INTERVAL_ANDROID), () =>
+                    Device.StartTimer(TimeSpan.FromMilliseconds(ConstantVars.TIMER_INTERVAL_ANDROID), () =>
                     {
-                        if (timerValue >= MATCH_SPAN_MS || !isTimerRunning)
+                        if (timerValue >= ConstantVars.MATCH_SPAN_MS || !isTimerRunning)
                         {
-                            startTimer.Text = TIMER_START;
+                            startTimer.Text = ConstantVars.TIMER_START;
                             return false;
                         }
                         Timer_Elapsed(); 
@@ -137,7 +118,7 @@ namespace NRGScoutingApp
             }
             else if (isTimerRunning)
             {
-                startTimer.Text = TIMER_START;
+                startTimer.Text = ConstantVars.TIMER_START;
                 isTimerRunning = false;
                 timeSlider.IsEnabled = true;
             }
@@ -145,15 +126,15 @@ namespace NRGScoutingApp
         private void Timer_Elapsed()
         {
             if (Device.RuntimePlatform=="iOS"){
-                ms += TIMER_INTERVAL_IOS;
-                timerValue += TIMER_INTERVAL_IOS;
+                ms += ConstantVars.TIMER_INTERVAL_IOS;
+                timerValue += ConstantVars.TIMER_INTERVAL_IOS;
             }
             else if (Device.RuntimePlatform == "Android")
             {
-                ms += TIMER_INTERVAL_ANDROID;
-                timerValue += TIMER_INTERVAL_ANDROID;
+                ms += ConstantVars.TIMER_INTERVAL_ANDROID;
+                timerValue += ConstantVars.TIMER_INTERVAL_ANDROID;
             }
-            if (ms >= SEC_MS)
+            if (ms >= ConstantVars.SEC_MS)
             {
                 sec++;
                 ms = 0;
@@ -212,7 +193,7 @@ namespace NRGScoutingApp
                 DisplayAlert("Error", "Timer not Started", "OK");
             }
 
-            else if (cubePicked.Text == ITEM_PICKED_TEXT || cubePicked.Text == ITEM_PICKED_TEXT)
+            else if (cubePicked.Text == ConstantVars.ITEM_PICKED_TEXT || cubePicked.Text == ConstantVars.ITEM_PICKED_TEXT)
             {
                 //Performs actions to open popup for adding cube dropped, etc
                 pickedTime = (int)timerValue;
@@ -223,16 +204,16 @@ namespace NRGScoutingApp
 
                 pickNum++;
                 cubePicked.Image = "ic_drop_cube.png";
-                cubePicked.Text = ITEM_DROPPED_TEXT;
+                cubePicked.Text = ConstantVars.ITEM_DROPPED_TEXT;
 
             }
-            else if (cubePicked.Text == ITEM_DROPPED_TEXT)
+            else if (cubePicked.Text == ConstantVars.ITEM_DROPPED_TEXT)
             {
                 //Performs action/s to open popup for adding cube dropped, etc
                 droppedTime =(int)timerValue;
                 Navigation.PushAsync(new CubeDroppedDialog());
                 cubePicked.Image = "ic_picked_cube.png";
-                cubePicked.Text = ITEM_PICKED_TEXT;
+                cubePicked.Text = ConstantVars.ITEM_PICKED_TEXT;
             }
         }
 
@@ -251,7 +232,7 @@ namespace NRGScoutingApp
             else if(Convert.ToInt32(App.Current.Properties["lastCubePicked"]) == 0 || Convert.ToInt32(App.Current.Properties["lastCubeDropped"]) == 0){}
             else if(Convert.ToInt32(App.Current.Properties["lastCubePicked"]) > Convert.ToInt32(App.Current.Properties["lastCubeDropped"])){
                 cubePicked.Image = "ic_drop_cube.png";
-                cubePicked.Text = ITEM_DROPPED_TEXT;
+                cubePicked.Text = ConstantVars.ITEM_DROPPED_TEXT;
             }
 
             if (!App.Current.Properties.ContainsKey("timerValue"))
@@ -274,10 +255,10 @@ namespace NRGScoutingApp
             int minutes = 0;
             int seconds = 0;
             int milliseconds = 0;
-            minutes = timeValue / (int)MIN_MS;
-            timeValue %= (int)MIN_MS;
-            seconds = timeValue / (int)SEC_MS;
-            timeValue %= (int)SEC_MS;
+            minutes = timeValue / (int)ConstantVars.MIN_MS;
+            timeValue %= (int)ConstantVars.MIN_MS;
+            seconds = timeValue / (int)ConstantVars.SEC_MS;
+            timeValue %= (int)ConstantVars.SEC_MS;
             milliseconds = timeValue;
             return minutes + ":" + seconds.ToString("D2") + "." + (milliseconds / 10).ToString("D2");
         }

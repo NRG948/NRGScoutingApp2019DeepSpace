@@ -71,6 +71,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)MatchFormat.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Ranker.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)TeamsNames.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ConstantVars.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\AboutPage.xaml" />

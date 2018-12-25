@@ -4,6 +4,7 @@ using Xamarin.Forms;
 using System.ComponentModel;
 using System.Linq;
 using Data = System.Collections.Generic.KeyValuePair<string, string>;
+using Contacts;
 
 namespace NRGScoutingApp
 {
@@ -15,24 +16,6 @@ namespace NRGScoutingApp
             BindingContext = this;
             InitializeComponent();
         }
-
-        public static readonly String pickItemImage = "ic_picked_cube.png";
-        public static readonly String dropItemImage = "ic_drop_cube_yellow.png";
-        public static readonly String drop1Image = "ic_scale.png";
-        public static readonly String drop2Image = "ic_switch.png";
-        public static readonly String drop3Image = "ic_scale.png";
-        public static readonly String dropItemCollectorImage = "ic_exchange.png";
-        public static readonly String dropNoneImage = "ic_cancel.png";
-        public static readonly String startClimbImage = "ic_climb_yellow.png";
-
-        public static readonly String pickItemText = "Picked Cube";
-        public static readonly String dropItemText = "Dropped Cube";
-        public static readonly String drop1Text = "Dropped Scale";
-        public static readonly String drop2Text = "Dropped Ally Switch";
-        public static readonly String drop3Text = "Dropped Opp. Switch";
-        public static readonly String dropItemCollectorText = "Dropped Exchange";
-        public static readonly String dropNoneText = "Dropped None";
-        public static readonly String startClimbText = "Start Climb";
 
         public class EventListFormat{ //Constructor for Events View that Users see
             public String image { get; set; }
@@ -67,9 +50,9 @@ namespace NRGScoutingApp
                 switch (eventType)
                 {
                     case (int)MatchFormat.ACTION_TYPE.pickItem:
-                        return pickItemText;
+                        return ConstantVars.PICK_ITEM_TEXT;
                     case (int)MatchFormat.ACTION_TYPE.startClimb:
-                        return startClimbText;
+                        return ConstantVars.START_CLIMB_TEXT;
                 }
             }
             else
@@ -77,44 +60,44 @@ namespace NRGScoutingApp
                 switch (eventType)
                 {
                     case (int)MatchFormat.DROP_TYPE.drop1:
-                        return drop1Text;
+                        return ConstantVars.DROP_1_TEXT;
                     case (int)MatchFormat.DROP_TYPE.drop2:
-                        return drop2Text;
+                        return ConstantVars.DROP_2_TEXT;
                     case (int)MatchFormat.DROP_TYPE.drop3:
-                        return drop3Text;
+                        return ConstantVars.DROP_3_TEXT;
                     case (int)MatchFormat.DROP_TYPE.dropItemCollector:
-                        return dropItemCollectorText;
+                        return ConstantVars.DROP_COLLECTOR_TEXT;
                     case (int)MatchFormat.DROP_TYPE.dropNone:
-                        return dropNoneText;
+                        return ConstantVars.DROP_NONE_TEXT;
                 }
             }
-            return dropItemText;
+            return ConstantVars.DROP_ITEM_TEXT;
         }
 
         public static String returnEventImage(int eventType) {
             if(eventType < 0) {
                 switch (eventType) {
                     case (int)MatchFormat.ACTION_TYPE.pickItem:
-                        return pickItemImage;
+                        return ConstantVars.PICK_ITEM_IMAGE;
                     case (int)MatchFormat.ACTION_TYPE.startClimb:
-                        return startClimbImage;
+                        return ConstantVars.START_CLIMB_IMAGE;
                 }
             }
             else {
                 switch (eventType) {
                     case (int)MatchFormat.DROP_TYPE.drop1:
-                        return drop1Image;
+                        return ConstantVars.DROP_1_IMAGE;
                     case (int)MatchFormat.DROP_TYPE.drop2:
-                        return drop2Image;
+                        return ConstantVars.DROP_2_IMAGE;
                     case (int)MatchFormat.DROP_TYPE.drop3:
-                        return drop3Image;
+                        return ConstantVars.DROP_3_IMAGE;
                     case (int)MatchFormat.DROP_TYPE.dropItemCollector:
-                        return dropItemCollectorImage;
+                        return ConstantVars.DROP_COLLECTOR_IMAGE;
                     case (int)MatchFormat.DROP_TYPE.dropNone:
-                        return dropNoneImage;
+                        return ConstantVars.DROP_NONE_IMAGE;
                 }
             }
-            return dropItemImage;
+            return ConstantVars.DROP_ITEM_IMAGE;
         }
 
         void Handle_Clicked(object sender, System.EventArgs e, List<Data> data)

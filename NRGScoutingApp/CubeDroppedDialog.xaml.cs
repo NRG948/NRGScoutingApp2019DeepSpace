@@ -9,14 +9,6 @@ namespace NRGScoutingApp
 {
     public partial class CubeDroppedDialog
     {
-        readonly String drop1Text = "Scale";
-        readonly String drop2Text = "Ally Switch";
-        readonly String drop3Text = "Opp Switch";
-        readonly String dropItemCollectorText = "Exchange";
-        readonly String drop1Image = "ic_scale.png";
-        readonly String drop2Image = "ic_switch.png";
-        readonly String drop3Image = "ic_switch.png";
-
         public CubeDroppedDialog()
         {
             NavigationPage.SetHasBackButton(this, false);
@@ -79,14 +71,14 @@ namespace NRGScoutingApp
             App.Current.SavePropertiesAsync();
         }
         private void setButtons() {
-            drop1Button.Text = drop1Text;
-            drop2Button.Text = drop2Text;
-            drop3Button.Text = drop3Text;
-            dropItemCollectorButton.Text = dropItemCollectorText;
+            drop1Button.Text = ConstantVars.DROP_1_DIALOG_TEXT;
+            drop2Button.Text = ConstantVars.DROP_2_DIALOG_TEXT;
+            drop3Button.Text = ConstantVars.DROP_3_DIALOG_TEXT;
+            dropItemCollectorButton.Text = ConstantVars.DROP_COLLECTOR_DIALOG_TEXT;
 
-            drop1Button.Image = drop1Image;
-            drop2Button.Image = drop2Image;
-            drop3Button.Image = drop3Image;
+            drop1Button.Image = ConstantVars.DROP_1_DIALOG_IMAGE;
+            drop2Button.Image = ConstantVars.DROP_2_DIALOG_IMAGE;
+            drop3Button.Image = ConstantVars.DROP_3_DIALOG_IMAGE;
 
             drop1Button.FontSize = drop1Button.Width / drop1Button.Text.Length;
             drop2Button.FontSize = drop2Button.Width / drop2Button.Text.Length;
