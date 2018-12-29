@@ -51,7 +51,7 @@ namespace NRGScoutingApp
             if (!App.Current.Properties.ContainsKey("matchEventsString"))
             {
                 App.Current.Properties["matchEventsString"] = "";
-                App.Current.Properties["tempEventString"] = "(";
+                App.Current.Properties["tempMatchEvents"] = "";
                 App.Current.SavePropertiesAsync();
             }
             if (!App.Current.Properties.ContainsKey("newAppear")){}  //DEBUG PURPOSES
@@ -61,8 +61,8 @@ namespace NRGScoutingApp
                 App.Current.Properties["timerValue"] = (int)0;
                 App.Current.Properties["teamStart"] = "";
                 App.Current.Properties["newAppear"] = 0;
-                App.Current.Properties["tempEventString"] = "(";
-                if (!App.Current.Properties["matchEventsString"].ToString().Contains("|"))
+                App.Current.Properties["tempMatchEvents"] = "";
+                if (String.IsNullOrWhiteSpace(App.Current.Properties["matchEventsString"].ToString()))
                 {
                     matches = null;
                     listView.ItemsSource = null;
@@ -70,7 +70,11 @@ namespace NRGScoutingApp
                 App.Current.SavePropertiesAsync();
             }
             else if(App.Current.Properties["newAppear"].ToString() == "0"){
-
+                App.Current.Properties["appState"] = 0;
+                App.Current.Properties["timerValue"] = (int)0;
+                App.Current.Properties["teamStart"] = "";
+                App.Current.Properties["newAppear"] = 0;
+                App.Current.Properties["tempMatchEvents"] = "";
             }
         }
 

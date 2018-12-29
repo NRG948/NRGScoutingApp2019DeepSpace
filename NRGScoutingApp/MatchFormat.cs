@@ -55,15 +55,17 @@ namespace NRGScoutingApp
             public int time { get; set; }
             public int type { get; set; }
         }
-        public static String eventsListToJSONEvents(List<Data> datas){
+        public static JObject eventsListToJSONEvents(List<Data> datas)
+        {
 
             JObject events = new JObject();
             Data[] eventArray = sortListByTime(datas);
+            events.Add("numEvents", eventArray.Length);
             for (int i = 0; i  < eventArray.Length; i++) {
                 events.Add("TE" + i + "_0", eventArray[i].time);
                 events.Add("TE" + i + "_1", eventArray[i].type);
             }
-            return events.ToString(); 
+            return events; 
             }
 
         public static Data[] sortListByTime(List<Data> datas) {

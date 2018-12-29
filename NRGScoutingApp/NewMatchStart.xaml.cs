@@ -197,7 +197,7 @@ namespace NRGScoutingApp
             {
                 //Performs actions to open popup for adding cube dropped, etc
                 pickedTime = (int)timerValue;
-                App.Current.Properties["lastCubePicked"] = (int)pickedTime;
+                App.Current.Properties["lastItemPicked"] = (int)pickedTime;
                 events.Add(new MatchFormat.Data { time = (int)pickedTime, type = (int)MatchFormat.ACTION_TYPE.pickItem });
                 App.Current.SavePropertiesAsync();
                 CubeDroppedDialog.saveEvents();
@@ -222,15 +222,15 @@ namespace NRGScoutingApp
         //TODO: Call Parse Method for match number called and figure out the pickNum and dropNum values and set them
         private void timerValueSetter()
         {
-            if(!App.Current.Properties.ContainsKey("lastCubePicked")){
-                App.Current.Properties["lastCubePicked"] = 0;
-                App.Current.Properties["lastCubeDropped"] = 0;
+            if(!App.Current.Properties.ContainsKey("lastItemPicked")){
+                App.Current.Properties["lastItemPicked"] = 0;
+                App.Current.Properties["lastItemDroppped"] = 0;
                 App.Current.Properties["tempEventString"] = "";
                 App.Current.Properties["tempMatchEvents"] = "";
                 App.Current.SavePropertiesAsync();
             }
-            else if(Convert.ToInt32(App.Current.Properties["lastCubePicked"]) == 0 || Convert.ToInt32(App.Current.Properties["lastCubeDropped"]) == 0){}
-            else if(Convert.ToInt32(App.Current.Properties["lastCubePicked"]) > Convert.ToInt32(App.Current.Properties["lastCubeDropped"])){
+            else if(Convert.ToInt32(App.Current.Properties["lastItemPicked"]) == 0 || Convert.ToInt32(App.Current.Properties["lastItemDropped"]) == 0){}
+            else if(Convert.ToInt32(App.Current.Properties["lastItemDroppped"]) > Convert.ToInt32(App.Current.Properties["lastItemDropped"])){
                 cubePicked.Image = "ic_drop_cube.png";
                 cubePicked.Text = ConstantVars.ITEM_DROPPED_TEXT;
             }
@@ -238,7 +238,6 @@ namespace NRGScoutingApp
             if (!App.Current.Properties.ContainsKey("timerValue"))
             {
                 App.Current.Properties["timerValue"] = (int)timerValue;
-                App.Current.Properties["tempEventString"] = "(";
                 App.Current.SavePropertiesAsync();
             }
             else if (App.Current.Properties.ContainsKey("timerValue") && firstTimerStart == true)

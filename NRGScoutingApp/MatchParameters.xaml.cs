@@ -5,8 +5,9 @@ using Xamarin.Forms;
 using System.ComponentModel;
 using NRGScoutingApp;
 using System.Security.Cryptography;
-using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using System.Xml;
+using Newtonsoft.Json;
 
 namespace NRGScoutingApp
 {
@@ -15,30 +16,31 @@ namespace NRGScoutingApp
         public String teamName = App.Current.Properties["teamStart"].ToString();
         public ParametersFormat paramFormat = new ParametersFormat();
         public MatchEventsFormat eventsFormat = new MatchEventsFormat();
-        MatchFormat.EntryParams Entry = new MatchFormat.EntryParams {
-        team = App.Current.Properties["teamStart"].ToString(),
-        matchNum = 0,
-        side = 0,
+        MatchFormat.EntryParams Entry = new MatchFormat.EntryParams
+        {
+            team = App.Current.Properties["teamStart"].ToString(),
+            matchNum = 0,
+            side = 0,
 
-        crossedB = false,
-        allyItem1 = false,
-        allyItem2 = false,
-        oppItem1 = false,
-        oppItem2 = false,
+            crossedB = false,
+            allyItem1 = false,
+            allyItem2 = false,
+            oppItem1 = false,
+            oppItem2 = false,
 
-        death = false,
-        noClimb = false,
-        soloClimb = false,
-        giveAssistClimb = false,
-        needAssistClimb = false,
-        onClimbArea = false,
+            death = false,
+            noClimb = false,
+            soloClimb = false,
+            giveAssistClimb = false,
+            needAssistClimb = false,
+            onClimbArea = false,
 
-        fouls = 0,
-        yellowCard = false,
-        redCard = false,
-        comments = ""
+            fouls = 0,
+            yellowCard = false,
+            redCard = false,
+            comments = ""
 
-    };
+        };
 
         public MatchParameters()
         {
@@ -69,19 +71,14 @@ namespace NRGScoutingApp
             list.Clear();
         }
 
+        //Confirms user action to go back and clears all data for next match
         async void backClicked(object sender, System.EventArgs e)
         {
-           var text = await DisplayAlert("Alert", "Do you want to discard progress?", "Yes", "No");
+            var text = await DisplayAlert("Alert", "Do you want to discard progress?", "Yes", "No");
             if (text)
             {
-                App.Current.Properties["teamStart"] = "";
-                App.Current.Properties["appState"] = 0;
-                App.Current.Properties["timerValue"] = (int)0;
-                App.Current.Properties["lastCubePicked"] = 0;
-                App.Current.Properties["lastCubeDropped"] = 0;
-                App.Current.Properties["tempEventString"] = "(";
-                await App.Current.SavePropertiesAsync();
-               if (Matches.appRestore == false)
+                clearMatchItems();
+                if (Matches.appRestore == false)
                 {
                     Matches.appRestore = false;
                     await Navigation.PopToRootAsync(true);
@@ -96,9 +93,10 @@ namespace NRGScoutingApp
             }
         }
 
+        //Checks if all neccesary Items exist, clears match data, and goes to Matches Page
         async void saveClicked(object sender, System.EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(matchnum.Text)|| PositionPicker.SelectedIndex < 0) //Checks if Match Number or Picker is Present
+            if (string.IsNullOrWhiteSpace(matchnum.Text) || PositionPicker.SelectedIndex < 0) //Checks if Match Number or Picker is Present
             {
                 if (string.IsNullOrWhiteSpace(matchnum.Text) && PositionPicker.SelectedIndex < 0)
                 {
@@ -113,17 +111,39 @@ namespace NRGScoutingApp
                     await DisplayAlert("Alert!", "Please Enter Position", "OK");
                 }
             }
-            else{
-                String parameters = JsonConvert.SerializeObject(Entry, Newtonsoft.Json.Formatting.Indented);
-                Console.WriteLine(parameters);
-                string events = MatchFormat.eventsListToJSONEvents(NewMatchStart.events);
-                Console.WriteLine(events);
-                App.Current.Properties["tempParams"] = "";
-                App.Current.Properties["tempMatchEvents"] = "";
-                await App.Current.SavePropertiesAsync();
+            else
+            {
+                //Gets and combines all of the match's events to a JObject
+                JObject events = MatchFormat.eventsListToJSONEvents(NewMatchStart.events);
+                JObject parameters = JObject.FromObject(Entry);
+                parameters.Merge(events);
+
+                //Adds or creates new JObject to start all data in app cache
+                JObject data;
+                if (!String.IsNullOrWhiteSpace(App.Current.Properties["matchEventsString"].ToString()))
+                {
+                    data = (JObject)App.Current.Properties["matchEventsString"];
+                }
+                else
+                {
+                    data = new JObject();
+                }
+                if (!data.ContainsKey("Matches"))
+                {
+                    data.Add(new JProperty("Matches", new JArray(new JObject(parameters))));//
+                }
+                else
+                {
+                    JArray temp = (JArray)data["Matches"];
+                    temp.Add(new JObject(parameters));
+                    data["Matches"] = temp;
+                }
+                App.Current.Properties["matchEventsString"] = data;
+                clearMatchItems();
+
                 if (Matches.appRestore == false)
                 {
-                 await  Navigation.PopToRootAsync(true);
+                    await Navigation.PopToRootAsync(true);
                 }
                 else if (Matches.appRestore == true)
                 {
@@ -171,7 +191,7 @@ namespace NRGScoutingApp
 
         void Handle_Toggled_5(object sender, Xamarin.Forms.ToggledEventArgs e)
         {
-           Entry.death = e.Value;
+            Entry.death = e.Value;
             onParamUpdate();
         }
 
@@ -183,7 +203,7 @@ namespace NRGScoutingApp
 
         void Handle_Toggled_7(object sender, Xamarin.Forms.ToggledEventArgs e)
         {
-            Entry.giveAssistClimb = e.Value; 
+            Entry.giveAssistClimb = e.Value;
             onParamUpdate();
         }
 
@@ -238,6 +258,7 @@ namespace NRGScoutingApp
 
             onParamUpdate();
         }
+
         void Fouls_Updated(object sender, Xamarin.Forms.TextChangedEventArgs e)
         {
             try
@@ -254,14 +275,19 @@ namespace NRGScoutingApp
             onParamUpdate();
         }
 
-        void onParamUpdate() {
+        //Updates tempParam Data Cache every time Parameters are updated
+        void onParamUpdate()
+        {
             App.Current.Properties["tempParams"] = Entry;
             App.Current.SavePropertiesAsync();
             Console.WriteLine(JsonConvert.SerializeObject((MatchFormat.EntryParams)App.Current.Properties["tempParams"], Newtonsoft.Json.Formatting.Indented));
         }
 
-        void cacheCheck() {
-            if (!String.IsNullOrWhiteSpace(App.Current.Properties["tempParams"].ToString())) {
+        //Checks if old data exists in app and sets all toggles to reflect the options
+        void cacheCheck()
+        {
+            if (!String.IsNullOrWhiteSpace(App.Current.Properties["tempParams"].ToString()))
+            {
                 MatchFormat.EntryParams entries = (MatchFormat.EntryParams)App.Current.Properties["tempParams"];
                 matchnum.Text = entries.matchNum.ToString();
                 PositionPicker.SelectedIndex = entries.side;
@@ -284,8 +310,24 @@ namespace NRGScoutingApp
                 comments.Text = entries.comments;
                 Entry = entries;
             }
+
+        }
+
+        //Clears all properties for use in next match
+        void clearMatchItems()
+        {
+            App.Current.Properties["teamStart"] = "";
+            App.Current.Properties["appState"] = 0;
+            App.Current.Properties["timerValue"] = (int)0;
+            App.Current.Properties["lastItemPicked"] = 0;
+            App.Current.Properties["lastItemDropped"] = 0;
+            App.Current.Properties["tempParams"] = "";
+            App.Current.Properties["tempMatchEvents"] = "";
+            App.Current.SavePropertiesAsync();
+            NewMatchStart.events.Clear();
         }
     }
 }
 
-                                  
+
+

@@ -4,7 +4,6 @@ using Xamarin.Forms;
 using System.ComponentModel;
 using System.Linq;
 using Data = System.Collections.Generic.KeyValuePair<string, string>;
-using Contacts;
 
 namespace NRGScoutingApp
 {
@@ -25,9 +24,10 @@ namespace NRGScoutingApp
 
         protected override void OnAppearing()
         {
-            if (!String.IsNullOrWhiteSpace(App.Current.Properties["tempMatchEvents"].ToString()))
+            if (!String.IsNullOrWhiteSpace(NewMatchStart.events.ToString()))
             {
-                listView.ItemsSource = sortedEventViewList((List<MatchFormat.Data>)App.Current.Properties["tempMatchEvents"]);
+                listView.ItemsSource = sortedEventViewList((List<MatchFormat.Data>)NewMatchStart.events);
+                Console.WriteLine(NewMatchStart.events);
             }
         }
 
@@ -107,7 +107,11 @@ namespace NRGScoutingApp
 
         void Handle_Tapped(object sender, System.EventArgs e)
         {
-            listView.ItemsSource = sortedEventViewList((List<MatchFormat.Data>)App.Current.Properties["tempMatchEvents"]);
+        }
+
+        void Handle_Clicked_1(object sender, System.EventArgs e)
+        {
+            listView.ItemsSource = sortedEventViewList((List<MatchFormat.Data>)NewMatchStart.events);
         }
     }
 }

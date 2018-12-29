@@ -67,7 +67,7 @@ namespace NRGScoutingApp
             App.Current.SavePropertiesAsync();
         }
         private void setDropTime(){
-            App.Current.Properties["lastCubeDropped"] = (int)NewMatchStart.droppedTime;
+            App.Current.Properties["lastItemDropped"] = (int)NewMatchStart.droppedTime;
             App.Current.SavePropertiesAsync();
         }
         private void setButtons() {
