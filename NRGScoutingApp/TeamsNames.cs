@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections;
 
 namespace NRGScoutingApp
 {
@@ -7,7 +8,7 @@ namespace NRGScoutingApp
     {
         public TeamsNames()
         { }
-        public static readonly List<String> teams = new List<string> {
+        public static readonly List<string> teams = new List<string>(){
             "1 - The Juggernauts",
             "4 - Team 4 ELEMENT",
             "5 - Robocards",
@@ -6872,6 +6873,6 @@ namespace NRGScoutingApp
             "7861 - The Wildkatz",
             "7862 - Mott Bears",
             "7863 - ATA"
-            };
+        };
     }
 }

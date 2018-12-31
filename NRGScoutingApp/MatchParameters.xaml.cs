@@ -94,21 +94,21 @@ namespace NRGScoutingApp
         }
 
         //Checks if all neccesary Items exist, clears match data, and goes to Matches Page
-        async void saveClicked(object sender, System.EventArgs e)
+        void saveClicked(object sender, System.EventArgs e)
         {
             if (string.IsNullOrWhiteSpace(matchnum.Text) || PositionPicker.SelectedIndex < 0) //Checks if Match Number or Picker is Present
             {
                 if (string.IsNullOrWhiteSpace(matchnum.Text) && PositionPicker.SelectedIndex < 0)
                 {
-                    await DisplayAlert("Alert!", "Please Enter Match Number and Position", "OK");
+                     DisplayAlert("Alert!", "Please Enter Match Number and Position", "OK");
                 }
                 else if (string.IsNullOrWhiteSpace(matchnum.Text))
                 {
-                    await DisplayAlert("Alert!", "Please Enter Match Number", "OK");
+                     DisplayAlert("Alert!", "Please Enter Match Number", "OK");
                 }
                 else if (PositionPicker.SelectedIndex < 0)
                 {
-                    await DisplayAlert("Alert!", "Please Enter Position", "OK");
+                     DisplayAlert("Alert!", "Please Enter Position", "OK");
                 }
             }
             else
@@ -128,7 +128,7 @@ namespace NRGScoutingApp
                 {
                     data = new JObject();
                 }
-                if (!data.ContainsKey("Matches"))
+                if (data.Count <= 0)//("Matches"))
                 {
                     data.Add(new JProperty("Matches", new JArray(new JObject(parameters))));//
                 }
@@ -139,16 +139,17 @@ namespace NRGScoutingApp
                     data["Matches"] = temp;
                 }
                 App.Current.Properties["matchEventsString"] = data;
+                 App.Current.SavePropertiesAsync();
                 clearMatchItems();
 
                 if (Matches.appRestore == false)
                 {
-                    await Navigation.PopToRootAsync(true);
+                     Navigation.PopToRootAsync(true);
                 }
                 else if (Matches.appRestore == true)
                 {
                     Matches.appRestore = false;
-                    await Navigation.PopAsync(true);
+                     Navigation.PopAsync(true);
                 }
             }
         }
@@ -314,7 +315,7 @@ namespace NRGScoutingApp
         }
 
         //Clears all properties for use in next match
-        void clearMatchItems()
+         void clearMatchItems()
         {
             App.Current.Properties["teamStart"] = "";
             App.Current.Properties["appState"] = 0;
@@ -323,7 +324,7 @@ namespace NRGScoutingApp
             App.Current.Properties["lastItemDropped"] = 0;
             App.Current.Properties["tempParams"] = "";
             App.Current.Properties["tempMatchEvents"] = "";
-            App.Current.SavePropertiesAsync();
+             App.Current.SavePropertiesAsync();
             NewMatchStart.events.Clear();
         }
     }

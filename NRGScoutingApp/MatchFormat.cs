@@ -36,7 +36,8 @@ namespace NRGScoutingApp
 
         }
 
-        public enum DROP_TYPE {
+        public enum DROP_TYPE
+        {
             dropNone,
             drop1, //Ally Scale
             drop2, //Ally Switch
@@ -46,8 +47,18 @@ namespace NRGScoutingApp
 
         public enum ACTION_TYPE
         {
-            pickItem =-2, //Picked Cube
+            pickItem = -2, //Picked Cube
             startClimb,
+        }
+
+        public enum MATCH_SIDES
+        {
+            Red1,
+            Red2,
+            Red3,
+            Blue1,
+            Blue2,
+            Blue3
         }
 
         public class Data //One MatchEvent (When it happened and what happened
@@ -61,19 +72,17 @@ namespace NRGScoutingApp
             JObject events = new JObject();
             Data[] eventArray = sortListByTime(datas);
             events.Add("numEvents", eventArray.Length);
-            for (int i = 0; i  < eventArray.Length; i++) {
+            for (int i = 0; i < eventArray.Length; i++)
+            {
                 events.Add("TE" + i + "_0", eventArray[i].time);
                 events.Add("TE" + i + "_1", eventArray[i].type);
             }
-            return events; 
-            }
+            return events;
+        }
 
-        public static Data[] sortListByTime(List<Data> datas) {
+        public static Data[] sortListByTime(List<Data> datas)
+        {
             Data[] input = datas.ToArray();
-            for(int i =0; i<input.Length; i++) {
-                Console.WriteLine(input[i].time);
-                Console.WriteLine(input[i].type);
-            }
             Data[] outputArray = new Data[input.Length];
             for (int i = 0; i < input.Length; i++)
             {
@@ -97,8 +106,26 @@ namespace NRGScoutingApp
             return outputArray;
         }
 
-        public class EntryEvents {
-
+        public static String matchSideFromEnum(int side)
+        {
+            switch (side)
+            {
+                case (int)MATCH_SIDES.Red1:
+                    return ConstantVars.red1Text;
+                case (int)MATCH_SIDES.Red2:
+                    return ConstantVars.red2Text;
+                case (int)MATCH_SIDES.Red3:
+                    return ConstantVars.red3Text;
+                case (int)MATCH_SIDES.Blue1:
+                    return ConstantVars.blue1Text;
+                case (int)MATCH_SIDES.Blue2:
+                    return ConstantVars.blue2Text;
+                case (int)MATCH_SIDES.Blue3:
+                    return ConstantVars.blue3Text;
+            }
+            return "Error";
         }
+
+        public static int teamNameOrNum = 1;
     }
 }

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Xamarin.Forms;
 using System.Security.Cryptography.X509Certificates;
 using System.Globalization;
-using UIKit;
+
 
 namespace NRGScoutingApp
 {

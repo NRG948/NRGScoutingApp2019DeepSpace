@@ -5,6 +5,8 @@ using Rg.Plugins.Popup.Services;
 using System.Security.Cryptography.X509Certificates;
 using System.Globalization;
 using Plugin.Clipboard;
+using Newtonsoft.Json.Linq;
+using Newtonsoft.Json;
 
 
 namespace NRGScoutingApp
@@ -15,10 +17,14 @@ namespace NRGScoutingApp
         {
             BindingContext = this;
             InitializeComponent();
+            setExportEntries();
         }
-        String exportEntries = App.Current.Properties["matchEventsString"].ToString(); //TODO: Add Data From Entries to this TextField
 
-        public string ExportDisplay { get { return exportEntries; } }
+
+        //public string ExportDisplay {
+           // get {
+           //     return exportEntries;
+           //} }
         void cancelClicked(object sender, System.EventArgs e)
         {
             PopupNavigation.Instance.PopAsync(true);
@@ -27,6 +33,18 @@ namespace NRGScoutingApp
         {
             CrossClipboard.Current.SetText(exportDisplay.Text);
             PopupNavigation.Instance.PopAsync(true);
+        }
+        void setExportEntries()
+        {
+            if(!String.IsNullOrWhiteSpace(App.Current.Properties["matchEventsString"].ToString())) // || (JObject) App.Current.Properties["matchEventsString"].Count > 0)
+            {
+                String exportEntries = JsonConvert.SerializeObject((JObject)App.Current.Properties["matchEventsString"], Formatting.None);
+                exportDisplay.Text = exportEntries;
+            }
+            else
+            {
+                exportDisplay.Text = "";
+            }
         }
     }
 }

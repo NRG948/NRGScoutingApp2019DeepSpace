@@ -11,6 +11,7 @@ using Xamarin.Forms.Xaml;
 using System.Text;
 using System.Threading.Tasks;
 using System.Linq;
+using Java.Util;
 
 
 namespace NRGScoutingApp
@@ -55,7 +56,8 @@ namespace NRGScoutingApp
             //MatchesList.EndRefresh();
         }
 
-        List<String> teams = TeamsNames.teams;
+
+        List<string> teams =TeamsNames.teams;
 
     }
 

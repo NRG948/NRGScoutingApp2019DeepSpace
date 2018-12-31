@@ -1,18 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using Xamarin.Forms.PlatformConfiguration.iOSSpecific;
-using Xamarin.Forms.PlatformConfiguration;
 using Xamarin.Forms;
-using System.Security.Cryptography.X509Certificates;
-using Xamarin.Forms.Platform;
-using NRGScoutingApp;
-using Newtonsoft.Json;
-using Xamarin.Forms.Xaml;
-using System.Text;
-using System.Threading.Tasks;
 using System.Linq;
 using Rg.Plugins.Popup.Services;
-using Data = System.Collections.Generic.KeyValuePair<string, string>;
+using Newtonsoft.Json.Linq;
 
 
 
@@ -35,7 +26,7 @@ namespace NRGScoutingApp
             matchConfirm();
             App.Current.Properties["newAppear"] = 0;
             App.Current.SavePropertiesAsync();
-           // MatchesList.ItemsSource = teams;
+            populateMatchesList();
          }
 
         void matchStart(object sender, System.EventArgs e)
@@ -43,7 +34,7 @@ namespace NRGScoutingApp
             Navigation.PushAsync(new MatchEntryStart());
         }
 
-        List<Data> matches; 
+        List<MatchesListFormat> matchesList;
 
         protected override void OnAppearing()
         {
@@ -62,11 +53,7 @@ namespace NRGScoutingApp
                 App.Current.Properties["teamStart"] = "";
                 App.Current.Properties["newAppear"] = 0;
                 App.Current.Properties["tempMatchEvents"] = "";
-                if (String.IsNullOrWhiteSpace(App.Current.Properties["matchEventsString"].ToString()))
-                {
-                    matches = null;
-                    listView.ItemsSource = null;
-                }
+                populateMatchesList();
                 App.Current.SavePropertiesAsync();
             }
             else if(App.Current.Properties["newAppear"].ToString() == "0"){
@@ -76,6 +63,7 @@ namespace NRGScoutingApp
                 App.Current.Properties["newAppear"] = 0;
                 App.Current.Properties["tempMatchEvents"] = "";
             }
+            populateMatchesList();
         }
 
        void importClicked(object sender, System.EventArgs e)
@@ -88,20 +76,23 @@ namespace NRGScoutingApp
             PopupNavigation.Instance.PushAsync(new ExportDialog());
         }
 
-        void newClicked(object sender, System.EventArgs e)
+        async void newClicked(object sender, System.EventArgs e)
         {
             popNav = false;
             appRestore = false;
-            Navigation.PushAsync(new MatchEntryStart());
+            await Navigation.PushAsync(new MatchEntryStart());
              
         }
 
         private void SearchBar_OnTextChanged(object sender, TextChangedEventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(e.NewTextValue))
-                listView.ItemsSource = matches;
-            else
-                listView.ItemsSource = matches.Where( matches => matches.Key.Contains(e.NewTextValue) || matches.Value.Contains(e.NewTextValue));
+            if (string.IsNullOrWhiteSpace(e.NewTextValue)) 
+            {
+                listView.ItemsSource = matchesList;
+             }
+
+            else if(matchesList != null)
+                listView.ItemsSource = matchesList.Where(matchesList => matchesList.teamNameAndSide.Contains(e.NewTextValue) || matchesList.matchNum.Contains(e.NewTextValue));
         }
 
         void matchConfirm(){
@@ -136,11 +127,70 @@ namespace NRGScoutingApp
                 App.Current.Properties["tempMatchEvents"] = "";
                 App.Current.SavePropertiesAsync();
             }
+            populateMatchesList();
         }
 
         void Handle_Tapped(object sender, System.EventArgs e)
         {
 
+        }
+
+        public class MatchesListFormat
+        {
+            public String matchNum { get; set; }
+            public String teamNameAndSide { get; set; }
+        }
+
+        void populateMatchesList()
+        {
+            JObject x;
+            try
+            {
+                x = (JObject)App.Current.Properties["matchEventsString"];
+            }
+            catch (System.InvalidCastException)
+            {
+                Console.WriteLine("catch invalid cast expec");
+                Console.WriteLine(App.Current.Properties["matchEventsString"].ToString());
+                matchesList = null;
+                listView.ItemsSource = null;
+                x = new JObject();
+            }
+
+            if (!x.HasValues)
+            {
+                matchesList = null;
+                listView.ItemsSource = null;
+            }
+            else
+            {
+
+                JObject matchesJSON = (JObject)App.Current.Properties["matchEventsString"];
+                JArray temp = (JArray)matchesJSON["Matches"];
+                //Will Contain all items for matches list
+                matchesList = new List<MatchesListFormat>();
+                for (int i = 0; i < temp.Count; i++)
+                {
+                    JObject match = (JObject)temp[i];
+                    String teamIdentifier = match["team"].ToString().Split('-')[MatchFormat.teamNameOrNum];
+                    if (MatchFormat.teamNameOrNum == 0)
+                    {
+                        teamIdentifier = teamIdentifier.Substring(0, teamIdentifier.Length - 1);
+                    }
+                    else
+                    {
+                        teamIdentifier = teamIdentifier.Substring(1);
+                    }
+
+                    matchesList.Add(new MatchesListFormat
+                    {
+                        matchNum = "Match " + match["matchNum"].ToString(),
+                        teamNameAndSide = teamIdentifier + " - " + MatchFormat.matchSideFromEnum((int)match["side"]
+                    )
+                    });
+                }
+                listView.ItemsSource = matchesList;
+            }
         }
 
     }

@@ -47,5 +47,14 @@ namespace NRGScoutingApp
 
         public static readonly int TIMER_INTERVAL_ANDROID = 100;
         public static readonly int TIMER_INTERVAL_IOS = 1;
+
+
+
+        public static readonly String red1Text = "Red 1";
+        public static readonly String red2Text = "Red 2";
+        public static readonly String red3Text = "Red 3";
+        public static readonly String blue1Text = "Blue 1";
+        public static readonly String blue2Text = "Blue 2";
+        public static readonly String blue3Text = "Blue 3";
     }
 }

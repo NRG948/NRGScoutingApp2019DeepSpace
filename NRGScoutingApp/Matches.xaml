@@ -20,21 +20,21 @@
                 <ListView.ItemTemplate>
                   <DataTemplate>
                     <ViewCell>
-                        <ContentView Margin="0" Padding="0">
-                                 <ContentView.GestureRecognizers>
+                        <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Padding="0" Margin="0">
+                                <StackLayout.GestureRecognizers>
                                     <TapGestureRecognizer Tapped="Handle_Tapped"
                                                           NumberOfTapsRequired="2"/>
-                                </ContentView.GestureRecognizers>
-                                <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
-                                  <Label Text="{Binding Path=Key}"
+                                </StackLayout.GestureRecognizers>
+                                  <Label Text="{Binding matchNum}"
                                            x:Name="key"
-                                           HorizontalTextAlignment="Start"/>
-                                    <Label Text="{Binding Path=Value}"
+                                           HorizontalTextAlignment="Start"
+                                         Margin="0"/>
+                                    <Label Text="{Binding teamNameAndSide}"
                                            x:Name="value"
-                                           HorizontalTextAlignment="Start"/>
+                                           HorizontalTextAlignment="Start"
+                                           Margin="0"/>
                                      </StackLayout>
-                            </ContentView>
-                      </ViewCell>
+                        </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
