@@ -5,8 +5,6 @@ using System.Linq;
 using Rg.Plugins.Popup.Services;
 using Newtonsoft.Json.Linq;
 
-
-
 namespace NRGScoutingApp
 {
     public partial class Matches : ContentPage
@@ -63,7 +61,6 @@ namespace NRGScoutingApp
                 App.Current.Properties["newAppear"] = 0;
                 App.Current.Properties["tempMatchEvents"] = "";
             }
-            DisplayAlert("Test", App.Current.Properties["matchEventsString"].ToString(), "OK");
             populateMatchesList();
         }
 
@@ -151,12 +148,8 @@ namespace NRGScoutingApp
                 {
                     x = JObject.Parse(App.Current.Properties["matchEventsString"].ToString());
                 }
-                catch (System.InvalidCastException)
-                {
-                    Console.WriteLine("catch invalid cast expec");
-                    Console.WriteLine(App.Current.Properties["matchEventsString"].ToString());
-                    matchesList = null;
-                    listView.ItemsSource = null;
+                catch (NullReferenceException) {
+                    Console.WriteLine("Caught NullRepEx for populateMatchesList");
                     x = new JObject();
                 }
             }
