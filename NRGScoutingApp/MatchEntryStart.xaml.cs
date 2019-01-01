@@ -11,7 +11,6 @@ using Xamarin.Forms.Xaml;
 using System.Text;
 using System.Threading.Tasks;
 using System.Linq;
-using Java.Util;
 
 
 namespace NRGScoutingApp

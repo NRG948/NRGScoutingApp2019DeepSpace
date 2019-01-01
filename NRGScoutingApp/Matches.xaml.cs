@@ -39,7 +39,7 @@ namespace NRGScoutingApp
         protected override void OnAppearing()
         {
             popNav = false;
-            if (!App.Current.Properties.ContainsKey("matchEventsString"))
+           if (!App.Current.Properties.ContainsKey("matchEventsString"))
             {
                 App.Current.Properties["matchEventsString"] = "";
                 App.Current.Properties["tempMatchEvents"] = "";
@@ -63,6 +63,7 @@ namespace NRGScoutingApp
                 App.Current.Properties["newAppear"] = 0;
                 App.Current.Properties["tempMatchEvents"] = "";
             }
+            DisplayAlert("Test", App.Current.Properties["matchEventsString"].ToString(), "OK");
             populateMatchesList();
         }
 
@@ -144,19 +145,24 @@ namespace NRGScoutingApp
         void populateMatchesList()
         {
             JObject x;
-            try
+            if (!String.IsNullOrWhiteSpace(App.Current.Properties["matchEventsString"].ToString())) 
             {
-                x = (JObject)App.Current.Properties["matchEventsString"];
+                try
+                {
+                    x = JObject.Parse(App.Current.Properties["matchEventsString"].ToString());
+                }
+                catch (System.InvalidCastException)
+                {
+                    Console.WriteLine("catch invalid cast expec");
+                    Console.WriteLine(App.Current.Properties["matchEventsString"].ToString());
+                    matchesList = null;
+                    listView.ItemsSource = null;
+                    x = new JObject();
+                }
             }
-            catch (System.InvalidCastException)
-            {
-                Console.WriteLine("catch invalid cast expec");
-                Console.WriteLine(App.Current.Properties["matchEventsString"].ToString());
-                matchesList = null;
-                listView.ItemsSource = null;
+            else {
                 x = new JObject();
             }
-
             if (!x.HasValues)
             {
                 matchesList = null;
@@ -165,7 +171,7 @@ namespace NRGScoutingApp
             else
             {
 
-                JObject matchesJSON = (JObject)App.Current.Properties["matchEventsString"];
+                JObject matchesJSON = JObject.Parse(App.Current.Properties["matchEventsString"].ToString());
                 JArray temp = (JArray)matchesJSON["Matches"];
                 //Will Contain all items for matches list
                 matchesList = new List<MatchesListFormat>();

@@ -94,21 +94,21 @@ namespace NRGScoutingApp
         }
 
         //Checks if all neccesary Items exist, clears match data, and goes to Matches Page
-        void saveClicked(object sender, System.EventArgs e)
+        async void saveClicked(object sender, System.EventArgs e)
         {
             if (string.IsNullOrWhiteSpace(matchnum.Text) || PositionPicker.SelectedIndex < 0) //Checks if Match Number or Picker is Present
             {
                 if (string.IsNullOrWhiteSpace(matchnum.Text) && PositionPicker.SelectedIndex < 0)
                 {
-                     DisplayAlert("Alert!", "Please Enter Match Number and Position", "OK");
+                     await DisplayAlert("Alert!", "Please Enter Match Number and Position", "OK");
                 }
                 else if (string.IsNullOrWhiteSpace(matchnum.Text))
                 {
-                     DisplayAlert("Alert!", "Please Enter Match Number", "OK");
+                    await DisplayAlert("Alert!", "Please Enter Match Number", "OK");
                 }
                 else if (PositionPicker.SelectedIndex < 0)
                 {
-                     DisplayAlert("Alert!", "Please Enter Position", "OK");
+                    await DisplayAlert("Alert!", "Please Enter Position", "OK");
                 }
             }
             else
@@ -122,7 +122,8 @@ namespace NRGScoutingApp
                 JObject data;
                 if (!String.IsNullOrWhiteSpace(App.Current.Properties["matchEventsString"].ToString()))
                 {
-                    data = (JObject)App.Current.Properties["matchEventsString"];
+                    data = JObject.Parse(App.Current.Properties["matchEventsString"].ToString());
+                   // (JObject)App.Current.Properties["matchEventsString"];
                 }
                 else
                 {
@@ -138,18 +139,18 @@ namespace NRGScoutingApp
                     temp.Add(new JObject(parameters));
                     data["Matches"] = temp;
                 }
-                App.Current.Properties["matchEventsString"] = data;
-                 App.Current.SavePropertiesAsync();
+                App.Current.Properties["matchEventsString"] = JsonConvert.SerializeObject(data);
+                await App.Current.SavePropertiesAsync();
                 clearMatchItems();
 
                 if (Matches.appRestore == false)
                 {
-                     Navigation.PopToRootAsync(true);
+                    await Navigation.PopToRootAsync(true);
                 }
                 else if (Matches.appRestore == true)
                 {
                     Matches.appRestore = false;
-                     Navigation.PopAsync(true);
+                    await Navigation.PopAsync(true);
                 }
             }
         }
