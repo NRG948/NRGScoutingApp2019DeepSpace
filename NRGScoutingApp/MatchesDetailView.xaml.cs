@@ -19,6 +19,7 @@ namespace NRGScoutingApp
 
         async void cancelClicked(object sender, System.EventArgs e)
         {
+            cancelAction.IsEnabled = false;
            await Navigation.PopAsync();
         }
         async void openClicked(object sender, System.EventArgs e)

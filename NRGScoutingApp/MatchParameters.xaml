@@ -227,8 +227,13 @@
                 Direction="Row"
                 AlignItems="Center"
                 JustifyContent="Center">
-                <Button Text="Back" Clicked="backClicked" Margin="5,1"/>
-                <Button Text="Save" Clicked="saveClicked" Margin="5,1"/>
+                <Button Text="Back" 
+                        Clicked="backClicked" 
+                        Margin="5,1"/>
+                <Button x:Name="saveButton"
+                        Text="Save" 
+                        Clicked="saveClicked" 
+                        Margin="5,1"/>
             </FlexLayout>
            </StackLayout>
           </ScrollView>

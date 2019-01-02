@@ -115,6 +115,9 @@ namespace NRGScoutingApp
             }
             else
             {
+                //Disables save button so app doesn't crash when user taps many times
+                saveButton.IsEnabled = false;
+
                 //Gets and combines all of the match's events to a JObject
                 JObject events = MatchFormat.eventsListToJSONEvents(NewMatchStart.events);
                 events.Add("timerValue", NewMatchStart.timerValue);
@@ -149,7 +152,6 @@ namespace NRGScoutingApp
                 App.Current.Properties["matchEventsString"] = JsonConvert.SerializeObject(data);
                 await App.Current.SavePropertiesAsync();
                 clearMatchItems();
-
                 if (Matches.appRestore == false)
                 {
                     Navigation.PopToRootAsync(true);
