@@ -15,7 +15,7 @@
                                    ScaleIn="1.2"
                                    ScaleOut="0.8" />
     </pages:PopupPage.Animation>
-    <ScrollView>
+    <StackLayout VerticalOptions="CenterAndExpand">
          <Frame HorizontalOptions="Center"
              VerticalOptions="Center"
            BackgroundColor="#ffffff"
@@ -28,20 +28,26 @@
                FontSize="20" 
                Margin="2,10"
                FontAttributes="Bold"/>
-        <ScrollView>
-            <Label Text="{Binding ExportDisplay}" LineBreakMode="CharacterWrap" x:Name="exportDisplay"/>
+        <ScrollView Orientation="Vertical">
+            <Label Text="" 
+                   LineBreakMode="CharacterWrap" 
+                   x:Name="exportDisplay"
+                   MaxLines="25"/>
         </ScrollView>
         <FlexLayout 
             Direction="Row"
             AlignItems="End">
-         <Button Text="Cancel" Clicked="cancelClicked" Margin="5,3"/>
-            <Button Text="Copy to Clipboard" 
+             <Button Text="Cancel" 
+                     Clicked="cancelClicked" 
+                     Margin="5,3"/>
+            <Button x:Name="copyButton"
+                    Text="Copy to Clipboard" 
                     Margin="10,3" 
                     Clicked="copyClicked"/>
                 </FlexLayout>
                 </StackLayout>
                 </Frame>
-    </ScrollView>
+    </StackLayout>
 </pages:PopupPage>
 <!--xmlns:animations="clr-namespace:Rg.Plugins.Popup.Animations;assembly=Rg.Plugins.Popup"
                  ios:Page.UseSafeArea="true"

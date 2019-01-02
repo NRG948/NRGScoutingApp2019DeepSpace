@@ -15,17 +15,10 @@ namespace NRGScoutingApp
     {
         public ExportDialog()
         {
-            BindingContext = this;
             InitializeComponent();
             setExportEntries();
         }
-
-
-        //public string ExportDisplay {
-           // get {
-           //     return exportEntries;
-           //} }
-        void cancelClicked(object sender, System.EventArgs e)
+       void cancelClicked(object sender, System.EventArgs e)
         {
             PopupNavigation.Instance.PopAsync(true);
         }
@@ -34,16 +27,20 @@ namespace NRGScoutingApp
             CrossClipboard.Current.SetText(exportDisplay.Text);
             PopupNavigation.Instance.PopAsync(true);
         }
+
+        //Gets entries from device storage and sets them into the text field (or disables field if empty)
         void setExportEntries()
         {
-            if(!String.IsNullOrWhiteSpace(App.Current.Properties["matchEventsString"].ToString())) // || (JObject) App.Current.Properties["matchEventsString"].Count > 0)
+            if(!String.IsNullOrWhiteSpace(App.Current.Properties["matchEventsString"].ToString()))
             {
-                String exportEntries = JsonConvert.SerializeObject((JObject)App.Current.Properties["matchEventsString"], Formatting.None);
+                String exportEntries = JsonConvert.SerializeObject(
+                JObject.Parse(App.Current.Properties["matchEventsString"].ToString()),Formatting.None);
                 exportDisplay.Text = exportEntries;
             }
             else
             {
-                exportDisplay.Text = "";
+                copyButton.IsEnabled = false;
+                exportDisplay.Text = "No Entries Yet!";
             }
         }
     }
