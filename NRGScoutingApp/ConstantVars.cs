@@ -12,7 +12,7 @@ namespace NRGScoutingApp
         public static readonly String DROP_2_DIALOG_IMAGE = "ic_switch.png";
         public static readonly String DROP_3_DIALOG_IMAGE = "ic_switch.png";
 
-        //Match Events
+        //Match Events Page
         public static readonly String PICK_ITEM_IMAGE = "ic_picked_cube.png";
         public static readonly String DROP_ITEM_IMAGE = "ic_drop_cube_yellow.png";
         public static readonly String DROP_1_IMAGE = "ic_scale.png";
@@ -30,6 +30,8 @@ namespace NRGScoutingApp
         public static readonly String DROP_COLLECTOR_TEXT = "Dropped Exchange";
         public static readonly String DROP_NONE_TEXT = "Dropped None";
         public static readonly String START_CLIMB_TEXT = "Start Climb";
+        public static readonly String DROP_KEYWORD = "Drop";
+        public static readonly String PICK_KEYWORD = "Pick";
 
         //INTERNAL VARIABLES FOR SETTING IMPORTANT TIMER AND BUTTON VALUES (DO NOT CHANGE THIS)
         public static readonly double MATCH_SPAN_MS = 150000;

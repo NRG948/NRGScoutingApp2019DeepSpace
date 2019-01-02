@@ -9,29 +9,32 @@ namespace NRGScoutingApp
 {
     public partial class MatchEvents : ContentPage
     {
-        //StringFormat paramFormat = new StringFormat();
         public MatchEvents()
         {
             BindingContext = this;
             InitializeComponent();
         }
 
-        public class EventListFormat{ //Constructor for Events View that Users see
+        //Constructor for Events View that Users see
+        public class EventListFormat{ 
             public String image { get; set; }
             public String eventName { get; set; }
             public String timeOccur { get; set; }
         }
 
+        List<EventListFormat> eventsList;
+
         protected override void OnAppearing()
         {
             if (!String.IsNullOrWhiteSpace(NewMatchStart.events.ToString()))
             {
-                listView.ItemsSource = sortedEventViewList((List<MatchFormat.Data>)NewMatchStart.events);
-                Console.WriteLine(NewMatchStart.events);
+                eventsList = EventViewList((List<MatchFormat.Data>)NewMatchStart.events);
+                listView.ItemsSource = eventsList;
             }
         }
 
-        public static List<EventListFormat> sortedEventViewList(List<MatchFormat.Data> matchData) {
+        //Populates List that contains all data for each timer event to appear on the Match Events Screen
+        public static List<EventListFormat> EventViewList(List<MatchFormat.Data> matchData) {
             List<EventListFormat> listData = new List<EventListFormat>();
             for (int i = 0; i < matchData.Count; i++)
             {
@@ -105,13 +108,49 @@ namespace NRGScoutingApp
 
         }
 
-        void Handle_Tapped(object sender, System.EventArgs e)
+        async void eventTapped(object sender, Xamarin.Forms.ItemTappedEventArgs e)
         {
+            int index = (listView.ItemsSource as List<EventListFormat>).IndexOf(e.Item as EventListFormat) ;
+            var del = await DisplayAlert("Alert", "Are you sure you want to delete this event?", "No", "Yes");
+            if (!del)
+            {
+                if (eventsList[index].eventName.Contains(ConstantVars.PICK_KEYWORD)) {
+                    if((index+1) < eventsList.Count && eventsList[index + 1].eventName.Contains(ConstantVars.DROP_KEYWORD)) {
+                        removeAtIndex(index + 1);
+                        removeAtIndex(index);
+                    }
+                    else {
+                        removeAtIndex(index);
+                    }
+                }
+                else if(eventsList[index].eventName.Contains(ConstantVars.DROP_KEYWORD)) 
+                {
+                    if ((index - 1) >= 0 && eventsList[index - 1].eventName.Contains(ConstantVars.PICK_KEYWORD))
+                    {
+                        removeAtIndex(index - 1);
+                        removeAtIndex(index - 1);
+                    }
+                    else {
+                        removeAtIndex(index);
+                    }
+                }
+                else { 
+                removeAtIndex(index);
+                }
+            }
+            listView.ItemsSource = null;
+            listView.ItemsSource = eventsList;
+        }
+
+        void removeAtIndex(int index) {
+            NewMatchStart.events.RemoveAt(index);
+            eventsList.RemoveAt(index);
+            CubeDroppedDialog.saveEvents();
         }
 
         void Handle_Clicked_1(object sender, System.EventArgs e)
         {
-            listView.ItemsSource = sortedEventViewList((List<MatchFormat.Data>)NewMatchStart.events);
+            listView.ItemsSource = EventViewList((List<MatchFormat.Data>)NewMatchStart.events);
         }
     }
 }
