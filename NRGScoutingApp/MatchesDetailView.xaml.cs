@@ -48,9 +48,12 @@ namespace NRGScoutingApp
                 });
                 CubeDroppedDialog.saveEvents();
             }
+            App.Current.Properties["timerValue"] = Convert.ToInt32(val.Property("timerValue").Value);
             App.Current.Properties["teamStart"] = val.Property("team").Value;
-            await Navigation.PushAsync(new MatchEntryEditTab());
+            await App.Current.SavePropertiesAsync();
+            Navigation.PushAsync(new MatchEntryEditTab());
         }
+
         async void deleteClicked(object sender, System.EventArgs e)
         {
             var delete = await DisplayAlert("Alert", "Are you sure you want to delete this entry?", "No", "Yes");

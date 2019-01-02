@@ -10,7 +10,7 @@
         <StackLayout>
             <ScrollView Padding="8">
                 <Label x:Name="matchDetailJSON" 
-                    MinimumHeightRequest="50" MaxLines="30"/>
+                    MinimumHeightRequest="50"/>
             </ScrollView>
            <Grid HorizontalOptions="Center"
                 VerticalOptions="Center"

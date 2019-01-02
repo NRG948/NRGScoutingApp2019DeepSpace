@@ -117,6 +117,7 @@ namespace NRGScoutingApp
             {
                 //Gets and combines all of the match's events to a JObject
                 JObject events = MatchFormat.eventsListToJSONEvents(NewMatchStart.events);
+                events.Add("timerValue", NewMatchStart.timerValue);
                 JObject parameters = JObject.FromObject(Entry);
                 parameters.Merge(events);
 
