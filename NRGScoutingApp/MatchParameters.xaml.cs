@@ -8,6 +8,8 @@ using System.Security.Cryptography;
 using Newtonsoft.Json.Linq;
 using System.Xml;
 using Newtonsoft.Json;
+using System.Threading;
+using System.Linq;
 
 namespace NRGScoutingApp
 {
@@ -16,7 +18,7 @@ namespace NRGScoutingApp
         public String teamName = App.Current.Properties["teamStart"].ToString();
         public ParametersFormat paramFormat = new ParametersFormat();
         public MatchEventsFormat eventsFormat = new MatchEventsFormat();
-        MatchFormat.EntryParams Entry = new MatchFormat.EntryParams
+        public static MatchFormat.EntryParams Entry = new MatchFormat.EntryParams
         {
             team = App.Current.Properties["teamStart"].ToString(),
             matchNum = 0,
@@ -123,19 +125,23 @@ namespace NRGScoutingApp
                 if (!String.IsNullOrWhiteSpace(App.Current.Properties["matchEventsString"].ToString()))
                 {
                     data = JObject.Parse(App.Current.Properties["matchEventsString"].ToString());
-                   // (JObject)App.Current.Properties["matchEventsString"];
                 }
                 else
                 {
                     data = new JObject();
                 }
-                if (data.Count <= 0)//("Matches"))
+                if (data.Count <= 0)
                 {
                     data.Add(new JProperty("Matches", new JArray(new JObject(parameters))));//
                 }
                 else
                 {
                     JArray temp = (JArray)data["Matches"];
+                    foreach(var match in temp.ToList()) {
+                        if(Convert.ToInt32(match["matchNum"]) == Entry.matchNum && Convert.ToInt32(match["side"]) == Entry.side) {
+                            temp.Remove(match);
+                        }
+                    }
                     temp.Add(new JObject(parameters));
                     data["Matches"] = temp;
                 }
@@ -145,12 +151,12 @@ namespace NRGScoutingApp
 
                 if (Matches.appRestore == false)
                 {
-                    await Navigation.PopToRootAsync(true);
+                    Navigation.PopToRootAsync(true);
                 }
                 else if (Matches.appRestore == true)
                 {
                     Matches.appRestore = false;
-                    await Navigation.PopAsync(true);
+                    Navigation.PopAsync(true);
                 }
             }
         }

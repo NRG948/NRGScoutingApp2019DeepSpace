@@ -11,21 +11,17 @@
     <ToolbarItem Text="+" Clicked="newClicked"/>
     <ToolbarItem Icon="ic_import_web.png" Clicked="importClicked"/>
     <ToolbarItem Icon="ic_export_web.png" Clicked="exportClicked"/>
+    <ToolbarItem Text="" Clicked="settingsClicked"/>
    </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
-            <Button Text = "hi" Clicked="matchStart"/>
-           <SearchBar Placeholder="Match Number" TextChanged="SearchBar_OnTextChanged"/>
-           <ListView x:Name="listView" Margin="0,0,0,0">
+         <SearchBar Placeholder="Match Number" TextChanged="SearchBar_OnTextChanged"/>
+           <ListView x:Name="listView" Margin="0,0,0,0" ItemTapped="Handle_ItemTapped">
                 <ListView.ItemTemplate>
                   <DataTemplate>
                     <ViewCell>
                         <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Padding="0" Margin="0">
-                                <StackLayout.GestureRecognizers>
-                                    <TapGestureRecognizer Tapped="Handle_Tapped"
-                                                          NumberOfTapsRequired="2"/>
-                                </StackLayout.GestureRecognizers>
-                                  <Label Text="{Binding matchNum}"
+                                <Label Text="{Binding matchNum}"
                                            x:Name="key"
                                            HorizontalTextAlignment="Start"
                                          Margin="0"/>

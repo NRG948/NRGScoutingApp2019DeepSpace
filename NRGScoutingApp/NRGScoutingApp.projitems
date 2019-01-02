@@ -72,6 +72,9 @@
     <Compile Include="$(MSBuildThisFileDirectory)Ranker.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)TeamsNames.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ConstantVars.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MatchesDetailView.xaml.cs">
+      <DependentUpon>MatchesDetailView.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\AboutPage.xaml" />
@@ -120,6 +123,10 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)ImportDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)MatchesDetailView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>

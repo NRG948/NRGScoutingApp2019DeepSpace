@@ -17,8 +17,9 @@ namespace NRGScoutingApp
 
         public static Boolean appRestore;
         public Boolean popNav;
+        List<MatchesListFormat> matchesList;
 
-    public Matches()
+        public Matches()
         {
             InitializeComponent();
             matchConfirm();
@@ -26,13 +27,6 @@ namespace NRGScoutingApp
             App.Current.SavePropertiesAsync();
             populateMatchesList();
          }
-
-        void matchStart(object sender, System.EventArgs e)
-        {
-            Navigation.PushAsync(new MatchEntryStart());
-        }
-
-        List<MatchesListFormat> matchesList;
 
         protected override void OnAppearing()
         {
@@ -128,7 +122,14 @@ namespace NRGScoutingApp
             populateMatchesList();
         }
 
-        void Handle_Tapped(object sender, System.EventArgs e)
+        void Handle_ItemTapped(object sender, Xamarin.Forms.ItemTappedEventArgs e)
+        {
+            int index = (listView.ItemsSource as List<MatchesListFormat>).IndexOf(e.Item as MatchesListFormat);
+            Console.WriteLine(index);
+            Navigation.PushAsync(new MatchesDetailView(index));
+        }
+
+        void settingsClicked(object sender, System.EventArgs e)
         {
 
         }
