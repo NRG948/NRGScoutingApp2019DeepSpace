@@ -32,7 +32,7 @@
             <Label Text="" 
                    LineBreakMode="CharacterWrap" 
                    x:Name="exportDisplay"
-                   MaxLines="25"/>
+                   MinimumHeightRequest="50"/>
         </ScrollView>
         <FlexLayout 
             Direction="Row"

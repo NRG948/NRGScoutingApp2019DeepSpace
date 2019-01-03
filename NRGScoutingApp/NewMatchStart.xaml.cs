@@ -54,8 +54,8 @@ namespace NRGScoutingApp
         {
             if (cubeSetDrop)
             {
-                cubePicked.Text = ConstantVars.ITEM_DROPPED_TEXT;
-                cubePicked.Image = "ic_drop_cube.png";
+                cubePicked.Text = ConstantVars.ITEM_DROPPED_TEXT_LIVE;
+                cubePicked.Image = ConstantVars.ITEM_DROPPED_IMAGE_LIVE;
                 cubeSetDrop = false;
             }
         }
@@ -193,7 +193,7 @@ namespace NRGScoutingApp
                 DisplayAlert("Error", "Timer not Started", "OK");
             }
 
-            else if (cubePicked.Text == ConstantVars.ITEM_PICKED_TEXT || cubePicked.Text == ConstantVars.ITEM_PICKED_TEXT)
+            else if (cubePicked.Text == ConstantVars.ITEM_PICKED_TEXT_LIVE || cubePicked.Text == ConstantVars.ITEM_PICKED_TEXT_LIVE)
             {
                 //Performs actions to open popup for adding cube dropped, etc
                 pickedTime = (int)timerValue;
@@ -203,17 +203,17 @@ namespace NRGScoutingApp
                 CubeDroppedDialog.saveEvents();
 
                 pickNum++;
-                cubePicked.Image = "ic_drop_cube.png";
-                cubePicked.Text = ConstantVars.ITEM_DROPPED_TEXT;
+                cubePicked.Image = ConstantVars.ITEM_DROPPED_IMAGE_LIVE;
+                cubePicked.Text = ConstantVars.ITEM_DROPPED_TEXT_LIVE;
 
             }
-            else if (cubePicked.Text == ConstantVars.ITEM_DROPPED_TEXT)
+            else if (cubePicked.Text == ConstantVars.ITEM_DROPPED_TEXT_LIVE)
             {
                 //Performs action/s to open popup for adding cube dropped, etc
                 droppedTime =(int)timerValue;
                 Navigation.PushAsync(new CubeDroppedDialog());
-                cubePicked.Image = "ic_picked_cube.png";
-                cubePicked.Text = ConstantVars.ITEM_PICKED_TEXT;
+                cubePicked.Image = ConstantVars.ITEM_PICKED_IMAGE_LIVE;
+                cubePicked.Text = ConstantVars.ITEM_PICKED_TEXT_LIVE;
             }
         }
 
@@ -231,8 +231,8 @@ namespace NRGScoutingApp
             }
             else if(Convert.ToInt32(App.Current.Properties["lastItemPicked"]) == 0 || Convert.ToInt32(App.Current.Properties["lastItemDropped"]) == 0){}
             else if(Convert.ToInt32(App.Current.Properties["lastItemDroppped"]) > Convert.ToInt32(App.Current.Properties["lastItemDropped"])){
-                cubePicked.Image = "ic_drop_cube.png";
-                cubePicked.Text = ConstantVars.ITEM_DROPPED_TEXT;
+                cubePicked.Image = ConstantVars.ITEM_DROPPED_IMAGE_LIVE;
+                cubePicked.Text = ConstantVars.ITEM_DROPPED_TEXT_LIVE;
             }
 
             if (!App.Current.Properties.ContainsKey("timerValue"))

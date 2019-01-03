@@ -3,6 +3,11 @@ namespace NRGScoutingApp
 {
     public class ConstantVars
     {
+        /*
+         * IMPORTANT NOTE:
+         * VARIABLES CONTAINING "LIVE" ARE USED IN the NewMatchStart page
+         */        
+
         //CubeDropDialog
         public static readonly String DROP_1_DIALOG_TEXT = "Scale";
         public static readonly String DROP_2_DIALOG_TEXT = "Ally Switch";
@@ -37,8 +42,10 @@ namespace NRGScoutingApp
         public static readonly double MATCH_SPAN_MS = 150000;
         public static readonly double MIN_MS = 60000;
         public static readonly double SEC_MS = 1000;
-        public static readonly String ITEM_PICKED_TEXT = "Cube Picked";
-        public static readonly String ITEM_DROPPED_TEXT = "Cube Dropped";
+        public static readonly String ITEM_PICKED_TEXT_LIVE = "Cube Picked";
+        public static readonly String ITEM_DROPPED_TEXT_LIVE = "Cube Dropped";
+        public static readonly String ITEM_DROPPED_IMAGE_LIVE = "ic_drop_cube.png";
+        public static readonly String ITEM_PICKED_IMAGE_LIVE = "ic_picked_cube.png";
         public static readonly String TIMER_START = "Start Timer";
         public static readonly String TIMER_PAUSE = "Pause Timer";
 

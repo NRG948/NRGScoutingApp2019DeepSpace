@@ -34,7 +34,7 @@
     <OutputPath>bin\iPhone\Release</OutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <CodesignKey>iPhone Developer: nrg948infotech@gmail.com (M38472HNQV)</CodesignKey>
+    <CodesignKey>iPhone Developer: shreystechtips@gmail.com (BRNSZPJL94)</CodesignKey>
     <MtouchFloat32>true</MtouchFloat32>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
     <MtouchLink>SdkOnly</MtouchLink>
@@ -42,7 +42,7 @@
     <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
     <PlatformTarget>x86</PlatformTarget>
 <BuildIpa>true</BuildIpa>
-<CodesignProvision>iOS Team Provisioning Profile: com.NRG.ScoutingApp.NRG-Scoutin</CodesignProvision>
+<CodesignProvision>iOS Team Provisioning Profile: com.NRG.ScoutingApp.NRG-Scouting</CodesignProvision>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
     <DebugType>pdbonly</DebugType>

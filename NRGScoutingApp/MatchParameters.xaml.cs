@@ -117,7 +117,6 @@ namespace NRGScoutingApp
             {
                 //Disables save button so app doesn't crash when user taps many times
                 saveButton.IsEnabled = false;
-
                 //Gets and combines all of the match's events to a JObject
                 JObject events = MatchFormat.eventsListToJSONEvents(NewMatchStart.events);
                 events.Add("timerValue", NewMatchStart.timerValue);
@@ -136,30 +135,34 @@ namespace NRGScoutingApp
                 }
                 if (data.Count <= 0)
                 {
-                    data.Add(new JProperty("Matches", new JArray(new JObject(parameters))));//
+                    data.Add(new JProperty("Matches", new JArray(new JObject(parameters))));
+                    pushBackToHome(data, new JArray(), parameters);
                 }
                 else
                 {
                     JArray temp = (JArray)data["Matches"];
                     foreach(var match in temp.ToList()) {
                         if(Convert.ToInt32(match["matchNum"]) == Entry.matchNum && Convert.ToInt32(match["side"]) == Entry.side) {
-                            temp.Remove(match);
+                            if (!(match["team"].ToString().Equals(Entry.team))) {
+                                Console.WriteLine("not equal");
+                                var remove = await DisplayAlert("Error", "Overwrite Old Match with New Data?", "No", "Yes");
+                                if (!remove) {
+                                    temp.Remove(match);
+                                    pushBackToHome(data, temp, parameters);
+                                }
+                                else {
+                                    break;  
+                                }
+                            }
+                            else {
+                                temp.Remove(match);
+                                pushBackToHome(data, temp, parameters);
+                            }
+                        }
+                        else {
+                            pushBackToHome(data, temp, parameters);
                         }
                     }
-                    temp.Add(new JObject(parameters));
-                    data["Matches"] = temp;
-                }
-                App.Current.Properties["matchEventsString"] = JsonConvert.SerializeObject(data);
-                await App.Current.SavePropertiesAsync();
-                clearMatchItems();
-                if (Matches.appRestore == false)
-                {
-                    Navigation.PopToRootAsync(true);
-                }
-                else if (Matches.appRestore == true)
-                {
-                    Matches.appRestore = false;
-                    Navigation.PopAsync(true);
                 }
             }
         }
@@ -253,6 +256,7 @@ namespace NRGScoutingApp
             Entry.comments = e.NewTextValue;
             onParamUpdate();
         }
+
         void Match_Num_Updated(object sender, Xamarin.Forms.TextChangedEventArgs e)
         {
             try
@@ -336,6 +340,24 @@ namespace NRGScoutingApp
             App.Current.Properties["tempMatchEvents"] = "";
              App.Current.SavePropertiesAsync();
             NewMatchStart.events.Clear();
+        }
+
+        //Takes all objects and adds items while returning the main page
+        async void pushBackToHome(JObject data, JArray temp, JObject parameters) {
+            temp.Add(new JObject(parameters));
+            data["Matches"] = temp;
+            if (Matches.appRestore == false)
+            {
+                Navigation.PopToRootAsync(true);
+            }
+            else if (Matches.appRestore == true)
+            {
+                Matches.appRestore = false;
+                Navigation.PopAsync(true);
+            }
+            App.Current.Properties["matchEventsString"] = JsonConvert.SerializeObject(data);
+            await App.Current.SavePropertiesAsync();
+            clearMatchItems();
         }
     }
 }
