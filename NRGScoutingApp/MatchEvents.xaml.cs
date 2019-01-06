@@ -52,9 +52,11 @@ namespace NRGScoutingApp
             if (eventType < 0) {
                 switch (eventType)
                 {
-                    case (int)MatchFormat.ACTION_TYPE.pickItem:
-                        return ConstantVars.PICK_ITEM_TEXT;
-                    case (int)MatchFormat.ACTION_TYPE.startClimb:
+                    case (int)MatchFormat.ACTION.pick1:
+                        return ConstantVars.PICK_ITEM_1_TEXT;
+                    case (int)MatchFormat.ACTION.pick2:
+                        return ConstantVars.PICK_ITEM_2_TEXT;
+                    case (int)MatchFormat.ACTION.startClimb:
                         return ConstantVars.START_CLIMB_TEXT;
                 }
             }
@@ -62,15 +64,15 @@ namespace NRGScoutingApp
             {
                 switch (eventType)
                 {
-                    case (int)MatchFormat.DROP_TYPE.drop1:
+                    case (int)MatchFormat.ACTION.drop1:
                         return ConstantVars.DROP_1_TEXT;
-                    case (int)MatchFormat.DROP_TYPE.drop2:
+                    case (int)MatchFormat.ACTION.drop2:
                         return ConstantVars.DROP_2_TEXT;
-                    case (int)MatchFormat.DROP_TYPE.drop3:
+                    case (int)MatchFormat.ACTION.drop3:
                         return ConstantVars.DROP_3_TEXT;
-                    case (int)MatchFormat.DROP_TYPE.dropItemCollector:
-                        return ConstantVars.DROP_COLLECTOR_TEXT;
-                    case (int)MatchFormat.DROP_TYPE.dropNone:
+                    case (int)MatchFormat.ACTION.drop4:
+                        return ConstantVars.DROP_4_TEXT;
+                    case (int)MatchFormat.ACTION.dropNone:
                         return ConstantVars.DROP_NONE_TEXT;
                 }
             }
@@ -80,23 +82,25 @@ namespace NRGScoutingApp
         public static String returnEventImage(int eventType) {
             if(eventType < 0) {
                 switch (eventType) {
-                    case (int)MatchFormat.ACTION_TYPE.pickItem:
-                        return ConstantVars.PICK_ITEM_IMAGE;
-                    case (int)MatchFormat.ACTION_TYPE.startClimb:
+                    case (int)MatchFormat.ACTION.pick1:
+                        return ConstantVars.PICK_ITEM_1_IMAGE;
+                    case (int)MatchFormat.ACTION.pick2:
+                        return ConstantVars.PICK_ITEM_2_IMAGE;
+                    case (int)MatchFormat.ACTION.startClimb:
                         return ConstantVars.START_CLIMB_IMAGE;
                 }
             }
             else {
                 switch (eventType) {
-                    case (int)MatchFormat.DROP_TYPE.drop1:
+                    case (int)MatchFormat.ACTION.drop1:
                         return ConstantVars.DROP_1_IMAGE;
-                    case (int)MatchFormat.DROP_TYPE.drop2:
+                    case (int)MatchFormat.ACTION.drop2:
                         return ConstantVars.DROP_2_IMAGE;
-                    case (int)MatchFormat.DROP_TYPE.drop3:
+                    case (int)MatchFormat.ACTION.drop3:
                         return ConstantVars.DROP_3_IMAGE;
-                    case (int)MatchFormat.DROP_TYPE.dropItemCollector:
+                    case (int)MatchFormat.ACTION.drop4:
                         return ConstantVars.DROP_COLLECTOR_IMAGE;
-                    case (int)MatchFormat.DROP_TYPE.dropNone:
+                    case (int)MatchFormat.ACTION.dropNone:
                         return ConstantVars.DROP_NONE_IMAGE;
                 }
             }

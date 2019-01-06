@@ -78,7 +78,7 @@
             <Button x:Name="cubePicked"
                     BackgroundColor="#fdad13"
                     TextColor="White"
-                    Text="Cube Picked"
+                    Text="Item Picked"
                     Grid.Row="1"
                     Grid.Column="1"
                     ContentLayout="Top,0"                               

@@ -102,7 +102,7 @@ namespace NRGScoutingApp
             {
                 if (string.IsNullOrWhiteSpace(matchnum.Text) && PositionPicker.SelectedIndex < 0)
                 {
-                     await DisplayAlert("Alert!", "Please Enter Match Number and Position", "OK");
+                    await DisplayAlert("Alert!", "Please Enter Match Number and Position", "OK");
                 }
                 else if (string.IsNullOrWhiteSpace(matchnum.Text))
                 {
@@ -124,15 +124,7 @@ namespace NRGScoutingApp
                 parameters.Merge(events);
 
                 //Adds or creates new JObject to start all data in app cache
-                JObject data;
-                if (!String.IsNullOrWhiteSpace(App.Current.Properties["matchEventsString"].ToString()))
-                {
-                    data = JObject.Parse(App.Current.Properties["matchEventsString"].ToString());
-                }
-                else
-                {
-                    data = new JObject();
-                }
+                JObject data = initializeEventsObject();
                 if (data.Count <= 0)
                 {
                     data.Add(new JProperty("Matches", new JArray(new JObject(parameters))));
@@ -141,17 +133,16 @@ namespace NRGScoutingApp
                 else
                 {
                     JArray temp = (JArray)data["Matches"];
-                    foreach(var match in temp.ToList()) {
-                        if(Convert.ToInt32(match["matchNum"]) == Entry.matchNum && Convert.ToInt32(match["side"]) == Entry.side) {
+                    foreach (var match in temp.ToList()) {
+                        if (Convert.ToInt32(match["matchNum"]) == Entry.matchNum && Convert.ToInt32(match["side"]) == Entry.side) {
                             if (!(match["team"].ToString().Equals(Entry.team))) {
-                                Console.WriteLine("not equal");
                                 var remove = await DisplayAlert("Error", "Overwrite Old Match with New Data?", "No", "Yes");
                                 if (!remove) {
                                     temp.Remove(match);
                                     pushBackToHome(data, temp, parameters);
                                 }
                                 else {
-                                    break;  
+                                    break;
                                 }
                             }
                             else {
@@ -166,6 +157,7 @@ namespace NRGScoutingApp
                 }
             }
         }
+
 
         void Handle_SelectedIndexChanged(object sender, System.EventArgs e)
         {
@@ -290,12 +282,25 @@ namespace NRGScoutingApp
             onParamUpdate();
         }
 
+        //Returns Jobject based on wheter match events string is empty or not
+        public static JObject initializeEventsObject() {
+            JObject data;
+            if (!String.IsNullOrWhiteSpace(App.Current.Properties["matchEventsString"].ToString()))
+            {
+                data = JObject.Parse(App.Current.Properties["matchEventsString"].ToString());
+            }
+            else
+            {
+                data = new JObject();
+            }
+            return data;
+        }
+
         //Updates tempParam Data Cache every time Parameters are updated
         void onParamUpdate()
         {
             App.Current.Properties["tempParams"] = Entry;
             App.Current.SavePropertiesAsync();
-            Console.WriteLine(JsonConvert.SerializeObject((MatchFormat.EntryParams)App.Current.Properties["tempParams"], Newtonsoft.Json.Formatting.Indented));
         }
 
         //Checks if old data exists in app and sets all toggles to reflect the options

@@ -36,19 +36,16 @@ namespace NRGScoutingApp
 
         }
 
-        public enum DROP_TYPE
+        public enum ACTION
         {
-            dropNone,
-            drop1, //Ally Scale
-            drop2, //Ally Switch
-            drop3,  // Opp. Switch
-            dropItemCollector //Vault
-        }
-
-        public enum ACTION_TYPE
-        {
-            pickItem = -2, //Picked Cube
-            startClimb,
+            dropNone, //Drop None
+            drop1, //Rocket lvl 1
+            drop2, //Rocket lvl 2
+            drop3, //Rocket lvl 3
+            drop4, //Cargo Ship
+            pick1, //Picked Hatch Panel
+            pick2, //Picked Cargo
+            startClimb //Start Climb
         }
 
         public enum MATCH_SIDES
@@ -111,17 +108,17 @@ namespace NRGScoutingApp
             switch (side)
             {
                 case (int)MATCH_SIDES.Red1:
-                    return ConstantVars.red1Text;
+                    return ConstantVars.RED_1_TEXT;
                 case (int)MATCH_SIDES.Red2:
-                    return ConstantVars.red2Text;
+                    return ConstantVars.RED_2_TEXT;
                 case (int)MATCH_SIDES.Red3:
-                    return ConstantVars.red3Text;
+                    return ConstantVars.RED_3_TEXT;
                 case (int)MATCH_SIDES.Blue1:
-                    return ConstantVars.blue1Text;
+                    return ConstantVars.BLUE_1_TEXT;
                 case (int)MATCH_SIDES.Blue2:
-                    return ConstantVars.blue2Text;
+                    return ConstantVars.BLUE_2_TEXT;
                 case (int)MATCH_SIDES.Blue3:
-                    return ConstantVars.blue3Text;
+                    return ConstantVars.BLUE_3_TEXT;
             }
             return "Error";
         }

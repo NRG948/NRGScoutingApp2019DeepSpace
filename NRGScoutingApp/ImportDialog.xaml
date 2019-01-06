@@ -29,21 +29,43 @@
                FontAttributes="Bold"
                VerticalOptions="Start"
                Margin="2,10"/>
-        <Editor IsSpellCheckEnabled="false" 
+        <ScrollView>
+                <Editor IsSpellCheckEnabled="false" 
                 HorizontalOptions="FillAndExpand"
                 AutoSize="TextChanges"
-                Text="Enter Here"
+                Placeholder="Enter Here"
+                MinimumHeightRequest="150"
+                TextChanged="Handle_TextChanged"
                 x:Name="importData"/>
-        <FlexLayout 
-            Direction="Row"
-            AlignItems="End">
+        </ScrollView>
+        <Grid HorizontalOptions="Center"
+                VerticalOptions="Center"
+                RowSpacing="5"
+                ColumnSpacing="2"
+                Margin="5,5">
+            <Grid.RowDefinitions>
+              <RowDefinition Height="*" />
+              </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="*" />
+              <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+             </Grid.ColumnDefinitions>
             <Button Text="Cancel" 
                     Clicked="cancelClicked"
-                    Margin="5,3"/>
-            <Button Text="Import" 
+                    Margin="5,3"
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    HorizontalOptions="EndAndExpand"/>
+            <Button x:Name="importButton"
+                    Text="Import" 
                     Margin="10,3" 
-                    Clicked="importClicked"/>
-                </FlexLayout>
+                    Clicked="importClicked"
+                    Grid.Row="0"
+                    Grid.Column="2"
+                    HorizontalOptions="EndAndExpand"
+                    IsEnabled="false"/>
+                </Grid>
                 </StackLayout>
                 </Frame>
     </ScrollView>

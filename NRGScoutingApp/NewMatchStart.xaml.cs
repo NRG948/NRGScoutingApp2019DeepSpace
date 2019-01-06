@@ -44,7 +44,6 @@ namespace NRGScoutingApp
         private Boolean firstTimerStart = true;
         public static int pickedTime = 0;
         public static int droppedTime = 0;
-        public static int pickNum = 0, dropNum = 0;
         int climbTime = 0;
         public static Boolean cubeSetDrop = false;
         private static Boolean isTimerRunning = false;
@@ -181,7 +180,7 @@ namespace NRGScoutingApp
             {
                 //Adds info to to JSON about climb
                 climbTime = (int)timerValue;
-                events.Add(new MatchFormat.Data { time = climbTime, type = (int)MatchFormat.ACTION_TYPE.startClimb });
+                events.Add(new MatchFormat.Data { time = climbTime, type = (int)MatchFormat.ACTION.startClimb });
                 CubeDroppedDialog.saveEvents();
             }
         }
@@ -193,16 +192,14 @@ namespace NRGScoutingApp
                 DisplayAlert("Error", "Timer not Started", "OK");
             }
 
-            else if (cubePicked.Text == ConstantVars.ITEM_PICKED_TEXT_LIVE || cubePicked.Text == ConstantVars.ITEM_PICKED_TEXT_LIVE)
-            {
-                //Performs actions to open popup for adding cube dropped, etc
-                pickedTime = (int)timerValue;
+            else if (cubePicked.Text == ConstantVars.ITEM_PICKED_TEXT_LIVE) {
+            //Performs actions to open popup for adding cube dropped, etc
+            pickedTime = (int)timerValue;
                 App.Current.Properties["lastItemPicked"] = (int)pickedTime;
-                events.Add(new MatchFormat.Data { time = (int)pickedTime, type = (int)MatchFormat.ACTION_TYPE.pickItem });
+                events.Add(new MatchFormat.Data { time = (int)pickedTime, type = (int)MatchFormat.ACTION.pickItem });
                 App.Current.SavePropertiesAsync();
                 CubeDroppedDialog.saveEvents();
 
-                pickNum++;
                 cubePicked.Image = ConstantVars.ITEM_DROPPED_IMAGE_LIVE;
                 cubePicked.Text = ConstantVars.ITEM_DROPPED_TEXT_LIVE;
 

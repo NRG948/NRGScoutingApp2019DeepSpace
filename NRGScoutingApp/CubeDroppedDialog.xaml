@@ -28,7 +28,7 @@
                           ContentLayout="Top,0" 
                           Margin="0"
                           Image="ic_scale.png"
-                          Clicked="drop1"/>
+                          Clicked="drop1_1"/>
                   
                   <Button BackgroundColor="#fdad13"
                           x:Name="drop2Button"
@@ -40,7 +40,7 @@
                           ContentLayout="Top,0"                               
                           Image="ic_switch.png" 
                           Scale="1"
-                          Clicked="drop2"/>
+                          Clicked="drop1_2"/>
                   
                   <Button BackgroundColor="#fdad13"
                           TextColor="White"
@@ -63,7 +63,7 @@
                           Clicked="drop3"/>
                   
                   <Button BackgroundColor="#fdad13"
-                          x:Name="dropItemCollectorButton"
+                          x:Name="drop4Button"
                           TextColor="White"
                           Grid.Row="2"
                           Grid.Column="1"
