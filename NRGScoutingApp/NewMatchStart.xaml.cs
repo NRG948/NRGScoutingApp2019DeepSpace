@@ -185,21 +185,18 @@ namespace NRGScoutingApp
             }
         }
 
-        async void cubeClickedAsync(object sender, System.EventArgs e)
+        async void cubeClicked(object sender, System.EventArgs e)
         {
             if (!isTimerRunning)
             {
-                DisplayAlert("Error", "Timer not Started", "OK");
+                 DisplayAlert("Error", "Timer not Started", "OK");
             }
 
             else if (cubePicked.Text == ConstantVars.ITEM_PICKED_TEXT_LIVE) {
-            //Performs actions to open popup for adding cube dropped, etc
-            pickedTime = (int)timerValue;
+                //Performs actions to open popup for adding cube dropped, etc
+                pickedTime = (int)timerValue;
                 App.Current.Properties["lastItemPicked"] = (int)pickedTime;
-                var action = await DisplayActionSheet("Choose Pick Type:", ConstantVars.CANCEL, null, ConstantVars.PICK_1_TEXT, ConstantVars.PICK_1_TEXT);
-
-                // 
-                App.Current.SavePropertiesAsync();
+                var action =  await DisplayActionSheet("Choose Pick Type:", ConstantVars.CANCEL, null, ConstantVars.PICK_1_TEXT, ConstantVars.PICK_2_TEXT);
                 if (!action.ToString().Equals(ConstantVars.CANCEL))
                 {
                     if (action.ToString().Equals(ConstantVars.PICK_1_TEXT))
@@ -213,8 +210,8 @@ namespace NRGScoutingApp
                     cubePicked.Image = ConstantVars.ITEM_DROPPED_IMAGE_LIVE;
                     cubePicked.Text = ConstantVars.ITEM_DROPPED_TEXT_LIVE;
                     CubeDroppedDialog.saveEvents();
+                    App.Current.SavePropertiesAsync();
                 }
-                
 
             }
             else if (cubePicked.Text == ConstantVars.ITEM_DROPPED_TEXT_LIVE)

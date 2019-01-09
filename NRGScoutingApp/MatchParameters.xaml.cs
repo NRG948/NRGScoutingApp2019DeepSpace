@@ -61,7 +61,6 @@ namespace NRGScoutingApp
                 {
                     Matches.appRestore = false;
                     await Navigation.PopToRootAsync(true);
-
                 }
                 else if (Matches.appRestore == true)
                 {

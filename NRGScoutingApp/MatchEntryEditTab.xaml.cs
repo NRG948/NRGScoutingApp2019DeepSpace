@@ -13,7 +13,7 @@ namespace NRGScoutingApp
             Children.Add(new NewMatchStart());
             Children.Add(new MatchEvents());
             if (checkParse()){
-                Children.Add(new MatchParameters(vals));
+                Children.Add(new MatchParameters());
             }
             else{
                 Children.Add(new MatchParameters());
