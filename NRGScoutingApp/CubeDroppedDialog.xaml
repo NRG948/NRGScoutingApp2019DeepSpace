@@ -28,7 +28,7 @@
                           ContentLayout="Top,0" 
                           Margin="0"
                           Image="ic_scale.png"
-                          Clicked="drop1_1"/>
+                          Clicked="drop1"/>
                   
                   <Button BackgroundColor="#fdad13"
                           x:Name="drop2Button"
@@ -40,7 +40,7 @@
                           ContentLayout="Top,0"                               
                           Image="ic_switch.png" 
                           Scale="1"
-                          Clicked="drop1_2"/>
+                          Clicked="drop2"/>
                   
                   <Button BackgroundColor="#fdad13"
                           TextColor="White"
@@ -69,7 +69,7 @@
                           Grid.Column="1"
                           ContentLayout="Top,0"                               
                           Image="ic_exchange.png"
-                          Clicked="dropItemCollector"/>    
+                          Clicked="drop4"/>    
                         
                          <Button Text="Cancel" 
                           VerticalOptions="StartAndExpand"

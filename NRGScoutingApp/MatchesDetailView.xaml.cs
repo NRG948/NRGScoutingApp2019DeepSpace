@@ -28,11 +28,7 @@ namespace NRGScoutingApp
             JObject parameters = new JObject();
             foreach (var x in val)
             {
-                if (x.Key.Equals("numEvents"))
-                {
-                    break;
-                }
-                else
+                if (!x.Key.Equals("numEvents"))
                 {
                     parameters.Add(x.Key, x.Value);
                 }
@@ -52,7 +48,7 @@ namespace NRGScoutingApp
             App.Current.Properties["timerValue"] = Convert.ToInt32(val.Property("timerValue").Value);
             App.Current.Properties["teamStart"] = val.Property("team").Value;
             await App.Current.SavePropertiesAsync();
-            Navigation.PushAsync(new MatchEntryEditTab());
+            await Navigation.PushAsync(new MatchEntryEditTab());
         }
 
         async void deleteClicked(object sender, System.EventArgs e)

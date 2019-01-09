@@ -48,68 +48,51 @@ namespace NRGScoutingApp
             return listData;
         }
 
+        //Returns Text based on enum for action
         public static String returnEventText(int eventType) { 
-            if (eventType < 0) {
-                switch (eventType)
-                {
-                    case (int)MatchFormat.ACTION.pick1:
-                        return ConstantVars.PICK_ITEM_1_TEXT;
-                    case (int)MatchFormat.ACTION.pick2:
-                        return ConstantVars.PICK_ITEM_2_TEXT;
-                    case (int)MatchFormat.ACTION.startClimb:
-                        return ConstantVars.START_CLIMB_TEXT;
-                }
-            }
-            else
+            switch (eventType)
             {
-                switch (eventType)
-                {
-                    case (int)MatchFormat.ACTION.drop1:
-                        return ConstantVars.DROP_1_TEXT;
-                    case (int)MatchFormat.ACTION.drop2:
-                        return ConstantVars.DROP_2_TEXT;
-                    case (int)MatchFormat.ACTION.drop3:
-                        return ConstantVars.DROP_3_TEXT;
-                    case (int)MatchFormat.ACTION.drop4:
-                        return ConstantVars.DROP_4_TEXT;
-                    case (int)MatchFormat.ACTION.dropNone:
-                        return ConstantVars.DROP_NONE_TEXT;
-                }
+                case (int)MatchFormat.ACTION.drop1:
+                    return ConstantVars.DROP_1_TEXT;
+                case (int)MatchFormat.ACTION.drop2:
+                    return ConstantVars.DROP_2_TEXT;
+                case (int)MatchFormat.ACTION.drop3:
+                    return ConstantVars.DROP_3_TEXT;
+                case (int)MatchFormat.ACTION.drop4:
+                    return ConstantVars.DROP_4_TEXT;
+                case (int)MatchFormat.ACTION.dropNone:
+                    return ConstantVars.DROP_NONE_TEXT;
+                case (int)MatchFormat.ACTION.pick1:
+                    return ConstantVars.PICK_ITEM_1_TEXT;
+                case (int)MatchFormat.ACTION.pick2:
+                    return ConstantVars.PICK_ITEM_2_TEXT;
+                case (int)MatchFormat.ACTION.startClimb:
+                    return ConstantVars.START_CLIMB_TEXT;
             }
             return ConstantVars.DROP_ITEM_TEXT;
         }
 
         public static String returnEventImage(int eventType) {
-            if(eventType < 0) {
-                switch (eventType) {
-                    case (int)MatchFormat.ACTION.pick1:
-                        return ConstantVars.PICK_ITEM_1_IMAGE;
-                    case (int)MatchFormat.ACTION.pick2:
-                        return ConstantVars.PICK_ITEM_2_IMAGE;
-                    case (int)MatchFormat.ACTION.startClimb:
-                        return ConstantVars.START_CLIMB_IMAGE;
-                }
-            }
-            else {
-                switch (eventType) {
-                    case (int)MatchFormat.ACTION.drop1:
-                        return ConstantVars.DROP_1_IMAGE;
-                    case (int)MatchFormat.ACTION.drop2:
-                        return ConstantVars.DROP_2_IMAGE;
-                    case (int)MatchFormat.ACTION.drop3:
-                        return ConstantVars.DROP_3_IMAGE;
-                    case (int)MatchFormat.ACTION.drop4:
-                        return ConstantVars.DROP_COLLECTOR_IMAGE;
-                    case (int)MatchFormat.ACTION.dropNone:
-                        return ConstantVars.DROP_NONE_IMAGE;
-                }
+            switch (eventType)
+            {
+                case (int)MatchFormat.ACTION.drop1:
+                    return ConstantVars.DROP_1_IMAGE;
+                case (int)MatchFormat.ACTION.drop2:
+                    return ConstantVars.DROP_2_IMAGE;
+                case (int)MatchFormat.ACTION.drop3:
+                    return ConstantVars.DROP_3_IMAGE;
+                case (int)MatchFormat.ACTION.drop4:
+                    return ConstantVars.DROP_COLLECTOR_IMAGE;
+                case (int)MatchFormat.ACTION.dropNone:
+                    return ConstantVars.DROP_NONE_IMAGE;
+                case (int)MatchFormat.ACTION.pick1:
+                    return ConstantVars.PICK_ITEM_1_IMAGE;
+                case (int)MatchFormat.ACTION.pick2:
+                    return ConstantVars.PICK_ITEM_2_IMAGE;
+                case (int)MatchFormat.ACTION.startClimb:
+                    return ConstantVars.START_CLIMB_IMAGE;
             }
             return ConstantVars.DROP_ITEM_IMAGE;
-        }
-
-        void Handle_Clicked(object sender, System.EventArgs e, List<Data> data)
-        {
-
         }
 
         async void eventTapped(object sender, Xamarin.Forms.ItemTappedEventArgs e)
