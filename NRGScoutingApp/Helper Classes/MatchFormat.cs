@@ -35,7 +35,6 @@ namespace NRGScoutingApp
             public String comments { get; set; }
 
         }
-
         public enum ACTION
         {
             dropNone, //Drop None

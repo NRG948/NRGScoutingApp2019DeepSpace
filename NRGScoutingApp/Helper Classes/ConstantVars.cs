@@ -51,8 +51,8 @@ namespace NRGScoutingApp
         public static readonly String ITEM_PICKED_IMAGE_LIVE = "ic_picked_cube.png";
         public static readonly String TIMER_START = "Start Timer";
         public static readonly String TIMER_PAUSE = "Pause Timer";
-        public static readonly String PICK_1_TEXT = "Pick hatch";
-        public static readonly String PICK_2_TEXT = "Pick cargo";
+        public static readonly String PICK_1_TEXT = "Pick Hatch";
+        public static readonly String PICK_2_TEXT = "Pick Cargo";
         public static readonly String CANCEL = "Cancel";
 
         public static readonly String ITEM_PICK = "itemPick";
