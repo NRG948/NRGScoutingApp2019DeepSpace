@@ -13,7 +13,8 @@
                       TextChanged="SearchBar_OnTextChanged"></SearchBar>
            <ListView IsPullToRefreshEnabled="false" 
                      x:Name="MatchesList" 
-                     ItemTapped="Handle_ItemTapped"/>
+                     ItemTapped="Handle_ItemTapped"
+                      CachingStrategy="RecycleElement"/>
             
         </StackLayout>
     </ContentPage.Content>
