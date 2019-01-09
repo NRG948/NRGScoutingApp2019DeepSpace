@@ -9,6 +9,7 @@ namespace NRGScoutingApp
     {
         public MatchEntryEditTab()
         {
+            
             Children.Add(new NewMatchStart());
             Children.Add(new MatchEvents());
             if (checkParse()){

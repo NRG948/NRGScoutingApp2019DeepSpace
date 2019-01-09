@@ -185,7 +185,7 @@ namespace NRGScoutingApp
             }
         }
 
-        void cubeClicked(object sender, System.EventArgs e)
+        async void cubeClickedAsync(object sender, System.EventArgs e)
         {
             if (!isTimerRunning)
             {
@@ -196,12 +196,25 @@ namespace NRGScoutingApp
             //Performs actions to open popup for adding cube dropped, etc
             pickedTime = (int)timerValue;
                 App.Current.Properties["lastItemPicked"] = (int)pickedTime;
-                events.Add(new MatchFormat.Data { time = (int)pickedTime, type = (int)MatchFormat.ACTION.pickItem });
-                App.Current.SavePropertiesAsync();
-                CubeDroppedDialog.saveEvents();
+                var action = await DisplayActionSheet("Choose Pick Type:", ConstantVars.CANCEL, null, ConstantVars.PICK_1_TEXT, ConstantVars.PICK_1_TEXT);
 
-                cubePicked.Image = ConstantVars.ITEM_DROPPED_IMAGE_LIVE;
-                cubePicked.Text = ConstantVars.ITEM_DROPPED_TEXT_LIVE;
+                // 
+                App.Current.SavePropertiesAsync();
+                if (!action.ToString().Equals(ConstantVars.CANCEL))
+                {
+                    if (action.ToString().Equals(ConstantVars.PICK_1_TEXT))
+                    {
+                        events.Add(new MatchFormat.Data { time = (int)pickedTime, type = (int)MatchFormat.ACTION.pick1 });
+                    }
+                    else if (action.ToString().Equals(ConstantVars.PICK_2_TEXT))
+                    {
+                        events.Add(new MatchFormat.Data { time = (int)pickedTime, type = (int)MatchFormat.ACTION.pick2 });
+                    }
+                    cubePicked.Image = ConstantVars.ITEM_DROPPED_IMAGE_LIVE;
+                    cubePicked.Text = ConstantVars.ITEM_DROPPED_TEXT_LIVE;
+                    CubeDroppedDialog.saveEvents();
+                }
+                
 
             }
             else if (cubePicked.Text == ConstantVars.ITEM_DROPPED_TEXT_LIVE)
