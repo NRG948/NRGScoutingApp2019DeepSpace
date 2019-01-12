@@ -54,7 +54,7 @@
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Helper Classes\ConstantVars.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Helper Classes\MatchEventsFormat.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Helper Classes\MatchFormat.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MatchFormat.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Helper Classes\ParametersFormat.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Helper Classes\Ranker.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Helper Classes\TeamsNames.cs" />

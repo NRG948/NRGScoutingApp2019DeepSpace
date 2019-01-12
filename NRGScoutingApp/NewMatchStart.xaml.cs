@@ -62,9 +62,13 @@ namespace NRGScoutingApp
         async void resetClicked(object sender, System.EventArgs e)
         {
             var ensure = await DisplayActionSheet("Are you sure you want to reset everything about this match?", ConstantVars.CANCEL, null, ConstantVars.YES);
-            events.Clear();
-            timeSlider.Value = 0;
-            App.Current.SavePropertiesAsync();
+            if (ensure == ConstantVars.YES)
+            {
+                events.Clear();
+                timeSlider.Value = 0;
+                App.Current.SavePropertiesAsync();
+            }
+            
         }
 
         void startClicked(object sender, System.EventArgs e)
