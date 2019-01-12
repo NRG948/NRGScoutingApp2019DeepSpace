@@ -54,6 +54,7 @@ namespace NRGScoutingApp
         public static readonly String PICK_1_TEXT = "Pick Hatch";
         public static readonly String PICK_2_TEXT = "Pick Cargo";
         public static readonly String CANCEL = "Cancel";
+        public static readonly String YES = "Yes";
 
         public static readonly String ITEM_PICK = "itemPick";
         public static readonly String ITEM_DROP = "itemDrop";

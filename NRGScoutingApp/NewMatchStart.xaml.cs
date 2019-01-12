@@ -59,18 +59,12 @@ namespace NRGScoutingApp
             }
         }
 
-        void resetClicked(object sender, System.EventArgs e)
+        async void resetClicked(object sender, System.EventArgs e)
         {
-            if (timerText.Text == "0:00.00" || isTimerRunning) {}
-            else if (!isTimerRunning)
-            {
-                timeSlider.Value = 0;
-                min = 0; sec = 0; ms = 0;
-                timerValue = 0;
-                App.Current.Properties["timerValue"] = (int)0;
-                App.Current.SavePropertiesAsync();
-                timerText.Text = "0:00.00";
-            }
+            var ensure = await DisplayActionSheet("Are you sure you want to reset everything about this match?", ConstantVars.CANCEL, null, ConstantVars.YES);
+            events.Clear();
+            timeSlider.Value = 0;
+            App.Current.SavePropertiesAsync();
         }
 
         void startClicked(object sender, System.EventArgs e)
@@ -268,6 +262,8 @@ namespace NRGScoutingApp
             milliseconds = timeValue;
             return minutes + ":" + seconds.ToString("D2") + "." + (milliseconds / 10).ToString("D2");
         }
+
+
 
     }
 

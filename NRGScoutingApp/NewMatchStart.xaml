@@ -9,9 +9,9 @@
              ios:NavigationPage.PrefersLargeTitles="true">
 <ContentPage.Content>
         <ScrollView HorizontalOptions="CenterAndExpand">
-                   <StackLayout HorizontalOptions="CenterAndExpand">
+            <StackLayout HorizontalOptions="CenterAndExpand">
             
-          <Label Text="0:00.00"
+            <Label Text="0:00.00"
                   x:Name="timerText"
                   VerticalOptions="Start" 
                   HorizontalOptions="Center"                  
@@ -24,7 +24,7 @@
                     Minimum="0"
                     MinimumTrackColor="Red"/>
                 
-                 <Grid HorizontalOptions="Center"
+            <Grid HorizontalOptions="Center"
                 VerticalOptions="Center"
                 RowSpacing="5"
                 ColumnSpacing="2"
