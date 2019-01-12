@@ -16,18 +16,16 @@ namespace NRGScoutingApp
             public int matchNum { get; set; }
             public int side { get; set; }
 
-            public bool crossedB { get; set; }
-            public bool allyItem1 { get; set; }
-            public bool allyItem2 { get; set; }
-            public bool oppItem1 { get; set; }
-            public bool oppItem2 { get; set; }
+            public bool crossBaseline { get; set; }
+            public int autoLvl { get; set; }
+            public bool autoOTele { get; set; }
 
             public bool death { get; set; }
-            public bool noClimb { get; set; }
-            public bool soloClimb { get; set; }
-            public bool giveAssistClimb { get; set; }
-            public bool needAssistClimb { get; set; }
-            public bool onClimbArea { get; set; }
+            public bool climb { get; set; }
+            public int climbLvl { get; set; }
+            public bool giveAstClimb { get; set; }
+            public int giveAstClimbLvl { get; set; }
+            public bool needAstClimb { get; set; }
 
             public int fouls { get; set; }
             public bool yellowCard { get; set; }

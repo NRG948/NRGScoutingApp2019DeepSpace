@@ -10,7 +10,6 @@
     
     <ContentPage.Content>
         <StackLayout>
-            <Button Text="Update" Clicked="Handle_Clicked_1"/>
             <ListView x:Name="listView" Margin="0,10,10,10" ItemTapped="eventTapped">
                 <ListView.ItemTemplate>
                   <DataTemplate>

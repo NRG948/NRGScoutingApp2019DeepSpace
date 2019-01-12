@@ -135,9 +135,5 @@ namespace NRGScoutingApp
             CubeDroppedDialog.saveEvents();
         }
 
-        void Handle_Clicked_1(object sender, System.EventArgs e)
-        {
-            listView.ItemsSource = EventViewList((List<MatchFormat.Data>)NewMatchStart.events);
-        }
     }
 }
