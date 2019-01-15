@@ -55,11 +55,18 @@
             Direction="Row"
             AlignItems="Center"
                 Margin="40,0">
-            <Switch x:Name="switchP"
-                    Toggled="Handle_Toggled_1"
-                    Margin="10,5,0,0" 
-                    VerticalOptions="CenterAndExpand" />
-                <Label Text="Switch" 
+          <Picker x:Name="autoLvl"
+                    Title="Sandstorm Level" 
+                    HorizontalOptions="StartAndExpand"
+                    Margin="10,5,0,0"
+                    FontSize="20"
+                    SelectedIndexChanged="Handle_SelectedIndexChanged_1">
+                <Picker.Items>
+                    <x:String>1</x:String>
+                    <x:String>2</x:String>
+               </Picker.Items>
+            </Picker>
+                <Label Text="Sandstorm Level" 
                        Margin="10,3" 
                        VerticalOptions="CenterAndExpand"/>
                 </FlexLayout>
@@ -67,11 +74,14 @@
             Direction="Row"
             AlignItems="Center"
                 Margin="40,0">
-            <Switch Margin="10,5,0,0"
-                    x:Name="scale"
+                <Label Text="Manual" 
+                   Margin="10,3" 
+                   VerticalOptions="CenterAndExpand"/>
+                <Switch Margin="10,5,0,0"
+                    x:Name="autoOTele"
                     Toggled="Handle_Toggled_2"
                     VerticalOptions="CenterAndExpand" />
-                <Label Text="Scale" 
+                <Label Text="Auto" 
                        Margin="10,3" 
                        VerticalOptions="CenterAndExpand"/>
                 </FlexLayout>

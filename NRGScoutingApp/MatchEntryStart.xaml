@@ -15,7 +15,6 @@
                      x:Name="MatchesList" 
                      ItemTapped="Handle_ItemTapped"
                       CachingStrategy="RecycleElement"/>
-            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

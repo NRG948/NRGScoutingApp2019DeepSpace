@@ -24,18 +24,16 @@ namespace NRGScoutingApp
             matchNum = 0,
             side = 0,
 
-            crossedB = false,
-            allyItem1 = false,
-            allyItem2 = false,
-            oppItem1 = false,
-            oppItem2 = false,
+            crossBaseline = false,
+            autoLvl = 0,
+            autoOTele = false,
 
             death = false,
-            noClimb = false,
-            soloClimb = false,
-            giveAssistClimb = false,
-            needAssistClimb = false,
-            onClimbArea = false,
+            climb = false,
+            climbLvl = 0,
+            giveAstClimb = false,
+            giveAstClimbLvl = 0,
+            needAstClimb = false,
 
             fouls = 0,
             yellowCard = false,
@@ -138,12 +136,20 @@ namespace NRGScoutingApp
         void Handle_SelectedIndexChanged(object sender, System.EventArgs e)
         {
             Entry.side = PositionPicker.SelectedIndex;
+
             onParamUpdate();
         }
 
         void Handle_Toggled(object sender, Xamarin.Forms.ToggledEventArgs e)
         {
-            Entry.crossedB = e.Value;
+            Entry.crossBaseline = e.Value;
+            onParamUpdate();
+
+        }
+
+        void Auto_Level_Changed(object sender, System.EventArgs e)
+        {
+            Entry.autoLvl = autoLvl.SelectedIndex;
             onParamUpdate();
         }
 
