@@ -70,20 +70,8 @@ namespace NRGScoutingApp
         //Checks if all neccesary Items exist, clears match data, and goes to Matches Page
         async void saveClicked(object sender, System.EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(matchnum.Text) || PositionPicker.SelectedIndex < 0) //Checks if Match Number or Picker is Present
-            {
-                if (string.IsNullOrWhiteSpace(matchnum.Text) && PositionPicker.SelectedIndex < 0)
-                {
-                    await DisplayAlert("Alert!", "Please Enter Match Number and Position", "OK");
-                }
-                else if (string.IsNullOrWhiteSpace(matchnum.Text))
-                {
-                    await DisplayAlert("Alert!", "Please Enter Match Number", "OK");
-                }
-                else if (PositionPicker.SelectedIndex < 0)
-                {
-                    await DisplayAlert("Alert!", "Please Enter Position", "OK");
-                }
+            if (isSaveConditionNotMet()) {
+                popErrorsToScreen();
             }
             else
             {
