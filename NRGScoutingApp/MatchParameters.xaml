@@ -51,74 +51,37 @@
                        Margin="10,3" 
                        VerticalOptions="CenterAndExpand"/>
                 </FlexLayout>
-             <FlexLayout 
-            Direction="Row"
-            AlignItems="Center"
-                Margin="40,0">
-          <Picker x:Name="autoLvl"
+            <Picker x:Name="autoLvl"
                     Title="Sandstorm Level" 
                     HorizontalOptions="StartAndExpand"
                     Margin="10,5,0,0"
                     FontSize="20"
-                    SelectedIndexChanged="Handle_SelectedIndexChanged_1">
+                    SelectedIndexChanged="Auto_Level_Changed">
                 <Picker.Items>
                     <x:String>1</x:String>
                     <x:String>2</x:String>
                </Picker.Items>
             </Picker>
-                <Label Text="Sandstorm Level" 
-                       Margin="10,3" 
-                       VerticalOptions="CenterAndExpand"/>
-                </FlexLayout>
-            <FlexLayout 
+           <FlexLayout 
             Direction="Row"
             AlignItems="Center"
-                Margin="40,0">
-                <Label Text="Manual" 
+                Margin="0,0">
+                <Label Text="Auto" 
                    Margin="10,3" 
                    VerticalOptions="CenterAndExpand"/>
                 <Switch Margin="10,5,0,0"
                     x:Name="autoOTele"
-                    Toggled="Handle_Toggled_2"
+                    Toggled="autoOrTeleSandstorm"
                     VerticalOptions="CenterAndExpand" />
-                <Label Text="Auto" 
-                       Margin="10,3" 
-                       VerticalOptions="CenterAndExpand"/>
-                </FlexLayout>
-            <FlexLayout 
-            Direction="Row"
-            AlignItems="Center"
-                Margin="40,0">
-            <Switch Margin="10,5,0,0"
-                    x:Name="farswitch"
-                    Toggled="Handle_Toggled_3"
-                    VerticalOptions="CenterAndExpand" />
-                <Label Text="Far Switch" 
-                       Margin="10,3" 
-                       VerticalOptions="CenterAndExpand"/>
-                </FlexLayout>
-            <FlexLayout 
-            Direction="Row"
-            AlignItems="Center"
-                Margin="40,0">
-            <Switch Margin="10,5,0,0"
-                    x:Name="farscale"
-                    Toggled="Handle_Toggled_4"
-                    VerticalOptions="CenterAndExpand" />
-                <Label Text="Far Scale" 
+                <Label Text="Manual" 
                        Margin="10,3" 
                        VerticalOptions="CenterAndExpand"/>
                 </FlexLayout>
             <Label Text="In-Game" 
                    FontSize="25" 
                    FontAttributes="Bold" 
-                   HorizontalOptions="CenterAndExpand"
-                   Margin="0,10,0,0"/>
-            <Label Text="Defensive Strategy Strength:"
-                   Margin="10"
-                   FontSize="20"/>
-            <FlexLayout 
-                        Direction="Row"
+                   HorizontalOptions="CenterAndExpand"/>
+            <FlexLayout Direction="Row"
                         AlignItems="Center">
             <Switch Margin="10,5,0,0"
                     x:Name="death"
@@ -136,21 +99,33 @@
             Direction="Row"
             AlignItems="Center">
             <Switch Margin="10,5,0,0"
-                    x:Name="solo"
-                    Toggled="Handle_Toggled_6"
+                    x:Name="climbSwitch"
+                    Toggled="climb"
                     VerticalOptions="CenterAndExpand" />
-                <Label Text="Solo Climb" 
+                <Label Text="Climb" 
                        Margin="10,3" 
                        VerticalOptions="CenterAndExpand"/>
                 </FlexLayout>
+                <Picker x:Name="climbLvl"
+                        Title="Climb Level"
+                        HorizontalOptions="StartAndExpand"
+                        Margin="10,5,0,0"
+                        FontSize="20"
+                        SelectedIndexChanged="climbLvlSelector">
+                <Picker.Items>
+                    <x:String>Level 1</x:String>
+                    <x:String>Level 2</x:String>
+                    <x:String>Level 3</x:String>
+               </Picker.Items>
+            </Picker>
             <FlexLayout 
             Direction="Row"
             AlignItems="Center">
             <Switch Margin="10,5,0,0" 
                     x:Name="assisted"
-                    Toggled="Handle_Toggled_7"
+                    Toggled="needAssistToggle"
                     VerticalOptions="CenterAndExpand" />
-                <Label Text="Assisted Climb" 
+                <Label Text="Needed Assist" 
                        Margin="10,3" 
                        VerticalOptions="CenterAndExpand"/>
                 </FlexLayout>
@@ -159,35 +134,24 @@
             AlignItems="Center">
             <Switch Margin="10,5,0,0"
                     x:Name="needed"
-                    Toggled="Handle_Toggled_8"
+                    Toggled="helpedClimb"
                     VerticalOptions="CenterAndExpand" />
-                <Label Text="Needed Assisted Climb" 
+                <Label Text="Assisted Climb" 
                        Margin="10,3" 
                        VerticalOptions="CenterAndExpand"/>
                 </FlexLayout>
-            <FlexLayout 
-            Direction="Row"
-            AlignItems="Center">
-            <Switch Margin="10,5,0,0"
-                    x:Name="platform"
-                    Toggled="Handle_Toggled_9"
-                    VerticalOptions="CenterAndExpand" />
-                <Label Text="On Platform" 
-                       Margin="10,3" 
-                       VerticalOptions="CenterAndExpand"/>
-                </FlexLayout>
-            <FlexLayout 
-            Direction="Row"
-            AlignItems="Center">
-            <Switch Margin="10,5,0,0"
-                    x:Name="noclimb"
-                    Toggled="Handle_Toggled_10"
-                    VerticalOptions="CenterAndExpand" />
-                <Label Text="Didn't Climb" 
-                       Margin="10,3" 
-                       VerticalOptions="CenterAndExpand"/>
-                </FlexLayout>
-             <Label Text="Fouls" 
+             <Picker x:Name="giveAssistClimbLvl"
+                        Title="Level"
+                        HorizontalOptions="StartAndExpand"
+                        Margin="10,5,0,0"
+                        FontSize="20"
+                        SelectedIndexChanged="giveAssistClimbLvlSelector">
+                <Picker.Items>
+                    <x:String>Level 2</x:String>
+                    <x:String>Level 3</x:String>
+               </Picker.Items>
+            </Picker>
+            <Label Text="Penalties" 
                    FontSize="25" 
                    FontAttributes="Bold" 
                    HorizontalOptions="CenterAndExpand"/>

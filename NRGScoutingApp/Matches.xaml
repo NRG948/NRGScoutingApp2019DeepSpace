@@ -11,8 +11,7 @@
     <ToolbarItem Text="+" Clicked="newClicked"/>
     <ToolbarItem Icon="ic_import_web.png" Clicked="importClicked"/>
     <ToolbarItem Icon="ic_export_web.png" Clicked="exportClicked"/>
-    <ToolbarItem Text="" Clicked="settingsClicked"/>
-   </ContentPage.ToolbarItems>
+    </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
          <SearchBar Placeholder="Match Number" TextChanged="SearchBar_OnTextChanged"/>

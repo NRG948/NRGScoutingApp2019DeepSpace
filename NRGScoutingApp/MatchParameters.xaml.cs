@@ -17,7 +17,6 @@ namespace NRGScoutingApp
     {
         public String teamName = App.Current.Properties["teamStart"].ToString();
         public ParametersFormat paramFormat = new ParametersFormat();
-        public MatchEventsFormat eventsFormat = new MatchEventsFormat();
         public static MatchFormat.EntryParams Entry = new MatchFormat.EntryParams
         {
             team = App.Current.Properties["teamStart"].ToString(),
@@ -39,7 +38,6 @@ namespace NRGScoutingApp
             yellowCard = false,
             redCard = false,
             comments = ""
-
         };
 
         public MatchParameters()
@@ -136,15 +134,20 @@ namespace NRGScoutingApp
         void Handle_SelectedIndexChanged(object sender, System.EventArgs e)
         {
             Entry.side = PositionPicker.SelectedIndex;
-
+            
             onParamUpdate();
         }
 
         void Handle_Toggled(object sender, Xamarin.Forms.ToggledEventArgs e)
         {
             Entry.crossBaseline = e.Value;
+            autoLvl.IsEnabled = e.Value;
+            autoOTele.IsEnabled = e.Value;
+            autoOTele.IsToggled = e.Value;
+            if (!e.Value) {
+                autoLvl.SelectedIndex = -1;
+            }
             onParamUpdate();
-
         }
 
         void Auto_Level_Changed(object sender, System.EventArgs e)
@@ -153,27 +156,9 @@ namespace NRGScoutingApp
             onParamUpdate();
         }
 
-        void Handle_Toggled_1(object sender, Xamarin.Forms.ToggledEventArgs e)
+        void autoOrTeleSandstorm(object sender, Xamarin.Forms.ToggledEventArgs e)
         {
-            Entry.allyItem2 = e.Value;
-            onParamUpdate();
-        }
-
-        void Handle_Toggled_2(object sender, Xamarin.Forms.ToggledEventArgs e)
-        {
-            Entry.allyItem1 = e.Value;
-            onParamUpdate();
-        }
-
-        void Handle_Toggled_3(object sender, Xamarin.Forms.ToggledEventArgs e)
-        {
-            Entry.oppItem1 = e.Value;
-            onParamUpdate();
-        }
-
-        void Handle_Toggled_4(object sender, Xamarin.Forms.ToggledEventArgs e)
-        {
-            Entry.oppItem2 = e.Value;
+            Entry.autoOTele = e.Value; //0 is auto 1 is tele
             onParamUpdate();
         }
 
@@ -183,33 +168,42 @@ namespace NRGScoutingApp
             onParamUpdate();
         }
 
-        void Handle_Toggled_6(object sender, Xamarin.Forms.ToggledEventArgs e)
+        void climb(object sender, Xamarin.Forms.ToggledEventArgs e)
         {
-            Entry.soloClimb = e.Value;
+            Entry.climb = e.Value;
+            climbLvl.IsEnabled = e.Value;
+            assisted.IsToggled = e.Value;
+            assisted.IsEnabled = e.Value;
+            if (!e.Value) {
+                climbLvl.SelectedIndex = -1;
+            }
             onParamUpdate();
         }
 
-        void Handle_Toggled_7(object sender, Xamarin.Forms.ToggledEventArgs e)
+        void climbLvlSelector(object sender, System.EventArgs e)
         {
-            Entry.giveAssistClimb = e.Value;
+            Entry.climbLvl = climbLvl.SelectedIndex;
+        }
+
+        void needAssistToggle(object sender, Xamarin.Forms.ToggledEventArgs e)
+        {
+            Entry.needAstClimb = e.Value;
             onParamUpdate();
         }
 
-        void Handle_Toggled_8(object sender, Xamarin.Forms.ToggledEventArgs e)
+        void helpedClimb(object sender, Xamarin.Forms.ToggledEventArgs e)
         {
-            Entry.needAssistClimb = e.Value;
+            Entry.giveAstClimb = e.Value;
+            giveAssistClimbLvl.IsEnabled = e.Value;
+            if (!e.Value) {
+                giveAssistClimbLvl.SelectedIndex = -1;
+            }
             onParamUpdate();
         }
 
-        void Handle_Toggled_9(object sender, Xamarin.Forms.ToggledEventArgs e)
+        void giveAssistClimbLvlSelector(object sender, System.EventArgs e)
         {
-            Entry.onClimbArea = e.Value;
-            onParamUpdate();
-        }
-
-        void Handle_Toggled_10(object sender, Xamarin.Forms.ToggledEventArgs e)
-        {
-            Entry.noClimb = e.Value;
+            Entry.giveAstClimbLvl = giveAssistClimbLvl.SelectedIndex;
             onParamUpdate();
         }
 
@@ -293,18 +287,17 @@ namespace NRGScoutingApp
                 MatchFormat.EntryParams entries = (MatchFormat.EntryParams)App.Current.Properties["tempParams"];
                 matchnum.Text = entries.matchNum.ToString();
                 PositionPicker.SelectedIndex = entries.side;
-                crossbase.IsToggled = entries.crossedB;
-                switchP.IsToggled = entries.allyItem2;
-                scale.IsToggled = entries.allyItem1;
-                farswitch.IsToggled = entries.oppItem1;
-                farscale.IsToggled = entries.oppItem2;
-                death.IsToggled = entries.death;
 
-                solo.IsToggled = entries.soloClimb;
-                assisted.IsToggled = entries.giveAssistClimb;
-                needed.IsToggled = entries.needAssistClimb;
-                platform.IsToggled = entries.onClimbArea;
-                noclimb.IsToggled = entries.noClimb;
+                crossbase.IsToggled = entries.crossBaseline;
+                autoLvl.SelectedIndex = entries.autoLvl;
+                autoOTele.IsToggled = entries.autoOTele;
+
+                death.IsToggled = entries.death;
+                climbSwitch.IsToggled = entries.climb;
+                climbLvl.SelectedIndex = entries.climbLvl;
+                assisted.IsToggled = entries.needAstClimb;
+                needed.IsToggled = entries.giveAstClimb;
+                giveAssistClimbLvl.SelectedIndex = entries.giveAstClimbLvl;
 
                 fouls.Text = entries.fouls.ToString();
                 yellow.IsToggled = entries.yellowCard;
@@ -345,6 +338,14 @@ namespace NRGScoutingApp
             App.Current.Properties["matchEventsString"] = JsonConvert.SerializeObject(data);
             await App.Current.SavePropertiesAsync();
             clearMatchItems();
+        }
+
+        void setAutoButtons() {
+
+        }
+
+        void setEndGameButtons() {
+
         }
     }
 }

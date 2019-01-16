@@ -33,12 +33,9 @@ namespace NRGScoutingApp
                     parameters.Add(x.Key, x.Value);
                 }
             }
-            Console.WriteLine(parameters);
             App.Current.Properties["tempParams"] = parameters.ToObject<MatchFormat.EntryParams>();
-            Console.WriteLine("before for ");
             for(int i = 0; i < Convert.ToInt32( val.Property("numEvents").Value); i++)
             {
-                Console.WriteLine("after for");
                 NewMatchStart.events.Add(new MatchFormat.Data { 
                 time = Convert.ToInt32(val.Property("TE" + i + "_0").Value), 
                 type = Convert.ToInt32(val.Property("TE" + i + "_1").Value) 

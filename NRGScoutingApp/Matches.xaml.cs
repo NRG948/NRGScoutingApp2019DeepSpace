@@ -129,11 +129,6 @@ namespace NRGScoutingApp
             Navigation.PushAsync(new MatchesDetailView(index));
         }
 
-        void settingsClicked(object sender, System.EventArgs e)
-        {
-
-        }
-
         public class MatchesListFormat
         {
             public String matchNum { get; set; }

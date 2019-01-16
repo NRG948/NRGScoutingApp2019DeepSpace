@@ -71,6 +71,10 @@ namespace NRGScoutingApp
         public static readonly String BLUE_2_TEXT = "Blue 2";
         public static readonly String BLUE_3_TEXT = "Blue 3";
 
+        //PARAMETERS PAGE
+        public static readonly String LVL_1_CLIMB = "Level 1";
+        public static readonly String LVL_2_CLIMB = "Level 2";
+        public static readonly String LVL_3_CLIMB = "Level 3";
 
         //RANKER 
         public static readonly int AUTO_LENGTH = 15000;
