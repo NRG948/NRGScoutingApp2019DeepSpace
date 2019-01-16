@@ -16,40 +16,40 @@
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Matches.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\Matches.xaml.cs">
       <DependentUpon>Matches.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)MatchEntryStart.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\MatchEntryStart.xaml.cs">
       <DependentUpon>MatchEntryStart.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Rankings.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\Rankings.xaml.cs">
       <DependentUpon>Rankings.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)NavTab.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\NavTab.xaml.cs">
       <DependentUpon>NavTab.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)NewMatchStart.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\NewMatchStart.xaml.cs">
       <DependentUpon>NewMatchStart.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)MatchParameters.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\MatchParameters.xaml.cs">
       <DependentUpon>MatchParameters.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)MatchEntryEditTab.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\MatchEntryEditTab.xaml.cs">
       <DependentUpon>MatchEntryEditTab.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)MatchEvents.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\MatchEvents.xaml.cs">
       <DependentUpon>MatchEvents.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)CubeDroppedDialog.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\CubeDroppedDialog.xaml.cs">
       <DependentUpon>CubeDroppedDialog.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)ExportDialog.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\ExportDialog.xaml.cs">
       <DependentUpon>ExportDialog.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)ImportDialog.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\ImportDialog.xaml.cs">
       <DependentUpon>ImportDialog.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)MatchesDetailView.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\MatchesDetailView.xaml.cs">
       <DependentUpon>MatchesDetailView.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Helper Classes\ConstantVars.cs" />
@@ -60,61 +60,61 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)App.xaml" />
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Matches.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\Matches.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)MatchEntryStart.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\MatchEntryStart.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Rankings.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\Rankings.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)NavTab.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\NavTab.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)NewMatchStart.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\NewMatchStart.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)MatchParameters.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\MatchParameters.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)MatchEntryEditTab.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\MatchEntryEditTab.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)MatchEvents.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\MatchEvents.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)CubeDroppedDialog.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\CubeDroppedDialog.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)ExportDialog.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\ExportDialog.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)ImportDialog.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\ImportDialog.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)MatchesDetailView.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\MatchesDetailView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="$(MSBuildThisFileDirectory)BlueAllianceMatches.xaml">
+    <None Include="$(MSBuildThisFileDirectory)Pages\BlueAllianceMatches.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </None>
-    <None Include="$(MSBuildThisFileDirectory)BlueAllianceMatches.xaml.cs">
+    <None Include="$(MSBuildThisFileDirectory)Pages\BlueAllianceMatches.xaml.cs">
       <DependentUpon>BlueAllianceMatches.xaml</DependentUpon>
     </None>
   </ItemGroup>

@@ -12,6 +12,7 @@ namespace NRGScoutingApp
     {
         public Ranker()
         {
+
         }
     }
 }
