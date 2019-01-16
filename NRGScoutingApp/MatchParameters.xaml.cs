@@ -130,7 +130,6 @@ namespace NRGScoutingApp
             }
         }
 
-
         void Handle_SelectedIndexChanged(object sender, System.EventArgs e)
         {
             Entry.side = PositionPicker.SelectedIndex;
@@ -141,12 +140,7 @@ namespace NRGScoutingApp
         void Handle_Toggled(object sender, Xamarin.Forms.ToggledEventArgs e)
         {
             Entry.crossBaseline = e.Value;
-            autoLvl.IsEnabled = e.Value;
-            autoOTele.IsEnabled = e.Value;
-            autoOTele.IsToggled = e.Value;
-            if (!e.Value) {
-                autoLvl.SelectedIndex = -1;
-            }
+            setAutoButtons();
             onParamUpdate();
         }
 
@@ -171,12 +165,7 @@ namespace NRGScoutingApp
         void climb(object sender, Xamarin.Forms.ToggledEventArgs e)
         {
             Entry.climb = e.Value;
-            climbLvl.IsEnabled = e.Value;
-            assisted.IsToggled = e.Value;
-            assisted.IsEnabled = e.Value;
-            if (!e.Value) {
-                climbLvl.SelectedIndex = -1;
-            }
+            setEndGameSelfButtons();
             onParamUpdate();
         }
 
@@ -194,10 +183,7 @@ namespace NRGScoutingApp
         void helpedClimb(object sender, Xamarin.Forms.ToggledEventArgs e)
         {
             Entry.giveAstClimb = e.Value;
-            giveAssistClimbLvl.IsEnabled = e.Value;
-            if (!e.Value) {
-                giveAssistClimbLvl.SelectedIndex = -1;
-            }
+            setEndGameOtherButtons();
             onParamUpdate();
         }
 
@@ -304,8 +290,10 @@ namespace NRGScoutingApp
                 red.IsToggled = entries.redCard;
                 comments.Text = entries.comments;
                 Entry = entries;
-            }
-
+               }
+            setAutoButtons();
+            setEndGameSelfButtons();
+            setEndGameOtherButtons();
         }
 
         //Clears all properties for use in next match
@@ -340,12 +328,57 @@ namespace NRGScoutingApp
             clearMatchItems();
         }
 
+        //Disables Auto Buttons if certain button is not toggled
         void setAutoButtons() {
+            autoLvl.IsEnabled = crossbase.IsToggled;
+            autoOTele.IsEnabled = crossbase.IsToggled;
+            if (!crossbase.IsToggled)
+            {
+                autoLvl.SelectedIndex = -1;
+                autoOTele.IsToggled = false;
+            }
+       }
 
+        //Disables Self Climb EndGame Buttons if certain button is not toggled
+        void setEndGameSelfButtons() {
+            climbLvl.IsEnabled = climbSwitch.IsToggled;
+            assisted.IsEnabled = climbSwitch.IsToggled;
+            needed.IsEnabled = climbSwitch.IsToggled;
+            if (!climbSwitch.IsToggled)
+            {
+                climbLvl.SelectedIndex = -1;
+                assisted.IsToggled = false;
+                needed.IsToggled = false;
+            }
         }
 
-        void setEndGameButtons() {
+        //Disables Help Climb EndGame Buttons if certain button is not toggled
+        void setEndGameOtherButtons() {
+            giveAssistClimbLvl.IsEnabled = assisted.IsToggled;
+            if (!assisted.IsToggled)
+            {
+                giveAssistClimbLvl.SelectedIndex = -1;
+            }
+        }
+    
+        //returns True if required fields are empty
+         bool isSaveConditionNotMet() {
+            return string.IsNullOrWhiteSpace(matchnum.Text) || PositionPicker.SelectedIndex < 0; //Checks if Match Number or Picker is Present
+        }
 
+        void popErrorsToScreen() {
+            if (string.IsNullOrWhiteSpace(matchnum.Text) && PositionPicker.SelectedIndex < 0)
+            {
+                 DisplayAlert("Alert!", "Please Enter Match Number and Position", "OK");
+            }
+            else if (string.IsNullOrWhiteSpace(matchnum.Text))
+            {   
+                DisplayAlert("Alert!", "Please Enter Match Number", "OK");
+            }
+            else if (PositionPicker.SelectedIndex < 0)
+            {
+                 DisplayAlert("Alert!", "Please Enter Position", "OK");
+            }
         }
     }
 }

@@ -122,7 +122,7 @@
             Direction="Row"
             AlignItems="Center">
             <Switch Margin="10,5,0,0" 
-                    x:Name="assisted"
+                    x:Name="needed"
                     Toggled="needAssistToggle"
                     VerticalOptions="CenterAndExpand" />
                 <Label Text="Needed Assist" 
@@ -133,7 +133,7 @@
             Direction="Row"
             AlignItems="Center">
             <Switch Margin="10,5,0,0"
-                    x:Name="needed"
+                    x:Name="assisted"
                     Toggled="helpedClimb"
                     VerticalOptions="CenterAndExpand" />
                 <Label Text="Assisted Climb" 
