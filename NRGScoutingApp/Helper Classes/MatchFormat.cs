@@ -18,9 +18,9 @@ namespace NRGScoutingApp
 
             public bool crossBaseline { get; set; }
             public int autoLvl { get; set; }
-            public bool autoOTele { get; set; }
+            public bool autoOTele { get; set; } //False is auto, true is tele
 
-            public bool death { get; set; }
+            public int deathType { get; set; } //0 is no death, 1 is partial death, 2 full death
             public bool climb { get; set; }
             public int climbLvl { get; set; }
             public bool giveAstClimb { get; set; }
@@ -33,6 +33,14 @@ namespace NRGScoutingApp
             public String comments { get; set; }
 
         }
+
+        public enum DEATH_TYPE 
+        {
+            noDeath,
+            halfDeath,
+            fullDeath
+        }
+
         public enum ACTION
         {
             dropNone, //Drop None

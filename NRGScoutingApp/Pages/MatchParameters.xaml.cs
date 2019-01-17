@@ -27,7 +27,7 @@ namespace NRGScoutingApp
             autoLvl = 0,
             autoOTele = false,
 
-            death = false,
+            deathType = 0,
             climb = false,
             climbLvl = 0,
             giveAstClimb = false,
@@ -146,7 +146,7 @@ namespace NRGScoutingApp
 
         void Handle_Toggled_5(object sender, Xamarin.Forms.ToggledEventArgs e)
         {
-            Entry.death = e.Value;
+            Entry.deathType = e.Value;
             onParamUpdate();
         }
 

@@ -10,9 +10,23 @@ namespace NRGScoutingApp
 {
     public class Ranker
     {
-        public Ranker()
-        {
-
-        }
+        //public void getJSON() {
+        //    if (!String.IsNullOrWhiteSpace(App.Current.Properties["matchEventsString"].ToString()))
+        //    {
+        //        try
+        //        {
+        //            x = JObject.Parse(App.Current.Properties["matchEventsString"].ToString());
+        //        }
+        //        catch (NullReferenceException)
+        //        {
+        //            Console.WriteLine("Caught NullRepEx for populateMatchesList");
+        //            x = new JObject();
+        //        }
+        //    }
+        //    else
+        //    {
+        //        x = new JObject();
+        //    }
+        //}
     }
 }

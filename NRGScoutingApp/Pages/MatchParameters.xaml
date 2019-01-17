@@ -83,15 +83,18 @@
                    HorizontalOptions="CenterAndExpand"/>
             <FlexLayout Direction="Row"
                         AlignItems="Center">
-            <Switch Margin="10,5,0,0"
+         <!--   <Switch Margin="10,5,0,0"
                     x:Name="death"
                     Toggled="Handle_Toggled_5"
                     VerticalOptions="CenterAndExpand" />
                 <Label Text="Death" 
                        Margin="10,3" 
-                       VerticalOptions="CenterAndExpand"/>
+                       VerticalOptions="CenterAndExpand"/
+                    CHANGE THIS WITH THE PICKER THING, MARCELO
+                    ALSO, CHANGE THE ERRORS IN THE .cs FILE 
+                    SO THEY HAVE .SELECTEDINDEX instead of .ISTOGGLED METHOD-->
                 </FlexLayout>
-            <Label Text="End-Game" 
+           <Label Text="End-Game" 
                    FontSize="25" 
                    FontAttributes="Bold" 
                    HorizontalOptions="CenterAndExpand"/>
@@ -141,7 +144,7 @@
                        VerticalOptions="CenterAndExpand"/>
                 </FlexLayout>
              <Picker x:Name="giveAssistClimbLvl"
-                        Title="Level"
+                        Title="CLimb Level"
                         HorizontalOptions="StartAndExpand"
                         Margin="10,5,0,0"
                         FontSize="20"
