@@ -146,7 +146,7 @@ namespace NRGScoutingApp
 
         void Handle_Toggled_5(object sender, Xamarin.Forms.ToggledEventArgs e)
         {
-            Entry.deathType = e.Value;
+            Entry.death = e.Value;
             onParamUpdate();
         }
 
@@ -266,7 +266,7 @@ namespace NRGScoutingApp
                 autoLvl.SelectedIndex = entries.autoLvl;
                 autoOTele.IsToggled = entries.autoOTele;
 
-                death.IsToggled = entries.death;
+                death.IsToggled = entries.d;
                 climbSwitch.IsToggled = entries.climb;
                 climbLvl.SelectedIndex = entries.climbLvl;
                 assisted.IsToggled = entries.needAstClimb;
