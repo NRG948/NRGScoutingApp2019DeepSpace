@@ -144,9 +144,9 @@ namespace NRGScoutingApp
             onParamUpdate();
         }
 
-        void Handle_Toggled_5(object sender, Xamarin.Forms.ToggledEventArgs e)
+        void deathSelector(object sender, System.EventArgs e)
         {
-            Entry.death = e.Value;
+            Entry.deathType = death.SelectedIndex;
             onParamUpdate();
         }
 
@@ -266,7 +266,7 @@ namespace NRGScoutingApp
                 autoLvl.SelectedIndex = entries.autoLvl;
                 autoOTele.IsToggled = entries.autoOTele;
 
-                death.IsToggled = entries.d;
+                death.SelectedIndex = entries.deathType;
                 climbSwitch.IsToggled = entries.climb;
                 climbLvl.SelectedIndex = entries.climbLvl;
                 assisted.IsToggled = entries.needAstClimb;
@@ -279,6 +279,10 @@ namespace NRGScoutingApp
                 comments.Text = entries.comments;
                 Entry = entries;
                }
+            else
+            {
+                death.SelectedIndex = (int)MatchFormat.DEATH_TYPE.noDeath;
+            }
             setAutoButtons();
             setEndGameSelfButtons();
             setEndGameOtherButtons();
@@ -330,12 +334,10 @@ namespace NRGScoutingApp
         //Disables Self Climb EndGame Buttons if certain button is not toggled
         void setEndGameSelfButtons() {
             climbLvl.IsEnabled = climbSwitch.IsToggled;
-            assisted.IsEnabled = climbSwitch.IsToggled;
             needed.IsEnabled = climbSwitch.IsToggled;
             if (!climbSwitch.IsToggled)
             {
                 climbLvl.SelectedIndex = -1;
-                assisted.IsToggled = false;
                 needed.IsToggled = false;
             }
         }
