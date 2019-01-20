@@ -31,12 +31,12 @@
                Margin="2,10"/>
         <ScrollView>
                 <Editor IsSpellCheckEnabled="false" 
-                HorizontalOptions="FillAndExpand"
-                AutoSize="TextChanges"
-                Placeholder="Enter Here"
-                MinimumHeightRequest="150"
-                TextChanged="Handle_TextChanged"
-                x:Name="importData"/>
+                    HorizontalOptions="FillAndExpand"
+                    Placeholder="Enter Here"
+                    VerticalOptions="Center"
+                    MinimumHeightRequest="150"
+                    TextChanged="Handle_TextChanged"
+                    x:Name="importData"/>
         </ScrollView>
         <Grid HorizontalOptions="Center"
                 VerticalOptions="Center"

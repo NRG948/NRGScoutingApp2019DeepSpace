@@ -39,11 +39,12 @@ namespace NRGScoutingApp
             redCard = false,
             comments = ""
         };
-
+        
         public MatchParameters()
         {
             InitializeComponent();
             cacheCheck();
+            onParamUpdate();
         }
 
         //Confirms user action to go back and clears all data for next match
@@ -70,6 +71,8 @@ namespace NRGScoutingApp
         //Checks if all neccesary Items exist, clears match data, and goes to Matches Page
         async void saveClicked(object sender, System.EventArgs e)
         {
+            Entry.team = teamName;
+            onParamUpdate();
             if (isSaveConditionNotMet()) {
                 popErrorsToScreen();
             }
@@ -87,33 +90,55 @@ namespace NRGScoutingApp
                 JObject data = initializeEventsObject();
                 if (data.Count <= 0)
                 {
-                    data.Add(new JProperty("Matches", new JArray(new JObject(parameters))));
+                    data.Add(new JProperty("Matches", new JArray()));
                     pushBackToHome(data, new JArray(), parameters);
                 }
                 else
                 {
                     JArray temp = (JArray)data["Matches"];
-                    foreach (var match in temp.ToList()) {
-                        if (Convert.ToInt32(match["matchNum"]) == Entry.matchNum && Convert.ToInt32(match["side"]) == Entry.side) {
-                            if (!(match["team"].ToString().Equals(Entry.team))) {
-                                var remove = await DisplayAlert("Error", "Overwrite Old Match with New Data?", "No", "Yes");
-                                if (!remove) {
-                                    temp.Remove(match);
-                                    pushBackToHome(data, temp, parameters);
-                                }
-                                else {
-                                    break;
-                                }
+                    if (temp.ToList().Exists(x => x["matchNum"].Equals(parameters["matchNum"]) && x["side"].Equals(parameters["side"]))) {
+                        var item = temp.ToList().Find(x => x["matchNum"].Equals(parameters["matchNum"]) && x["side"].Equals(parameters["side"]));
+                        if (item["team"] != parameters["team"]) {
+                            var remove = await DisplayAlert("Error", "Overwrite Old Match with New Data?", "No", "Yes");
+                            if (!remove)
+                            {
+                                temp.Remove(item);
+                                pushBackToHome(data, temp, parameters);
                             }
                             else {
-                                temp.Remove(match);
-                                pushBackToHome(data, temp, parameters);
+                                return;
                             }
                         }
                         else {
+                            temp.Remove(item);
                             pushBackToHome(data, temp, parameters);
                         }
                     }
+                    else {
+                        pushBackToHome(data, temp, parameters);
+                    }
+
+                    //foreach (var match in temp.ToList()) {
+                    //    if (Convert.ToInt32(match["matchNum"]) == Entry.matchNum && Convert.ToInt32(match["side"]) == Entry.side) {
+                    //        if (!(match["team"].ToString().Equals(Entry.team))) {
+                    //            var remove = await DisplayAlert("Error", "Overwrite Old Match with New Data?", "No", "Yes");
+                    //            if (!remove) {
+                    //                temp.Remove(match);
+                    //                pushBackToHome(data, temp, parameters);
+                    //            }
+                    //            else {
+                    //                break;
+                    //            }
+                    //        }
+                    //        else {
+                    //            temp.Remove(match);
+                    //            pushBackToHome(data, temp, parameters);
+                    //        }
+                    //    }
+                    //    else {
+                    //        pushBackToHome(data, temp, parameters);
+                    //    }
+                    //}
                 }
             }
         }
@@ -306,17 +331,23 @@ namespace NRGScoutingApp
         async void pushBackToHome(JObject data, JArray temp, JObject parameters) {
             temp.Add(new JObject(parameters));
             data["Matches"] = temp;
-            if (Matches.appRestore == false)
-            {
-                Navigation.PopToRootAsync(true);
-            }
-            else if (Matches.appRestore == true)
-            {
-                Matches.appRestore = false;
-                Navigation.PopAsync(true);
-            }
             App.Current.Properties["matchEventsString"] = JsonConvert.SerializeObject(data);
             await App.Current.SavePropertiesAsync();
+            try
+            {
+                if (Matches.appRestore == false)
+                {
+                    Navigation.PopToRootAsync(true);
+                }
+                else if (Matches.appRestore == true)
+                {
+                    Matches.appRestore = false;
+                    Navigation.PopAsync(true);
+                }
+            }
+            catch (System.InvalidOperationException) {
+            
+            }
             clearMatchItems();
         }
 

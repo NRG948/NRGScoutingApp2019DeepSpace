@@ -167,6 +167,7 @@ namespace NRGScoutingApp
                 for (int i = 0; i < temp.Count; i++)
                 {
                     JObject match = (JObject)temp[i];
+                    Console.WriteLine(match);
                     String teamIdentifier = match["team"].ToString().Split('-')[MatchFormat.teamNameOrNum];
                     if (MatchFormat.teamNameOrNum == 0)
                     {

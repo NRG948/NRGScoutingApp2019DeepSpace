@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-
 using Xamarin.Forms;
 using Rg.Plugins.Popup.Services;
 using System.Security.Cryptography.X509Certificates;
@@ -9,6 +8,7 @@ using Newtonsoft.Json.Linq;
 using System.Globalization;
 using Newtonsoft.Json.Schema;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace NRGScoutingApp
 {
@@ -26,17 +26,10 @@ namespace NRGScoutingApp
 
         void Handle_TextChanged(object sender, Xamarin.Forms.TextChangedEventArgs e)
         {
-            if (!String.IsNullOrWhiteSpace(e.NewTextValue))
-            {
-                importButton.IsEnabled = true;
-            }
-            else
-            {
-                importButton.IsEnabled = false;
-            }
+            importButton.IsEnabled = !String.IsNullOrWhiteSpace(e.NewTextValue);
         }
 
-        void importClicked(object sender, System.EventArgs e)
+        async void importClicked(object sender, System.EventArgs e)
         {
             JObject data = MatchParameters.initializeEventsObject();
             try
@@ -46,65 +39,98 @@ namespace NRGScoutingApp
                     int numMatches;
                     if (data.Count <= 0)
                     {
-                        data.Add(importJSON);
-                        JArray matchesArray = (JArray)data["Matches"];
+                        JArray matchesArray = (JArray)importJSON["Matches"];
+                        data = new JObject(importJSON);
                         numMatches = matchesArray.Count;
-
                     }
                     else {
                         JArray matchesArray = (JArray)data["Matches"];
                         numMatches = matchesArray.Count;
-                        addItemsChecker(data, importJSON);
+                        await addItemsChecker(data, importJSON);
                         numMatches = matchesArray.Count - numMatches;
                     }
-                    DisplayAlert("Success", "Added " + numMatches + " entries.", "OK");
+                    await DisplayAlert("Success", "Added " + numMatches + " entries.", "OK");
                     App.Current.Properties["matchEventsString"] = JsonConvert.SerializeObject(data);
-                    App.Current.SavePropertiesAsync();
-                    PopupNavigation.Instance.PopAsync(true);
+                    await App.Current.SavePropertiesAsync();
+                    await PopupNavigation.Instance.PopAsync(true);
                 }
                 else {
-                    DisplayAlert("Error", "Error in Data", "OK");
+                   await DisplayAlert("Error", "Error in Data", "OK");
                 }
             }
             catch (JsonReaderException) {
-                DisplayAlert("Alert", "Error in Data", "OK");
+                await DisplayAlert("Error", "Error in Data", "OK");
             }
         }
 
-        async void addItemsChecker(JObject data, JObject importJSON) {
+        async Task addItemsChecker(JObject data, JObject importJSON) {
             JArray temp = (JArray)data["Matches"];
-            JArray importData = (JArray)importJSON["Matches"];
-            foreach (var match in temp.ToList())
+            JArray importTemp = (JArray)importJSON["Matches"];
+            var tempList = temp.ToList();
+            foreach (var match in importTemp.ToList())
             {
-                foreach (var import in importData.ToList()) { 
-                if (Convert.ToInt32(match["matchNum"]) == Convert.ToInt32(data["matchNum"]) && Convert.ToInt32(match["side"]) == Convert.ToInt32(data["side"]))
+                Console.WriteLine("in foreach");
+                Console.WriteLine(match);
+                if (tempList.Exists(x => x["matchNum"].Equals(match["matchNum"]) && x["side"].Equals(match["side"])))
                 {
-                    if (!(match["team"].ToString().Equals(import["team"])))
+                    Console.WriteLine("inexist if");
+                    var item = tempList.Find(x => x["matchNum"].Equals(match["matchNum"]) && x["side"].Equals(match["side"]));
+                    if(item["team"] == match["team"])
                     {
-                        var remove = await DisplayAlert("Error", "Overwrite Old Match with New Data?\nTeam Name: " + data["team"] + "\nMatch Number: " + data["matchNum"], "No", "Yes");
-                        if (!remove)
-                        {
-                            temp.Remove(match);
-                            temp.Add(import);
-
-                        }
-                        else
-                        {
-                            break;
-                        }
+                        temp.Add(match);
                     }
                     else
                     {
-                        temp.Remove(match);
-                        temp.Add(import);
+                        var add = await DisplayAlert("Warning!", "Match: " + item["matchNum"] +
+                                                    "\nTeam: " + item["team"] +
+                                                    "\nSide: " + MatchFormat.matchSideFromEnum(Convert.ToInt32(item["side"])) +
+                                                    "\nConflicts with Existing Match", "Overwite", "Ignore");
+                        if (!add)
+                        {
+                            temp.Remove(item);
+                            temp.Add(match);
+                        }
                     }
+                    Console.WriteLine(item);
                 }
                 else
                 {
-                    temp.Add(import);
+                    Console.WriteLine("bypassed if");
+                    temp.Add(match);
                 }
             }
-            }
+
+            //foreach (var match in temp.ToList())
+            //{
+            //    foreach (var import in importData.ToList()) { 
+            //    if (Convert.ToInt32(match["matchNum"]) == Convert.ToInt32(data["matchNum"]) && Convert.ToInt32(match["side"]) == Convert.ToInt32(data["side"]))
+            //    {
+            //        if (!(match["team"].ToString().Equals(import["team"])))
+            //        {
+            //            var remove = await DisplayAlert("Error", "Overwrite Old Match with New Data?\nTeam Name: " + data["team"] + "\nMatch Number: " + data["matchNum"], "No", "Yes");
+            //            if (!remove)
+            //            {
+            //                temp.Remove(match);
+            //                temp.Add(import);
+
+            //            }
+            //            else
+            //            {
+            //                break;
+            //            }
+            //        }
+            //        else
+            //        {
+            //            temp.Remove(match);
+            //            temp.Add(import);
+            //        }
+            //    }
+            //    else
+            //    {
+            //        temp.Add(import);
+            //    }
+            //}
+            //}
         }
 
     }
