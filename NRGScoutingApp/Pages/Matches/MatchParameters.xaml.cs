@@ -123,28 +123,6 @@ namespace NRGScoutingApp
                     {
                         pushBackToHome(data, temp, parameters);
                     }
-
-                    //foreach (var match in temp.ToList()) {
-                    //    if (Convert.ToInt32(match["matchNum"]) == Entry.matchNum && Convert.ToInt32(match["side"]) == Entry.side) {
-                    //        if (!(match["team"].ToString().Equals(Entry.team))) {
-                    //            var remove = await DisplayAlert("Error", "Overwrite Old Match with New Data?", "No", "Yes");
-                    //            if (!remove) {
-                    //                temp.Remove(match);
-                    //                pushBackToHome(data, temp, parameters);
-                    //            }
-                    //            else {
-                    //                break;
-                    //            }
-                    //        }
-                    //        else {
-                    //            temp.Remove(match);
-                    //            pushBackToHome(data, temp, parameters);
-                    //        }
-                    //    }
-                    //    else {
-                    //        pushBackToHome(data, temp, parameters);
-                    //    }
-                    //}
                 }
             }
         }
