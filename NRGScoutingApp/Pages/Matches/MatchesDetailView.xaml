@@ -1,49 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-             x:Class="NRGScoutingApp.MatchesDetailView"
-             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
-             ios:Page.UseSafeArea="true"
-             ios:NavigationPage.PrefersLargeTitles="true"
-             Title="Match Detail">
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="NRGScoutingApp.MatchesDetailView" 
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" ios:Page.UseSafeArea="true" ios:NavigationPage.PrefersLargeTitles="true" Title="Match Detail">
     <ContentPage.Content>
         <StackLayout>
             <ScrollView Padding="8">
-                <Label x:Name="matchDetailJSON" 
-                    MinimumHeightRequest="50"/>
+                <Label x:Name="matchDetailJSON" MinimumHeightRequest="50"/>
             </ScrollView>
-           <Grid HorizontalOptions="Center"
-                VerticalOptions="Center"
-                RowSpacing="5"
-                ColumnSpacing="2"
-                Margin="5,5">
-            <Grid.RowDefinitions>
-              <RowDefinition Height="*" />
-              </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-              <ColumnDefinition Width="*" />
-              <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="*" />
-             </Grid.ColumnDefinitions>
-                <Button x:Name="cancelAction"
-                        Text="Cancel"
-                        Clicked="cancelClicked"
-                        Grid.Row="0"
-                        Grid.Column="0"
-                        HorizontalOptions="EndAndExpand"/>
-                 <Button x:Name="openMatch"
-                        Text="Open"
-                        Clicked="openClicked"
-                        Grid.Row="0"
-                        Grid.Column="1"
-                        HorizontalOptions="CenterAndExpand"/>
-                 <Button x:Name="deleteMatch"
-                        Text="Delete"
-                        Clicked="deleteClicked"
-                        Grid.Row="0"
-                        Grid.Column="2"
-                        HorizontalOptions="StartAndExpand"/>
-                </Grid>
+            <Grid HorizontalOptions="Center" VerticalOptions="Center" RowSpacing="5" ColumnSpacing="2" Margin="5,5">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Button x:Name="cancelAction" Text="Cancel" Clicked="cancelClicked" Grid.Row="0" Grid.Column="0" HorizontalOptions="EndAndExpand"/>
+                <Button x:Name="openMatch" Text="Open" Clicked="openClicked" Grid.Row="0" Grid.Column="1" HorizontalOptions="CenterAndExpand"/>
+                <Button x:Name="deleteMatch" Text="Delete" Clicked="deleteClicked" Grid.Row="0" Grid.Column="2" HorizontalOptions="StartAndExpand"/>
+            </Grid>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

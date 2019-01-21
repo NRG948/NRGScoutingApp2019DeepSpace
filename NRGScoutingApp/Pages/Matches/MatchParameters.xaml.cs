@@ -39,7 +39,7 @@ namespace NRGScoutingApp
             redCard = false,
             comments = ""
         };
-        
+
         public MatchParameters()
         {
             InitializeComponent();
@@ -73,7 +73,8 @@ namespace NRGScoutingApp
         {
             Entry.team = teamName;
             onParamUpdate();
-            if (isSaveConditionNotMet()) {
+            if (isSaveConditionNotMet())
+            {
                 popErrorsToScreen();
             }
             else
@@ -96,25 +97,30 @@ namespace NRGScoutingApp
                 else
                 {
                     JArray temp = (JArray)data["Matches"];
-                    if (temp.ToList().Exists(x => x["matchNum"].Equals(parameters["matchNum"]) && x["side"].Equals(parameters["side"]))) {
+                    if (temp.ToList().Exists(x => x["matchNum"].Equals(parameters["matchNum"]) && x["side"].Equals(parameters["side"])))
+                    {
                         var item = temp.ToList().Find(x => x["matchNum"].Equals(parameters["matchNum"]) && x["side"].Equals(parameters["side"]));
-                        if (item["team"] != parameters["team"]) {
+                        if (item["team"] != parameters["team"])
+                        {
                             var remove = await DisplayAlert("Error", "Overwrite Old Match with New Data?", "No", "Yes");
                             if (!remove)
                             {
                                 temp.Remove(item);
                                 pushBackToHome(data, temp, parameters);
                             }
-                            else {
+                            else
+                            {
                                 return;
                             }
                         }
-                        else {
+                        else
+                        {
                             temp.Remove(item);
                             pushBackToHome(data, temp, parameters);
                         }
                     }
-                    else {
+                    else
+                    {
                         pushBackToHome(data, temp, parameters);
                     }
 
@@ -146,7 +152,7 @@ namespace NRGScoutingApp
         void Handle_SelectedIndexChanged(object sender, System.EventArgs e)
         {
             Entry.side = PositionPicker.SelectedIndex;
-            
+
             onParamUpdate();
         }
 
@@ -258,7 +264,8 @@ namespace NRGScoutingApp
         }
 
         //Returns Jobject based on wheter match events string is empty or not
-        public static JObject initializeEventsObject() {
+        public static JObject initializeEventsObject()
+        {
             JObject data;
             if (!String.IsNullOrWhiteSpace(App.Current.Properties["matchEventsString"].ToString()))
             {
@@ -303,7 +310,7 @@ namespace NRGScoutingApp
                 red.IsToggled = entries.redCard;
                 comments.Text = entries.comments;
                 Entry = entries;
-               }
+            }
             else
             {
                 death.SelectedIndex = (int)MatchFormat.DEATH_TYPE.noDeath;
@@ -314,7 +321,7 @@ namespace NRGScoutingApp
         }
 
         //Clears all properties for use in next match
-         void clearMatchItems()
+        void clearMatchItems()
         {
             App.Current.Properties["teamStart"] = "";
             App.Current.Properties["appState"] = 0;
@@ -323,12 +330,13 @@ namespace NRGScoutingApp
             App.Current.Properties["lastItemDropped"] = 0;
             App.Current.Properties["tempParams"] = "";
             App.Current.Properties["tempMatchEvents"] = "";
-             App.Current.SavePropertiesAsync();
+            App.Current.SavePropertiesAsync();
             NewMatchStart.events.Clear();
         }
 
         //Takes all objects and adds items while returning the main page
-        async void pushBackToHome(JObject data, JArray temp, JObject parameters) {
+        async void pushBackToHome(JObject data, JArray temp, JObject parameters)
+        {
             temp.Add(new JObject(parameters));
             data["Matches"] = temp;
             App.Current.Properties["matchEventsString"] = JsonConvert.SerializeObject(data);
@@ -345,14 +353,16 @@ namespace NRGScoutingApp
                     Navigation.PopAsync(true);
                 }
             }
-            catch (System.InvalidOperationException) {
-            
+            catch (System.InvalidOperationException)
+            {
+
             }
             clearMatchItems();
         }
 
         //Disables Auto Buttons if certain button is not toggled
-        void setAutoButtons() {
+        void setAutoButtons()
+        {
             autoLvl.IsEnabled = crossbase.IsToggled;
             autoOTele.IsEnabled = crossbase.IsToggled;
             if (!crossbase.IsToggled)
@@ -360,10 +370,11 @@ namespace NRGScoutingApp
                 autoLvl.SelectedIndex = -1;
                 autoOTele.IsToggled = false;
             }
-       }
+        }
 
         //Disables Self Climb EndGame Buttons if certain button is not toggled
-        void setEndGameSelfButtons() {
+        void setEndGameSelfButtons()
+        {
             climbLvl.IsEnabled = climbSwitch.IsToggled;
             needed.IsEnabled = climbSwitch.IsToggled;
             if (!climbSwitch.IsToggled)
@@ -374,31 +385,34 @@ namespace NRGScoutingApp
         }
 
         //Disables Help Climb EndGame Buttons if certain button is not toggled
-        void setEndGameOtherButtons() {
+        void setEndGameOtherButtons()
+        {
             giveAssistClimbLvl.IsEnabled = assisted.IsToggled;
             if (!assisted.IsToggled)
             {
                 giveAssistClimbLvl.SelectedIndex = -1;
             }
         }
-    
+
         //returns True if required fields are empty
-         bool isSaveConditionNotMet() {
+        bool isSaveConditionNotMet()
+        {
             return string.IsNullOrWhiteSpace(matchnum.Text) || PositionPicker.SelectedIndex < 0; //Checks if Match Number or Picker is Present
         }
 
-        void popErrorsToScreen() {
+        void popErrorsToScreen()
+        {
             if (string.IsNullOrWhiteSpace(matchnum.Text) && PositionPicker.SelectedIndex < 0)
             {
-                 DisplayAlert("Alert!", "Please Enter Match Number and Position", "OK");
+                DisplayAlert("Alert!", "Please Enter Match Number and Position", "OK");
             }
             else if (string.IsNullOrWhiteSpace(matchnum.Text))
-            {   
+            {
                 DisplayAlert("Alert!", "Please Enter Match Number", "OK");
             }
             else if (PositionPicker.SelectedIndex < 0)
             {
-                 DisplayAlert("Alert!", "Please Enter Position", "OK");
+                DisplayAlert("Alert!", "Please Enter Position", "OK");
             }
         }
     }

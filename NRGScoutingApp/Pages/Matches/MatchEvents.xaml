@@ -1,104 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-             x:Class="NRGScoutingApp.MatchEvents"
-             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
-             Icon="ic_edit.png"
-             ios:Title="Match Events"
-             ios:Page.UseSafeArea="true"
-             ios:NavigationPage.PrefersLargeTitles="true">
-    
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="NRGScoutingApp.MatchEvents" 
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" Icon="ic_edit.png" ios:Title="Match Events" ios:Page.UseSafeArea="true" ios:NavigationPage.PrefersLargeTitles="true">
+
     <ContentPage.Content>
         <StackLayout>
             <ListView x:Name="listView" Margin="0,10,10,10" ItemTapped="eventTapped">
                 <ListView.ItemTemplate>
-                  <DataTemplate>
-                    <ViewCell>
-                        <ContentView Margin="0">
+                    <DataTemplate>
+                        <ViewCell>
+                            <ContentView Margin="0">
                                 <Grid>
                                     <Grid.RowDefinitions>
                                         <RowDefinition Height="*" />
                                         <RowDefinition Height="*" />
-                                        </Grid.RowDefinitions>
+                                    </Grid.RowDefinitions>
                                     <Grid.ColumnDefinitions>
                                         <ColumnDefinition Width="*" />
                                         <ColumnDefinition Width="3*" />
-                                   </Grid.ColumnDefinitions>
-                                    <Image 
-                                        Grid.RowSpan="2" 
-                                        Grid.Column="0"
-                                        Source="{Binding image}"/>
-                                   <Label Text="{Binding eventName}"
-                                           x:Name="key"
-                                           Grid.Row="0" 
-                                           Grid.Column="1"
-                                           HorizontalTextAlignment="Start"/>
-                                    <Label Text="{Binding timeOccur}"
-                                           x:Name="value"
-                                           Grid.Row="1" 
-                                           Grid.Column="1"
-                                           HorizontalTextAlignment="Start"/>
-                                    </Grid>
-                        </ContentView>
-                      </ViewCell>
+                                    </Grid.ColumnDefinitions>
+                                    <Image Grid.RowSpan="2" Grid.Column="0" Source="{Binding image}"/>
+                                    <Label Text="{Binding eventName}" x:Name="key" Grid.Row="0" Grid.Column="1" HorizontalTextAlignment="Start"/>
+                                    <Label Text="{Binding timeOccur}" x:Name="value" Grid.Row="1" Grid.Column="1" HorizontalTextAlignment="Start"/>
+                                </Grid>
+                            </ContentView>
+                        </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-                    
-            </StackLayout>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>
-
-<!-- <ListView.ItemTemplate>
-                <DataTemplate>
-                    <ListView>
-                        <ListView.ItemTemplate {Binding EventsObj.Value}>
-                            <DataTemplate>
-                                <StackPanel>
-                                    <Textblock Text="Hi"/>
-                                    <Textblock Text="Bye"/>
-                                </StackPanel>
-                            </DataTemplate>
-                        </ListView.ItemTemplate>
-                    </ListView>
-                </DataTemplate>
-            </ListView.ItemTemplate> 
-            
-            
-            <Image.Triggers>
-                                            <DataTrigger TargetType="Image"
-                                                         Binding="{Binding Key}"
-                                                         Value="Cube Picked">
-                                                <Setter Property="Source" Value="ic_picked_cube.png" />
-                                            </DataTrigger>
-                                            <DataTrigger TargetType="Image"
-                                                         Binding="{Binding Key}"
-                                                         Value="Dropped Scale">
-                                                <Setter Property="Source" Value="ic_dropped_cube_yellow.png" />
-                                            </DataTrigger>
-                                            <DataTrigger TargetType="Image"
-                                                         Binding="{Binding Key}"
-                                                         Value="Dropped Opposite Switch">
-                                                <Setter Property="Source" Value="ic_dropped_cube_yellow.png" />
-                                                </DataTrigger>
-                                                <DataTrigger TargetType="Image"
-                                                         Binding="{Binding Key}"
-                                                         Value="Dropped Ally Switch">
-                                                </DataTrigger>
-                                                <Setter Property="Source" Value="ic_dropped_cube_yellow.png" />
-                                                    <DataTrigger TargetType="Image"
-                                                         Binding="{Binding Key}"
-                                                         Value="Dropped None">
-                                                <Setter Property="Source" Value="ic_cancel.png" />
-                                            </DataTrigger>
-                                            <DataTrigger TargetType="Image"
-                                                         Binding="{Binding Key}"
-                                                         Value="Dropped Exchange">
-                                                <Setter Property="Source" Value="ic_dropped_cube_yellow.png" />
-                                            </DataTrigger>
-                                            <DataTrigger TargetType="Image"
-                                                         Binding="{Binding Key}"
-                                                         Value="Climb Start">
-                                                <Setter Property="Source" Value="ic_climb_yellow.png" />
-                                            </DataTrigger>
-                                        </Image.Triggers> -->

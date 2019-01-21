@@ -20,7 +20,7 @@ namespace NRGScoutingApp
         async void cancelClicked(object sender, System.EventArgs e)
         {
             cancelAction.IsEnabled = false;
-           await Navigation.PopAsync();
+            await Navigation.PopAsync();
         }
         async void openClicked(object sender, System.EventArgs e)
         {
@@ -34,11 +34,12 @@ namespace NRGScoutingApp
                 }
             }
             App.Current.Properties["tempParams"] = parameters.ToObject<MatchFormat.EntryParams>();
-            for(int i = 0; i < Convert.ToInt32( val.Property("numEvents").Value); i++)
+            for (int i = 0; i < Convert.ToInt32(val.Property("numEvents").Value); i++)
             {
-                NewMatchStart.events.Add(new MatchFormat.Data { 
-                time = Convert.ToInt32(val.Property("TE" + i + "_0").Value), 
-                type = Convert.ToInt32(val.Property("TE" + i + "_1").Value) 
+                NewMatchStart.events.Add(new MatchFormat.Data
+                {
+                    time = Convert.ToInt32(val.Property("TE" + i + "_0").Value),
+                    type = Convert.ToInt32(val.Property("TE" + i + "_1").Value)
                 });
                 CubeDroppedDialog.saveEvents();
             }
@@ -51,7 +52,8 @@ namespace NRGScoutingApp
         async void deleteClicked(object sender, System.EventArgs e)
         {
             var delete = await DisplayAlert("Alert", "Are you sure you want to delete this entry?", "No", "Yes");
-            if (!delete) {
+            if (!delete)
+            {
                 deleteMatchAtIndex(jsonIndex);
                 await Navigation.PopAsync();
             }
@@ -65,10 +67,11 @@ namespace NRGScoutingApp
             return temp[index].ToString();
         }
 
-        void deleteMatchAtIndex(int index) {
+        void deleteMatchAtIndex(int index)
+        {
             JObject matchesJSON = JObject.Parse(App.Current.Properties["matchEventsString"].ToString());
             JArray temp = (JArray)matchesJSON["Matches"];
-            if(temp.Count == 1)
+            if (temp.Count == 1)
             {
                 App.Current.Properties["matchEventsString"] = "";
                 App.Current.SavePropertiesAsync();

@@ -25,10 +25,11 @@ namespace NRGScoutingApp
         }
         public Boolean goBack = false;
         public string teamName;
-            
+
         protected override void OnAppearing()
         {
-            if (goBack == true){
+            if (goBack == true)
+            {
                 goBack = false;
                 Navigation.PopAsync();
             }
@@ -54,13 +55,10 @@ namespace NRGScoutingApp
 
             //MatchesList.EndRefresh();
         }
-
-
-        List<string> teams =TeamsNames.teams;
-
+        List<string> teams = TeamsNames.teams;
     }
 
-      
+
 
 
 }

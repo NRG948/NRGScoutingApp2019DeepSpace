@@ -60,15 +60,18 @@ namespace NRGScoutingApp
             Navigation.PopAsync(true);
 
         }
-        public static void saveEvents(){
+        public static void saveEvents()
+        {
             App.Current.Properties["tempMatchEvents"] = NewMatchStart.events;
             App.Current.SavePropertiesAsync();
         }
-        private void setDropTime(){
+        private void setDropTime()
+        {
             App.Current.Properties["lastItemDropped"] = (int)NewMatchStart.droppedTime;
             App.Current.SavePropertiesAsync();
         }
-        private void setButtons() {
+        private void setButtons()
+        {
             drop1Button.Text = ConstantVars.DROP_1_DIALOG_TEXT;
             drop2Button.Text = ConstantVars.DROP_2_DIALOG_TEXT;
             drop3Button.Text = ConstantVars.DROP_3_DIALOG_TEXT;

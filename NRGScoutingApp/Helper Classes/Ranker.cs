@@ -13,16 +13,20 @@ namespace NRGScoutingApp
     {
         private JObject fullData;
         //PRE: data is in JSON Format
-        public Ranker(String data) {
+        public Ranker(String data)
+        {
             fullData = getJSON(data);
         }
 
         //Checks if the JObject contains any values
-        public bool isRankNeeded() {
+        public bool isRankNeeded()
+        {
             return fullData.Count > 0;
         }
 
-        public JObject getJSON(String input) {
+        //Returns JObject for matches input string
+        private JObject getJSON(String input)
+        {
             JObject tempJSON;
             if (!String.IsNullOrWhiteSpace(App.Current.Properties["matchEventsString"].ToString()))
             {

@@ -1,93 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-             x:Class="NRGScoutingApp.CubeDroppedDialog"
-             xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
-             xmlns:animations="clr-namespace:Rg.Plugins.Popup.Animations;assembly=Rg.Plugins.Popup"
-             Title="Choose Drop Location">
-    <ScrollView Margin="0">
-        <Grid HorizontalOptions="Center"
-              VerticalOptions="Center"
-              ColumnSpacing="2">
-                  <Grid.RowDefinitions>
-                    <RowDefinition Height="2*" />
-                    <RowDefinition Height="2*" />
-                    <RowDefinition Height="2*" />
-                    <RowDefinition Height="*" />
-                  </Grid.RowDefinitions>
-                  <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="1*" />
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="*" />
-                  </Grid.ColumnDefinitions>
-                  <Button BackgroundColor="#fdad13"
-                          x:Name="drop1Button"
-                          TextColor="White"
-                          Grid.Row="0"
-                          Grid.Column="1"
-                          ContentLayout="Top,0" 
-                          Margin="0"
-                          Image="ic_scale.png"
-                          Clicked="drop1"/>
-                  
-                  <Button BackgroundColor="#fdad13"
-                          x:Name="drop2Button"
-                          TextColor="White"
-                          Grid.Row="1"
-                          Grid.Column="0"
-                          Margin="0"
-                          Padding="0"
-                          ContentLayout="Top,0"                               
-                          Image="ic_switch.png" 
-                          Scale="1"
-                          Clicked="drop2"/>
-                  
-                  <Button BackgroundColor="#fdad13"
-                          TextColor="White"
-                          Text="None"
-                          Grid.Row="1"
-                          Grid.Column="1"
-                          ContentLayout="Top,0"                               
-                          Image="ic_cancel.png"
-                          Clicked="noneClicked"/>
-                  
-                  <Button BackgroundColor="#fdad13"
-                          x:Name="drop3Button"
-                          TextColor="White"
-                          Grid.Row="1"
-                          Grid.Column="2"
-                          Margin="0"
-                          Padding="0"
-                          ContentLayout="Top,0"                               
-                          Image="ic_switch.png"
-                          Clicked="drop3"/>
-                  
-                  <Button BackgroundColor="#fdad13"
-                          x:Name="drop4Button"
-                          TextColor="White"
-                          Grid.Row="2"
-                          Grid.Column="1"
-                          ContentLayout="Top,0"                               
-                          Image="ic_exchange.png"
-                          Clicked="drop4"/>    
-                        
-                         <Button Text="Cancel" 
-                          VerticalOptions="StartAndExpand"
-                          FontSize="Medium"
-                          Margin="0,0"
-                          Clicked="backClicked"
-                          Grid.Row="3"
-                          Grid.Column="2"/>
-                   
-                  
-            </Grid>
+        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="NRGScoutingApp.CubeDroppedDialog" 
+        xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup" 
+        xmlns:animations="clr-namespace:Rg.Plugins.Popup.Animations;assembly=Rg.Plugins.Popup" Title="Choose Drop Location">
+        <ScrollView Margin="0">
+                <Grid HorizontalOptions="Center" VerticalOptions="Center" ColumnSpacing="2">
+                        <Grid.RowDefinitions>
+                                <RowDefinition Height="2*" />
+                                <RowDefinition Height="2*" />
+                                <RowDefinition Height="2*" />
+                                <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="1*" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Button BackgroundColor="#fdad13" x:Name="drop1Button" TextColor="White" Grid.Row="0" Grid.Column="1" ContentLayout="Top,0" Margin="0" Image="ic_scale.png" Clicked="drop1"/>
 
-    </ScrollView>
+                        <Button BackgroundColor="#fdad13" x:Name="drop2Button" TextColor="White" Grid.Row="1" Grid.Column="0" Margin="0" Padding="0" ContentLayout="Top,0" Image="ic_switch.png" Scale="1" Clicked="drop2"/>
+
+                        <Button BackgroundColor="#fdad13" TextColor="White" Text="None" Grid.Row="1" Grid.Column="1" ContentLayout="Top,0" Image="ic_cancel.png" Clicked="noneClicked"/>
+
+                        <Button BackgroundColor="#fdad13" x:Name="drop3Button" TextColor="White" Grid.Row="1" Grid.Column="2" Margin="0" Padding="0" ContentLayout="Top,0" Image="ic_switch.png" Clicked="drop3"/>
+
+                        <Button BackgroundColor="#fdad13" x:Name="drop4Button" TextColor="White" Grid.Row="2" Grid.Column="1" ContentLayout="Top,0" Image="ic_exchange.png" Clicked="drop4"/>
+
+                        <Button Text="Cancel" VerticalOptions="StartAndExpand" FontSize="Medium" Margin="0,0" Clicked="backClicked" Grid.Row="3" Grid.Column="2"/>
+
+                </Grid>
+        </ScrollView>
 </ContentPage>
-<!--xmlns:animations="clr-namespace:Rg.Plugins.Popup.Animations;assembly=Rg.Plugins.Popup"
-                 ios:Page.UseSafeArea="true"
-                 ios:NavigationPage.PrefersLargeTitles="true">
-    -->
-    <!--     AlignItems="Center"-->
-    
- 

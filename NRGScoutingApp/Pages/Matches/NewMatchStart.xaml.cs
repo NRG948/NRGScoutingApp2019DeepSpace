@@ -68,18 +68,19 @@ namespace NRGScoutingApp
                 timeSlider.Value = 0;
                 App.Current.SavePropertiesAsync();
             }
-            
+
         }
 
         void startClicked(object sender, System.EventArgs e)
         {
-            if (!isTimerRunning) 
+            if (!isTimerRunning)
             {
-                if (!App.Current.Properties.ContainsKey("timerValue")) {
-                    App.Current.Properties["timerValue"] = (int) 0;
+                if (!App.Current.Properties.ContainsKey("timerValue"))
+                {
+                    App.Current.Properties["timerValue"] = (int)0;
                     App.Current.SavePropertiesAsync();
                 }
-                else if (App.Current.Properties.ContainsKey("timerValue") && firstTimerStart== true)
+                else if (App.Current.Properties.ContainsKey("timerValue") && firstTimerStart == true)
                 {
                     timerValue = Convert.ToInt32(App.Current.Properties["timerValue"]);
                     timerText.Text = timeToString((int)timerValue);
@@ -88,7 +89,8 @@ namespace NRGScoutingApp
                 timeSlider.IsEnabled = false;
                 isTimerRunning = true;
                 startTimer.Text = ConstantVars.TIMER_PAUSE;
-                if (Device.RuntimePlatform == "iOS"){
+                if (Device.RuntimePlatform == "iOS")
+                {
                     Device.StartTimer(TimeSpan.FromMilliseconds(ConstantVars.TIMER_INTERVAL_IOS), () =>
                     {
                         if (timerValue >= ConstantVars.MATCH_SPAN_MS || !isTimerRunning)
@@ -99,7 +101,8 @@ namespace NRGScoutingApp
                         Timer_Elapsed(); return true;
                     });
                 }
-                else if (Device.RuntimePlatform == "Android"){
+                else if (Device.RuntimePlatform == "Android")
+                {
                     Device.StartTimer(TimeSpan.FromMilliseconds(ConstantVars.TIMER_INTERVAL_ANDROID), () =>
                     {
                         if (timerValue >= ConstantVars.MATCH_SPAN_MS || !isTimerRunning)
@@ -107,7 +110,7 @@ namespace NRGScoutingApp
                             startTimer.Text = ConstantVars.TIMER_START;
                             return false;
                         }
-                        Timer_Elapsed(); 
+                        Timer_Elapsed();
                         return true;
                     });
                 }
@@ -122,7 +125,8 @@ namespace NRGScoutingApp
         }
         private void Timer_Elapsed()
         {
-            if (Device.RuntimePlatform=="iOS"){
+            if (Device.RuntimePlatform == "iOS")
+            {
                 ms += ConstantVars.TIMER_INTERVAL_IOS;
                 timerValue += ConstantVars.TIMER_INTERVAL_IOS;
             }
@@ -149,21 +153,23 @@ namespace NRGScoutingApp
 
         void timerValueChanged(object sender, Xamarin.Forms.ValueChangedEventArgs e)
         {
-                if (!App.Current.Properties.ContainsKey("timerValue")){
-                    App.Current.Properties["timerValue"] = (int) 0;
-                    App.Current.SavePropertiesAsync();
-                }
-                else if(App.Current.Properties.ContainsKey("timerValue") && firstTimerStart == true)
-                {
-                    timerValue = (int)(App.Current.Properties["timerValue"]);
-                    firstTimerStart = false;
-                    }
-                else{
-                    App.Current.Properties["timerValue"] = (int)timeSlider.Value;
-                    App.Current.SavePropertiesAsync();
-                }
-                double value = e.NewValue;
-                timerText.Text = timeToString((int)e.NewValue);
+            if (!App.Current.Properties.ContainsKey("timerValue"))
+            {
+                App.Current.Properties["timerValue"] = (int)0;
+                App.Current.SavePropertiesAsync();
+            }
+            else if (App.Current.Properties.ContainsKey("timerValue") && firstTimerStart == true)
+            {
+                timerValue = (int)(App.Current.Properties["timerValue"]);
+                firstTimerStart = false;
+            }
+            else
+            {
+                App.Current.Properties["timerValue"] = (int)timeSlider.Value;
+                App.Current.SavePropertiesAsync();
+            }
+            double value = e.NewValue;
+            timerText.Text = timeToString((int)e.NewValue);
             timerValue = (int)(e.NewValue);
         }
 
@@ -187,14 +193,15 @@ namespace NRGScoutingApp
         {
             if (!isTimerRunning)
             {
-                 DisplayAlert("Error", "Timer not Started", "OK");
+                DisplayAlert("Error", "Timer not Started", "OK");
             }
 
-            else if (cubePicked.Text == ConstantVars.ITEM_PICKED_TEXT_LIVE) {
+            else if (cubePicked.Text == ConstantVars.ITEM_PICKED_TEXT_LIVE)
+            {
                 //Performs actions to open popup for adding cube dropped, etc
                 pickedTime = (int)timerValue;
                 App.Current.Properties["lastItemPicked"] = (int)pickedTime;
-                var action =  await DisplayActionSheet("Choose Pick Type:", ConstantVars.CANCEL, null, ConstantVars.PICK_1_TEXT, ConstantVars.PICK_2_TEXT);
+                var action = await DisplayActionSheet("Choose Pick Type:", ConstantVars.CANCEL, null, ConstantVars.PICK_1_TEXT, ConstantVars.PICK_2_TEXT);
                 if (!action.ToString().Equals(ConstantVars.CANCEL))
                 {
                     if (action.ToString().Equals(ConstantVars.PICK_1_TEXT))
@@ -215,7 +222,7 @@ namespace NRGScoutingApp
             else if (cubePicked.Text == ConstantVars.ITEM_DROPPED_TEXT_LIVE)
             {
                 //Performs action/s to open popup for adding cube dropped, etc
-                droppedTime =(int)timerValue;
+                droppedTime = (int)timerValue;
                 Navigation.PushAsync(new CubeDroppedDialog());
                 cubePicked.Image = ConstantVars.ITEM_PICKED_IMAGE_LIVE;
                 cubePicked.Text = ConstantVars.ITEM_PICKED_TEXT_LIVE;
@@ -227,15 +234,17 @@ namespace NRGScoutingApp
         //TODO: Call Parse Method for match number called and figure out the pickNum and dropNum values and set them
         private void timerValueSetter()
         {
-            if(!App.Current.Properties.ContainsKey("lastItemPicked")){
+            if (!App.Current.Properties.ContainsKey("lastItemPicked"))
+            {
                 App.Current.Properties["lastItemPicked"] = 0;
                 App.Current.Properties["lastItemDroppped"] = 0;
                 App.Current.Properties["tempEventString"] = "";
                 App.Current.Properties["tempMatchEvents"] = "";
                 App.Current.SavePropertiesAsync();
             }
-            else if(Convert.ToInt32(App.Current.Properties["lastItemPicked"]) == 0 || Convert.ToInt32(App.Current.Properties["lastItemDropped"]) == 0){}
-            else if(Convert.ToInt32(App.Current.Properties["lastItemDroppped"]) > Convert.ToInt32(App.Current.Properties["lastItemDropped"])){
+            else if (Convert.ToInt32(App.Current.Properties["lastItemPicked"]) == 0 || Convert.ToInt32(App.Current.Properties["lastItemDropped"]) == 0) { }
+            else if (Convert.ToInt32(App.Current.Properties["lastItemDroppped"]) > Convert.ToInt32(App.Current.Properties["lastItemDropped"]))
+            {
                 cubePicked.Image = ConstantVars.ITEM_DROPPED_IMAGE_LIVE;
                 cubePicked.Text = ConstantVars.ITEM_DROPPED_TEXT_LIVE;
             }
@@ -255,7 +264,8 @@ namespace NRGScoutingApp
 
         }
 
-        public static string timeToString(int timeValue){
+        public static string timeToString(int timeValue)
+        {
             int minutes = 0;
             int seconds = 0;
             int milliseconds = 0;
@@ -266,11 +276,6 @@ namespace NRGScoutingApp
             milliseconds = timeValue;
             return minutes + ":" + seconds.ToString("D2") + "." + (milliseconds / 10).ToString("D2");
         }
-
-
-
     }
-
 }
-
 
