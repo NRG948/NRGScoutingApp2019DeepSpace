@@ -68,7 +68,7 @@ namespace NRGScoutingApp
         void deleteMatchAtIndex(int index) {
             JObject matchesJSON = JObject.Parse(App.Current.Properties["matchEventsString"].ToString());
             JArray temp = (JArray)matchesJSON["Matches"];
-            if(temp.Count-1 == index)
+            if(temp.Count == 1)
             {
                 App.Current.Properties["matchEventsString"] = "";
                 App.Current.SavePropertiesAsync();
