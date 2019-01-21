@@ -76,7 +76,35 @@ namespace NRGScoutingApp
         public static readonly String LVL_2_CLIMB = "Level 2";
         public static readonly String LVL_3_CLIMB = "Level 3";
 
-        //RANKER 
+        /*
+         * RANKER VALUES
+         * NOTE: THE LOWER THE VALUES FOR RANK, THE BETTER
+         */        
+        //Autonomous
         public static readonly int AUTO_LENGTH = 15000;
+        public static readonly double MULT_SANDSTORM_MANUAL = 1;
+        public static readonly double MULT_SANDSTORM_AUTO = 0.5;
+        public static readonly double PTS_BASELINE_NONE = 0;
+        public static readonly double PTS_BASELINE_LVL_1 = -1;
+        public static readonly double PTS_BASELINE_LVL_2 = -3;
+
+        //Game Piece Manipulation
+        public static readonly double PTS_GAME_PIECE= -1;
+        public static readonly double PTS_DROP_LVL_1 = -1;
+        public static readonly double PTS_DROP_LVL_2 = -2;
+        public static readonly double PTS_DROP_LVL_3 = -3;
+        public static readonly double MULT_HATCH = 1;
+        public static readonly double MULT_CARGO = 1;
+
+        //Climb
+        public static readonly double PTS_NEED_HELP_LVL_2 = -1;
+        public static readonly double PTS_NEED_HELP_LVL_3 = -1;
+        public static readonly double PTS_SELF_LVL_1 = -1;
+        public static readonly double PTS_SELF_LVL_2 = -2;
+        public static readonly double PTS_SELF_LVL_3 = -4;
+        public static readonly double PTS_HELPED_LVL_1 = -0;
+        public static readonly double PTS_HELPED_LVL_2 = -1;
+        public static readonly double PTS_HELPED_LVL_3 = -2;
+
     }
 }
