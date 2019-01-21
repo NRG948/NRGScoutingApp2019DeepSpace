@@ -11,7 +11,7 @@ namespace NRGScoutingApp
 {
     public class Ranker
     {
-        JObject fullData;
+        private JObject fullData;
         //PRE: data is in JSON Format
         public Ranker(String data) {
             fullData = getJSON(data);
