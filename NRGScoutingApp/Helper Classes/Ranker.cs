@@ -55,6 +55,7 @@ namespace NRGScoutingApp
                     }
                 }
             }
+            Console.WriteLine(avgData);
             return avgData;
         }
 

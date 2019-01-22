@@ -1,38 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-             x:Class="NRGScoutingApp.Rankings"
-             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
-             ios:Page.UseSafeArea="true"
-             Title="Rankings"
-             Icon= "ic_leader.png"
-             ios:NavigationPage.PrefersLargeTitles="true">
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="NRGScoutingApp.Rankings" 
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" ios:Page.UseSafeArea="true" Title="Rankings" Icon= "ic_leader.png" ios:NavigationPage.PrefersLargeTitles="true">
     <ContentPage.Content>
-        <ScrollView>
-        <Label Text="Testing..."/>
-        <Button Text="Clear ALL App Data (Debug Purposes)" Clicked="Handle_Clicked"/>
+        <StackLayout>
+            <Label Text="Testing..."/>
+            <Button Text="Clear ALL App Data (Debuzg Purposes)" Clicked="Handle_Clicked"/>
             <ListView x:Name="listView" Margin="0,0,0,0">
                 <ListView.ItemTemplate>
-                  <DataTemplate>
-                    <ViewCell>
-                        <ContentView Margin="0" Padding="0">
-                                 <ContentView.GestureRecognizers>
-                                    <TapGestureRecognizer Tapped="Handle_Tapped"
-                                                          NumberOfTapsRequired="2"/>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ContentView Margin="0" Padding="0">
+                                <ContentView.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="Handle_Tapped" NumberOfTapsRequired="2"/>
                                 </ContentView.GestureRecognizers>
                                 <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
-                                  <Label Text="{Binding Path=Key}"
-                                           x:Name="key"
-                                           HorizontalTextAlignment="Start"/>
-                                    <Label Text="{Binding Path=Value}"
-                                           x:Name="value"
-                                           HorizontalTextAlignment="Start"/>
-                                     </StackLayout>
+                                    <Label Text="{Binding Path=Key}" x:Name="key" HorizontalTextAlignment="Start"/>
+                                    <Label Text="{Binding Path=Value}" x:Name="value" HorizontalTextAlignment="Start"/>
+                                </StackLayout>
                             </ContentView>
-                      </ViewCell>
+                        </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-            </ScrollView>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>
