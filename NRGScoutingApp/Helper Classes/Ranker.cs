@@ -18,7 +18,7 @@ namespace NRGScoutingApp
         }
 
         //Returns average data for type passed through (enum int is passed through sortType)
-        public List<Data> getPickAvgData(int sortType)
+        public Dictionary<string, double> getPickAvgData(int sortType)
         {
             Dictionary<string, double> avgData = new Dictionary<string, double>();
             foreach (var match in fullData)
@@ -39,7 +39,7 @@ namespace NRGScoutingApp
                         if (((int)match["TE" + i + "_1"] != (int)MatchFormat.ACTION.startClimb) && ((int)match["TE" + i + "_1"] != (int)MatchFormat.ACTION.dropNone))
                         {
                             int doTime = (int)match["TE" + (i + 1) + "_0"] - (int)match["TE" + i + "_0"];
-                            if ((int)match["TE" + (i + 1) + "_0"] <= ConstantVars.AUTO_LENGTH)
+                            if ((int)match["TE" + (i + 1) + "_0"] <= ConstantVars.AUTO_LENGTH && !(bool)match["autoOTele"])
                             {
                                 doTime /= 2;
                             }
