@@ -9,7 +9,7 @@ namespace NRGScoutingApp
 {
     public partial class Matches : ContentPage
     {
-        /* For Blue Alliance Matches 
+        /* For Blue Alliance Matches
         void Handle_Clicked(object sender, System.EventArgs e)
         {
             Navigation.PushAsync(new BlueAllianceMatches());
@@ -173,14 +173,13 @@ namespace NRGScoutingApp
             }
             else
             {
-
                 JObject matchesJSON = JObject.Parse(App.Current.Properties["matchEventsString"].ToString());
                 JArray temp = (JArray)matchesJSON["Matches"];
                 //Will Contain all items for matches list
                 matchesList = new List<MatchesListFormat>();
                 for (int i = 0; i < temp.Count; i++)
                 {
-                    JObject match = (JObject)temp[i];                    
+                    JObject match = (JObject)temp[i];
                     String teamIdentifier = match["team"].ToString().Split('-')[MatchFormat.teamNameOrNum];
                     if (MatchFormat.teamNameOrNum == 0)
                     {
@@ -199,6 +198,8 @@ namespace NRGScoutingApp
                     });
                 }
                 listView.ItemsSource = matchesList;
+                listView.IsVisible = matchesList.Count > 0;
+                sadNoMatch.IsVisible = matchesList.Count <= 0;
             }
         }
     }

@@ -1,27 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="NRGScoutingApp.Rankings"
-    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" ios:Page.UseSafeArea="true" Title="Rankings" Icon= "ic_leader.png" ios:NavigationPage.PrefersLargeTitles="true">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="NRGScoutingApp.Rankings" xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" ios:Page.UseSafeArea="true" Title="Rankings" Icon="ic_leader.png" ios:NavigationPage.PrefersLargeTitles="true">
     <ContentPage.Content>
         <StackLayout>
             <Button Text="Clear ALL App Data (Debuzg Purposes)" Clicked="Handle_Clicked"/>
-            <ListView x:Name="listView" Margin="0,0,0,0">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <ViewCell>
-                            <ContentView Margin="0" Padding="0">
-                                <ContentView.GestureRecognizers>
-                                    <TapGestureRecognizer Tapped="Handle_Tapped" NumberOfTapsRequired="2"/>
-                                </ContentView.GestureRecognizers>
-                                <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
-                                    <Label Text="{Binding Path=Key}" x:Name="key" HorizontalTextAlignment="Start"/>
-                                    <Label Text="{Binding Path=Value}" x:Name="value" HorizontalTextAlignment="Start"/>
-                                </StackLayout>
-                            </ContentView>
-                        </ViewCell>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
+            <Grid HorizontalOptions="CenterAndExpand" RowSpacing="0" ColumnSpacing="0" Margin="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <ListView x:Name="listView" Margin="0,0,0,0" Grid.Row="0" Grid.Column="0">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <ContentView Margin="0" Padding="0">
+                                    <ContentView.GestureRecognizers>
+                                        <TapGestureRecognizer Tapped="Handle_Tapped" NumberOfTapsRequired="2"/>
+                                    </ContentView.GestureRecognizers>
+                                    <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                                        <Label Text="{Binding Path=Key}" x:Name="key" HorizontalTextAlignment="Start"/>
+                                        <Label Text="{Binding Path=Value}" x:Name="value" HorizontalTextAlignment="Start"/>
+                                    </StackLayout>
+                                </ContentView>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                <Label x:Name="sadNoMatch" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" VerticalOptions="CenterAndExpand" Grid.Row="0" Grid.Column="0" Text=":( No Matches.&#x0a;Add a Match and Come Back" FontAttributes="Bold" TextColor="Gray" FontSize="Large"/>
+            </Grid>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

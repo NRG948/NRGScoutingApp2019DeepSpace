@@ -11,13 +11,14 @@ namespace NRGScoutingApp
     public class Ranker
     {
         private JArray fullData;
+        
         //PRE: data is in JSON Format
         public Ranker(String data)
         {
             fullData = getJSON(data);
         }
 
-        public void updateData(String data)
+        public void setData(String data)
         {
             fullData = getJSON(data);
         }
@@ -88,7 +89,7 @@ namespace NRGScoutingApp
             }
             else
             {
-                tempJSON = new JObject();
+                tempJSON = new JObject(new JProperty("Matches"));
             }
             return (JArray)tempJSON["Matches"];
         }

@@ -13,7 +13,14 @@
     <ToolbarItem Icon="ic_export_web.png" Clicked="exportClicked"/>
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
-        <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
+    <Grid HorizontalOptions="CenterAndExpand" RowSpacing="0" ColumnSpacing="0" Margin="0" Padding="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+        <StackLayout x:Name="matchesView" Orientation="Vertical" HorizontalOptions="FillAndExpand" Grid.Row="0" Grid.Column="0">
          <SearchBar x:Name="searchBar" Placeholder="Match Number" TextChanged="SearchBar_OnTextChanged"/>
            <ListView x:Name="listView" Margin="0,0,0,0" ItemTapped="Handle_ItemTapped">
                 <ListView.ItemTemplate>
@@ -34,14 +41,7 @@
                 </ListView.ItemTemplate>
             </ListView>
         </StackLayout>
-            
+        <Label x:Name="sadNoMatch" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" HorizontalTextAlignment="Center" Grid.Row="0" Grid.Column="0" Text=":( No Matches.&#x0a;Add a Match and Come Back" FontAttributes="Bold" TextColor="Gray" FontSize="Large"/>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>
-
-
-<!--<TapGestureRecognizer Tapped="Handle_Tapped"
-                                                          NumberOfTapsRequired="2"/>
-
-                                                          
-                                                          Icon="plus.png"
--->

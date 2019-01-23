@@ -13,22 +13,27 @@ namespace NRGScoutingApp
             InitializeComponent();
         }
 
+        //Initializes the ranking object
         Ranker mainRank = new Ranker(App.Current.Properties["matchEventsString"].ToString());
 
         protected override void OnAppearing()
         {
-            mainRank.updateData(App.Current.Properties["matchEventsString"].ToString());
-            Dictionary<string,double> x = mainRank.getPickAvgData((int)MatchFormat.ACTION.pick1);
-            var y = from pair in x
-                orderby pair.Value ascending
-                select pair;
+            //Updates string data from matches
+            mainRank.setData(App.Current.Properties["matchEventsString"].ToString());
+                //Gets all data and sets it into ascending order based on each team's average time
+                Dictionary<string, double> x = mainRank.getPickAvgData((int)MatchFormat.ACTION.pick1);
+                var y = from pair in x
+                        orderby pair.Value ascending
+                        select pair;
+            //Checks if match string is empty
+            listView.IsVisible = x.Count > 0;
+            sadNoMatch.IsVisible = !listView.IsVisible;
             listView.ItemsSource = y;
         }
 
         void Handle_Tapped(object sender, System.EventArgs e)
         {
-        
-}
+        }
 
         // FOLLOWING BUTTON TO BE REMOVED IN PRODUCTION (DEBUG PURPOSES ONLY)
         async void Handle_Clicked(object sender, System.EventArgs e)
