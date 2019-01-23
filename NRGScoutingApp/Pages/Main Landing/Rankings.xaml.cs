@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 
 using Xamarin.Forms;
+using System.Linq;
 
 namespace NRGScoutingApp
 {
@@ -16,7 +17,12 @@ namespace NRGScoutingApp
 
         protected override void OnAppearing()
         {
-            listView.ItemsSource = mainRank.getPickAvgData((int)MatchFormat.ACTION.pick1);
+            mainRank.updateData(App.Current.Properties["matchEventsString"].ToString());
+            Dictionary<string,double> x = mainRank.getPickAvgData((int)MatchFormat.ACTION.pick1);
+            var y = from pair in x
+                orderby pair.Value ascending
+                select pair;
+            listView.ItemsSource = y;
         }
 
         void Handle_Tapped(object sender, System.EventArgs e)

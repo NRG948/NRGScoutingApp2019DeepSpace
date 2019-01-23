@@ -17,13 +17,18 @@ namespace NRGScoutingApp
             fullData = getJSON(data);
         }
 
+        public void updateData(String data)
+        {
+            fullData = getJSON(data);
+        }
+
         //Returns average data for type passed through (enum int is passed through sortType)
         public Dictionary<string, double> getPickAvgData(int sortType)
         {
             Dictionary<string, double> avgData = new Dictionary<string, double>();
             foreach (var match in fullData)
             {
-                int reps;
+              int reps;
                 try
                 {
                     reps = (int)match["numEvents"];
