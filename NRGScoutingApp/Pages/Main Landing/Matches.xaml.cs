@@ -130,7 +130,6 @@ namespace NRGScoutingApp
         {
             int index;
             var x = listView.ItemsSource as List<MatchesListFormat>;
-            Console.WriteLine(x);
             if (!String.IsNullOrWhiteSpace(searchBar.Text))
             {
                 index = matchesList.IndexOf(e.Item as MatchesListFormat);
@@ -139,7 +138,6 @@ namespace NRGScoutingApp
             {
                 index = (listView.ItemsSource as List<MatchesListFormat>).IndexOf(e.Item as MatchesListFormat);
             }
-            Console.WriteLine(index);
             Navigation.PushAsync(new MatchesDetailView(index));
         }
 
@@ -182,8 +180,7 @@ namespace NRGScoutingApp
                 matchesList = new List<MatchesListFormat>();
                 for (int i = 0; i < temp.Count; i++)
                 {
-                    JObject match = (JObject)temp[i];
-                    Console.WriteLine(match);
+                    JObject match = (JObject)temp[i];                    
                     String teamIdentifier = match["team"].ToString().Split('-')[MatchFormat.teamNameOrNum];
                     if (MatchFormat.teamNameOrNum == 0)
                     {
