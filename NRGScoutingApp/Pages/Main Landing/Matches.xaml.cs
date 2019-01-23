@@ -26,18 +26,18 @@ namespace NRGScoutingApp
             App.Current.Properties["newAppear"] = 0;
             App.Current.SavePropertiesAsync();
             populateMatchesList();
-         }
+        }
 
         protected override void OnAppearing()
         {
             popNav = false;
-           if (!App.Current.Properties.ContainsKey("matchEventsString"))
+            if (!App.Current.Properties.ContainsKey("matchEventsString"))
             {
                 App.Current.Properties["matchEventsString"] = "";
                 App.Current.Properties["tempMatchEvents"] = "";
                 App.Current.SavePropertiesAsync();
             }
-            if (!App.Current.Properties.ContainsKey("newAppear")){}  //DEBUG PURPOSES
+            if (!App.Current.Properties.ContainsKey("newAppear")) { }  //DEBUG PURPOSES
             else if (App.Current.Properties["newAppear"].ToString() == "1")
             {
                 App.Current.Properties["appState"] = 0;
@@ -48,7 +48,8 @@ namespace NRGScoutingApp
                 populateMatchesList();
                 App.Current.SavePropertiesAsync();
             }
-            else if(App.Current.Properties["newAppear"].ToString() == "0"){
+            else if (App.Current.Properties["newAppear"].ToString() == "0")
+            {
                 App.Current.Properties["appState"] = 0;
                 App.Current.Properties["timerValue"] = (int)0;
                 App.Current.Properties["teamStart"] = "";
@@ -58,7 +59,7 @@ namespace NRGScoutingApp
             populateMatchesList();
         }
 
-       void importClicked(object sender, System.EventArgs e)
+        void importClicked(object sender, System.EventArgs e)
         {
             PopupNavigation.Instance.PushAsync(new ImportDialog());
         }
@@ -73,22 +74,25 @@ namespace NRGScoutingApp
             popNav = false;
             appRestore = false;
             await Navigation.PushAsync(new MatchEntryStart());
-             
         }
 
         private void SearchBar_OnTextChanged(object sender, TextChangedEventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(e.NewTextValue)) 
+            if (string.IsNullOrWhiteSpace(e.NewTextValue))
             {
                 listView.ItemsSource = matchesList;
-             }
+            }
 
-            else if(matchesList != null)
+            else
+            {
                 listView.ItemsSource = matchesList.Where(matchesList => matchesList.teamNameAndSide.Contains(e.NewTextValue) || matchesList.matchNum.Contains(e.NewTextValue));
+            }
         }
 
-        void matchConfirm(){
-            if(!App.Current.Properties.ContainsKey("appState")){
+        void matchConfirm()
+        {
+            if (!App.Current.Properties.ContainsKey("appState"))
+            {
                 appRestore = false;
                 App.Current.Properties["appState"] = 0;
                 App.Current.Properties["teamStart"] = "";
@@ -107,7 +111,7 @@ namespace NRGScoutingApp
             {
                 appRestore = false;
                 App.Current.Properties["appState"] = 0;
-                App.Current.Properties["timerValue"] = (int) 0;
+                App.Current.Properties["timerValue"] = (int)0;
                 App.Current.Properties["teamStart"] = "";
                 App.Current.Properties["tempMatchEvents"] = "";
                 App.Current.Properties["tempParams"] = "";
@@ -124,7 +128,17 @@ namespace NRGScoutingApp
 
         void Handle_ItemTapped(object sender, Xamarin.Forms.ItemTappedEventArgs e)
         {
-            int index = (listView.ItemsSource as List<MatchesListFormat>).IndexOf(e.Item as MatchesListFormat);
+            int index;
+            var x = listView.ItemsSource as List<MatchesListFormat>;
+            Console.WriteLine(x);
+            if (!String.IsNullOrWhiteSpace(searchBar.Text))
+            {
+                index = matchesList.IndexOf(e.Item as MatchesListFormat);
+            }
+            else
+            {
+                index = (listView.ItemsSource as List<MatchesListFormat>).IndexOf(e.Item as MatchesListFormat);
+            }
             Console.WriteLine(index);
             Navigation.PushAsync(new MatchesDetailView(index));
         }
@@ -138,18 +152,20 @@ namespace NRGScoutingApp
         void populateMatchesList()
         {
             JObject x;
-            if (!String.IsNullOrWhiteSpace(App.Current.Properties["matchEventsString"].ToString())) 
+            if (!String.IsNullOrWhiteSpace(App.Current.Properties["matchEventsString"].ToString()))
             {
                 try
                 {
                     x = JObject.Parse(App.Current.Properties["matchEventsString"].ToString());
                 }
-                catch (NullReferenceException) {
+                catch (NullReferenceException)
+                {
                     Console.WriteLine("Caught NullRepEx for populateMatchesList");
                     x = new JObject();
                 }
             }
-            else {
+            else
+            {
                 x = new JObject();
             }
             if (!x.HasValues)
@@ -188,10 +204,5 @@ namespace NRGScoutingApp
                 listView.ItemsSource = matchesList;
             }
         }
-
     }
-
-
 }
-
-
