@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="NRGScoutingApp.Matches"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+             ios:Page.UseSafeArea="true"
+             ios:NavigationPage.PrefersLargeTitles="true"
+             Title="Matches"
+             Icon="ic_match.png">
+    <ContentPage.ToolbarItems> 
+    <ToolbarItem Text="+" Clicked="newClicked"/>
+    <ToolbarItem Icon="ic_import_web.png" Clicked="importClicked"/>
+    <ToolbarItem Icon="ic_export_web.png" Clicked="exportClicked"/>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
+         <SearchBar x:Name="searchBar" Placeholder="Match Number" TextChanged="SearchBar_OnTextChanged"/>
+           <ListView x:Name="listView" Margin="0,0,0,0" ItemTapped="Handle_ItemTapped">
+                <ListView.ItemTemplate>
+                  <DataTemplate>
+                    <ViewCell>
+                        <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Padding="0" Margin="0">
+                                <Label Text="{Binding matchNum}"
+                                           x:Name="key"
+                                           HorizontalTextAlignment="Start"
+                                         Margin="0"/>
+                                    <Label Text="{Binding teamNameAndSide}"
+                                           x:Name="value"
+                                           HorizontalTextAlignment="Start"
+                                           Margin="0"/>
+                                     </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+            
+    </ContentPage.Content>
+</ContentPage>
+
+
+<!--<TapGestureRecognizer Tapped="Handle_Tapped"
+                                                          NumberOfTapsRequired="2"/>
+
+                                                          
+                                                          Icon="plus.png"
+-->

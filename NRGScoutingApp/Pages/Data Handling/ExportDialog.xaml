@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pages:PopupPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="NRGScoutingApp.ExportDialog"
+             xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+             xmlns:animations="clr-namespace:Rg.Plugins.Popup.Animations;assembly=Rg.Plugins.Popup">
+        <pages:PopupPage.Animation>
+        <animations:ScaleAnimation DurationIn="100"
+                                   DurationOut="10"
+                                   EasingIn="SinOut"
+                                   EasingOut="SinIn"
+                                   HasBackgroundAnimation="True"
+                                   PositionIn="Center"
+                                   PositionOut="Center"
+                                   ScaleIn="1.2"
+                                   ScaleOut="0.8" />
+    </pages:PopupPage.Animation>
+    <StackLayout VerticalOptions="CenterAndExpand">
+         <Frame HorizontalOptions="Center"
+             VerticalOptions="Center"
+           BackgroundColor="#ffffff"
+           HasShadow="true"
+           Padding="24,1,30,1"
+           CornerRadius="10"
+           Margin="40,20">
+            <StackLayout>
+        <Label Text="Export Entries" 
+               FontSize="20" 
+               Margin="2,10"
+               FontAttributes="Bold"/>
+        <ScrollView Orientation="Vertical">
+            <Label Text="" 
+                   LineBreakMode="CharacterWrap" 
+                   x:Name="exportDisplay"
+                   MinimumHeightRequest="50"/>
+        </ScrollView>
+        <Grid HorizontalOptions="Center"
+                VerticalOptions="Center"
+                RowSpacing="5"
+                ColumnSpacing="2"
+                Margin="5,5">
+            <Grid.RowDefinitions>
+              <RowDefinition Height="*" />
+              </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+               <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="3*" />
+             </Grid.ColumnDefinitions> 
+           <Button Text="Cancel" 
+                     Clicked="cancelClicked" 
+                     Margin="5,3"
+                   Grid.Row="0"
+                   Grid.Column="0"
+                   HorizontalOptions="EndAndExpand"/>
+            <Button x:Name="copyButton"
+                    Text="Copy to Clipboard" 
+                    Margin="10,3" 
+                    Clicked="copyClicked"
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    HorizontalOptions="EndAndExpand"/>
+                </Grid>
+                </StackLayout>
+                </Frame>
+    </StackLayout>
+</pages:PopupPage>
+<!--xmlns:animations="clr-namespace:Rg.Plugins.Popup.Animations;assembly=Rg.Plugins.Popup"
+                 ios:Page.UseSafeArea="true"
+                 ios:NavigationPage.PrefersLargeTitles="true">
+    -->
+    <!--     AlignItems="Center"-->
