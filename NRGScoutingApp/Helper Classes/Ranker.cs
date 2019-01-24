@@ -11,7 +11,7 @@ namespace NRGScoutingApp
     public class Ranker
     {
         private JArray fullData;
-        
+
         //PRE: data is in JSON Format
         public Ranker(String data)
         {
@@ -26,10 +26,12 @@ namespace NRGScoutingApp
         //Returns average data for type passed through (enum int is passed through sortType)
         public Dictionary<string, double> getPickAvgData(int sortType)
         {
-            Dictionary<string, double> avgData = new Dictionary<string, double>();
+            Dictionary<string, double> totalData = new Dictionary<string, double>();
+            Dictionary<string, int> numsData = new Dictionary<string, int>();
+            Dictionary<string, double> pushData = new Dictionary<string, double>();
             foreach (var match in fullData)
             {
-              int reps;
+                int reps;
                 try
                 {
                     reps = (int)match["numEvents"];
@@ -49,20 +51,27 @@ namespace NRGScoutingApp
                             {
                                 doTime /= 2;
                             }
-                            if (avgData.ContainsKey(match["team"].ToString()))
+                            if (totalData.ContainsKey(match["team"].ToString()))
                             {
-                                avgData[match["team"].ToString()] = (avgData[match["team"].ToString()] + doTime) / 2;
+                                totalData[match["team"].ToString()] += doTime;
+                                numsData[match["team"].ToString()]++;
                             }
                             else
                             {
-                                avgData.Add(match["team"].ToString(), doTime);
+                                totalData.Add(match["team"].ToString(), doTime);
+                                numsData.Add(match["team"].ToString(), 1);
                             }
                         }
                     }
                 }
             }
-            Console.WriteLine(avgData);
-            return avgData;
+
+            foreach (var data in totalData)
+            {
+                pushData.Add(data.Key, data.Value / numsData[data.Key]);
+            }
+            Console.WriteLine(pushData);
+            return pushData;
         }
 
         //Checks if the JObject contains any values
