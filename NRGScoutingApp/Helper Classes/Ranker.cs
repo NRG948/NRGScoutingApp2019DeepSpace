@@ -29,22 +29,22 @@ namespace NRGScoutingApp
             Dictionary<string, int> amountOfMatch = new Dictionary<string, int>();
             foreach (var match in fullData)
             {
+                int point = 0;
                 if ((bool) match["climb"])
                 {
-                    int point;
-                    
-                    if ((bool)match["needAstClimb"])
+                 if ((bool)match["needAstClimb"])
                     {
                         switch ((int)match["climbLvl"])
                         {
                             case 2:
-                                point = (int) ConstantVars.PTS_NEED_HELP_LVL_2;
+                                point += (int) ConstantVars.PTS_NEED_HELP_LVL_2;
                                 break;
                             case 3:
-                                point = (int)ConstantVars.PTS_NEED_HELP_LVL_2;
+                                point += (int)ConstantVars.PTS_NEED_HELP_LVL_2;
                                 break;
                             default:
-                                throw new System.InvalidOperationException("Shray, didn't u fix dis?!");
+                               point += 0;
+                               break;
                         }
                     }
                     else
@@ -52,20 +52,21 @@ namespace NRGScoutingApp
                         switch ((int)match["climbLvl"])
                         {
                             case 1:
-                                point = (int)ConstantVars.PTS_SELF_LVL_1;
+                                point += (int)ConstantVars.PTS_SELF_LVL_1;
                                 break;
                             case 2:
-                                point = (int)ConstantVars.PTS_SELF_LVL_2;
+                                point += (int)ConstantVars.PTS_SELF_LVL_2;
                                 break;
                             case 3:
-                                point = (int)ConstantVars.PTS_SELF_LVL_3;
+                                point += (int)ConstantVars.PTS_SELF_LVL_3;
                                 break;
                             default:
-                                throw new System.InvalidOperationException("Shray, what the");
+                               point += 0;
+                               break;
                         }
                     }
-
-                    if ((bool)match["giveAstClimb"])
+                }
+                if ((bool)match["giveAstClimb"])
                     {
                         switch ((int)match["giveAstClimbLvl"])
                         {
@@ -76,10 +77,11 @@ namespace NRGScoutingApp
                                 point += (int)ConstantVars.PTS_HELPED_LVL_3;
                                 break;
                             default:
-                                throw new System.InvalidOperationException("Shray, didn't u fix dis?!");
+                                point += 0;
+                                break;
                         }
                     }
-                    
+
                     if (totalPoint.ContainsKey(match["team"].ToString()))
                     {
                         totalPoint["team"] += point;
@@ -87,10 +89,9 @@ namespace NRGScoutingApp
                     }
                     else
                     {
-                        totalPoint["team"] = point;
+                        totalPoint.Add(match["team"].ToString(),point);
                         amountOfMatch["team"] = 1;
                     }
-                }
             }
             Dictionary<string, double> data = new Dictionary<string, double>();
             foreach (KeyValuePair<string, double> entry in totalPoint)
