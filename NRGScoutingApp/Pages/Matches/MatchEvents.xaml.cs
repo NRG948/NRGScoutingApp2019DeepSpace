@@ -13,6 +13,7 @@ namespace NRGScoutingApp
         {
             BindingContext = this;
             InitializeComponent();
+            setListVisibility(false);
         }
 
         //Constructor for Events View that Users see
@@ -27,11 +28,33 @@ namespace NRGScoutingApp
 
         protected override void OnAppearing()
         {
-            if (!String.IsNullOrWhiteSpace(NewMatchStart.events.ToString()))
+            if (NewMatchStart.events.Count > 0)
             {
+                Console.WriteLine("passedif");
                 eventsList = EventViewList((List<MatchFormat.Data>)NewMatchStart.events);
+                setListVisibility();
                 listView.ItemsSource = eventsList;
             }
+            else
+            {
+                Console.WriteLine("faildif");
+                setListVisibility();
+            }
+        }
+
+        /*
+         * Sets the visibility of the list based on boolean and the sad error opposite
+         * So if list.IsVisible = true, then sadNoMatch.IsVisible = false
+         */        
+        private void setListVisibility(bool setList)
+        {
+            listView.IsVisible = setList;
+            sadNoEvent.IsVisible = !setList;
+        }
+        private void setListVisibility()
+        {
+            listView.IsVisible = NewMatchStart.events.Count > 0;
+            sadNoEvent.IsVisible = !listView.IsVisible;
         }
 
         //Populates List that contains all data for each timer event to appear on the Match Events Screen
@@ -136,6 +159,7 @@ namespace NRGScoutingApp
             }
             listView.ItemsSource = null;
             listView.ItemsSource = eventsList;
+            setListVisibility();
         }
 
         void removeAtIndex(int index)

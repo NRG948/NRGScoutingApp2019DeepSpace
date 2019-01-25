@@ -2,7 +2,12 @@
 <TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
             x:Class="NRGScoutingApp.MatchEntryEditTab"
-            Title="{Binding teamName}">
+            xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+            android:TabbedPage.ToolbarPlacement="Bottom"
+            android:TabbedPage.BarItemColor="{StaticResource TabAccentColor}"
+            android:TabbedPage.BarSelectedItemColor="{StaticResource TabMainColor}"
+            android:TabbedPage.BarBackgroundColor="{StaticResource TabBGColor}"
+           Title="{Binding teamName}">
     <ContentPage.Content>
     </ContentPage.Content>
 </TabbedPage>

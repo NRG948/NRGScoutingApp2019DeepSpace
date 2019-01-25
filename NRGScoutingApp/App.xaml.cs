@@ -21,17 +21,7 @@ namespace NRGScoutingApp
             if (UseMockDataStore)
                 DependencyService.Register<MockDataStore>();
             else
-                DependencyService.Register<CloudDataStore>();         
-        }
-
-        public class NavTab: BottomBarPage
-        {
-            public NavTab()
-            {
-                Children.Add(new Matches());
-                Children.Add(new Rankings());
-
-            }
+                DependencyService.Register<CloudDataStore>();
         }
 
     }

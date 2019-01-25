@@ -20,11 +20,11 @@ namespace NRGScoutingApp
         {
             //Updates string data from matches
             mainRank.setData(App.Current.Properties["matchEventsString"].ToString());
-                //Gets all data and sets it into ascending order based on each team's average time
-                Dictionary<string, double> x = mainRank.getPickAvgData((int)MatchFormat.ACTION.pick1);
-                var y = from pair in x
-                        orderby pair.Value ascending
-                        select pair;
+            //Gets all data and sets it into ascending order based on each team's average time
+            Dictionary<string, double> x = mainRank.getPickAvgData((int)MatchFormat.ACTION.pick1);
+            var y = from pair in x
+                    orderby pair.Value ascending
+                    select pair;
             //Checks if match string is empty
             listView.IsVisible = x.Count > 0;
             sadNoMatch.IsVisible = !listView.IsVisible;

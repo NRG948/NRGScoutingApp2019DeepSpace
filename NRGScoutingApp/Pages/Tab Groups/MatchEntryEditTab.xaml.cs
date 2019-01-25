@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using System.Collections;
 using Xamarin.Forms;
+using Xamarin.Forms.PlatformConfiguration.AndroidSpecific;
 
 namespace NRGScoutingApp
 {
-    public partial class MatchEntryEditTab : TabbedPage
+    public partial class MatchEntryEditTab : Xamarin.Forms.TabbedPage
     {
         public MatchEntryEditTab()
         {
-            
             Children.Add(new NewMatchStart());
             Children.Add(new MatchEvents());
             if (checkParse()){

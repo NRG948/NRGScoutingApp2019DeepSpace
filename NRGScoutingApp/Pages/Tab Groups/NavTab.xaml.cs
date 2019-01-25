@@ -1,17 +1,17 @@
+using System;
+using System.Collections.Generic;
+using System.Collections;
 using Xamarin.Forms;
-using BottomBar.XamarinForms;
-
+using Xamarin.Forms.PlatformConfiguration.AndroidSpecific;
 namespace NRGScoutingApp
 {
-    public partial class NavTab : BottomBarPage
+    public partial class NavTab : Xamarin.Forms.TabbedPage
     {
         public NavTab()
         {
-           InitializeComponent();
+            Children.Add(new Matches());
+            Children.Add(new Rankings());
+            InitializeComponent();
         }
     }
 }
-
-// <x:Arguments>
-   //         <local:SchedulePage />
-     //   </x:Arguments>

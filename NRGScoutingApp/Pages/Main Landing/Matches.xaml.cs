@@ -155,13 +155,14 @@ namespace NRGScoutingApp
             {
                 if (count > 5000)
                 {
-                   return false;
+                    return false;
                 }
                 count++;
                 return true;
             });
             var del = await DisplayAlert("Notice", "Do you want to delete all matches? Data CANNOT be recovered.", "No", "Yes");
-            if (!del) {
+            if (!del)
+            {
                 App.Current.Properties["matchEventsString"] = "";
                 App.Current.SavePropertiesAsync();
                 populateMatchesList();

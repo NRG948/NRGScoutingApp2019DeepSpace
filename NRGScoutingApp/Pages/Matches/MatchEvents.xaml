@@ -5,7 +5,14 @@
 
     <ContentPage.Content>
         <StackLayout>
-            <ListView x:Name="listView" Margin="0,10,10,10" ItemTapped="eventTapped">
+            <Grid HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" RowSpacing="0" ColumnSpacing="0" Margin="0" Padding="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+            <ListView x:Name="listView" Margin="0,10,10,10" ItemTapped="eventTapped" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" Grid.Row="0" Grid.Column="0">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
@@ -28,6 +35,8 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
+                 <Label x:Name="sadNoEvent" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" HorizontalTextAlignment="Center" Grid.Row="0" Grid.Column="0" Text=":( No Events.&#x0a;Add a Match and Come Back" FontAttributes="Bold" TextColor="Gray" FontSize="Large"/>
+                </Grid>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
