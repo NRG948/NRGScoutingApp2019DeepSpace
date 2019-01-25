@@ -147,6 +147,27 @@ namespace NRGScoutingApp
             public String teamNameAndSide { get; set; }
         }
 
+        async void deleteClicked(object sender, System.EventArgs e)
+        {
+            await DisplayAlert("Hold it", "Make sure export to data first", "OK");
+            int count = 0;
+            Device.StartTimer(TimeSpan.FromMilliseconds(5000), () =>
+            {
+                if (count > 5000)
+                {
+                   return false;
+                }
+                count++;
+                return true;
+            });
+            var del = await DisplayAlert("Notice", "Do you want to delete all matches? Data CANNOT be recovered.", "No", "Yes");
+            if (!del) {
+                App.Current.Properties["matchEventsString"] = "";
+                App.Current.SavePropertiesAsync();
+                populateMatchesList();
+            }
+        }
+
         void populateMatchesList()
         {
             JObject x;
@@ -198,9 +219,18 @@ namespace NRGScoutingApp
                     });
                 }
                 listView.ItemsSource = matchesList;
-                listView.IsVisible = matchesList.Count > 0;
-                sadNoMatch.IsVisible = matchesList.Count <= 0;
             }
+            try
+            {
+                matchesView.IsVisible = matchesList.Count > 0;
+                sadNoMatch.IsVisible = !listView.IsEnabled;
+            }
+            catch (NullReferenceException)
+            {
+                matchesView.IsVisible = false;
+                sadNoMatch.IsVisible = true;
+            }
+
         }
     }
 }

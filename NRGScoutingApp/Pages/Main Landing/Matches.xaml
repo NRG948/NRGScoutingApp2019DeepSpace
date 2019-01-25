@@ -11,6 +11,7 @@
     <ToolbarItem Text="+" Clicked="newClicked"/>
     <ToolbarItem Icon="ic_import_web.png" Clicked="importClicked"/>
     <ToolbarItem Icon="ic_export_web.png" Clicked="exportClicked"/>
+    <ToolbarItem Text="&#x24e7;" Clicked="deleteClicked"/>
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
     <Grid HorizontalOptions="CenterAndExpand" RowSpacing="0" ColumnSpacing="0" Margin="0" Padding="0">
