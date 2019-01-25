@@ -30,21 +30,21 @@ namespace NRGScoutingApp
             foreach (var match in fullData)
             {
                 int point = 0;
-                if ((bool) match["climb"])
+                if ((bool)match["climb"])
                 {
-                 if ((bool)match["needAstClimb"])
+                    if ((bool)match["needAstClimb"])
                     {
                         switch ((int)match["climbLvl"])
                         {
                             case 2:
-                                point += (int) ConstantVars.PTS_NEED_HELP_LVL_2;
+                                point += (int)ConstantVars.PTS_NEED_HELP_LVL_2;
                                 break;
                             case 3:
                                 point += (int)ConstantVars.PTS_NEED_HELP_LVL_2;
                                 break;
                             default:
-                               point += 0;
-                               break;
+                                point += 0;
+                                break;
                         }
                     }
                     else
@@ -61,37 +61,37 @@ namespace NRGScoutingApp
                                 point += (int)ConstantVars.PTS_SELF_LVL_3;
                                 break;
                             default:
-                               point += 0;
-                               break;
-                        }
-                    }
-                }
-                if ((bool)match["giveAstClimb"])
-                    {
-                        switch ((int)match["giveAstClimbLvl"])
-                        {
-                            case 2:
-                                point += (int)ConstantVars.PTS_HELPED_LVL_2;
-                                break;
-                            case 3:
-                                point += (int)ConstantVars.PTS_HELPED_LVL_3;
-                                break;
-                            default:
                                 point += 0;
                                 break;
                         }
                     }
+                }
+                if ((bool)match["giveAstClimb"])
+                {
+                    switch ((int)match["giveAstClimbLvl"])
+                    {
+                        case 2:
+                            point += (int)ConstantVars.PTS_HELPED_LVL_2;
+                            break;
+                        case 3:
+                            point += (int)ConstantVars.PTS_HELPED_LVL_3;
+                            break;
+                        default:
+                            point += 0;
+                            break;
+                    }
+                }
 
-                    if (totalPoint.ContainsKey(match["team"].ToString()))
-                    {
-                        totalPoint["team"] += point;
-                        amountOfMatch["team"] += 1;
-                    }
-                    else
-                    {
-                        totalPoint.Add(match["team"].ToString(),point);
-                        amountOfMatch["team"] = 1;
-                    }
+                if (totalPoint.ContainsKey(match["team"].ToString()))
+                {
+                    totalPoint["team"] += point;
+                    amountOfMatch["team"] += 1;
+                }
+                else
+                {
+                    totalPoint.Add(match["team"].ToString(), point);
+                    amountOfMatch["team"] = 1;
+                }
             }
             Dictionary<string, double> data = new Dictionary<string, double>();
             foreach (KeyValuePair<string, double> entry in totalPoint)
@@ -123,7 +123,7 @@ namespace NRGScoutingApp
                 {
                     if ((int)match["TE" + i + "_1"] == sortType && i != reps - 1)
                     {
-                        if (((int)match["TE" + i + "_1"] != (int)MatchFormat.ACTION.startClimb) && ((int)match["TE" + i + "_1"] != (int)MatchFormat.ACTION.dropNone))
+                        if (((int)match["TE" + (i + 1) + "_1"] != (int)MatchFormat.ACTION.startClimb) && ((int)match["TE" + (i + 1) + "_1"] != (int)MatchFormat.ACTION.dropNone))
                         {
                             int doTime = (int)match["TE" + (i + 1) + "_0"] - (int)match["TE" + i + "_0"];
                             if ((int)match["TE" + (i + 1) + "_0"] <= ConstantVars.AUTO_LENGTH && !(bool)match["autoOTele"])
