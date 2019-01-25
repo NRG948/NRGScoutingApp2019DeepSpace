@@ -34,16 +34,5 @@ namespace NRGScoutingApp
         void Handle_Tapped(object sender, System.EventArgs e)
         {
         }
-
-        // FOLLOWING BUTTON TO BE REMOVED IN PRODUCTION (DEBUG PURPOSES ONLY)
-        async void Handle_Clicked(object sender, System.EventArgs e)
-        {
-            var del = await DisplayAlert("notice", "clear your memory??", "yes", "no");
-            if (del)
-            {
-                App.Current.Properties.Clear();
-                await App.Current.SavePropertiesAsync();
-            }
-        }
     }
 }
