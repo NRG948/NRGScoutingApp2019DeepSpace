@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using Xamarin.Forms;
 using System.ComponentModel;
 using System.Security.Principal;
-using BottomBar.XamarinForms;
 
 
 namespace NRGScoutingApp

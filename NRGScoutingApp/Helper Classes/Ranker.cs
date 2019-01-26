@@ -23,6 +23,11 @@ namespace NRGScoutingApp
             fullData = getJSON(data);
         }
 
+        public Dictionary<string,double> getLevelData(int levelEnum)
+        {
+
+        }
+
         public Dictionary<String, double> getClimbData()
         {
             Dictionary<string, double> totalPoint = new Dictionary<string, double>();
