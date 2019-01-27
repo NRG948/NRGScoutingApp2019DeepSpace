@@ -4,7 +4,7 @@
     xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" Title="New Match" ios:Page.UseSafeArea="true" ios:NavigationPage.PrefersLargeTitles="true">
     <ContentPage.Content>
         <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
-            <SearchBar Placeholder="Team Name/Number" TextChanged="SearchBar_OnTextChanged"></SearchBar>
+            <SearchBar Placeholder="Team Name/Number" TextChanged="SearchBar_OnTextChanged"/>
             <ListView IsPullToRefreshEnabled="false" x:Name="MatchesList" ItemTapped="Handle_ItemTapped" CachingStrategy="RecycleElement"/>
         </StackLayout>
     </ContentPage.Content>

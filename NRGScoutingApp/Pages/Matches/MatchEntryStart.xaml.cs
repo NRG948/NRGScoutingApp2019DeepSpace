@@ -48,10 +48,11 @@ namespace NRGScoutingApp
         {
             // MatchesList.BeginRefresh();
 
-            if (string.IsNullOrWhiteSpace(e.NewTextValue))
-                MatchesList.ItemsSource = teams;
-            else
-                MatchesList.ItemsSource = teams.Where(teams => teams.Contains(e.NewTextValue));
+            if (!String.IsNullOrWhiteSpace(e.NewTextValue))
+            {
+                Console.WriteLine(e.NewTextValue);
+                MatchesList.ItemsSource = teams.Where(teams => teams.ToLower().Contains(e.NewTextValue.ToLower()));
+            }
 
             //MatchesList.EndRefresh();
         }

@@ -43,6 +43,7 @@
     <PlatformTarget>x86</PlatformTarget>
     <BuildIpa>true</BuildIpa>
     <CodesignProvision>iOS Team Provisioning Profile: com.NRG.ScoutingApp.NRG-Scouting</CodesignProvision>
+    <MtouchUseLlvm>true</MtouchUseLlvm>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
     <DebugType>pdbonly</DebugType>
@@ -100,9 +101,6 @@
     </Reference>
     <Reference Include="Plugin.Clipboard">
       <HintPath>..\packages\Xamarin.Plugins.Clipboard.2.2.1\lib\Xamarin.iOS10\Plugin.Clipboard.dll</HintPath>
-    </Reference>
-    <Reference Include="BottomBar.XamarinForms">
-      <HintPath>..\packages\ThriveGmbH.BottomNavigationBar.XF.1.0.2\lib\Xamarin.iOS10\BottomBar.XamarinForms.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\packages\Newtonsoft.Json.12.0.1\lib\netstandard2.0\Newtonsoft.Json.dll</HintPath>
