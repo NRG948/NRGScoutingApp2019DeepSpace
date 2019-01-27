@@ -23,15 +23,90 @@ namespace NRGScoutingApp
             fullData = getJSON(data);
         }
 
-        public Dictionary<string,double> getLevelData(int levelEnum)
+        /*
+         * Switchboard operator for getting match Ranks
+         * PRE: Rank type is provided
+         * POST: Dictionary<String,double> type
+         * Used for populating the listView in Rankings Page
+         */
+        public Dictionary<String,double> getRank(MatchFormat.CHOOSE_RANK_TYPE x)
         {
-
+            switch (x)
+            {
+                case MatchFormat.CHOOSE_RANK_TYPE.pick1:
+                    return getPickAvgData((int)MatchFormat.ACTION.pick1);
+                case MatchFormat.CHOOSE_RANK_TYPE.pick2:
+                    return getPickAvgData((int)MatchFormat.ACTION.pick2);
+                case MatchFormat.CHOOSE_RANK_TYPE.drop1:
+                    return getDropData((int)MatchFormat.ACTION.drop1);
+                case MatchFormat.CHOOSE_RANK_TYPE.drop2:
+                    return getDropData((int)MatchFormat.ACTION.drop2);
+                case MatchFormat.CHOOSE_RANK_TYPE.drop3:
+                    return getDropData((int)MatchFormat.ACTION.drop3);
+                case MatchFormat.CHOOSE_RANK_TYPE.climb:
+                    return getClimbData();
+                case MatchFormat.CHOOSE_RANK_TYPE.overallRank:
+                    return new Dictionary<string, double>();
+            }
+            return new Dictionary<string, double>();
+            //Enum.GetNames(typeof(MatchFormat.ACTION)).Length;
         }
 
+        //Returns average data for drop level passed through (enum int is passed through sortType)
+        public Dictionary<string,double> getDropData(int levelEnum)
+        {
+            Dictionary<string, double> totalData = new Dictionary<string, double>();
+            Dictionary<string, int> numsData = new Dictionary<string, int>();
+            foreach (var match in fullData)
+            {
+                int reps;
+                try
+                {
+                    reps = (int)match["numEvents"];
+                }
+                catch (JsonException)
+                {
+                    reps = 0;
+                }
+                for (int i = 1; i < reps; i++)
+                {
+                    if ((int)match["TE" + i + "_1"] == levelEnum)
+                    {
+                        if (((int)match["TE" + (i - 1) + "_1"] != (int)MatchFormat.ACTION.startClimb) && ((int)match["TE" + (i - 1) + "_1"] != (int)MatchFormat.ACTION.dropNone))
+                        {
+                            int doTime = (int)match["TE" + (i) + "_0"] - (int)match["TE" + (i-1) + "_0"];
+                            if ((int)match["TE" + (i) + "_0"] <= ConstantVars.AUTO_LENGTH && !(bool)match["autoOTele"])
+                            {
+                                doTime /= 2;
+                            }
+                            if (totalData.ContainsKey(match["team"].ToString()))
+                            {
+                                totalData[match["team"].ToString()] += doTime;
+                                numsData[match["team"].ToString()]++;
+                            }
+                            else
+                            {
+                                totalData.Add(match["team"].ToString(), doTime);
+                                numsData.Add(match["team"].ToString(), 1);
+                            }
+                        }
+                    }
+                }
+                }
+            Dictionary<string, double> pushData = new Dictionary<string, double>();
+            foreach (var data in totalData)
+            {
+                pushData.Add(data.Key, data.Value / numsData[data.Key]);
+            }
+            Console.WriteLine(pushData);
+            return pushData;
+        }
+
+        //Returns average data for the climb parameters
         public Dictionary<String, double> getClimbData()
         {
             Dictionary<string, double> totalPoint = new Dictionary<string, double>();
-            Dictionary<string, int> amountOfMatch = new Dictionary<string, int>();
+            Dictionary<string, double> amountOfMatch = new Dictionary<string, double>();
             foreach (var match in fullData)
             {
                 int point = 0;
@@ -89,25 +164,24 @@ namespace NRGScoutingApp
 
                 if (totalPoint.ContainsKey(match["team"].ToString()))
                 {
-                    totalPoint["team"] += point;
-                    amountOfMatch["team"] += 1;
+                    totalPoint[match["team"].ToString()] += point;
+                    amountOfMatch[match["team"].ToString()] += 1;
                 }
                 else
                 {
                     totalPoint.Add(match["team"].ToString(), point);
-                    amountOfMatch["team"] = 1;
+                    amountOfMatch.Add(match["team"].ToString(), 1);
                 }
             }
             Dictionary<string, double> data = new Dictionary<string, double>();
             foreach (KeyValuePair<string, double> entry in totalPoint)
             {
-                data[entry.Key] = totalPoint[entry.Key] / amountOfMatch[entry.Key];
+                data.Add(entry.Key, entry.Value / amountOfMatch[entry.Key]);
             }
             return data;
         }
 
-
-        //Returns average data for type passed through (enum int is passed through sortType)
+        //Returns average data for pick type passed through (enum int is passed through sortType)
         public Dictionary<string, double> getPickAvgData(int sortType)
         {
             Dictionary<string, double> totalData = new Dictionary<string, double>();

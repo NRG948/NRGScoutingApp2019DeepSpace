@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="NRGScoutingApp.Rankings" xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" ios:Page.UseSafeArea="true" Title="Rankings" Icon="ic_leader.png" ios:NavigationPage.PrefersLargeTitles="true">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="NRGScoutingApp.Rankings" 
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+             ios:Page.UseSafeArea="true" 
+             Title="Rankings" 
+             Icon="ic_leader.png" 
+             ios:NavigationPage.PrefersLargeTitles="true">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Overall" Clicked="overallRank" Order="Primary"/>
+        <ToolbarItem Text="Hatch" Clicked="pick1Rank" Order="Secondary"/>
+        <ToolbarItem Text="Cargo" Clicked="pick2Rank" Order="Secondary"/>
+        <ToolbarItem Text="Climb" Clicked="climbRank" Order="Secondary"/>
+        <ToolbarItem Text="Lvl. 1" Clicked="drop1Rank" Order="Secondary"/>
+        <ToolbarItem Text="Lvl. 2" Clicked="drop2Rank" Order="Secondary"/>
+        <ToolbarItem Text="Lvl. 3" Clicked="drop3Rank" Order="Secondary"/>
+    </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <StackLayout>
            <Grid HorizontalOptions="CenterAndExpand" RowSpacing="0" ColumnSpacing="0" Margin="0" VerticalOptions="CenterAndExpand">

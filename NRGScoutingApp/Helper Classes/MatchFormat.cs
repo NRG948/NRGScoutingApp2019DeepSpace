@@ -53,6 +53,17 @@ namespace NRGScoutingApp
             startClimb //Start Climb
         }
 
+        public enum CHOOSE_RANK_TYPE
+        {
+            overallRank, //Overall Team Rank
+            drop1, //Lvl1
+            drop2, //Lvl2
+            drop3, //Lvl2
+            pick1, //Hatch
+            pick2, //Cargo
+            climb //Climb
+        }
+
         public enum MATCH_SIDES
         {
             Red1,
