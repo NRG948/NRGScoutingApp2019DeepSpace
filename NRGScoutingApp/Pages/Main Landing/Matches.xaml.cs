@@ -85,7 +85,7 @@ namespace NRGScoutingApp
 
             else
             {
-                listView.ItemsSource = matchesList.Where(matchesList => matchesList.teamNameAndSide.Contains(e.NewTextValue) || matchesList.matchNum.Contains(e.NewTextValue));
+                listView.ItemsSource = matchesList.Where(matchesList => matchesList.teamNameAndSide.ToLower().Contains(e.NewTextValue.ToLower()) || matchesList.matchNum.Contains(e.NewTextValue));
             }
         }
 
