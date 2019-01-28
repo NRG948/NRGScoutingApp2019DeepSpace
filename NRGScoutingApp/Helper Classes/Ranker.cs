@@ -98,7 +98,7 @@ namespace NRGScoutingApp
             {
                 pushData.Add(data.Key, data.Value / numsData[data.Key]);
             }
-            Console.WriteLine(pushData);
+            System.Diagnostics.Debug.WriteLine(pushData);
             return pushData;
         }
 
@@ -116,11 +116,12 @@ namespace NRGScoutingApp
                     {
                         switch ((int)match["climbLvl"])
                         {
-                            case 2:
+                            case 1:
                                 point += (int)ConstantVars.PTS_NEED_HELP_LVL_2;
                                 break;
-                            case 3:
+                            case 2:
                                 point += (int)ConstantVars.PTS_NEED_HELP_LVL_2;
+                                System.Diagnostics.Debug.WriteLine("dam 1");
                                 break;
                             default:
                                 point += 0;
@@ -131,14 +132,15 @@ namespace NRGScoutingApp
                     {
                         switch ((int)match["climbLvl"])
                         {
-                            case 1:
+                            case 0:
                                 point += (int)ConstantVars.PTS_SELF_LVL_1;
                                 break;
-                            case 2:
+                            case 1:
                                 point += (int)ConstantVars.PTS_SELF_LVL_2;
                                 break;
-                            case 3:
+                            case 2:
                                 point += (int)ConstantVars.PTS_SELF_LVL_3;
+                                System.Diagnostics.Debug.WriteLine("dam 2");
                                 break;
                             default:
                                 point += 0;
@@ -150,11 +152,12 @@ namespace NRGScoutingApp
                 {
                     switch ((int)match["giveAstClimbLvl"])
                     {
-                        case 2:
+                        case 0:
                             point += (int)ConstantVars.PTS_HELPED_LVL_2;
                             break;
-                        case 3:
+                        case 1:
                             point += (int)ConstantVars.PTS_HELPED_LVL_3;
+                            System.Diagnostics.Debug.WriteLine("dam 3");
                             break;
                         default:
                             point += 0;
@@ -177,6 +180,7 @@ namespace NRGScoutingApp
             foreach (KeyValuePair<string, double> entry in totalPoint)
             {
                 data.Add(entry.Key, entry.Value / amountOfMatch[entry.Key]);
+                System.Diagnostics.Debug.WriteLine(entry.Key + ": " + entry.Value + ", " + amountOfMatch[entry.Key]);
             }
             return data;
         }
@@ -228,7 +232,7 @@ namespace NRGScoutingApp
             {
                 pushData.Add(data.Key, data.Value / numsData[data.Key]);
             }
-            Console.WriteLine(pushData);
+            System.Diagnostics.Debug.WriteLine(pushData);
             return pushData;
         }
 
@@ -250,7 +254,7 @@ namespace NRGScoutingApp
                 }
                 catch (NullReferenceException)
                 {
-                    Console.WriteLine("Caught NullRepEx for ranker JObject");
+                    System.Diagnostics.Debug.WriteLine("Caught NullRepEx for ranker JObject");
                     tempJSON = new JObject();
                 }
             }
