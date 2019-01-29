@@ -44,7 +44,7 @@
               </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="3*" />
+            <ColumnDefinition Width="*" />
              </Grid.ColumnDefinitions> 
            <Button Text="Cancel" 
                      Clicked="cancelClicked" 
@@ -53,7 +53,7 @@
                    Grid.Column="0"
                    HorizontalOptions="EndAndExpand"/>
             <Button x:Name="copyButton"
-                    Text="Copy to Clipboard" 
+                    Text="Clipboard" 
                     Margin="10,3" 
                     Clicked="copyClicked"
                     Grid.Row="0"

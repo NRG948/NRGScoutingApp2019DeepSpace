@@ -35,6 +35,8 @@
     <AotAssemblies>false</AotAssemblies>
     <EnableLLVM>false</EnableLLVM>
     <BundleAssemblies>false</BundleAssemblies>
+    <AndroidLinkMode>SdkOnly</AndroidLinkMode>
+    <EnableProguard>false</EnableProguard>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -268,6 +270,11 @@
     <AndroidResource Include="Resources\drawable-hdpi\ic_climb_yellow.png" />
     <AndroidResource Include="Resources\drawable-xhdpi\ic_climb_yellow.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\ic_climb_yellow.png" />
+    <AndroidResource Include="Resources\drawable\ic_clear_data.xml" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_clear_data.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_clear_data.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_clear_data.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_clear_data.png" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="..\NRGScoutingApp\NRGScoutingApp.projitems" Label="Shared" Condition="Exists('..\NRGScoutingApp\NRGScoutingApp.projitems')" />

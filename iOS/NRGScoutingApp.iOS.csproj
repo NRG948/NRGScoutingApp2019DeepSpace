@@ -195,6 +195,7 @@
     <BundleResource Include="Resources\ic_timer_icon.png" />
     <BundleResource Include="Resources\ic_climb_yellow.png" />
     <BundleResource Include="Resources\ic_drop_cube.png" />
+    <BundleResource Include="Resources\ic_clear_data.png" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppDelegate.cs" />

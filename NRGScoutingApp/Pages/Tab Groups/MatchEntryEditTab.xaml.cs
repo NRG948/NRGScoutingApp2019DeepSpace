@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Collections;
 using Xamarin.Forms;
 using Xamarin.Forms.PlatformConfiguration.AndroidSpecific;
+using System.Threading.Tasks;
 
 namespace NRGScoutingApp
 {
@@ -24,9 +25,16 @@ namespace NRGScoutingApp
             NavigationPage.SetHasBackButton(this, false);
             InitializeComponent();
         }
+
+        protected override bool OnBackButtonPressed()
+        {
+            return false;
+        }
+
         ArrayList vals = new ArrayList();
         string titleName = (App.Current.Properties["teamStart"].ToString());
         public string teamName { get { return titleName; } }
+
 
         private Boolean checkParse(){
             if (!App.Current.Properties.ContainsKey(App.Current.Properties["teamStart"].ToString() + "converted")) { 

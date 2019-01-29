@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-
 using Xamarin.Forms;
 using System.Linq;
 
 namespace NRGScoutingApp
 {
+    /*ADD Ranking Chooser Replacement for iOS 
+     *like a picker acts as the distribution center to choose the type
+     */    
     public partial class Rankings : ContentPage
     {
         public Rankings()
@@ -71,23 +73,19 @@ namespace NRGScoutingApp
             //Updates string data from matches
             mainRank.setData(App.Current.Properties["matchEventsString"].ToString());
             //Gets all data and sets it into ascending order based on each team's average time
-            Console.WriteLine(rankChoice);
             Dictionary<string, double> x = mainRank.getRank(rankChoice);
             var y = from pair in x
                     orderby pair.Value ascending
                     select pair;
             setListVisibility(y.Count());
-            Console.WriteLine(y.Count());
-            listView.IsVisible = true;
             listView.ItemsSource = y;
-            Console.WriteLine(y.ToString());
         }
 
         /*
          * Sets the visibility of the list based on boolean and the sad error opposite
          * So if list.IsVisible = true, then sadNoMatch.IsVisible = false
          */
-        private void setListVisibility(int setList)
+    private void setListVisibility(int setList)
         {
             listView.IsVisible = setList > 0;
             sadNoMatch.IsVisible = !listView.IsVisible;
