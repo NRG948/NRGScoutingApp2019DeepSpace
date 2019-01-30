@@ -85,7 +85,7 @@ namespace NRGScoutingApp
          * Sets the visibility of the list based on boolean and the sad error opposite
          * So if list.IsVisible = true, then sadNoMatch.IsVisible = false
          */
-    private void setListVisibility(int setList)
+        private void setListVisibility(int setList)
         {
             listView.IsVisible = setList > 0;
             sadNoMatch.IsVisible = !listView.IsVisible;

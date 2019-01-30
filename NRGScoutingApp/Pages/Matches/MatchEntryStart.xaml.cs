@@ -17,9 +17,11 @@ namespace NRGScoutingApp
 {
     public partial class MatchEntryStart : ContentPage
     {
+        private bool goToMatch;
 
-        public MatchEntryStart()
+        public MatchEntryStart(bool ismatch)
         {
+            goToMatch = ismatch;
             InitializeComponent();
             MatchesList.ItemsSource = TeamsNames.teams;
         }
@@ -41,7 +43,12 @@ namespace NRGScoutingApp
             teamName = e.Item.ToString();
             App.Current.Properties["teamStart"] = teamName;
             App.Current.SavePropertiesAsync();
-            Navigation.PushAsync(new MatchEntryEditTab());
+            if (goToMatch) {
+                Navigation.PushAsync(new MatchEntryEditTab());
+            }
+            else {
+                Navigation.PushAsync(new PitEntry());
+            }
         }
 
         private void SearchBar_OnTextChanged(object sender, TextChangedEventArgs e)

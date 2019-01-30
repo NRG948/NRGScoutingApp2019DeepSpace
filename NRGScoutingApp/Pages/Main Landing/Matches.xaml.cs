@@ -73,7 +73,7 @@ namespace NRGScoutingApp
         {
             popNav = false;
             appRestore = false;
-            await Navigation.PushAsync(new MatchEntryStart());
+            await Navigation.PushAsync(new MatchEntryStart(true));
         }
 
         private void SearchBar_OnTextChanged(object sender, TextChangedEventArgs e)
