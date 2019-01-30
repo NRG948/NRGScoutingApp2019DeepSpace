@@ -63,6 +63,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Pages\Pit Scouting\PitEntry.xaml.cs">
       <DependentUpon>PitEntry.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Helper Classes\PitFormat.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)App.xaml" />

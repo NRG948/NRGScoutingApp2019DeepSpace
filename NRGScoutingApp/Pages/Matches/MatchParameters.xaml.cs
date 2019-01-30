@@ -10,6 +10,7 @@ using System.Xml;
 using Newtonsoft.Json;
 using System.Threading;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace NRGScoutingApp
 {
@@ -73,10 +74,7 @@ namespace NRGScoutingApp
         {
             Entry.team = teamName;
             onParamUpdate();
-            if (isSaveConditionNotMet())
-            {
-                popErrorsToScreen();
-            }
+            if (popErrorsToScreen()) { }
             else
             {
                 //Disables save button so app doesn't crash when user taps many times
@@ -299,7 +297,7 @@ namespace NRGScoutingApp
         }
 
         //Clears all properties for use in next match
-        void clearMatchItems()
+        async Task clearMatchItems()
         {
             App.Current.Properties["teamStart"] = "";
             App.Current.Properties["appState"] = 0;
@@ -372,26 +370,38 @@ namespace NRGScoutingApp
             }
         }
 
-        //returns True if required fields are empty
-        bool isSaveConditionNotMet()
+        //Pops errors if fields are checked but their counterparts are not
+        private bool popErrorsToScreen()
         {
-            return string.IsNullOrWhiteSpace(matchnum.Text) || PositionPicker.SelectedIndex < 0; //Checks if Match Number or Picker is Present
-        }
-
-        void popErrorsToScreen()
-        {
-            if (string.IsNullOrWhiteSpace(matchnum.Text) && PositionPicker.SelectedIndex < 0)
+            String errors = "";
+            bool toPrint = false;
+            if (string.IsNullOrWhiteSpace(matchnum.Text))
             {
-                DisplayAlert("Alert!", "Please Enter Match Number and Position", "OK");
+                errors += "\n- Match Number";
+                toPrint = true;
             }
-            else if (string.IsNullOrWhiteSpace(matchnum.Text))
+            if (PositionPicker.SelectedIndex < 0)
             {
-                DisplayAlert("Alert!", "Please Enter Match Number", "OK");
+                errors += "\n- Position";
+                toPrint = true;
             }
-            else if (PositionPicker.SelectedIndex < 0)
+            if(crossbase.IsToggled && autoLvl.SelectedIndex < 0) {
+                errors += "\n- Auto Level";
+                toPrint = true;
+            }
+            if(climbSwitch.IsToggled && climbLvl.SelectedIndex < 0) {
+                errors += "\n- Climb Options";
+                toPrint = true;
+            }
+            if(assisted.IsToggled && giveAssistClimbLvl.SelectedIndex < 0) {
+                errors += "\n- Give Climb Options";
+                toPrint = true;
+            }
+            if (toPrint)
             {
-                DisplayAlert("Alert!", "Please Enter Position", "OK");
+                DisplayAlert("The Following Errors Occured", errors, "OK");
             }
+            return toPrint;
         }
     }
 }

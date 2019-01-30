@@ -105,5 +105,18 @@ namespace NRGScoutingApp
         public static readonly double PTS_HELPED_LVL_2 = 1;
         public static readonly double PTS_HELPED_LVL_3 = 2;
 
+        //PIT SCOUTING Questions
+        public static readonly String[] QUESTIONS =
+        {"Hours practiced?",
+        "Drive base?",
+        "How many hatch panels/cargo do you average per match?",
+        "What do you focus on (rocket/cargo ship)?",
+        "What level(s) can your bot reach?",
+        "All positions in auto for sandstorm?",
+        "Auto vs tele for sandstorm?",
+        "Can you get to the highest platform in the hab? What is your prefered method in endgame?",
+        "Speed?",
+        "Mechanism?",
+        "Placement?" };
     }
 }
