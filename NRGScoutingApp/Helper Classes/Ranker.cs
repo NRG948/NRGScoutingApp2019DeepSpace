@@ -17,13 +17,7 @@ namespace NRGScoutingApp
         private readonly int GIVE_CLIMB_LVL_2_INDEX = 0;
         private readonly int GIVE_CLIMB_LVL_3_INDEX = 1;
 
-        // This is just examples of multiplier, should be changed soon
-        private readonly int CARGO_MULTIPLIER = 3;
-        private readonly int HATCHER_MULTIPLIER = 2;
-        private readonly int CLIMB_MULTIPLIER = 1;
-        private readonly int DROP_1_MULTIPLIER = 1;
-        private readonly int DROP_2_MULTIPLIER = 2;
-        private readonly int DROP_3_MULTIPLIER = 3;
+        
 
 
 
@@ -48,6 +42,7 @@ namespace NRGScoutingApp
          */
         public Dictionary<String,double> getRank(MatchFormat.CHOOSE_RANK_TYPE x)
         {
+            Console.WriteLine(x);
             switch (x)
             {
                 case MatchFormat.CHOOSE_RANK_TYPE.pick1:
@@ -63,9 +58,12 @@ namespace NRGScoutingApp
                 case MatchFormat.CHOOSE_RANK_TYPE.climb:
                     return getClimbData();
                 case MatchFormat.CHOOSE_RANK_TYPE.overallRank:
+                    return getOverallData();
+                default:
+                    Console.WriteLine("ERROR: WRONG RANK TYPE");
                     return new Dictionary<string, double>();
             }
-            return new Dictionary<string, double>();
+            //return new Dictionary<string, double>();
             //Enum.GetNames(typeof(MatchFormat.ACTION)).Length;
         }
 
@@ -84,25 +82,25 @@ namespace NRGScoutingApp
                 double point = 0;
                 if (dropData1.ContainsKey(entry.Key))
                 {
-                    point += dropData1[entry.Key] * DROP_1_MULTIPLIER;
+                    point += dropData1[entry.Key] * ConstantVars.DROP_1_MULTIPLIER;
                 }
                 if (dropData2.ContainsKey(entry.Key))
                 {
-                    point += dropData2[entry.Key] * DROP_2_MULTIPLIER;
+                    point += dropData2[entry.Key] * ConstantVars.DROP_2_MULTIPLIER;
                 }
                 if (dropData3.ContainsKey(entry.Key))
                 {
-                    point += dropData3[entry.Key] * DROP_3_MULTIPLIER;
+                    point += dropData3[entry.Key] * ConstantVars.DROP_3_MULTIPLIER;
                 }
                 if (cargoData.ContainsKey(entry.Key))
                 {
-                    point += cargoData[entry.Key] * CARGO_MULTIPLIER;
+                    point += cargoData[entry.Key] * ConstantVars.CARGO_MULTIPLIER;
                 }
                 if (hatcherData.ContainsKey(entry.Key))
                 {
-                    point += hatcherData[entry.Key] * HATCHER_MULTIPLIER;
+                    point += hatcherData[entry.Key] * ConstantVars.HATCHER_MULTIPLIER;
                 }
-                point += climbData[entry.Key] * CLIMB_MULTIPLIER;
+                point += climbData[entry.Key] * ConstantVars.CLIMB_MULTIPLIER;
                 data.Add(entry.Key, point);
             }
 
