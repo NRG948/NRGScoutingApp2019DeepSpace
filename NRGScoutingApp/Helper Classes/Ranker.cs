@@ -10,6 +10,13 @@ namespace NRGScoutingApp
 {
     public class Ranker
     {
+        // not used because switch case only accept constant variables
+        private readonly int CLIMB_LVL_1_INDEX = 0;
+        private readonly int CLIMB_LVL_2_INDEX = 1;
+        private readonly int CLIMB_LVL_3_INDEX = 2;
+        private readonly int GIVE_CLIMB_LVL_2_INDEX = 0;
+        private readonly int GIVE_CLIMB_LVL_3_INDEX = 1;
+
         private JArray fullData;
 
         //PRE: data is in JSON Format
@@ -120,7 +127,7 @@ namespace NRGScoutingApp
                                 point += (int)ConstantVars.PTS_NEED_HELP_LVL_2;
                                 break;
                             case 2:
-                                point += (int)ConstantVars.PTS_NEED_HELP_LVL_2;
+                                point += (int)ConstantVars.PTS_NEED_HELP_LVL_3;
                                 System.Diagnostics.Debug.WriteLine("dam 1");
                                 break;
                             default:
