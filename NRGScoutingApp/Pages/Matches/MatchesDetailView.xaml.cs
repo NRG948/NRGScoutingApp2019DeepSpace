@@ -44,9 +44,9 @@ namespace NRGScoutingApp
                 CubeDroppedDialog.saveEvents();
             }
             App.Current.Properties["timerValue"] = Convert.ToInt32(val.Property("timerValue").Value);
-            App.Current.Properties["teamStart"] = val.Property("team").Value;
+            App.Current.Properties["teamStart"] = val.Property("team").Value.ToString();
             await App.Current.SavePropertiesAsync();
-            await Navigation.PushAsync(new MatchEntryEditTab());
+            await Navigation.PushAsync(new MatchEntryEditTab() { Title = val.Property("team").Value.ToString() });
         }
 
         async void deleteClicked(object sender, System.EventArgs e)

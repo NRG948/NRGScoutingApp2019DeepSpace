@@ -32,7 +32,7 @@ namespace NRGScoutingApp
         }
 
         ArrayList vals = new ArrayList();
-        string titleName = (App.Current.Properties["teamStart"].ToString());
+        string titleName;
         public string teamName { get { return titleName; } }
 
 

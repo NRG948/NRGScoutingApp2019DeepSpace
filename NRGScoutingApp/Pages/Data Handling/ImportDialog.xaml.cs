@@ -69,11 +69,8 @@ namespace NRGScoutingApp
             var tempList = temp.ToList();
             foreach (var match in importTemp.ToList())
             {
-                Console.WriteLine("in foreach");
-                Console.WriteLine(match);
                 if (tempList.Exists(x => x["matchNum"].Equals(match["matchNum"]) && x["side"].Equals(match["side"])))
                 {
-                    Console.WriteLine("inexist if");
                     var item = tempList.Find(x => x["matchNum"].Equals(match["matchNum"]) && x["side"].Equals(match["side"]));
                     if(item["team"] == match["team"])
                     {
@@ -95,42 +92,9 @@ namespace NRGScoutingApp
                 }
                 else
                 {
-                    Console.WriteLine("bypassed if");
                     temp.Add(match);
                 }
             }
-
-            //foreach (var match in temp.ToList())
-            //{
-            //    foreach (var import in importData.ToList()) { 
-            //    if (Convert.ToInt32(match["matchNum"]) == Convert.ToInt32(data["matchNum"]) && Convert.ToInt32(match["side"]) == Convert.ToInt32(data["side"]))
-            //    {
-            //        if (!(match["team"].ToString().Equals(import["team"])))
-            //        {
-            //            var remove = await DisplayAlert("Error", "Overwrite Old Match with New Data?\nTeam Name: " + data["team"] + "\nMatch Number: " + data["matchNum"], "No", "Yes");
-            //            if (!remove)
-            //            {
-            //                temp.Remove(match);
-            //                temp.Add(import);
-
-            //            }
-            //            else
-            //            {
-            //                break;
-            //            }
-            //        }
-            //        else
-            //        {
-            //            temp.Remove(match);
-            //            temp.Add(import);
-            //        }
-            //    }
-            //    else
-            //    {
-            //        temp.Add(import);
-            //    }
-            //}
-            //}
         }
 
     }

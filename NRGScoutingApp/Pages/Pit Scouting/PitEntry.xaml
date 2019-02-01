@@ -14,7 +14,7 @@
     </ContentPage.Resources>
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Back" Clicked="backClicked"/>
-        <ToolbarItem Text="Save" Clicked="saveClicked"/>
+        <ToolbarItem Text="Save" Clicked="saveClicked" x:Name="saveButton"/>
         </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <ScrollView>
@@ -36,8 +36,7 @@
                     Placeholder="Type Here!"
                     TextChanged="Comment_Box_Updated"
                     Keyboard="Text"
-                    AutoSize="TextChanges"
-                    />
+                    AutoSize="TextChanges"/>
             <Label x:Name="q3" Style="{StaticResource labels}"/>
             <Editor x:Name="q3Text"
                     MinimumWidthRequest="1000"

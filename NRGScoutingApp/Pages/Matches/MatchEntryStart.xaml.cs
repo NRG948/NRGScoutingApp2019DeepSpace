@@ -38,23 +38,24 @@ namespace NRGScoutingApp
             MatchesList.ItemsSource = TeamsNames.teams;
         }
 
-        void Handle_ItemTapped(object sender, Xamarin.Forms.ItemTappedEventArgs e)
+        async void Handle_ItemTapped(object sender, Xamarin.Forms.ItemTappedEventArgs e)
         {
             teamName = e.Item.ToString();
             App.Current.Properties["teamStart"] = teamName;
-            App.Current.SavePropertiesAsync();
+            Console.WriteLine (teamName);
+            await App.Current.SavePropertiesAsync();
+            Console.WriteLine(App.Current.Properties["teamStart"].ToString());
             if (goToMatch) {
-                Navigation.PushAsync(new MatchEntryEditTab());
+                await Navigation.PushAsync(new MatchEntryEditTab() { Title = teamName });
             }
             else {
-                Navigation.PushAsync(new PitEntry());
+                await Navigation.PushAsync(new PitEntry() { Title = teamName });
             }
         }
 
         private void SearchBar_OnTextChanged(object sender, TextChangedEventArgs e)
         {
             // MatchesList.BeginRefresh();
-
             if (!String.IsNullOrWhiteSpace(e.NewTextValue))
             {
                 Console.WriteLine(e.NewTextValue);
