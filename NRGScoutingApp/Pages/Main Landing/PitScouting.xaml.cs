@@ -37,5 +37,33 @@ namespace NRGScoutingApp
             listView.IsVisible = setList > 0;
             sadNoPit.IsVisible = !listView.IsVisible;
         }
+
+        private List<String> getListVals(JObject input){
+            List<String> teamsInclude = new List<String>();
+            if(input.ContainsKey("PitNotes")){
+                JArray pits = (JArray)input["PitNotes"];
+                foreach(var x in pits){
+                    teamsInclude.Add(x["team"].toString());
+                }
+            }
+            return teamsInclude;
+        }
+        void setListView(String json){
+            JObject input;
+            if(!String.IsNullOrWhiteSpace(json)){
+                try{
+                    input = JObject.Parse(json);
+                }
+                catch(JsonException){
+                    input = new JObject();
+                }
+                listView.ItemsSource = getListVals(input);
+            }
+            else{
+                scoutView.IsVisible = false;
+                sadNoPit.IsVisible = !scoutView.IsVisible;
+
+            }
+        }
     }
 }
