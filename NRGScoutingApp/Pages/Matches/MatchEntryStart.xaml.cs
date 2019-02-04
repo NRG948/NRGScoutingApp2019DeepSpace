@@ -44,7 +44,6 @@ namespace NRGScoutingApp
             App.Current.Properties["teamStart"] = teamName;
             Console.WriteLine (teamName);
             await App.Current.SavePropertiesAsync();
-            Console.WriteLine(App.Current.Properties["teamStart"].ToString());
             if (goToMatch) {
                 await Navigation.PushAsync(new MatchEntryEditTab() { Title = teamName });
             }

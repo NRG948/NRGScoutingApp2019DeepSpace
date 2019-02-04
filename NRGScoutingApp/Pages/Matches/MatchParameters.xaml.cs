@@ -218,6 +218,7 @@ namespace NRGScoutingApp
                 if (!String.IsNullOrWhiteSpace(e.NewTextValue))
                 {
                     DisplayAlert("Warning", "Match Number Contains Letters. Did Not Update Value", "OK");
+                    matchnum.Text = "1";
                 }
             }
         }
@@ -234,6 +235,7 @@ namespace NRGScoutingApp
                 if (!String.IsNullOrWhiteSpace(e.NewTextValue))
                 {
                     DisplayAlert("Warning", "Match Number Contains Letters. Did Not Update Value", "OK");
+                    fouls.Text = "0";
                 }
             }
         }
@@ -289,6 +291,7 @@ namespace NRGScoutingApp
             else
             {
                 death.SelectedIndex = (int)MatchFormat.DEATH_TYPE.noDeath;
+                fouls.Text = "0";
             }
             setAutoButtons();
             setEndGameSelfButtons();
@@ -374,7 +377,7 @@ namespace NRGScoutingApp
         {
             String errors = "";
             bool toPrint = false;
-            if (string.IsNullOrWhiteSpace(matchnum.Text) || Convert.ToInt32(matchnum.Text) < 1)
+            if (string.IsNullOrWhiteSpace(matchnum.Text) || matchnum.Text.Substring(0,1).Equals("0"))
             {
                 errors += "\n- Match Number";
                 toPrint = true;
@@ -394,10 +397,6 @@ namespace NRGScoutingApp
             }
             if(assisted.IsToggled && giveAssistClimbLvl.SelectedIndex < 0) {
                 errors += "\n- Give Climb Options";
-                toPrint = true;
-            }
-            if (fouls.Text.Contains("-")) {
-                errors += "\n- Fouls";
                 toPrint = true;
             }
             if (toPrint)

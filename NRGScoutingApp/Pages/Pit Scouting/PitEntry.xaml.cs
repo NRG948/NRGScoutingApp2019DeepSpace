@@ -12,6 +12,7 @@ namespace NRGScoutingApp
         string titleName;
         public string teamName { get { return titleName; } }
 
+        //Object for storing all the pit notes for JSON conversion
         public class PitQs {
             public String team { get; set; }
             public String q0 { get; set; }
@@ -131,7 +132,6 @@ namespace NRGScoutingApp
             saveButton.IsEnabled = false;
 
             vals.team = App.Current.Properties["teamStart"].ToString();
-            Console.WriteLine(vals.team);
             JObject notes = JObject.FromObject(vals);
 
             if (isAllEmpty(notes)) {
@@ -178,6 +178,7 @@ namespace NRGScoutingApp
 
         }
 
+        //calls all final methods to return to home as it updates all the data
         async void pushBackToHome(JObject data, JArray temp, JObject parameters)
         {
             temp.Add(new JObject(parameters));
@@ -202,15 +203,16 @@ namespace NRGScoutingApp
             }
             clearMatchItems();
         }
-         private string giveNewString(String old, String add)
+        private string giveNewString(String old, String add)
         {
             if(String.IsNullOrWhiteSpace(add) && !String.IsNullOrWhiteSpace(old)) {
-                DisplayAlert("Alert", "try deleting this entry instead", "ok");
+                DisplayAlert("Alert", "Try deleting this entry instead", "ok");
                 return old;
             }
             return add;
         }
 
+        //Checks if all the question answers are empty
         private bool isAllEmpty(JObject vals) {
             bool total = true;
             for(int i = 0; i < ConstantVars.QUESTIONS.Length; i++) {
@@ -219,36 +221,32 @@ namespace NRGScoutingApp
             return total;
         }
 
+        //Populates and checks in case of app crash
         void cacheCheck(){
             JObject mainObject = new JObject();
             if (!String.IsNullOrWhiteSpace(App.Current.Properties["matchEventsString"].ToString()))
             {
                 mainObject = JObject.Parse(App.Current.Properties["matchEventsString"].ToString());
             }
-            Console.WriteLine(mainObject);
             JArray scoutArray = new JArray();
-            try
-            {
+            if (mainObject.ContainsKey("PitNotes")) { 
                 scoutArray = (JArray) mainObject["PitNotes"];
             }
-            catch (JsonException) {
+            else {
                 scoutArray = new JArray();
             }
             String team = App.Current.Properties["teamStart"].ToString();
-
             PitQs temp = new PitQs();
             if (!String.IsNullOrWhiteSpace(App.Current.Properties["tempPitNotes"].ToString()))
             {
                temp = (PitQs)App.Current.Properties["tempPitNotes"];
             }
-
+            //Attempting to set all text boxes
             try
             {
                 if (scoutArray.Count > 0 && scoutArray.ToList().Exists(x => x["team"].ToString().Equals(team)))
                 {
                     var final = scoutArray.ToList().Find(x => x["team"].ToString().Equals(team));
-                    Console.WriteLine("true");
-                    Console.Write(final["q1"].ToString());
                     q1Text.Text = final["q0"].ToString();
                     q2Text.Text = final["q1"].ToString();
                     q3Text.Text = final["q2"].ToString();

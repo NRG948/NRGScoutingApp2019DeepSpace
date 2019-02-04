@@ -76,10 +76,13 @@ namespace NRGScoutingApp
                     input = new JObject();
                 }
                 pitItems = getListVals(input);
-                listView.ItemsSource = pitItems;
                 scoutView.IsVisible = true;
                 sadNoPit.IsVisible = !scoutView.IsVisible;
             }
+            else {
+                pitItems = new List<string>();
+            }
+            listView.ItemsSource = pitItems;
             scoutView.IsVisible = pitItems.Count > 0;
             sadNoPit.IsVisible = !scoutView.IsVisible;
         }
