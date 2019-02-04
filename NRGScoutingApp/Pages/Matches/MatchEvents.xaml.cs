@@ -35,14 +35,12 @@ namespace NRGScoutingApp
         {
             if (NewMatchStart.events.Count > 0)
             {
-                Console.WriteLine("passedif");
                 eventsList = EventViewList((List<MatchFormat.Data>)NewMatchStart.events);
                 setListVisibility();
                 listView.ItemsSource = eventsList;
             }
             else
             {
-                Console.WriteLine("faildif");
                 setListVisibility();
             }
         }
