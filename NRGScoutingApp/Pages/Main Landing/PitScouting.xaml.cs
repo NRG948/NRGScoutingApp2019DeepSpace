@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Xamarin.Forms;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using System.Linq;
 
 namespace NRGScoutingApp
 {
@@ -11,7 +12,16 @@ namespace NRGScoutingApp
         public PitScouting()
         {
             InitializeComponent();
+            setListView(App.Current.Properties["matchEventsString"].ToString());
         }
+
+        List<string> pitItems = new List<string>();
+
+        protected override void OnAppearing()
+        {
+            setListView(App.Current.Properties["matchEventsString"].ToString());
+        }
+
 
         void newPit(object sender, System.EventArgs e)
         {
@@ -20,7 +30,15 @@ namespace NRGScoutingApp
 
         void SearchBar_OnTextChanged(object sender, Xamarin.Forms.TextChangedEventArgs e)
         {
+            if (string.IsNullOrWhiteSpace(e.NewTextValue))
+            {
+                listView.ItemsSource = pitItems;
+            }
 
+            else
+            {
+                listView.ItemsSource = pitItems.Where(pitItems => pitItems.ToLower().Contains(e.NewTextValue.ToLower()));
+            }
         }
 
         void teamClicked(object sender, Xamarin.Forms.ItemTappedEventArgs e)
@@ -38,12 +56,12 @@ namespace NRGScoutingApp
             sadNoPit.IsVisible = !listView.IsVisible;
         }
 
-        private List<String> getListVals(JObject input){
-            List<String> teamsInclude = new List<String>();
+        private List<string> getListVals(JObject input){
+            List<string> teamsInclude = new List<string>();
             if(input.ContainsKey("PitNotes")){
                 JArray pits = (JArray)input["PitNotes"];
                 foreach(var x in pits){
-                    teamsInclude.Add(x["team"].toString());
+                    teamsInclude.Add(x["team"].ToString());
                 }
             }
             return teamsInclude;
@@ -57,13 +75,13 @@ namespace NRGScoutingApp
                 catch(JsonException){
                     input = new JObject();
                 }
-                listView.ItemsSource = getListVals(input);
-            }
-            else{
-                scoutView.IsVisible = false;
+                pitItems = getListVals(input);
+                listView.ItemsSource = pitItems;
+                scoutView.IsVisible = true;
                 sadNoPit.IsVisible = !scoutView.IsVisible;
-
             }
+            scoutView.IsVisible = pitItems.Count > 0;
+            sadNoPit.IsVisible = !scoutView.IsVisible;
         }
     }
 }

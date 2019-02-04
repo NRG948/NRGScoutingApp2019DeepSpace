@@ -87,7 +87,7 @@ namespace NRGScoutingApp
 
                 //Adds or creates new JObject to start all data in app cache
                 JObject data = initializeEventsObject();
-                if (data.Count <= 0)
+                if (data.Count <= 0 || !data.ContainsKey("Matches"))
                 {
                     data.Add(new JProperty("Matches", new JArray()));
                     pushBackToHome(data, new JArray(), parameters);
@@ -211,6 +211,7 @@ namespace NRGScoutingApp
             try
             {
                 Entry.matchNum = Convert.ToInt32(e.NewTextValue);
+                onParamUpdate();
             }
             catch (FormatException)
             {
@@ -219,8 +220,6 @@ namespace NRGScoutingApp
                     DisplayAlert("Warning", "Match Number Contains Letters. Did Not Update Value", "OK");
                 }
             }
-
-            onParamUpdate();
         }
 
         void Fouls_Updated(object sender, Xamarin.Forms.TextChangedEventArgs e)
@@ -228,6 +227,7 @@ namespace NRGScoutingApp
             try
             {
                 Entry.fouls = Convert.ToInt32(e.NewTextValue);
+                onParamUpdate();
             }
             catch (FormatException)
             {
@@ -236,7 +236,6 @@ namespace NRGScoutingApp
                     DisplayAlert("Warning", "Match Number Contains Letters. Did Not Update Value", "OK");
                 }
             }
-            onParamUpdate();
         }
 
         //Returns Jobject based on wheter match events string is empty or not
@@ -375,7 +374,7 @@ namespace NRGScoutingApp
         {
             String errors = "";
             bool toPrint = false;
-            if (string.IsNullOrWhiteSpace(matchnum.Text))
+            if (string.IsNullOrWhiteSpace(matchnum.Text) || Convert.ToInt32(matchnum.Text) < 1)
             {
                 errors += "\n- Match Number";
                 toPrint = true;
@@ -395,6 +394,10 @@ namespace NRGScoutingApp
             }
             if(assisted.IsToggled && giveAssistClimbLvl.SelectedIndex < 0) {
                 errors += "\n- Give Climb Options";
+                toPrint = true;
+            }
+            if (fouls.Text.Contains("-")) {
+                errors += "\n- Fouls";
                 toPrint = true;
             }
             if (toPrint)

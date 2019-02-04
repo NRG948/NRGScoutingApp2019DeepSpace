@@ -58,7 +58,6 @@ namespace NRGScoutingApp
             // MatchesList.BeginRefresh();
             if (!String.IsNullOrWhiteSpace(e.NewTextValue))
             {
-                Console.WriteLine(e.NewTextValue);
                 MatchesList.ItemsSource = teams.Where(teams => teams.ToLower().Contains(e.NewTextValue.ToLower()));
             }
 
