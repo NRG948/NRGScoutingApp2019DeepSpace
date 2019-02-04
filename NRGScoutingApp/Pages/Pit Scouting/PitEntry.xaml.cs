@@ -45,7 +45,7 @@ namespace NRGScoutingApp
 
         protected override bool OnBackButtonPressed()
         {
-            return false;
+            return true;
         }
 
         public PitEntry()

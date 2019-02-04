@@ -16,6 +16,11 @@ namespace NRGScoutingApp
             setListVisibility(false);
         }
 
+        protected override bool OnBackButtonPressed()
+        {
+            return true;
+        }
+
         //Constructor for Events View that Users see
         public class EventListFormat
         {

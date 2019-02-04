@@ -8,6 +8,9 @@
             android:TabbedPage.BarSelectedItemColor="{StaticResource TabMainColor}"
             android:TabbedPage.BarBackgroundColor="{StaticResource TabBGColor}"
            Title="{Binding teamName}">
+    <TabbedPage.ToolbarItems>
+        <ToolbarItem Text="Back" Clicked="backClicked"/>
+    </TabbedPage.ToolbarItems>
     <ContentPage.Content>
     </ContentPage.Content>
 </TabbedPage>

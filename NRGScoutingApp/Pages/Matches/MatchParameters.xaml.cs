@@ -16,6 +16,11 @@ namespace NRGScoutingApp
 {
     public partial class MatchParameters : ContentPage
     {
+        protected override bool OnBackButtonPressed()
+        {
+            return true;
+        }
+
         public String teamName = App.Current.Properties["teamStart"].ToString();
         public ParametersFormat paramFormat = new ParametersFormat();
         public static MatchFormat.EntryParams Entry = new MatchFormat.EntryParams
@@ -54,7 +59,7 @@ namespace NRGScoutingApp
             var text = await DisplayAlert("Alert", "Do you want to discard progress?", "Yes", "No");
             if (text)
             {
-                await clearMatchItems();
+                clearMatchItems();
                 if (Matches.appRestore == false)
                 {
                     Matches.appRestore = false;
@@ -299,7 +304,7 @@ namespace NRGScoutingApp
         }
 
         //Clears all properties for use in next match
-        async Task clearMatchItems()
+        public static async void clearMatchItems()
         {
             App.Current.Properties["teamStart"] = "";
             App.Current.Properties["appState"] = 0;
@@ -308,7 +313,7 @@ namespace NRGScoutingApp
             App.Current.Properties["lastItemDropped"] = 0;
             App.Current.Properties["tempParams"] = "";
             App.Current.Properties["tempMatchEvents"] = "";
-            App.Current.SavePropertiesAsync();
+            await App.Current.SavePropertiesAsync();
             NewMatchStart.events.Clear();
         }
 

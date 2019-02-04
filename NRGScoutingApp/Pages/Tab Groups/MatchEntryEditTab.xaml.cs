@@ -28,7 +28,7 @@ namespace NRGScoutingApp
 
         protected override bool OnBackButtonPressed()
         {
-            return false;
+            return true;
         }
 
         ArrayList vals = new ArrayList();
@@ -43,6 +43,26 @@ namespace NRGScoutingApp
             else{
                 ParametersFormat s = new ParametersFormat();
                 return true;
+            }
+        }
+
+        async void backClicked(object sender, System.EventArgs e)
+        {
+            var text = await DisplayAlert("Alert", "Do you want to discard progress?", "Yes", "No");
+            if (text)
+            {
+                MatchParameters.clearMatchItems();
+                if (Matches.appRestore == false)
+                {
+                    Matches.appRestore = false;
+                    await Navigation.PopToRootAsync(true);
+                }
+                else if (Matches.appRestore == true)
+                {
+                    Matches.appRestore = false;
+                    await Navigation.PopAsync(true);
+                }
+
             }
         }
     }
