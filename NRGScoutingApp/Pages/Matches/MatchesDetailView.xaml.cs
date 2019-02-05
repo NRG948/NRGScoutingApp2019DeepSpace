@@ -67,21 +67,27 @@ namespace NRGScoutingApp
             return temp[index].ToString();
         }
 
-        void deleteMatchAtIndex(int index)
+        async void deleteMatchAtIndex(int index)
         {
             JObject matchesJSON = JObject.Parse(App.Current.Properties["matchEventsString"].ToString());
             JArray temp = (JArray)matchesJSON["Matches"];
             if (temp.Count == 1)
             {
-                App.Current.Properties["matchEventsString"] = "";
-                App.Current.SavePropertiesAsync();
+                matchesJSON.Remove("Matches");
+                App.Current.Properties["matchEventsString"] = JsonConvert.SerializeObject(matchesJSON);
+                await App.Current.SavePropertiesAsync();
             }
             else
             {
                 temp.RemoveAt(index);
                 matchesJSON["Matches"] = temp;
                 App.Current.Properties["matchEventsString"] = JsonConvert.SerializeObject(matchesJSON, Formatting.None);
-                App.Current.SavePropertiesAsync();
+                await App.Current.SavePropertiesAsync();
+            }
+            if (matchesJSON.Count <= 0)
+            {
+                App.Current.Properties["matchEventsString"] = "";
+                await App.Current.SavePropertiesAsync();
             }
         }
     }

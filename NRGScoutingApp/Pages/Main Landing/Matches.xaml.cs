@@ -85,7 +85,7 @@ namespace NRGScoutingApp
 
             else
             {
-                listView.ItemsSource = matchesList.Where(matchesList => matchesList.teamNameAndSide.ToLower().Contains(e.NewTextValue.ToLower()) || matchesList.matchNum.Contains(e.NewTextValue));
+                listView.ItemsSource = matchesList.Where(matchesList => matchesList.teamNameAndSide.ToLower().Contains(e.NewTextValue.ToLower()) || matchesList.matchNum.ToLower().Contains(e.NewTextValue.ToLower()));
             }
         }
 
@@ -112,7 +112,7 @@ namespace NRGScoutingApp
             else if (App.Current.Properties["appState"].ToString() == "2")
             {
                 appRestore = true;
-                Navigation.PushAsync(new PitEntry() { Title = App.Current.Properties["teamStart"].ToString() });
+                Navigation.PushAsync(new PitEntry(true) { Title = App.Current.Properties["teamStart"].ToString() });
             }
 
             else if (App.Current.Properties["appState"].ToString() == "0")

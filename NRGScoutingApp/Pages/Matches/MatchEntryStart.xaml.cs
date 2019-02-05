@@ -42,13 +42,12 @@ namespace NRGScoutingApp
         {
             teamName = e.Item.ToString();
             App.Current.Properties["teamStart"] = teamName;
-            Console.WriteLine (teamName);
             await App.Current.SavePropertiesAsync();
             if (goToMatch) {
                 await Navigation.PushAsync(new MatchEntryEditTab() { Title = teamName });
             }
             else {
-                await Navigation.PushAsync(new PitEntry() { Title = teamName });
+                await Navigation.PushAsync(new PitEntry(true) { Title = teamName });
             }
         }
 

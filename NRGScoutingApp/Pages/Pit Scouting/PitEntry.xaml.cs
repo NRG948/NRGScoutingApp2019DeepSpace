@@ -11,7 +11,7 @@ namespace NRGScoutingApp
     {
         string titleName;
         public string teamName { get { return titleName; } }
-
+        
         //Object for storing all the pit notes for JSON conversion
         public class PitQs {
             public String team { get; set; }
@@ -48,10 +48,12 @@ namespace NRGScoutingApp
             return true;
         }
 
-        public PitEntry()
+        //The boolean will hide the delete button if the entry is new
+        public PitEntry(bool newCreation) 
         {
             NavigationPage.SetHasBackButton(this, false);
             InitializeComponent();
+            deleteButton.IsVisible = !newCreation;
             App.Current.Properties["appState"] = 2;
             App.Current.SavePropertiesAsync();
             setLabels();
@@ -92,10 +94,47 @@ namespace NRGScoutingApp
             vals.q10 = q11Text.Text;
         }
 
+        async void deleteClicked(object sender, System.EventArgs e)
+        {
+            bool text = await DisplayAlert("Are you sure you want to delete??", "Data CANNOT be recovered", "No", "Yes");
+            if (!text) {
+                JObject data = JObject.Parse(App.Current.Properties["matchEventsString"].ToString());
+                JArray pitNotes = (JArray)data["PitNotes"];
+                var delItem = pitNotes.ToList().Find(x => x["team"].ToString().Equals(App.Current.Properties["teamStart"].ToString()));
+                pitNotes.Remove(delItem);
+                if(pitNotes.Count <= 0) {
+                    data.Remove("PitNotes");
+                }
+                if(data.Count <= 0) {
+                    App.Current.Properties["matchEventsString"] = "";
+                    await App.Current.SavePropertiesAsync();
+                }
+                App.Current.Properties["matchEventsString"] = JsonConvert.SerializeObject(data);
+                await App.Current.SavePropertiesAsync();
+                try
+                {
+                    if (Matches.appRestore == false)
+                    {
+                        Navigation.PopToRootAsync(true);
+                    }
+                    else if (Matches.appRestore == true)
+                    {
+                        Matches.appRestore = false;
+                        Navigation.PopAsync(true);
+                    }
+                }
+                catch (System.InvalidOperationException)
+                {
+                    Navigation.PopAsync(true);
+                }
+                clearMatchItems();
+            }
+        }
+
         async void backClicked(object sender, System.EventArgs e)
         {
-            var text = await DisplayAlert("Alert", "Do you want to discard progress?", "Yes", "No");
-            if (text)
+            bool text = await DisplayAlert("Alert", "Do you want to discard progress?", "No", "Yes");
+            if (!text)
             {
                 clearMatchItems();
                 if (Matches.appRestore == false)
@@ -147,16 +186,13 @@ namespace NRGScoutingApp
                         Navigation.PopAsync(true);
                     }
                 }
-                catch (System.InvalidOperationException)
-                {
-                    Console.WriteLine("caught");
-                }
+                catch (System.InvalidOperationException){}
                 clearMatchItems();
             }
             else {
                 //Adds or creates new JObject to start all data in app cache
                 JObject data = MatchParameters.initializeEventsObject();
-                if (data.Count <= 0 || !data.ContainsKey("PitNotes"))
+                if (!data.ContainsKey("PitNotes"))
                 {
                     data.Add(new JProperty("PitNotes", new JArray()));
                     pushBackToHome(data, new JArray(), notes);
@@ -167,6 +203,7 @@ namespace NRGScoutingApp
                     if (temp.ToList().Exists(x => x["team"].Equals(notes["team"])))
                     {
                         var item = temp.ToList().Find(x => x["team"].Equals(notes["team"]));
+                        temp.Remove(item);
                         for (int i = 0; i < ConstantVars.QUESTIONS.Length; i++)
                         {
                             item["q" + (i)] = giveNewString(item["q" + (i)].ToString(), notes["q" + (i)].ToString());
@@ -175,7 +212,6 @@ namespace NRGScoutingApp
                     pushBackToHome(data, temp, notes);
                 }
             }
-
         }
 
         //calls all final methods to return to home as it updates all the data
@@ -213,10 +249,10 @@ namespace NRGScoutingApp
         }
 
         //Checks if all the question answers are empty
-        private bool isAllEmpty(JObject vals) {
+        private bool isAllEmpty(JObject valsIn) {
             bool total = true;
             for(int i = 0; i < ConstantVars.QUESTIONS.Length; i++) {
-                total = String.IsNullOrWhiteSpace(vals["q" + i].ToString()) && total;
+                total = String.IsNullOrWhiteSpace(valsIn["q" + i].ToString()) && total;
             }
             return total;
         }

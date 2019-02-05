@@ -41,9 +41,14 @@ namespace NRGScoutingApp
             }
         }
 
-        void teamClicked(object sender, Xamarin.Forms.ItemTappedEventArgs e)
+        async void teamClicked(object sender, Xamarin.Forms.ItemTappedEventArgs e)
         {
-
+            String teamName = e.Item.ToString();
+            JArray pitValues = (JArray)JObject.Parse(App.Current.Properties["matchEventsString"].ToString())["PitNotes"];
+            //var select = pitValues.ToList().Find(x => x["team"].Equals(teamName));
+            App.Current.Properties["teamStart"] = teamName;
+            await App.Current.SavePropertiesAsync();
+            await Navigation.PushAsync(new PitEntry(false) { Title = teamName });
         }
 
         /*

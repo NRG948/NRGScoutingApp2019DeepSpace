@@ -13,12 +13,13 @@
         </ResourceDictionary>
     </ContentPage.Resources>
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Back" Clicked="backClicked"/>
+        <ToolbarItem Text="Back" Clicked="backClicked" x:Name="backButton"/>
         <ToolbarItem Text="Save" Clicked="saveClicked" x:Name="saveButton"/>
         </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <ScrollView>
         <StackLayout Padding="5">
+                <Button Text="Delete Entry" Clicked="deleteClicked" x:Name="deleteButton"/>
             <Label x:Name="q1" Style="{StaticResource labels}"/>
             <Editor x:Name="q1Text"
                     MinimumWidthRequest="1000"
