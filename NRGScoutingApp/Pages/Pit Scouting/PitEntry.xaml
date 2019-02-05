@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="NRGScoutingApp.PitEntry"
+             Title="{Binding teamName}">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="labels" TargetType="Label">
+                 <Setter Property="FontSize" Value="Medium"/>
+                <Setter Property="TextColor" Value="Black"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Back" Clicked="backClicked" x:Name="backButton"/>
+        <ToolbarItem Text="Save" Clicked="saveClicked" x:Name="saveButton"/>
+        </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout Padding="5">
+                <Button Text="Delete Entry" Clicked="deleteClicked" x:Name="deleteButton"/>
+            <Label x:Name="q1" Style="{StaticResource labels}"/>
+            <Editor x:Name="q1Text"
+                    MinimumWidthRequest="1000"
+                    MinimumHeightRequest="300"
+                    Margin="10,5,0,0" 
+                    Placeholder="Type Here!"
+                    TextChanged="Comment_Box_Updated"
+                    Keyboard="Text"
+                    AutoSize="TextChanges"/>
+            <Label x:Name="q2" Style="{StaticResource labels}"/>
+            <Editor x:Name="q2Text"
+                    MinimumWidthRequest="1000"
+                    MinimumHeightRequest="300"
+                    Margin="10,5,0,0" 
+                    Placeholder="Type Here!"
+                    TextChanged="Comment_Box_Updated"
+                    Keyboard="Text"
+                    AutoSize="TextChanges"/>
+            <Label x:Name="q3" Style="{StaticResource labels}"/>
+            <Editor x:Name="q3Text"
+                    MinimumWidthRequest="1000"
+                    MinimumHeightRequest="300"
+                    Margin="10,5,0,0" 
+                    Placeholder="Type Here!"
+                    TextChanged="Comment_Box_Updated"
+                    Keyboard="Text"
+                    AutoSize="TextChanges"/>
+             <Label x:Name="q4" Style="{StaticResource labels}"/>
+            <Editor x:Name="q4Text"
+                    MinimumWidthRequest="1000"
+                    MinimumHeightRequest="300"
+                    Margin="10,5,0,0" 
+                    Placeholder="Type Here!"
+                    TextChanged="Comment_Box_Updated"
+                    Keyboard="Text"
+                    AutoSize="TextChanges"/>
+             <Label x:Name="q5" Style="{StaticResource labels}"/>
+            <Editor x:Name="q5Text"
+                    MinimumWidthRequest="1000"
+                    MinimumHeightRequest="300"
+                    Margin="10,5,0,0" 
+                    Placeholder="Type Here!"
+                    TextChanged="Comment_Box_Updated"
+                    Keyboard="Text"
+                    AutoSize="TextChanges"/>
+             <Label x:Name="q6" Style="{StaticResource labels}"/>
+            <Editor x:Name="q6Text"
+                    MinimumWidthRequest="1000"
+                    MinimumHeightRequest="300"
+                    Margin="10,5,0,0" 
+                    Placeholder="Type Here!"
+                    TextChanged="Comment_Box_Updated"
+                    Keyboard="Text"
+                    AutoSize="TextChanges"/>
+             <Label x:Name="q7" Style="{StaticResource labels}"/>
+            <Editor x:Name="q7Text"
+                    MinimumWidthRequest="1000"
+                    MinimumHeightRequest="300"
+                    Margin="10,5,0,0" 
+                    Placeholder="Type Here!"
+                    TextChanged="Comment_Box_Updated"
+                    Keyboard="Text"
+                    AutoSize="TextChanges"/>
+             <Label x:Name="q8" Style="{StaticResource labels}"/>
+            <Editor x:Name="q8Text"
+                    MinimumWidthRequest="1000"
+                    MinimumHeightRequest="300"
+                    Margin="10,5,0,0" 
+                    Placeholder="Type Here!"
+                    TextChanged="Comment_Box_Updated"
+                    Keyboard="Text"
+                    AutoSize="TextChanges"/>
+             <Label x:Name="q9" Style="{StaticResource labels}"/>
+            <Editor x:Name="q9Text"
+                    MinimumWidthRequest="1000"
+                    MinimumHeightRequest="300"
+                    Margin="10,5,0,0" 
+                    Placeholder="Type Here!"
+                    TextChanged="Comment_Box_Updated"
+                    Keyboard="Text"
+                    AutoSize="TextChanges"/>
+             <Label x:Name="q10" Style="{StaticResource labels}"/>
+            <Editor x:Name="q10Text"
+                    MinimumWidthRequest="1000"
+                    MinimumHeightRequest="300"
+                    Margin="10,5,0,0" 
+                    Placeholder="Type Here!"
+                    TextChanged="Comment_Box_Updated"
+                    Keyboard="Text"
+                    AutoSize="TextChanges"/>
+             <Label x:Name="q11" Style="{StaticResource labels}"/>
+            <Editor x:Name="q11Text"
+                    MinimumWidthRequest="1000"
+                    MinimumHeightRequest="300"
+                    Margin="10,5,0,0" 
+                    Placeholder="Type Here!"
+                    TextChanged="Comment_Box_Updated"
+                    Keyboard="Text"
+                    AutoSize="TextChanges"/>
+        </StackLayout>
+            </ScrollView> 
+    </ContentPage.Content>
+</ContentPage>

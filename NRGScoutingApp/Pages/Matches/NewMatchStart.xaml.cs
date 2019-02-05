@@ -27,6 +27,10 @@ namespace NRGScoutingApp
      */
     public partial class NewMatchStart : ContentPage
     {
+        protected override bool OnBackButtonPressed()
+        {
+            return true;
+        }
 
         public NewMatchStart()
         {

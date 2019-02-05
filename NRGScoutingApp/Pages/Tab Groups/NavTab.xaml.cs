@@ -11,6 +11,7 @@ namespace NRGScoutingApp
         {
             Children.Add(new Matches());
             Children.Add(new Rankings());
+            Children.Add(new PitScouting());
             InitializeComponent();
         }
     }

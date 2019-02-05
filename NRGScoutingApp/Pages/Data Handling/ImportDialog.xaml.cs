@@ -35,45 +35,86 @@ namespace NRGScoutingApp
             try
             {
                 JObject importJSON = (JObject) JsonConvert.DeserializeObject(importData.Text);
-                if (importJSON.ContainsKey("Matches")) {
-                    int numMatches;
-                    if (data.Count <= 0)
+                if (importJSON.ContainsKey("Matches") || importJSON.ContainsKey("PitNotes"))
+                {
+                    if (importJSON.ContainsKey("Matches"))
                     {
-                        JArray matchesArray = (JArray)importJSON["Matches"];
-                        data = new JObject(importJSON);
-                        numMatches = matchesArray.Count;
+                        int numMatches;
+                        if (data.Count <= 0)
+                        {
+                            JArray matchesArray = (JArray)importJSON["Matches"];
+                            numMatches = matchesArray.Count;
+                        }
+                        else
+                        {
+                            if (!data.ContainsKey("Matches"))
+                            {
+                                data.Add(new JProperty("Matches", new JArray()));
+                            }
+                            JArray matchesArray = (JArray)data["Matches"];
+                            numMatches = matchesArray.Count;
+                            await addMatchItemsChecker(data, importJSON);
+                            numMatches = matchesArray.Count - numMatches;
+                        }
+                        await DisplayAlert("Success", "Added " + numMatches + " entries.", "OK");
                     }
-                    else {
-                        JArray matchesArray = (JArray)data["Matches"];
-                        numMatches = matchesArray.Count;
-                        await addItemsChecker(data, importJSON);
-                        numMatches = matchesArray.Count - numMatches;
+                    if (importJSON.ContainsKey("PitNotes"))
+                    {
+                        if (data.Count <= 0)
+                        {
+                            JArray matchesArray = (JArray)importJSON["PitNotes"];
+                            data = new JObject(importJSON);
+                        }
+                        else
+                        {
+                            if (!data.ContainsKey("PitNotes")) 
+                            {
+                                data.Add(new JProperty("PitNotes", new JArray()));
+                            }
+                            JArray matchesArray = (JArray)data["PitNotes"];
+                            addPitItemsChecker(data, importJSON);
+                        }
                     }
-                    await DisplayAlert("Success", "Added " + numMatches + " entries.", "OK");
                     App.Current.Properties["matchEventsString"] = JsonConvert.SerializeObject(data);
                     await App.Current.SavePropertiesAsync();
                     await PopupNavigation.Instance.PopAsync(true);
                 }
                 else {
-                   await DisplayAlert("Error", "Error in Data", "OK");
+                await DisplayAlert("Alert", "Error in Data", "OK");
                 }
             }
             catch (JsonReaderException) {
-                await DisplayAlert("Error", "Error in Data", "OK");
+                await DisplayAlert("Alert", "Error in Data", "OK");
             }
         }
 
-        async Task addItemsChecker(JObject data, JObject importJSON) {
+        private void addPitItemsChecker(JObject data, JObject importJSON) {
+            JArray temp = (JArray)data["PitNotes"];
+            JArray importTemp = (JArray)importJSON["PitNotes"];
+            var tempList = temp.ToList();
+            foreach (var match in importTemp.ToList()) {
+                if(tempList.Exists(x => x["team"].Equals(match["team"]))){
+                    var item = tempList.Find(x => x["team"].Equals(match["team"]));
+                    temp.Remove(item);
+                    for(int i = 0; i < ConstantVars.QUESTIONS.Length; i++) {
+                        if (!item["q" + i].Equals(match["q" + i])){
+                            item["q" + i] += ConstantVars.entrySeparator + match["q" + i];
+                        }
+                    }
+                    temp.Add(item);
+                }
+            }
+        }
+
+
+        private async Task addMatchItemsChecker(JObject data, JObject importJSON) {
             JArray temp = (JArray)data["Matches"];
             JArray importTemp = (JArray)importJSON["Matches"];
             var tempList = temp.ToList();
             foreach (var match in importTemp.ToList())
             {
-                Console.WriteLine("in foreach");
-                Console.WriteLine(match);
                 if (tempList.Exists(x => x["matchNum"].Equals(match["matchNum"]) && x["side"].Equals(match["side"])))
                 {
-                    Console.WriteLine("inexist if");
                     var item = tempList.Find(x => x["matchNum"].Equals(match["matchNum"]) && x["side"].Equals(match["side"]));
                     if(item["team"] == match["team"])
                     {
@@ -91,46 +132,12 @@ namespace NRGScoutingApp
                             temp.Add(match);
                         }
                     }
-                    Console.WriteLine(item);
                 }
                 else
                 {
-                    Console.WriteLine("bypassed if");
                     temp.Add(match);
                 }
             }
-
-            //foreach (var match in temp.ToList())
-            //{
-            //    foreach (var import in importData.ToList()) { 
-            //    if (Convert.ToInt32(match["matchNum"]) == Convert.ToInt32(data["matchNum"]) && Convert.ToInt32(match["side"]) == Convert.ToInt32(data["side"]))
-            //    {
-            //        if (!(match["team"].ToString().Equals(import["team"])))
-            //        {
-            //            var remove = await DisplayAlert("Error", "Overwrite Old Match with New Data?\nTeam Name: " + data["team"] + "\nMatch Number: " + data["matchNum"], "No", "Yes");
-            //            if (!remove)
-            //            {
-            //                temp.Remove(match);
-            //                temp.Add(import);
-
-            //            }
-            //            else
-            //            {
-            //                break;
-            //            }
-            //        }
-            //        else
-            //        {
-            //            temp.Remove(match);
-            //            temp.Add(import);
-            //        }
-            //    }
-            //    else
-            //    {
-            //        temp.Add(import);
-            //    }
-            //}
-            //}
         }
 
     }

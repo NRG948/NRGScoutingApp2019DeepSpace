@@ -16,6 +16,11 @@ namespace NRGScoutingApp
             setListVisibility(false);
         }
 
+        protected override bool OnBackButtonPressed()
+        {
+            return true;
+        }
+
         //Constructor for Events View that Users see
         public class EventListFormat
         {
@@ -30,14 +35,12 @@ namespace NRGScoutingApp
         {
             if (NewMatchStart.events.Count > 0)
             {
-                Console.WriteLine("passedif");
                 eventsList = EventViewList((List<MatchFormat.Data>)NewMatchStart.events);
                 setListVisibility();
                 listView.ItemsSource = eventsList;
             }
             else
             {
-                Console.WriteLine("faildif");
                 setListVisibility();
             }
         }

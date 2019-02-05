@@ -73,7 +73,7 @@ namespace NRGScoutingApp
         {
             popNav = false;
             appRestore = false;
-            await Navigation.PushAsync(new MatchEntryStart());
+            await Navigation.PushAsync(new MatchEntryStart(true));
         }
 
         private void SearchBar_OnTextChanged(object sender, TextChangedEventArgs e)
@@ -85,7 +85,7 @@ namespace NRGScoutingApp
 
             else
             {
-                listView.ItemsSource = matchesList.Where(matchesList => matchesList.teamNameAndSide.ToLower().Contains(e.NewTextValue.ToLower()) || matchesList.matchNum.Contains(e.NewTextValue));
+                listView.ItemsSource = matchesList.Where(matchesList => matchesList.teamNameAndSide.ToLower().Contains(e.NewTextValue.ToLower()) || matchesList.matchNum.ToLower().Contains(e.NewTextValue.ToLower()));
             }
         }
 
@@ -99,14 +99,22 @@ namespace NRGScoutingApp
                 App.Current.Properties["timerValue"] = (int)0;
                 App.Current.Properties["tempParams"] = "";
                 App.Current.Properties["tempMatchEvents"] = "";
+                App.Current.Properties["tempPitNotes"] = "";
                 App.Current.SavePropertiesAsync();
             }
 
             else if (App.Current.Properties["appState"].ToString() == "1")
             {
                 appRestore = true;
-                Navigation.PushAsync(new MatchEntryEditTab());
+                Navigation.PushAsync(new MatchEntryEditTab() { Title = App.Current.Properties["teamStart"].ToString() });
             }
+
+            else if (App.Current.Properties["appState"].ToString() == "2")
+            {
+                appRestore = true;
+                Navigation.PushAsync(new PitEntry(true) { Title = App.Current.Properties["teamStart"].ToString() });
+            }
+
             else if (App.Current.Properties["appState"].ToString() == "0")
             {
                 appRestore = false;
@@ -115,12 +123,14 @@ namespace NRGScoutingApp
                 App.Current.Properties["teamStart"] = "";
                 App.Current.Properties["tempMatchEvents"] = "";
                 App.Current.Properties["tempParams"] = "";
+                App.Current.Properties["tempPitNotes"] = "";
                 App.Current.SavePropertiesAsync();
             }
             if (!App.Current.Properties.ContainsKey("matchEventsString"))
             {
                 App.Current.Properties["matchEventsString"] = "";
                 App.Current.Properties["tempMatchEvents"] = "";
+                App.Current.Properties["tempPitNotes"] = "";
                 App.Current.SavePropertiesAsync();
             }
             populateMatchesList();
@@ -199,7 +209,15 @@ namespace NRGScoutingApp
                 JArray temp = (JArray)matchesJSON["Matches"];
                 //Will Contain all items for matches list
                 matchesList = new List<MatchesListFormat>();
-                for (int i = 0; i < temp.Count; i++)
+                int count;
+                try {
+                    count = temp.Count;
+                }
+                catch (System.NullReferenceException) {
+                    count = -1;
+                }
+
+                for (int i = 0; i < count; i++)
                 {
                     JObject match = (JObject)temp[i];
                     String teamIdentifier = match["team"].ToString().Split('-')[MatchFormat.teamNameOrNum];
@@ -224,7 +242,7 @@ namespace NRGScoutingApp
             try
             {
                 matchesView.IsVisible = matchesList.Count > 0;
-                sadNoMatch.IsVisible = !listView.IsEnabled;
+                sadNoMatch.IsVisible = !matchesView.IsVisible;
             }
             catch (NullReferenceException)
             {

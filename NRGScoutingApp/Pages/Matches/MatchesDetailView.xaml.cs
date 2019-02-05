@@ -44,9 +44,9 @@ namespace NRGScoutingApp
                 CubeDroppedDialog.saveEvents();
             }
             App.Current.Properties["timerValue"] = Convert.ToInt32(val.Property("timerValue").Value);
-            App.Current.Properties["teamStart"] = val.Property("team").Value;
+            App.Current.Properties["teamStart"] = val.Property("team").Value.ToString();
             await App.Current.SavePropertiesAsync();
-            await Navigation.PushAsync(new MatchEntryEditTab());
+            await Navigation.PushAsync(new MatchEntryEditTab() { Title = val.Property("team").Value.ToString() });
         }
 
         async void deleteClicked(object sender, System.EventArgs e)
@@ -67,21 +67,27 @@ namespace NRGScoutingApp
             return temp[index].ToString();
         }
 
-        void deleteMatchAtIndex(int index)
+        async void deleteMatchAtIndex(int index)
         {
             JObject matchesJSON = JObject.Parse(App.Current.Properties["matchEventsString"].ToString());
             JArray temp = (JArray)matchesJSON["Matches"];
             if (temp.Count == 1)
             {
-                App.Current.Properties["matchEventsString"] = "";
-                App.Current.SavePropertiesAsync();
+                matchesJSON.Remove("Matches");
+                App.Current.Properties["matchEventsString"] = JsonConvert.SerializeObject(matchesJSON);
+                await App.Current.SavePropertiesAsync();
             }
             else
             {
                 temp.RemoveAt(index);
                 matchesJSON["Matches"] = temp;
                 App.Current.Properties["matchEventsString"] = JsonConvert.SerializeObject(matchesJSON, Formatting.None);
-                App.Current.SavePropertiesAsync();
+                await App.Current.SavePropertiesAsync();
+            }
+            if (matchesJSON.Count <= 0)
+            {
+                App.Current.Properties["matchEventsString"] = "";
+                await App.Current.SavePropertiesAsync();
             }
         }
     }

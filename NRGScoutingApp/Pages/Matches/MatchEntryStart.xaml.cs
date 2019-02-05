@@ -17,9 +17,11 @@ namespace NRGScoutingApp
 {
     public partial class MatchEntryStart : ContentPage
     {
+        private bool goToMatch;
 
-        public MatchEntryStart()
+        public MatchEntryStart(bool ismatch)
         {
+            goToMatch = ismatch;
             InitializeComponent();
             MatchesList.ItemsSource = TeamsNames.teams;
         }
@@ -36,21 +38,24 @@ namespace NRGScoutingApp
             MatchesList.ItemsSource = TeamsNames.teams;
         }
 
-        void Handle_ItemTapped(object sender, Xamarin.Forms.ItemTappedEventArgs e)
+        async void Handle_ItemTapped(object sender, Xamarin.Forms.ItemTappedEventArgs e)
         {
             teamName = e.Item.ToString();
             App.Current.Properties["teamStart"] = teamName;
-            App.Current.SavePropertiesAsync();
-            Navigation.PushAsync(new MatchEntryEditTab());
+            await App.Current.SavePropertiesAsync();
+            if (goToMatch) {
+                await Navigation.PushAsync(new MatchEntryEditTab() { Title = teamName });
+            }
+            else {
+                await Navigation.PushAsync(new PitEntry(true) { Title = teamName });
+            }
         }
 
         private void SearchBar_OnTextChanged(object sender, TextChangedEventArgs e)
         {
             // MatchesList.BeginRefresh();
-
             if (!String.IsNullOrWhiteSpace(e.NewTextValue))
             {
-                Console.WriteLine(e.NewTextValue);
                 MatchesList.ItemsSource = teams.Where(teams => teams.ToLower().Contains(e.NewTextValue.ToLower()));
             }
 

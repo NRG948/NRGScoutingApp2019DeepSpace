@@ -6,9 +6,11 @@ namespace NRGScoutingApp
         /*
          * IMPORTANT NOTE:
          * VARIABLES CONTAINING "LIVE" ARE USED IN the NewMatchStart page
-         */        
+         */
 
-        //CubeDropDialog
+        /*
+         * CubeDropDialog
+         */
         public static readonly String DROP_1_DIALOG_TEXT = "Level 1";
         public static readonly String DROP_2_DIALOG_TEXT = "Level 2";
         public static readonly String DROP_3_DIALOG_TEXT = "Level 3";
@@ -18,7 +20,9 @@ namespace NRGScoutingApp
         public static readonly String DROP_3_DIALOG_IMAGE = "ic_scale.png";
         public static readonly String DROP_4_DIALOG_IMAGE = "ic_switch.png";
 
-        //Match Events Page
+        /*
+         * Match Events Page
+         */
         public static readonly String PICK_ITEM_1_IMAGE = "ic_picked_cube.png";
         public static readonly String PICK_ITEM_2_IMAGE = "ic_picked_cube.png";
         public static readonly String DROP_ITEM_IMAGE = "ic_drop_cube_yellow.png";
@@ -41,7 +45,9 @@ namespace NRGScoutingApp
         public static readonly String DROP_KEYWORD = "Drop";
         public static readonly String PICK_KEYWORD = "Pick";
 
-        //INTERNAL VARIABLES FOR SETTING IMPORTANT TIMER AND BUTTON VALUES (DO NOT CHANGE THIS)
+        /*
+         * INTERNAL VARIABLES FOR SETTING IMPORTANT TIMER AND BUTTON VALUES (DO NOT CHANGE THIS)
+         */
         public static readonly double MATCH_SPAN_MS = 150000;
         public static readonly double MIN_MS = 60000;
         public static readonly double SEC_MS = 1000;
@@ -111,5 +117,23 @@ namespace NRGScoutingApp
         public static readonly double PTS_HELPED_LVL_2 = 1;
         public static readonly double PTS_HELPED_LVL_3 = 2;
 
+        /*
+         * PIT SCOUTING
+         */
+
+        //Separates the entries if same team was scouted twice
+        public static readonly String entrySeparator = "\nANOTHER PIT ENTRY:::::::\n";
+        public static readonly String[] QUESTIONS =
+        {"Hours practiced?",
+        "Drive base?",
+        "How many hatch panels/cargo do you average per match?",
+        "What do you focus on (rocket/cargo ship)?",
+        "What level(s) can your bot reach?",
+        "All positions in auto for sandstorm?",
+        "Auto vs tele for sandstorm?",
+        "Can you get to the highest platform in the hab? What is your prefered method in endgame?",
+        "Speed?",
+        "Mechanism?",
+        "Placement?" };
     }
 }

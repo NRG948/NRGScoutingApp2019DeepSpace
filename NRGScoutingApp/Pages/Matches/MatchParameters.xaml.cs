@@ -10,11 +10,17 @@ using System.Xml;
 using Newtonsoft.Json;
 using System.Threading;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace NRGScoutingApp
 {
     public partial class MatchParameters : ContentPage
     {
+        protected override bool OnBackButtonPressed()
+        {
+            return true;
+        }
+
         public String teamName = App.Current.Properties["teamStart"].ToString();
         public ParametersFormat paramFormat = new ParametersFormat();
         public static MatchFormat.EntryParams Entry = new MatchFormat.EntryParams
@@ -73,10 +79,7 @@ namespace NRGScoutingApp
         {
             Entry.team = teamName;
             onParamUpdate();
-            if (isSaveConditionNotMet())
-            {
-                popErrorsToScreen();
-            }
+            if (popErrorsToScreen()) { }
             else
             {
                 //Disables save button so app doesn't crash when user taps many times
@@ -89,7 +92,7 @@ namespace NRGScoutingApp
 
                 //Adds or creates new JObject to start all data in app cache
                 JObject data = initializeEventsObject();
-                if (data.Count <= 0)
+                if (data.Count <= 0 || !data.ContainsKey("Matches"))
                 {
                     data.Add(new JProperty("Matches", new JArray()));
                     pushBackToHome(data, new JArray(), parameters);
@@ -213,16 +216,16 @@ namespace NRGScoutingApp
             try
             {
                 Entry.matchNum = Convert.ToInt32(e.NewTextValue);
+                onParamUpdate();
             }
             catch (FormatException)
             {
                 if (!String.IsNullOrWhiteSpace(e.NewTextValue))
                 {
                     DisplayAlert("Warning", "Match Number Contains Letters. Did Not Update Value", "OK");
+                    matchnum.Text = "1";
                 }
             }
-
-            onParamUpdate();
         }
 
         void Fouls_Updated(object sender, Xamarin.Forms.TextChangedEventArgs e)
@@ -230,15 +233,16 @@ namespace NRGScoutingApp
             try
             {
                 Entry.fouls = Convert.ToInt32(e.NewTextValue);
+                onParamUpdate();
             }
             catch (FormatException)
             {
                 if (!String.IsNullOrWhiteSpace(e.NewTextValue))
                 {
                     DisplayAlert("Warning", "Match Number Contains Letters. Did Not Update Value", "OK");
+                    fouls.Text = "0";
                 }
             }
-            onParamUpdate();
         }
 
         //Returns Jobject based on wheter match events string is empty or not
@@ -292,6 +296,7 @@ namespace NRGScoutingApp
             else
             {
                 death.SelectedIndex = (int)MatchFormat.DEATH_TYPE.noDeath;
+                fouls.Text = "0";
             }
             setAutoButtons();
             setEndGameSelfButtons();
@@ -299,7 +304,7 @@ namespace NRGScoutingApp
         }
 
         //Clears all properties for use in next match
-        void clearMatchItems()
+        public static async void clearMatchItems()
         {
             App.Current.Properties["teamStart"] = "";
             App.Current.Properties["appState"] = 0;
@@ -308,7 +313,7 @@ namespace NRGScoutingApp
             App.Current.Properties["lastItemDropped"] = 0;
             App.Current.Properties["tempParams"] = "";
             App.Current.Properties["tempMatchEvents"] = "";
-            App.Current.SavePropertiesAsync();
+            await App.Current.SavePropertiesAsync();
             NewMatchStart.events.Clear();
         }
 
@@ -372,26 +377,38 @@ namespace NRGScoutingApp
             }
         }
 
-        //returns True if required fields are empty
-        bool isSaveConditionNotMet()
+        //Pops errors if fields are checked but their counterparts are not
+        private bool popErrorsToScreen()
         {
-            return string.IsNullOrWhiteSpace(matchnum.Text) || PositionPicker.SelectedIndex < 0; //Checks if Match Number or Picker is Present
-        }
-
-        void popErrorsToScreen()
-        {
-            if (string.IsNullOrWhiteSpace(matchnum.Text) && PositionPicker.SelectedIndex < 0)
+            String errors = "";
+            bool toPrint = false;
+            if (string.IsNullOrWhiteSpace(matchnum.Text) || matchnum.Text.Substring(0,1).Equals("0"))
             {
-                DisplayAlert("Alert!", "Please Enter Match Number and Position", "OK");
+                errors += "\n- Match Number";
+                toPrint = true;
             }
-            else if (string.IsNullOrWhiteSpace(matchnum.Text))
+            if (PositionPicker.SelectedIndex < 0)
             {
-                DisplayAlert("Alert!", "Please Enter Match Number", "OK");
+                errors += "\n- Position";
+                toPrint = true;
             }
-            else if (PositionPicker.SelectedIndex < 0)
+            if(crossbase.IsToggled && autoLvl.SelectedIndex < 0) {
+                errors += "\n- Auto Level";
+                toPrint = true;
+            }
+            if(climbSwitch.IsToggled && climbLvl.SelectedIndex < 0) {
+                errors += "\n- Climb Options";
+                toPrint = true;
+            }
+            if(assisted.IsToggled && giveAssistClimbLvl.SelectedIndex < 0) {
+                errors += "\n- Give Climb Options";
+                toPrint = true;
+            }
+            if (toPrint)
             {
-                DisplayAlert("Alert!", "Please Enter Position", "OK");
+                DisplayAlert("The Following Errors Occured", errors, "OK");
             }
+            return toPrint;
         }
     }
 }
