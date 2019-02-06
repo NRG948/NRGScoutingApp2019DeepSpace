@@ -63,8 +63,14 @@ namespace NRGScoutingApp
                     Console.WriteLine("ERROR: WRONG RANK TYPE");
                     return new Dictionary<string, double>();
             }
-            //return new Dictionary<string, double>();
-            //Enum.GetNames(typeof(MatchFormat.ACTION)).Length;
+        }
+
+        public Dictionary<string,string> returnDataAsTime(Dictionary<string, double> input) {
+            Dictionary<string, string> result = new Dictionary<string, string>();
+            foreach(var x in input) {
+                result.Add(x.Key, NewMatchStart.timeToString((int)x.Value*1000));
+            }
+            return result;
         }
 
         // Pre: climbData returns a dictionary that consist of every team appeared
@@ -103,7 +109,6 @@ namespace NRGScoutingApp
                 point += climbData[entry.Key] * ConstantVars.CLIMB_MULTIPLIER;
                 data.Add(entry.Key, point);
             }
-
             return data;
         }
 
