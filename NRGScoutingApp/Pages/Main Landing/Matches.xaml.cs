@@ -17,7 +17,7 @@ namespace NRGScoutingApp
 
         public static Boolean appRestore;
         public Boolean popNav;
-        List<MatchesListFormat> matchesList;
+        public static List<MatchesListFormat> matchesList;
 
         public Matches()
         {

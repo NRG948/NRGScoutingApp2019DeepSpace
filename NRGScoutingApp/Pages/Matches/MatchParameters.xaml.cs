@@ -113,6 +113,7 @@ namespace NRGScoutingApp
                             }
                             else
                             {
+                                saveButton.IsEnabled = true;
                                 return;
                             }
                         }

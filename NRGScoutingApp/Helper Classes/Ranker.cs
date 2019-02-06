@@ -112,48 +112,53 @@ namespace NRGScoutingApp
         {
             Dictionary<string, double> totalData = new Dictionary<string, double>();
             Dictionary<string, int> numsData = new Dictionary<string, int>();
-            foreach (var match in fullData)
+            try
             {
-                int reps;
-                try
+                foreach (var match in fullData)
                 {
-                    reps = (int)match["numEvents"];
-                }
-                catch (JsonException)
-                {
-                    reps = 0;
-                }
-                for (int i = 1; i < reps; i++)
-                {
-                    if ((int)match["TE" + i + "_1"] == levelEnum)
+                    int reps;
+                    try
                     {
-                        if (((int)match["TE" + (i - 1) + "_1"] != (int)MatchFormat.ACTION.startClimb) && ((int)match["TE" + (i - 1) + "_1"] != (int)MatchFormat.ACTION.dropNone))
+                        reps = (int)match["numEvents"];
+                    }
+                    catch (JsonException)
+                    {
+                        reps = 0;
+                    }
+                    for (int i = 1; i < reps; i++)
+                    {
+                        if ((int)match["TE" + i + "_1"] == levelEnum)
                         {
-                            int doTime = (int)match["TE" + (i) + "_0"] - (int)match["TE" + (i-1) + "_0"];
-                            if ((int)match["TE" + (i) + "_0"] <= ConstantVars.AUTO_LENGTH && !(bool)match["autoOTele"])
+                            if (((int)match["TE" + (i - 1) + "_1"] != (int)MatchFormat.ACTION.startClimb) && ((int)match["TE" + (i - 1) + "_1"] != (int)MatchFormat.ACTION.dropNone))
                             {
-                                doTime /= 2;
-                            }
-                            if (totalData.ContainsKey(match["team"].ToString()))
-                            {
-                                totalData[match["team"].ToString()] += doTime;
-                                numsData[match["team"].ToString()]++;
-                            }
-                            else
-                            {
-                                totalData.Add(match["team"].ToString(), doTime);
-                                numsData.Add(match["team"].ToString(), 1);
+                                int doTime = (int)match["TE" + (i) + "_0"] - (int)match["TE" + (i - 1) + "_0"];
+                                if ((int)match["TE" + (i) + "_0"] <= ConstantVars.AUTO_LENGTH && !(bool)match["autoOTele"])
+                                {
+                                    doTime /= 2;
+                                }
+                                if (totalData.ContainsKey(match["team"].ToString()))
+                                {
+                                    totalData[match["team"].ToString()] += doTime;
+                                    numsData[match["team"].ToString()]++;
+                                }
+                                else
+                                {
+                                    totalData.Add(match["team"].ToString(), doTime);
+                                    numsData.Add(match["team"].ToString(), 1);
+                                }
                             }
                         }
                     }
                 }
-                }
+            }
+            catch (System.NullReferenceException) {
+
+            }
             Dictionary<string, double> pushData = new Dictionary<string, double>();
             foreach (var data in totalData)
             {
                 pushData.Add(data.Key, data.Value / numsData[data.Key]);
             }
-            System.Diagnostics.Debug.WriteLine(pushData);
             return pushData;
         }
 
@@ -162,80 +167,86 @@ namespace NRGScoutingApp
         {
             Dictionary<string, double> totalPoint = new Dictionary<string, double>();
             Dictionary<string, double> amountOfMatch = new Dictionary<string, double>();
-            foreach (var match in fullData)
+            try
             {
-                int point = 0;
-                if ((bool)match["climb"])
+                foreach (var match in fullData)
                 {
-                    if ((bool)match["needAstClimb"])
+                    int point = 0;
+                    if ((bool)match["climb"])
                     {
-                        switch ((int)match["climbLvl"])
+                        if ((bool)match["needAstClimb"])
                         {
-                            case 1:
-                                point += (int)ConstantVars.PTS_NEED_HELP_LVL_2;
+                            switch ((int)match["climbLvl"])
+                            {
+                                case 1:
+                                    point += (int)ConstantVars.PTS_NEED_HELP_LVL_2;
+                                    break;
+                                case 2:
+                                    point += (int)ConstantVars.PTS_NEED_HELP_LVL_3;
+                                    System.Diagnostics.Debug.WriteLine("dam 1");
+                                    break;
+                                default:
+                                    point += 0;
+                                    break;
+                            }
+                        }
+                        else
+                        {
+                            switch ((int)match["climbLvl"])
+                            {
+                                case 0:
+                                    point += (int)ConstantVars.PTS_SELF_LVL_1;
+                                    break;
+                                case 1:
+                                    point += (int)ConstantVars.PTS_SELF_LVL_2;
+                                    break;
+                                case 2:
+                                    point += (int)ConstantVars.PTS_SELF_LVL_3;
+                                    System.Diagnostics.Debug.WriteLine("dam 2");
+                                    break;
+                                default:
+                                    point += 0;
+                                    break;
+                            }
+                        }
+                    }
+                    if ((bool)match["giveAstClimb"])
+                    {
+                        switch ((int)match["giveAstClimbLvl"])
+                        {
+                            case 0:
+                                point += (int)ConstantVars.PTS_HELPED_LVL_2;
                                 break;
-                            case 2:
-                                point += (int)ConstantVars.PTS_NEED_HELP_LVL_3;
-                                System.Diagnostics.Debug.WriteLine("dam 1");
+                            case 1:
+                                point += (int)ConstantVars.PTS_HELPED_LVL_3;
+                                System.Diagnostics.Debug.WriteLine("dam 3");
                                 break;
                             default:
                                 point += 0;
                                 break;
                         }
+                    }
+
+                    if (totalPoint.ContainsKey(match["team"].ToString()))
+                    {
+                        totalPoint[match["team"].ToString()] += point;
+                        amountOfMatch[match["team"].ToString()] += 1;
                     }
                     else
                     {
-                        switch ((int)match["climbLvl"])
-                        {
-                            case 0:
-                                point += (int)ConstantVars.PTS_SELF_LVL_1;
-                                break;
-                            case 1:
-                                point += (int)ConstantVars.PTS_SELF_LVL_2;
-                                break;
-                            case 2:
-                                point += (int)ConstantVars.PTS_SELF_LVL_3;
-                                System.Diagnostics.Debug.WriteLine("dam 2");
-                                break;
-                            default:
-                                point += 0;
-                                break;
-                        }
+                        totalPoint.Add(match["team"].ToString(), point);
+                        amountOfMatch.Add(match["team"].ToString(), 1);
                     }
                 }
-                if ((bool)match["giveAstClimb"])
-                {
-                    switch ((int)match["giveAstClimbLvl"])
-                    {
-                        case 0:
-                            point += (int)ConstantVars.PTS_HELPED_LVL_2;
-                            break;
-                        case 1:
-                            point += (int)ConstantVars.PTS_HELPED_LVL_3;
-                            System.Diagnostics.Debug.WriteLine("dam 3");
-                            break;
-                        default:
-                            point += 0;
-                            break;
-                    }
-                }
+            }
+            catch (System.NullReferenceException)
+            {
 
-                if (totalPoint.ContainsKey(match["team"].ToString()))
-                {
-                    totalPoint[match["team"].ToString()] += point;
-                    amountOfMatch[match["team"].ToString()] += 1;
-                }
-                else
-                {
-                    totalPoint.Add(match["team"].ToString(), point);
-                    amountOfMatch.Add(match["team"].ToString(), 1);
-                }
             }
             Dictionary<string, double> data = new Dictionary<string, double>();
             foreach (KeyValuePair<string, double> entry in totalPoint)
             {
                 data.Add(entry.Key, entry.Value / amountOfMatch[entry.Key]);
-                System.Diagnostics.Debug.WriteLine(entry.Key + ": " + entry.Value + ", " + amountOfMatch[entry.Key]);
             }
             return data;
         }
@@ -246,48 +257,53 @@ namespace NRGScoutingApp
             Dictionary<string, double> totalData = new Dictionary<string, double>();
             Dictionary<string, int> numsData = new Dictionary<string, int>();
             Dictionary<string, double> pushData = new Dictionary<string, double>();
-            foreach (var match in fullData)
+            try
             {
-                int reps;
-                try
+                foreach (var match in fullData)
                 {
-                    reps = (int)match["numEvents"];
-                }
-                catch (JsonException)
-                {
-                    reps = 0;
-                }
-                for (int i = 0; i < reps; i++)
-                {
-                    if ((int)match["TE" + i + "_1"] == sortType && i != reps - 1)
+                    int reps;
+                    try
                     {
-                        if (((int)match["TE" + (i + 1) + "_1"] != (int)MatchFormat.ACTION.startClimb) && ((int)match["TE" + (i + 1) + "_1"] != (int)MatchFormat.ACTION.dropNone))
+                        reps = (int)match["numEvents"];
+                    }
+                    catch (JsonException)
+                    {
+                        reps = 0;
+                    }
+                    for (int i = 0; i < reps; i++)
+                    {
+                        if ((int)match["TE" + i + "_1"] == sortType && i != reps - 1)
                         {
-                            int doTime = (int)match["TE" + (i + 1) + "_0"] - (int)match["TE" + i + "_0"];
-                            if ((int)match["TE" + (i + 1) + "_0"] <= ConstantVars.AUTO_LENGTH && !(bool)match["autoOTele"])
+                            if (((int)match["TE" + (i + 1) + "_1"] != (int)MatchFormat.ACTION.startClimb) && ((int)match["TE" + (i + 1) + "_1"] != (int)MatchFormat.ACTION.dropNone))
                             {
-                                doTime /= 2;
-                            }
-                            if (totalData.ContainsKey(match["team"].ToString()))
-                            {
-                                totalData[match["team"].ToString()] += doTime;
-                                numsData[match["team"].ToString()]++;
-                            }
-                            else
-                            {
-                                totalData.Add(match["team"].ToString(), doTime);
-                                numsData.Add(match["team"].ToString(), 1);
+                                int doTime = (int)match["TE" + (i + 1) + "_0"] - (int)match["TE" + i + "_0"];
+                                if ((int)match["TE" + (i + 1) + "_0"] <= ConstantVars.AUTO_LENGTH && !(bool)match["autoOTele"])
+                                {
+                                    doTime /= 2;
+                                }
+                                if (totalData.ContainsKey(match["team"].ToString()))
+                                {
+                                    totalData[match["team"].ToString()] += doTime;
+                                    numsData[match["team"].ToString()]++;
+                                }
+                                else
+                                {
+                                    totalData.Add(match["team"].ToString(), doTime);
+                                    numsData.Add(match["team"].ToString(), 1);
+                                }
                             }
                         }
                     }
                 }
             }
+            catch (System.NullReferenceException)
+            {
 
+            }
             foreach (var data in totalData)
             {
                 pushData.Add(data.Key, data.Value / numsData[data.Key]);
             }
-            System.Diagnostics.Debug.WriteLine(pushData);
             return pushData;
         }
 

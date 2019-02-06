@@ -32,9 +32,6 @@ namespace NRGScoutingApp
         }
 
         ArrayList vals = new ArrayList();
-        string titleName;
-        public string teamName { get { return titleName; } }
-
 
         private Boolean checkParse(){
             if (!App.Current.Properties.ContainsKey(App.Current.Properties["teamStart"].ToString() + "converted")) { 

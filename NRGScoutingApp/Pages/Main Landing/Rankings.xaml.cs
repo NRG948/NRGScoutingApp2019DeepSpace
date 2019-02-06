@@ -15,6 +15,8 @@ namespace NRGScoutingApp
             InitializeComponent();
         }
 
+        public static string teamSend;
+
         MatchFormat.CHOOSE_RANK_TYPE rankChoice = MatchFormat.CHOOSE_RANK_TYPE.overallRank;
 
         //Initializes the ranking object
@@ -91,8 +93,12 @@ namespace NRGScoutingApp
             sadNoMatch.IsVisible = !listView.IsVisible;
         }
 
-        void Handle_Tapped(object sender, System.EventArgs e)
+        async void teamClicked(object sender, Xamarin.Forms.ItemTappedEventArgs e)
         {
+            var x = (listView.ItemsSource as IEnumerable<KeyValuePair<String,double>>).ToList();
+            String item = x.Find(y => y.Equals(e.Item)).Key;
+            teamSend = item;
+            await Navigation.PushAsync(new RankingsDetailView() { Title = item});
         }
     }
 }

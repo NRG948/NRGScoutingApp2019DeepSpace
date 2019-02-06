@@ -63,6 +63,9 @@
     <Compile Include="$(MSBuildThisFileDirectory)Pages\Pit Scouting\PitEntry.xaml.cs">
       <DependentUpon>PitEntry.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\Rankings\RankingsDetailView.xaml.cs">
+      <DependentUpon>RankingsDetailView.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)App.xaml" />
@@ -122,6 +125,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\Rankings\RankingsDetailView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <None Include="$(MSBuildThisFileDirectory)Pages\BlueAllianceMatches.xaml">
@@ -140,5 +147,6 @@
     <Folder Include="$(MSBuildThisFileDirectory)Pages\Data Handling\" />
     <Folder Include="$(MSBuildThisFileDirectory)Pages\Tab Groups\" />
     <Folder Include="$(MSBuildThisFileDirectory)Pages\Pit Scouting\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Pages\Rankings\" />
   </ItemGroup>
 </Project>

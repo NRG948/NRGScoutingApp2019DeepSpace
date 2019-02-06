@@ -67,7 +67,7 @@ namespace NRGScoutingApp
         {
             if (backAllowed)
             {
-                NewMatchStart.events.Add(new MatchFormat.Data { time = NewMatchStart.droppedTime, type = (int)MatchFormat.ACTION.drop4 });
+                NewMatchStart.events.Add(new MatchFormat.Data { time = NewMatchStart.droppedTime, type = (int)MatchFormat.ACTION.drop1 }); //drop4
                 saveEvents();
                 setDropTime();
                 Navigation.PopAsync(true);

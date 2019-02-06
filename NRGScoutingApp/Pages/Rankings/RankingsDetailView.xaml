@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="NRGScoutingApp.RankingsDetailView"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+             ios:Page.UseSafeArea="true" 
+             ios:NavigationPage.PrefersLargeTitles="true">
+    <ContentPage.Content>
+        <StackLayout>
+            <ScrollView>
+                <ListView x:Name="listView" Margin="0,0,0,0" ItemTapped="matchTapped">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Padding="0" Margin="0">
+                                    <Label Text="{Binding matchNum}" x:Name="key" HorizontalTextAlignment="Start" Margin="0"/>
+                                    <Label Text="{Binding teamNameAndSide}" x:Name="value" HorizontalTextAlignment="Start" Margin="0"/>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
