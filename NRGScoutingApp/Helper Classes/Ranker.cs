@@ -17,10 +17,6 @@ namespace NRGScoutingApp
         private readonly int GIVE_CLIMB_LVL_2_INDEX = 0;
         private readonly int GIVE_CLIMB_LVL_3_INDEX = 1;
 
-        
-
-
-
         private JArray fullData;
 
         //PRE: data is in JSON Format
