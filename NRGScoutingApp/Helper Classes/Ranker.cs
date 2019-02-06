@@ -18,16 +18,25 @@ namespace NRGScoutingApp
         private readonly int GIVE_CLIMB_LVL_3_INDEX = 1;
 
         private JArray fullData;
+        private Dictionary<String, double> overallData = new Dictionary<String, double>();
+        private Dictionary<String, double> cargoData = new Dictionary<String, double>();
+        private Dictionary<String, double> hatchData = new Dictionary<String, double>();
+        private Dictionary<String, double> climbData = new Dictionary<String, double>();
+        private Dictionary<String, double> drop1Data = new Dictionary<String, double>();
+        private Dictionary<String, double> drop2Data = new Dictionary<String, double>();
+        private Dictionary<String, double> drop3Data = new Dictionary<String, double>();
 
         //PRE: data is in JSON Format
         public Ranker(String data)
         {
             fullData = getJSON(data);
+            refresh();
         }
 
         public void setData(String data)
         {
             fullData = getJSON(data);
+            refresh();
         }
 
         /*
@@ -36,28 +45,41 @@ namespace NRGScoutingApp
          * POST: Dictionary<String,double> type
          * Used for populating the listView in Rankings Page
          */
-        public Dictionary<String,double> getRank(MatchFormat.CHOOSE_RANK_TYPE x)
+        public Dictionary<String, double> getRank(MatchFormat.CHOOSE_RANK_TYPE x)
         {
             Console.WriteLine(x);
             switch (x)
             {
                 case MatchFormat.CHOOSE_RANK_TYPE.pick1:
-                    return getPickAvgData((int)MatchFormat.ACTION.pick1);
+                    return cargoData;
                 case MatchFormat.CHOOSE_RANK_TYPE.pick2:
-                    return getPickAvgData((int)MatchFormat.ACTION.pick2);
+                    return hatchData;
                 case MatchFormat.CHOOSE_RANK_TYPE.drop1:
-                    return getDropData((int)MatchFormat.ACTION.drop1);
+                    return drop1Data;
                 case MatchFormat.CHOOSE_RANK_TYPE.drop2:
-                    return getDropData((int)MatchFormat.ACTION.drop2);
+                    return drop2Data;
                 case MatchFormat.CHOOSE_RANK_TYPE.drop3:
-                    return getDropData((int)MatchFormat.ACTION.drop3);
+                    return drop3Data;
                 case MatchFormat.CHOOSE_RANK_TYPE.climb:
-                    return getClimbData();
+                    return climbData;
                 case MatchFormat.CHOOSE_RANK_TYPE.overallRank:
-                    return getOverallData();
+                    return overallData;
                 default:
                     Console.WriteLine("ERROR: WRONG RANK TYPE");
                     return new Dictionary<string, double>();
+            }
+            //return new Dictionary<string, double>();
+            //Enum.GetNames(typeof(MatchFormat.ACTION)).Length;
+        }
+        public void refresh()
+        {
+            cargoData = getPickAvgData((int)MatchFormat.ACTION.pick1);
+            hatchData = getPickAvgData((int)MatchFormat.ACTION.pick2);
+            drop1Data = getDropData((int)MatchFormat.ACTION.drop1);
+            drop2Data = getDropData((int)MatchFormat.ACTION.drop2);
+            drop3Data = getDropData((int)MatchFormat.ACTION.drop3);
+            climbData = getClimbData();
+            overallData = getOverallData();
             }
             //return new Dictionary<string, double>();
             //Enum.GetNames(typeof(MatchFormat.ACTION)).Length;

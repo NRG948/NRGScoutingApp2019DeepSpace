@@ -9,6 +9,7 @@ namespace NRGScoutingApp
     {
         public RankingsDetailView()
         {
+            
             InitializeComponent();
             Rankings.teamSend = Rankings.teamSend.Split('-')[MatchFormat.teamNameOrNum].Trim();
             Console.WriteLine(Rankings.teamSend);
