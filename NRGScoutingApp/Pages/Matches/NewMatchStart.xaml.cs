@@ -75,7 +75,7 @@ namespace NRGScoutingApp
 
         }
 
-        void startClicked(object sender, System.EventArgs e)
+        async void startClicked(object sender, System.EventArgs e)
         {
             if (!isTimerRunning)
             {
@@ -107,16 +107,21 @@ namespace NRGScoutingApp
                 }
                 else if (Device.RuntimePlatform == "Android")
                 {
-                    Device.StartTimer(TimeSpan.FromMilliseconds(ConstantVars.TIMER_INTERVAL_ANDROID), () =>
-                    {
-                        if (timerValue >= ConstantVars.MATCH_SPAN_MS || !isTimerRunning)
-                        {
-                            startTimer.Text = ConstantVars.TIMER_START;
-                            return false;
-                        }
+
+                    while(!(timerValue >= ConstantVars.MATCH_SPAN_MS || !isTimerRunning)) {
+                        await Task.Delay(ConstantVars.TIMER_INTERVAL_ANDROID);
                         Timer_Elapsed();
-                        return true;
-                    });
+                    }
+                    //Device.StartTimer(TimeSpan.FromMilliseconds(ConstantVars.TIMER_INTERVAL_ANDROID), () =>
+                    //{
+                    //    if (timerValue >= ConstantVars.MATCH_SPAN_MS || !isTimerRunning)
+                    //    {
+                    //        startTimer.Text = ConstantVars.TIMER_START;
+                    //        return false;
+                    //    }
+                    //    Timer_Elapsed();
+                    //    return true;
+                    //});
                 }
 
             }
