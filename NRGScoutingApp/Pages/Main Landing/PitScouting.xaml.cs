@@ -22,7 +22,6 @@ namespace NRGScoutingApp
             setListView(App.Current.Properties["matchEventsString"].ToString());
         }
 
-
         void newPit(object sender, System.EventArgs e)
         {
             Navigation.PushAsync(new MatchEntryStart(false));

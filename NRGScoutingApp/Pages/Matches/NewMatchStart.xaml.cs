@@ -226,9 +226,6 @@ namespace NRGScoutingApp
             }
         }
 
-
-
-        //TODO: Call Parse Method for match number called and figure out the pickNum and dropNum values and set them
         private void timerValueSetter()
         {
             if (!App.Current.Properties.ContainsKey("lastItemPicked"))

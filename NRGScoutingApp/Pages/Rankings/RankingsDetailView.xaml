@@ -31,10 +31,12 @@
                        Grid.Row="1" Grid.Column="1"/>
                 <Label Text="" x:Name="score6" TextColor="Black" FontSize="12"
                        Grid.Row="1" Grid.Column="2"/>
-
             </Grid>
-            <ScrollView>
-                <ListView x:Name="listView" Margin="0,0,0,0" ItemTapped="matchTapped" HasUnevenRows="true">
+            <ListView x:Name="listView"
+                      Margin="0,0,0,0" 
+                      ItemTapped="matchTapped"
+                      HasUnevenRows="true"
+                      Footer="">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>
@@ -46,7 +48,6 @@
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>
-            </ScrollView>
-        </StackLayout>
+           </StackLayout>
     </ContentPage.Content>
 </ContentPage>

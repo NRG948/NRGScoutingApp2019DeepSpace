@@ -17,7 +17,8 @@
                       ItemTapped="eventTapped" 
                       HorizontalOptions="FillAndExpand" 
                       VerticalOptions="CenterAndExpand" 
-                      Grid.Row="0" Grid.Column="0" HasUnevenRows="true">
+                      Grid.Row="0" Grid.Column="0" HasUnevenRows="true"
+                      Footer="">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>

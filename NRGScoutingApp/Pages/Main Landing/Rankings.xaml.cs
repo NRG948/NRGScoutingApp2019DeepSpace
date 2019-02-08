@@ -20,7 +20,6 @@ namespace NRGScoutingApp
 
         MatchFormat.CHOOSE_RANK_TYPE rankChoice;
 
-
         //Initializes the ranking object
         Ranker mainRank = new Ranker(App.Current.Properties["matchEventsString"].ToString());
 
@@ -55,48 +54,6 @@ namespace NRGScoutingApp
             }
             updateEvents();
         }
-
-        //void overallRank(object sender, System.EventArgs e)
-        //{
-        //    rankChoice = MatchFormat.CHOOSE_RANK_TYPE.overallRank;
-        //    updateEvents();
-        //}
-
-        //void pick1Rank(object sender, System.EventArgs e)
-        //{
-        //    rankChoice = MatchFormat.CHOOSE_RANK_TYPE.drop1;
-        //    updateEvents();
-        //}
-
-        //void pick2Rank(object sender, System.EventArgs e)
-        //{
-        //    rankChoice = MatchFormat.CHOOSE_RANK_TYPE.drop2;
-        //    updateEvents();
-        //}
-
-        //void climbRank(object sender, System.EventArgs e)
-        //{
-        //    rankChoice = MatchFormat.CHOOSE_RANK_TYPE.climb;
-        //    updateEvents();
-        //}
-
-        //void drop1Rank(object sender, System.EventArgs e)
-        //{
-        //    rankChoice = MatchFormat.CHOOSE_RANK_TYPE.drop1;
-        //    updateEvents();
-        //}
-
-        //void drop2Rank(object sender, System.EventArgs e)
-        //{
-        //    rankChoice = MatchFormat.CHOOSE_RANK_TYPE.drop2;
-        //    updateEvents();
-        //}
-
-        //void drop3Rank(object sender, System.EventArgs e)
-        //{
-        //    rankChoice = MatchFormat.CHOOSE_RANK_TYPE.drop3;
-        //    updateEvents();
-        //}
 
         protected override void OnAppearing()
         {

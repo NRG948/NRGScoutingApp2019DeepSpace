@@ -21,7 +21,11 @@
                 </Grid.ColumnDefinitions>
             <StackLayout x:Name="scoutView" Orientation="Vertical" HorizontalOptions="FillAndExpand" Grid.Row="0" Grid.Column="0">
                 <SearchBar x:Name="searchBar" Placeholder="Team Name" TextChanged="SearchBar_OnTextChanged"/>
-                <ListView x:Name="listView" Margin="0,0,0,0" ItemTapped="teamClicked" HasUnevenRows="true"/>
+                <ListView x:Name="listView" 
+                          Margin="0,0,0,0" 
+                          ItemTapped="teamClicked" 
+                          HasUnevenRows="true"
+                          Footer=""/>
             </StackLayout>
             <Label x:Name="sadNoPit" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" HorizontalTextAlignment="Center" Grid.Row="0" Grid.Column="0" Text=":( No Notes.&#x0a;
 Add Notes and Come Back" FontAttributes="Bold" TextColor="Gray" FontSize="Large"/>

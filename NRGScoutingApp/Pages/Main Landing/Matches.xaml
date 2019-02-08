@@ -23,7 +23,11 @@
             </Grid.ColumnDefinitions>
             <StackLayout x:Name="matchesView" Orientation="Vertical" HorizontalOptions="FillAndExpand" Grid.Row="0" Grid.Column="0">
                 <SearchBar x:Name="searchBar" Placeholder="Match Number" TextChanged="SearchBar_OnTextChanged"/>
-                <ListView x:Name="listView" Margin="0,0,0,0" ItemTapped="Handle_ItemTapped" HasUnevenRows="true">
+                <ListView x:Name="listView" 
+                          Margin="0,0,0,0" 
+                          ItemTapped="Handle_ItemTapped" 
+                          HasUnevenRows="true"
+                          Footer="">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>

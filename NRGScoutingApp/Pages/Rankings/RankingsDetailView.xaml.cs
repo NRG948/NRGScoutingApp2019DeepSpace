@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Xamarin.Forms;
 using System.Linq;
+using Xamarin.Forms.Xaml;
 
 namespace NRGScoutingApp
 {
@@ -21,10 +22,6 @@ namespace NRGScoutingApp
 
         void setScoreValues(String[] times)
         {
-            foreach (string s in times)
-            {
-                Console.WriteLine(s);
-            }
             score0.Text = ConstantVars.scoreBaseVals[0] + times[0];
             score1.Text = ConstantVars.scoreBaseVals[1] + times[1];
             score2.Text = ConstantVars.scoreBaseVals[2] + times[2];
