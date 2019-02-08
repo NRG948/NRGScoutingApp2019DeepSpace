@@ -17,7 +17,6 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Helper Classes\ConstantVars.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Helper Classes\ParametersFormat.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Helper Classes\Ranker.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Helper Classes\TeamsNames.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Helper Classes\MatchFormat.cs" />

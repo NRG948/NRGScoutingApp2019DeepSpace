@@ -139,6 +139,6 @@ namespace NRGScoutingApp
             return "Error";
         }
 
-        public static int teamNameOrNum = 1;
+        public static readonly int teamNameOrNum = 1;
     }
 }

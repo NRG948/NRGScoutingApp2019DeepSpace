@@ -1,19 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using NRGScoutingApp;
 using Xamarin.Forms;
-using Xamarin.Forms.PlatformConfiguration;
-using System.Security.Cryptography.X509Certificates;
-using Xamarin.Forms.Platform;
-using Xamarin.Forms.Xaml;
-using System.Text;
-using Newtonsoft.Json;
 using System.Threading.Tasks;
-using System.Linq;
-using Rg.Plugins.Popup.Services;
-using System.Linq.Expressions;
-using System.Security.AccessControl;
-using System.Collections;
 
 namespace NRGScoutingApp
 {

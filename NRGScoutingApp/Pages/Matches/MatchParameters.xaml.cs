@@ -1,16 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Collections;
 using Xamarin.Forms;
-using System.ComponentModel;
-using NRGScoutingApp;
-using System.Security.Cryptography;
 using Newtonsoft.Json.Linq;
-using System.Xml;
 using Newtonsoft.Json;
-using System.Threading;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace NRGScoutingApp
 {
@@ -22,7 +14,6 @@ namespace NRGScoutingApp
         }
 
         public String teamName = App.Current.Properties["teamStart"].ToString();
-        public ParametersFormat paramFormat = new ParametersFormat();
         public static MatchFormat.EntryParams Entry = new MatchFormat.EntryParams
         {
             team = App.Current.Properties["teamStart"].ToString(),

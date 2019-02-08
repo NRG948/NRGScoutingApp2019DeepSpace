@@ -13,12 +13,7 @@ namespace NRGScoutingApp
         {
             Children.Add(new NewMatchStart());
             Children.Add(new MatchEvents());
-            if (checkParse()){
-                Children.Add(new MatchParameters());
-            }
-            else{
-                Children.Add(new MatchParameters());
-            }
+            Children.Add(new MatchParameters());
             BindingContext = this;
             App.Current.Properties["newAppear"] = 1;
             App.Current.SavePropertiesAsync();
@@ -29,18 +24,6 @@ namespace NRGScoutingApp
         protected override bool OnBackButtonPressed()
         {
             return true;
-        }
-
-        ArrayList vals = new ArrayList();
-
-        private Boolean checkParse(){
-            if (!App.Current.Properties.ContainsKey(App.Current.Properties["teamStart"].ToString() + "converted")) { 
-                return false; 
-            }
-            else{
-                ParametersFormat s = new ParametersFormat();
-                return true;
-            }
         }
 
         async void backClicked(object sender, System.EventArgs e)
