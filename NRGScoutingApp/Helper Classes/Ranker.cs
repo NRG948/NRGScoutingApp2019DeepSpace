@@ -45,7 +45,7 @@ namespace NRGScoutingApp
             String[] retValues = new String[ConstantVars.numRankTypes];
             if (cargoData.ContainsKey(team))
             {
-                retValues[1] = NewMatchStart.timeToString((int)cargoData[team] * (int)ConstantVars.TIME_NERF);
+                retValues[1] = timeAdaptiveString((int)cargoData[team]);
             }
             else
             {
@@ -53,14 +53,14 @@ namespace NRGScoutingApp
             }
             if (hatchData.ContainsKey(team))
             {
-                retValues[2] = NewMatchStart.timeToString((int)(hatchData[team] * ConstantVars.TIME_NERF));
+                retValues[2] = timeAdaptiveString((int)hatchData[team]);
             }
             else {
                 retValues[2] = ConstantVars.noVal;
             }
             if (climbData.ContainsKey(team))
             {
-                retValues[3] = ((int)climbData[team]*ConstantVars.TIME_NERF).ToString();
+                retValues[3] = climbData[team].ToString();
             }
             else
             {
@@ -68,7 +68,7 @@ namespace NRGScoutingApp
             }
             if (drop1Data.ContainsKey(team))
             {
-                retValues[4] = NewMatchStart.timeToString((int)drop1Data[team] * (int)ConstantVars.TIME_NERF);
+                retValues[4] = timeAdaptiveString((int)drop1Data[team]); //timeAdaptiveString
             }
             else
             {
@@ -76,7 +76,7 @@ namespace NRGScoutingApp
             }
             if (drop2Data.ContainsKey(team))
             {
-                retValues[5] = NewMatchStart.timeToString((int)drop2Data[team] * (int)ConstantVars.TIME_NERF);
+                retValues[5] = timeAdaptiveString((int)drop2Data[team]);
             }
             else
             {
@@ -84,7 +84,7 @@ namespace NRGScoutingApp
             }
             if (drop3Data.ContainsKey(team))
             {
-                retValues[6] = NewMatchStart.timeToString((int)drop3Data[team] * (int)ConstantVars.TIME_NERF);
+                retValues[6] = timeAdaptiveString((int)drop3Data[team]);
             }
             else
             {
@@ -92,6 +92,25 @@ namespace NRGScoutingApp
             }
             retValues[0] = overallData[team].ToString();
             return retValues;
+        }
+
+
+        public static string timeAdaptiveString(int timeValue)
+        {
+            int minutes = 0;
+            int seconds = 0;
+            int milliseconds = 0;
+            minutes = timeValue / (int)ConstantVars.MIN_MS;
+            timeValue %= (int)ConstantVars.MIN_MS;
+            seconds = timeValue / (int)ConstantVars.SEC_MS;
+            timeValue %= (int)ConstantVars.SEC_MS;
+            milliseconds = timeValue;
+            if(minutes == 0) {
+                return seconds.ToString("D2") + "." + (milliseconds / 10).ToString("D2");
+            }
+            else {
+                return minutes + ":" + seconds.ToString("D2") + "." + (milliseconds / 10).ToString("D2");
+            }
         }
 
         /*
@@ -102,7 +121,7 @@ namespace NRGScoutingApp
          */
         public Dictionary<String, double> getRank(MatchFormat.CHOOSE_RANK_TYPE x)
         {
-            Console.WriteLine(x);
+            refresh();
             switch (x)
             {
                 case MatchFormat.CHOOSE_RANK_TYPE.pick1:
@@ -130,7 +149,7 @@ namespace NRGScoutingApp
             Dictionary<string, string> result = new Dictionary<string, string>();
             foreach (var x in input)
             {
-                result.Add(x.Key, NewMatchStart.timeToString((int)x.Value * (int)ConstantVars.TIME_NERF));
+                result.Add(x.Key, timeAdaptiveString((int)x.Value * (int)ConstantVars.TIME_NERF));
             }
             return result;
         }
