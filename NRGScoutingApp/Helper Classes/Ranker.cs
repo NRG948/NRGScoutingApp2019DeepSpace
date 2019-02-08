@@ -45,7 +45,7 @@ namespace NRGScoutingApp
             String[] retValues = new String[ConstantVars.numRankTypes];
             if (cargoData.ContainsKey(team))
             {
-                retValues[1] = NewMatchStart.timeToString((int)cargoData[team] * 1000);
+                retValues[1] = NewMatchStart.timeToString((int)cargoData[team] * (int)ConstantVars.TIME_NERF);
             }
             else
             {
@@ -53,14 +53,14 @@ namespace NRGScoutingApp
             }
             if (hatchData.ContainsKey(team))
             {
-                retValues[2] = NewMatchStart.timeToString((int)hatchData[team] * 1000);
+                retValues[2] = NewMatchStart.timeToString((int)(hatchData[team] * ConstantVars.TIME_NERF));
             }
             else {
                 retValues[2] = ConstantVars.noVal;
             }
             if (climbData.ContainsKey(team))
             {
-                retValues[3] = NewMatchStart.timeToString((int)climbData[team] * 1000);
+                retValues[3] = ((int)climbData[team]*ConstantVars.TIME_NERF).ToString();
             }
             else
             {
@@ -68,7 +68,7 @@ namespace NRGScoutingApp
             }
             if (drop1Data.ContainsKey(team))
             {
-                retValues[4] = NewMatchStart.timeToString((int)drop1Data[team] * 1000);
+                retValues[4] = NewMatchStart.timeToString((int)drop1Data[team] * (int)ConstantVars.TIME_NERF);
             }
             else
             {
@@ -76,7 +76,7 @@ namespace NRGScoutingApp
             }
             if (drop2Data.ContainsKey(team))
             {
-                retValues[5] = NewMatchStart.timeToString((int)drop2Data[team] * 1000);
+                retValues[5] = NewMatchStart.timeToString((int)drop2Data[team] * (int)ConstantVars.TIME_NERF);
             }
             else
             {
@@ -84,7 +84,7 @@ namespace NRGScoutingApp
             }
             if (drop3Data.ContainsKey(team))
             {
-                retValues[6] = NewMatchStart.timeToString((int)drop3Data[team] * 1000);
+                retValues[6] = NewMatchStart.timeToString((int)drop3Data[team] * (int)ConstantVars.TIME_NERF);
             }
             else
             {
@@ -130,7 +130,7 @@ namespace NRGScoutingApp
             Dictionary<string, string> result = new Dictionary<string, string>();
             foreach (var x in input)
             {
-                result.Add(x.Key, NewMatchStart.timeToString((int)x.Value * 1000));
+                result.Add(x.Key, NewMatchStart.timeToString((int)x.Value * (int)ConstantVars.TIME_NERF));
             }
             return result;
         }
