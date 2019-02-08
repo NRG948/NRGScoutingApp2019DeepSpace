@@ -7,7 +7,7 @@
              ios:NavigationPage.PrefersLargeTitles="true">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Overall Score: 0" x:Name="overallScore" VerticalOptions="Start" HorizontalOptions="CenterAndExpand" TextColor="Green" FontSize="30"/>
+            <Label Text="Overall Score: 0" x:Name="score0" VerticalOptions="Start" HorizontalOptions="CenterAndExpand" TextColor="Green" FontSize="30"/>
             <Grid HorizontalOptions="Center" VerticalOptions="Center" RowSpacing="5" ColumnSpacing="2" Margin="5,5">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*" />
@@ -19,17 +19,17 @@
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
 
-                <Label Text="Cargo Score: 0" x:Name="cargoScore" TextColor="Black" FontSize="18"
+                <Label Text="" x:Name="score1" TextColor="Black" FontSize="12"
                        Grid.Row="0" Grid.Column="0"/>
-                <Label Text="Hatch Score: 0" x:Name="hatchScore" TextColor="Black" FontSize="18"
+                <Label Text="" x:Name="score2" TextColor="Black" FontSize="12"
                        Grid.Row="0" Grid.Column="1"/>
-                <Label Text="Climb Score: 0" x:Name="cargoScore" TextColor="Black" FontSize= "18"
+                <Label Text="" x:Name="score3" TextColor="Black" FontSize= "12"
                        Grid.Row="0" Grid.Column="2"/>
-                <Label Text="Lvl 1 Score: 0" x:Name="lvl1Score" TextColor="Black" FontSize="18"
+                <Label Text="" x:Name="score4" TextColor="Black" FontSize="12"
                        Grid.Row="1" Grid.Column="0"/>
-                <Label Text="Lvl 2 Score: 0" x:Name="lvl2Score" TextColor="Black" FontSize="18"
+                <Label Text="" x:Name="score5" TextColor="Black" FontSize="12"
                        Grid.Row="1" Grid.Column="1"/>
-                <Label Text="Lvl 3 Score: 0" x:Name="lvl3Score" TextColor="Black" FontSize="18"
+                <Label Text="" x:Name="score6" TextColor="Black" FontSize="12"
                        Grid.Row="1" Grid.Column="2"/>
 
             </Grid>

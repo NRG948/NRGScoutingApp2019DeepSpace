@@ -2,9 +2,6 @@
 using System.Collections.Generic;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
-using Data = System.Collections.Generic.KeyValuePair<string, int>;
-using System.Collections;
-using System.Runtime.InteropServices;
 
 namespace NRGScoutingApp
 {
@@ -40,6 +37,64 @@ namespace NRGScoutingApp
         }
 
         /*
+         * This is the order in which the array is ordered       
+         * overall, cargoTime, hatchTime, climb, lvl1, lvl2, lvl3
+         */
+        public String[] returnTeamTimes(string team)
+        {
+            String[] retValues = new String[ConstantVars.numRankTypes];
+            if (cargoData.ContainsKey(team))
+            {
+                retValues[1] = NewMatchStart.timeToString((int)cargoData[team] * 1000);
+            }
+            else
+            {
+                retValues[1] = ConstantVars.noVal;
+            }
+            if (hatchData.ContainsKey(team))
+            {
+                retValues[2] = NewMatchStart.timeToString((int)hatchData[team] * 1000);
+            }
+            else {
+                retValues[2] = ConstantVars.noVal;
+            }
+            if (climbData.ContainsKey(team))
+            {
+                retValues[3] = NewMatchStart.timeToString((int)climbData[team] * 1000);
+            }
+            else
+            {
+                retValues[3] = ConstantVars.noVal;
+            }
+            if (drop1Data.ContainsKey(team))
+            {
+                retValues[4] = NewMatchStart.timeToString((int)drop1Data[team] * 1000);
+            }
+            else
+            {
+                retValues[4] = ConstantVars.noVal;
+            }
+            if (drop2Data.ContainsKey(team))
+            {
+                retValues[5] = NewMatchStart.timeToString((int)drop2Data[team] * 1000);
+            }
+            else
+            {
+                retValues[5] = ConstantVars.noVal;
+            }
+            if (drop3Data.ContainsKey(team))
+            {
+                retValues[6] = NewMatchStart.timeToString((int)drop3Data[team] * 1000);
+            }
+            else
+            {
+                retValues[6] = ConstantVars.noVal;
+            }
+            retValues[0] = overallData[team].ToString();
+            return retValues;
+        }
+
+        /*
          * Switchboard operator for getting match Ranks
          * PRE: Rank type is provided
          * POST: Dictionary<String,double> type
@@ -70,10 +125,12 @@ namespace NRGScoutingApp
             }
         }
 
-        public Dictionary<string,string> returnDataAsTime(Dictionary<string, double> input) {
+        public Dictionary<string, string> returnDataAsTime(Dictionary<string, double> input)
+        {
             Dictionary<string, string> result = new Dictionary<string, string>();
-            foreach(var x in input) {
-                result.Add(x.Key, NewMatchStart.timeToString((int)x.Value*1000));
+            foreach (var x in input)
+            {
+                result.Add(x.Key, NewMatchStart.timeToString((int)x.Value * 1000));
             }
             return result;
         }
@@ -86,7 +143,6 @@ namespace NRGScoutingApp
             drop3Data = getDropData((int)MatchFormat.ACTION.drop3);
             climbData = getClimbData();
             overallData = getOverallData();
-            }
             //return new Dictionary<string, double>();
             //Enum.GetNames(typeof(MatchFormat.ACTION)).Length;
         }
@@ -131,7 +187,7 @@ namespace NRGScoutingApp
         }
 
         //Returns average data for drop level passed through (enum int is passed through sortType)
-        public Dictionary<string,double> getDropData(int levelEnum)
+        public Dictionary<string, double> getDropData(int levelEnum)
         {
             Dictionary<string, double> totalData = new Dictionary<string, double>();
             Dictionary<string, int> numsData = new Dictionary<string, int>();
@@ -174,7 +230,8 @@ namespace NRGScoutingApp
                     }
                 }
             }
-            catch (System.NullReferenceException) {
+            catch (System.NullReferenceException)
+            {
 
             }
             Dictionary<string, double> pushData = new Dictionary<string, double>();

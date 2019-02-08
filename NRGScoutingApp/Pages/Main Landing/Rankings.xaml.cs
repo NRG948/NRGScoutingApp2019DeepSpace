@@ -98,7 +98,7 @@ namespace NRGScoutingApp
             var x = (listView.ItemsSource as IEnumerable<KeyValuePair<String,double>>).ToList();
             String item = x.Find(y => y.Equals(e.Item)).Key;
             teamSend = item;
-            await Navigation.PushAsync(new RankingsDetailView() { Title = item});
+            await Navigation.PushAsync(new RankingsDetailView(mainRank.returnTeamTimes(item)) { Title = item});
         }
     }
 }

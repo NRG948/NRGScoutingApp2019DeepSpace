@@ -82,6 +82,7 @@ namespace NRGScoutingApp
         public static readonly String LVL_2_CLIMB = "Level 2";
         public static readonly String LVL_3_CLIMB = "Level 3";
 
+
         /*
          * RANKER VALUES
          * NOTE: THE LOWER THE VALUES FOR RANK, THE BETTER
@@ -118,10 +119,17 @@ namespace NRGScoutingApp
         public static readonly double PTS_HELPED_LVL_2 = 1;
         public static readonly double PTS_HELPED_LVL_3 = 2;
 
+
+        /*
+         * Rankings Detail View Page
+         */
+        public static readonly int numRankTypes = 7;
+        public static readonly String[] scoreBaseVals = { "Overall: ", "Cargo: ", "Hatch: ", "Climb: ", "Lvl. 1: ", "Lvl 2: ", "Lvl 3: " };
+        public static readonly String noVal = "Empty";
+
         /*
          * PIT SCOUTING
          */
-
         //Separates the entries if same team was scouted twice
         public static readonly String entrySeparator = "\nANOTHER PIT ENTRY:::::::\n";
         public static readonly String[] QUESTIONS =
