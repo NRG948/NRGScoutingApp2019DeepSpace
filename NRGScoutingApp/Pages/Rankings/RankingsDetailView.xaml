@@ -34,7 +34,7 @@
 
             </Grid>
             <ScrollView>
-                <ListView x:Name="listView" Margin="0,0,0,0" ItemTapped="matchTapped">
+                <ListView x:Name="listView" Margin="0,0,0,0" ItemTapped="matchTapped" HasUnevenRows="true">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>
