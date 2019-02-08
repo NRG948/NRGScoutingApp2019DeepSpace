@@ -7,17 +7,24 @@
              Title="Rankings" 
              Icon="ic_leader.png" 
              ios:NavigationPage.PrefersLargeTitles="true">
-    <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Overall" Clicked="overallRank" Order="Primary"/>
-        <ToolbarItem Text="Hatch" Clicked="pick1Rank" Order="Secondary"/>
-        <ToolbarItem Text="Cargo" Clicked="pick2Rank" Order="Secondary"/>
-        <ToolbarItem Text="Climb" Clicked="climbRank" Order="Secondary"/>
-        <ToolbarItem Text="Lvl. 1" Clicked="drop1Rank" Order="Secondary"/>
-        <ToolbarItem Text="Lvl. 2" Clicked="drop2Rank" Order="Secondary"/>
-        <ToolbarItem Text="Lvl. 3" Clicked="drop3Rank" Order="Secondary"/>
-    </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <StackLayout>
+            <Picker x:Name="rankPicker"
+                    Title="Team Identifier" 
+                    HorizontalOptions="EndAndExpand"
+                    Margin="10,5,10,0"
+                    FontSize="20"
+                    SelectedIndexChanged="rankTypeDelta">
+                <Picker.Items>
+                    <x:String>Overall</x:String>
+                    <x:String>Hatch</x:String>
+                    <x:String>Cargo</x:String>
+                    <x:String>Climb</x:String>
+                    <x:String>Lvl. 1</x:String>
+                    <x:String>Lvl. 2</x:String>
+                    <x:String>Lvl. 3</x:String>
+                </Picker.Items>
+            </Picker>
            <Grid HorizontalOptions="CenterAndExpand" RowSpacing="0" ColumnSpacing="0" Margin="0" VerticalOptions="CenterAndExpand">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*"/>
@@ -30,7 +37,8 @@
                           Grid.Row="0" 
                           Grid.Column="0" 
                           VerticalOptions="CenterAndExpand"
-                          ItemTapped="teamClicked">
+                          ItemTapped="teamClicked"
+                          HasUnevenRows="true">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>
@@ -49,3 +57,14 @@
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
+
+
+<!--    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Overall" Clicked="overallRank" Order="Primary"/>
+        <ToolbarItem Text="Hatch" Clicked="pick1Rank" Order="Secondary"/>
+        <ToolbarItem Text="Cargo" Clicked="pick2Rank" Order="Secondary"/>
+        <ToolbarItem Text="Climb" Clicked="climbRank" Order="Secondary"/>
+        <ToolbarItem Text="Lvl. 1" Clicked="drop1Rank" Order="Secondary"/>
+        <ToolbarItem Text="Lvl. 2" Clicked="drop2Rank" Order="Secondary"/>
+        <ToolbarItem Text="Lvl. 3" Clicked="drop3Rank" Order="Secondary"/>
+    </ContentPage.ToolbarItems>-->
