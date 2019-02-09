@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using Xamarin.Forms;
-using System.ComponentModel;
-using System.Linq;
-using Data = System.Collections.Generic.KeyValuePair<string, string>;
 
 namespace NRGScoutingApp
 {
@@ -141,6 +138,7 @@ namespace NRGScoutingApp
                     else
                     {
                         removeAtIndex(index);
+                        NewMatchStart.setItemToDefault = true;
                     }
                 }
                 else if (eventsList[index].eventName.Contains(ConstantVars.DROP_KEYWORD))

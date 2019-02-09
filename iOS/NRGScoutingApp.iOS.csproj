@@ -44,6 +44,7 @@
     <BuildIpa>true</BuildIpa>
     <CodesignProvision>iOS Team Provisioning Profile: com.NRG.ScoutingApp.NRG-Scouting</CodesignProvision>
     <MtouchUseLlvm>true</MtouchUseLlvm>
+    <MtouchEnableSGenConc>true</MtouchEnableSGenConc>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
     <DebugType>pdbonly</DebugType>
