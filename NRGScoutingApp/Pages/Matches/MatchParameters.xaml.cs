@@ -3,6 +3,7 @@ using Xamarin.Forms;
 using Newtonsoft.Json.Linq;
 using Newtonsoft.Json;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace NRGScoutingApp
 {
@@ -73,53 +74,61 @@ namespace NRGScoutingApp
             if (popErrorsToScreen()) { }
             else
             {
-                //Disables save button so app doesn't crash when user taps many times
-                saveButton.IsEnabled = false;
-                //Gets and combines all of the match's events to a JObject
-                JObject events = MatchFormat.eventsListToJSONEvents(NewMatchStart.events);
-                events.Add("timerValue", NewMatchStart.timerValue);
-                JObject parameters = JObject.FromObject(Entry);
-                parameters.Merge(events);
+                await Task.Run(async () =>
+                {
+                    Device.BeginInvokeOnMainThread(() =>
+                    {//Disables save button so app doesn't crash when user taps many times
+                        saveButton.IsEnabled = false;
+                    });
+                    //Gets and combines all of the match's events to a JObject
+                    JObject events = MatchFormat.eventsListToJSONEvents(NewMatchStart.events);
+                    events.Add("timerValue", NewMatchStart.timerValue);
+                    JObject parameters = JObject.FromObject(Entry);
+                    parameters.Merge(events);
 
-                //Adds or creates new JObject to start all data in app cache
-                JObject data = initializeEventsObject();
-                if (data.Count <= 0 || !data.ContainsKey("Matches"))
-                {
-                    data.Add(new JProperty("Matches", new JArray()));
-                    pushBackToHome(data, new JArray(), parameters);
-                }
-                else
-                {
-                    JArray temp = (JArray)data["Matches"];
-                    if (temp.ToList().Exists(x => x["matchNum"].Equals(parameters["matchNum"]) && x["side"].Equals(parameters["side"])))
+                    //Adds or creates new JObject to start all data in app cache
+                    JObject data = initializeEventsObject();
+                    if (data.Count <= 0 || !data.ContainsKey("Matches"))
                     {
-                        var item = temp.ToList().Find(x => x["matchNum"].Equals(parameters["matchNum"]) && x["side"].Equals(parameters["side"]));
-                        if (item["team"] != parameters["team"])
+                        data.Add(new JProperty("Matches", new JArray()));
+                        pushBackToHome(data, new JArray(), parameters);
+                    }
+                    else
+                    {
+                        JArray temp = (JArray)data["Matches"];
+                        if (temp.ToList().Exists(x => x["matchNum"].Equals(parameters["matchNum"]) && x["side"].Equals(parameters["side"])))
                         {
-                            var remove = await DisplayAlert("Error", "Overwrite Old Match with New Data?", "No", "Yes");
-                            if (!remove)
+                            var item = temp.ToList().Find(x => x["matchNum"].Equals(parameters["matchNum"]) && x["side"].Equals(parameters["side"]));
+                            if (item["team"] != parameters["team"])
+                            {
+                                var remove = await DisplayAlert("Error", "Overwrite Old Match with New Data?", "No", "Yes");
+                                if (!remove)
+                                {
+                                    temp.Remove(item);
+                                    pushBackToHome(data, temp, parameters);
+                                }
+                                else
+                                {
+                                    Device.BeginInvokeOnMainThread(() =>
+                                    {
+                                        saveButton.IsEnabled = true;
+                                    });
+                                    return;
+                                }
+                            }
+                            else
                             {
                                 temp.Remove(item);
                                 pushBackToHome(data, temp, parameters);
                             }
-                            else
-                            {
-                                saveButton.IsEnabled = true;
-                                return;
-                            }
                         }
                         else
                         {
-                            temp.Remove(item);
                             pushBackToHome(data, temp, parameters);
                         }
                     }
-                    else
-                    {
-                        pushBackToHome(data, temp, parameters);
-                    }
+                });
                 }
-            }
         }
 
         void Handle_SelectedIndexChanged(object sender, System.EventArgs e)
@@ -305,7 +314,7 @@ namespace NRGScoutingApp
             App.Current.Properties["lastItemDropped"] = 0;
             App.Current.Properties["tempParams"] = "";
             App.Current.Properties["tempMatchEvents"] = "";
-            await App.Current.SavePropertiesAsync();
+            App.Current.SavePropertiesAsync();
             NewMatchStart.events.Clear();
         }
 
@@ -315,24 +324,30 @@ namespace NRGScoutingApp
             temp.Add(new JObject(parameters));
             data["Matches"] = temp;
             App.Current.Properties["matchEventsString"] = JsonConvert.SerializeObject(data);
+            clearMatchItems();
             await App.Current.SavePropertiesAsync();
             try
             {
                 if (Matches.appRestore == false)
                 {
-                    Navigation.PopToRootAsync(true);
+                    Device.BeginInvokeOnMainThread(() =>
+                    {
+                        Navigation.PopToRootAsync(true);
+                    });
                 }
                 else if (Matches.appRestore == true)
                 {
                     Matches.appRestore = false;
-                    Navigation.PopAsync(true);
+                    Device.BeginInvokeOnMainThread(() =>
+                    {
+                        Navigation.PopAsync(true);
+                    });
                 }
             }
             catch (System.InvalidOperationException)
             {
 
             }
-            clearMatchItems();
         }
 
         //Disables Auto Buttons if certain button is not toggled

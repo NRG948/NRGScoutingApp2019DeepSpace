@@ -4,6 +4,7 @@ using Xamarin.Forms;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using Xamarin.Forms.Xaml;
+using System.Threading.Tasks;
 
 namespace NRGScoutingApp
 {
@@ -24,6 +25,8 @@ namespace NRGScoutingApp
         }
         async void openClicked(object sender, System.EventArgs e)
         {
+             await Task.Run(async () => {
+ 
             JObject val = JObject.Parse(returnMatchJSONText(jsonIndex));
             JObject parameters = new JObject();
             foreach (var x in val)
@@ -46,7 +49,11 @@ namespace NRGScoutingApp
             App.Current.Properties["timerValue"] = Convert.ToInt32(val.Property("timerValue").Value);
             App.Current.Properties["teamStart"] = val.Property("team").Value.ToString();
             await App.Current.SavePropertiesAsync();
-            await Navigation.PushAsync(new MatchEntryEditTab() { Title = val.Property("team").Value.ToString() });
+             Device.BeginInvokeOnMainThread(() =>
+             {
+                Navigation.PushAsync(new MatchEntryEditTab() { Title = val.Property("team").Value.ToString() });
+             });
+        });
         }
 
         async void deleteClicked(object sender, System.EventArgs e)

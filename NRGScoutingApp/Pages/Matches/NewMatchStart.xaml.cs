@@ -91,26 +91,30 @@ namespace NRGScoutingApp
                 timeSlider.IsEnabled = false;
                 isTimerRunning = true;
                 startTimer.Text = ConstantVars.TIMER_PAUSE;
-                if (Device.RuntimePlatform == "iOS")
+                await Task.Run(async () =>
                 {
-                    Device.StartTimer(TimeSpan.FromMilliseconds(ConstantVars.TIMER_INTERVAL_IOS), () =>
+                    if (Device.RuntimePlatform == "iOS")
                     {
-                        if (timerValue >= ConstantVars.MATCH_SPAN_MS || !isTimerRunning)
+                        Device.StartTimer(TimeSpan.FromMilliseconds(ConstantVars.TIMER_INTERVAL_IOS), () =>
                         {
-                            startTimer.Text = ConstantVars.TIMER_START;
-                            return false;
-                        }
-                        Timer_Elapsed(); return true;
-                    });
-                }
-                else if (Device.RuntimePlatform == "Android")
-                {
-
-                    while(!(timerValue >= ConstantVars.MATCH_SPAN_MS || !isTimerRunning)) {
-                        await Task.Delay(ConstantVars.TIMER_INTERVAL_ANDROID);
-                        Timer_Elapsed();
+                            if (timerValue >= ConstantVars.MATCH_SPAN_MS || !isTimerRunning)
+                            {
+                                startTimer.Text = ConstantVars.TIMER_START;
+                                return false;
+                            }
+                            Timer_Elapsed(); return true;
+                        });
                     }
-                }
+                    else if (Device.RuntimePlatform == "Android")
+                    {
+
+                        while (!(timerValue >= ConstantVars.MATCH_SPAN_MS || !isTimerRunning))
+                        {
+                            await Task.Delay(ConstantVars.TIMER_INTERVAL_ANDROID);
+                            Timer_Elapsed();
+                        }
+                    }
+                });
             }
             else if (isTimerRunning)
             {
