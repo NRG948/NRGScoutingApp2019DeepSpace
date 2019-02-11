@@ -19,7 +19,8 @@
         <Entry Placeholder="(Type Here)"
                x:Name="matchnum"
                TextChanged="Match_Num_Updated"
-               Keyboard="Numeric"/>
+               Keyboard="Numeric"
+               MaxLength="8"/>
                 </FlexLayout>
             <Picker x:Name="PositionPicker"
                     Title="Team Identifier" 
@@ -166,10 +167,11 @@
                    TextChanged="Fouls_Updated"
                    HorizontalOptions="StartAndExpand"
                    Margin="10,5,0,0"
-                   WidthRequest="50"/>
+                   WidthRequest="50"
+                   MaxLength="8"/>
             <FlexLayout 
-            Direction="Row"
-            AlignItems="Center">
+                    Direction="Row"
+                    AlignItems="Center">
             <Switch Margin="10,5,0,0" 
                     x:Name="yellow"
                     Toggled="Handle_Toggled_11"
