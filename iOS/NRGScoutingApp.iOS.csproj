@@ -10,6 +10,7 @@
     <RootNamespace>NRGScoutingApp.iOS</RootNamespace>
     <AssemblyName>NRGScoutingApp.iOS</AssemblyName>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <ReleaseVersion>v0.6-beta</ReleaseVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
     <DebugSymbols>true</DebugSymbols>
