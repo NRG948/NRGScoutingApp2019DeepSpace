@@ -100,21 +100,21 @@ namespace NRGScoutingApp
                         {
                             var item = temp.ToList().Find(x => x["matchNum"].Equals(parameters["matchNum"]) && x["side"].Equals(parameters["side"]));
                             if (item["team"] != parameters["team"])
-                            {
-                                var remove = await DisplayAlert("Error", "Overwrite Old Match with New Data?", "No", "Yes");
-                                if (!remove)
+                            {                               
+                                Device.BeginInvokeOnMainThread(async () =>
                                 {
-                                    temp.Remove(item);
-                                    pushBackToHome(data, temp, parameters);
-                                }
-                                else
-                                {
-                                    Device.BeginInvokeOnMainThread(() =>
+                                    bool remove = await DisplayAlert("Error", "Overwrite Old Match with New Data?", "No", "Yes");
+                                    if (!remove)
+                                    {
+                                        temp.Remove(item);
+                                        pushBackToHome(data, temp, parameters);
+                                    }
+                                    else
                                     {
                                         saveButton.IsEnabled = true;
-                                    });
-                                    return;
-                                }
+                                        return;
+                                    }
+                                });
                             }
                             else
                             {
