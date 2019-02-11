@@ -9,21 +9,26 @@
                                 <RowDefinition Height="2*" />
                                 <RowDefinition Height="2*" />
                                 <RowDefinition Height="2*" />
+                                <RowDefinition Height="2*" />
                                 <RowDefinition Height="*" />
                         </Grid.RowDefinitions>
                         <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="*" />
                                 <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
                         </Grid.ColumnDefinitions>
-                        <Button BackgroundColor="#fdad13" x:Name="drop1Button" TextColor="White" Grid.Row="2" Grid.Column="0" Margin="0" Clicked="drop1" FontSize="20" FontAttributes="Bold"/>
+                        <Button BackgroundColor="#fdad13" x:Name="drop1Button" TextColor="White" Grid.Row="2" Grid.Column="0" Margin="0" Clicked="drop1" FontSize="20" FontAttributes="Bold" Grid.ColumnSpan="2"/>
 
-                        <Button BackgroundColor="#fdad13" x:Name="drop2Button" TextColor="White" Grid.Row="1" Grid.Column="0" Margin="0" Padding="0" Scale="1" Clicked="drop2" FontSize="20" FontAttributes="Bold"/>
+                        <Button BackgroundColor="#fdad13" x:Name="drop2Button" TextColor="White" Grid.Row="1" Grid.Column="0" Margin="0" Padding="0" Scale="1" Clicked="drop2" FontSize="20" FontAttributes="Bold" Grid.ColumnSpan="2"/>
 
-                        <Button BackgroundColor="#fdad13" TextColor="White" Text="None" Grid.Row="2" Grid.Column="1" Clicked="noneClicked" FontSize="20" FontAttributes="Bold"/>
+                        <Button BackgroundColor="#fdad13" TextColor="White" Text="None" Grid.Row="3" Grid.Column="1" Clicked="noneClicked" FontSize="20" FontAttributes="Bold" Grid.ColumnSpan="2"/>
 
-                        <Button BackgroundColor="#fdad13" x:Name="drop3Button" TextColor="White" Grid.Row="0" Grid.Column="0" Margin="0" Padding="0" Clicked="drop3" FontSize="20" FontAttributes="Bold"/>
+                        <Button BackgroundColor="#fdad13" x:Name="drop3Button" TextColor="White" Grid.Row="0" Grid.Column="0" Margin="0" Padding="0" Clicked="drop3" FontSize="20" FontAttributes="Bold" Grid.ColumnSpan="2"/>
+            
+                        <Button BackgroundColor="#fdad13" x:Name="drop4Button" TextColor="White" Grid.Row="2" Grid.Column="2" Margin="0" Padding="0" Clicked="drop4" FontSize="20" FontAttributes="Bold" Grid.ColumnSpan="2"/>
 
-                        <Button Text="Cancel" VerticalOptions="StartAndExpand" FontSize="Medium" Margin="0,0" Clicked="backClicked" Grid.Row="3" Grid.Column="1"/>
+                        <Button Text="Cancel" VerticalOptions="StartAndExpand" FontSize="Medium" Margin="0,0" Clicked="backClicked" Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="2"/>
 
                 </Grid>
         </ScrollView>

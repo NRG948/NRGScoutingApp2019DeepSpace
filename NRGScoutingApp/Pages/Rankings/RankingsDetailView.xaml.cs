@@ -29,6 +29,7 @@ namespace NRGScoutingApp
             score4.Text = ConstantVars.scoreBaseVals[4] + times[4];
             score5.Text = ConstantVars.scoreBaseVals[5] + times[5];
             score6.Text = ConstantVars.scoreBaseVals[6] + times[6];
+            score7.Text = ConstantVars.scoreBaseVals[7] + times[7];
         }
 
         void matchTapped(object sender, Xamarin.Forms.ItemTappedEventArgs e)

@@ -84,6 +84,8 @@ namespace NRGScoutingApp
                     return ConstantVars.DROP_2_TEXT;
                 case (int)MatchFormat.ACTION.drop3:
                     return ConstantVars.DROP_3_TEXT;
+                case (int)MatchFormat.ACTION.drop4:
+                    return ConstantVars.DROP_4_TEXT;
                 case (int)MatchFormat.ACTION.dropNone:
                     return ConstantVars.DROP_NONE_TEXT;
                 case (int)MatchFormat.ACTION.pick1:
@@ -106,6 +108,8 @@ namespace NRGScoutingApp
                     return ConstantVars.DROP_2_IMAGE;
                 case (int)MatchFormat.ACTION.drop3:
                     return ConstantVars.DROP_3_IMAGE;
+                case (int)MatchFormat.ACTION.drop4:
+                    return ConstantVars.DROP_4_IMAGE;
                 case (int)MatchFormat.ACTION.dropNone:
                     return ConstantVars.DROP_NONE_IMAGE;
                 case (int)MatchFormat.ACTION.pick1:

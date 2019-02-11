@@ -32,6 +32,7 @@
                 <Label Text="" x:Name="score6" TextColor="Black" FontSize="12"
                        Grid.Row="1" Grid.Column="2"/>
             </Grid>
+            <Label Text="" x:Name="score7" TextColor="Black" FontSize="12" HorizontalOptions="CenterAndExpand"/>
             <ListView x:Name="listView"
                       Margin="0,0,0,0" 
                       ItemTapped="matchTapped"

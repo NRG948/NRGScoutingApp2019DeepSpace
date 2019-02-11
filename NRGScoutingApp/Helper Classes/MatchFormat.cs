@@ -47,6 +47,7 @@ namespace NRGScoutingApp
             drop1, //Rocket lvl 1
             drop2, //Rocket lvl 2
             drop3, //Rocket lvl 3
+            drop4, //Cargo Ship
             pick1, //Picked Hatch Panel
             pick2, //Picked Cargo
             startClimb //Start Climb
@@ -57,7 +58,8 @@ namespace NRGScoutingApp
             overallRank, //Overall Team Rank
             drop1, //Lvl1
             drop2, //Lvl2
-            drop3, //Lvl2
+            drop3, //Lvl3
+            drop4, //Ship
             pick1, //Hatch
             pick2, //Cargo
             climb //Climb

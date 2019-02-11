@@ -22,6 +22,8 @@ namespace NRGScoutingApp
         private Dictionary<String, double> drop1Data = new Dictionary<String, double>();
         private Dictionary<String, double> drop2Data = new Dictionary<String, double>();
         private Dictionary<String, double> drop3Data = new Dictionary<String, double>();
+        private Dictionary<String, double> drop4Data = new Dictionary<String, double>();
+        private Dictionary<String, double> drop1_4Data = new Dictionary<String, double>();
 
         //PRE: data is in JSON Format
         public Ranker(String data)
@@ -90,6 +92,14 @@ namespace NRGScoutingApp
             {
                 retValues[6] = ConstantVars.noVal;
             }
+            if (drop4Data.ContainsKey(team))
+            {
+                retValues[7] = timeAdaptiveString((int)drop4Data[team]);
+            }
+            else
+            {
+                retValues[7] = ConstantVars.noVal;
+            }
             retValues[0] = overallData[team].ToString();
             return retValues;
         }
@@ -129,7 +139,7 @@ namespace NRGScoutingApp
                 case MatchFormat.CHOOSE_RANK_TYPE.pick2:
                     return hatchData;
                 case MatchFormat.CHOOSE_RANK_TYPE.drop1:
-                    return drop1Data;
+                    return drop1_4Data;
                 case MatchFormat.CHOOSE_RANK_TYPE.drop2:
                     return drop2Data;
                 case MatchFormat.CHOOSE_RANK_TYPE.drop3:
@@ -160,10 +170,24 @@ namespace NRGScoutingApp
             drop1Data = getDropData((int)MatchFormat.ACTION.drop1);
             drop2Data = getDropData((int)MatchFormat.ACTION.drop2);
             drop3Data = getDropData((int)MatchFormat.ACTION.drop3);
+            drop4Data = getDropData((int)MatchFormat.ACTION.drop4);
+            drop1_4Data = getDrop1_4Data();
             climbData = getClimbData();
             overallData = getOverallData();
-            //return new Dictionary<string, double>();
-            //Enum.GetNames(typeof(MatchFormat.ACTION)).Length;
+        }
+
+        private Dictionary<string,double> getDrop1_4Data() {
+            Dictionary<string, double> returnData = new Dictionary<string, double>(drop1Data);
+            foreach (KeyValuePair<string, double> y in drop4Data)
+            {
+                if (returnData.ContainsKey(y.Key)) {
+                    returnData[y.Key] = (returnData[y.Key] + y.Value);
+                }
+                else {
+                    returnData.Add(y.Key, y.Value);
+                }
+            }
+            return returnData;
         }
 
         // Pre: climbData returns a dictionary that consist of every team appeared
@@ -173,6 +197,7 @@ namespace NRGScoutingApp
             Dictionary<string, double> dropData1 = getDropData((int)MatchFormat.CHOOSE_RANK_TYPE.drop1);
             Dictionary<string, double> dropData2 = getDropData((int)MatchFormat.CHOOSE_RANK_TYPE.drop2);
             Dictionary<string, double> dropData3 = getDropData((int)MatchFormat.CHOOSE_RANK_TYPE.drop3);
+            Dictionary<string, double> dropData4 = getDropData((int)MatchFormat.CHOOSE_RANK_TYPE.drop4);
             Dictionary<string, double> cargoData = getPickAvgData((int)MatchFormat.CHOOSE_RANK_TYPE.pick1);
             Dictionary<string, double> hatcherData = getPickAvgData((int)MatchFormat.CHOOSE_RANK_TYPE.pick2);
             Dictionary<string, double> climbData = getClimbData();
@@ -190,6 +215,10 @@ namespace NRGScoutingApp
                 if (dropData3.ContainsKey(entry.Key))
                 {
                     point += dropData3[entry.Key] * ConstantVars.DROP_3_MULTIPLIER;
+                }
+                if (dropData4.ContainsKey(entry.Key))
+                {
+                    point += dropData4[entry.Key] * ConstantVars.DROP_4_MULTIPLIER;
                 }
                 if (cargoData.ContainsKey(entry.Key))
                 {

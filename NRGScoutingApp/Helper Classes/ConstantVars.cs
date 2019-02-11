@@ -11,12 +11,10 @@ namespace NRGScoutingApp
         /*
          * CubeDropDialog
          */
-        public static readonly String DROP_1_DIALOG_TEXT = "Low\nAKA Ship";
+        public static readonly String DROP_1_DIALOG_TEXT = "Low";
         public static readonly String DROP_2_DIALOG_TEXT = "Medium";
         public static readonly String DROP_3_DIALOG_TEXT = "High";
-        public static readonly String DROP_1_DIALOG_IMAGE = "ic_scale.png";
-        public static readonly String DROP_2_DIALOG_IMAGE = "ic_scale.png";
-        public static readonly String DROP_3_DIALOG_IMAGE = "ic_scale.png";
+        public static readonly String DROP_4_DIALOG_TEXT = "Ship";
 
         /*
          * Match Events Page
@@ -27,6 +25,7 @@ namespace NRGScoutingApp
         public static readonly String DROP_1_IMAGE = "ic_scale.png";
         public static readonly String DROP_2_IMAGE = "ic_switch.png";
         public static readonly String DROP_3_IMAGE = "ic_switch.png";
+        public static readonly String DROP_4_IMAGE = "ic_switch.png";
         public static readonly String DROP_COLLECTOR_IMAGE = "ic_exchange.png";
         public static readonly String DROP_NONE_IMAGE = "ic_cancel.png";
         public static readonly String START_CLIMB_IMAGE = "ic_climb_yellow.png";
@@ -34,9 +33,10 @@ namespace NRGScoutingApp
         public static readonly String PICK_ITEM_1_TEXT = "Picked Hatch";
         public static readonly String PICK_ITEM_2_TEXT = "Picked Cargo";
         public static readonly String DROP_ITEM_TEXT = "Dropped Item";
-        public static readonly String DROP_1_TEXT = "Dropped Low/Ship";
+        public static readonly String DROP_1_TEXT = "Dropped Low";
         public static readonly String DROP_2_TEXT = "Dropped Medium";
         public static readonly String DROP_3_TEXT = "Dropped High";
+        public static readonly String DROP_4_TEXT = "Dropped Ship";
         public static readonly String DROP_NONE_TEXT = "Dropped None";
         public static readonly String START_CLIMB_TEXT = "Start Climb";
         public static readonly String DROP_KEYWORD = "Drop";
@@ -106,6 +106,7 @@ namespace NRGScoutingApp
         public static readonly double DROP_1_MULTIPLIER = 1 / TIME_NERF;
         public static readonly double DROP_2_MULTIPLIER = 2 / TIME_NERF;
         public static readonly double DROP_3_MULTIPLIER = 3 / TIME_NERF;
+        public static readonly double DROP_4_MULTIPLIER = 3 / TIME_NERF;
 
         //Climb
         public static readonly double PTS_NEED_HELP_LVL_2 = 1;
@@ -120,8 +121,8 @@ namespace NRGScoutingApp
         /*
          * Rankings Detail View Page
          */
-        public static readonly int numRankTypes = 7;
-        public static readonly String[] scoreBaseVals = { "Overall: ", "Cargo: ", "Hatch: ", "Climb: ", "Lvl. 1: ", "Lvl 2: ", "Lvl 3: " };
+        public static readonly String[] scoreBaseVals = { "Overall: ", "Cargo: ", "Hatch: ", "Climb: ", "Low: ", "Medium: ", "High: ", "Ship: "};
+        public static readonly int numRankTypes = scoreBaseVals.Length;
         public static readonly String noVal = "Empty";
 
         /*

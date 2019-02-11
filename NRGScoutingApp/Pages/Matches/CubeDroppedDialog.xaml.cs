@@ -63,17 +63,17 @@ namespace NRGScoutingApp
                 backAllowed = false;
             }
         }
-        //void drop4(object sender, System.EventArgs e)
-        //{
-        //    if (backAllowed)
-        //    {
-        //        NewMatchStart.events.Add(new MatchFormat.Data { time = NewMatchStart.droppedTime, type = (int)MatchFormat.ACTION.drop1 }); //drop4
-        //        saveEvents();
-        //        setDropTime();
-        //        Navigation.PopAsync(true);
-        //        backAllowed = false;
-        //    }
-        //}
+        void drop4(object sender, System.EventArgs e)
+        {
+            if (backAllowed)
+            {
+                NewMatchStart.events.Add(new MatchFormat.Data { time = NewMatchStart.droppedTime, type = (int)MatchFormat.ACTION.drop4 }); //drop4
+                saveEvents();
+                setDropTime();
+                Navigation.PopAsync(true);
+                backAllowed = false;
+            }
+        }
         void backClicked(object sender, System.EventArgs e)
         {
             if (backAllowed)
@@ -100,12 +100,8 @@ namespace NRGScoutingApp
             drop1Button.Text = ConstantVars.DROP_1_DIALOG_TEXT;
             drop2Button.Text = ConstantVars.DROP_2_DIALOG_TEXT;
             drop3Button.Text = ConstantVars.DROP_3_DIALOG_TEXT;
-
-            //drop1Button.Image = ConstantVars.DROP_1_DIALOG_IMAGE;
-            //drop2Button.Image = ConstantVars.DROP_2_DIALOG_IMAGE;
-            //drop3Button.Image = ConstantVars.DROP_3_DIALOG_IMAGE;
-
-
+            drop4Button.Text = ConstantVars.DROP_4_DIALOG_TEXT;
+            
         }
 
     }
