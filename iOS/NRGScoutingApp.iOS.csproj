@@ -194,11 +194,12 @@
     <BundleResource Include="Resources\ic_export_web.png" />
     <BundleResource Include="Resources\ic_import_web.png" />
     <BundleResource Include="Resources\ic_leader.png" />
-    <BundleResource Include="Resources\ic_drop_cube_yellow.png" />
+    <BundleResource Include="Resources\ic_dropped_cube_yellow.png" />
     <BundleResource Include="Resources\ic_timer_icon.png" />
     <BundleResource Include="Resources\ic_climb_yellow.png" />
     <BundleResource Include="Resources\ic_drop_cube.png" />
     <BundleResource Include="Resources\ic_clear_data.png" />
+    <BundleResource Include="Resources\ic_picked_cube_yellow.png" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppDelegate.cs" />

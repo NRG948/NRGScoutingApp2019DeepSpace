@@ -118,8 +118,9 @@ namespace NRGScoutingApp
                     return ConstantVars.PICK_ITEM_2_IMAGE;
                 case (int)MatchFormat.ACTION.startClimb:
                     return ConstantVars.START_CLIMB_IMAGE;
+                default: 
+                    return ConstantVars.DROP_ITEM_IMAGE;
             }
-            return ConstantVars.DROP_ITEM_IMAGE;
         }
 
         async void eventTapped(object sender, Xamarin.Forms.ItemTappedEventArgs e)

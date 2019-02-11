@@ -19,13 +19,13 @@ namespace NRGScoutingApp
         /*
          * Match Events Page
          */
-        public static readonly String PICK_ITEM_1_IMAGE = "ic_picked_cube.png";
-        public static readonly String PICK_ITEM_2_IMAGE = "ic_picked_cube.png";
-        public static readonly String DROP_ITEM_IMAGE = "ic_drop_cube_yellow.png";
-        public static readonly String DROP_1_IMAGE = "ic_scale.png";
-        public static readonly String DROP_2_IMAGE = "ic_switch.png";
-        public static readonly String DROP_3_IMAGE = "ic_switch.png";
-        public static readonly String DROP_4_IMAGE = "ic_switch.png";
+        public static readonly String PICK_ITEM_1_IMAGE = "ic_picked_cube_yellow.png";
+        public static readonly String PICK_ITEM_2_IMAGE = "ic_picked_cube_yellow.png";
+        public static readonly String DROP_ITEM_IMAGE = "ic_dropped_cube_yellow.png";
+        public static readonly String DROP_1_IMAGE = "ic_dropped_cube_yellow.png";
+        public static readonly String DROP_2_IMAGE = "ic_dropped_cube_yellow.png";
+        public static readonly String DROP_3_IMAGE = "ic_dropped_cube_yellow.png";
+        public static readonly String DROP_4_IMAGE = "ic_dropped_cube_yellow.png";
         public static readonly String DROP_COLLECTOR_IMAGE = "ic_exchange.png";
         public static readonly String DROP_NONE_IMAGE = "ic_cancel.png";
         public static readonly String START_CLIMB_IMAGE = "ic_climb_yellow.png";
