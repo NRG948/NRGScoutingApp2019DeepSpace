@@ -11,14 +11,12 @@ namespace NRGScoutingApp
         /*
          * CubeDropDialog
          */
-        public static readonly String DROP_1_DIALOG_TEXT = "Level 1";
-        public static readonly String DROP_2_DIALOG_TEXT = "Level 2";
-        public static readonly String DROP_3_DIALOG_TEXT = "Level 3";
-        public static readonly String DROP_4_DIALOG_TEXT = "Cargo Ship";
+        public static readonly String DROP_1_DIALOG_TEXT = "Low\nAKA Ship";
+        public static readonly String DROP_2_DIALOG_TEXT = "Medium";
+        public static readonly String DROP_3_DIALOG_TEXT = "High";
         public static readonly String DROP_1_DIALOG_IMAGE = "ic_scale.png";
         public static readonly String DROP_2_DIALOG_IMAGE = "ic_scale.png";
         public static readonly String DROP_3_DIALOG_IMAGE = "ic_scale.png";
-        public static readonly String DROP_4_DIALOG_IMAGE = "ic_switch.png";
 
         /*
          * Match Events Page
@@ -36,10 +34,9 @@ namespace NRGScoutingApp
         public static readonly String PICK_ITEM_1_TEXT = "Picked Hatch";
         public static readonly String PICK_ITEM_2_TEXT = "Picked Cargo";
         public static readonly String DROP_ITEM_TEXT = "Dropped Item";
-        public static readonly String DROP_1_TEXT = "Dropped Level 1";
-        public static readonly String DROP_2_TEXT = "Dropped Level 2";
-        public static readonly String DROP_3_TEXT = "Dropped Level 3";
-        public static readonly String DROP_4_TEXT = "Dropped Cargo Ship";
+        public static readonly String DROP_1_TEXT = "Dropped Low/Ship";
+        public static readonly String DROP_2_TEXT = "Dropped Medium";
+        public static readonly String DROP_3_TEXT = "Dropped High";
         public static readonly String DROP_NONE_TEXT = "Dropped None";
         public static readonly String START_CLIMB_TEXT = "Start Climb";
         public static readonly String DROP_KEYWORD = "Drop";

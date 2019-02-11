@@ -47,7 +47,6 @@ namespace NRGScoutingApp
             drop1, //Rocket lvl 1
             drop2, //Rocket lvl 2
             drop3, //Rocket lvl 3
-            drop4, //Cargo Ship
             pick1, //Picked Hatch Panel
             pick2, //Picked Cargo
             startClimb //Start Climb
