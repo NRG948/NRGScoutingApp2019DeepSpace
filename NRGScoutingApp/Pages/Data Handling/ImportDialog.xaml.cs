@@ -56,7 +56,6 @@ namespace NRGScoutingApp
                             await addMatchItemsChecker(data, importJSON);
                             numMatches = matchesArray.Count - numMatches;
                         }
-                        await DisplayAlert("Success", "Added " + numMatches + " entries.", "OK");
                     }
                     if (importJSON.ContainsKey("PitNotes"))
                     {
@@ -126,7 +125,7 @@ namespace NRGScoutingApp
                                                     "\nTeam: " + item["team"] +
                                                     "\nSide: " + MatchFormat.matchSideFromEnum(Convert.ToInt32(item["side"])) +
                                                     "\nConflicts with Existing Match", "Overwite", "Ignore");
-                        if (!add)
+                        if (add)
                         {
                             temp.Remove(item);
                             temp.Add(match);
