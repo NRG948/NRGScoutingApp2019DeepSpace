@@ -134,10 +134,10 @@ namespace NRGScoutingApp
             refresh();
             switch (x)
             {
-                case MatchFormat.CHOOSE_RANK_TYPE.pick1:
-                    return cargoData;
-                case MatchFormat.CHOOSE_RANK_TYPE.pick2:
+                case MatchFormat.CHOOSE_RANK_TYPE.pick1: //hatch
                     return hatchData;
+                case MatchFormat.CHOOSE_RANK_TYPE.pick2: //cargo
+                    return cargoData;
                 case MatchFormat.CHOOSE_RANK_TYPE.drop1:
                     return drop1_4Data;
                 case MatchFormat.CHOOSE_RANK_TYPE.drop2:
