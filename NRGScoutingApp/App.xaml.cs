@@ -4,7 +4,6 @@ using Xamarin.Forms;
 using System.ComponentModel;
 using System.Security.Principal;
 
-
 namespace NRGScoutingApp
 {
     public partial class App : Application

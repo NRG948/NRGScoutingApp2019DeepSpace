@@ -68,6 +68,7 @@ namespace NRGScoutingApp
                 events.Clear();
                 CubeDroppedDialog.saveEvents();
                 timeSlider.Value = 0;
+                isTimerRunning = false;
                 climbTime = 0;
                 await App.Current.SavePropertiesAsync();
             }
@@ -91,6 +92,8 @@ namespace NRGScoutingApp
                 timeSlider.IsEnabled = false;
                 isTimerRunning = true;
                 startTimer.Text = ConstantVars.TIMER_PAUSE;
+                setEventButtons(true);
+                setClimbButton();
                 await Task.Run(async () =>
                 {
                     if (Device.RuntimePlatform == "iOS")
@@ -99,7 +102,11 @@ namespace NRGScoutingApp
                         {
                             if (timerValue >= ConstantVars.MATCH_SPAN_MS || !isTimerRunning)
                             {
-                                startTimer.Text = ConstantVars.TIMER_START;
+                                Device.BeginInvokeOnMainThread(() =>
+                                {
+                                    startTimer.Text = ConstantVars.TIMER_START;
+                                });
+                                isTimerRunning = false;
                                 return false;
                             }
                             Timer_Elapsed(); return true;
@@ -113,6 +120,11 @@ namespace NRGScoutingApp
                             await Task.Delay(ConstantVars.TIMER_INTERVAL_ANDROID);
                             Timer_Elapsed();
                         }
+                        Device.BeginInvokeOnMainThread(() =>
+                        {
+                            startTimer.Text = ConstantVars.TIMER_START;
+                        });
+                        isTimerRunning = false;
                     }
                 });
             }
@@ -120,7 +132,6 @@ namespace NRGScoutingApp
             {
                 startTimer.Text = ConstantVars.TIMER_START;
                 isTimerRunning = false;
-
                 timeSlider.IsEnabled = true;
             }
             setEventButtons(isTimerRunning);
@@ -148,10 +159,13 @@ namespace NRGScoutingApp
                 min++;
                 sec = 0;
             }
-            timeSlider.Value = timerValue;
+            Device.BeginInvokeOnMainThread(() =>
+            {
+                timeSlider.Value = timerValue;
+                timerText.Text = timeToString((int)timerValue);
+            });
             App.Current.Properties["timerValue"] = (int)timerValue;
             App.Current.SavePropertiesAsync();
-            timerText.Text = timeToString((int)timerValue);
         }
 
         void timerValueChanged(object sender, Xamarin.Forms.ValueChangedEventArgs e)
@@ -205,8 +219,12 @@ namespace NRGScoutingApp
                 //Performs actions to open popup for adding cube dropped, etc
                 pickedTime = (int)timerValue;
                 App.Current.Properties["lastItemPicked"] = (int)pickedTime;
-                var action = await DisplayActionSheet("Choose Pick Type:", ConstantVars.CANCEL, null, ConstantVars.PICK_1_TEXT, ConstantVars.PICK_2_TEXT);
-                if (!action.ToString().Equals(ConstantVars.CANCEL))
+                String action = "";
+                while (String.IsNullOrWhiteSpace(action))
+                {
+                    action = await DisplayActionSheet("Choose Pick Type:", ConstantVars.CANCEL, null, ConstantVars.PICK_1_TEXT, ConstantVars.PICK_2_TEXT);
+                }
+               if (!action.ToString().Equals(ConstantVars.CANCEL))
                 {
                     if (action.ToString().Equals(ConstantVars.PICK_1_TEXT))
                     {
@@ -236,9 +254,6 @@ namespace NRGScoutingApp
         //Sets buttons to not clickable if timer is/not running.
         private void setEventButtons(bool setter)
         {
-            climbStart.IsEnabled = setter;
-            cubePicked.IsEnabled = setter;
-            Console.WriteLine(cubePicked.IsEnabled);
             if (setter && isTimerRunning) {
                 climbStart.BackgroundColor = Color.FromHex("fdad13");
                 cubePicked.BackgroundColor = Color.FromHex("fdad13");
@@ -247,6 +262,8 @@ namespace NRGScoutingApp
                 climbStart.BackgroundColor = Color.FromHex("ffcc6b");
                 cubePicked.BackgroundColor = Color.FromHex("ffcc6b");
             }
+            climbStart.IsEnabled = setter;
+            cubePicked.IsEnabled = setter;
         }
 
         //Sets the value of the time if app crashed or match was restored

@@ -26,3376 +26,1998 @@ namespace NRGScoutingApp.Droid
 		
 		public static void UpdateIdValues()
 		{
-			global::BottomBar.Droid.Resource.Animation.abc_fade_in = global::NRGScoutingApp.Droid.Resource.Animation.abc_fade_in;
-			global::BottomBar.Droid.Resource.Animation.abc_fade_out = global::NRGScoutingApp.Droid.Resource.Animation.abc_fade_out;
-			global::BottomBar.Droid.Resource.Animation.abc_grow_fade_in_from_bottom = global::NRGScoutingApp.Droid.Resource.Animation.abc_grow_fade_in_from_bottom;
-			global::BottomBar.Droid.Resource.Animation.abc_popup_enter = global::NRGScoutingApp.Droid.Resource.Animation.abc_popup_enter;
-			global::BottomBar.Droid.Resource.Animation.abc_popup_exit = global::NRGScoutingApp.Droid.Resource.Animation.abc_popup_exit;
-			global::BottomBar.Droid.Resource.Animation.abc_shrink_fade_out_from_bottom = global::NRGScoutingApp.Droid.Resource.Animation.abc_shrink_fade_out_from_bottom;
-			global::BottomBar.Droid.Resource.Animation.abc_slide_in_bottom = global::NRGScoutingApp.Droid.Resource.Animation.abc_slide_in_bottom;
-			global::BottomBar.Droid.Resource.Animation.abc_slide_in_top = global::NRGScoutingApp.Droid.Resource.Animation.abc_slide_in_top;
-			global::BottomBar.Droid.Resource.Animation.abc_slide_out_bottom = global::NRGScoutingApp.Droid.Resource.Animation.abc_slide_out_bottom;
-			global::BottomBar.Droid.Resource.Animation.abc_slide_out_top = global::NRGScoutingApp.Droid.Resource.Animation.abc_slide_out_top;
-			global::BottomBar.Droid.Resource.Animation.design_bottom_sheet_slide_in = global::NRGScoutingApp.Droid.Resource.Animation.design_bottom_sheet_slide_in;
-			global::BottomBar.Droid.Resource.Animation.design_bottom_sheet_slide_out = global::NRGScoutingApp.Droid.Resource.Animation.design_bottom_sheet_slide_out;
-			global::BottomBar.Droid.Resource.Animation.design_snackbar_in = global::NRGScoutingApp.Droid.Resource.Animation.design_snackbar_in;
-			global::BottomBar.Droid.Resource.Animation.design_snackbar_out = global::NRGScoutingApp.Droid.Resource.Animation.design_snackbar_out;
-			global::BottomBar.Droid.Resource.Attribute.actionBarDivider = global::NRGScoutingApp.Droid.Resource.Attribute.actionBarDivider;
-			global::BottomBar.Droid.Resource.Attribute.actionBarItemBackground = global::NRGScoutingApp.Droid.Resource.Attribute.actionBarItemBackground;
-			global::BottomBar.Droid.Resource.Attribute.actionBarPopupTheme = global::NRGScoutingApp.Droid.Resource.Attribute.actionBarPopupTheme;
-			global::BottomBar.Droid.Resource.Attribute.actionBarSize = global::NRGScoutingApp.Droid.Resource.Attribute.actionBarSize;
-			global::BottomBar.Droid.Resource.Attribute.actionBarSplitStyle = global::NRGScoutingApp.Droid.Resource.Attribute.actionBarSplitStyle;
-			global::BottomBar.Droid.Resource.Attribute.actionBarStyle = global::NRGScoutingApp.Droid.Resource.Attribute.actionBarStyle;
-			global::BottomBar.Droid.Resource.Attribute.actionBarTabBarStyle = global::NRGScoutingApp.Droid.Resource.Attribute.actionBarTabBarStyle;
-			global::BottomBar.Droid.Resource.Attribute.actionBarTabStyle = global::NRGScoutingApp.Droid.Resource.Attribute.actionBarTabStyle;
-			global::BottomBar.Droid.Resource.Attribute.actionBarTabTextStyle = global::NRGScoutingApp.Droid.Resource.Attribute.actionBarTabTextStyle;
-			global::BottomBar.Droid.Resource.Attribute.actionBarTheme = global::NRGScoutingApp.Droid.Resource.Attribute.actionBarTheme;
-			global::BottomBar.Droid.Resource.Attribute.actionBarWidgetTheme = global::NRGScoutingApp.Droid.Resource.Attribute.actionBarWidgetTheme;
-			global::BottomBar.Droid.Resource.Attribute.actionButtonStyle = global::NRGScoutingApp.Droid.Resource.Attribute.actionButtonStyle;
-			global::BottomBar.Droid.Resource.Attribute.actionDropDownStyle = global::NRGScoutingApp.Droid.Resource.Attribute.actionDropDownStyle;
-			global::BottomBar.Droid.Resource.Attribute.actionLayout = global::NRGScoutingApp.Droid.Resource.Attribute.actionLayout;
-			global::BottomBar.Droid.Resource.Attribute.actionMenuTextAppearance = global::NRGScoutingApp.Droid.Resource.Attribute.actionMenuTextAppearance;
-			global::BottomBar.Droid.Resource.Attribute.actionMenuTextColor = global::NRGScoutingApp.Droid.Resource.Attribute.actionMenuTextColor;
-			global::BottomBar.Droid.Resource.Attribute.actionModeBackground = global::NRGScoutingApp.Droid.Resource.Attribute.actionModeBackground;
-			global::BottomBar.Droid.Resource.Attribute.actionModeCloseButtonStyle = global::NRGScoutingApp.Droid.Resource.Attribute.actionModeCloseButtonStyle;
-			global::BottomBar.Droid.Resource.Attribute.actionModeCloseDrawable = global::NRGScoutingApp.Droid.Resource.Attribute.actionModeCloseDrawable;
-			global::BottomBar.Droid.Resource.Attribute.actionModeCopyDrawable = global::NRGScoutingApp.Droid.Resource.Attribute.actionModeCopyDrawable;
-			global::BottomBar.Droid.Resource.Attribute.actionModeCutDrawable = global::NRGScoutingApp.Droid.Resource.Attribute.actionModeCutDrawable;
-			global::BottomBar.Droid.Resource.Attribute.actionModeFindDrawable = global::NRGScoutingApp.Droid.Resource.Attribute.actionModeFindDrawable;
-			global::BottomBar.Droid.Resource.Attribute.actionModePasteDrawable = global::NRGScoutingApp.Droid.Resource.Attribute.actionModePasteDrawable;
-			global::BottomBar.Droid.Resource.Attribute.actionModePopupWindowStyle = global::NRGScoutingApp.Droid.Resource.Attribute.actionModePopupWindowStyle;
-			global::BottomBar.Droid.Resource.Attribute.actionModeSelectAllDrawable = global::NRGScoutingApp.Droid.Resource.Attribute.actionModeSelectAllDrawable;
-			global::BottomBar.Droid.Resource.Attribute.actionModeShareDrawable = global::NRGScoutingApp.Droid.Resource.Attribute.actionModeShareDrawable;
-			global::BottomBar.Droid.Resource.Attribute.actionModeSplitBackground = global::NRGScoutingApp.Droid.Resource.Attribute.actionModeSplitBackground;
-			global::BottomBar.Droid.Resource.Attribute.actionModeStyle = global::NRGScoutingApp.Droid.Resource.Attribute.actionModeStyle;
-			global::BottomBar.Droid.Resource.Attribute.actionModeWebSearchDrawable = global::NRGScoutingApp.Droid.Resource.Attribute.actionModeWebSearchDrawable;
-			global::BottomBar.Droid.Resource.Attribute.actionOverflowButtonStyle = global::NRGScoutingApp.Droid.Resource.Attribute.actionOverflowButtonStyle;
-			global::BottomBar.Droid.Resource.Attribute.actionOverflowMenuStyle = global::NRGScoutingApp.Droid.Resource.Attribute.actionOverflowMenuStyle;
-			global::BottomBar.Droid.Resource.Attribute.actionProviderClass = global::NRGScoutingApp.Droid.Resource.Attribute.actionProviderClass;
-			global::BottomBar.Droid.Resource.Attribute.actionViewClass = global::NRGScoutingApp.Droid.Resource.Attribute.actionViewClass;
-			global::BottomBar.Droid.Resource.Attribute.activityChooserViewStyle = global::NRGScoutingApp.Droid.Resource.Attribute.activityChooserViewStyle;
-			global::BottomBar.Droid.Resource.Attribute.alertDialogButtonGroupStyle = global::NRGScoutingApp.Droid.Resource.Attribute.alertDialogButtonGroupStyle;
-			global::BottomBar.Droid.Resource.Attribute.alertDialogCenterButtons = global::NRGScoutingApp.Droid.Resource.Attribute.alertDialogCenterButtons;
-			global::BottomBar.Droid.Resource.Attribute.alertDialogStyle = global::NRGScoutingApp.Droid.Resource.Attribute.alertDialogStyle;
-			global::BottomBar.Droid.Resource.Attribute.alertDialogTheme = global::NRGScoutingApp.Droid.Resource.Attribute.alertDialogTheme;
-			global::BottomBar.Droid.Resource.Attribute.allowStacking = global::NRGScoutingApp.Droid.Resource.Attribute.allowStacking;
-			global::BottomBar.Droid.Resource.Attribute.arrowHeadLength = global::NRGScoutingApp.Droid.Resource.Attribute.arrowHeadLength;
-			global::BottomBar.Droid.Resource.Attribute.arrowShaftLength = global::NRGScoutingApp.Droid.Resource.Attribute.arrowShaftLength;
-			global::BottomBar.Droid.Resource.Attribute.autoCompleteTextViewStyle = global::NRGScoutingApp.Droid.Resource.Attribute.autoCompleteTextViewStyle;
-			global::BottomBar.Droid.Resource.Attribute.background = global::NRGScoutingApp.Droid.Resource.Attribute.background;
-			global::BottomBar.Droid.Resource.Attribute.backgroundSplit = global::NRGScoutingApp.Droid.Resource.Attribute.backgroundSplit;
-			global::BottomBar.Droid.Resource.Attribute.backgroundStacked = global::NRGScoutingApp.Droid.Resource.Attribute.backgroundStacked;
-			global::BottomBar.Droid.Resource.Attribute.backgroundTint = global::NRGScoutingApp.Droid.Resource.Attribute.backgroundTint;
-			global::BottomBar.Droid.Resource.Attribute.backgroundTintMode = global::NRGScoutingApp.Droid.Resource.Attribute.backgroundTintMode;
-			global::BottomBar.Droid.Resource.Attribute.barLength = global::NRGScoutingApp.Droid.Resource.Attribute.barLength;
-			global::BottomBar.Droid.Resource.Attribute.behavior_hideable = global::NRGScoutingApp.Droid.Resource.Attribute.behavior_hideable;
-			global::BottomBar.Droid.Resource.Attribute.behavior_overlapTop = global::NRGScoutingApp.Droid.Resource.Attribute.behavior_overlapTop;
-			global::BottomBar.Droid.Resource.Attribute.behavior_peekHeight = global::NRGScoutingApp.Droid.Resource.Attribute.behavior_peekHeight;
-			global::BottomBar.Droid.Resource.Attribute.borderWidth = global::NRGScoutingApp.Droid.Resource.Attribute.borderWidth;
-			global::BottomBar.Droid.Resource.Attribute.borderlessButtonStyle = global::NRGScoutingApp.Droid.Resource.Attribute.borderlessButtonStyle;
-			global::BottomBar.Droid.Resource.Attribute.bottomSheetDialogTheme = global::NRGScoutingApp.Droid.Resource.Attribute.bottomSheetDialogTheme;
-			global::BottomBar.Droid.Resource.Attribute.bottomSheetStyle = global::NRGScoutingApp.Droid.Resource.Attribute.bottomSheetStyle;
-			global::BottomBar.Droid.Resource.Attribute.buttonBarButtonStyle = global::NRGScoutingApp.Droid.Resource.Attribute.buttonBarButtonStyle;
-			global::BottomBar.Droid.Resource.Attribute.buttonBarNegativeButtonStyle = global::NRGScoutingApp.Droid.Resource.Attribute.buttonBarNegativeButtonStyle;
-			global::BottomBar.Droid.Resource.Attribute.buttonBarNeutralButtonStyle = global::NRGScoutingApp.Droid.Resource.Attribute.buttonBarNeutralButtonStyle;
-			global::BottomBar.Droid.Resource.Attribute.buttonBarPositiveButtonStyle = global::NRGScoutingApp.Droid.Resource.Attribute.buttonBarPositiveButtonStyle;
-			global::BottomBar.Droid.Resource.Attribute.buttonBarStyle = global::NRGScoutingApp.Droid.Resource.Attribute.buttonBarStyle;
-			global::BottomBar.Droid.Resource.Attribute.buttonPanelSideLayout = global::NRGScoutingApp.Droid.Resource.Attribute.buttonPanelSideLayout;
-			global::BottomBar.Droid.Resource.Attribute.buttonStyle = global::NRGScoutingApp.Droid.Resource.Attribute.buttonStyle;
-			global::BottomBar.Droid.Resource.Attribute.buttonStyleSmall = global::NRGScoutingApp.Droid.Resource.Attribute.buttonStyleSmall;
-			global::BottomBar.Droid.Resource.Attribute.buttonTint = global::NRGScoutingApp.Droid.Resource.Attribute.buttonTint;
-			global::BottomBar.Droid.Resource.Attribute.buttonTintMode = global::NRGScoutingApp.Droid.Resource.Attribute.buttonTintMode;
-			global::BottomBar.Droid.Resource.Attribute.cardBackgroundColor = global::NRGScoutingApp.Droid.Resource.Attribute.cardBackgroundColor;
-			global::BottomBar.Droid.Resource.Attribute.cardCornerRadius = global::NRGScoutingApp.Droid.Resource.Attribute.cardCornerRadius;
-			global::BottomBar.Droid.Resource.Attribute.cardElevation = global::NRGScoutingApp.Droid.Resource.Attribute.cardElevation;
-			global::BottomBar.Droid.Resource.Attribute.cardMaxElevation = global::NRGScoutingApp.Droid.Resource.Attribute.cardMaxElevation;
-			global::BottomBar.Droid.Resource.Attribute.cardPreventCornerOverlap = global::NRGScoutingApp.Droid.Resource.Attribute.cardPreventCornerOverlap;
-			global::BottomBar.Droid.Resource.Attribute.cardUseCompatPadding = global::NRGScoutingApp.Droid.Resource.Attribute.cardUseCompatPadding;
-			global::BottomBar.Droid.Resource.Attribute.checkboxStyle = global::NRGScoutingApp.Droid.Resource.Attribute.checkboxStyle;
-			global::BottomBar.Droid.Resource.Attribute.checkedTextViewStyle = global::NRGScoutingApp.Droid.Resource.Attribute.checkedTextViewStyle;
-			global::BottomBar.Droid.Resource.Attribute.closeIcon = global::NRGScoutingApp.Droid.Resource.Attribute.closeIcon;
-			global::BottomBar.Droid.Resource.Attribute.closeItemLayout = global::NRGScoutingApp.Droid.Resource.Attribute.closeItemLayout;
-			global::BottomBar.Droid.Resource.Attribute.collapseContentDescription = global::NRGScoutingApp.Droid.Resource.Attribute.collapseContentDescription;
-			global::BottomBar.Droid.Resource.Attribute.collapseIcon = global::NRGScoutingApp.Droid.Resource.Attribute.collapseIcon;
-			global::BottomBar.Droid.Resource.Attribute.collapsedTitleGravity = global::NRGScoutingApp.Droid.Resource.Attribute.collapsedTitleGravity;
-			global::BottomBar.Droid.Resource.Attribute.collapsedTitleTextAppearance = global::NRGScoutingApp.Droid.Resource.Attribute.collapsedTitleTextAppearance;
-			global::BottomBar.Droid.Resource.Attribute.color = global::NRGScoutingApp.Droid.Resource.Attribute.color;
-			global::BottomBar.Droid.Resource.Attribute.colorAccent = global::NRGScoutingApp.Droid.Resource.Attribute.colorAccent;
-			global::BottomBar.Droid.Resource.Attribute.colorButtonNormal = global::NRGScoutingApp.Droid.Resource.Attribute.colorButtonNormal;
-			global::BottomBar.Droid.Resource.Attribute.colorControlActivated = global::NRGScoutingApp.Droid.Resource.Attribute.colorControlActivated;
-			global::BottomBar.Droid.Resource.Attribute.colorControlHighlight = global::NRGScoutingApp.Droid.Resource.Attribute.colorControlHighlight;
-			global::BottomBar.Droid.Resource.Attribute.colorControlNormal = global::NRGScoutingApp.Droid.Resource.Attribute.colorControlNormal;
-			global::BottomBar.Droid.Resource.Attribute.colorPrimary = global::NRGScoutingApp.Droid.Resource.Attribute.colorPrimary;
-			global::BottomBar.Droid.Resource.Attribute.colorPrimaryDark = global::NRGScoutingApp.Droid.Resource.Attribute.colorPrimaryDark;
-			global::BottomBar.Droid.Resource.Attribute.colorSwitchThumbNormal = global::NRGScoutingApp.Droid.Resource.Attribute.colorSwitchThumbNormal;
-			global::BottomBar.Droid.Resource.Attribute.commitIcon = global::NRGScoutingApp.Droid.Resource.Attribute.commitIcon;
-			global::BottomBar.Droid.Resource.Attribute.contentInsetEnd = global::NRGScoutingApp.Droid.Resource.Attribute.contentInsetEnd;
-			global::BottomBar.Droid.Resource.Attribute.contentInsetLeft = global::NRGScoutingApp.Droid.Resource.Attribute.contentInsetLeft;
-			global::BottomBar.Droid.Resource.Attribute.contentInsetRight = global::NRGScoutingApp.Droid.Resource.Attribute.contentInsetRight;
-			global::BottomBar.Droid.Resource.Attribute.contentInsetStart = global::NRGScoutingApp.Droid.Resource.Attribute.contentInsetStart;
-			global::BottomBar.Droid.Resource.Attribute.contentPadding = global::NRGScoutingApp.Droid.Resource.Attribute.contentPadding;
-			global::BottomBar.Droid.Resource.Attribute.contentPaddingBottom = global::NRGScoutingApp.Droid.Resource.Attribute.contentPaddingBottom;
-			global::BottomBar.Droid.Resource.Attribute.contentPaddingLeft = global::NRGScoutingApp.Droid.Resource.Attribute.contentPaddingLeft;
-			global::BottomBar.Droid.Resource.Attribute.contentPaddingRight = global::NRGScoutingApp.Droid.Resource.Attribute.contentPaddingRight;
-			global::BottomBar.Droid.Resource.Attribute.contentPaddingTop = global::NRGScoutingApp.Droid.Resource.Attribute.contentPaddingTop;
-			global::BottomBar.Droid.Resource.Attribute.contentScrim = global::NRGScoutingApp.Droid.Resource.Attribute.contentScrim;
-			global::BottomBar.Droid.Resource.Attribute.controlBackground = global::NRGScoutingApp.Droid.Resource.Attribute.controlBackground;
-			global::BottomBar.Droid.Resource.Attribute.counterEnabled = global::NRGScoutingApp.Droid.Resource.Attribute.counterEnabled;
-			global::BottomBar.Droid.Resource.Attribute.counterMaxLength = global::NRGScoutingApp.Droid.Resource.Attribute.counterMaxLength;
-			global::BottomBar.Droid.Resource.Attribute.counterOverflowTextAppearance = global::NRGScoutingApp.Droid.Resource.Attribute.counterOverflowTextAppearance;
-			global::BottomBar.Droid.Resource.Attribute.counterTextAppearance = global::NRGScoutingApp.Droid.Resource.Attribute.counterTextAppearance;
-			global::BottomBar.Droid.Resource.Attribute.customNavigationLayout = global::NRGScoutingApp.Droid.Resource.Attribute.customNavigationLayout;
-			global::BottomBar.Droid.Resource.Attribute.defaultQueryHint = global::NRGScoutingApp.Droid.Resource.Attribute.defaultQueryHint;
-			global::BottomBar.Droid.Resource.Attribute.dialogPreferredPadding = global::NRGScoutingApp.Droid.Resource.Attribute.dialogPreferredPadding;
-			global::BottomBar.Droid.Resource.Attribute.dialogTheme = global::NRGScoutingApp.Droid.Resource.Attribute.dialogTheme;
-			global::BottomBar.Droid.Resource.Attribute.displayOptions = global::NRGScoutingApp.Droid.Resource.Attribute.displayOptions;
-			global::BottomBar.Droid.Resource.Attribute.divider = global::NRGScoutingApp.Droid.Resource.Attribute.divider;
-			global::BottomBar.Droid.Resource.Attribute.dividerHorizontal = global::NRGScoutingApp.Droid.Resource.Attribute.dividerHorizontal;
-			global::BottomBar.Droid.Resource.Attribute.dividerPadding = global::NRGScoutingApp.Droid.Resource.Attribute.dividerPadding;
-			global::BottomBar.Droid.Resource.Attribute.dividerVertical = global::NRGScoutingApp.Droid.Resource.Attribute.dividerVertical;
-			global::BottomBar.Droid.Resource.Attribute.drawableSize = global::NRGScoutingApp.Droid.Resource.Attribute.drawableSize;
-			global::BottomBar.Droid.Resource.Attribute.drawerArrowStyle = global::NRGScoutingApp.Droid.Resource.Attribute.drawerArrowStyle;
-			global::BottomBar.Droid.Resource.Attribute.dropDownListViewStyle = global::NRGScoutingApp.Droid.Resource.Attribute.dropDownListViewStyle;
-			global::BottomBar.Droid.Resource.Attribute.dropdownListPreferredItemHeight = global::NRGScoutingApp.Droid.Resource.Attribute.dropdownListPreferredItemHeight;
-			global::BottomBar.Droid.Resource.Attribute.editTextBackground = global::NRGScoutingApp.Droid.Resource.Attribute.editTextBackground;
-			global::BottomBar.Droid.Resource.Attribute.editTextColor = global::NRGScoutingApp.Droid.Resource.Attribute.editTextColor;
-			global::BottomBar.Droid.Resource.Attribute.editTextStyle = global::NRGScoutingApp.Droid.Resource.Attribute.editTextStyle;
-			global::BottomBar.Droid.Resource.Attribute.elevation = global::NRGScoutingApp.Droid.Resource.Attribute.elevation;
-			global::BottomBar.Droid.Resource.Attribute.errorEnabled = global::NRGScoutingApp.Droid.Resource.Attribute.errorEnabled;
-			global::BottomBar.Droid.Resource.Attribute.errorTextAppearance = global::NRGScoutingApp.Droid.Resource.Attribute.errorTextAppearance;
-			global::BottomBar.Droid.Resource.Attribute.expandActivityOverflowButtonDrawable = global::NRGScoutingApp.Droid.Resource.Attribute.expandActivityOverflowButtonDrawable;
-			global::BottomBar.Droid.Resource.Attribute.expanded = global::NRGScoutingApp.Droid.Resource.Attribute.expanded;
-			global::BottomBar.Droid.Resource.Attribute.expandedTitleGravity = global::NRGScoutingApp.Droid.Resource.Attribute.expandedTitleGravity;
-			global::BottomBar.Droid.Resource.Attribute.expandedTitleMargin = global::NRGScoutingApp.Droid.Resource.Attribute.expandedTitleMargin;
-			global::BottomBar.Droid.Resource.Attribute.expandedTitleMarginBottom = global::NRGScoutingApp.Droid.Resource.Attribute.expandedTitleMarginBottom;
-			global::BottomBar.Droid.Resource.Attribute.expandedTitleMarginEnd = global::NRGScoutingApp.Droid.Resource.Attribute.expandedTitleMarginEnd;
-			global::BottomBar.Droid.Resource.Attribute.expandedTitleMarginStart = global::NRGScoutingApp.Droid.Resource.Attribute.expandedTitleMarginStart;
-			global::BottomBar.Droid.Resource.Attribute.expandedTitleMarginTop = global::NRGScoutingApp.Droid.Resource.Attribute.expandedTitleMarginTop;
-			global::BottomBar.Droid.Resource.Attribute.expandedTitleTextAppearance = global::NRGScoutingApp.Droid.Resource.Attribute.expandedTitleTextAppearance;
-			global::BottomBar.Droid.Resource.Attribute.externalRouteEnabledDrawable = global::NRGScoutingApp.Droid.Resource.Attribute.externalRouteEnabledDrawable;
-			global::BottomBar.Droid.Resource.Attribute.fabSize = global::NRGScoutingApp.Droid.Resource.Attribute.fabSize;
-			global::BottomBar.Droid.Resource.Attribute.foregroundInsidePadding = global::NRGScoutingApp.Droid.Resource.Attribute.foregroundInsidePadding;
-			global::BottomBar.Droid.Resource.Attribute.gapBetweenBars = global::NRGScoutingApp.Droid.Resource.Attribute.gapBetweenBars;
-			global::BottomBar.Droid.Resource.Attribute.goIcon = global::NRGScoutingApp.Droid.Resource.Attribute.goIcon;
-			global::BottomBar.Droid.Resource.Attribute.headerLayout = global::NRGScoutingApp.Droid.Resource.Attribute.headerLayout;
-			global::BottomBar.Droid.Resource.Attribute.height = global::NRGScoutingApp.Droid.Resource.Attribute.height;
-			global::BottomBar.Droid.Resource.Attribute.hideOnContentScroll = global::NRGScoutingApp.Droid.Resource.Attribute.hideOnContentScroll;
-			global::BottomBar.Droid.Resource.Attribute.hintAnimationEnabled = global::NRGScoutingApp.Droid.Resource.Attribute.hintAnimationEnabled;
-			global::BottomBar.Droid.Resource.Attribute.hintEnabled = global::NRGScoutingApp.Droid.Resource.Attribute.hintEnabled;
-			global::BottomBar.Droid.Resource.Attribute.hintTextAppearance = global::NRGScoutingApp.Droid.Resource.Attribute.hintTextAppearance;
-			global::BottomBar.Droid.Resource.Attribute.homeAsUpIndicator = global::NRGScoutingApp.Droid.Resource.Attribute.homeAsUpIndicator;
-			global::BottomBar.Droid.Resource.Attribute.homeLayout = global::NRGScoutingApp.Droid.Resource.Attribute.homeLayout;
-			global::BottomBar.Droid.Resource.Attribute.icon = global::NRGScoutingApp.Droid.Resource.Attribute.icon;
-			global::BottomBar.Droid.Resource.Attribute.iconifiedByDefault = global::NRGScoutingApp.Droid.Resource.Attribute.iconifiedByDefault;
-			global::BottomBar.Droid.Resource.Attribute.imageButtonStyle = global::NRGScoutingApp.Droid.Resource.Attribute.imageButtonStyle;
-			global::BottomBar.Droid.Resource.Attribute.indeterminateProgressStyle = global::NRGScoutingApp.Droid.Resource.Attribute.indeterminateProgressStyle;
-			global::BottomBar.Droid.Resource.Attribute.initialActivityCount = global::NRGScoutingApp.Droid.Resource.Attribute.initialActivityCount;
-			global::BottomBar.Droid.Resource.Attribute.insetForeground = global::NRGScoutingApp.Droid.Resource.Attribute.insetForeground;
-			global::BottomBar.Droid.Resource.Attribute.isLightTheme = global::NRGScoutingApp.Droid.Resource.Attribute.isLightTheme;
-			global::BottomBar.Droid.Resource.Attribute.itemBackground = global::NRGScoutingApp.Droid.Resource.Attribute.itemBackground;
-			global::BottomBar.Droid.Resource.Attribute.itemIconTint = global::NRGScoutingApp.Droid.Resource.Attribute.itemIconTint;
-			global::BottomBar.Droid.Resource.Attribute.itemPadding = global::NRGScoutingApp.Droid.Resource.Attribute.itemPadding;
-			global::BottomBar.Droid.Resource.Attribute.itemTextAppearance = global::NRGScoutingApp.Droid.Resource.Attribute.itemTextAppearance;
-			global::BottomBar.Droid.Resource.Attribute.itemTextColor = global::NRGScoutingApp.Droid.Resource.Attribute.itemTextColor;
-			global::BottomBar.Droid.Resource.Attribute.keylines = global::NRGScoutingApp.Droid.Resource.Attribute.keylines;
-			global::BottomBar.Droid.Resource.Attribute.layout = global::NRGScoutingApp.Droid.Resource.Attribute.layout;
-			global::BottomBar.Droid.Resource.Attribute.layoutManager = global::NRGScoutingApp.Droid.Resource.Attribute.layoutManager;
-			global::BottomBar.Droid.Resource.Attribute.layout_anchor = global::NRGScoutingApp.Droid.Resource.Attribute.layout_anchor;
-			global::BottomBar.Droid.Resource.Attribute.layout_anchorGravity = global::NRGScoutingApp.Droid.Resource.Attribute.layout_anchorGravity;
-			global::BottomBar.Droid.Resource.Attribute.layout_behavior = global::NRGScoutingApp.Droid.Resource.Attribute.layout_behavior;
-			global::BottomBar.Droid.Resource.Attribute.layout_collapseMode = global::NRGScoutingApp.Droid.Resource.Attribute.layout_collapseMode;
-			global::BottomBar.Droid.Resource.Attribute.layout_collapseParallaxMultiplier = global::NRGScoutingApp.Droid.Resource.Attribute.layout_collapseParallaxMultiplier;
-			global::BottomBar.Droid.Resource.Attribute.layout_keyline = global::NRGScoutingApp.Droid.Resource.Attribute.layout_keyline;
-			global::BottomBar.Droid.Resource.Attribute.layout_scrollFlags = global::NRGScoutingApp.Droid.Resource.Attribute.layout_scrollFlags;
-			global::BottomBar.Droid.Resource.Attribute.layout_scrollInterpolator = global::NRGScoutingApp.Droid.Resource.Attribute.layout_scrollInterpolator;
-			global::BottomBar.Droid.Resource.Attribute.listChoiceBackgroundIndicator = global::NRGScoutingApp.Droid.Resource.Attribute.listChoiceBackgroundIndicator;
-			global::BottomBar.Droid.Resource.Attribute.listDividerAlertDialog = global::NRGScoutingApp.Droid.Resource.Attribute.listDividerAlertDialog;
-			global::BottomBar.Droid.Resource.Attribute.listItemLayout = global::NRGScoutingApp.Droid.Resource.Attribute.listItemLayout;
-			global::BottomBar.Droid.Resource.Attribute.listLayout = global::NRGScoutingApp.Droid.Resource.Attribute.listLayout;
-			global::BottomBar.Droid.Resource.Attribute.listPopupWindowStyle = global::NRGScoutingApp.Droid.Resource.Attribute.listPopupWindowStyle;
-			global::BottomBar.Droid.Resource.Attribute.listPreferredItemHeight = global::NRGScoutingApp.Droid.Resource.Attribute.listPreferredItemHeight;
-			global::BottomBar.Droid.Resource.Attribute.listPreferredItemHeightLarge = global::NRGScoutingApp.Droid.Resource.Attribute.listPreferredItemHeightLarge;
-			global::BottomBar.Droid.Resource.Attribute.listPreferredItemHeightSmall = global::NRGScoutingApp.Droid.Resource.Attribute.listPreferredItemHeightSmall;
-			global::BottomBar.Droid.Resource.Attribute.listPreferredItemPaddingLeft = global::NRGScoutingApp.Droid.Resource.Attribute.listPreferredItemPaddingLeft;
-			global::BottomBar.Droid.Resource.Attribute.listPreferredItemPaddingRight = global::NRGScoutingApp.Droid.Resource.Attribute.listPreferredItemPaddingRight;
-			global::BottomBar.Droid.Resource.Attribute.logo = global::NRGScoutingApp.Droid.Resource.Attribute.logo;
-			global::BottomBar.Droid.Resource.Attribute.logoDescription = global::NRGScoutingApp.Droid.Resource.Attribute.logoDescription;
-			global::BottomBar.Droid.Resource.Attribute.maxActionInlineWidth = global::NRGScoutingApp.Droid.Resource.Attribute.maxActionInlineWidth;
-			global::BottomBar.Droid.Resource.Attribute.maxButtonHeight = global::NRGScoutingApp.Droid.Resource.Attribute.maxButtonHeight;
-			global::BottomBar.Droid.Resource.Attribute.measureWithLargestChild = global::NRGScoutingApp.Droid.Resource.Attribute.measureWithLargestChild;
-			global::BottomBar.Droid.Resource.Attribute.mediaRouteAudioTrackDrawable = global::NRGScoutingApp.Droid.Resource.Attribute.mediaRouteAudioTrackDrawable;
-			global::BottomBar.Droid.Resource.Attribute.mediaRouteButtonStyle = global::NRGScoutingApp.Droid.Resource.Attribute.mediaRouteButtonStyle;
-			global::BottomBar.Droid.Resource.Attribute.mediaRouteCloseDrawable = global::NRGScoutingApp.Droid.Resource.Attribute.mediaRouteCloseDrawable;
-			global::BottomBar.Droid.Resource.Attribute.mediaRouteDefaultIconDrawable = global::NRGScoutingApp.Droid.Resource.Attribute.mediaRouteDefaultIconDrawable;
-			global::BottomBar.Droid.Resource.Attribute.mediaRoutePauseDrawable = global::NRGScoutingApp.Droid.Resource.Attribute.mediaRoutePauseDrawable;
-			global::BottomBar.Droid.Resource.Attribute.mediaRoutePlayDrawable = global::NRGScoutingApp.Droid.Resource.Attribute.mediaRoutePlayDrawable;
-			global::BottomBar.Droid.Resource.Attribute.mediaRouteSpeakerGroupIconDrawable = global::NRGScoutingApp.Droid.Resource.Attribute.mediaRouteSpeakerGroupIconDrawable;
-			global::BottomBar.Droid.Resource.Attribute.mediaRouteSpeakerIconDrawable = global::NRGScoutingApp.Droid.Resource.Attribute.mediaRouteSpeakerIconDrawable;
-			global::BottomBar.Droid.Resource.Attribute.mediaRouteTvIconDrawable = global::NRGScoutingApp.Droid.Resource.Attribute.mediaRouteTvIconDrawable;
-			global::BottomBar.Droid.Resource.Attribute.menu = global::NRGScoutingApp.Droid.Resource.Attribute.menu;
-			global::BottomBar.Droid.Resource.Attribute.multiChoiceItemLayout = global::NRGScoutingApp.Droid.Resource.Attribute.multiChoiceItemLayout;
-			global::BottomBar.Droid.Resource.Attribute.navigationContentDescription = global::NRGScoutingApp.Droid.Resource.Attribute.navigationContentDescription;
-			global::BottomBar.Droid.Resource.Attribute.navigationIcon = global::NRGScoutingApp.Droid.Resource.Attribute.navigationIcon;
-			global::BottomBar.Droid.Resource.Attribute.navigationMode = global::NRGScoutingApp.Droid.Resource.Attribute.navigationMode;
-			global::BottomBar.Droid.Resource.Attribute.overlapAnchor = global::NRGScoutingApp.Droid.Resource.Attribute.overlapAnchor;
-			global::BottomBar.Droid.Resource.Attribute.paddingEnd = global::NRGScoutingApp.Droid.Resource.Attribute.paddingEnd;
-			global::BottomBar.Droid.Resource.Attribute.paddingStart = global::NRGScoutingApp.Droid.Resource.Attribute.paddingStart;
-			global::BottomBar.Droid.Resource.Attribute.panelBackground = global::NRGScoutingApp.Droid.Resource.Attribute.panelBackground;
-			global::BottomBar.Droid.Resource.Attribute.panelMenuListTheme = global::NRGScoutingApp.Droid.Resource.Attribute.panelMenuListTheme;
-			global::BottomBar.Droid.Resource.Attribute.panelMenuListWidth = global::NRGScoutingApp.Droid.Resource.Attribute.panelMenuListWidth;
-			global::BottomBar.Droid.Resource.Attribute.popupMenuStyle = global::NRGScoutingApp.Droid.Resource.Attribute.popupMenuStyle;
-			global::BottomBar.Droid.Resource.Attribute.popupTheme = global::NRGScoutingApp.Droid.Resource.Attribute.popupTheme;
-			global::BottomBar.Droid.Resource.Attribute.popupWindowStyle = global::NRGScoutingApp.Droid.Resource.Attribute.popupWindowStyle;
-			global::BottomBar.Droid.Resource.Attribute.preserveIconSpacing = global::NRGScoutingApp.Droid.Resource.Attribute.preserveIconSpacing;
-			global::BottomBar.Droid.Resource.Attribute.pressedTranslationZ = global::NRGScoutingApp.Droid.Resource.Attribute.pressedTranslationZ;
-			global::BottomBar.Droid.Resource.Attribute.progressBarPadding = global::NRGScoutingApp.Droid.Resource.Attribute.progressBarPadding;
-			global::BottomBar.Droid.Resource.Attribute.progressBarStyle = global::NRGScoutingApp.Droid.Resource.Attribute.progressBarStyle;
-			global::BottomBar.Droid.Resource.Attribute.queryBackground = global::NRGScoutingApp.Droid.Resource.Attribute.queryBackground;
-			global::BottomBar.Droid.Resource.Attribute.queryHint = global::NRGScoutingApp.Droid.Resource.Attribute.queryHint;
-			global::BottomBar.Droid.Resource.Attribute.radioButtonStyle = global::NRGScoutingApp.Droid.Resource.Attribute.radioButtonStyle;
-			global::BottomBar.Droid.Resource.Attribute.ratingBarStyle = global::NRGScoutingApp.Droid.Resource.Attribute.ratingBarStyle;
-			global::BottomBar.Droid.Resource.Attribute.ratingBarStyleIndicator = global::NRGScoutingApp.Droid.Resource.Attribute.ratingBarStyleIndicator;
-			global::BottomBar.Droid.Resource.Attribute.ratingBarStyleSmall = global::NRGScoutingApp.Droid.Resource.Attribute.ratingBarStyleSmall;
-			global::BottomBar.Droid.Resource.Attribute.reverseLayout = global::NRGScoutingApp.Droid.Resource.Attribute.reverseLayout;
-			global::BottomBar.Droid.Resource.Attribute.rippleColor = global::NRGScoutingApp.Droid.Resource.Attribute.rippleColor;
-			global::BottomBar.Droid.Resource.Attribute.searchHintIcon = global::NRGScoutingApp.Droid.Resource.Attribute.searchHintIcon;
-			global::BottomBar.Droid.Resource.Attribute.searchIcon = global::NRGScoutingApp.Droid.Resource.Attribute.searchIcon;
-			global::BottomBar.Droid.Resource.Attribute.searchViewStyle = global::NRGScoutingApp.Droid.Resource.Attribute.searchViewStyle;
-			global::BottomBar.Droid.Resource.Attribute.seekBarStyle = global::NRGScoutingApp.Droid.Resource.Attribute.seekBarStyle;
-			global::BottomBar.Droid.Resource.Attribute.selectableItemBackground = global::NRGScoutingApp.Droid.Resource.Attribute.selectableItemBackground;
-			global::BottomBar.Droid.Resource.Attribute.selectableItemBackgroundBorderless = global::NRGScoutingApp.Droid.Resource.Attribute.selectableItemBackgroundBorderless;
-			global::BottomBar.Droid.Resource.Attribute.showAsAction = global::NRGScoutingApp.Droid.Resource.Attribute.showAsAction;
-			global::BottomBar.Droid.Resource.Attribute.showDividers = global::NRGScoutingApp.Droid.Resource.Attribute.showDividers;
-			global::BottomBar.Droid.Resource.Attribute.showText = global::NRGScoutingApp.Droid.Resource.Attribute.showText;
-			global::BottomBar.Droid.Resource.Attribute.singleChoiceItemLayout = global::NRGScoutingApp.Droid.Resource.Attribute.singleChoiceItemLayout;
-			global::BottomBar.Droid.Resource.Attribute.spanCount = global::NRGScoutingApp.Droid.Resource.Attribute.spanCount;
-			global::BottomBar.Droid.Resource.Attribute.spinBars = global::NRGScoutingApp.Droid.Resource.Attribute.spinBars;
-			global::BottomBar.Droid.Resource.Attribute.spinnerDropDownItemStyle = global::NRGScoutingApp.Droid.Resource.Attribute.spinnerDropDownItemStyle;
-			global::BottomBar.Droid.Resource.Attribute.spinnerStyle = global::NRGScoutingApp.Droid.Resource.Attribute.spinnerStyle;
-			global::BottomBar.Droid.Resource.Attribute.splitTrack = global::NRGScoutingApp.Droid.Resource.Attribute.splitTrack;
-			global::BottomBar.Droid.Resource.Attribute.srcCompat = global::NRGScoutingApp.Droid.Resource.Attribute.srcCompat;
-			global::BottomBar.Droid.Resource.Attribute.stackFromEnd = global::NRGScoutingApp.Droid.Resource.Attribute.stackFromEnd;
-			global::BottomBar.Droid.Resource.Attribute.state_above_anchor = global::NRGScoutingApp.Droid.Resource.Attribute.state_above_anchor;
-			global::BottomBar.Droid.Resource.Attribute.statusBarBackground = global::NRGScoutingApp.Droid.Resource.Attribute.statusBarBackground;
-			global::BottomBar.Droid.Resource.Attribute.statusBarScrim = global::NRGScoutingApp.Droid.Resource.Attribute.statusBarScrim;
-			global::BottomBar.Droid.Resource.Attribute.submitBackground = global::NRGScoutingApp.Droid.Resource.Attribute.submitBackground;
-			global::BottomBar.Droid.Resource.Attribute.subtitle = global::NRGScoutingApp.Droid.Resource.Attribute.subtitle;
-			global::BottomBar.Droid.Resource.Attribute.subtitleTextAppearance = global::NRGScoutingApp.Droid.Resource.Attribute.subtitleTextAppearance;
-			global::BottomBar.Droid.Resource.Attribute.subtitleTextColor = global::NRGScoutingApp.Droid.Resource.Attribute.subtitleTextColor;
-			global::BottomBar.Droid.Resource.Attribute.subtitleTextStyle = global::NRGScoutingApp.Droid.Resource.Attribute.subtitleTextStyle;
-			global::BottomBar.Droid.Resource.Attribute.suggestionRowLayout = global::NRGScoutingApp.Droid.Resource.Attribute.suggestionRowLayout;
-			global::BottomBar.Droid.Resource.Attribute.switchMinWidth = global::NRGScoutingApp.Droid.Resource.Attribute.switchMinWidth;
-			global::BottomBar.Droid.Resource.Attribute.switchPadding = global::NRGScoutingApp.Droid.Resource.Attribute.switchPadding;
-			global::BottomBar.Droid.Resource.Attribute.switchStyle = global::NRGScoutingApp.Droid.Resource.Attribute.switchStyle;
-			global::BottomBar.Droid.Resource.Attribute.switchTextAppearance = global::NRGScoutingApp.Droid.Resource.Attribute.switchTextAppearance;
-			global::BottomBar.Droid.Resource.Attribute.tabBackground = global::NRGScoutingApp.Droid.Resource.Attribute.tabBackground;
-			global::BottomBar.Droid.Resource.Attribute.tabContentStart = global::NRGScoutingApp.Droid.Resource.Attribute.tabContentStart;
-			global::BottomBar.Droid.Resource.Attribute.tabGravity = global::NRGScoutingApp.Droid.Resource.Attribute.tabGravity;
-			global::BottomBar.Droid.Resource.Attribute.tabIndicatorColor = global::NRGScoutingApp.Droid.Resource.Attribute.tabIndicatorColor;
-			global::BottomBar.Droid.Resource.Attribute.tabIndicatorHeight = global::NRGScoutingApp.Droid.Resource.Attribute.tabIndicatorHeight;
-			global::BottomBar.Droid.Resource.Attribute.tabMaxWidth = global::NRGScoutingApp.Droid.Resource.Attribute.tabMaxWidth;
-			global::BottomBar.Droid.Resource.Attribute.tabMinWidth = global::NRGScoutingApp.Droid.Resource.Attribute.tabMinWidth;
-			global::BottomBar.Droid.Resource.Attribute.tabMode = global::NRGScoutingApp.Droid.Resource.Attribute.tabMode;
-			global::BottomBar.Droid.Resource.Attribute.tabPadding = global::NRGScoutingApp.Droid.Resource.Attribute.tabPadding;
-			global::BottomBar.Droid.Resource.Attribute.tabPaddingBottom = global::NRGScoutingApp.Droid.Resource.Attribute.tabPaddingBottom;
-			global::BottomBar.Droid.Resource.Attribute.tabPaddingEnd = global::NRGScoutingApp.Droid.Resource.Attribute.tabPaddingEnd;
-			global::BottomBar.Droid.Resource.Attribute.tabPaddingStart = global::NRGScoutingApp.Droid.Resource.Attribute.tabPaddingStart;
-			global::BottomBar.Droid.Resource.Attribute.tabPaddingTop = global::NRGScoutingApp.Droid.Resource.Attribute.tabPaddingTop;
-			global::BottomBar.Droid.Resource.Attribute.tabSelectedTextColor = global::NRGScoutingApp.Droid.Resource.Attribute.tabSelectedTextColor;
-			global::BottomBar.Droid.Resource.Attribute.tabTextAppearance = global::NRGScoutingApp.Droid.Resource.Attribute.tabTextAppearance;
-			global::BottomBar.Droid.Resource.Attribute.tabTextColor = global::NRGScoutingApp.Droid.Resource.Attribute.tabTextColor;
-			global::BottomBar.Droid.Resource.Attribute.textAllCaps = global::NRGScoutingApp.Droid.Resource.Attribute.textAllCaps;
-			global::BottomBar.Droid.Resource.Attribute.textAppearanceLargePopupMenu = global::NRGScoutingApp.Droid.Resource.Attribute.textAppearanceLargePopupMenu;
-			global::BottomBar.Droid.Resource.Attribute.textAppearanceListItem = global::NRGScoutingApp.Droid.Resource.Attribute.textAppearanceListItem;
-			global::BottomBar.Droid.Resource.Attribute.textAppearanceListItemSmall = global::NRGScoutingApp.Droid.Resource.Attribute.textAppearanceListItemSmall;
-			global::BottomBar.Droid.Resource.Attribute.textAppearanceSearchResultSubtitle = global::NRGScoutingApp.Droid.Resource.Attribute.textAppearanceSearchResultSubtitle;
-			global::BottomBar.Droid.Resource.Attribute.textAppearanceSearchResultTitle = global::NRGScoutingApp.Droid.Resource.Attribute.textAppearanceSearchResultTitle;
-			global::BottomBar.Droid.Resource.Attribute.textAppearanceSmallPopupMenu = global::NRGScoutingApp.Droid.Resource.Attribute.textAppearanceSmallPopupMenu;
-			global::BottomBar.Droid.Resource.Attribute.textColorAlertDialogListItem = global::NRGScoutingApp.Droid.Resource.Attribute.textColorAlertDialogListItem;
-			global::BottomBar.Droid.Resource.Attribute.textColorError = global::NRGScoutingApp.Droid.Resource.Attribute.textColorError;
-			global::BottomBar.Droid.Resource.Attribute.textColorSearchUrl = global::NRGScoutingApp.Droid.Resource.Attribute.textColorSearchUrl;
-			global::BottomBar.Droid.Resource.Attribute.theme = global::NRGScoutingApp.Droid.Resource.Attribute.theme;
-			global::BottomBar.Droid.Resource.Attribute.thickness = global::NRGScoutingApp.Droid.Resource.Attribute.thickness;
-			global::BottomBar.Droid.Resource.Attribute.thumbTextPadding = global::NRGScoutingApp.Droid.Resource.Attribute.thumbTextPadding;
-			global::BottomBar.Droid.Resource.Attribute.title = global::NRGScoutingApp.Droid.Resource.Attribute.title;
-			global::BottomBar.Droid.Resource.Attribute.titleEnabled = global::NRGScoutingApp.Droid.Resource.Attribute.titleEnabled;
-			global::BottomBar.Droid.Resource.Attribute.titleMarginBottom = global::NRGScoutingApp.Droid.Resource.Attribute.titleMarginBottom;
-			global::BottomBar.Droid.Resource.Attribute.titleMarginEnd = global::NRGScoutingApp.Droid.Resource.Attribute.titleMarginEnd;
-			global::BottomBar.Droid.Resource.Attribute.titleMarginStart = global::NRGScoutingApp.Droid.Resource.Attribute.titleMarginStart;
-			global::BottomBar.Droid.Resource.Attribute.titleMarginTop = global::NRGScoutingApp.Droid.Resource.Attribute.titleMarginTop;
-			global::BottomBar.Droid.Resource.Attribute.titleMargins = global::NRGScoutingApp.Droid.Resource.Attribute.titleMargins;
-			global::BottomBar.Droid.Resource.Attribute.titleTextAppearance = global::NRGScoutingApp.Droid.Resource.Attribute.titleTextAppearance;
-			global::BottomBar.Droid.Resource.Attribute.titleTextColor = global::NRGScoutingApp.Droid.Resource.Attribute.titleTextColor;
-			global::BottomBar.Droid.Resource.Attribute.titleTextStyle = global::NRGScoutingApp.Droid.Resource.Attribute.titleTextStyle;
-			global::BottomBar.Droid.Resource.Attribute.toolbarId = global::NRGScoutingApp.Droid.Resource.Attribute.toolbarId;
-			global::BottomBar.Droid.Resource.Attribute.toolbarNavigationButtonStyle = global::NRGScoutingApp.Droid.Resource.Attribute.toolbarNavigationButtonStyle;
-			global::BottomBar.Droid.Resource.Attribute.toolbarStyle = global::NRGScoutingApp.Droid.Resource.Attribute.toolbarStyle;
-			global::BottomBar.Droid.Resource.Attribute.track = global::NRGScoutingApp.Droid.Resource.Attribute.track;
-			global::BottomBar.Droid.Resource.Attribute.useCompatPadding = global::NRGScoutingApp.Droid.Resource.Attribute.useCompatPadding;
-			global::BottomBar.Droid.Resource.Attribute.voiceIcon = global::NRGScoutingApp.Droid.Resource.Attribute.voiceIcon;
-			global::BottomBar.Droid.Resource.Attribute.windowActionBar = global::NRGScoutingApp.Droid.Resource.Attribute.windowActionBar;
-			global::BottomBar.Droid.Resource.Attribute.windowActionBarOverlay = global::NRGScoutingApp.Droid.Resource.Attribute.windowActionBarOverlay;
-			global::BottomBar.Droid.Resource.Attribute.windowActionModeOverlay = global::NRGScoutingApp.Droid.Resource.Attribute.windowActionModeOverlay;
-			global::BottomBar.Droid.Resource.Attribute.windowFixedHeightMajor = global::NRGScoutingApp.Droid.Resource.Attribute.windowFixedHeightMajor;
-			global::BottomBar.Droid.Resource.Attribute.windowFixedHeightMinor = global::NRGScoutingApp.Droid.Resource.Attribute.windowFixedHeightMinor;
-			global::BottomBar.Droid.Resource.Attribute.windowFixedWidthMajor = global::NRGScoutingApp.Droid.Resource.Attribute.windowFixedWidthMajor;
-			global::BottomBar.Droid.Resource.Attribute.windowFixedWidthMinor = global::NRGScoutingApp.Droid.Resource.Attribute.windowFixedWidthMinor;
-			global::BottomBar.Droid.Resource.Attribute.windowMinWidthMajor = global::NRGScoutingApp.Droid.Resource.Attribute.windowMinWidthMajor;
-			global::BottomBar.Droid.Resource.Attribute.windowMinWidthMinor = global::NRGScoutingApp.Droid.Resource.Attribute.windowMinWidthMinor;
-			global::BottomBar.Droid.Resource.Attribute.windowNoTitle = global::NRGScoutingApp.Droid.Resource.Attribute.windowNoTitle;
-			global::BottomBar.Droid.Resource.Boolean.abc_action_bar_embed_tabs = global::NRGScoutingApp.Droid.Resource.Boolean.abc_action_bar_embed_tabs;
-			global::BottomBar.Droid.Resource.Boolean.abc_allow_stacked_button_bar = global::NRGScoutingApp.Droid.Resource.Boolean.abc_allow_stacked_button_bar;
-			global::BottomBar.Droid.Resource.Boolean.abc_config_actionMenuItemAllCaps = global::NRGScoutingApp.Droid.Resource.Boolean.abc_config_actionMenuItemAllCaps;
-			global::BottomBar.Droid.Resource.Boolean.abc_config_closeDialogWhenTouchOutside = global::NRGScoutingApp.Droid.Resource.Boolean.abc_config_closeDialogWhenTouchOutside;
-			global::BottomBar.Droid.Resource.Boolean.abc_config_showMenuShortcutsWhenKeyboardPresent = global::NRGScoutingApp.Droid.Resource.Boolean.abc_config_showMenuShortcutsWhenKeyboardPresent;
-			global::BottomBar.Droid.Resource.Boolean.bb_bottom_bar_is_tablet_mode = global::NRGScoutingApp.Droid.Resource.Boolean.bb_bottom_bar_is_tablet_mode;
-			global::BottomBar.Droid.Resource.Color.abc_background_cache_hint_selector_material_dark = global::NRGScoutingApp.Droid.Resource.Color.abc_background_cache_hint_selector_material_dark;
-			global::BottomBar.Droid.Resource.Color.abc_background_cache_hint_selector_material_light = global::NRGScoutingApp.Droid.Resource.Color.abc_background_cache_hint_selector_material_light;
-			global::BottomBar.Droid.Resource.Color.abc_color_highlight_material = global::NRGScoutingApp.Droid.Resource.Color.abc_color_highlight_material;
-			global::BottomBar.Droid.Resource.Color.abc_input_method_navigation_guard = global::NRGScoutingApp.Droid.Resource.Color.abc_input_method_navigation_guard;
-			global::BottomBar.Droid.Resource.Color.abc_primary_text_disable_only_material_dark = global::NRGScoutingApp.Droid.Resource.Color.abc_primary_text_disable_only_material_dark;
-			global::BottomBar.Droid.Resource.Color.abc_primary_text_disable_only_material_light = global::NRGScoutingApp.Droid.Resource.Color.abc_primary_text_disable_only_material_light;
-			global::BottomBar.Droid.Resource.Color.abc_primary_text_material_dark = global::NRGScoutingApp.Droid.Resource.Color.abc_primary_text_material_dark;
-			global::BottomBar.Droid.Resource.Color.abc_primary_text_material_light = global::NRGScoutingApp.Droid.Resource.Color.abc_primary_text_material_light;
-			global::BottomBar.Droid.Resource.Color.abc_search_url_text = global::NRGScoutingApp.Droid.Resource.Color.abc_search_url_text;
-			global::BottomBar.Droid.Resource.Color.abc_search_url_text_normal = global::NRGScoutingApp.Droid.Resource.Color.abc_search_url_text_normal;
-			global::BottomBar.Droid.Resource.Color.abc_search_url_text_pressed = global::NRGScoutingApp.Droid.Resource.Color.abc_search_url_text_pressed;
-			global::BottomBar.Droid.Resource.Color.abc_search_url_text_selected = global::NRGScoutingApp.Droid.Resource.Color.abc_search_url_text_selected;
-			global::BottomBar.Droid.Resource.Color.abc_secondary_text_material_dark = global::NRGScoutingApp.Droid.Resource.Color.abc_secondary_text_material_dark;
-			global::BottomBar.Droid.Resource.Color.abc_secondary_text_material_light = global::NRGScoutingApp.Droid.Resource.Color.abc_secondary_text_material_light;
-			global::BottomBar.Droid.Resource.Color.accent_material_dark = global::NRGScoutingApp.Droid.Resource.Color.accent_material_dark;
-			global::BottomBar.Droid.Resource.Color.accent_material_light = global::NRGScoutingApp.Droid.Resource.Color.accent_material_light;
-			global::BottomBar.Droid.Resource.Color.background_floating_material_dark = global::NRGScoutingApp.Droid.Resource.Color.background_floating_material_dark;
-			global::BottomBar.Droid.Resource.Color.background_floating_material_light = global::NRGScoutingApp.Droid.Resource.Color.background_floating_material_light;
-			global::BottomBar.Droid.Resource.Color.background_material_dark = global::NRGScoutingApp.Droid.Resource.Color.background_material_dark;
-			global::BottomBar.Droid.Resource.Color.background_material_light = global::NRGScoutingApp.Droid.Resource.Color.background_material_light;
-			global::BottomBar.Droid.Resource.Color.bb_darkBackgroundColor = global::NRGScoutingApp.Droid.Resource.Color.bb_darkBackgroundColor;
-			global::BottomBar.Droid.Resource.Color.bb_inActiveBottomBarItemColor = global::NRGScoutingApp.Droid.Resource.Color.bb_inActiveBottomBarItemColor;
-			global::BottomBar.Droid.Resource.Color.bb_tabletRightBorderDark = global::NRGScoutingApp.Droid.Resource.Color.bb_tabletRightBorderDark;
-			global::BottomBar.Droid.Resource.Color.bright_foreground_disabled_material_dark = global::NRGScoutingApp.Droid.Resource.Color.bright_foreground_disabled_material_dark;
-			global::BottomBar.Droid.Resource.Color.bright_foreground_disabled_material_light = global::NRGScoutingApp.Droid.Resource.Color.bright_foreground_disabled_material_light;
-			global::BottomBar.Droid.Resource.Color.bright_foreground_inverse_material_dark = global::NRGScoutingApp.Droid.Resource.Color.bright_foreground_inverse_material_dark;
-			global::BottomBar.Droid.Resource.Color.bright_foreground_inverse_material_light = global::NRGScoutingApp.Droid.Resource.Color.bright_foreground_inverse_material_light;
-			global::BottomBar.Droid.Resource.Color.bright_foreground_material_dark = global::NRGScoutingApp.Droid.Resource.Color.bright_foreground_material_dark;
-			global::BottomBar.Droid.Resource.Color.bright_foreground_material_light = global::NRGScoutingApp.Droid.Resource.Color.bright_foreground_material_light;
-			global::BottomBar.Droid.Resource.Color.button_material_dark = global::NRGScoutingApp.Droid.Resource.Color.button_material_dark;
-			global::BottomBar.Droid.Resource.Color.button_material_light = global::NRGScoutingApp.Droid.Resource.Color.button_material_light;
-			global::BottomBar.Droid.Resource.Color.cardview_dark_background = global::NRGScoutingApp.Droid.Resource.Color.cardview_dark_background;
-			global::BottomBar.Droid.Resource.Color.cardview_light_background = global::NRGScoutingApp.Droid.Resource.Color.cardview_light_background;
-			global::BottomBar.Droid.Resource.Color.cardview_shadow_end_color = global::NRGScoutingApp.Droid.Resource.Color.cardview_shadow_end_color;
-			global::BottomBar.Droid.Resource.Color.cardview_shadow_start_color = global::NRGScoutingApp.Droid.Resource.Color.cardview_shadow_start_color;
-			global::BottomBar.Droid.Resource.Color.design_fab_shadow_end_color = global::NRGScoutingApp.Droid.Resource.Color.design_fab_shadow_end_color;
-			global::BottomBar.Droid.Resource.Color.design_fab_shadow_mid_color = global::NRGScoutingApp.Droid.Resource.Color.design_fab_shadow_mid_color;
-			global::BottomBar.Droid.Resource.Color.design_fab_shadow_start_color = global::NRGScoutingApp.Droid.Resource.Color.design_fab_shadow_start_color;
-			global::BottomBar.Droid.Resource.Color.design_fab_stroke_end_inner_color = global::NRGScoutingApp.Droid.Resource.Color.design_fab_stroke_end_inner_color;
-			global::BottomBar.Droid.Resource.Color.design_fab_stroke_end_outer_color = global::NRGScoutingApp.Droid.Resource.Color.design_fab_stroke_end_outer_color;
-			global::BottomBar.Droid.Resource.Color.design_fab_stroke_top_inner_color = global::NRGScoutingApp.Droid.Resource.Color.design_fab_stroke_top_inner_color;
-			global::BottomBar.Droid.Resource.Color.design_fab_stroke_top_outer_color = global::NRGScoutingApp.Droid.Resource.Color.design_fab_stroke_top_outer_color;
-			global::BottomBar.Droid.Resource.Color.design_snackbar_background_color = global::NRGScoutingApp.Droid.Resource.Color.design_snackbar_background_color;
-			global::BottomBar.Droid.Resource.Color.dim_foreground_disabled_material_dark = global::NRGScoutingApp.Droid.Resource.Color.dim_foreground_disabled_material_dark;
-			global::BottomBar.Droid.Resource.Color.dim_foreground_disabled_material_light = global::NRGScoutingApp.Droid.Resource.Color.dim_foreground_disabled_material_light;
-			global::BottomBar.Droid.Resource.Color.dim_foreground_material_dark = global::NRGScoutingApp.Droid.Resource.Color.dim_foreground_material_dark;
-			global::BottomBar.Droid.Resource.Color.dim_foreground_material_light = global::NRGScoutingApp.Droid.Resource.Color.dim_foreground_material_light;
-			global::BottomBar.Droid.Resource.Color.foreground_material_dark = global::NRGScoutingApp.Droid.Resource.Color.foreground_material_dark;
-			global::BottomBar.Droid.Resource.Color.foreground_material_light = global::NRGScoutingApp.Droid.Resource.Color.foreground_material_light;
-			global::BottomBar.Droid.Resource.Color.highlighted_text_material_dark = global::NRGScoutingApp.Droid.Resource.Color.highlighted_text_material_dark;
-			global::BottomBar.Droid.Resource.Color.highlighted_text_material_light = global::NRGScoutingApp.Droid.Resource.Color.highlighted_text_material_light;
-			global::BottomBar.Droid.Resource.Color.material_blue_grey_800 = global::NRGScoutingApp.Droid.Resource.Color.material_blue_grey_800;
-			global::BottomBar.Droid.Resource.Color.material_blue_grey_900 = global::NRGScoutingApp.Droid.Resource.Color.material_blue_grey_900;
-			global::BottomBar.Droid.Resource.Color.material_blue_grey_950 = global::NRGScoutingApp.Droid.Resource.Color.material_blue_grey_950;
-			global::BottomBar.Droid.Resource.Color.material_deep_teal_200 = global::NRGScoutingApp.Droid.Resource.Color.material_deep_teal_200;
-			global::BottomBar.Droid.Resource.Color.material_deep_teal_500 = global::NRGScoutingApp.Droid.Resource.Color.material_deep_teal_500;
-			global::BottomBar.Droid.Resource.Color.material_grey_100 = global::NRGScoutingApp.Droid.Resource.Color.material_grey_100;
-			global::BottomBar.Droid.Resource.Color.material_grey_300 = global::NRGScoutingApp.Droid.Resource.Color.material_grey_300;
-			global::BottomBar.Droid.Resource.Color.material_grey_50 = global::NRGScoutingApp.Droid.Resource.Color.material_grey_50;
-			global::BottomBar.Droid.Resource.Color.material_grey_600 = global::NRGScoutingApp.Droid.Resource.Color.material_grey_600;
-			global::BottomBar.Droid.Resource.Color.material_grey_800 = global::NRGScoutingApp.Droid.Resource.Color.material_grey_800;
-			global::BottomBar.Droid.Resource.Color.material_grey_850 = global::NRGScoutingApp.Droid.Resource.Color.material_grey_850;
-			global::BottomBar.Droid.Resource.Color.material_grey_900 = global::NRGScoutingApp.Droid.Resource.Color.material_grey_900;
-			global::BottomBar.Droid.Resource.Color.primary_dark_material_dark = global::NRGScoutingApp.Droid.Resource.Color.primary_dark_material_dark;
-			global::BottomBar.Droid.Resource.Color.primary_dark_material_light = global::NRGScoutingApp.Droid.Resource.Color.primary_dark_material_light;
-			global::BottomBar.Droid.Resource.Color.primary_material_dark = global::NRGScoutingApp.Droid.Resource.Color.primary_material_dark;
-			global::BottomBar.Droid.Resource.Color.primary_material_light = global::NRGScoutingApp.Droid.Resource.Color.primary_material_light;
-			global::BottomBar.Droid.Resource.Color.primary_text_default_material_dark = global::NRGScoutingApp.Droid.Resource.Color.primary_text_default_material_dark;
-			global::BottomBar.Droid.Resource.Color.primary_text_default_material_light = global::NRGScoutingApp.Droid.Resource.Color.primary_text_default_material_light;
-			global::BottomBar.Droid.Resource.Color.primary_text_disabled_material_dark = global::NRGScoutingApp.Droid.Resource.Color.primary_text_disabled_material_dark;
-			global::BottomBar.Droid.Resource.Color.primary_text_disabled_material_light = global::NRGScoutingApp.Droid.Resource.Color.primary_text_disabled_material_light;
-			global::BottomBar.Droid.Resource.Color.ripple_material_dark = global::NRGScoutingApp.Droid.Resource.Color.ripple_material_dark;
-			global::BottomBar.Droid.Resource.Color.ripple_material_light = global::NRGScoutingApp.Droid.Resource.Color.ripple_material_light;
-			global::BottomBar.Droid.Resource.Color.secondary_text_default_material_dark = global::NRGScoutingApp.Droid.Resource.Color.secondary_text_default_material_dark;
-			global::BottomBar.Droid.Resource.Color.secondary_text_default_material_light = global::NRGScoutingApp.Droid.Resource.Color.secondary_text_default_material_light;
-			global::BottomBar.Droid.Resource.Color.secondary_text_disabled_material_dark = global::NRGScoutingApp.Droid.Resource.Color.secondary_text_disabled_material_dark;
-			global::BottomBar.Droid.Resource.Color.secondary_text_disabled_material_light = global::NRGScoutingApp.Droid.Resource.Color.secondary_text_disabled_material_light;
-			global::BottomBar.Droid.Resource.Color.switch_thumb_disabled_material_dark = global::NRGScoutingApp.Droid.Resource.Color.switch_thumb_disabled_material_dark;
-			global::BottomBar.Droid.Resource.Color.switch_thumb_disabled_material_light = global::NRGScoutingApp.Droid.Resource.Color.switch_thumb_disabled_material_light;
-			global::BottomBar.Droid.Resource.Color.switch_thumb_material_dark = global::NRGScoutingApp.Droid.Resource.Color.switch_thumb_material_dark;
-			global::BottomBar.Droid.Resource.Color.switch_thumb_material_light = global::NRGScoutingApp.Droid.Resource.Color.switch_thumb_material_light;
-			global::BottomBar.Droid.Resource.Color.switch_thumb_normal_material_dark = global::NRGScoutingApp.Droid.Resource.Color.switch_thumb_normal_material_dark;
-			global::BottomBar.Droid.Resource.Color.switch_thumb_normal_material_light = global::NRGScoutingApp.Droid.Resource.Color.switch_thumb_normal_material_light;
-			global::BottomBar.Droid.Resource.Dimension.abc_action_bar_content_inset_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_action_bar_content_inset_material;
-			global::BottomBar.Droid.Resource.Dimension.abc_action_bar_default_height_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_action_bar_default_height_material;
-			global::BottomBar.Droid.Resource.Dimension.abc_action_bar_default_padding_end_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_action_bar_default_padding_end_material;
-			global::BottomBar.Droid.Resource.Dimension.abc_action_bar_default_padding_start_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_action_bar_default_padding_start_material;
-			global::BottomBar.Droid.Resource.Dimension.abc_action_bar_icon_vertical_padding_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_action_bar_icon_vertical_padding_material;
-			global::BottomBar.Droid.Resource.Dimension.abc_action_bar_overflow_padding_end_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_action_bar_overflow_padding_end_material;
-			global::BottomBar.Droid.Resource.Dimension.abc_action_bar_overflow_padding_start_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_action_bar_overflow_padding_start_material;
-			global::BottomBar.Droid.Resource.Dimension.abc_action_bar_progress_bar_size = global::NRGScoutingApp.Droid.Resource.Dimension.abc_action_bar_progress_bar_size;
-			global::BottomBar.Droid.Resource.Dimension.abc_action_bar_stacked_max_height = global::NRGScoutingApp.Droid.Resource.Dimension.abc_action_bar_stacked_max_height;
-			global::BottomBar.Droid.Resource.Dimension.abc_action_bar_stacked_tab_max_width = global::NRGScoutingApp.Droid.Resource.Dimension.abc_action_bar_stacked_tab_max_width;
-			global::BottomBar.Droid.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material;
-			global::BottomBar.Droid.Resource.Dimension.abc_action_bar_subtitle_top_margin_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_action_bar_subtitle_top_margin_material;
-			global::BottomBar.Droid.Resource.Dimension.abc_action_button_min_height_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_action_button_min_height_material;
-			global::BottomBar.Droid.Resource.Dimension.abc_action_button_min_width_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_action_button_min_width_material;
-			global::BottomBar.Droid.Resource.Dimension.abc_action_button_min_width_overflow_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_action_button_min_width_overflow_material;
-			global::BottomBar.Droid.Resource.Dimension.abc_alert_dialog_button_bar_height = global::NRGScoutingApp.Droid.Resource.Dimension.abc_alert_dialog_button_bar_height;
-			global::BottomBar.Droid.Resource.Dimension.abc_button_inset_horizontal_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_button_inset_horizontal_material;
-			global::BottomBar.Droid.Resource.Dimension.abc_button_inset_vertical_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_button_inset_vertical_material;
-			global::BottomBar.Droid.Resource.Dimension.abc_button_padding_horizontal_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_button_padding_horizontal_material;
-			global::BottomBar.Droid.Resource.Dimension.abc_button_padding_vertical_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_button_padding_vertical_material;
-			global::BottomBar.Droid.Resource.Dimension.abc_config_prefDialogWidth = global::NRGScoutingApp.Droid.Resource.Dimension.abc_config_prefDialogWidth;
-			global::BottomBar.Droid.Resource.Dimension.abc_control_corner_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_control_corner_material;
-			global::BottomBar.Droid.Resource.Dimension.abc_control_inset_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_control_inset_material;
-			global::BottomBar.Droid.Resource.Dimension.abc_control_padding_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_control_padding_material;
-			global::BottomBar.Droid.Resource.Dimension.abc_dialog_fixed_height_major = global::NRGScoutingApp.Droid.Resource.Dimension.abc_dialog_fixed_height_major;
-			global::BottomBar.Droid.Resource.Dimension.abc_dialog_fixed_height_minor = global::NRGScoutingApp.Droid.Resource.Dimension.abc_dialog_fixed_height_minor;
-			global::BottomBar.Droid.Resource.Dimension.abc_dialog_fixed_width_major = global::NRGScoutingApp.Droid.Resource.Dimension.abc_dialog_fixed_width_major;
-			global::BottomBar.Droid.Resource.Dimension.abc_dialog_fixed_width_minor = global::NRGScoutingApp.Droid.Resource.Dimension.abc_dialog_fixed_width_minor;
-			global::BottomBar.Droid.Resource.Dimension.abc_dialog_min_width_major = global::NRGScoutingApp.Droid.Resource.Dimension.abc_dialog_min_width_major;
-			global::BottomBar.Droid.Resource.Dimension.abc_dialog_min_width_minor = global::NRGScoutingApp.Droid.Resource.Dimension.abc_dialog_min_width_minor;
-			global::BottomBar.Droid.Resource.Dimension.abc_dialog_padding_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_dialog_padding_material;
-			global::BottomBar.Droid.Resource.Dimension.abc_dialog_padding_top_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_dialog_padding_top_material;
-			global::BottomBar.Droid.Resource.Dimension.abc_disabled_alpha_material_dark = global::NRGScoutingApp.Droid.Resource.Dimension.abc_disabled_alpha_material_dark;
-			global::BottomBar.Droid.Resource.Dimension.abc_disabled_alpha_material_light = global::NRGScoutingApp.Droid.Resource.Dimension.abc_disabled_alpha_material_light;
-			global::BottomBar.Droid.Resource.Dimension.abc_dropdownitem_icon_width = global::NRGScoutingApp.Droid.Resource.Dimension.abc_dropdownitem_icon_width;
-			global::BottomBar.Droid.Resource.Dimension.abc_dropdownitem_text_padding_left = global::NRGScoutingApp.Droid.Resource.Dimension.abc_dropdownitem_text_padding_left;
-			global::BottomBar.Droid.Resource.Dimension.abc_dropdownitem_text_padding_right = global::NRGScoutingApp.Droid.Resource.Dimension.abc_dropdownitem_text_padding_right;
-			global::BottomBar.Droid.Resource.Dimension.abc_edit_text_inset_bottom_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_edit_text_inset_bottom_material;
-			global::BottomBar.Droid.Resource.Dimension.abc_edit_text_inset_horizontal_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_edit_text_inset_horizontal_material;
-			global::BottomBar.Droid.Resource.Dimension.abc_edit_text_inset_top_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_edit_text_inset_top_material;
-			global::BottomBar.Droid.Resource.Dimension.abc_floating_window_z = global::NRGScoutingApp.Droid.Resource.Dimension.abc_floating_window_z;
-			global::BottomBar.Droid.Resource.Dimension.abc_list_item_padding_horizontal_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_list_item_padding_horizontal_material;
-			global::BottomBar.Droid.Resource.Dimension.abc_panel_menu_list_width = global::NRGScoutingApp.Droid.Resource.Dimension.abc_panel_menu_list_width;
-			global::BottomBar.Droid.Resource.Dimension.abc_search_view_preferred_width = global::NRGScoutingApp.Droid.Resource.Dimension.abc_search_view_preferred_width;
-			global::BottomBar.Droid.Resource.Dimension.abc_seekbar_track_background_height_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_seekbar_track_background_height_material;
-			global::BottomBar.Droid.Resource.Dimension.abc_seekbar_track_progress_height_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_seekbar_track_progress_height_material;
-			global::BottomBar.Droid.Resource.Dimension.abc_select_dialog_padding_start_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_select_dialog_padding_start_material;
-			global::BottomBar.Droid.Resource.Dimension.abc_switch_padding = global::NRGScoutingApp.Droid.Resource.Dimension.abc_switch_padding;
-			global::BottomBar.Droid.Resource.Dimension.abc_text_size_body_1_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_text_size_body_1_material;
-			global::BottomBar.Droid.Resource.Dimension.abc_text_size_body_2_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_text_size_body_2_material;
-			global::BottomBar.Droid.Resource.Dimension.abc_text_size_button_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_text_size_button_material;
-			global::BottomBar.Droid.Resource.Dimension.abc_text_size_caption_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_text_size_caption_material;
-			global::BottomBar.Droid.Resource.Dimension.abc_text_size_display_1_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_text_size_display_1_material;
-			global::BottomBar.Droid.Resource.Dimension.abc_text_size_display_2_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_text_size_display_2_material;
-			global::BottomBar.Droid.Resource.Dimension.abc_text_size_display_3_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_text_size_display_3_material;
-			global::BottomBar.Droid.Resource.Dimension.abc_text_size_display_4_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_text_size_display_4_material;
-			global::BottomBar.Droid.Resource.Dimension.abc_text_size_headline_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_text_size_headline_material;
-			global::BottomBar.Droid.Resource.Dimension.abc_text_size_large_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_text_size_large_material;
-			global::BottomBar.Droid.Resource.Dimension.abc_text_size_medium_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_text_size_medium_material;
-			global::BottomBar.Droid.Resource.Dimension.abc_text_size_menu_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_text_size_menu_material;
-			global::BottomBar.Droid.Resource.Dimension.abc_text_size_small_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_text_size_small_material;
-			global::BottomBar.Droid.Resource.Dimension.abc_text_size_subhead_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_text_size_subhead_material;
-			global::BottomBar.Droid.Resource.Dimension.abc_text_size_subtitle_material_toolbar = global::NRGScoutingApp.Droid.Resource.Dimension.abc_text_size_subtitle_material_toolbar;
-			global::BottomBar.Droid.Resource.Dimension.abc_text_size_title_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_text_size_title_material;
-			global::BottomBar.Droid.Resource.Dimension.abc_text_size_title_material_toolbar = global::NRGScoutingApp.Droid.Resource.Dimension.abc_text_size_title_material_toolbar;
-			global::BottomBar.Droid.Resource.Dimension.activity_horizontal_margin = global::NRGScoutingApp.Droid.Resource.Dimension.activity_horizontal_margin;
-			global::BottomBar.Droid.Resource.Dimension.activity_vertical_margin = global::NRGScoutingApp.Droid.Resource.Dimension.activity_vertical_margin;
-			global::BottomBar.Droid.Resource.Dimension.bb_height = global::NRGScoutingApp.Droid.Resource.Dimension.bb_height;
-			global::BottomBar.Droid.Resource.Dimension.bottom_bar_elevation = global::NRGScoutingApp.Droid.Resource.Dimension.bottom_bar_elevation;
-			global::BottomBar.Droid.Resource.Dimension.cardview_compat_inset_shadow = global::NRGScoutingApp.Droid.Resource.Dimension.cardview_compat_inset_shadow;
-			global::BottomBar.Droid.Resource.Dimension.cardview_default_elevation = global::NRGScoutingApp.Droid.Resource.Dimension.cardview_default_elevation;
-			global::BottomBar.Droid.Resource.Dimension.cardview_default_radius = global::NRGScoutingApp.Droid.Resource.Dimension.cardview_default_radius;
-			global::BottomBar.Droid.Resource.Dimension.design_appbar_elevation = global::NRGScoutingApp.Droid.Resource.Dimension.design_appbar_elevation;
-			global::BottomBar.Droid.Resource.Dimension.design_bottom_sheet_modal_elevation = global::NRGScoutingApp.Droid.Resource.Dimension.design_bottom_sheet_modal_elevation;
-			global::BottomBar.Droid.Resource.Dimension.design_fab_border_width = global::NRGScoutingApp.Droid.Resource.Dimension.design_fab_border_width;
-			global::BottomBar.Droid.Resource.Dimension.design_fab_elevation = global::NRGScoutingApp.Droid.Resource.Dimension.design_fab_elevation;
-			global::BottomBar.Droid.Resource.Dimension.design_fab_image_size = global::NRGScoutingApp.Droid.Resource.Dimension.design_fab_image_size;
-			global::BottomBar.Droid.Resource.Dimension.design_fab_size_mini = global::NRGScoutingApp.Droid.Resource.Dimension.design_fab_size_mini;
-			global::BottomBar.Droid.Resource.Dimension.design_fab_size_normal = global::NRGScoutingApp.Droid.Resource.Dimension.design_fab_size_normal;
-			global::BottomBar.Droid.Resource.Dimension.design_fab_translation_z_pressed = global::NRGScoutingApp.Droid.Resource.Dimension.design_fab_translation_z_pressed;
-			global::BottomBar.Droid.Resource.Dimension.design_navigation_elevation = global::NRGScoutingApp.Droid.Resource.Dimension.design_navigation_elevation;
-			global::BottomBar.Droid.Resource.Dimension.design_navigation_icon_padding = global::NRGScoutingApp.Droid.Resource.Dimension.design_navigation_icon_padding;
-			global::BottomBar.Droid.Resource.Dimension.design_navigation_icon_size = global::NRGScoutingApp.Droid.Resource.Dimension.design_navigation_icon_size;
-			global::BottomBar.Droid.Resource.Dimension.design_navigation_max_width = global::NRGScoutingApp.Droid.Resource.Dimension.design_navigation_max_width;
-			global::BottomBar.Droid.Resource.Dimension.design_navigation_padding_bottom = global::NRGScoutingApp.Droid.Resource.Dimension.design_navigation_padding_bottom;
-			global::BottomBar.Droid.Resource.Dimension.design_navigation_separator_vertical_padding = global::NRGScoutingApp.Droid.Resource.Dimension.design_navigation_separator_vertical_padding;
-			global::BottomBar.Droid.Resource.Dimension.design_snackbar_action_inline_max_width = global::NRGScoutingApp.Droid.Resource.Dimension.design_snackbar_action_inline_max_width;
-			global::BottomBar.Droid.Resource.Dimension.design_snackbar_background_corner_radius = global::NRGScoutingApp.Droid.Resource.Dimension.design_snackbar_background_corner_radius;
-			global::BottomBar.Droid.Resource.Dimension.design_snackbar_elevation = global::NRGScoutingApp.Droid.Resource.Dimension.design_snackbar_elevation;
-			global::BottomBar.Droid.Resource.Dimension.design_snackbar_extra_spacing_horizontal = global::NRGScoutingApp.Droid.Resource.Dimension.design_snackbar_extra_spacing_horizontal;
-			global::BottomBar.Droid.Resource.Dimension.design_snackbar_max_width = global::NRGScoutingApp.Droid.Resource.Dimension.design_snackbar_max_width;
-			global::BottomBar.Droid.Resource.Dimension.design_snackbar_min_width = global::NRGScoutingApp.Droid.Resource.Dimension.design_snackbar_min_width;
-			global::BottomBar.Droid.Resource.Dimension.design_snackbar_padding_horizontal = global::NRGScoutingApp.Droid.Resource.Dimension.design_snackbar_padding_horizontal;
-			global::BottomBar.Droid.Resource.Dimension.design_snackbar_padding_vertical = global::NRGScoutingApp.Droid.Resource.Dimension.design_snackbar_padding_vertical;
-			global::BottomBar.Droid.Resource.Dimension.design_snackbar_padding_vertical_2lines = global::NRGScoutingApp.Droid.Resource.Dimension.design_snackbar_padding_vertical_2lines;
-			global::BottomBar.Droid.Resource.Dimension.design_snackbar_text_size = global::NRGScoutingApp.Droid.Resource.Dimension.design_snackbar_text_size;
-			global::BottomBar.Droid.Resource.Dimension.design_tab_max_width = global::NRGScoutingApp.Droid.Resource.Dimension.design_tab_max_width;
-			global::BottomBar.Droid.Resource.Dimension.design_tab_scrollable_min_width = global::NRGScoutingApp.Droid.Resource.Dimension.design_tab_scrollable_min_width;
-			global::BottomBar.Droid.Resource.Dimension.design_tab_text_size = global::NRGScoutingApp.Droid.Resource.Dimension.design_tab_text_size;
-			global::BottomBar.Droid.Resource.Dimension.design_tab_text_size_2line = global::NRGScoutingApp.Droid.Resource.Dimension.design_tab_text_size_2line;
-			global::BottomBar.Droid.Resource.Dimension.disabled_alpha_material_dark = global::NRGScoutingApp.Droid.Resource.Dimension.disabled_alpha_material_dark;
-			global::BottomBar.Droid.Resource.Dimension.disabled_alpha_material_light = global::NRGScoutingApp.Droid.Resource.Dimension.disabled_alpha_material_light;
-			global::BottomBar.Droid.Resource.Dimension.highlight_alpha_material_colored = global::NRGScoutingApp.Droid.Resource.Dimension.highlight_alpha_material_colored;
-			global::BottomBar.Droid.Resource.Dimension.highlight_alpha_material_dark = global::NRGScoutingApp.Droid.Resource.Dimension.highlight_alpha_material_dark;
-			global::BottomBar.Droid.Resource.Dimension.highlight_alpha_material_light = global::NRGScoutingApp.Droid.Resource.Dimension.highlight_alpha_material_light;
-			global::BottomBar.Droid.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame = global::NRGScoutingApp.Droid.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame;
-			global::BottomBar.Droid.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity = global::NRGScoutingApp.Droid.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity;
-			global::BottomBar.Droid.Resource.Dimension.item_touch_helper_swipe_escape_velocity = global::NRGScoutingApp.Droid.Resource.Dimension.item_touch_helper_swipe_escape_velocity;
-			global::BottomBar.Droid.Resource.Dimension.mr_controller_volume_group_list_item_height = global::NRGScoutingApp.Droid.Resource.Dimension.mr_controller_volume_group_list_item_height;
-			global::BottomBar.Droid.Resource.Dimension.mr_controller_volume_group_list_item_icon_size = global::NRGScoutingApp.Droid.Resource.Dimension.mr_controller_volume_group_list_item_icon_size;
-			global::BottomBar.Droid.Resource.Dimension.mr_controller_volume_group_list_max_height = global::NRGScoutingApp.Droid.Resource.Dimension.mr_controller_volume_group_list_max_height;
-			global::BottomBar.Droid.Resource.Dimension.mr_controller_volume_group_list_padding_top = global::NRGScoutingApp.Droid.Resource.Dimension.mr_controller_volume_group_list_padding_top;
-			global::BottomBar.Droid.Resource.Dimension.mr_dialog_fixed_width_major = global::NRGScoutingApp.Droid.Resource.Dimension.mr_dialog_fixed_width_major;
-			global::BottomBar.Droid.Resource.Dimension.mr_dialog_fixed_width_minor = global::NRGScoutingApp.Droid.Resource.Dimension.mr_dialog_fixed_width_minor;
-			global::BottomBar.Droid.Resource.Dimension.notification_large_icon_height = global::NRGScoutingApp.Droid.Resource.Dimension.notification_large_icon_height;
-			global::BottomBar.Droid.Resource.Dimension.notification_large_icon_width = global::NRGScoutingApp.Droid.Resource.Dimension.notification_large_icon_width;
-			global::BottomBar.Droid.Resource.Dimension.notification_subtext_size = global::NRGScoutingApp.Droid.Resource.Dimension.notification_subtext_size;
-			global::BottomBar.Droid.Resource.Drawable.abc_ab_share_pack_mtrl_alpha = global::NRGScoutingApp.Droid.Resource.Drawable.abc_ab_share_pack_mtrl_alpha;
-			global::BottomBar.Droid.Resource.Drawable.abc_action_bar_item_background_material = global::NRGScoutingApp.Droid.Resource.Drawable.abc_action_bar_item_background_material;
-			global::BottomBar.Droid.Resource.Drawable.abc_btn_borderless_material = global::NRGScoutingApp.Droid.Resource.Drawable.abc_btn_borderless_material;
-			global::BottomBar.Droid.Resource.Drawable.abc_btn_check_material = global::NRGScoutingApp.Droid.Resource.Drawable.abc_btn_check_material;
-			global::BottomBar.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_000 = global::NRGScoutingApp.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_000;
-			global::BottomBar.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_015 = global::NRGScoutingApp.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_015;
-			global::BottomBar.Droid.Resource.Drawable.abc_btn_colored_material = global::NRGScoutingApp.Droid.Resource.Drawable.abc_btn_colored_material;
-			global::BottomBar.Droid.Resource.Drawable.abc_btn_default_mtrl_shape = global::NRGScoutingApp.Droid.Resource.Drawable.abc_btn_default_mtrl_shape;
-			global::BottomBar.Droid.Resource.Drawable.abc_btn_radio_material = global::NRGScoutingApp.Droid.Resource.Drawable.abc_btn_radio_material;
-			global::BottomBar.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_000 = global::NRGScoutingApp.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_000;
-			global::BottomBar.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_015 = global::NRGScoutingApp.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_015;
-			global::BottomBar.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001 = global::NRGScoutingApp.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001;
-			global::BottomBar.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012 = global::NRGScoutingApp.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012;
-			global::BottomBar.Droid.Resource.Drawable.abc_cab_background_internal_bg = global::NRGScoutingApp.Droid.Resource.Drawable.abc_cab_background_internal_bg;
-			global::BottomBar.Droid.Resource.Drawable.abc_cab_background_top_material = global::NRGScoutingApp.Droid.Resource.Drawable.abc_cab_background_top_material;
-			global::BottomBar.Droid.Resource.Drawable.abc_cab_background_top_mtrl_alpha = global::NRGScoutingApp.Droid.Resource.Drawable.abc_cab_background_top_mtrl_alpha;
-			global::BottomBar.Droid.Resource.Drawable.abc_control_background_material = global::NRGScoutingApp.Droid.Resource.Drawable.abc_control_background_material;
-			global::BottomBar.Droid.Resource.Drawable.abc_edit_text_material = global::NRGScoutingApp.Droid.Resource.Drawable.abc_edit_text_material;
-			global::BottomBar.Droid.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha = global::NRGScoutingApp.Droid.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha;
-			global::BottomBar.Droid.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha = global::NRGScoutingApp.Droid.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha;
-			global::BottomBar.Droid.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha = global::NRGScoutingApp.Droid.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha;
-			global::BottomBar.Droid.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha = global::NRGScoutingApp.Droid.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha;
-			global::BottomBar.Droid.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha = global::NRGScoutingApp.Droid.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha;
-			global::BottomBar.Droid.Resource.Drawable.abc_ic_menu_share_mtrl_alpha = global::NRGScoutingApp.Droid.Resource.Drawable.abc_ic_menu_share_mtrl_alpha;
-			global::BottomBar.Droid.Resource.Drawable.abc_ic_star_black_16dp = global::NRGScoutingApp.Droid.Resource.Drawable.abc_ic_star_black_16dp;
-			global::BottomBar.Droid.Resource.Drawable.abc_ic_star_black_36dp = global::NRGScoutingApp.Droid.Resource.Drawable.abc_ic_star_black_36dp;
-			global::BottomBar.Droid.Resource.Drawable.abc_ic_star_half_black_16dp = global::NRGScoutingApp.Droid.Resource.Drawable.abc_ic_star_half_black_16dp;
-			global::BottomBar.Droid.Resource.Drawable.abc_ic_star_half_black_36dp = global::NRGScoutingApp.Droid.Resource.Drawable.abc_ic_star_half_black_36dp;
-			global::BottomBar.Droid.Resource.Drawable.abc_item_background_holo_dark = global::NRGScoutingApp.Droid.Resource.Drawable.abc_item_background_holo_dark;
-			global::BottomBar.Droid.Resource.Drawable.abc_item_background_holo_light = global::NRGScoutingApp.Droid.Resource.Drawable.abc_item_background_holo_light;
-			global::BottomBar.Droid.Resource.Drawable.abc_list_divider_mtrl_alpha = global::NRGScoutingApp.Droid.Resource.Drawable.abc_list_divider_mtrl_alpha;
-			global::BottomBar.Droid.Resource.Drawable.abc_list_focused_holo = global::NRGScoutingApp.Droid.Resource.Drawable.abc_list_focused_holo;
-			global::BottomBar.Droid.Resource.Drawable.abc_list_longpressed_holo = global::NRGScoutingApp.Droid.Resource.Drawable.abc_list_longpressed_holo;
-			global::BottomBar.Droid.Resource.Drawable.abc_list_pressed_holo_dark = global::NRGScoutingApp.Droid.Resource.Drawable.abc_list_pressed_holo_dark;
-			global::BottomBar.Droid.Resource.Drawable.abc_list_pressed_holo_light = global::NRGScoutingApp.Droid.Resource.Drawable.abc_list_pressed_holo_light;
-			global::BottomBar.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_dark = global::NRGScoutingApp.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_dark;
-			global::BottomBar.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_light = global::NRGScoutingApp.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_light;
-			global::BottomBar.Droid.Resource.Drawable.abc_list_selector_disabled_holo_dark = global::NRGScoutingApp.Droid.Resource.Drawable.abc_list_selector_disabled_holo_dark;
-			global::BottomBar.Droid.Resource.Drawable.abc_list_selector_disabled_holo_light = global::NRGScoutingApp.Droid.Resource.Drawable.abc_list_selector_disabled_holo_light;
-			global::BottomBar.Droid.Resource.Drawable.abc_list_selector_holo_dark = global::NRGScoutingApp.Droid.Resource.Drawable.abc_list_selector_holo_dark;
-			global::BottomBar.Droid.Resource.Drawable.abc_list_selector_holo_light = global::NRGScoutingApp.Droid.Resource.Drawable.abc_list_selector_holo_light;
-			global::BottomBar.Droid.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult = global::NRGScoutingApp.Droid.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult;
-			global::BottomBar.Droid.Resource.Drawable.abc_popup_background_mtrl_mult = global::NRGScoutingApp.Droid.Resource.Drawable.abc_popup_background_mtrl_mult;
-			global::BottomBar.Droid.Resource.Drawable.abc_ratingbar_indicator_material = global::NRGScoutingApp.Droid.Resource.Drawable.abc_ratingbar_indicator_material;
-			global::BottomBar.Droid.Resource.Drawable.abc_ratingbar_small_material = global::NRGScoutingApp.Droid.Resource.Drawable.abc_ratingbar_small_material;
-			global::BottomBar.Droid.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha = global::NRGScoutingApp.Droid.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha;
-			global::BottomBar.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000 = global::NRGScoutingApp.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000;
-			global::BottomBar.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005 = global::NRGScoutingApp.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005;
-			global::BottomBar.Droid.Resource.Drawable.abc_scrubber_primary_mtrl_alpha = global::NRGScoutingApp.Droid.Resource.Drawable.abc_scrubber_primary_mtrl_alpha;
-			global::BottomBar.Droid.Resource.Drawable.abc_scrubber_track_mtrl_alpha = global::NRGScoutingApp.Droid.Resource.Drawable.abc_scrubber_track_mtrl_alpha;
-			global::BottomBar.Droid.Resource.Drawable.abc_seekbar_thumb_material = global::NRGScoutingApp.Droid.Resource.Drawable.abc_seekbar_thumb_material;
-			global::BottomBar.Droid.Resource.Drawable.abc_seekbar_track_material = global::NRGScoutingApp.Droid.Resource.Drawable.abc_seekbar_track_material;
-			global::BottomBar.Droid.Resource.Drawable.abc_spinner_mtrl_am_alpha = global::NRGScoutingApp.Droid.Resource.Drawable.abc_spinner_mtrl_am_alpha;
-			global::BottomBar.Droid.Resource.Drawable.abc_spinner_textfield_background_material = global::NRGScoutingApp.Droid.Resource.Drawable.abc_spinner_textfield_background_material;
-			global::BottomBar.Droid.Resource.Drawable.abc_switch_thumb_material = global::NRGScoutingApp.Droid.Resource.Drawable.abc_switch_thumb_material;
-			global::BottomBar.Droid.Resource.Drawable.abc_switch_track_mtrl_alpha = global::NRGScoutingApp.Droid.Resource.Drawable.abc_switch_track_mtrl_alpha;
-			global::BottomBar.Droid.Resource.Drawable.abc_tab_indicator_material = global::NRGScoutingApp.Droid.Resource.Drawable.abc_tab_indicator_material;
-			global::BottomBar.Droid.Resource.Drawable.abc_tab_indicator_mtrl_alpha = global::NRGScoutingApp.Droid.Resource.Drawable.abc_tab_indicator_mtrl_alpha;
-			global::BottomBar.Droid.Resource.Drawable.abc_text_cursor_material = global::NRGScoutingApp.Droid.Resource.Drawable.abc_text_cursor_material;
-			global::BottomBar.Droid.Resource.Drawable.abc_textfield_activated_mtrl_alpha = global::NRGScoutingApp.Droid.Resource.Drawable.abc_textfield_activated_mtrl_alpha;
-			global::BottomBar.Droid.Resource.Drawable.abc_textfield_default_mtrl_alpha = global::NRGScoutingApp.Droid.Resource.Drawable.abc_textfield_default_mtrl_alpha;
-			global::BottomBar.Droid.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha = global::NRGScoutingApp.Droid.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha;
-			global::BottomBar.Droid.Resource.Drawable.abc_textfield_search_default_mtrl_alpha = global::NRGScoutingApp.Droid.Resource.Drawable.abc_textfield_search_default_mtrl_alpha;
-			global::BottomBar.Droid.Resource.Drawable.abc_textfield_search_material = global::NRGScoutingApp.Droid.Resource.Drawable.abc_textfield_search_material;
-			global::BottomBar.Droid.Resource.Drawable.bb_bottom_bar_top_shadow = global::NRGScoutingApp.Droid.Resource.Drawable.bb_bottom_bar_top_shadow;
-			global::BottomBar.Droid.Resource.Drawable.design_fab_background = global::NRGScoutingApp.Droid.Resource.Drawable.design_fab_background;
-			global::BottomBar.Droid.Resource.Drawable.design_snackbar_background = global::NRGScoutingApp.Droid.Resource.Drawable.design_snackbar_background;
-			global::BottomBar.Droid.Resource.Drawable.ic_audiotrack_light = global::NRGScoutingApp.Droid.Resource.Drawable.ic_audiotrack_light;
-			global::BottomBar.Droid.Resource.Drawable.mr_dialog_material_background_dark = global::NRGScoutingApp.Droid.Resource.Drawable.mr_dialog_material_background_dark;
-			global::BottomBar.Droid.Resource.Drawable.mr_dialog_material_background_light = global::NRGScoutingApp.Droid.Resource.Drawable.mr_dialog_material_background_light;
-			global::BottomBar.Droid.Resource.Drawable.notification_template_icon_bg = global::NRGScoutingApp.Droid.Resource.Drawable.notification_template_icon_bg;
-			global::BottomBar.Droid.Resource.Id.action0 = global::NRGScoutingApp.Droid.Resource.Id.action0;
-			global::BottomBar.Droid.Resource.Id.action_bar = global::NRGScoutingApp.Droid.Resource.Id.action_bar;
-			global::BottomBar.Droid.Resource.Id.action_bar_activity_content = global::NRGScoutingApp.Droid.Resource.Id.action_bar_activity_content;
-			global::BottomBar.Droid.Resource.Id.action_bar_container = global::NRGScoutingApp.Droid.Resource.Id.action_bar_container;
-			global::BottomBar.Droid.Resource.Id.action_bar_root = global::NRGScoutingApp.Droid.Resource.Id.action_bar_root;
-			global::BottomBar.Droid.Resource.Id.action_bar_spinner = global::NRGScoutingApp.Droid.Resource.Id.action_bar_spinner;
-			global::BottomBar.Droid.Resource.Id.action_bar_subtitle = global::NRGScoutingApp.Droid.Resource.Id.action_bar_subtitle;
-			global::BottomBar.Droid.Resource.Id.action_bar_title = global::NRGScoutingApp.Droid.Resource.Id.action_bar_title;
-			global::BottomBar.Droid.Resource.Id.action_context_bar = global::NRGScoutingApp.Droid.Resource.Id.action_context_bar;
-			global::BottomBar.Droid.Resource.Id.action_divider = global::NRGScoutingApp.Droid.Resource.Id.action_divider;
-			global::BottomBar.Droid.Resource.Id.action_menu_divider = global::NRGScoutingApp.Droid.Resource.Id.action_menu_divider;
-			global::BottomBar.Droid.Resource.Id.action_menu_presenter = global::NRGScoutingApp.Droid.Resource.Id.action_menu_presenter;
-			global::BottomBar.Droid.Resource.Id.action_mode_bar = global::NRGScoutingApp.Droid.Resource.Id.action_mode_bar;
-			global::BottomBar.Droid.Resource.Id.action_mode_bar_stub = global::NRGScoutingApp.Droid.Resource.Id.action_mode_bar_stub;
-			global::BottomBar.Droid.Resource.Id.action_mode_close_button = global::NRGScoutingApp.Droid.Resource.Id.action_mode_close_button;
-			global::BottomBar.Droid.Resource.Id.activity_chooser_view_content = global::NRGScoutingApp.Droid.Resource.Id.activity_chooser_view_content;
-			global::BottomBar.Droid.Resource.Id.alertTitle = global::NRGScoutingApp.Droid.Resource.Id.alertTitle;
-			global::BottomBar.Droid.Resource.Id.always = global::NRGScoutingApp.Droid.Resource.Id.always;
-			global::BottomBar.Droid.Resource.Id.bb_bottom_bar_background_overlay = global::NRGScoutingApp.Droid.Resource.Id.bb_bottom_bar_background_overlay;
-			global::BottomBar.Droid.Resource.Id.bb_bottom_bar_background_view = global::NRGScoutingApp.Droid.Resource.Id.bb_bottom_bar_background_view;
-			global::BottomBar.Droid.Resource.Id.bb_bottom_bar_icon = global::NRGScoutingApp.Droid.Resource.Id.bb_bottom_bar_icon;
-			global::BottomBar.Droid.Resource.Id.bb_bottom_bar_item_container = global::NRGScoutingApp.Droid.Resource.Id.bb_bottom_bar_item_container;
-			global::BottomBar.Droid.Resource.Id.bb_bottom_bar_outer_container = global::NRGScoutingApp.Droid.Resource.Id.bb_bottom_bar_outer_container;
-			global::BottomBar.Droid.Resource.Id.bb_bottom_bar_shadow = global::NRGScoutingApp.Droid.Resource.Id.bb_bottom_bar_shadow;
-			global::BottomBar.Droid.Resource.Id.bb_bottom_bar_title = global::NRGScoutingApp.Droid.Resource.Id.bb_bottom_bar_title;
-			global::BottomBar.Droid.Resource.Id.bb_tablet_right_border = global::NRGScoutingApp.Droid.Resource.Id.bb_tablet_right_border;
-			global::BottomBar.Droid.Resource.Id.bb_user_content_container = global::NRGScoutingApp.Droid.Resource.Id.bb_user_content_container;
-			global::BottomBar.Droid.Resource.Id.beginning = global::NRGScoutingApp.Droid.Resource.Id.beginning;
-			global::BottomBar.Droid.Resource.Id.bottom = global::NRGScoutingApp.Droid.Resource.Id.bottom;
-			global::BottomBar.Droid.Resource.Id.buttonPanel = global::NRGScoutingApp.Droid.Resource.Id.buttonPanel;
-			global::BottomBar.Droid.Resource.Id.cancel_action = global::NRGScoutingApp.Droid.Resource.Id.cancel_action;
-			global::BottomBar.Droid.Resource.Id.center = global::NRGScoutingApp.Droid.Resource.Id.center;
-			global::BottomBar.Droid.Resource.Id.center_horizontal = global::NRGScoutingApp.Droid.Resource.Id.center_horizontal;
-			global::BottomBar.Droid.Resource.Id.center_vertical = global::NRGScoutingApp.Droid.Resource.Id.center_vertical;
-			global::BottomBar.Droid.Resource.Id.checkbox = global::NRGScoutingApp.Droid.Resource.Id.checkbox;
-			global::BottomBar.Droid.Resource.Id.chronometer = global::NRGScoutingApp.Droid.Resource.Id.chronometer;
-			global::BottomBar.Droid.Resource.Id.clip_horizontal = global::NRGScoutingApp.Droid.Resource.Id.clip_horizontal;
-			global::BottomBar.Droid.Resource.Id.clip_vertical = global::NRGScoutingApp.Droid.Resource.Id.clip_vertical;
-			global::BottomBar.Droid.Resource.Id.collapseActionView = global::NRGScoutingApp.Droid.Resource.Id.collapseActionView;
-			global::BottomBar.Droid.Resource.Id.contentPanel = global::NRGScoutingApp.Droid.Resource.Id.contentPanel;
-			global::BottomBar.Droid.Resource.Id.custom = global::NRGScoutingApp.Droid.Resource.Id.custom;
-			global::BottomBar.Droid.Resource.Id.customPanel = global::NRGScoutingApp.Droid.Resource.Id.customPanel;
-			global::BottomBar.Droid.Resource.Id.decor_content_parent = global::NRGScoutingApp.Droid.Resource.Id.decor_content_parent;
-			global::BottomBar.Droid.Resource.Id.default_activity_button = global::NRGScoutingApp.Droid.Resource.Id.default_activity_button;
-			global::BottomBar.Droid.Resource.Id.design_bottom_sheet = global::NRGScoutingApp.Droid.Resource.Id.design_bottom_sheet;
-			global::BottomBar.Droid.Resource.Id.design_menu_item_action_area = global::NRGScoutingApp.Droid.Resource.Id.design_menu_item_action_area;
-			global::BottomBar.Droid.Resource.Id.design_menu_item_action_area_stub = global::NRGScoutingApp.Droid.Resource.Id.design_menu_item_action_area_stub;
-			global::BottomBar.Droid.Resource.Id.design_menu_item_text = global::NRGScoutingApp.Droid.Resource.Id.design_menu_item_text;
-			global::BottomBar.Droid.Resource.Id.design_navigation_view = global::NRGScoutingApp.Droid.Resource.Id.design_navigation_view;
-			global::BottomBar.Droid.Resource.Id.disableHome = global::NRGScoutingApp.Droid.Resource.Id.disableHome;
-			global::BottomBar.Droid.Resource.Id.edit_query = global::NRGScoutingApp.Droid.Resource.Id.edit_query;
-			global::BottomBar.Droid.Resource.Id.end = global::NRGScoutingApp.Droid.Resource.Id.end;
-			global::BottomBar.Droid.Resource.Id.end_padder = global::NRGScoutingApp.Droid.Resource.Id.end_padder;
-			global::BottomBar.Droid.Resource.Id.enterAlways = global::NRGScoutingApp.Droid.Resource.Id.enterAlways;
-			global::BottomBar.Droid.Resource.Id.enterAlwaysCollapsed = global::NRGScoutingApp.Droid.Resource.Id.enterAlwaysCollapsed;
-			global::BottomBar.Droid.Resource.Id.exitUntilCollapsed = global::NRGScoutingApp.Droid.Resource.Id.exitUntilCollapsed;
-			global::BottomBar.Droid.Resource.Id.expand_activities_button = global::NRGScoutingApp.Droid.Resource.Id.expand_activities_button;
-			global::BottomBar.Droid.Resource.Id.expanded_menu = global::NRGScoutingApp.Droid.Resource.Id.expanded_menu;
-			global::BottomBar.Droid.Resource.Id.fill = global::NRGScoutingApp.Droid.Resource.Id.fill;
-			global::BottomBar.Droid.Resource.Id.fill_horizontal = global::NRGScoutingApp.Droid.Resource.Id.fill_horizontal;
-			global::BottomBar.Droid.Resource.Id.fill_vertical = global::NRGScoutingApp.Droid.Resource.Id.fill_vertical;
-			global::BottomBar.Droid.Resource.Id.@fixed = global::NRGScoutingApp.Droid.Resource.Id.@fixed;
-			global::BottomBar.Droid.Resource.Id.home = global::NRGScoutingApp.Droid.Resource.Id.home;
-			global::BottomBar.Droid.Resource.Id.homeAsUp = global::NRGScoutingApp.Droid.Resource.Id.homeAsUp;
-			global::BottomBar.Droid.Resource.Id.icon = global::NRGScoutingApp.Droid.Resource.Id.icon;
-			global::BottomBar.Droid.Resource.Id.ifRoom = global::NRGScoutingApp.Droid.Resource.Id.ifRoom;
-			global::BottomBar.Droid.Resource.Id.image = global::NRGScoutingApp.Droid.Resource.Id.image;
-			global::BottomBar.Droid.Resource.Id.info = global::NRGScoutingApp.Droid.Resource.Id.info;
-			global::BottomBar.Droid.Resource.Id.item_touch_helper_previous_elevation = global::NRGScoutingApp.Droid.Resource.Id.item_touch_helper_previous_elevation;
-			global::BottomBar.Droid.Resource.Id.left = global::NRGScoutingApp.Droid.Resource.Id.left;
-			global::BottomBar.Droid.Resource.Id.line1 = global::NRGScoutingApp.Droid.Resource.Id.line1;
-			global::BottomBar.Droid.Resource.Id.line3 = global::NRGScoutingApp.Droid.Resource.Id.line3;
-			global::BottomBar.Droid.Resource.Id.listMode = global::NRGScoutingApp.Droid.Resource.Id.listMode;
-			global::BottomBar.Droid.Resource.Id.list_item = global::NRGScoutingApp.Droid.Resource.Id.list_item;
-			global::BottomBar.Droid.Resource.Id.media_actions = global::NRGScoutingApp.Droid.Resource.Id.media_actions;
-			global::BottomBar.Droid.Resource.Id.middle = global::NRGScoutingApp.Droid.Resource.Id.middle;
-			global::BottomBar.Droid.Resource.Id.mini = global::NRGScoutingApp.Droid.Resource.Id.mini;
-			global::BottomBar.Droid.Resource.Id.mr_art = global::NRGScoutingApp.Droid.Resource.Id.mr_art;
-			global::BottomBar.Droid.Resource.Id.mr_chooser_list = global::NRGScoutingApp.Droid.Resource.Id.mr_chooser_list;
-			global::BottomBar.Droid.Resource.Id.mr_chooser_route_desc = global::NRGScoutingApp.Droid.Resource.Id.mr_chooser_route_desc;
-			global::BottomBar.Droid.Resource.Id.mr_chooser_route_icon = global::NRGScoutingApp.Droid.Resource.Id.mr_chooser_route_icon;
-			global::BottomBar.Droid.Resource.Id.mr_chooser_route_name = global::NRGScoutingApp.Droid.Resource.Id.mr_chooser_route_name;
-			global::BottomBar.Droid.Resource.Id.mr_close = global::NRGScoutingApp.Droid.Resource.Id.mr_close;
-			global::BottomBar.Droid.Resource.Id.mr_control_divider = global::NRGScoutingApp.Droid.Resource.Id.mr_control_divider;
-			global::BottomBar.Droid.Resource.Id.mr_control_subtitle = global::NRGScoutingApp.Droid.Resource.Id.mr_control_subtitle;
-			global::BottomBar.Droid.Resource.Id.mr_control_title = global::NRGScoutingApp.Droid.Resource.Id.mr_control_title;
-			global::BottomBar.Droid.Resource.Id.mr_control_title_container = global::NRGScoutingApp.Droid.Resource.Id.mr_control_title_container;
-			global::BottomBar.Droid.Resource.Id.mr_custom_control = global::NRGScoutingApp.Droid.Resource.Id.mr_custom_control;
-			global::BottomBar.Droid.Resource.Id.mr_default_control = global::NRGScoutingApp.Droid.Resource.Id.mr_default_control;
-			global::BottomBar.Droid.Resource.Id.mr_dialog_area = global::NRGScoutingApp.Droid.Resource.Id.mr_dialog_area;
-			global::BottomBar.Droid.Resource.Id.mr_expandable_area = global::NRGScoutingApp.Droid.Resource.Id.mr_expandable_area;
-			global::BottomBar.Droid.Resource.Id.mr_group_expand_collapse = global::NRGScoutingApp.Droid.Resource.Id.mr_group_expand_collapse;
-			global::BottomBar.Droid.Resource.Id.mr_media_main_control = global::NRGScoutingApp.Droid.Resource.Id.mr_media_main_control;
-			global::BottomBar.Droid.Resource.Id.mr_name = global::NRGScoutingApp.Droid.Resource.Id.mr_name;
-			global::BottomBar.Droid.Resource.Id.mr_playback_control = global::NRGScoutingApp.Droid.Resource.Id.mr_playback_control;
-			global::BottomBar.Droid.Resource.Id.mr_title_bar = global::NRGScoutingApp.Droid.Resource.Id.mr_title_bar;
-			global::BottomBar.Droid.Resource.Id.mr_volume_control = global::NRGScoutingApp.Droid.Resource.Id.mr_volume_control;
-			global::BottomBar.Droid.Resource.Id.mr_volume_group_list = global::NRGScoutingApp.Droid.Resource.Id.mr_volume_group_list;
-			global::BottomBar.Droid.Resource.Id.mr_volume_item_icon = global::NRGScoutingApp.Droid.Resource.Id.mr_volume_item_icon;
-			global::BottomBar.Droid.Resource.Id.mr_volume_slider = global::NRGScoutingApp.Droid.Resource.Id.mr_volume_slider;
-			global::BottomBar.Droid.Resource.Id.multiply = global::NRGScoutingApp.Droid.Resource.Id.multiply;
-			global::BottomBar.Droid.Resource.Id.navigation_header_container = global::NRGScoutingApp.Droid.Resource.Id.navigation_header_container;
-			global::BottomBar.Droid.Resource.Id.never = global::NRGScoutingApp.Droid.Resource.Id.never;
-			global::BottomBar.Droid.Resource.Id.none = global::NRGScoutingApp.Droid.Resource.Id.none;
-			global::BottomBar.Droid.Resource.Id.normal = global::NRGScoutingApp.Droid.Resource.Id.normal;
-			global::BottomBar.Droid.Resource.Id.parallax = global::NRGScoutingApp.Droid.Resource.Id.parallax;
-			global::BottomBar.Droid.Resource.Id.parentPanel = global::NRGScoutingApp.Droid.Resource.Id.parentPanel;
-			global::BottomBar.Droid.Resource.Id.pin = global::NRGScoutingApp.Droid.Resource.Id.pin;
-			global::BottomBar.Droid.Resource.Id.progress_circular = global::NRGScoutingApp.Droid.Resource.Id.progress_circular;
-			global::BottomBar.Droid.Resource.Id.progress_horizontal = global::NRGScoutingApp.Droid.Resource.Id.progress_horizontal;
-			global::BottomBar.Droid.Resource.Id.radio = global::NRGScoutingApp.Droid.Resource.Id.radio;
-			global::BottomBar.Droid.Resource.Id.right = global::NRGScoutingApp.Droid.Resource.Id.right;
-			global::BottomBar.Droid.Resource.Id.screen = global::NRGScoutingApp.Droid.Resource.Id.screen;
-			global::BottomBar.Droid.Resource.Id.scroll = global::NRGScoutingApp.Droid.Resource.Id.scroll;
-			global::BottomBar.Droid.Resource.Id.scrollIndicatorDown = global::NRGScoutingApp.Droid.Resource.Id.scrollIndicatorDown;
-			global::BottomBar.Droid.Resource.Id.scrollIndicatorUp = global::NRGScoutingApp.Droid.Resource.Id.scrollIndicatorUp;
-			global::BottomBar.Droid.Resource.Id.scrollView = global::NRGScoutingApp.Droid.Resource.Id.scrollView;
-			global::BottomBar.Droid.Resource.Id.scrollable = global::NRGScoutingApp.Droid.Resource.Id.scrollable;
-			global::BottomBar.Droid.Resource.Id.search_badge = global::NRGScoutingApp.Droid.Resource.Id.search_badge;
-			global::BottomBar.Droid.Resource.Id.search_bar = global::NRGScoutingApp.Droid.Resource.Id.search_bar;
-			global::BottomBar.Droid.Resource.Id.search_button = global::NRGScoutingApp.Droid.Resource.Id.search_button;
-			global::BottomBar.Droid.Resource.Id.search_close_btn = global::NRGScoutingApp.Droid.Resource.Id.search_close_btn;
-			global::BottomBar.Droid.Resource.Id.search_edit_frame = global::NRGScoutingApp.Droid.Resource.Id.search_edit_frame;
-			global::BottomBar.Droid.Resource.Id.search_go_btn = global::NRGScoutingApp.Droid.Resource.Id.search_go_btn;
-			global::BottomBar.Droid.Resource.Id.search_mag_icon = global::NRGScoutingApp.Droid.Resource.Id.search_mag_icon;
-			global::BottomBar.Droid.Resource.Id.search_plate = global::NRGScoutingApp.Droid.Resource.Id.search_plate;
-			global::BottomBar.Droid.Resource.Id.search_src_text = global::NRGScoutingApp.Droid.Resource.Id.search_src_text;
-			global::BottomBar.Droid.Resource.Id.search_voice_btn = global::NRGScoutingApp.Droid.Resource.Id.search_voice_btn;
-			global::BottomBar.Droid.Resource.Id.select_dialog_listview = global::NRGScoutingApp.Droid.Resource.Id.select_dialog_listview;
-			global::BottomBar.Droid.Resource.Id.shortcut = global::NRGScoutingApp.Droid.Resource.Id.shortcut;
-			global::BottomBar.Droid.Resource.Id.showCustom = global::NRGScoutingApp.Droid.Resource.Id.showCustom;
-			global::BottomBar.Droid.Resource.Id.showHome = global::NRGScoutingApp.Droid.Resource.Id.showHome;
-			global::BottomBar.Droid.Resource.Id.showTitle = global::NRGScoutingApp.Droid.Resource.Id.showTitle;
-			global::BottomBar.Droid.Resource.Id.snackbar_action = global::NRGScoutingApp.Droid.Resource.Id.snackbar_action;
-			global::BottomBar.Droid.Resource.Id.snackbar_text = global::NRGScoutingApp.Droid.Resource.Id.snackbar_text;
-			global::BottomBar.Droid.Resource.Id.snap = global::NRGScoutingApp.Droid.Resource.Id.snap;
-			global::BottomBar.Droid.Resource.Id.spacer = global::NRGScoutingApp.Droid.Resource.Id.spacer;
-			global::BottomBar.Droid.Resource.Id.split_action_bar = global::NRGScoutingApp.Droid.Resource.Id.split_action_bar;
-			global::BottomBar.Droid.Resource.Id.src_atop = global::NRGScoutingApp.Droid.Resource.Id.src_atop;
-			global::BottomBar.Droid.Resource.Id.src_in = global::NRGScoutingApp.Droid.Resource.Id.src_in;
-			global::BottomBar.Droid.Resource.Id.src_over = global::NRGScoutingApp.Droid.Resource.Id.src_over;
-			global::BottomBar.Droid.Resource.Id.start = global::NRGScoutingApp.Droid.Resource.Id.start;
-			global::BottomBar.Droid.Resource.Id.status_bar_latest_event_content = global::NRGScoutingApp.Droid.Resource.Id.status_bar_latest_event_content;
-			global::BottomBar.Droid.Resource.Id.submit_area = global::NRGScoutingApp.Droid.Resource.Id.submit_area;
-			global::BottomBar.Droid.Resource.Id.tabMode = global::NRGScoutingApp.Droid.Resource.Id.tabMode;
-			global::BottomBar.Droid.Resource.Id.text = global::NRGScoutingApp.Droid.Resource.Id.text;
-			global::BottomBar.Droid.Resource.Id.text2 = global::NRGScoutingApp.Droid.Resource.Id.text2;
-			global::BottomBar.Droid.Resource.Id.textSpacerNoButtons = global::NRGScoutingApp.Droid.Resource.Id.textSpacerNoButtons;
-			global::BottomBar.Droid.Resource.Id.time = global::NRGScoutingApp.Droid.Resource.Id.time;
-			global::BottomBar.Droid.Resource.Id.title = global::NRGScoutingApp.Droid.Resource.Id.title;
-			global::BottomBar.Droid.Resource.Id.title_template = global::NRGScoutingApp.Droid.Resource.Id.title_template;
-			global::BottomBar.Droid.Resource.Id.top = global::NRGScoutingApp.Droid.Resource.Id.top;
-			global::BottomBar.Droid.Resource.Id.topPanel = global::NRGScoutingApp.Droid.Resource.Id.topPanel;
-			global::BottomBar.Droid.Resource.Id.touch_outside = global::NRGScoutingApp.Droid.Resource.Id.touch_outside;
-			global::BottomBar.Droid.Resource.Id.up = global::NRGScoutingApp.Droid.Resource.Id.up;
-			global::BottomBar.Droid.Resource.Id.useLogo = global::NRGScoutingApp.Droid.Resource.Id.useLogo;
-			global::BottomBar.Droid.Resource.Id.view_offset_helper = global::NRGScoutingApp.Droid.Resource.Id.view_offset_helper;
-			global::BottomBar.Droid.Resource.Id.volume_item_container = global::NRGScoutingApp.Droid.Resource.Id.volume_item_container;
-			global::BottomBar.Droid.Resource.Id.withText = global::NRGScoutingApp.Droid.Resource.Id.withText;
-			global::BottomBar.Droid.Resource.Id.wrap_content = global::NRGScoutingApp.Droid.Resource.Id.wrap_content;
-			global::BottomBar.Droid.Resource.Integer.abc_config_activityDefaultDur = global::NRGScoutingApp.Droid.Resource.Integer.abc_config_activityDefaultDur;
-			global::BottomBar.Droid.Resource.Integer.abc_config_activityShortDur = global::NRGScoutingApp.Droid.Resource.Integer.abc_config_activityShortDur;
-			global::BottomBar.Droid.Resource.Integer.bottom_sheet_slide_duration = global::NRGScoutingApp.Droid.Resource.Integer.bottom_sheet_slide_duration;
-			global::BottomBar.Droid.Resource.Integer.cancel_button_image_alpha = global::NRGScoutingApp.Droid.Resource.Integer.cancel_button_image_alpha;
-			global::BottomBar.Droid.Resource.Integer.design_snackbar_text_max_lines = global::NRGScoutingApp.Droid.Resource.Integer.design_snackbar_text_max_lines;
-			global::BottomBar.Droid.Resource.Integer.mr_controller_volume_group_list_animation_duration_ms = global::NRGScoutingApp.Droid.Resource.Integer.mr_controller_volume_group_list_animation_duration_ms;
-			global::BottomBar.Droid.Resource.Integer.mr_controller_volume_group_list_fade_in_duration_ms = global::NRGScoutingApp.Droid.Resource.Integer.mr_controller_volume_group_list_fade_in_duration_ms;
-			global::BottomBar.Droid.Resource.Integer.mr_controller_volume_group_list_fade_out_duration_ms = global::NRGScoutingApp.Droid.Resource.Integer.mr_controller_volume_group_list_fade_out_duration_ms;
-			global::BottomBar.Droid.Resource.Integer.status_bar_notification_info_maxnum = global::NRGScoutingApp.Droid.Resource.Integer.status_bar_notification_info_maxnum;
-			global::BottomBar.Droid.Resource.Interpolator.mr_fast_out_slow_in = global::NRGScoutingApp.Droid.Resource.Interpolator.mr_fast_out_slow_in;
-			global::BottomBar.Droid.Resource.Interpolator.mr_linear_out_slow_in = global::NRGScoutingApp.Droid.Resource.Interpolator.mr_linear_out_slow_in;
-			global::BottomBar.Droid.Resource.Layout.abc_action_bar_title_item = global::NRGScoutingApp.Droid.Resource.Layout.abc_action_bar_title_item;
-			global::BottomBar.Droid.Resource.Layout.abc_action_bar_up_container = global::NRGScoutingApp.Droid.Resource.Layout.abc_action_bar_up_container;
-			global::BottomBar.Droid.Resource.Layout.abc_action_menu_item_layout = global::NRGScoutingApp.Droid.Resource.Layout.abc_action_menu_item_layout;
-			global::BottomBar.Droid.Resource.Layout.abc_action_menu_layout = global::NRGScoutingApp.Droid.Resource.Layout.abc_action_menu_layout;
-			global::BottomBar.Droid.Resource.Layout.abc_action_mode_bar = global::NRGScoutingApp.Droid.Resource.Layout.abc_action_mode_bar;
-			global::BottomBar.Droid.Resource.Layout.abc_action_mode_close_item_material = global::NRGScoutingApp.Droid.Resource.Layout.abc_action_mode_close_item_material;
-			global::BottomBar.Droid.Resource.Layout.abc_activity_chooser_view = global::NRGScoutingApp.Droid.Resource.Layout.abc_activity_chooser_view;
-			global::BottomBar.Droid.Resource.Layout.abc_activity_chooser_view_list_item = global::NRGScoutingApp.Droid.Resource.Layout.abc_activity_chooser_view_list_item;
-			global::BottomBar.Droid.Resource.Layout.abc_alert_dialog_button_bar_material = global::NRGScoutingApp.Droid.Resource.Layout.abc_alert_dialog_button_bar_material;
-			global::BottomBar.Droid.Resource.Layout.abc_alert_dialog_material = global::NRGScoutingApp.Droid.Resource.Layout.abc_alert_dialog_material;
-			global::BottomBar.Droid.Resource.Layout.abc_dialog_title_material = global::NRGScoutingApp.Droid.Resource.Layout.abc_dialog_title_material;
-			global::BottomBar.Droid.Resource.Layout.abc_expanded_menu_layout = global::NRGScoutingApp.Droid.Resource.Layout.abc_expanded_menu_layout;
-			global::BottomBar.Droid.Resource.Layout.abc_list_menu_item_checkbox = global::NRGScoutingApp.Droid.Resource.Layout.abc_list_menu_item_checkbox;
-			global::BottomBar.Droid.Resource.Layout.abc_list_menu_item_icon = global::NRGScoutingApp.Droid.Resource.Layout.abc_list_menu_item_icon;
-			global::BottomBar.Droid.Resource.Layout.abc_list_menu_item_layout = global::NRGScoutingApp.Droid.Resource.Layout.abc_list_menu_item_layout;
-			global::BottomBar.Droid.Resource.Layout.abc_list_menu_item_radio = global::NRGScoutingApp.Droid.Resource.Layout.abc_list_menu_item_radio;
-			global::BottomBar.Droid.Resource.Layout.abc_popup_menu_item_layout = global::NRGScoutingApp.Droid.Resource.Layout.abc_popup_menu_item_layout;
-			global::BottomBar.Droid.Resource.Layout.abc_screen_content_include = global::NRGScoutingApp.Droid.Resource.Layout.abc_screen_content_include;
-			global::BottomBar.Droid.Resource.Layout.abc_screen_simple = global::NRGScoutingApp.Droid.Resource.Layout.abc_screen_simple;
-			global::BottomBar.Droid.Resource.Layout.abc_screen_simple_overlay_action_mode = global::NRGScoutingApp.Droid.Resource.Layout.abc_screen_simple_overlay_action_mode;
-			global::BottomBar.Droid.Resource.Layout.abc_screen_toolbar = global::NRGScoutingApp.Droid.Resource.Layout.abc_screen_toolbar;
-			global::BottomBar.Droid.Resource.Layout.abc_search_dropdown_item_icons_2line = global::NRGScoutingApp.Droid.Resource.Layout.abc_search_dropdown_item_icons_2line;
-			global::BottomBar.Droid.Resource.Layout.abc_search_view = global::NRGScoutingApp.Droid.Resource.Layout.abc_search_view;
-			global::BottomBar.Droid.Resource.Layout.abc_select_dialog_material = global::NRGScoutingApp.Droid.Resource.Layout.abc_select_dialog_material;
-			global::BottomBar.Droid.Resource.Layout.bb_bottom_bar_item_container = global::NRGScoutingApp.Droid.Resource.Layout.bb_bottom_bar_item_container;
-			global::BottomBar.Droid.Resource.Layout.bb_bottom_bar_item_container_tablet = global::NRGScoutingApp.Droid.Resource.Layout.bb_bottom_bar_item_container_tablet;
-			global::BottomBar.Droid.Resource.Layout.bb_bottom_bar_item_fixed = global::NRGScoutingApp.Droid.Resource.Layout.bb_bottom_bar_item_fixed;
-			global::BottomBar.Droid.Resource.Layout.bb_bottom_bar_item_fixed_tablet = global::NRGScoutingApp.Droid.Resource.Layout.bb_bottom_bar_item_fixed_tablet;
-			global::BottomBar.Droid.Resource.Layout.bb_bottom_bar_item_shifting = global::NRGScoutingApp.Droid.Resource.Layout.bb_bottom_bar_item_shifting;
-			global::BottomBar.Droid.Resource.Layout.design_bottom_sheet_dialog = global::NRGScoutingApp.Droid.Resource.Layout.design_bottom_sheet_dialog;
-			global::BottomBar.Droid.Resource.Layout.design_layout_snackbar = global::NRGScoutingApp.Droid.Resource.Layout.design_layout_snackbar;
-			global::BottomBar.Droid.Resource.Layout.design_layout_snackbar_include = global::NRGScoutingApp.Droid.Resource.Layout.design_layout_snackbar_include;
-			global::BottomBar.Droid.Resource.Layout.design_layout_tab_icon = global::NRGScoutingApp.Droid.Resource.Layout.design_layout_tab_icon;
-			global::BottomBar.Droid.Resource.Layout.design_layout_tab_text = global::NRGScoutingApp.Droid.Resource.Layout.design_layout_tab_text;
-			global::BottomBar.Droid.Resource.Layout.design_menu_item_action_area = global::NRGScoutingApp.Droid.Resource.Layout.design_menu_item_action_area;
-			global::BottomBar.Droid.Resource.Layout.design_navigation_item = global::NRGScoutingApp.Droid.Resource.Layout.design_navigation_item;
-			global::BottomBar.Droid.Resource.Layout.design_navigation_item_header = global::NRGScoutingApp.Droid.Resource.Layout.design_navigation_item_header;
-			global::BottomBar.Droid.Resource.Layout.design_navigation_item_separator = global::NRGScoutingApp.Droid.Resource.Layout.design_navigation_item_separator;
-			global::BottomBar.Droid.Resource.Layout.design_navigation_item_subheader = global::NRGScoutingApp.Droid.Resource.Layout.design_navigation_item_subheader;
-			global::BottomBar.Droid.Resource.Layout.design_navigation_menu = global::NRGScoutingApp.Droid.Resource.Layout.design_navigation_menu;
-			global::BottomBar.Droid.Resource.Layout.design_navigation_menu_item = global::NRGScoutingApp.Droid.Resource.Layout.design_navigation_menu_item;
-			global::BottomBar.Droid.Resource.Layout.mr_chooser_dialog = global::NRGScoutingApp.Droid.Resource.Layout.mr_chooser_dialog;
-			global::BottomBar.Droid.Resource.Layout.mr_chooser_list_item = global::NRGScoutingApp.Droid.Resource.Layout.mr_chooser_list_item;
-			global::BottomBar.Droid.Resource.Layout.mr_controller_material_dialog_b = global::NRGScoutingApp.Droid.Resource.Layout.mr_controller_material_dialog_b;
-			global::BottomBar.Droid.Resource.Layout.mr_controller_volume_item = global::NRGScoutingApp.Droid.Resource.Layout.mr_controller_volume_item;
-			global::BottomBar.Droid.Resource.Layout.mr_playback_control = global::NRGScoutingApp.Droid.Resource.Layout.mr_playback_control;
-			global::BottomBar.Droid.Resource.Layout.mr_volume_control = global::NRGScoutingApp.Droid.Resource.Layout.mr_volume_control;
-			global::BottomBar.Droid.Resource.Layout.notification_media_action = global::NRGScoutingApp.Droid.Resource.Layout.notification_media_action;
-			global::BottomBar.Droid.Resource.Layout.notification_media_cancel_action = global::NRGScoutingApp.Droid.Resource.Layout.notification_media_cancel_action;
-			global::BottomBar.Droid.Resource.Layout.notification_template_big_media = global::NRGScoutingApp.Droid.Resource.Layout.notification_template_big_media;
-			global::BottomBar.Droid.Resource.Layout.notification_template_big_media_narrow = global::NRGScoutingApp.Droid.Resource.Layout.notification_template_big_media_narrow;
-			global::BottomBar.Droid.Resource.Layout.notification_template_media = global::NRGScoutingApp.Droid.Resource.Layout.notification_template_media;
-			global::BottomBar.Droid.Resource.Layout.notification_template_part_chronometer = global::NRGScoutingApp.Droid.Resource.Layout.notification_template_part_chronometer;
-			global::BottomBar.Droid.Resource.Layout.notification_template_part_time = global::NRGScoutingApp.Droid.Resource.Layout.notification_template_part_time;
-			global::BottomBar.Droid.Resource.Layout.select_dialog_item_material = global::NRGScoutingApp.Droid.Resource.Layout.select_dialog_item_material;
-			global::BottomBar.Droid.Resource.Layout.select_dialog_multichoice_material = global::NRGScoutingApp.Droid.Resource.Layout.select_dialog_multichoice_material;
-			global::BottomBar.Droid.Resource.Layout.select_dialog_singlechoice_material = global::NRGScoutingApp.Droid.Resource.Layout.select_dialog_singlechoice_material;
-			global::BottomBar.Droid.Resource.Layout.support_simple_spinner_dropdown_item = global::NRGScoutingApp.Droid.Resource.Layout.support_simple_spinner_dropdown_item;
-			global::BottomBar.Droid.Resource.String.abc_action_bar_home_description = global::NRGScoutingApp.Droid.Resource.String.abc_action_bar_home_description;
-			global::BottomBar.Droid.Resource.String.abc_action_bar_up_description = global::NRGScoutingApp.Droid.Resource.String.abc_action_bar_up_description;
-			global::BottomBar.Droid.Resource.String.abc_action_menu_overflow_description = global::NRGScoutingApp.Droid.Resource.String.abc_action_menu_overflow_description;
-			global::BottomBar.Droid.Resource.String.abc_action_mode_done = global::NRGScoutingApp.Droid.Resource.String.abc_action_mode_done;
-			global::BottomBar.Droid.Resource.String.abc_activity_chooser_view_see_all = global::NRGScoutingApp.Droid.Resource.String.abc_activity_chooser_view_see_all;
-			global::BottomBar.Droid.Resource.String.abc_activitychooserview_choose_application = global::NRGScoutingApp.Droid.Resource.String.abc_activitychooserview_choose_application;
-			global::BottomBar.Droid.Resource.String.abc_capital_off = global::NRGScoutingApp.Droid.Resource.String.abc_capital_off;
-			global::BottomBar.Droid.Resource.String.abc_capital_on = global::NRGScoutingApp.Droid.Resource.String.abc_capital_on;
-			global::BottomBar.Droid.Resource.String.abc_search_hint = global::NRGScoutingApp.Droid.Resource.String.abc_search_hint;
-			global::BottomBar.Droid.Resource.String.abc_searchview_description_clear = global::NRGScoutingApp.Droid.Resource.String.abc_searchview_description_clear;
-			global::BottomBar.Droid.Resource.String.abc_searchview_description_query = global::NRGScoutingApp.Droid.Resource.String.abc_searchview_description_query;
-			global::BottomBar.Droid.Resource.String.abc_searchview_description_search = global::NRGScoutingApp.Droid.Resource.String.abc_searchview_description_search;
-			global::BottomBar.Droid.Resource.String.abc_searchview_description_submit = global::NRGScoutingApp.Droid.Resource.String.abc_searchview_description_submit;
-			global::BottomBar.Droid.Resource.String.abc_searchview_description_voice = global::NRGScoutingApp.Droid.Resource.String.abc_searchview_description_voice;
-			global::BottomBar.Droid.Resource.String.abc_shareactionprovider_share_with = global::NRGScoutingApp.Droid.Resource.String.abc_shareactionprovider_share_with;
-			global::BottomBar.Droid.Resource.String.abc_shareactionprovider_share_with_application = global::NRGScoutingApp.Droid.Resource.String.abc_shareactionprovider_share_with_application;
-			global::BottomBar.Droid.Resource.String.abc_toolbar_collapse_description = global::NRGScoutingApp.Droid.Resource.String.abc_toolbar_collapse_description;
-			global::BottomBar.Droid.Resource.String.app_name = global::NRGScoutingApp.Droid.Resource.String.app_name;
-			global::BottomBar.Droid.Resource.String.appbar_scrolling_view_behavior = global::NRGScoutingApp.Droid.Resource.String.appbar_scrolling_view_behavior;
-			global::BottomBar.Droid.Resource.String.bottom_sheet_behavior = global::NRGScoutingApp.Droid.Resource.String.bottom_sheet_behavior;
-			global::BottomBar.Droid.Resource.String.character_counter_pattern = global::NRGScoutingApp.Droid.Resource.String.character_counter_pattern;
-			global::BottomBar.Droid.Resource.String.library_name = global::NRGScoutingApp.Droid.Resource.String.library_name;
-			global::BottomBar.Droid.Resource.String.mr_button_content_description = global::NRGScoutingApp.Droid.Resource.String.mr_button_content_description;
-			global::BottomBar.Droid.Resource.String.mr_chooser_searching = global::NRGScoutingApp.Droid.Resource.String.mr_chooser_searching;
-			global::BottomBar.Droid.Resource.String.mr_chooser_title = global::NRGScoutingApp.Droid.Resource.String.mr_chooser_title;
-			global::BottomBar.Droid.Resource.String.mr_controller_casting_screen = global::NRGScoutingApp.Droid.Resource.String.mr_controller_casting_screen;
-			global::BottomBar.Droid.Resource.String.mr_controller_close_description = global::NRGScoutingApp.Droid.Resource.String.mr_controller_close_description;
-			global::BottomBar.Droid.Resource.String.mr_controller_collapse_group = global::NRGScoutingApp.Droid.Resource.String.mr_controller_collapse_group;
-			global::BottomBar.Droid.Resource.String.mr_controller_disconnect = global::NRGScoutingApp.Droid.Resource.String.mr_controller_disconnect;
-			global::BottomBar.Droid.Resource.String.mr_controller_expand_group = global::NRGScoutingApp.Droid.Resource.String.mr_controller_expand_group;
-			global::BottomBar.Droid.Resource.String.mr_controller_no_info_available = global::NRGScoutingApp.Droid.Resource.String.mr_controller_no_info_available;
-			global::BottomBar.Droid.Resource.String.mr_controller_no_media_selected = global::NRGScoutingApp.Droid.Resource.String.mr_controller_no_media_selected;
-			global::BottomBar.Droid.Resource.String.mr_controller_pause = global::NRGScoutingApp.Droid.Resource.String.mr_controller_pause;
-			global::BottomBar.Droid.Resource.String.mr_controller_play = global::NRGScoutingApp.Droid.Resource.String.mr_controller_play;
-			global::BottomBar.Droid.Resource.String.mr_controller_stop = global::NRGScoutingApp.Droid.Resource.String.mr_controller_stop;
-			global::BottomBar.Droid.Resource.String.mr_system_route_name = global::NRGScoutingApp.Droid.Resource.String.mr_system_route_name;
-			global::BottomBar.Droid.Resource.String.mr_user_route_category_name = global::NRGScoutingApp.Droid.Resource.String.mr_user_route_category_name;
-			global::BottomBar.Droid.Resource.String.status_bar_notification_info_overflow = global::NRGScoutingApp.Droid.Resource.String.status_bar_notification_info_overflow;
-			global::BottomBar.Droid.Resource.Style.AlertDialog_AppCompat = global::NRGScoutingApp.Droid.Resource.Style.AlertDialog_AppCompat;
-			global::BottomBar.Droid.Resource.Style.AlertDialog_AppCompat_Light = global::NRGScoutingApp.Droid.Resource.Style.AlertDialog_AppCompat_Light;
-			global::BottomBar.Droid.Resource.Style.Animation_AppCompat_Dialog = global::NRGScoutingApp.Droid.Resource.Style.Animation_AppCompat_Dialog;
-			global::BottomBar.Droid.Resource.Style.Animation_AppCompat_DropDownUp = global::NRGScoutingApp.Droid.Resource.Style.Animation_AppCompat_DropDownUp;
-			global::BottomBar.Droid.Resource.Style.Animation_Design_BottomSheetDialog = global::NRGScoutingApp.Droid.Resource.Style.Animation_Design_BottomSheetDialog;
-			global::BottomBar.Droid.Resource.Style.BB_BottomBarBadge_Text = global::NRGScoutingApp.Droid.Resource.Style.BB_BottomBarBadge_Text;
-			global::BottomBar.Droid.Resource.Style.BB_BottomBarItem = global::NRGScoutingApp.Droid.Resource.Style.BB_BottomBarItem;
-			global::BottomBar.Droid.Resource.Style.BB_BottomBarItem_Fixed = global::NRGScoutingApp.Droid.Resource.Style.BB_BottomBarItem_Fixed;
-			global::BottomBar.Droid.Resource.Style.BB_BottomBarItem_Fixed_TitleAppearance = global::NRGScoutingApp.Droid.Resource.Style.BB_BottomBarItem_Fixed_TitleAppearance;
-			global::BottomBar.Droid.Resource.Style.BB_BottomBarItem_Shifting = global::NRGScoutingApp.Droid.Resource.Style.BB_BottomBarItem_Shifting;
-			global::BottomBar.Droid.Resource.Style.BB_BottomBarItem_Shifting_TitleAppearance = global::NRGScoutingApp.Droid.Resource.Style.BB_BottomBarItem_Shifting_TitleAppearance;
-			global::BottomBar.Droid.Resource.Style.BB_BottomBarItem_Tablet = global::NRGScoutingApp.Droid.Resource.Style.BB_BottomBarItem_Tablet;
-			global::BottomBar.Droid.Resource.Style.BB_BottomBarItem_TitleStyle = global::NRGScoutingApp.Droid.Resource.Style.BB_BottomBarItem_TitleStyle;
-			global::BottomBar.Droid.Resource.Style.Base_AlertDialog_AppCompat = global::NRGScoutingApp.Droid.Resource.Style.Base_AlertDialog_AppCompat;
-			global::BottomBar.Droid.Resource.Style.Base_AlertDialog_AppCompat_Light = global::NRGScoutingApp.Droid.Resource.Style.Base_AlertDialog_AppCompat_Light;
-			global::BottomBar.Droid.Resource.Style.Base_Animation_AppCompat_Dialog = global::NRGScoutingApp.Droid.Resource.Style.Base_Animation_AppCompat_Dialog;
-			global::BottomBar.Droid.Resource.Style.Base_Animation_AppCompat_DropDownUp = global::NRGScoutingApp.Droid.Resource.Style.Base_Animation_AppCompat_DropDownUp;
-			global::BottomBar.Droid.Resource.Style.Base_CardView = global::NRGScoutingApp.Droid.Resource.Style.Base_CardView;
-			global::BottomBar.Droid.Resource.Style.Base_DialogWindowTitle_AppCompat = global::NRGScoutingApp.Droid.Resource.Style.Base_DialogWindowTitle_AppCompat;
-			global::BottomBar.Droid.Resource.Style.Base_DialogWindowTitleBackground_AppCompat = global::NRGScoutingApp.Droid.Resource.Style.Base_DialogWindowTitleBackground_AppCompat;
-			global::BottomBar.Droid.Resource.Style.Base_TextAppearance_AppCompat = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat;
-			global::BottomBar.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body1 = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body1;
-			global::BottomBar.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body2 = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body2;
-			global::BottomBar.Droid.Resource.Style.Base_TextAppearance_AppCompat_Button = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Button;
-			global::BottomBar.Droid.Resource.Style.Base_TextAppearance_AppCompat_Caption = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Caption;
-			global::BottomBar.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display1 = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display1;
-			global::BottomBar.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display2 = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display2;
-			global::BottomBar.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display3 = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display3;
-			global::BottomBar.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display4 = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display4;
-			global::BottomBar.Droid.Resource.Style.Base_TextAppearance_AppCompat_Headline = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Headline;
-			global::BottomBar.Droid.Resource.Style.Base_TextAppearance_AppCompat_Inverse = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Inverse;
-			global::BottomBar.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large;
-			global::BottomBar.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse;
-			global::BottomBar.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
-			global::BottomBar.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
-			global::BottomBar.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium;
-			global::BottomBar.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse;
-			global::BottomBar.Droid.Resource.Style.Base_TextAppearance_AppCompat_Menu = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Menu;
-			global::BottomBar.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult;
-			global::BottomBar.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle;
-			global::BottomBar.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title;
-			global::BottomBar.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small;
-			global::BottomBar.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse;
-			global::BottomBar.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead;
-			global::BottomBar.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse;
-			global::BottomBar.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title;
-			global::BottomBar.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse;
-			global::BottomBar.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu;
-			global::BottomBar.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
-			global::BottomBar.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
-			global::BottomBar.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title;
-			global::BottomBar.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
-			global::BottomBar.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
-			global::BottomBar.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title;
-			global::BottomBar.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button;
-			global::BottomBar.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse;
-			global::BottomBar.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem;
-			global::BottomBar.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large;
-			global::BottomBar.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small;
-			global::BottomBar.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch;
-			global::BottomBar.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
-			global::BottomBar.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
-			global::BottomBar.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
-			global::BottomBar.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title;
-			global::BottomBar.Droid.Resource.Style.Base_Theme_AppCompat = global::NRGScoutingApp.Droid.Resource.Style.Base_Theme_AppCompat;
-			global::BottomBar.Droid.Resource.Style.Base_Theme_AppCompat_CompactMenu = global::NRGScoutingApp.Droid.Resource.Style.Base_Theme_AppCompat_CompactMenu;
-			global::BottomBar.Droid.Resource.Style.Base_Theme_AppCompat_Dialog = global::NRGScoutingApp.Droid.Resource.Style.Base_Theme_AppCompat_Dialog;
-			global::BottomBar.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_Alert = global::NRGScoutingApp.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_Alert;
-			global::BottomBar.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize = global::NRGScoutingApp.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize;
-			global::BottomBar.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth = global::NRGScoutingApp.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth;
-			global::BottomBar.Droid.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge = global::NRGScoutingApp.Droid.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge;
-			global::BottomBar.Droid.Resource.Style.Base_Theme_AppCompat_Light = global::NRGScoutingApp.Droid.Resource.Style.Base_Theme_AppCompat_Light;
-			global::BottomBar.Droid.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar = global::NRGScoutingApp.Droid.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar;
-			global::BottomBar.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog = global::NRGScoutingApp.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog;
-			global::BottomBar.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert = global::NRGScoutingApp.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert;
-			global::BottomBar.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize = global::NRGScoutingApp.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize;
-			global::BottomBar.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth = global::NRGScoutingApp.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth;
-			global::BottomBar.Droid.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge = global::NRGScoutingApp.Droid.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge;
-			global::BottomBar.Droid.Resource.Style.Base_ThemeOverlay_AppCompat = global::NRGScoutingApp.Droid.Resource.Style.Base_ThemeOverlay_AppCompat;
-			global::BottomBar.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar = global::NRGScoutingApp.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar;
-			global::BottomBar.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark = global::NRGScoutingApp.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark;
-			global::BottomBar.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar = global::NRGScoutingApp.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar;
-			global::BottomBar.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Light = global::NRGScoutingApp.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Light;
-			global::BottomBar.Droid.Resource.Style.Base_V11_Theme_AppCompat_Dialog = global::NRGScoutingApp.Droid.Resource.Style.Base_V11_Theme_AppCompat_Dialog;
-			global::BottomBar.Droid.Resource.Style.Base_V11_Theme_AppCompat_Light_Dialog = global::NRGScoutingApp.Droid.Resource.Style.Base_V11_Theme_AppCompat_Light_Dialog;
-			global::BottomBar.Droid.Resource.Style.Base_V12_Widget_AppCompat_AutoCompleteTextView = global::NRGScoutingApp.Droid.Resource.Style.Base_V12_Widget_AppCompat_AutoCompleteTextView;
-			global::BottomBar.Droid.Resource.Style.Base_V12_Widget_AppCompat_EditText = global::NRGScoutingApp.Droid.Resource.Style.Base_V12_Widget_AppCompat_EditText;
-			global::BottomBar.Droid.Resource.Style.Base_V21_Theme_AppCompat = global::NRGScoutingApp.Droid.Resource.Style.Base_V21_Theme_AppCompat;
-			global::BottomBar.Droid.Resource.Style.Base_V21_Theme_AppCompat_Dialog = global::NRGScoutingApp.Droid.Resource.Style.Base_V21_Theme_AppCompat_Dialog;
-			global::BottomBar.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light = global::NRGScoutingApp.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light;
-			global::BottomBar.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog = global::NRGScoutingApp.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog;
-			global::BottomBar.Droid.Resource.Style.Base_V22_Theme_AppCompat = global::NRGScoutingApp.Droid.Resource.Style.Base_V22_Theme_AppCompat;
-			global::BottomBar.Droid.Resource.Style.Base_V22_Theme_AppCompat_Light = global::NRGScoutingApp.Droid.Resource.Style.Base_V22_Theme_AppCompat_Light;
-			global::BottomBar.Droid.Resource.Style.Base_V23_Theme_AppCompat = global::NRGScoutingApp.Droid.Resource.Style.Base_V23_Theme_AppCompat;
-			global::BottomBar.Droid.Resource.Style.Base_V23_Theme_AppCompat_Light = global::NRGScoutingApp.Droid.Resource.Style.Base_V23_Theme_AppCompat_Light;
-			global::BottomBar.Droid.Resource.Style.Base_V7_Theme_AppCompat = global::NRGScoutingApp.Droid.Resource.Style.Base_V7_Theme_AppCompat;
-			global::BottomBar.Droid.Resource.Style.Base_V7_Theme_AppCompat_Dialog = global::NRGScoutingApp.Droid.Resource.Style.Base_V7_Theme_AppCompat_Dialog;
-			global::BottomBar.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light = global::NRGScoutingApp.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light;
-			global::BottomBar.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog = global::NRGScoutingApp.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog;
-			global::BottomBar.Droid.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView = global::NRGScoutingApp.Droid.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView;
-			global::BottomBar.Droid.Resource.Style.Base_V7_Widget_AppCompat_EditText = global::NRGScoutingApp.Droid.Resource.Style.Base_V7_Widget_AppCompat_EditText;
-			global::BottomBar.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar;
-			global::BottomBar.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid;
-			global::BottomBar.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar;
-			global::BottomBar.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText;
-			global::BottomBar.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView;
-			global::BottomBar.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton;
-			global::BottomBar.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode;
-			global::BottomBar.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow;
-			global::BottomBar.Droid.Resource.Style.Base_Widget_AppCompat_ActionMode = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_ActionMode;
-			global::BottomBar.Droid.Resource.Style.Base_Widget_AppCompat_ActivityChooserView = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_ActivityChooserView;
-			global::BottomBar.Droid.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView;
-			global::BottomBar.Droid.Resource.Style.Base_Widget_AppCompat_Button = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_Button;
-			global::BottomBar.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless;
-			global::BottomBar.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored;
-			global::BottomBar.Droid.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog;
-			global::BottomBar.Droid.Resource.Style.Base_Widget_AppCompat_Button_Colored = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_Button_Colored;
-			global::BottomBar.Droid.Resource.Style.Base_Widget_AppCompat_Button_Small = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_Button_Small;
-			global::BottomBar.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar;
-			global::BottomBar.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog;
-			global::BottomBar.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox;
-			global::BottomBar.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton;
-			global::BottomBar.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch;
-			global::BottomBar.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle;
-			global::BottomBar.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common;
-			global::BottomBar.Droid.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner;
-			global::BottomBar.Droid.Resource.Style.Base_Widget_AppCompat_EditText = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_EditText;
-			global::BottomBar.Droid.Resource.Style.Base_Widget_AppCompat_ImageButton = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_ImageButton;
-			global::BottomBar.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar;
-			global::BottomBar.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid;
-			global::BottomBar.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar;
-			global::BottomBar.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText;
-			global::BottomBar.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse;
-			global::BottomBar.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView;
-			global::BottomBar.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu;
-			global::BottomBar.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow;
-			global::BottomBar.Droid.Resource.Style.Base_Widget_AppCompat_ListPopupWindow = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_ListPopupWindow;
-			global::BottomBar.Droid.Resource.Style.Base_Widget_AppCompat_ListView = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_ListView;
-			global::BottomBar.Droid.Resource.Style.Base_Widget_AppCompat_ListView_DropDown = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_ListView_DropDown;
-			global::BottomBar.Droid.Resource.Style.Base_Widget_AppCompat_ListView_Menu = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_ListView_Menu;
-			global::BottomBar.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu;
-			global::BottomBar.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow;
-			global::BottomBar.Droid.Resource.Style.Base_Widget_AppCompat_PopupWindow = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_PopupWindow;
-			global::BottomBar.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar;
-			global::BottomBar.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal;
-			global::BottomBar.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar;
-			global::BottomBar.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator;
-			global::BottomBar.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Small = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Small;
-			global::BottomBar.Droid.Resource.Style.Base_Widget_AppCompat_SearchView = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_SearchView;
-			global::BottomBar.Droid.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar;
-			global::BottomBar.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar;
-			global::BottomBar.Droid.Resource.Style.Base_Widget_AppCompat_Spinner = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_Spinner;
-			global::BottomBar.Droid.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined;
-			global::BottomBar.Droid.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem;
-			global::BottomBar.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar;
-			global::BottomBar.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation;
-			global::BottomBar.Droid.Resource.Style.Base_Widget_Design_TabLayout = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_Design_TabLayout;
-			global::BottomBar.Droid.Resource.Style.CardView = global::NRGScoutingApp.Droid.Resource.Style.CardView;
-			global::BottomBar.Droid.Resource.Style.CardView_Dark = global::NRGScoutingApp.Droid.Resource.Style.CardView_Dark;
-			global::BottomBar.Droid.Resource.Style.CardView_Light = global::NRGScoutingApp.Droid.Resource.Style.CardView_Light;
-			global::BottomBar.Droid.Resource.Style.Platform_AppCompat = global::NRGScoutingApp.Droid.Resource.Style.Platform_AppCompat;
-			global::BottomBar.Droid.Resource.Style.Platform_AppCompat_Light = global::NRGScoutingApp.Droid.Resource.Style.Platform_AppCompat_Light;
-			global::BottomBar.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat = global::NRGScoutingApp.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat;
-			global::BottomBar.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark = global::NRGScoutingApp.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark;
-			global::BottomBar.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Light = global::NRGScoutingApp.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Light;
-			global::BottomBar.Droid.Resource.Style.Platform_V11_AppCompat = global::NRGScoutingApp.Droid.Resource.Style.Platform_V11_AppCompat;
-			global::BottomBar.Droid.Resource.Style.Platform_V11_AppCompat_Light = global::NRGScoutingApp.Droid.Resource.Style.Platform_V11_AppCompat_Light;
-			global::BottomBar.Droid.Resource.Style.Platform_V14_AppCompat = global::NRGScoutingApp.Droid.Resource.Style.Platform_V14_AppCompat;
-			global::BottomBar.Droid.Resource.Style.Platform_V14_AppCompat_Light = global::NRGScoutingApp.Droid.Resource.Style.Platform_V14_AppCompat_Light;
-			global::BottomBar.Droid.Resource.Style.Platform_Widget_AppCompat_Spinner = global::NRGScoutingApp.Droid.Resource.Style.Platform_Widget_AppCompat_Spinner;
-			global::BottomBar.Droid.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat = global::NRGScoutingApp.Droid.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat;
-			global::BottomBar.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem = global::NRGScoutingApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem;
-			global::BottomBar.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon = global::NRGScoutingApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon;
-			global::BottomBar.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem = global::NRGScoutingApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem;
-			global::BottomBar.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup = global::NRGScoutingApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup;
-			global::BottomBar.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text = global::NRGScoutingApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text;
-			global::BottomBar.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown = global::NRGScoutingApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown;
-			global::BottomBar.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1 = global::NRGScoutingApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1;
-			global::BottomBar.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2 = global::NRGScoutingApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2;
-			global::BottomBar.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query = global::NRGScoutingApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query;
-			global::BottomBar.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text = global::NRGScoutingApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text;
-			global::BottomBar.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon = global::NRGScoutingApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon;
-			global::BottomBar.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton = global::NRGScoutingApp.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton;
-			global::BottomBar.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow = global::NRGScoutingApp.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow;
-			global::BottomBar.Droid.Resource.Style.TextAppearance_AppCompat = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat;
-			global::BottomBar.Droid.Resource.Style.TextAppearance_AppCompat_Body1 = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Body1;
-			global::BottomBar.Droid.Resource.Style.TextAppearance_AppCompat_Body2 = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Body2;
-			global::BottomBar.Droid.Resource.Style.TextAppearance_AppCompat_Button = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Button;
-			global::BottomBar.Droid.Resource.Style.TextAppearance_AppCompat_Caption = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Caption;
-			global::BottomBar.Droid.Resource.Style.TextAppearance_AppCompat_Display1 = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Display1;
-			global::BottomBar.Droid.Resource.Style.TextAppearance_AppCompat_Display2 = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Display2;
-			global::BottomBar.Droid.Resource.Style.TextAppearance_AppCompat_Display3 = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Display3;
-			global::BottomBar.Droid.Resource.Style.TextAppearance_AppCompat_Display4 = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Display4;
-			global::BottomBar.Droid.Resource.Style.TextAppearance_AppCompat_Headline = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Headline;
-			global::BottomBar.Droid.Resource.Style.TextAppearance_AppCompat_Inverse = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Inverse;
-			global::BottomBar.Droid.Resource.Style.TextAppearance_AppCompat_Large = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Large;
-			global::BottomBar.Droid.Resource.Style.TextAppearance_AppCompat_Large_Inverse = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Large_Inverse;
-			global::BottomBar.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle;
-			global::BottomBar.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title;
-			global::BottomBar.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
-			global::BottomBar.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
-			global::BottomBar.Droid.Resource.Style.TextAppearance_AppCompat_Medium = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Medium;
-			global::BottomBar.Droid.Resource.Style.TextAppearance_AppCompat_Medium_Inverse = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Medium_Inverse;
-			global::BottomBar.Droid.Resource.Style.TextAppearance_AppCompat_Menu = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Menu;
-			global::BottomBar.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle;
-			global::BottomBar.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Title = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Title;
-			global::BottomBar.Droid.Resource.Style.TextAppearance_AppCompat_Small = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Small;
-			global::BottomBar.Droid.Resource.Style.TextAppearance_AppCompat_Small_Inverse = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Small_Inverse;
-			global::BottomBar.Droid.Resource.Style.TextAppearance_AppCompat_Subhead = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Subhead;
-			global::BottomBar.Droid.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse;
-			global::BottomBar.Droid.Resource.Style.TextAppearance_AppCompat_Title = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Title;
-			global::BottomBar.Droid.Resource.Style.TextAppearance_AppCompat_Title_Inverse = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Title_Inverse;
-			global::BottomBar.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu;
-			global::BottomBar.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
-			global::BottomBar.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
-			global::BottomBar.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title;
-			global::BottomBar.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
-			global::BottomBar.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
-			global::BottomBar.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse;
-			global::BottomBar.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title;
-			global::BottomBar.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse;
-			global::BottomBar.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button;
-			global::BottomBar.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse;
-			global::BottomBar.Droid.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem;
-			global::BottomBar.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large;
-			global::BottomBar.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small;
-			global::BottomBar.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Switch = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Switch;
-			global::BottomBar.Droid.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
-			global::BottomBar.Droid.Resource.Style.TextAppearance_Design_CollapsingToolbar_Expanded = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_Design_CollapsingToolbar_Expanded;
-			global::BottomBar.Droid.Resource.Style.TextAppearance_Design_Counter = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_Design_Counter;
-			global::BottomBar.Droid.Resource.Style.TextAppearance_Design_Counter_Overflow = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_Design_Counter_Overflow;
-			global::BottomBar.Droid.Resource.Style.TextAppearance_Design_Error = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_Design_Error;
-			global::BottomBar.Droid.Resource.Style.TextAppearance_Design_Hint = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_Design_Hint;
-			global::BottomBar.Droid.Resource.Style.TextAppearance_Design_Snackbar_Message = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_Design_Snackbar_Message;
-			global::BottomBar.Droid.Resource.Style.TextAppearance_Design_Tab = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_Design_Tab;
-			global::BottomBar.Droid.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
-			global::BottomBar.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
-			global::BottomBar.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title;
-			global::BottomBar.Droid.Resource.Style.Theme_AppCompat = global::NRGScoutingApp.Droid.Resource.Style.Theme_AppCompat;
-			global::BottomBar.Droid.Resource.Style.Theme_AppCompat_CompactMenu = global::NRGScoutingApp.Droid.Resource.Style.Theme_AppCompat_CompactMenu;
-			global::BottomBar.Droid.Resource.Style.Theme_AppCompat_DayNight = global::NRGScoutingApp.Droid.Resource.Style.Theme_AppCompat_DayNight;
-			global::BottomBar.Droid.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar = global::NRGScoutingApp.Droid.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar;
-			global::BottomBar.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog = global::NRGScoutingApp.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog;
-			global::BottomBar.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert = global::NRGScoutingApp.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert;
-			global::BottomBar.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth = global::NRGScoutingApp.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth;
-			global::BottomBar.Droid.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge = global::NRGScoutingApp.Droid.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge;
-			global::BottomBar.Droid.Resource.Style.Theme_AppCompat_DayNight_NoActionBar = global::NRGScoutingApp.Droid.Resource.Style.Theme_AppCompat_DayNight_NoActionBar;
-			global::BottomBar.Droid.Resource.Style.Theme_AppCompat_Dialog = global::NRGScoutingApp.Droid.Resource.Style.Theme_AppCompat_Dialog;
-			global::BottomBar.Droid.Resource.Style.Theme_AppCompat_Dialog_Alert = global::NRGScoutingApp.Droid.Resource.Style.Theme_AppCompat_Dialog_Alert;
-			global::BottomBar.Droid.Resource.Style.Theme_AppCompat_Dialog_MinWidth = global::NRGScoutingApp.Droid.Resource.Style.Theme_AppCompat_Dialog_MinWidth;
-			global::BottomBar.Droid.Resource.Style.Theme_AppCompat_DialogWhenLarge = global::NRGScoutingApp.Droid.Resource.Style.Theme_AppCompat_DialogWhenLarge;
-			global::BottomBar.Droid.Resource.Style.Theme_AppCompat_Light = global::NRGScoutingApp.Droid.Resource.Style.Theme_AppCompat_Light;
-			global::BottomBar.Droid.Resource.Style.Theme_AppCompat_Light_DarkActionBar = global::NRGScoutingApp.Droid.Resource.Style.Theme_AppCompat_Light_DarkActionBar;
-			global::BottomBar.Droid.Resource.Style.Theme_AppCompat_Light_Dialog = global::NRGScoutingApp.Droid.Resource.Style.Theme_AppCompat_Light_Dialog;
-			global::BottomBar.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_Alert = global::NRGScoutingApp.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_Alert;
-			global::BottomBar.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth = global::NRGScoutingApp.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth;
-			global::BottomBar.Droid.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge = global::NRGScoutingApp.Droid.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge;
-			global::BottomBar.Droid.Resource.Style.Theme_AppCompat_Light_NoActionBar = global::NRGScoutingApp.Droid.Resource.Style.Theme_AppCompat_Light_NoActionBar;
-			global::BottomBar.Droid.Resource.Style.Theme_AppCompat_NoActionBar = global::NRGScoutingApp.Droid.Resource.Style.Theme_AppCompat_NoActionBar;
-			global::BottomBar.Droid.Resource.Style.Theme_Design = global::NRGScoutingApp.Droid.Resource.Style.Theme_Design;
-			global::BottomBar.Droid.Resource.Style.Theme_Design_BottomSheetDialog = global::NRGScoutingApp.Droid.Resource.Style.Theme_Design_BottomSheetDialog;
-			global::BottomBar.Droid.Resource.Style.Theme_Design_Light = global::NRGScoutingApp.Droid.Resource.Style.Theme_Design_Light;
-			global::BottomBar.Droid.Resource.Style.Theme_Design_Light_BottomSheetDialog = global::NRGScoutingApp.Droid.Resource.Style.Theme_Design_Light_BottomSheetDialog;
-			global::BottomBar.Droid.Resource.Style.Theme_Design_Light_NoActionBar = global::NRGScoutingApp.Droid.Resource.Style.Theme_Design_Light_NoActionBar;
-			global::BottomBar.Droid.Resource.Style.Theme_Design_NoActionBar = global::NRGScoutingApp.Droid.Resource.Style.Theme_Design_NoActionBar;
-			global::BottomBar.Droid.Resource.Style.Theme_MediaRouter = global::NRGScoutingApp.Droid.Resource.Style.Theme_MediaRouter;
-			global::BottomBar.Droid.Resource.Style.Theme_MediaRouter_Light = global::NRGScoutingApp.Droid.Resource.Style.Theme_MediaRouter_Light;
-			global::BottomBar.Droid.Resource.Style.Theme_MediaRouter_Light_DarkControlPanel = global::NRGScoutingApp.Droid.Resource.Style.Theme_MediaRouter_Light_DarkControlPanel;
-			global::BottomBar.Droid.Resource.Style.Theme_MediaRouter_LightControlPanel = global::NRGScoutingApp.Droid.Resource.Style.Theme_MediaRouter_LightControlPanel;
-			global::BottomBar.Droid.Resource.Style.ThemeOverlay_AppCompat = global::NRGScoutingApp.Droid.Resource.Style.ThemeOverlay_AppCompat;
-			global::BottomBar.Droid.Resource.Style.ThemeOverlay_AppCompat_ActionBar = global::NRGScoutingApp.Droid.Resource.Style.ThemeOverlay_AppCompat_ActionBar;
-			global::BottomBar.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark = global::NRGScoutingApp.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark;
-			global::BottomBar.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar = global::NRGScoutingApp.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar;
-			global::BottomBar.Droid.Resource.Style.ThemeOverlay_AppCompat_Light = global::NRGScoutingApp.Droid.Resource.Style.ThemeOverlay_AppCompat_Light;
-			global::BottomBar.Droid.Resource.Style.Widget_AppCompat_ActionBar = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_ActionBar;
-			global::BottomBar.Droid.Resource.Style.Widget_AppCompat_ActionBar_Solid = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_ActionBar_Solid;
-			global::BottomBar.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabBar = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabBar;
-			global::BottomBar.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabText = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabText;
-			global::BottomBar.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabView = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabView;
-			global::BottomBar.Droid.Resource.Style.Widget_AppCompat_ActionButton = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_ActionButton;
-			global::BottomBar.Droid.Resource.Style.Widget_AppCompat_ActionButton_CloseMode = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_ActionButton_CloseMode;
-			global::BottomBar.Droid.Resource.Style.Widget_AppCompat_ActionButton_Overflow = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_ActionButton_Overflow;
-			global::BottomBar.Droid.Resource.Style.Widget_AppCompat_ActionMode = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_ActionMode;
-			global::BottomBar.Droid.Resource.Style.Widget_AppCompat_ActivityChooserView = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_ActivityChooserView;
-			global::BottomBar.Droid.Resource.Style.Widget_AppCompat_AutoCompleteTextView = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_AutoCompleteTextView;
-			global::BottomBar.Droid.Resource.Style.Widget_AppCompat_Button = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Button;
-			global::BottomBar.Droid.Resource.Style.Widget_AppCompat_Button_Borderless = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Button_Borderless;
-			global::BottomBar.Droid.Resource.Style.Widget_AppCompat_Button_Borderless_Colored = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Button_Borderless_Colored;
-			global::BottomBar.Droid.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog;
-			global::BottomBar.Droid.Resource.Style.Widget_AppCompat_Button_Colored = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Button_Colored;
-			global::BottomBar.Droid.Resource.Style.Widget_AppCompat_Button_Small = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Button_Small;
-			global::BottomBar.Droid.Resource.Style.Widget_AppCompat_ButtonBar = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_ButtonBar;
-			global::BottomBar.Droid.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog;
-			global::BottomBar.Droid.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox;
-			global::BottomBar.Droid.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton;
-			global::BottomBar.Droid.Resource.Style.Widget_AppCompat_CompoundButton_Switch = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_CompoundButton_Switch;
-			global::BottomBar.Droid.Resource.Style.Widget_AppCompat_DrawerArrowToggle = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_DrawerArrowToggle;
-			global::BottomBar.Droid.Resource.Style.Widget_AppCompat_DropDownItem_Spinner = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_DropDownItem_Spinner;
-			global::BottomBar.Droid.Resource.Style.Widget_AppCompat_EditText = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_EditText;
-			global::BottomBar.Droid.Resource.Style.Widget_AppCompat_ImageButton = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_ImageButton;
-			global::BottomBar.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar;
-			global::BottomBar.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid;
-			global::BottomBar.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse;
-			global::BottomBar.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar;
-			global::BottomBar.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse;
-			global::BottomBar.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText;
-			global::BottomBar.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse;
-			global::BottomBar.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView;
-			global::BottomBar.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse;
-			global::BottomBar.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton;
-			global::BottomBar.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode;
-			global::BottomBar.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow;
-			global::BottomBar.Droid.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse;
-			global::BottomBar.Droid.Resource.Style.Widget_AppCompat_Light_ActivityChooserView = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Light_ActivityChooserView;
-			global::BottomBar.Droid.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView;
-			global::BottomBar.Droid.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner;
-			global::BottomBar.Droid.Resource.Style.Widget_AppCompat_Light_ListPopupWindow = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Light_ListPopupWindow;
-			global::BottomBar.Droid.Resource.Style.Widget_AppCompat_Light_ListView_DropDown = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Light_ListView_DropDown;
-			global::BottomBar.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu;
-			global::BottomBar.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow;
-			global::BottomBar.Droid.Resource.Style.Widget_AppCompat_Light_SearchView = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Light_SearchView;
-			global::BottomBar.Droid.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar;
-			global::BottomBar.Droid.Resource.Style.Widget_AppCompat_ListPopupWindow = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_ListPopupWindow;
-			global::BottomBar.Droid.Resource.Style.Widget_AppCompat_ListView = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_ListView;
-			global::BottomBar.Droid.Resource.Style.Widget_AppCompat_ListView_DropDown = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_ListView_DropDown;
-			global::BottomBar.Droid.Resource.Style.Widget_AppCompat_ListView_Menu = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_ListView_Menu;
-			global::BottomBar.Droid.Resource.Style.Widget_AppCompat_PopupMenu = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_PopupMenu;
-			global::BottomBar.Droid.Resource.Style.Widget_AppCompat_PopupMenu_Overflow = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_PopupMenu_Overflow;
-			global::BottomBar.Droid.Resource.Style.Widget_AppCompat_PopupWindow = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_PopupWindow;
-			global::BottomBar.Droid.Resource.Style.Widget_AppCompat_ProgressBar = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_ProgressBar;
-			global::BottomBar.Droid.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal;
-			global::BottomBar.Droid.Resource.Style.Widget_AppCompat_RatingBar = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_RatingBar;
-			global::BottomBar.Droid.Resource.Style.Widget_AppCompat_RatingBar_Indicator = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_RatingBar_Indicator;
-			global::BottomBar.Droid.Resource.Style.Widget_AppCompat_RatingBar_Small = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_RatingBar_Small;
-			global::BottomBar.Droid.Resource.Style.Widget_AppCompat_SearchView = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_SearchView;
-			global::BottomBar.Droid.Resource.Style.Widget_AppCompat_SearchView_ActionBar = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_SearchView_ActionBar;
-			global::BottomBar.Droid.Resource.Style.Widget_AppCompat_SeekBar = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_SeekBar;
-			global::BottomBar.Droid.Resource.Style.Widget_AppCompat_Spinner = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Spinner;
-			global::BottomBar.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown;
-			global::BottomBar.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar;
-			global::BottomBar.Droid.Resource.Style.Widget_AppCompat_Spinner_Underlined = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Spinner_Underlined;
-			global::BottomBar.Droid.Resource.Style.Widget_AppCompat_TextView_SpinnerItem = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_TextView_SpinnerItem;
-			global::BottomBar.Droid.Resource.Style.Widget_AppCompat_Toolbar = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Toolbar;
-			global::BottomBar.Droid.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation;
-			global::BottomBar.Droid.Resource.Style.Widget_Design_AppBarLayout = global::NRGScoutingApp.Droid.Resource.Style.Widget_Design_AppBarLayout;
-			global::BottomBar.Droid.Resource.Style.Widget_Design_BottomSheet_Modal = global::NRGScoutingApp.Droid.Resource.Style.Widget_Design_BottomSheet_Modal;
-			global::BottomBar.Droid.Resource.Style.Widget_Design_CollapsingToolbar = global::NRGScoutingApp.Droid.Resource.Style.Widget_Design_CollapsingToolbar;
-			global::BottomBar.Droid.Resource.Style.Widget_Design_CoordinatorLayout = global::NRGScoutingApp.Droid.Resource.Style.Widget_Design_CoordinatorLayout;
-			global::BottomBar.Droid.Resource.Style.Widget_Design_FloatingActionButton = global::NRGScoutingApp.Droid.Resource.Style.Widget_Design_FloatingActionButton;
-			global::BottomBar.Droid.Resource.Style.Widget_Design_NavigationView = global::NRGScoutingApp.Droid.Resource.Style.Widget_Design_NavigationView;
-			global::BottomBar.Droid.Resource.Style.Widget_Design_ScrimInsetsFrameLayout = global::NRGScoutingApp.Droid.Resource.Style.Widget_Design_ScrimInsetsFrameLayout;
-			global::BottomBar.Droid.Resource.Style.Widget_Design_Snackbar = global::NRGScoutingApp.Droid.Resource.Style.Widget_Design_Snackbar;
-			global::BottomBar.Droid.Resource.Style.Widget_Design_TabLayout = global::NRGScoutingApp.Droid.Resource.Style.Widget_Design_TabLayout;
-			global::BottomBar.Droid.Resource.Style.Widget_Design_TextInputLayout = global::NRGScoutingApp.Droid.Resource.Style.Widget_Design_TextInputLayout;
-			global::BottomBar.Droid.Resource.Style.Widget_MediaRouter_Light_MediaRouteButton = global::NRGScoutingApp.Droid.Resource.Style.Widget_MediaRouter_Light_MediaRouteButton;
-			global::BottomBar.Droid.Resource.Style.Widget_MediaRouter_MediaRouteButton = global::NRGScoutingApp.Droid.Resource.Style.Widget_MediaRouter_MediaRouteButton;
-			global::BottomBar.Droid.Resource.Styleable.ActionBar = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBar;
-			global::BottomBar.Droid.Resource.Styleable.ActionBar_background = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBar_background;
-			global::BottomBar.Droid.Resource.Styleable.ActionBar_backgroundSplit = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBar_backgroundSplit;
-			global::BottomBar.Droid.Resource.Styleable.ActionBar_backgroundStacked = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBar_backgroundStacked;
-			global::BottomBar.Droid.Resource.Styleable.ActionBar_contentInsetEnd = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBar_contentInsetEnd;
-			global::BottomBar.Droid.Resource.Styleable.ActionBar_contentInsetLeft = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBar_contentInsetLeft;
-			global::BottomBar.Droid.Resource.Styleable.ActionBar_contentInsetRight = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBar_contentInsetRight;
-			global::BottomBar.Droid.Resource.Styleable.ActionBar_contentInsetStart = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBar_contentInsetStart;
-			global::BottomBar.Droid.Resource.Styleable.ActionBar_customNavigationLayout = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBar_customNavigationLayout;
-			global::BottomBar.Droid.Resource.Styleable.ActionBar_displayOptions = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBar_displayOptions;
-			global::BottomBar.Droid.Resource.Styleable.ActionBar_divider = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBar_divider;
-			global::BottomBar.Droid.Resource.Styleable.ActionBar_elevation = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBar_elevation;
-			global::BottomBar.Droid.Resource.Styleable.ActionBar_height = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBar_height;
-			global::BottomBar.Droid.Resource.Styleable.ActionBar_hideOnContentScroll = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBar_hideOnContentScroll;
-			global::BottomBar.Droid.Resource.Styleable.ActionBar_homeAsUpIndicator = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBar_homeAsUpIndicator;
-			global::BottomBar.Droid.Resource.Styleable.ActionBar_homeLayout = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBar_homeLayout;
-			global::BottomBar.Droid.Resource.Styleable.ActionBar_icon = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBar_icon;
-			global::BottomBar.Droid.Resource.Styleable.ActionBar_indeterminateProgressStyle = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBar_indeterminateProgressStyle;
-			global::BottomBar.Droid.Resource.Styleable.ActionBar_itemPadding = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBar_itemPadding;
-			global::BottomBar.Droid.Resource.Styleable.ActionBar_logo = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBar_logo;
-			global::BottomBar.Droid.Resource.Styleable.ActionBar_navigationMode = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBar_navigationMode;
-			global::BottomBar.Droid.Resource.Styleable.ActionBar_popupTheme = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBar_popupTheme;
-			global::BottomBar.Droid.Resource.Styleable.ActionBar_progressBarPadding = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBar_progressBarPadding;
-			global::BottomBar.Droid.Resource.Styleable.ActionBar_progressBarStyle = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBar_progressBarStyle;
-			global::BottomBar.Droid.Resource.Styleable.ActionBar_subtitle = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBar_subtitle;
-			global::BottomBar.Droid.Resource.Styleable.ActionBar_subtitleTextStyle = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBar_subtitleTextStyle;
-			global::BottomBar.Droid.Resource.Styleable.ActionBar_title = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBar_title;
-			global::BottomBar.Droid.Resource.Styleable.ActionBar_titleTextStyle = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBar_titleTextStyle;
-			global::BottomBar.Droid.Resource.Styleable.ActionBarLayout = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBarLayout;
-			global::BottomBar.Droid.Resource.Styleable.ActionBarLayout_android_layout_gravity = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBarLayout_android_layout_gravity;
-			global::BottomBar.Droid.Resource.Styleable.ActionMenuItemView = global::NRGScoutingApp.Droid.Resource.Styleable.ActionMenuItemView;
-			global::BottomBar.Droid.Resource.Styleable.ActionMenuItemView_android_minWidth = global::NRGScoutingApp.Droid.Resource.Styleable.ActionMenuItemView_android_minWidth;
-			global::BottomBar.Droid.Resource.Styleable.ActionMenuView = global::NRGScoutingApp.Droid.Resource.Styleable.ActionMenuView;
-			global::BottomBar.Droid.Resource.Styleable.ActionMode = global::NRGScoutingApp.Droid.Resource.Styleable.ActionMode;
-			global::BottomBar.Droid.Resource.Styleable.ActionMode_background = global::NRGScoutingApp.Droid.Resource.Styleable.ActionMode_background;
-			global::BottomBar.Droid.Resource.Styleable.ActionMode_backgroundSplit = global::NRGScoutingApp.Droid.Resource.Styleable.ActionMode_backgroundSplit;
-			global::BottomBar.Droid.Resource.Styleable.ActionMode_closeItemLayout = global::NRGScoutingApp.Droid.Resource.Styleable.ActionMode_closeItemLayout;
-			global::BottomBar.Droid.Resource.Styleable.ActionMode_height = global::NRGScoutingApp.Droid.Resource.Styleable.ActionMode_height;
-			global::BottomBar.Droid.Resource.Styleable.ActionMode_subtitleTextStyle = global::NRGScoutingApp.Droid.Resource.Styleable.ActionMode_subtitleTextStyle;
-			global::BottomBar.Droid.Resource.Styleable.ActionMode_titleTextStyle = global::NRGScoutingApp.Droid.Resource.Styleable.ActionMode_titleTextStyle;
-			global::BottomBar.Droid.Resource.Styleable.ActivityChooserView = global::NRGScoutingApp.Droid.Resource.Styleable.ActivityChooserView;
-			global::BottomBar.Droid.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable = global::NRGScoutingApp.Droid.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable;
-			global::BottomBar.Droid.Resource.Styleable.ActivityChooserView_initialActivityCount = global::NRGScoutingApp.Droid.Resource.Styleable.ActivityChooserView_initialActivityCount;
-			global::BottomBar.Droid.Resource.Styleable.AlertDialog = global::NRGScoutingApp.Droid.Resource.Styleable.AlertDialog;
-			global::BottomBar.Droid.Resource.Styleable.AlertDialog_android_layout = global::NRGScoutingApp.Droid.Resource.Styleable.AlertDialog_android_layout;
-			global::BottomBar.Droid.Resource.Styleable.AlertDialog_buttonPanelSideLayout = global::NRGScoutingApp.Droid.Resource.Styleable.AlertDialog_buttonPanelSideLayout;
-			global::BottomBar.Droid.Resource.Styleable.AlertDialog_listItemLayout = global::NRGScoutingApp.Droid.Resource.Styleable.AlertDialog_listItemLayout;
-			global::BottomBar.Droid.Resource.Styleable.AlertDialog_listLayout = global::NRGScoutingApp.Droid.Resource.Styleable.AlertDialog_listLayout;
-			global::BottomBar.Droid.Resource.Styleable.AlertDialog_multiChoiceItemLayout = global::NRGScoutingApp.Droid.Resource.Styleable.AlertDialog_multiChoiceItemLayout;
-			global::BottomBar.Droid.Resource.Styleable.AlertDialog_singleChoiceItemLayout = global::NRGScoutingApp.Droid.Resource.Styleable.AlertDialog_singleChoiceItemLayout;
-			global::BottomBar.Droid.Resource.Styleable.AppBarLayout = global::NRGScoutingApp.Droid.Resource.Styleable.AppBarLayout;
-			global::BottomBar.Droid.Resource.Styleable.AppBarLayout_android_background = global::NRGScoutingApp.Droid.Resource.Styleable.AppBarLayout_android_background;
-			global::BottomBar.Droid.Resource.Styleable.AppBarLayout_elevation = global::NRGScoutingApp.Droid.Resource.Styleable.AppBarLayout_elevation;
-			global::BottomBar.Droid.Resource.Styleable.AppBarLayout_expanded = global::NRGScoutingApp.Droid.Resource.Styleable.AppBarLayout_expanded;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatImageView = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatImageView;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatImageView_android_src = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatImageView_android_src;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatImageView_srcCompat = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatImageView_srcCompat;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTextView = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTextView;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTextView_android_textAppearance = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTextView_android_textAppearance;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTextView_textAllCaps = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTextView_textAllCaps;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_actionBarDivider = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_actionBarDivider;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_actionBarItemBackground = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_actionBarItemBackground;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_actionBarPopupTheme = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_actionBarPopupTheme;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_actionBarSize = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_actionBarSize;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_actionBarSplitStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_actionBarSplitStyle;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_actionBarStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_actionBarStyle;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_actionBarTabStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_actionBarTabStyle;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_actionBarTheme = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_actionBarTheme;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_actionButtonStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_actionButtonStyle;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_actionDropDownStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_actionDropDownStyle;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextColor = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextColor;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_actionModeBackground = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_actionModeBackground;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_actionModeCutDrawable = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_actionModeCutDrawable;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_actionModeFindDrawable = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_actionModeFindDrawable;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_actionModePasteDrawable = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_actionModePasteDrawable;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_actionModeShareDrawable = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_actionModeShareDrawable;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_actionModeSplitBackground = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_actionModeSplitBackground;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_actionModeStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_actionModeStyle;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_activityChooserViewStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_activityChooserViewStyle;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_alertDialogStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_alertDialogStyle;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_alertDialogTheme = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_alertDialogTheme;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_android_windowIsFloating = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_android_windowIsFloating;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_borderlessButtonStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_borderlessButtonStyle;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_buttonBarStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_buttonBarStyle;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_buttonStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_buttonStyle;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_buttonStyleSmall = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_buttonStyleSmall;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_checkboxStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_checkboxStyle;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_checkedTextViewStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_checkedTextViewStyle;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_colorAccent = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_colorAccent;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_colorButtonNormal = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_colorButtonNormal;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_colorControlActivated = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_colorControlActivated;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_colorControlHighlight = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_colorControlHighlight;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_colorControlNormal = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_colorControlNormal;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_colorPrimary = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_colorPrimary;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_colorPrimaryDark = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_colorPrimaryDark;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_controlBackground = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_controlBackground;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_dialogPreferredPadding = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_dialogPreferredPadding;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_dialogTheme = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_dialogTheme;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_dividerHorizontal = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_dividerHorizontal;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_dividerVertical = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_dividerVertical;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_dropDownListViewStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_dropDownListViewStyle;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_editTextBackground = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_editTextBackground;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_editTextColor = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_editTextColor;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_editTextStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_editTextStyle;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_homeAsUpIndicator = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_homeAsUpIndicator;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_imageButtonStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_imageButtonStyle;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_listDividerAlertDialog = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_listDividerAlertDialog;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_listPopupWindowStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_listPopupWindowStyle;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeight = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeight;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_panelBackground = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_panelBackground;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_panelMenuListTheme = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_panelMenuListTheme;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_panelMenuListWidth = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_panelMenuListWidth;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_popupMenuStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_popupMenuStyle;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_popupWindowStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_popupWindowStyle;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_radioButtonStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_radioButtonStyle;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyle;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_searchViewStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_searchViewStyle;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_seekBarStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_seekBarStyle;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackground = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackground;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_spinnerStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_spinnerStyle;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_switchStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_switchStyle;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItem = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItem;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_textColorSearchUrl = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_textColorSearchUrl;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_toolbarStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_toolbarStyle;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_windowActionBar = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_windowActionBar;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_windowActionBarOverlay = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_windowActionBarOverlay;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_windowActionModeOverlay = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_windowActionModeOverlay;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMajor = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMajor;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMinor = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMinor;
-			global::BottomBar.Droid.Resource.Styleable.AppCompatTheme_windowNoTitle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_windowNoTitle;
-			global::BottomBar.Droid.Resource.Styleable.ButtonBarLayout = global::NRGScoutingApp.Droid.Resource.Styleable.ButtonBarLayout;
-			global::BottomBar.Droid.Resource.Styleable.ButtonBarLayout_allowStacking = global::NRGScoutingApp.Droid.Resource.Styleable.ButtonBarLayout_allowStacking;
-			global::BottomBar.Droid.Resource.Styleable.CardView = global::NRGScoutingApp.Droid.Resource.Styleable.CardView;
-			global::BottomBar.Droid.Resource.Styleable.CardView_android_minHeight = global::NRGScoutingApp.Droid.Resource.Styleable.CardView_android_minHeight;
-			global::BottomBar.Droid.Resource.Styleable.CardView_android_minWidth = global::NRGScoutingApp.Droid.Resource.Styleable.CardView_android_minWidth;
-			global::BottomBar.Droid.Resource.Styleable.CardView_cardBackgroundColor = global::NRGScoutingApp.Droid.Resource.Styleable.CardView_cardBackgroundColor;
-			global::BottomBar.Droid.Resource.Styleable.CardView_cardCornerRadius = global::NRGScoutingApp.Droid.Resource.Styleable.CardView_cardCornerRadius;
-			global::BottomBar.Droid.Resource.Styleable.CardView_cardElevation = global::NRGScoutingApp.Droid.Resource.Styleable.CardView_cardElevation;
-			global::BottomBar.Droid.Resource.Styleable.CardView_cardMaxElevation = global::NRGScoutingApp.Droid.Resource.Styleable.CardView_cardMaxElevation;
-			global::BottomBar.Droid.Resource.Styleable.CardView_cardPreventCornerOverlap = global::NRGScoutingApp.Droid.Resource.Styleable.CardView_cardPreventCornerOverlap;
-			global::BottomBar.Droid.Resource.Styleable.CardView_cardUseCompatPadding = global::NRGScoutingApp.Droid.Resource.Styleable.CardView_cardUseCompatPadding;
-			global::BottomBar.Droid.Resource.Styleable.CardView_contentPadding = global::NRGScoutingApp.Droid.Resource.Styleable.CardView_contentPadding;
-			global::BottomBar.Droid.Resource.Styleable.CardView_contentPaddingBottom = global::NRGScoutingApp.Droid.Resource.Styleable.CardView_contentPaddingBottom;
-			global::BottomBar.Droid.Resource.Styleable.CardView_contentPaddingLeft = global::NRGScoutingApp.Droid.Resource.Styleable.CardView_contentPaddingLeft;
-			global::BottomBar.Droid.Resource.Styleable.CardView_contentPaddingRight = global::NRGScoutingApp.Droid.Resource.Styleable.CardView_contentPaddingRight;
-			global::BottomBar.Droid.Resource.Styleable.CardView_contentPaddingTop = global::NRGScoutingApp.Droid.Resource.Styleable.CardView_contentPaddingTop;
-			global::BottomBar.Droid.Resource.Styleable.CollapsingToolbarLayout = global::NRGScoutingApp.Droid.Resource.Styleable.CollapsingToolbarLayout;
-			global::BottomBar.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity = global::NRGScoutingApp.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity;
-			global::BottomBar.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance = global::NRGScoutingApp.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance;
-			global::BottomBar.Droid.Resource.Styleable.CollapsingToolbarLayout_contentScrim = global::NRGScoutingApp.Droid.Resource.Styleable.CollapsingToolbarLayout_contentScrim;
-			global::BottomBar.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleGravity = global::NRGScoutingApp.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleGravity;
-			global::BottomBar.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMargin = global::NRGScoutingApp.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMargin;
-			global::BottomBar.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginBottom = global::NRGScoutingApp.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginBottom;
-			global::BottomBar.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginEnd = global::NRGScoutingApp.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginEnd;
-			global::BottomBar.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart = global::NRGScoutingApp.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart;
-			global::BottomBar.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop = global::NRGScoutingApp.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop;
-			global::BottomBar.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance = global::NRGScoutingApp.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance;
-			global::BottomBar.Droid.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim = global::NRGScoutingApp.Droid.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim;
-			global::BottomBar.Droid.Resource.Styleable.CollapsingToolbarLayout_title = global::NRGScoutingApp.Droid.Resource.Styleable.CollapsingToolbarLayout_title;
-			global::BottomBar.Droid.Resource.Styleable.CollapsingToolbarLayout_titleEnabled = global::NRGScoutingApp.Droid.Resource.Styleable.CollapsingToolbarLayout_titleEnabled;
-			global::BottomBar.Droid.Resource.Styleable.CollapsingToolbarLayout_toolbarId = global::NRGScoutingApp.Droid.Resource.Styleable.CollapsingToolbarLayout_toolbarId;
-			global::BottomBar.Droid.Resource.Styleable.CompoundButton = global::NRGScoutingApp.Droid.Resource.Styleable.CompoundButton;
-			global::BottomBar.Droid.Resource.Styleable.CompoundButton_android_button = global::NRGScoutingApp.Droid.Resource.Styleable.CompoundButton_android_button;
-			global::BottomBar.Droid.Resource.Styleable.CompoundButton_buttonTint = global::NRGScoutingApp.Droid.Resource.Styleable.CompoundButton_buttonTint;
-			global::BottomBar.Droid.Resource.Styleable.CompoundButton_buttonTintMode = global::NRGScoutingApp.Droid.Resource.Styleable.CompoundButton_buttonTintMode;
-			global::BottomBar.Droid.Resource.Styleable.CoordinatorLayout = global::NRGScoutingApp.Droid.Resource.Styleable.CoordinatorLayout;
-			global::BottomBar.Droid.Resource.Styleable.CoordinatorLayout_keylines = global::NRGScoutingApp.Droid.Resource.Styleable.CoordinatorLayout_keylines;
-			global::BottomBar.Droid.Resource.Styleable.CoordinatorLayout_statusBarBackground = global::NRGScoutingApp.Droid.Resource.Styleable.CoordinatorLayout_statusBarBackground;
-			global::BottomBar.Droid.Resource.Styleable.DesignTheme = global::NRGScoutingApp.Droid.Resource.Styleable.DesignTheme;
-			global::BottomBar.Droid.Resource.Styleable.DesignTheme_bottomSheetDialogTheme = global::NRGScoutingApp.Droid.Resource.Styleable.DesignTheme_bottomSheetDialogTheme;
-			global::BottomBar.Droid.Resource.Styleable.DesignTheme_bottomSheetStyle = global::NRGScoutingApp.Droid.Resource.Styleable.DesignTheme_bottomSheetStyle;
-			global::BottomBar.Droid.Resource.Styleable.DesignTheme_textColorError = global::NRGScoutingApp.Droid.Resource.Styleable.DesignTheme_textColorError;
-			global::BottomBar.Droid.Resource.Styleable.DrawerArrowToggle = global::NRGScoutingApp.Droid.Resource.Styleable.DrawerArrowToggle;
-			global::BottomBar.Droid.Resource.Styleable.DrawerArrowToggle_arrowHeadLength = global::NRGScoutingApp.Droid.Resource.Styleable.DrawerArrowToggle_arrowHeadLength;
-			global::BottomBar.Droid.Resource.Styleable.DrawerArrowToggle_arrowShaftLength = global::NRGScoutingApp.Droid.Resource.Styleable.DrawerArrowToggle_arrowShaftLength;
-			global::BottomBar.Droid.Resource.Styleable.DrawerArrowToggle_barLength = global::NRGScoutingApp.Droid.Resource.Styleable.DrawerArrowToggle_barLength;
-			global::BottomBar.Droid.Resource.Styleable.DrawerArrowToggle_color = global::NRGScoutingApp.Droid.Resource.Styleable.DrawerArrowToggle_color;
-			global::BottomBar.Droid.Resource.Styleable.DrawerArrowToggle_drawableSize = global::NRGScoutingApp.Droid.Resource.Styleable.DrawerArrowToggle_drawableSize;
-			global::BottomBar.Droid.Resource.Styleable.DrawerArrowToggle_gapBetweenBars = global::NRGScoutingApp.Droid.Resource.Styleable.DrawerArrowToggle_gapBetweenBars;
-			global::BottomBar.Droid.Resource.Styleable.DrawerArrowToggle_spinBars = global::NRGScoutingApp.Droid.Resource.Styleable.DrawerArrowToggle_spinBars;
-			global::BottomBar.Droid.Resource.Styleable.DrawerArrowToggle_thickness = global::NRGScoutingApp.Droid.Resource.Styleable.DrawerArrowToggle_thickness;
-			global::BottomBar.Droid.Resource.Styleable.FloatingActionButton = global::NRGScoutingApp.Droid.Resource.Styleable.FloatingActionButton;
-			global::BottomBar.Droid.Resource.Styleable.FloatingActionButton_backgroundTint = global::NRGScoutingApp.Droid.Resource.Styleable.FloatingActionButton_backgroundTint;
-			global::BottomBar.Droid.Resource.Styleable.FloatingActionButton_backgroundTintMode = global::NRGScoutingApp.Droid.Resource.Styleable.FloatingActionButton_backgroundTintMode;
-			global::BottomBar.Droid.Resource.Styleable.FloatingActionButton_borderWidth = global::NRGScoutingApp.Droid.Resource.Styleable.FloatingActionButton_borderWidth;
-			global::BottomBar.Droid.Resource.Styleable.FloatingActionButton_elevation = global::NRGScoutingApp.Droid.Resource.Styleable.FloatingActionButton_elevation;
-			global::BottomBar.Droid.Resource.Styleable.FloatingActionButton_fabSize = global::NRGScoutingApp.Droid.Resource.Styleable.FloatingActionButton_fabSize;
-			global::BottomBar.Droid.Resource.Styleable.FloatingActionButton_pressedTranslationZ = global::NRGScoutingApp.Droid.Resource.Styleable.FloatingActionButton_pressedTranslationZ;
-			global::BottomBar.Droid.Resource.Styleable.FloatingActionButton_rippleColor = global::NRGScoutingApp.Droid.Resource.Styleable.FloatingActionButton_rippleColor;
-			global::BottomBar.Droid.Resource.Styleable.FloatingActionButton_useCompatPadding = global::NRGScoutingApp.Droid.Resource.Styleable.FloatingActionButton_useCompatPadding;
-			global::BottomBar.Droid.Resource.Styleable.ForegroundLinearLayout = global::NRGScoutingApp.Droid.Resource.Styleable.ForegroundLinearLayout;
-			global::BottomBar.Droid.Resource.Styleable.ForegroundLinearLayout_android_foreground = global::NRGScoutingApp.Droid.Resource.Styleable.ForegroundLinearLayout_android_foreground;
-			global::BottomBar.Droid.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity = global::NRGScoutingApp.Droid.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity;
-			global::BottomBar.Droid.Resource.Styleable.ForegroundLinearLayout_foregroundInsidePadding = global::NRGScoutingApp.Droid.Resource.Styleable.ForegroundLinearLayout_foregroundInsidePadding;
-			global::BottomBar.Droid.Resource.Styleable.LinearLayoutCompat = global::NRGScoutingApp.Droid.Resource.Styleable.LinearLayoutCompat;
-			global::BottomBar.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAligned = global::NRGScoutingApp.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAligned;
-			global::BottomBar.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex = global::NRGScoutingApp.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex;
-			global::BottomBar.Droid.Resource.Styleable.LinearLayoutCompat_android_gravity = global::NRGScoutingApp.Droid.Resource.Styleable.LinearLayoutCompat_android_gravity;
-			global::BottomBar.Droid.Resource.Styleable.LinearLayoutCompat_android_orientation = global::NRGScoutingApp.Droid.Resource.Styleable.LinearLayoutCompat_android_orientation;
-			global::BottomBar.Droid.Resource.Styleable.LinearLayoutCompat_android_weightSum = global::NRGScoutingApp.Droid.Resource.Styleable.LinearLayoutCompat_android_weightSum;
-			global::BottomBar.Droid.Resource.Styleable.LinearLayoutCompat_divider = global::NRGScoutingApp.Droid.Resource.Styleable.LinearLayoutCompat_divider;
-			global::BottomBar.Droid.Resource.Styleable.LinearLayoutCompat_dividerPadding = global::NRGScoutingApp.Droid.Resource.Styleable.LinearLayoutCompat_dividerPadding;
-			global::BottomBar.Droid.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild = global::NRGScoutingApp.Droid.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild;
-			global::BottomBar.Droid.Resource.Styleable.LinearLayoutCompat_showDividers = global::NRGScoutingApp.Droid.Resource.Styleable.LinearLayoutCompat_showDividers;
-			global::BottomBar.Droid.Resource.Styleable.LinearLayoutCompat_Layout = global::NRGScoutingApp.Droid.Resource.Styleable.LinearLayoutCompat_Layout;
-			global::BottomBar.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity = global::NRGScoutingApp.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity;
-			global::BottomBar.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height = global::NRGScoutingApp.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height;
-			global::BottomBar.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight = global::NRGScoutingApp.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight;
-			global::BottomBar.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width = global::NRGScoutingApp.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width;
-			global::BottomBar.Droid.Resource.Styleable.ListPopupWindow = global::NRGScoutingApp.Droid.Resource.Styleable.ListPopupWindow;
-			global::BottomBar.Droid.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset = global::NRGScoutingApp.Droid.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset;
-			global::BottomBar.Droid.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset = global::NRGScoutingApp.Droid.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset;
-			global::BottomBar.Droid.Resource.Styleable.MediaRouteButton = global::NRGScoutingApp.Droid.Resource.Styleable.MediaRouteButton;
-			global::BottomBar.Droid.Resource.Styleable.MediaRouteButton_android_minHeight = global::NRGScoutingApp.Droid.Resource.Styleable.MediaRouteButton_android_minHeight;
-			global::BottomBar.Droid.Resource.Styleable.MediaRouteButton_android_minWidth = global::NRGScoutingApp.Droid.Resource.Styleable.MediaRouteButton_android_minWidth;
-			global::BottomBar.Droid.Resource.Styleable.MediaRouteButton_externalRouteEnabledDrawable = global::NRGScoutingApp.Droid.Resource.Styleable.MediaRouteButton_externalRouteEnabledDrawable;
-			global::BottomBar.Droid.Resource.Styleable.MenuGroup = global::NRGScoutingApp.Droid.Resource.Styleable.MenuGroup;
-			global::BottomBar.Droid.Resource.Styleable.MenuGroup_android_checkableBehavior = global::NRGScoutingApp.Droid.Resource.Styleable.MenuGroup_android_checkableBehavior;
-			global::BottomBar.Droid.Resource.Styleable.MenuGroup_android_enabled = global::NRGScoutingApp.Droid.Resource.Styleable.MenuGroup_android_enabled;
-			global::BottomBar.Droid.Resource.Styleable.MenuGroup_android_id = global::NRGScoutingApp.Droid.Resource.Styleable.MenuGroup_android_id;
-			global::BottomBar.Droid.Resource.Styleable.MenuGroup_android_menuCategory = global::NRGScoutingApp.Droid.Resource.Styleable.MenuGroup_android_menuCategory;
-			global::BottomBar.Droid.Resource.Styleable.MenuGroup_android_orderInCategory = global::NRGScoutingApp.Droid.Resource.Styleable.MenuGroup_android_orderInCategory;
-			global::BottomBar.Droid.Resource.Styleable.MenuGroup_android_visible = global::NRGScoutingApp.Droid.Resource.Styleable.MenuGroup_android_visible;
-			global::BottomBar.Droid.Resource.Styleable.MenuItem = global::NRGScoutingApp.Droid.Resource.Styleable.MenuItem;
-			global::BottomBar.Droid.Resource.Styleable.MenuItem_actionLayout = global::NRGScoutingApp.Droid.Resource.Styleable.MenuItem_actionLayout;
-			global::BottomBar.Droid.Resource.Styleable.MenuItem_actionProviderClass = global::NRGScoutingApp.Droid.Resource.Styleable.MenuItem_actionProviderClass;
-			global::BottomBar.Droid.Resource.Styleable.MenuItem_actionViewClass = global::NRGScoutingApp.Droid.Resource.Styleable.MenuItem_actionViewClass;
-			global::BottomBar.Droid.Resource.Styleable.MenuItem_android_alphabeticShortcut = global::NRGScoutingApp.Droid.Resource.Styleable.MenuItem_android_alphabeticShortcut;
-			global::BottomBar.Droid.Resource.Styleable.MenuItem_android_checkable = global::NRGScoutingApp.Droid.Resource.Styleable.MenuItem_android_checkable;
-			global::BottomBar.Droid.Resource.Styleable.MenuItem_android_checked = global::NRGScoutingApp.Droid.Resource.Styleable.MenuItem_android_checked;
-			global::BottomBar.Droid.Resource.Styleable.MenuItem_android_enabled = global::NRGScoutingApp.Droid.Resource.Styleable.MenuItem_android_enabled;
-			global::BottomBar.Droid.Resource.Styleable.MenuItem_android_icon = global::NRGScoutingApp.Droid.Resource.Styleable.MenuItem_android_icon;
-			global::BottomBar.Droid.Resource.Styleable.MenuItem_android_id = global::NRGScoutingApp.Droid.Resource.Styleable.MenuItem_android_id;
-			global::BottomBar.Droid.Resource.Styleable.MenuItem_android_menuCategory = global::NRGScoutingApp.Droid.Resource.Styleable.MenuItem_android_menuCategory;
-			global::BottomBar.Droid.Resource.Styleable.MenuItem_android_numericShortcut = global::NRGScoutingApp.Droid.Resource.Styleable.MenuItem_android_numericShortcut;
-			global::BottomBar.Droid.Resource.Styleable.MenuItem_android_onClick = global::NRGScoutingApp.Droid.Resource.Styleable.MenuItem_android_onClick;
-			global::BottomBar.Droid.Resource.Styleable.MenuItem_android_orderInCategory = global::NRGScoutingApp.Droid.Resource.Styleable.MenuItem_android_orderInCategory;
-			global::BottomBar.Droid.Resource.Styleable.MenuItem_android_title = global::NRGScoutingApp.Droid.Resource.Styleable.MenuItem_android_title;
-			global::BottomBar.Droid.Resource.Styleable.MenuItem_android_titleCondensed = global::NRGScoutingApp.Droid.Resource.Styleable.MenuItem_android_titleCondensed;
-			global::BottomBar.Droid.Resource.Styleable.MenuItem_android_visible = global::NRGScoutingApp.Droid.Resource.Styleable.MenuItem_android_visible;
-			global::BottomBar.Droid.Resource.Styleable.MenuItem_showAsAction = global::NRGScoutingApp.Droid.Resource.Styleable.MenuItem_showAsAction;
-			global::BottomBar.Droid.Resource.Styleable.MenuView = global::NRGScoutingApp.Droid.Resource.Styleable.MenuView;
-			global::BottomBar.Droid.Resource.Styleable.MenuView_android_headerBackground = global::NRGScoutingApp.Droid.Resource.Styleable.MenuView_android_headerBackground;
-			global::BottomBar.Droid.Resource.Styleable.MenuView_android_horizontalDivider = global::NRGScoutingApp.Droid.Resource.Styleable.MenuView_android_horizontalDivider;
-			global::BottomBar.Droid.Resource.Styleable.MenuView_android_itemBackground = global::NRGScoutingApp.Droid.Resource.Styleable.MenuView_android_itemBackground;
-			global::BottomBar.Droid.Resource.Styleable.MenuView_android_itemIconDisabledAlpha = global::NRGScoutingApp.Droid.Resource.Styleable.MenuView_android_itemIconDisabledAlpha;
-			global::BottomBar.Droid.Resource.Styleable.MenuView_android_itemTextAppearance = global::NRGScoutingApp.Droid.Resource.Styleable.MenuView_android_itemTextAppearance;
-			global::BottomBar.Droid.Resource.Styleable.MenuView_android_verticalDivider = global::NRGScoutingApp.Droid.Resource.Styleable.MenuView_android_verticalDivider;
-			global::BottomBar.Droid.Resource.Styleable.MenuView_android_windowAnimationStyle = global::NRGScoutingApp.Droid.Resource.Styleable.MenuView_android_windowAnimationStyle;
-			global::BottomBar.Droid.Resource.Styleable.MenuView_preserveIconSpacing = global::NRGScoutingApp.Droid.Resource.Styleable.MenuView_preserveIconSpacing;
-			global::BottomBar.Droid.Resource.Styleable.NavigationView = global::NRGScoutingApp.Droid.Resource.Styleable.NavigationView;
-			global::BottomBar.Droid.Resource.Styleable.NavigationView_android_background = global::NRGScoutingApp.Droid.Resource.Styleable.NavigationView_android_background;
-			global::BottomBar.Droid.Resource.Styleable.NavigationView_android_fitsSystemWindows = global::NRGScoutingApp.Droid.Resource.Styleable.NavigationView_android_fitsSystemWindows;
-			global::BottomBar.Droid.Resource.Styleable.NavigationView_android_maxWidth = global::NRGScoutingApp.Droid.Resource.Styleable.NavigationView_android_maxWidth;
-			global::BottomBar.Droid.Resource.Styleable.NavigationView_elevation = global::NRGScoutingApp.Droid.Resource.Styleable.NavigationView_elevation;
-			global::BottomBar.Droid.Resource.Styleable.NavigationView_headerLayout = global::NRGScoutingApp.Droid.Resource.Styleable.NavigationView_headerLayout;
-			global::BottomBar.Droid.Resource.Styleable.NavigationView_itemBackground = global::NRGScoutingApp.Droid.Resource.Styleable.NavigationView_itemBackground;
-			global::BottomBar.Droid.Resource.Styleable.NavigationView_itemIconTint = global::NRGScoutingApp.Droid.Resource.Styleable.NavigationView_itemIconTint;
-			global::BottomBar.Droid.Resource.Styleable.NavigationView_itemTextAppearance = global::NRGScoutingApp.Droid.Resource.Styleable.NavigationView_itemTextAppearance;
-			global::BottomBar.Droid.Resource.Styleable.NavigationView_itemTextColor = global::NRGScoutingApp.Droid.Resource.Styleable.NavigationView_itemTextColor;
-			global::BottomBar.Droid.Resource.Styleable.NavigationView_menu = global::NRGScoutingApp.Droid.Resource.Styleable.NavigationView_menu;
-			global::BottomBar.Droid.Resource.Styleable.PopupWindow = global::NRGScoutingApp.Droid.Resource.Styleable.PopupWindow;
-			global::BottomBar.Droid.Resource.Styleable.PopupWindow_android_popupBackground = global::NRGScoutingApp.Droid.Resource.Styleable.PopupWindow_android_popupBackground;
-			global::BottomBar.Droid.Resource.Styleable.PopupWindow_overlapAnchor = global::NRGScoutingApp.Droid.Resource.Styleable.PopupWindow_overlapAnchor;
-			global::BottomBar.Droid.Resource.Styleable.PopupWindowBackgroundState = global::NRGScoutingApp.Droid.Resource.Styleable.PopupWindowBackgroundState;
-			global::BottomBar.Droid.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor = global::NRGScoutingApp.Droid.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor;
-			global::BottomBar.Droid.Resource.Styleable.RecyclerView = global::NRGScoutingApp.Droid.Resource.Styleable.RecyclerView;
-			global::BottomBar.Droid.Resource.Styleable.RecyclerView_android_orientation = global::NRGScoutingApp.Droid.Resource.Styleable.RecyclerView_android_orientation;
-			global::BottomBar.Droid.Resource.Styleable.RecyclerView_layoutManager = global::NRGScoutingApp.Droid.Resource.Styleable.RecyclerView_layoutManager;
-			global::BottomBar.Droid.Resource.Styleable.RecyclerView_reverseLayout = global::NRGScoutingApp.Droid.Resource.Styleable.RecyclerView_reverseLayout;
-			global::BottomBar.Droid.Resource.Styleable.RecyclerView_spanCount = global::NRGScoutingApp.Droid.Resource.Styleable.RecyclerView_spanCount;
-			global::BottomBar.Droid.Resource.Styleable.RecyclerView_stackFromEnd = global::NRGScoutingApp.Droid.Resource.Styleable.RecyclerView_stackFromEnd;
-			global::BottomBar.Droid.Resource.Styleable.ScrimInsetsFrameLayout = global::NRGScoutingApp.Droid.Resource.Styleable.ScrimInsetsFrameLayout;
-			global::BottomBar.Droid.Resource.Styleable.ScrimInsetsFrameLayout_insetForeground = global::NRGScoutingApp.Droid.Resource.Styleable.ScrimInsetsFrameLayout_insetForeground;
-			global::BottomBar.Droid.Resource.Styleable.SearchView = global::NRGScoutingApp.Droid.Resource.Styleable.SearchView;
-			global::BottomBar.Droid.Resource.Styleable.SearchView_android_focusable = global::NRGScoutingApp.Droid.Resource.Styleable.SearchView_android_focusable;
-			global::BottomBar.Droid.Resource.Styleable.SearchView_android_imeOptions = global::NRGScoutingApp.Droid.Resource.Styleable.SearchView_android_imeOptions;
-			global::BottomBar.Droid.Resource.Styleable.SearchView_android_inputType = global::NRGScoutingApp.Droid.Resource.Styleable.SearchView_android_inputType;
-			global::BottomBar.Droid.Resource.Styleable.SearchView_android_maxWidth = global::NRGScoutingApp.Droid.Resource.Styleable.SearchView_android_maxWidth;
-			global::BottomBar.Droid.Resource.Styleable.SearchView_closeIcon = global::NRGScoutingApp.Droid.Resource.Styleable.SearchView_closeIcon;
-			global::BottomBar.Droid.Resource.Styleable.SearchView_commitIcon = global::NRGScoutingApp.Droid.Resource.Styleable.SearchView_commitIcon;
-			global::BottomBar.Droid.Resource.Styleable.SearchView_defaultQueryHint = global::NRGScoutingApp.Droid.Resource.Styleable.SearchView_defaultQueryHint;
-			global::BottomBar.Droid.Resource.Styleable.SearchView_goIcon = global::NRGScoutingApp.Droid.Resource.Styleable.SearchView_goIcon;
-			global::BottomBar.Droid.Resource.Styleable.SearchView_iconifiedByDefault = global::NRGScoutingApp.Droid.Resource.Styleable.SearchView_iconifiedByDefault;
-			global::BottomBar.Droid.Resource.Styleable.SearchView_layout = global::NRGScoutingApp.Droid.Resource.Styleable.SearchView_layout;
-			global::BottomBar.Droid.Resource.Styleable.SearchView_queryBackground = global::NRGScoutingApp.Droid.Resource.Styleable.SearchView_queryBackground;
-			global::BottomBar.Droid.Resource.Styleable.SearchView_queryHint = global::NRGScoutingApp.Droid.Resource.Styleable.SearchView_queryHint;
-			global::BottomBar.Droid.Resource.Styleable.SearchView_searchHintIcon = global::NRGScoutingApp.Droid.Resource.Styleable.SearchView_searchHintIcon;
-			global::BottomBar.Droid.Resource.Styleable.SearchView_searchIcon = global::NRGScoutingApp.Droid.Resource.Styleable.SearchView_searchIcon;
-			global::BottomBar.Droid.Resource.Styleable.SearchView_submitBackground = global::NRGScoutingApp.Droid.Resource.Styleable.SearchView_submitBackground;
-			global::BottomBar.Droid.Resource.Styleable.SearchView_suggestionRowLayout = global::NRGScoutingApp.Droid.Resource.Styleable.SearchView_suggestionRowLayout;
-			global::BottomBar.Droid.Resource.Styleable.SearchView_voiceIcon = global::NRGScoutingApp.Droid.Resource.Styleable.SearchView_voiceIcon;
-			global::BottomBar.Droid.Resource.Styleable.SnackbarLayout = global::NRGScoutingApp.Droid.Resource.Styleable.SnackbarLayout;
-			global::BottomBar.Droid.Resource.Styleable.SnackbarLayout_android_maxWidth = global::NRGScoutingApp.Droid.Resource.Styleable.SnackbarLayout_android_maxWidth;
-			global::BottomBar.Droid.Resource.Styleable.SnackbarLayout_elevation = global::NRGScoutingApp.Droid.Resource.Styleable.SnackbarLayout_elevation;
-			global::BottomBar.Droid.Resource.Styleable.SnackbarLayout_maxActionInlineWidth = global::NRGScoutingApp.Droid.Resource.Styleable.SnackbarLayout_maxActionInlineWidth;
-			global::BottomBar.Droid.Resource.Styleable.Spinner = global::NRGScoutingApp.Droid.Resource.Styleable.Spinner;
-			global::BottomBar.Droid.Resource.Styleable.Spinner_android_dropDownWidth = global::NRGScoutingApp.Droid.Resource.Styleable.Spinner_android_dropDownWidth;
-			global::BottomBar.Droid.Resource.Styleable.Spinner_android_entries = global::NRGScoutingApp.Droid.Resource.Styleable.Spinner_android_entries;
-			global::BottomBar.Droid.Resource.Styleable.Spinner_android_popupBackground = global::NRGScoutingApp.Droid.Resource.Styleable.Spinner_android_popupBackground;
-			global::BottomBar.Droid.Resource.Styleable.Spinner_android_prompt = global::NRGScoutingApp.Droid.Resource.Styleable.Spinner_android_prompt;
-			global::BottomBar.Droid.Resource.Styleable.Spinner_popupTheme = global::NRGScoutingApp.Droid.Resource.Styleable.Spinner_popupTheme;
-			global::BottomBar.Droid.Resource.Styleable.SwitchCompat = global::NRGScoutingApp.Droid.Resource.Styleable.SwitchCompat;
-			global::BottomBar.Droid.Resource.Styleable.SwitchCompat_android_textOff = global::NRGScoutingApp.Droid.Resource.Styleable.SwitchCompat_android_textOff;
-			global::BottomBar.Droid.Resource.Styleable.SwitchCompat_android_textOn = global::NRGScoutingApp.Droid.Resource.Styleable.SwitchCompat_android_textOn;
-			global::BottomBar.Droid.Resource.Styleable.SwitchCompat_android_thumb = global::NRGScoutingApp.Droid.Resource.Styleable.SwitchCompat_android_thumb;
-			global::BottomBar.Droid.Resource.Styleable.SwitchCompat_showText = global::NRGScoutingApp.Droid.Resource.Styleable.SwitchCompat_showText;
-			global::BottomBar.Droid.Resource.Styleable.SwitchCompat_splitTrack = global::NRGScoutingApp.Droid.Resource.Styleable.SwitchCompat_splitTrack;
-			global::BottomBar.Droid.Resource.Styleable.SwitchCompat_switchMinWidth = global::NRGScoutingApp.Droid.Resource.Styleable.SwitchCompat_switchMinWidth;
-			global::BottomBar.Droid.Resource.Styleable.SwitchCompat_switchPadding = global::NRGScoutingApp.Droid.Resource.Styleable.SwitchCompat_switchPadding;
-			global::BottomBar.Droid.Resource.Styleable.SwitchCompat_switchTextAppearance = global::NRGScoutingApp.Droid.Resource.Styleable.SwitchCompat_switchTextAppearance;
-			global::BottomBar.Droid.Resource.Styleable.SwitchCompat_thumbTextPadding = global::NRGScoutingApp.Droid.Resource.Styleable.SwitchCompat_thumbTextPadding;
-			global::BottomBar.Droid.Resource.Styleable.SwitchCompat_track = global::NRGScoutingApp.Droid.Resource.Styleable.SwitchCompat_track;
-			global::BottomBar.Droid.Resource.Styleable.TabItem = global::NRGScoutingApp.Droid.Resource.Styleable.TabItem;
-			global::BottomBar.Droid.Resource.Styleable.TabItem_android_icon = global::NRGScoutingApp.Droid.Resource.Styleable.TabItem_android_icon;
-			global::BottomBar.Droid.Resource.Styleable.TabItem_android_layout = global::NRGScoutingApp.Droid.Resource.Styleable.TabItem_android_layout;
-			global::BottomBar.Droid.Resource.Styleable.TabItem_android_text = global::NRGScoutingApp.Droid.Resource.Styleable.TabItem_android_text;
-			global::BottomBar.Droid.Resource.Styleable.TabLayout = global::NRGScoutingApp.Droid.Resource.Styleable.TabLayout;
-			global::BottomBar.Droid.Resource.Styleable.TabLayout_tabBackground = global::NRGScoutingApp.Droid.Resource.Styleable.TabLayout_tabBackground;
-			global::BottomBar.Droid.Resource.Styleable.TabLayout_tabContentStart = global::NRGScoutingApp.Droid.Resource.Styleable.TabLayout_tabContentStart;
-			global::BottomBar.Droid.Resource.Styleable.TabLayout_tabGravity = global::NRGScoutingApp.Droid.Resource.Styleable.TabLayout_tabGravity;
-			global::BottomBar.Droid.Resource.Styleable.TabLayout_tabIndicatorColor = global::NRGScoutingApp.Droid.Resource.Styleable.TabLayout_tabIndicatorColor;
-			global::BottomBar.Droid.Resource.Styleable.TabLayout_tabIndicatorHeight = global::NRGScoutingApp.Droid.Resource.Styleable.TabLayout_tabIndicatorHeight;
-			global::BottomBar.Droid.Resource.Styleable.TabLayout_tabMaxWidth = global::NRGScoutingApp.Droid.Resource.Styleable.TabLayout_tabMaxWidth;
-			global::BottomBar.Droid.Resource.Styleable.TabLayout_tabMinWidth = global::NRGScoutingApp.Droid.Resource.Styleable.TabLayout_tabMinWidth;
-			global::BottomBar.Droid.Resource.Styleable.TabLayout_tabMode = global::NRGScoutingApp.Droid.Resource.Styleable.TabLayout_tabMode;
-			global::BottomBar.Droid.Resource.Styleable.TabLayout_tabPadding = global::NRGScoutingApp.Droid.Resource.Styleable.TabLayout_tabPadding;
-			global::BottomBar.Droid.Resource.Styleable.TabLayout_tabPaddingBottom = global::NRGScoutingApp.Droid.Resource.Styleable.TabLayout_tabPaddingBottom;
-			global::BottomBar.Droid.Resource.Styleable.TabLayout_tabPaddingEnd = global::NRGScoutingApp.Droid.Resource.Styleable.TabLayout_tabPaddingEnd;
-			global::BottomBar.Droid.Resource.Styleable.TabLayout_tabPaddingStart = global::NRGScoutingApp.Droid.Resource.Styleable.TabLayout_tabPaddingStart;
-			global::BottomBar.Droid.Resource.Styleable.TabLayout_tabPaddingTop = global::NRGScoutingApp.Droid.Resource.Styleable.TabLayout_tabPaddingTop;
-			global::BottomBar.Droid.Resource.Styleable.TabLayout_tabSelectedTextColor = global::NRGScoutingApp.Droid.Resource.Styleable.TabLayout_tabSelectedTextColor;
-			global::BottomBar.Droid.Resource.Styleable.TabLayout_tabTextAppearance = global::NRGScoutingApp.Droid.Resource.Styleable.TabLayout_tabTextAppearance;
-			global::BottomBar.Droid.Resource.Styleable.TabLayout_tabTextColor = global::NRGScoutingApp.Droid.Resource.Styleable.TabLayout_tabTextColor;
-			global::BottomBar.Droid.Resource.Styleable.TextAppearance = global::NRGScoutingApp.Droid.Resource.Styleable.TextAppearance;
-			global::BottomBar.Droid.Resource.Styleable.TextAppearance_android_shadowColor = global::NRGScoutingApp.Droid.Resource.Styleable.TextAppearance_android_shadowColor;
-			global::BottomBar.Droid.Resource.Styleable.TextAppearance_android_shadowDx = global::NRGScoutingApp.Droid.Resource.Styleable.TextAppearance_android_shadowDx;
-			global::BottomBar.Droid.Resource.Styleable.TextAppearance_android_shadowDy = global::NRGScoutingApp.Droid.Resource.Styleable.TextAppearance_android_shadowDy;
-			global::BottomBar.Droid.Resource.Styleable.TextAppearance_android_shadowRadius = global::NRGScoutingApp.Droid.Resource.Styleable.TextAppearance_android_shadowRadius;
-			global::BottomBar.Droid.Resource.Styleable.TextAppearance_android_textColor = global::NRGScoutingApp.Droid.Resource.Styleable.TextAppearance_android_textColor;
-			global::BottomBar.Droid.Resource.Styleable.TextAppearance_android_textSize = global::NRGScoutingApp.Droid.Resource.Styleable.TextAppearance_android_textSize;
-			global::BottomBar.Droid.Resource.Styleable.TextAppearance_android_textStyle = global::NRGScoutingApp.Droid.Resource.Styleable.TextAppearance_android_textStyle;
-			global::BottomBar.Droid.Resource.Styleable.TextAppearance_android_typeface = global::NRGScoutingApp.Droid.Resource.Styleable.TextAppearance_android_typeface;
-			global::BottomBar.Droid.Resource.Styleable.TextAppearance_textAllCaps = global::NRGScoutingApp.Droid.Resource.Styleable.TextAppearance_textAllCaps;
-			global::BottomBar.Droid.Resource.Styleable.TextInputLayout = global::NRGScoutingApp.Droid.Resource.Styleable.TextInputLayout;
-			global::BottomBar.Droid.Resource.Styleable.TextInputLayout_android_hint = global::NRGScoutingApp.Droid.Resource.Styleable.TextInputLayout_android_hint;
-			global::BottomBar.Droid.Resource.Styleable.TextInputLayout_android_textColorHint = global::NRGScoutingApp.Droid.Resource.Styleable.TextInputLayout_android_textColorHint;
-			global::BottomBar.Droid.Resource.Styleable.TextInputLayout_counterEnabled = global::NRGScoutingApp.Droid.Resource.Styleable.TextInputLayout_counterEnabled;
-			global::BottomBar.Droid.Resource.Styleable.TextInputLayout_counterMaxLength = global::NRGScoutingApp.Droid.Resource.Styleable.TextInputLayout_counterMaxLength;
-			global::BottomBar.Droid.Resource.Styleable.TextInputLayout_counterOverflowTextAppearance = global::NRGScoutingApp.Droid.Resource.Styleable.TextInputLayout_counterOverflowTextAppearance;
-			global::BottomBar.Droid.Resource.Styleable.TextInputLayout_counterTextAppearance = global::NRGScoutingApp.Droid.Resource.Styleable.TextInputLayout_counterTextAppearance;
-			global::BottomBar.Droid.Resource.Styleable.TextInputLayout_errorEnabled = global::NRGScoutingApp.Droid.Resource.Styleable.TextInputLayout_errorEnabled;
-			global::BottomBar.Droid.Resource.Styleable.TextInputLayout_errorTextAppearance = global::NRGScoutingApp.Droid.Resource.Styleable.TextInputLayout_errorTextAppearance;
-			global::BottomBar.Droid.Resource.Styleable.TextInputLayout_hintAnimationEnabled = global::NRGScoutingApp.Droid.Resource.Styleable.TextInputLayout_hintAnimationEnabled;
-			global::BottomBar.Droid.Resource.Styleable.TextInputLayout_hintEnabled = global::NRGScoutingApp.Droid.Resource.Styleable.TextInputLayout_hintEnabled;
-			global::BottomBar.Droid.Resource.Styleable.TextInputLayout_hintTextAppearance = global::NRGScoutingApp.Droid.Resource.Styleable.TextInputLayout_hintTextAppearance;
-			global::BottomBar.Droid.Resource.Styleable.Toolbar = global::NRGScoutingApp.Droid.Resource.Styleable.Toolbar;
-			global::BottomBar.Droid.Resource.Styleable.Toolbar_android_gravity = global::NRGScoutingApp.Droid.Resource.Styleable.Toolbar_android_gravity;
-			global::BottomBar.Droid.Resource.Styleable.Toolbar_android_minHeight = global::NRGScoutingApp.Droid.Resource.Styleable.Toolbar_android_minHeight;
-			global::BottomBar.Droid.Resource.Styleable.Toolbar_collapseContentDescription = global::NRGScoutingApp.Droid.Resource.Styleable.Toolbar_collapseContentDescription;
-			global::BottomBar.Droid.Resource.Styleable.Toolbar_collapseIcon = global::NRGScoutingApp.Droid.Resource.Styleable.Toolbar_collapseIcon;
-			global::BottomBar.Droid.Resource.Styleable.Toolbar_contentInsetEnd = global::NRGScoutingApp.Droid.Resource.Styleable.Toolbar_contentInsetEnd;
-			global::BottomBar.Droid.Resource.Styleable.Toolbar_contentInsetLeft = global::NRGScoutingApp.Droid.Resource.Styleable.Toolbar_contentInsetLeft;
-			global::BottomBar.Droid.Resource.Styleable.Toolbar_contentInsetRight = global::NRGScoutingApp.Droid.Resource.Styleable.Toolbar_contentInsetRight;
-			global::BottomBar.Droid.Resource.Styleable.Toolbar_contentInsetStart = global::NRGScoutingApp.Droid.Resource.Styleable.Toolbar_contentInsetStart;
-			global::BottomBar.Droid.Resource.Styleable.Toolbar_logo = global::NRGScoutingApp.Droid.Resource.Styleable.Toolbar_logo;
-			global::BottomBar.Droid.Resource.Styleable.Toolbar_logoDescription = global::NRGScoutingApp.Droid.Resource.Styleable.Toolbar_logoDescription;
-			global::BottomBar.Droid.Resource.Styleable.Toolbar_maxButtonHeight = global::NRGScoutingApp.Droid.Resource.Styleable.Toolbar_maxButtonHeight;
-			global::BottomBar.Droid.Resource.Styleable.Toolbar_navigationContentDescription = global::NRGScoutingApp.Droid.Resource.Styleable.Toolbar_navigationContentDescription;
-			global::BottomBar.Droid.Resource.Styleable.Toolbar_navigationIcon = global::NRGScoutingApp.Droid.Resource.Styleable.Toolbar_navigationIcon;
-			global::BottomBar.Droid.Resource.Styleable.Toolbar_popupTheme = global::NRGScoutingApp.Droid.Resource.Styleable.Toolbar_popupTheme;
-			global::BottomBar.Droid.Resource.Styleable.Toolbar_subtitle = global::NRGScoutingApp.Droid.Resource.Styleable.Toolbar_subtitle;
-			global::BottomBar.Droid.Resource.Styleable.Toolbar_subtitleTextAppearance = global::NRGScoutingApp.Droid.Resource.Styleable.Toolbar_subtitleTextAppearance;
-			global::BottomBar.Droid.Resource.Styleable.Toolbar_subtitleTextColor = global::NRGScoutingApp.Droid.Resource.Styleable.Toolbar_subtitleTextColor;
-			global::BottomBar.Droid.Resource.Styleable.Toolbar_title = global::NRGScoutingApp.Droid.Resource.Styleable.Toolbar_title;
-			global::BottomBar.Droid.Resource.Styleable.Toolbar_titleMarginBottom = global::NRGScoutingApp.Droid.Resource.Styleable.Toolbar_titleMarginBottom;
-			global::BottomBar.Droid.Resource.Styleable.Toolbar_titleMarginEnd = global::NRGScoutingApp.Droid.Resource.Styleable.Toolbar_titleMarginEnd;
-			global::BottomBar.Droid.Resource.Styleable.Toolbar_titleMarginStart = global::NRGScoutingApp.Droid.Resource.Styleable.Toolbar_titleMarginStart;
-			global::BottomBar.Droid.Resource.Styleable.Toolbar_titleMarginTop = global::NRGScoutingApp.Droid.Resource.Styleable.Toolbar_titleMarginTop;
-			global::BottomBar.Droid.Resource.Styleable.Toolbar_titleMargins = global::NRGScoutingApp.Droid.Resource.Styleable.Toolbar_titleMargins;
-			global::BottomBar.Droid.Resource.Styleable.Toolbar_titleTextAppearance = global::NRGScoutingApp.Droid.Resource.Styleable.Toolbar_titleTextAppearance;
-			global::BottomBar.Droid.Resource.Styleable.Toolbar_titleTextColor = global::NRGScoutingApp.Droid.Resource.Styleable.Toolbar_titleTextColor;
-			global::BottomBar.Droid.Resource.Styleable.View = global::NRGScoutingApp.Droid.Resource.Styleable.View;
-			global::BottomBar.Droid.Resource.Styleable.View_android_focusable = global::NRGScoutingApp.Droid.Resource.Styleable.View_android_focusable;
-			global::BottomBar.Droid.Resource.Styleable.View_android_theme = global::NRGScoutingApp.Droid.Resource.Styleable.View_android_theme;
-			global::BottomBar.Droid.Resource.Styleable.View_paddingEnd = global::NRGScoutingApp.Droid.Resource.Styleable.View_paddingEnd;
-			global::BottomBar.Droid.Resource.Styleable.View_paddingStart = global::NRGScoutingApp.Droid.Resource.Styleable.View_paddingStart;
-			global::BottomBar.Droid.Resource.Styleable.View_theme = global::NRGScoutingApp.Droid.Resource.Styleable.View_theme;
-			global::BottomBar.Droid.Resource.Styleable.ViewBackgroundHelper = global::NRGScoutingApp.Droid.Resource.Styleable.ViewBackgroundHelper;
-			global::BottomBar.Droid.Resource.Styleable.ViewBackgroundHelper_android_background = global::NRGScoutingApp.Droid.Resource.Styleable.ViewBackgroundHelper_android_background;
-			global::BottomBar.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTint = global::NRGScoutingApp.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTint;
-			global::BottomBar.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode = global::NRGScoutingApp.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode;
-			global::BottomBar.Droid.Resource.Styleable.ViewStubCompat = global::NRGScoutingApp.Droid.Resource.Styleable.ViewStubCompat;
-			global::BottomBar.Droid.Resource.Styleable.ViewStubCompat_android_id = global::NRGScoutingApp.Droid.Resource.Styleable.ViewStubCompat_android_id;
-			global::BottomBar.Droid.Resource.Styleable.ViewStubCompat_android_inflatedId = global::NRGScoutingApp.Droid.Resource.Styleable.ViewStubCompat_android_inflatedId;
-			global::BottomBar.Droid.Resource.Styleable.ViewStubCompat_android_layout = global::NRGScoutingApp.Droid.Resource.Styleable.ViewStubCompat_android_layout;
-			global::BottomNavigationBar.Resource.Animation.abc_fade_in = global::NRGScoutingApp.Droid.Resource.Animation.abc_fade_in;
-			global::BottomNavigationBar.Resource.Animation.abc_fade_out = global::NRGScoutingApp.Droid.Resource.Animation.abc_fade_out;
-			global::BottomNavigationBar.Resource.Animation.abc_grow_fade_in_from_bottom = global::NRGScoutingApp.Droid.Resource.Animation.abc_grow_fade_in_from_bottom;
-			global::BottomNavigationBar.Resource.Animation.abc_popup_enter = global::NRGScoutingApp.Droid.Resource.Animation.abc_popup_enter;
-			global::BottomNavigationBar.Resource.Animation.abc_popup_exit = global::NRGScoutingApp.Droid.Resource.Animation.abc_popup_exit;
-			global::BottomNavigationBar.Resource.Animation.abc_shrink_fade_out_from_bottom = global::NRGScoutingApp.Droid.Resource.Animation.abc_shrink_fade_out_from_bottom;
-			global::BottomNavigationBar.Resource.Animation.abc_slide_in_bottom = global::NRGScoutingApp.Droid.Resource.Animation.abc_slide_in_bottom;
-			global::BottomNavigationBar.Resource.Animation.abc_slide_in_top = global::NRGScoutingApp.Droid.Resource.Animation.abc_slide_in_top;
-			global::BottomNavigationBar.Resource.Animation.abc_slide_out_bottom = global::NRGScoutingApp.Droid.Resource.Animation.abc_slide_out_bottom;
-			global::BottomNavigationBar.Resource.Animation.abc_slide_out_top = global::NRGScoutingApp.Droid.Resource.Animation.abc_slide_out_top;
-			global::BottomNavigationBar.Resource.Animation.design_bottom_sheet_slide_in = global::NRGScoutingApp.Droid.Resource.Animation.design_bottom_sheet_slide_in;
-			global::BottomNavigationBar.Resource.Animation.design_bottom_sheet_slide_out = global::NRGScoutingApp.Droid.Resource.Animation.design_bottom_sheet_slide_out;
-			global::BottomNavigationBar.Resource.Animation.design_snackbar_in = global::NRGScoutingApp.Droid.Resource.Animation.design_snackbar_in;
-			global::BottomNavigationBar.Resource.Animation.design_snackbar_out = global::NRGScoutingApp.Droid.Resource.Animation.design_snackbar_out;
-			global::BottomNavigationBar.Resource.Attribute.actionBarDivider = global::NRGScoutingApp.Droid.Resource.Attribute.actionBarDivider;
-			global::BottomNavigationBar.Resource.Attribute.actionBarItemBackground = global::NRGScoutingApp.Droid.Resource.Attribute.actionBarItemBackground;
-			global::BottomNavigationBar.Resource.Attribute.actionBarPopupTheme = global::NRGScoutingApp.Droid.Resource.Attribute.actionBarPopupTheme;
-			global::BottomNavigationBar.Resource.Attribute.actionBarSize = global::NRGScoutingApp.Droid.Resource.Attribute.actionBarSize;
-			global::BottomNavigationBar.Resource.Attribute.actionBarSplitStyle = global::NRGScoutingApp.Droid.Resource.Attribute.actionBarSplitStyle;
-			global::BottomNavigationBar.Resource.Attribute.actionBarStyle = global::NRGScoutingApp.Droid.Resource.Attribute.actionBarStyle;
-			global::BottomNavigationBar.Resource.Attribute.actionBarTabBarStyle = global::NRGScoutingApp.Droid.Resource.Attribute.actionBarTabBarStyle;
-			global::BottomNavigationBar.Resource.Attribute.actionBarTabStyle = global::NRGScoutingApp.Droid.Resource.Attribute.actionBarTabStyle;
-			global::BottomNavigationBar.Resource.Attribute.actionBarTabTextStyle = global::NRGScoutingApp.Droid.Resource.Attribute.actionBarTabTextStyle;
-			global::BottomNavigationBar.Resource.Attribute.actionBarTheme = global::NRGScoutingApp.Droid.Resource.Attribute.actionBarTheme;
-			global::BottomNavigationBar.Resource.Attribute.actionBarWidgetTheme = global::NRGScoutingApp.Droid.Resource.Attribute.actionBarWidgetTheme;
-			global::BottomNavigationBar.Resource.Attribute.actionButtonStyle = global::NRGScoutingApp.Droid.Resource.Attribute.actionButtonStyle;
-			global::BottomNavigationBar.Resource.Attribute.actionDropDownStyle = global::NRGScoutingApp.Droid.Resource.Attribute.actionDropDownStyle;
-			global::BottomNavigationBar.Resource.Attribute.actionLayout = global::NRGScoutingApp.Droid.Resource.Attribute.actionLayout;
-			global::BottomNavigationBar.Resource.Attribute.actionMenuTextAppearance = global::NRGScoutingApp.Droid.Resource.Attribute.actionMenuTextAppearance;
-			global::BottomNavigationBar.Resource.Attribute.actionMenuTextColor = global::NRGScoutingApp.Droid.Resource.Attribute.actionMenuTextColor;
-			global::BottomNavigationBar.Resource.Attribute.actionModeBackground = global::NRGScoutingApp.Droid.Resource.Attribute.actionModeBackground;
-			global::BottomNavigationBar.Resource.Attribute.actionModeCloseButtonStyle = global::NRGScoutingApp.Droid.Resource.Attribute.actionModeCloseButtonStyle;
-			global::BottomNavigationBar.Resource.Attribute.actionModeCloseDrawable = global::NRGScoutingApp.Droid.Resource.Attribute.actionModeCloseDrawable;
-			global::BottomNavigationBar.Resource.Attribute.actionModeCopyDrawable = global::NRGScoutingApp.Droid.Resource.Attribute.actionModeCopyDrawable;
-			global::BottomNavigationBar.Resource.Attribute.actionModeCutDrawable = global::NRGScoutingApp.Droid.Resource.Attribute.actionModeCutDrawable;
-			global::BottomNavigationBar.Resource.Attribute.actionModeFindDrawable = global::NRGScoutingApp.Droid.Resource.Attribute.actionModeFindDrawable;
-			global::BottomNavigationBar.Resource.Attribute.actionModePasteDrawable = global::NRGScoutingApp.Droid.Resource.Attribute.actionModePasteDrawable;
-			global::BottomNavigationBar.Resource.Attribute.actionModePopupWindowStyle = global::NRGScoutingApp.Droid.Resource.Attribute.actionModePopupWindowStyle;
-			global::BottomNavigationBar.Resource.Attribute.actionModeSelectAllDrawable = global::NRGScoutingApp.Droid.Resource.Attribute.actionModeSelectAllDrawable;
-			global::BottomNavigationBar.Resource.Attribute.actionModeShareDrawable = global::NRGScoutingApp.Droid.Resource.Attribute.actionModeShareDrawable;
-			global::BottomNavigationBar.Resource.Attribute.actionModeSplitBackground = global::NRGScoutingApp.Droid.Resource.Attribute.actionModeSplitBackground;
-			global::BottomNavigationBar.Resource.Attribute.actionModeStyle = global::NRGScoutingApp.Droid.Resource.Attribute.actionModeStyle;
-			global::BottomNavigationBar.Resource.Attribute.actionModeWebSearchDrawable = global::NRGScoutingApp.Droid.Resource.Attribute.actionModeWebSearchDrawable;
-			global::BottomNavigationBar.Resource.Attribute.actionOverflowButtonStyle = global::NRGScoutingApp.Droid.Resource.Attribute.actionOverflowButtonStyle;
-			global::BottomNavigationBar.Resource.Attribute.actionOverflowMenuStyle = global::NRGScoutingApp.Droid.Resource.Attribute.actionOverflowMenuStyle;
-			global::BottomNavigationBar.Resource.Attribute.actionProviderClass = global::NRGScoutingApp.Droid.Resource.Attribute.actionProviderClass;
-			global::BottomNavigationBar.Resource.Attribute.actionViewClass = global::NRGScoutingApp.Droid.Resource.Attribute.actionViewClass;
-			global::BottomNavigationBar.Resource.Attribute.activityChooserViewStyle = global::NRGScoutingApp.Droid.Resource.Attribute.activityChooserViewStyle;
-			global::BottomNavigationBar.Resource.Attribute.alertDialogButtonGroupStyle = global::NRGScoutingApp.Droid.Resource.Attribute.alertDialogButtonGroupStyle;
-			global::BottomNavigationBar.Resource.Attribute.alertDialogCenterButtons = global::NRGScoutingApp.Droid.Resource.Attribute.alertDialogCenterButtons;
-			global::BottomNavigationBar.Resource.Attribute.alertDialogStyle = global::NRGScoutingApp.Droid.Resource.Attribute.alertDialogStyle;
-			global::BottomNavigationBar.Resource.Attribute.alertDialogTheme = global::NRGScoutingApp.Droid.Resource.Attribute.alertDialogTheme;
-			global::BottomNavigationBar.Resource.Attribute.allowStacking = global::NRGScoutingApp.Droid.Resource.Attribute.allowStacking;
-			global::BottomNavigationBar.Resource.Attribute.alpha = global::NRGScoutingApp.Droid.Resource.Attribute.alpha;
-			global::BottomNavigationBar.Resource.Attribute.arrowHeadLength = global::NRGScoutingApp.Droid.Resource.Attribute.arrowHeadLength;
-			global::BottomNavigationBar.Resource.Attribute.arrowShaftLength = global::NRGScoutingApp.Droid.Resource.Attribute.arrowShaftLength;
-			global::BottomNavigationBar.Resource.Attribute.autoCompleteTextViewStyle = global::NRGScoutingApp.Droid.Resource.Attribute.autoCompleteTextViewStyle;
-			global::BottomNavigationBar.Resource.Attribute.background = global::NRGScoutingApp.Droid.Resource.Attribute.background;
-			global::BottomNavigationBar.Resource.Attribute.backgroundSplit = global::NRGScoutingApp.Droid.Resource.Attribute.backgroundSplit;
-			global::BottomNavigationBar.Resource.Attribute.backgroundStacked = global::NRGScoutingApp.Droid.Resource.Attribute.backgroundStacked;
-			global::BottomNavigationBar.Resource.Attribute.backgroundTint = global::NRGScoutingApp.Droid.Resource.Attribute.backgroundTint;
-			global::BottomNavigationBar.Resource.Attribute.backgroundTintMode = global::NRGScoutingApp.Droid.Resource.Attribute.backgroundTintMode;
-			global::BottomNavigationBar.Resource.Attribute.barLength = global::NRGScoutingApp.Droid.Resource.Attribute.barLength;
-			global::BottomNavigationBar.Resource.Attribute.behavior_autoHide = global::NRGScoutingApp.Droid.Resource.Attribute.behavior_autoHide;
-			global::BottomNavigationBar.Resource.Attribute.behavior_hideable = global::NRGScoutingApp.Droid.Resource.Attribute.behavior_hideable;
-			global::BottomNavigationBar.Resource.Attribute.behavior_overlapTop = global::NRGScoutingApp.Droid.Resource.Attribute.behavior_overlapTop;
-			global::BottomNavigationBar.Resource.Attribute.behavior_peekHeight = global::NRGScoutingApp.Droid.Resource.Attribute.behavior_peekHeight;
-			global::BottomNavigationBar.Resource.Attribute.behavior_skipCollapsed = global::NRGScoutingApp.Droid.Resource.Attribute.behavior_skipCollapsed;
-			global::BottomNavigationBar.Resource.Attribute.borderWidth = global::NRGScoutingApp.Droid.Resource.Attribute.borderWidth;
-			global::BottomNavigationBar.Resource.Attribute.borderlessButtonStyle = global::NRGScoutingApp.Droid.Resource.Attribute.borderlessButtonStyle;
-			global::BottomNavigationBar.Resource.Attribute.bottomSheetDialogTheme = global::NRGScoutingApp.Droid.Resource.Attribute.bottomSheetDialogTheme;
-			global::BottomNavigationBar.Resource.Attribute.bottomSheetStyle = global::NRGScoutingApp.Droid.Resource.Attribute.bottomSheetStyle;
-			global::BottomNavigationBar.Resource.Attribute.buttonBarButtonStyle = global::NRGScoutingApp.Droid.Resource.Attribute.buttonBarButtonStyle;
-			global::BottomNavigationBar.Resource.Attribute.buttonBarNegativeButtonStyle = global::NRGScoutingApp.Droid.Resource.Attribute.buttonBarNegativeButtonStyle;
-			global::BottomNavigationBar.Resource.Attribute.buttonBarNeutralButtonStyle = global::NRGScoutingApp.Droid.Resource.Attribute.buttonBarNeutralButtonStyle;
-			global::BottomNavigationBar.Resource.Attribute.buttonBarPositiveButtonStyle = global::NRGScoutingApp.Droid.Resource.Attribute.buttonBarPositiveButtonStyle;
-			global::BottomNavigationBar.Resource.Attribute.buttonBarStyle = global::NRGScoutingApp.Droid.Resource.Attribute.buttonBarStyle;
-			global::BottomNavigationBar.Resource.Attribute.buttonGravity = global::NRGScoutingApp.Droid.Resource.Attribute.buttonGravity;
-			global::BottomNavigationBar.Resource.Attribute.buttonPanelSideLayout = global::NRGScoutingApp.Droid.Resource.Attribute.buttonPanelSideLayout;
-			global::BottomNavigationBar.Resource.Attribute.buttonStyle = global::NRGScoutingApp.Droid.Resource.Attribute.buttonStyle;
-			global::BottomNavigationBar.Resource.Attribute.buttonStyleSmall = global::NRGScoutingApp.Droid.Resource.Attribute.buttonStyleSmall;
-			global::BottomNavigationBar.Resource.Attribute.buttonTint = global::NRGScoutingApp.Droid.Resource.Attribute.buttonTint;
-			global::BottomNavigationBar.Resource.Attribute.buttonTintMode = global::NRGScoutingApp.Droid.Resource.Attribute.buttonTintMode;
-			global::BottomNavigationBar.Resource.Attribute.checkboxStyle = global::NRGScoutingApp.Droid.Resource.Attribute.checkboxStyle;
-			global::BottomNavigationBar.Resource.Attribute.checkedTextViewStyle = global::NRGScoutingApp.Droid.Resource.Attribute.checkedTextViewStyle;
-			global::BottomNavigationBar.Resource.Attribute.closeIcon = global::NRGScoutingApp.Droid.Resource.Attribute.closeIcon;
-			global::BottomNavigationBar.Resource.Attribute.closeItemLayout = global::NRGScoutingApp.Droid.Resource.Attribute.closeItemLayout;
-			global::BottomNavigationBar.Resource.Attribute.collapseContentDescription = global::NRGScoutingApp.Droid.Resource.Attribute.collapseContentDescription;
-			global::BottomNavigationBar.Resource.Attribute.collapseIcon = global::NRGScoutingApp.Droid.Resource.Attribute.collapseIcon;
-			global::BottomNavigationBar.Resource.Attribute.collapsedTitleGravity = global::NRGScoutingApp.Droid.Resource.Attribute.collapsedTitleGravity;
-			global::BottomNavigationBar.Resource.Attribute.collapsedTitleTextAppearance = global::NRGScoutingApp.Droid.Resource.Attribute.collapsedTitleTextAppearance;
-			global::BottomNavigationBar.Resource.Attribute.color = global::NRGScoutingApp.Droid.Resource.Attribute.color;
-			global::BottomNavigationBar.Resource.Attribute.colorAccent = global::NRGScoutingApp.Droid.Resource.Attribute.colorAccent;
-			global::BottomNavigationBar.Resource.Attribute.colorBackgroundFloating = global::NRGScoutingApp.Droid.Resource.Attribute.colorBackgroundFloating;
-			global::BottomNavigationBar.Resource.Attribute.colorButtonNormal = global::NRGScoutingApp.Droid.Resource.Attribute.colorButtonNormal;
-			global::BottomNavigationBar.Resource.Attribute.colorControlActivated = global::NRGScoutingApp.Droid.Resource.Attribute.colorControlActivated;
-			global::BottomNavigationBar.Resource.Attribute.colorControlHighlight = global::NRGScoutingApp.Droid.Resource.Attribute.colorControlHighlight;
-			global::BottomNavigationBar.Resource.Attribute.colorControlNormal = global::NRGScoutingApp.Droid.Resource.Attribute.colorControlNormal;
-			global::BottomNavigationBar.Resource.Attribute.colorPrimary = global::NRGScoutingApp.Droid.Resource.Attribute.colorPrimary;
-			global::BottomNavigationBar.Resource.Attribute.colorPrimaryDark = global::NRGScoutingApp.Droid.Resource.Attribute.colorPrimaryDark;
-			global::BottomNavigationBar.Resource.Attribute.colorSwitchThumbNormal = global::NRGScoutingApp.Droid.Resource.Attribute.colorSwitchThumbNormal;
-			global::BottomNavigationBar.Resource.Attribute.commitIcon = global::NRGScoutingApp.Droid.Resource.Attribute.commitIcon;
-			global::BottomNavigationBar.Resource.Attribute.contentInsetEnd = global::NRGScoutingApp.Droid.Resource.Attribute.contentInsetEnd;
-			global::BottomNavigationBar.Resource.Attribute.contentInsetEndWithActions = global::NRGScoutingApp.Droid.Resource.Attribute.contentInsetEndWithActions;
-			global::BottomNavigationBar.Resource.Attribute.contentInsetLeft = global::NRGScoutingApp.Droid.Resource.Attribute.contentInsetLeft;
-			global::BottomNavigationBar.Resource.Attribute.contentInsetRight = global::NRGScoutingApp.Droid.Resource.Attribute.contentInsetRight;
-			global::BottomNavigationBar.Resource.Attribute.contentInsetStart = global::NRGScoutingApp.Droid.Resource.Attribute.contentInsetStart;
-			global::BottomNavigationBar.Resource.Attribute.contentInsetStartWithNavigation = global::NRGScoutingApp.Droid.Resource.Attribute.contentInsetStartWithNavigation;
-			global::BottomNavigationBar.Resource.Attribute.contentScrim = global::NRGScoutingApp.Droid.Resource.Attribute.contentScrim;
-			global::BottomNavigationBar.Resource.Attribute.controlBackground = global::NRGScoutingApp.Droid.Resource.Attribute.controlBackground;
-			global::BottomNavigationBar.Resource.Attribute.counterEnabled = global::NRGScoutingApp.Droid.Resource.Attribute.counterEnabled;
-			global::BottomNavigationBar.Resource.Attribute.counterMaxLength = global::NRGScoutingApp.Droid.Resource.Attribute.counterMaxLength;
-			global::BottomNavigationBar.Resource.Attribute.counterOverflowTextAppearance = global::NRGScoutingApp.Droid.Resource.Attribute.counterOverflowTextAppearance;
-			global::BottomNavigationBar.Resource.Attribute.counterTextAppearance = global::NRGScoutingApp.Droid.Resource.Attribute.counterTextAppearance;
-			global::BottomNavigationBar.Resource.Attribute.customNavigationLayout = global::NRGScoutingApp.Droid.Resource.Attribute.customNavigationLayout;
-			global::BottomNavigationBar.Resource.Attribute.defaultQueryHint = global::NRGScoutingApp.Droid.Resource.Attribute.defaultQueryHint;
-			global::BottomNavigationBar.Resource.Attribute.dialogPreferredPadding = global::NRGScoutingApp.Droid.Resource.Attribute.dialogPreferredPadding;
-			global::BottomNavigationBar.Resource.Attribute.dialogTheme = global::NRGScoutingApp.Droid.Resource.Attribute.dialogTheme;
-			global::BottomNavigationBar.Resource.Attribute.displayOptions = global::NRGScoutingApp.Droid.Resource.Attribute.displayOptions;
-			global::BottomNavigationBar.Resource.Attribute.divider = global::NRGScoutingApp.Droid.Resource.Attribute.divider;
-			global::BottomNavigationBar.Resource.Attribute.dividerHorizontal = global::NRGScoutingApp.Droid.Resource.Attribute.dividerHorizontal;
-			global::BottomNavigationBar.Resource.Attribute.dividerPadding = global::NRGScoutingApp.Droid.Resource.Attribute.dividerPadding;
-			global::BottomNavigationBar.Resource.Attribute.dividerVertical = global::NRGScoutingApp.Droid.Resource.Attribute.dividerVertical;
-			global::BottomNavigationBar.Resource.Attribute.drawableSize = global::NRGScoutingApp.Droid.Resource.Attribute.drawableSize;
-			global::BottomNavigationBar.Resource.Attribute.drawerArrowStyle = global::NRGScoutingApp.Droid.Resource.Attribute.drawerArrowStyle;
-			global::BottomNavigationBar.Resource.Attribute.dropDownListViewStyle = global::NRGScoutingApp.Droid.Resource.Attribute.dropDownListViewStyle;
-			global::BottomNavigationBar.Resource.Attribute.dropdownListPreferredItemHeight = global::NRGScoutingApp.Droid.Resource.Attribute.dropdownListPreferredItemHeight;
-			global::BottomNavigationBar.Resource.Attribute.editTextBackground = global::NRGScoutingApp.Droid.Resource.Attribute.editTextBackground;
-			global::BottomNavigationBar.Resource.Attribute.editTextColor = global::NRGScoutingApp.Droid.Resource.Attribute.editTextColor;
-			global::BottomNavigationBar.Resource.Attribute.editTextStyle = global::NRGScoutingApp.Droid.Resource.Attribute.editTextStyle;
-			global::BottomNavigationBar.Resource.Attribute.elevation = global::NRGScoutingApp.Droid.Resource.Attribute.elevation;
-			global::BottomNavigationBar.Resource.Attribute.errorEnabled = global::NRGScoutingApp.Droid.Resource.Attribute.errorEnabled;
-			global::BottomNavigationBar.Resource.Attribute.errorTextAppearance = global::NRGScoutingApp.Droid.Resource.Attribute.errorTextAppearance;
-			global::BottomNavigationBar.Resource.Attribute.expandActivityOverflowButtonDrawable = global::NRGScoutingApp.Droid.Resource.Attribute.expandActivityOverflowButtonDrawable;
-			global::BottomNavigationBar.Resource.Attribute.expanded = global::NRGScoutingApp.Droid.Resource.Attribute.expanded;
-			global::BottomNavigationBar.Resource.Attribute.expandedTitleGravity = global::NRGScoutingApp.Droid.Resource.Attribute.expandedTitleGravity;
-			global::BottomNavigationBar.Resource.Attribute.expandedTitleMargin = global::NRGScoutingApp.Droid.Resource.Attribute.expandedTitleMargin;
-			global::BottomNavigationBar.Resource.Attribute.expandedTitleMarginBottom = global::NRGScoutingApp.Droid.Resource.Attribute.expandedTitleMarginBottom;
-			global::BottomNavigationBar.Resource.Attribute.expandedTitleMarginEnd = global::NRGScoutingApp.Droid.Resource.Attribute.expandedTitleMarginEnd;
-			global::BottomNavigationBar.Resource.Attribute.expandedTitleMarginStart = global::NRGScoutingApp.Droid.Resource.Attribute.expandedTitleMarginStart;
-			global::BottomNavigationBar.Resource.Attribute.expandedTitleMarginTop = global::NRGScoutingApp.Droid.Resource.Attribute.expandedTitleMarginTop;
-			global::BottomNavigationBar.Resource.Attribute.expandedTitleTextAppearance = global::NRGScoutingApp.Droid.Resource.Attribute.expandedTitleTextAppearance;
-			global::BottomNavigationBar.Resource.Attribute.fabSize = global::NRGScoutingApp.Droid.Resource.Attribute.fabSize;
-			global::BottomNavigationBar.Resource.Attribute.foregroundInsidePadding = global::NRGScoutingApp.Droid.Resource.Attribute.foregroundInsidePadding;
-			global::BottomNavigationBar.Resource.Attribute.gapBetweenBars = global::NRGScoutingApp.Droid.Resource.Attribute.gapBetweenBars;
-			global::BottomNavigationBar.Resource.Attribute.goIcon = global::NRGScoutingApp.Droid.Resource.Attribute.goIcon;
-			global::BottomNavigationBar.Resource.Attribute.headerLayout = global::NRGScoutingApp.Droid.Resource.Attribute.headerLayout;
-			global::BottomNavigationBar.Resource.Attribute.height = global::NRGScoutingApp.Droid.Resource.Attribute.height;
-			global::BottomNavigationBar.Resource.Attribute.hideOnContentScroll = global::NRGScoutingApp.Droid.Resource.Attribute.hideOnContentScroll;
-			global::BottomNavigationBar.Resource.Attribute.hintAnimationEnabled = global::NRGScoutingApp.Droid.Resource.Attribute.hintAnimationEnabled;
-			global::BottomNavigationBar.Resource.Attribute.hintEnabled = global::NRGScoutingApp.Droid.Resource.Attribute.hintEnabled;
-			global::BottomNavigationBar.Resource.Attribute.hintTextAppearance = global::NRGScoutingApp.Droid.Resource.Attribute.hintTextAppearance;
-			global::BottomNavigationBar.Resource.Attribute.homeAsUpIndicator = global::NRGScoutingApp.Droid.Resource.Attribute.homeAsUpIndicator;
-			global::BottomNavigationBar.Resource.Attribute.homeLayout = global::NRGScoutingApp.Droid.Resource.Attribute.homeLayout;
-			global::BottomNavigationBar.Resource.Attribute.icon = global::NRGScoutingApp.Droid.Resource.Attribute.icon;
-			global::BottomNavigationBar.Resource.Attribute.iconifiedByDefault = global::NRGScoutingApp.Droid.Resource.Attribute.iconifiedByDefault;
-			global::BottomNavigationBar.Resource.Attribute.imageButtonStyle = global::NRGScoutingApp.Droid.Resource.Attribute.imageButtonStyle;
-			global::BottomNavigationBar.Resource.Attribute.indeterminateProgressStyle = global::NRGScoutingApp.Droid.Resource.Attribute.indeterminateProgressStyle;
-			global::BottomNavigationBar.Resource.Attribute.initialActivityCount = global::NRGScoutingApp.Droid.Resource.Attribute.initialActivityCount;
-			global::BottomNavigationBar.Resource.Attribute.insetForeground = global::NRGScoutingApp.Droid.Resource.Attribute.insetForeground;
-			global::BottomNavigationBar.Resource.Attribute.isLightTheme = global::NRGScoutingApp.Droid.Resource.Attribute.isLightTheme;
-			global::BottomNavigationBar.Resource.Attribute.itemBackground = global::NRGScoutingApp.Droid.Resource.Attribute.itemBackground;
-			global::BottomNavigationBar.Resource.Attribute.itemIconTint = global::NRGScoutingApp.Droid.Resource.Attribute.itemIconTint;
-			global::BottomNavigationBar.Resource.Attribute.itemPadding = global::NRGScoutingApp.Droid.Resource.Attribute.itemPadding;
-			global::BottomNavigationBar.Resource.Attribute.itemTextAppearance = global::NRGScoutingApp.Droid.Resource.Attribute.itemTextAppearance;
-			global::BottomNavigationBar.Resource.Attribute.itemTextColor = global::NRGScoutingApp.Droid.Resource.Attribute.itemTextColor;
-			global::BottomNavigationBar.Resource.Attribute.keylines = global::NRGScoutingApp.Droid.Resource.Attribute.keylines;
-			global::BottomNavigationBar.Resource.Attribute.layout = global::NRGScoutingApp.Droid.Resource.Attribute.layout;
-			global::BottomNavigationBar.Resource.Attribute.layoutManager = global::NRGScoutingApp.Droid.Resource.Attribute.layoutManager;
-			global::BottomNavigationBar.Resource.Attribute.layout_anchor = global::NRGScoutingApp.Droid.Resource.Attribute.layout_anchor;
-			global::BottomNavigationBar.Resource.Attribute.layout_anchorGravity = global::NRGScoutingApp.Droid.Resource.Attribute.layout_anchorGravity;
-			global::BottomNavigationBar.Resource.Attribute.layout_behavior = global::NRGScoutingApp.Droid.Resource.Attribute.layout_behavior;
-			global::BottomNavigationBar.Resource.Attribute.layout_collapseMode = global::NRGScoutingApp.Droid.Resource.Attribute.layout_collapseMode;
-			global::BottomNavigationBar.Resource.Attribute.layout_collapseParallaxMultiplier = global::NRGScoutingApp.Droid.Resource.Attribute.layout_collapseParallaxMultiplier;
-			global::BottomNavigationBar.Resource.Attribute.layout_dodgeInsetEdges = global::NRGScoutingApp.Droid.Resource.Attribute.layout_dodgeInsetEdges;
-			global::BottomNavigationBar.Resource.Attribute.layout_insetEdge = global::NRGScoutingApp.Droid.Resource.Attribute.layout_insetEdge;
-			global::BottomNavigationBar.Resource.Attribute.layout_keyline = global::NRGScoutingApp.Droid.Resource.Attribute.layout_keyline;
-			global::BottomNavigationBar.Resource.Attribute.layout_scrollFlags = global::NRGScoutingApp.Droid.Resource.Attribute.layout_scrollFlags;
-			global::BottomNavigationBar.Resource.Attribute.layout_scrollInterpolator = global::NRGScoutingApp.Droid.Resource.Attribute.layout_scrollInterpolator;
-			global::BottomNavigationBar.Resource.Attribute.listChoiceBackgroundIndicator = global::NRGScoutingApp.Droid.Resource.Attribute.listChoiceBackgroundIndicator;
-			global::BottomNavigationBar.Resource.Attribute.listDividerAlertDialog = global::NRGScoutingApp.Droid.Resource.Attribute.listDividerAlertDialog;
-			global::BottomNavigationBar.Resource.Attribute.listItemLayout = global::NRGScoutingApp.Droid.Resource.Attribute.listItemLayout;
-			global::BottomNavigationBar.Resource.Attribute.listLayout = global::NRGScoutingApp.Droid.Resource.Attribute.listLayout;
-			global::BottomNavigationBar.Resource.Attribute.listMenuViewStyle = global::NRGScoutingApp.Droid.Resource.Attribute.listMenuViewStyle;
-			global::BottomNavigationBar.Resource.Attribute.listPopupWindowStyle = global::NRGScoutingApp.Droid.Resource.Attribute.listPopupWindowStyle;
-			global::BottomNavigationBar.Resource.Attribute.listPreferredItemHeight = global::NRGScoutingApp.Droid.Resource.Attribute.listPreferredItemHeight;
-			global::BottomNavigationBar.Resource.Attribute.listPreferredItemHeightLarge = global::NRGScoutingApp.Droid.Resource.Attribute.listPreferredItemHeightLarge;
-			global::BottomNavigationBar.Resource.Attribute.listPreferredItemHeightSmall = global::NRGScoutingApp.Droid.Resource.Attribute.listPreferredItemHeightSmall;
-			global::BottomNavigationBar.Resource.Attribute.listPreferredItemPaddingLeft = global::NRGScoutingApp.Droid.Resource.Attribute.listPreferredItemPaddingLeft;
-			global::BottomNavigationBar.Resource.Attribute.listPreferredItemPaddingRight = global::NRGScoutingApp.Droid.Resource.Attribute.listPreferredItemPaddingRight;
-			global::BottomNavigationBar.Resource.Attribute.logo = global::NRGScoutingApp.Droid.Resource.Attribute.logo;
-			global::BottomNavigationBar.Resource.Attribute.logoDescription = global::NRGScoutingApp.Droid.Resource.Attribute.logoDescription;
-			global::BottomNavigationBar.Resource.Attribute.maxActionInlineWidth = global::NRGScoutingApp.Droid.Resource.Attribute.maxActionInlineWidth;
-			global::BottomNavigationBar.Resource.Attribute.maxButtonHeight = global::NRGScoutingApp.Droid.Resource.Attribute.maxButtonHeight;
-			global::BottomNavigationBar.Resource.Attribute.measureWithLargestChild = global::NRGScoutingApp.Droid.Resource.Attribute.measureWithLargestChild;
-			global::BottomNavigationBar.Resource.Attribute.menu = global::NRGScoutingApp.Droid.Resource.Attribute.menu;
-			global::BottomNavigationBar.Resource.Attribute.multiChoiceItemLayout = global::NRGScoutingApp.Droid.Resource.Attribute.multiChoiceItemLayout;
-			global::BottomNavigationBar.Resource.Attribute.navigationContentDescription = global::NRGScoutingApp.Droid.Resource.Attribute.navigationContentDescription;
-			global::BottomNavigationBar.Resource.Attribute.navigationIcon = global::NRGScoutingApp.Droid.Resource.Attribute.navigationIcon;
-			global::BottomNavigationBar.Resource.Attribute.navigationMode = global::NRGScoutingApp.Droid.Resource.Attribute.navigationMode;
-			global::BottomNavigationBar.Resource.Attribute.overlapAnchor = global::NRGScoutingApp.Droid.Resource.Attribute.overlapAnchor;
-			global::BottomNavigationBar.Resource.Attribute.paddingEnd = global::NRGScoutingApp.Droid.Resource.Attribute.paddingEnd;
-			global::BottomNavigationBar.Resource.Attribute.paddingStart = global::NRGScoutingApp.Droid.Resource.Attribute.paddingStart;
-			global::BottomNavigationBar.Resource.Attribute.panelBackground = global::NRGScoutingApp.Droid.Resource.Attribute.panelBackground;
-			global::BottomNavigationBar.Resource.Attribute.panelMenuListTheme = global::NRGScoutingApp.Droid.Resource.Attribute.panelMenuListTheme;
-			global::BottomNavigationBar.Resource.Attribute.panelMenuListWidth = global::NRGScoutingApp.Droid.Resource.Attribute.panelMenuListWidth;
-			global::BottomNavigationBar.Resource.Attribute.passwordToggleContentDescription = global::NRGScoutingApp.Droid.Resource.Attribute.passwordToggleContentDescription;
-			global::BottomNavigationBar.Resource.Attribute.passwordToggleDrawable = global::NRGScoutingApp.Droid.Resource.Attribute.passwordToggleDrawable;
-			global::BottomNavigationBar.Resource.Attribute.passwordToggleEnabled = global::NRGScoutingApp.Droid.Resource.Attribute.passwordToggleEnabled;
-			global::BottomNavigationBar.Resource.Attribute.passwordToggleTint = global::NRGScoutingApp.Droid.Resource.Attribute.passwordToggleTint;
-			global::BottomNavigationBar.Resource.Attribute.passwordToggleTintMode = global::NRGScoutingApp.Droid.Resource.Attribute.passwordToggleTintMode;
-			global::BottomNavigationBar.Resource.Attribute.popupMenuStyle = global::NRGScoutingApp.Droid.Resource.Attribute.popupMenuStyle;
-			global::BottomNavigationBar.Resource.Attribute.popupTheme = global::NRGScoutingApp.Droid.Resource.Attribute.popupTheme;
-			global::BottomNavigationBar.Resource.Attribute.popupWindowStyle = global::NRGScoutingApp.Droid.Resource.Attribute.popupWindowStyle;
-			global::BottomNavigationBar.Resource.Attribute.preserveIconSpacing = global::NRGScoutingApp.Droid.Resource.Attribute.preserveIconSpacing;
-			global::BottomNavigationBar.Resource.Attribute.pressedTranslationZ = global::NRGScoutingApp.Droid.Resource.Attribute.pressedTranslationZ;
-			global::BottomNavigationBar.Resource.Attribute.progressBarPadding = global::NRGScoutingApp.Droid.Resource.Attribute.progressBarPadding;
-			global::BottomNavigationBar.Resource.Attribute.progressBarStyle = global::NRGScoutingApp.Droid.Resource.Attribute.progressBarStyle;
-			global::BottomNavigationBar.Resource.Attribute.queryBackground = global::NRGScoutingApp.Droid.Resource.Attribute.queryBackground;
-			global::BottomNavigationBar.Resource.Attribute.queryHint = global::NRGScoutingApp.Droid.Resource.Attribute.queryHint;
-			global::BottomNavigationBar.Resource.Attribute.radioButtonStyle = global::NRGScoutingApp.Droid.Resource.Attribute.radioButtonStyle;
-			global::BottomNavigationBar.Resource.Attribute.ratingBarStyle = global::NRGScoutingApp.Droid.Resource.Attribute.ratingBarStyle;
-			global::BottomNavigationBar.Resource.Attribute.ratingBarStyleIndicator = global::NRGScoutingApp.Droid.Resource.Attribute.ratingBarStyleIndicator;
-			global::BottomNavigationBar.Resource.Attribute.ratingBarStyleSmall = global::NRGScoutingApp.Droid.Resource.Attribute.ratingBarStyleSmall;
-			global::BottomNavigationBar.Resource.Attribute.reverseLayout = global::NRGScoutingApp.Droid.Resource.Attribute.reverseLayout;
-			global::BottomNavigationBar.Resource.Attribute.rippleColor = global::NRGScoutingApp.Droid.Resource.Attribute.rippleColor;
-			global::BottomNavigationBar.Resource.Attribute.scrimAnimationDuration = global::NRGScoutingApp.Droid.Resource.Attribute.scrimAnimationDuration;
-			global::BottomNavigationBar.Resource.Attribute.scrimVisibleHeightTrigger = global::NRGScoutingApp.Droid.Resource.Attribute.scrimVisibleHeightTrigger;
-			global::BottomNavigationBar.Resource.Attribute.searchHintIcon = global::NRGScoutingApp.Droid.Resource.Attribute.searchHintIcon;
-			global::BottomNavigationBar.Resource.Attribute.searchIcon = global::NRGScoutingApp.Droid.Resource.Attribute.searchIcon;
-			global::BottomNavigationBar.Resource.Attribute.searchViewStyle = global::NRGScoutingApp.Droid.Resource.Attribute.searchViewStyle;
-			global::BottomNavigationBar.Resource.Attribute.seekBarStyle = global::NRGScoutingApp.Droid.Resource.Attribute.seekBarStyle;
-			global::BottomNavigationBar.Resource.Attribute.selectableItemBackground = global::NRGScoutingApp.Droid.Resource.Attribute.selectableItemBackground;
-			global::BottomNavigationBar.Resource.Attribute.selectableItemBackgroundBorderless = global::NRGScoutingApp.Droid.Resource.Attribute.selectableItemBackgroundBorderless;
-			global::BottomNavigationBar.Resource.Attribute.showAsAction = global::NRGScoutingApp.Droid.Resource.Attribute.showAsAction;
-			global::BottomNavigationBar.Resource.Attribute.showDividers = global::NRGScoutingApp.Droid.Resource.Attribute.showDividers;
-			global::BottomNavigationBar.Resource.Attribute.showText = global::NRGScoutingApp.Droid.Resource.Attribute.showText;
-			global::BottomNavigationBar.Resource.Attribute.singleChoiceItemLayout = global::NRGScoutingApp.Droid.Resource.Attribute.singleChoiceItemLayout;
-			global::BottomNavigationBar.Resource.Attribute.spanCount = global::NRGScoutingApp.Droid.Resource.Attribute.spanCount;
-			global::BottomNavigationBar.Resource.Attribute.spinBars = global::NRGScoutingApp.Droid.Resource.Attribute.spinBars;
-			global::BottomNavigationBar.Resource.Attribute.spinnerDropDownItemStyle = global::NRGScoutingApp.Droid.Resource.Attribute.spinnerDropDownItemStyle;
-			global::BottomNavigationBar.Resource.Attribute.spinnerStyle = global::NRGScoutingApp.Droid.Resource.Attribute.spinnerStyle;
-			global::BottomNavigationBar.Resource.Attribute.splitTrack = global::NRGScoutingApp.Droid.Resource.Attribute.splitTrack;
-			global::BottomNavigationBar.Resource.Attribute.srcCompat = global::NRGScoutingApp.Droid.Resource.Attribute.srcCompat;
-			global::BottomNavigationBar.Resource.Attribute.stackFromEnd = global::NRGScoutingApp.Droid.Resource.Attribute.stackFromEnd;
-			global::BottomNavigationBar.Resource.Attribute.state_above_anchor = global::NRGScoutingApp.Droid.Resource.Attribute.state_above_anchor;
-			global::BottomNavigationBar.Resource.Attribute.state_collapsed = global::NRGScoutingApp.Droid.Resource.Attribute.state_collapsed;
-			global::BottomNavigationBar.Resource.Attribute.state_collapsible = global::NRGScoutingApp.Droid.Resource.Attribute.state_collapsible;
-			global::BottomNavigationBar.Resource.Attribute.statusBarBackground = global::NRGScoutingApp.Droid.Resource.Attribute.statusBarBackground;
-			global::BottomNavigationBar.Resource.Attribute.statusBarScrim = global::NRGScoutingApp.Droid.Resource.Attribute.statusBarScrim;
-			global::BottomNavigationBar.Resource.Attribute.subMenuArrow = global::NRGScoutingApp.Droid.Resource.Attribute.subMenuArrow;
-			global::BottomNavigationBar.Resource.Attribute.submitBackground = global::NRGScoutingApp.Droid.Resource.Attribute.submitBackground;
-			global::BottomNavigationBar.Resource.Attribute.subtitle = global::NRGScoutingApp.Droid.Resource.Attribute.subtitle;
-			global::BottomNavigationBar.Resource.Attribute.subtitleTextAppearance = global::NRGScoutingApp.Droid.Resource.Attribute.subtitleTextAppearance;
-			global::BottomNavigationBar.Resource.Attribute.subtitleTextColor = global::NRGScoutingApp.Droid.Resource.Attribute.subtitleTextColor;
-			global::BottomNavigationBar.Resource.Attribute.subtitleTextStyle = global::NRGScoutingApp.Droid.Resource.Attribute.subtitleTextStyle;
-			global::BottomNavigationBar.Resource.Attribute.suggestionRowLayout = global::NRGScoutingApp.Droid.Resource.Attribute.suggestionRowLayout;
-			global::BottomNavigationBar.Resource.Attribute.switchMinWidth = global::NRGScoutingApp.Droid.Resource.Attribute.switchMinWidth;
-			global::BottomNavigationBar.Resource.Attribute.switchPadding = global::NRGScoutingApp.Droid.Resource.Attribute.switchPadding;
-			global::BottomNavigationBar.Resource.Attribute.switchStyle = global::NRGScoutingApp.Droid.Resource.Attribute.switchStyle;
-			global::BottomNavigationBar.Resource.Attribute.switchTextAppearance = global::NRGScoutingApp.Droid.Resource.Attribute.switchTextAppearance;
-			global::BottomNavigationBar.Resource.Attribute.tabBackground = global::NRGScoutingApp.Droid.Resource.Attribute.tabBackground;
-			global::BottomNavigationBar.Resource.Attribute.tabContentStart = global::NRGScoutingApp.Droid.Resource.Attribute.tabContentStart;
-			global::BottomNavigationBar.Resource.Attribute.tabGravity = global::NRGScoutingApp.Droid.Resource.Attribute.tabGravity;
-			global::BottomNavigationBar.Resource.Attribute.tabIndicatorColor = global::NRGScoutingApp.Droid.Resource.Attribute.tabIndicatorColor;
-			global::BottomNavigationBar.Resource.Attribute.tabIndicatorHeight = global::NRGScoutingApp.Droid.Resource.Attribute.tabIndicatorHeight;
-			global::BottomNavigationBar.Resource.Attribute.tabMaxWidth = global::NRGScoutingApp.Droid.Resource.Attribute.tabMaxWidth;
-			global::BottomNavigationBar.Resource.Attribute.tabMinWidth = global::NRGScoutingApp.Droid.Resource.Attribute.tabMinWidth;
-			global::BottomNavigationBar.Resource.Attribute.tabMode = global::NRGScoutingApp.Droid.Resource.Attribute.tabMode;
-			global::BottomNavigationBar.Resource.Attribute.tabPadding = global::NRGScoutingApp.Droid.Resource.Attribute.tabPadding;
-			global::BottomNavigationBar.Resource.Attribute.tabPaddingBottom = global::NRGScoutingApp.Droid.Resource.Attribute.tabPaddingBottom;
-			global::BottomNavigationBar.Resource.Attribute.tabPaddingEnd = global::NRGScoutingApp.Droid.Resource.Attribute.tabPaddingEnd;
-			global::BottomNavigationBar.Resource.Attribute.tabPaddingStart = global::NRGScoutingApp.Droid.Resource.Attribute.tabPaddingStart;
-			global::BottomNavigationBar.Resource.Attribute.tabPaddingTop = global::NRGScoutingApp.Droid.Resource.Attribute.tabPaddingTop;
-			global::BottomNavigationBar.Resource.Attribute.tabSelectedTextColor = global::NRGScoutingApp.Droid.Resource.Attribute.tabSelectedTextColor;
-			global::BottomNavigationBar.Resource.Attribute.tabTextAppearance = global::NRGScoutingApp.Droid.Resource.Attribute.tabTextAppearance;
-			global::BottomNavigationBar.Resource.Attribute.tabTextColor = global::NRGScoutingApp.Droid.Resource.Attribute.tabTextColor;
-			global::BottomNavigationBar.Resource.Attribute.textAllCaps = global::NRGScoutingApp.Droid.Resource.Attribute.textAllCaps;
-			global::BottomNavigationBar.Resource.Attribute.textAppearanceLargePopupMenu = global::NRGScoutingApp.Droid.Resource.Attribute.textAppearanceLargePopupMenu;
-			global::BottomNavigationBar.Resource.Attribute.textAppearanceListItem = global::NRGScoutingApp.Droid.Resource.Attribute.textAppearanceListItem;
-			global::BottomNavigationBar.Resource.Attribute.textAppearanceListItemSmall = global::NRGScoutingApp.Droid.Resource.Attribute.textAppearanceListItemSmall;
-			global::BottomNavigationBar.Resource.Attribute.textAppearancePopupMenuHeader = global::NRGScoutingApp.Droid.Resource.Attribute.textAppearancePopupMenuHeader;
-			global::BottomNavigationBar.Resource.Attribute.textAppearanceSearchResultSubtitle = global::NRGScoutingApp.Droid.Resource.Attribute.textAppearanceSearchResultSubtitle;
-			global::BottomNavigationBar.Resource.Attribute.textAppearanceSearchResultTitle = global::NRGScoutingApp.Droid.Resource.Attribute.textAppearanceSearchResultTitle;
-			global::BottomNavigationBar.Resource.Attribute.textAppearanceSmallPopupMenu = global::NRGScoutingApp.Droid.Resource.Attribute.textAppearanceSmallPopupMenu;
-			global::BottomNavigationBar.Resource.Attribute.textColorAlertDialogListItem = global::NRGScoutingApp.Droid.Resource.Attribute.textColorAlertDialogListItem;
-			global::BottomNavigationBar.Resource.Attribute.textColorError = global::NRGScoutingApp.Droid.Resource.Attribute.textColorError;
-			global::BottomNavigationBar.Resource.Attribute.textColorSearchUrl = global::NRGScoutingApp.Droid.Resource.Attribute.textColorSearchUrl;
-			global::BottomNavigationBar.Resource.Attribute.theme = global::NRGScoutingApp.Droid.Resource.Attribute.theme;
-			global::BottomNavigationBar.Resource.Attribute.thickness = global::NRGScoutingApp.Droid.Resource.Attribute.thickness;
-			global::BottomNavigationBar.Resource.Attribute.thumbTextPadding = global::NRGScoutingApp.Droid.Resource.Attribute.thumbTextPadding;
-			global::BottomNavigationBar.Resource.Attribute.thumbTint = global::NRGScoutingApp.Droid.Resource.Attribute.thumbTint;
-			global::BottomNavigationBar.Resource.Attribute.thumbTintMode = global::NRGScoutingApp.Droid.Resource.Attribute.thumbTintMode;
-			global::BottomNavigationBar.Resource.Attribute.tickMark = global::NRGScoutingApp.Droid.Resource.Attribute.tickMark;
-			global::BottomNavigationBar.Resource.Attribute.tickMarkTint = global::NRGScoutingApp.Droid.Resource.Attribute.tickMarkTint;
-			global::BottomNavigationBar.Resource.Attribute.tickMarkTintMode = global::NRGScoutingApp.Droid.Resource.Attribute.tickMarkTintMode;
-			global::BottomNavigationBar.Resource.Attribute.title = global::NRGScoutingApp.Droid.Resource.Attribute.title;
-			global::BottomNavigationBar.Resource.Attribute.titleEnabled = global::NRGScoutingApp.Droid.Resource.Attribute.titleEnabled;
-			global::BottomNavigationBar.Resource.Attribute.titleMargin = global::NRGScoutingApp.Droid.Resource.Attribute.titleMargin;
-			global::BottomNavigationBar.Resource.Attribute.titleMarginBottom = global::NRGScoutingApp.Droid.Resource.Attribute.titleMarginBottom;
-			global::BottomNavigationBar.Resource.Attribute.titleMarginEnd = global::NRGScoutingApp.Droid.Resource.Attribute.titleMarginEnd;
-			global::BottomNavigationBar.Resource.Attribute.titleMarginStart = global::NRGScoutingApp.Droid.Resource.Attribute.titleMarginStart;
-			global::BottomNavigationBar.Resource.Attribute.titleMarginTop = global::NRGScoutingApp.Droid.Resource.Attribute.titleMarginTop;
-			global::BottomNavigationBar.Resource.Attribute.titleMargins = global::NRGScoutingApp.Droid.Resource.Attribute.titleMargins;
-			global::BottomNavigationBar.Resource.Attribute.titleTextAppearance = global::NRGScoutingApp.Droid.Resource.Attribute.titleTextAppearance;
-			global::BottomNavigationBar.Resource.Attribute.titleTextColor = global::NRGScoutingApp.Droid.Resource.Attribute.titleTextColor;
-			global::BottomNavigationBar.Resource.Attribute.titleTextStyle = global::NRGScoutingApp.Droid.Resource.Attribute.titleTextStyle;
-			global::BottomNavigationBar.Resource.Attribute.toolbarId = global::NRGScoutingApp.Droid.Resource.Attribute.toolbarId;
-			global::BottomNavigationBar.Resource.Attribute.toolbarNavigationButtonStyle = global::NRGScoutingApp.Droid.Resource.Attribute.toolbarNavigationButtonStyle;
-			global::BottomNavigationBar.Resource.Attribute.toolbarStyle = global::NRGScoutingApp.Droid.Resource.Attribute.toolbarStyle;
-			global::BottomNavigationBar.Resource.Attribute.track = global::NRGScoutingApp.Droid.Resource.Attribute.track;
-			global::BottomNavigationBar.Resource.Attribute.trackTint = global::NRGScoutingApp.Droid.Resource.Attribute.trackTint;
-			global::BottomNavigationBar.Resource.Attribute.trackTintMode = global::NRGScoutingApp.Droid.Resource.Attribute.trackTintMode;
-			global::BottomNavigationBar.Resource.Attribute.useCompatPadding = global::NRGScoutingApp.Droid.Resource.Attribute.useCompatPadding;
-			global::BottomNavigationBar.Resource.Attribute.voiceIcon = global::NRGScoutingApp.Droid.Resource.Attribute.voiceIcon;
-			global::BottomNavigationBar.Resource.Attribute.windowActionBar = global::NRGScoutingApp.Droid.Resource.Attribute.windowActionBar;
-			global::BottomNavigationBar.Resource.Attribute.windowActionBarOverlay = global::NRGScoutingApp.Droid.Resource.Attribute.windowActionBarOverlay;
-			global::BottomNavigationBar.Resource.Attribute.windowActionModeOverlay = global::NRGScoutingApp.Droid.Resource.Attribute.windowActionModeOverlay;
-			global::BottomNavigationBar.Resource.Attribute.windowFixedHeightMajor = global::NRGScoutingApp.Droid.Resource.Attribute.windowFixedHeightMajor;
-			global::BottomNavigationBar.Resource.Attribute.windowFixedHeightMinor = global::NRGScoutingApp.Droid.Resource.Attribute.windowFixedHeightMinor;
-			global::BottomNavigationBar.Resource.Attribute.windowFixedWidthMajor = global::NRGScoutingApp.Droid.Resource.Attribute.windowFixedWidthMajor;
-			global::BottomNavigationBar.Resource.Attribute.windowFixedWidthMinor = global::NRGScoutingApp.Droid.Resource.Attribute.windowFixedWidthMinor;
-			global::BottomNavigationBar.Resource.Attribute.windowMinWidthMajor = global::NRGScoutingApp.Droid.Resource.Attribute.windowMinWidthMajor;
-			global::BottomNavigationBar.Resource.Attribute.windowMinWidthMinor = global::NRGScoutingApp.Droid.Resource.Attribute.windowMinWidthMinor;
-			global::BottomNavigationBar.Resource.Attribute.windowNoTitle = global::NRGScoutingApp.Droid.Resource.Attribute.windowNoTitle;
-			global::BottomNavigationBar.Resource.Boolean.abc_action_bar_embed_tabs = global::NRGScoutingApp.Droid.Resource.Boolean.abc_action_bar_embed_tabs;
-			global::BottomNavigationBar.Resource.Boolean.abc_allow_stacked_button_bar = global::NRGScoutingApp.Droid.Resource.Boolean.abc_allow_stacked_button_bar;
-			global::BottomNavigationBar.Resource.Boolean.abc_config_actionMenuItemAllCaps = global::NRGScoutingApp.Droid.Resource.Boolean.abc_config_actionMenuItemAllCaps;
-			global::BottomNavigationBar.Resource.Boolean.abc_config_closeDialogWhenTouchOutside = global::NRGScoutingApp.Droid.Resource.Boolean.abc_config_closeDialogWhenTouchOutside;
-			global::BottomNavigationBar.Resource.Boolean.abc_config_showMenuShortcutsWhenKeyboardPresent = global::NRGScoutingApp.Droid.Resource.Boolean.abc_config_showMenuShortcutsWhenKeyboardPresent;
-			global::BottomNavigationBar.Resource.Boolean.bb_bottom_bar_is_tablet_mode = global::NRGScoutingApp.Droid.Resource.Boolean.bb_bottom_bar_is_tablet_mode;
-			global::BottomNavigationBar.Resource.Color.abc_background_cache_hint_selector_material_dark = global::NRGScoutingApp.Droid.Resource.Color.abc_background_cache_hint_selector_material_dark;
-			global::BottomNavigationBar.Resource.Color.abc_background_cache_hint_selector_material_light = global::NRGScoutingApp.Droid.Resource.Color.abc_background_cache_hint_selector_material_light;
-			global::BottomNavigationBar.Resource.Color.abc_btn_colored_borderless_text_material = global::NRGScoutingApp.Droid.Resource.Color.abc_btn_colored_borderless_text_material;
-			global::BottomNavigationBar.Resource.Color.abc_color_highlight_material = global::NRGScoutingApp.Droid.Resource.Color.abc_color_highlight_material;
-			global::BottomNavigationBar.Resource.Color.abc_input_method_navigation_guard = global::NRGScoutingApp.Droid.Resource.Color.abc_input_method_navigation_guard;
-			global::BottomNavigationBar.Resource.Color.abc_primary_text_disable_only_material_dark = global::NRGScoutingApp.Droid.Resource.Color.abc_primary_text_disable_only_material_dark;
-			global::BottomNavigationBar.Resource.Color.abc_primary_text_disable_only_material_light = global::NRGScoutingApp.Droid.Resource.Color.abc_primary_text_disable_only_material_light;
-			global::BottomNavigationBar.Resource.Color.abc_primary_text_material_dark = global::NRGScoutingApp.Droid.Resource.Color.abc_primary_text_material_dark;
-			global::BottomNavigationBar.Resource.Color.abc_primary_text_material_light = global::NRGScoutingApp.Droid.Resource.Color.abc_primary_text_material_light;
-			global::BottomNavigationBar.Resource.Color.abc_search_url_text = global::NRGScoutingApp.Droid.Resource.Color.abc_search_url_text;
-			global::BottomNavigationBar.Resource.Color.abc_search_url_text_normal = global::NRGScoutingApp.Droid.Resource.Color.abc_search_url_text_normal;
-			global::BottomNavigationBar.Resource.Color.abc_search_url_text_pressed = global::NRGScoutingApp.Droid.Resource.Color.abc_search_url_text_pressed;
-			global::BottomNavigationBar.Resource.Color.abc_search_url_text_selected = global::NRGScoutingApp.Droid.Resource.Color.abc_search_url_text_selected;
-			global::BottomNavigationBar.Resource.Color.abc_secondary_text_material_dark = global::NRGScoutingApp.Droid.Resource.Color.abc_secondary_text_material_dark;
-			global::BottomNavigationBar.Resource.Color.abc_secondary_text_material_light = global::NRGScoutingApp.Droid.Resource.Color.abc_secondary_text_material_light;
-			global::BottomNavigationBar.Resource.Color.abc_tint_btn_checkable = global::NRGScoutingApp.Droid.Resource.Color.abc_tint_btn_checkable;
-			global::BottomNavigationBar.Resource.Color.abc_tint_default = global::NRGScoutingApp.Droid.Resource.Color.abc_tint_default;
-			global::BottomNavigationBar.Resource.Color.abc_tint_edittext = global::NRGScoutingApp.Droid.Resource.Color.abc_tint_edittext;
-			global::BottomNavigationBar.Resource.Color.abc_tint_seek_thumb = global::NRGScoutingApp.Droid.Resource.Color.abc_tint_seek_thumb;
-			global::BottomNavigationBar.Resource.Color.abc_tint_spinner = global::NRGScoutingApp.Droid.Resource.Color.abc_tint_spinner;
-			global::BottomNavigationBar.Resource.Color.abc_tint_switch_track = global::NRGScoutingApp.Droid.Resource.Color.abc_tint_switch_track;
-			global::BottomNavigationBar.Resource.Color.accent_material_dark = global::NRGScoutingApp.Droid.Resource.Color.accent_material_dark;
-			global::BottomNavigationBar.Resource.Color.accent_material_light = global::NRGScoutingApp.Droid.Resource.Color.accent_material_light;
-			global::BottomNavigationBar.Resource.Color.background_floating_material_dark = global::NRGScoutingApp.Droid.Resource.Color.background_floating_material_dark;
-			global::BottomNavigationBar.Resource.Color.background_floating_material_light = global::NRGScoutingApp.Droid.Resource.Color.background_floating_material_light;
-			global::BottomNavigationBar.Resource.Color.background_material_dark = global::NRGScoutingApp.Droid.Resource.Color.background_material_dark;
-			global::BottomNavigationBar.Resource.Color.background_material_light = global::NRGScoutingApp.Droid.Resource.Color.background_material_light;
-			global::BottomNavigationBar.Resource.Color.bb_darkBackgroundColor = global::NRGScoutingApp.Droid.Resource.Color.bb_darkBackgroundColor;
-			global::BottomNavigationBar.Resource.Color.bb_darkInActiveBottomBarItemColor = global::NRGScoutingApp.Droid.Resource.Color.bb_darkInActiveBottomBarItemColor;
-			global::BottomNavigationBar.Resource.Color.bb_inActiveBottomBarItemColor = global::NRGScoutingApp.Droid.Resource.Color.bb_inActiveBottomBarItemColor;
-			global::BottomNavigationBar.Resource.Color.bb_tabletRightBorderDark = global::NRGScoutingApp.Droid.Resource.Color.bb_tabletRightBorderDark;
-			global::BottomNavigationBar.Resource.Color.bright_foreground_disabled_material_dark = global::NRGScoutingApp.Droid.Resource.Color.bright_foreground_disabled_material_dark;
-			global::BottomNavigationBar.Resource.Color.bright_foreground_disabled_material_light = global::NRGScoutingApp.Droid.Resource.Color.bright_foreground_disabled_material_light;
-			global::BottomNavigationBar.Resource.Color.bright_foreground_inverse_material_dark = global::NRGScoutingApp.Droid.Resource.Color.bright_foreground_inverse_material_dark;
-			global::BottomNavigationBar.Resource.Color.bright_foreground_inverse_material_light = global::NRGScoutingApp.Droid.Resource.Color.bright_foreground_inverse_material_light;
-			global::BottomNavigationBar.Resource.Color.bright_foreground_material_dark = global::NRGScoutingApp.Droid.Resource.Color.bright_foreground_material_dark;
-			global::BottomNavigationBar.Resource.Color.bright_foreground_material_light = global::NRGScoutingApp.Droid.Resource.Color.bright_foreground_material_light;
-			global::BottomNavigationBar.Resource.Color.button_material_dark = global::NRGScoutingApp.Droid.Resource.Color.button_material_dark;
-			global::BottomNavigationBar.Resource.Color.button_material_light = global::NRGScoutingApp.Droid.Resource.Color.button_material_light;
-			global::BottomNavigationBar.Resource.Color.design_error = global::NRGScoutingApp.Droid.Resource.Color.design_error;
-			global::BottomNavigationBar.Resource.Color.design_fab_shadow_end_color = global::NRGScoutingApp.Droid.Resource.Color.design_fab_shadow_end_color;
-			global::BottomNavigationBar.Resource.Color.design_fab_shadow_mid_color = global::NRGScoutingApp.Droid.Resource.Color.design_fab_shadow_mid_color;
-			global::BottomNavigationBar.Resource.Color.design_fab_shadow_start_color = global::NRGScoutingApp.Droid.Resource.Color.design_fab_shadow_start_color;
-			global::BottomNavigationBar.Resource.Color.design_fab_stroke_end_inner_color = global::NRGScoutingApp.Droid.Resource.Color.design_fab_stroke_end_inner_color;
-			global::BottomNavigationBar.Resource.Color.design_fab_stroke_end_outer_color = global::NRGScoutingApp.Droid.Resource.Color.design_fab_stroke_end_outer_color;
-			global::BottomNavigationBar.Resource.Color.design_fab_stroke_top_inner_color = global::NRGScoutingApp.Droid.Resource.Color.design_fab_stroke_top_inner_color;
-			global::BottomNavigationBar.Resource.Color.design_fab_stroke_top_outer_color = global::NRGScoutingApp.Droid.Resource.Color.design_fab_stroke_top_outer_color;
-			global::BottomNavigationBar.Resource.Color.design_snackbar_background_color = global::NRGScoutingApp.Droid.Resource.Color.design_snackbar_background_color;
-			global::BottomNavigationBar.Resource.Color.design_tint_password_toggle = global::NRGScoutingApp.Droid.Resource.Color.design_tint_password_toggle;
-			global::BottomNavigationBar.Resource.Color.dim_foreground_disabled_material_dark = global::NRGScoutingApp.Droid.Resource.Color.dim_foreground_disabled_material_dark;
-			global::BottomNavigationBar.Resource.Color.dim_foreground_disabled_material_light = global::NRGScoutingApp.Droid.Resource.Color.dim_foreground_disabled_material_light;
-			global::BottomNavigationBar.Resource.Color.dim_foreground_material_dark = global::NRGScoutingApp.Droid.Resource.Color.dim_foreground_material_dark;
-			global::BottomNavigationBar.Resource.Color.dim_foreground_material_light = global::NRGScoutingApp.Droid.Resource.Color.dim_foreground_material_light;
-			global::BottomNavigationBar.Resource.Color.foreground_material_dark = global::NRGScoutingApp.Droid.Resource.Color.foreground_material_dark;
-			global::BottomNavigationBar.Resource.Color.foreground_material_light = global::NRGScoutingApp.Droid.Resource.Color.foreground_material_light;
-			global::BottomNavigationBar.Resource.Color.highlighted_text_material_dark = global::NRGScoutingApp.Droid.Resource.Color.highlighted_text_material_dark;
-			global::BottomNavigationBar.Resource.Color.highlighted_text_material_light = global::NRGScoutingApp.Droid.Resource.Color.highlighted_text_material_light;
-			global::BottomNavigationBar.Resource.Color.material_blue_grey_800 = global::NRGScoutingApp.Droid.Resource.Color.material_blue_grey_800;
-			global::BottomNavigationBar.Resource.Color.material_blue_grey_900 = global::NRGScoutingApp.Droid.Resource.Color.material_blue_grey_900;
-			global::BottomNavigationBar.Resource.Color.material_blue_grey_950 = global::NRGScoutingApp.Droid.Resource.Color.material_blue_grey_950;
-			global::BottomNavigationBar.Resource.Color.material_deep_teal_200 = global::NRGScoutingApp.Droid.Resource.Color.material_deep_teal_200;
-			global::BottomNavigationBar.Resource.Color.material_deep_teal_500 = global::NRGScoutingApp.Droid.Resource.Color.material_deep_teal_500;
-			global::BottomNavigationBar.Resource.Color.material_grey_100 = global::NRGScoutingApp.Droid.Resource.Color.material_grey_100;
-			global::BottomNavigationBar.Resource.Color.material_grey_300 = global::NRGScoutingApp.Droid.Resource.Color.material_grey_300;
-			global::BottomNavigationBar.Resource.Color.material_grey_50 = global::NRGScoutingApp.Droid.Resource.Color.material_grey_50;
-			global::BottomNavigationBar.Resource.Color.material_grey_600 = global::NRGScoutingApp.Droid.Resource.Color.material_grey_600;
-			global::BottomNavigationBar.Resource.Color.material_grey_800 = global::NRGScoutingApp.Droid.Resource.Color.material_grey_800;
-			global::BottomNavigationBar.Resource.Color.material_grey_850 = global::NRGScoutingApp.Droid.Resource.Color.material_grey_850;
-			global::BottomNavigationBar.Resource.Color.material_grey_900 = global::NRGScoutingApp.Droid.Resource.Color.material_grey_900;
-			global::BottomNavigationBar.Resource.Color.primary_dark_material_dark = global::NRGScoutingApp.Droid.Resource.Color.primary_dark_material_dark;
-			global::BottomNavigationBar.Resource.Color.primary_dark_material_light = global::NRGScoutingApp.Droid.Resource.Color.primary_dark_material_light;
-			global::BottomNavigationBar.Resource.Color.primary_material_dark = global::NRGScoutingApp.Droid.Resource.Color.primary_material_dark;
-			global::BottomNavigationBar.Resource.Color.primary_material_light = global::NRGScoutingApp.Droid.Resource.Color.primary_material_light;
-			global::BottomNavigationBar.Resource.Color.primary_text_default_material_dark = global::NRGScoutingApp.Droid.Resource.Color.primary_text_default_material_dark;
-			global::BottomNavigationBar.Resource.Color.primary_text_default_material_light = global::NRGScoutingApp.Droid.Resource.Color.primary_text_default_material_light;
-			global::BottomNavigationBar.Resource.Color.primary_text_disabled_material_dark = global::NRGScoutingApp.Droid.Resource.Color.primary_text_disabled_material_dark;
-			global::BottomNavigationBar.Resource.Color.primary_text_disabled_material_light = global::NRGScoutingApp.Droid.Resource.Color.primary_text_disabled_material_light;
-			global::BottomNavigationBar.Resource.Color.ripple_material_dark = global::NRGScoutingApp.Droid.Resource.Color.ripple_material_dark;
-			global::BottomNavigationBar.Resource.Color.ripple_material_light = global::NRGScoutingApp.Droid.Resource.Color.ripple_material_light;
-			global::BottomNavigationBar.Resource.Color.secondary_text_default_material_dark = global::NRGScoutingApp.Droid.Resource.Color.secondary_text_default_material_dark;
-			global::BottomNavigationBar.Resource.Color.secondary_text_default_material_light = global::NRGScoutingApp.Droid.Resource.Color.secondary_text_default_material_light;
-			global::BottomNavigationBar.Resource.Color.secondary_text_disabled_material_dark = global::NRGScoutingApp.Droid.Resource.Color.secondary_text_disabled_material_dark;
-			global::BottomNavigationBar.Resource.Color.secondary_text_disabled_material_light = global::NRGScoutingApp.Droid.Resource.Color.secondary_text_disabled_material_light;
-			global::BottomNavigationBar.Resource.Color.switch_thumb_disabled_material_dark = global::NRGScoutingApp.Droid.Resource.Color.switch_thumb_disabled_material_dark;
-			global::BottomNavigationBar.Resource.Color.switch_thumb_disabled_material_light = global::NRGScoutingApp.Droid.Resource.Color.switch_thumb_disabled_material_light;
-			global::BottomNavigationBar.Resource.Color.switch_thumb_material_dark = global::NRGScoutingApp.Droid.Resource.Color.switch_thumb_material_dark;
-			global::BottomNavigationBar.Resource.Color.switch_thumb_material_light = global::NRGScoutingApp.Droid.Resource.Color.switch_thumb_material_light;
-			global::BottomNavigationBar.Resource.Color.switch_thumb_normal_material_dark = global::NRGScoutingApp.Droid.Resource.Color.switch_thumb_normal_material_dark;
-			global::BottomNavigationBar.Resource.Color.switch_thumb_normal_material_light = global::NRGScoutingApp.Droid.Resource.Color.switch_thumb_normal_material_light;
-			global::BottomNavigationBar.Resource.Dimension.abc_action_bar_content_inset_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_action_bar_content_inset_material;
-			global::BottomNavigationBar.Resource.Dimension.abc_action_bar_content_inset_with_nav = global::NRGScoutingApp.Droid.Resource.Dimension.abc_action_bar_content_inset_with_nav;
-			global::BottomNavigationBar.Resource.Dimension.abc_action_bar_default_height_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_action_bar_default_height_material;
-			global::BottomNavigationBar.Resource.Dimension.abc_action_bar_default_padding_end_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_action_bar_default_padding_end_material;
-			global::BottomNavigationBar.Resource.Dimension.abc_action_bar_default_padding_start_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_action_bar_default_padding_start_material;
-			global::BottomNavigationBar.Resource.Dimension.abc_action_bar_elevation_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_action_bar_elevation_material;
-			global::BottomNavigationBar.Resource.Dimension.abc_action_bar_icon_vertical_padding_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_action_bar_icon_vertical_padding_material;
-			global::BottomNavigationBar.Resource.Dimension.abc_action_bar_overflow_padding_end_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_action_bar_overflow_padding_end_material;
-			global::BottomNavigationBar.Resource.Dimension.abc_action_bar_overflow_padding_start_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_action_bar_overflow_padding_start_material;
-			global::BottomNavigationBar.Resource.Dimension.abc_action_bar_progress_bar_size = global::NRGScoutingApp.Droid.Resource.Dimension.abc_action_bar_progress_bar_size;
-			global::BottomNavigationBar.Resource.Dimension.abc_action_bar_stacked_max_height = global::NRGScoutingApp.Droid.Resource.Dimension.abc_action_bar_stacked_max_height;
-			global::BottomNavigationBar.Resource.Dimension.abc_action_bar_stacked_tab_max_width = global::NRGScoutingApp.Droid.Resource.Dimension.abc_action_bar_stacked_tab_max_width;
-			global::BottomNavigationBar.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material;
-			global::BottomNavigationBar.Resource.Dimension.abc_action_bar_subtitle_top_margin_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_action_bar_subtitle_top_margin_material;
-			global::BottomNavigationBar.Resource.Dimension.abc_action_button_min_height_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_action_button_min_height_material;
-			global::BottomNavigationBar.Resource.Dimension.abc_action_button_min_width_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_action_button_min_width_material;
-			global::BottomNavigationBar.Resource.Dimension.abc_action_button_min_width_overflow_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_action_button_min_width_overflow_material;
-			global::BottomNavigationBar.Resource.Dimension.abc_alert_dialog_button_bar_height = global::NRGScoutingApp.Droid.Resource.Dimension.abc_alert_dialog_button_bar_height;
-			global::BottomNavigationBar.Resource.Dimension.abc_button_inset_horizontal_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_button_inset_horizontal_material;
-			global::BottomNavigationBar.Resource.Dimension.abc_button_inset_vertical_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_button_inset_vertical_material;
-			global::BottomNavigationBar.Resource.Dimension.abc_button_padding_horizontal_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_button_padding_horizontal_material;
-			global::BottomNavigationBar.Resource.Dimension.abc_button_padding_vertical_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_button_padding_vertical_material;
-			global::BottomNavigationBar.Resource.Dimension.abc_cascading_menus_min_smallest_width = global::NRGScoutingApp.Droid.Resource.Dimension.abc_cascading_menus_min_smallest_width;
-			global::BottomNavigationBar.Resource.Dimension.abc_config_prefDialogWidth = global::NRGScoutingApp.Droid.Resource.Dimension.abc_config_prefDialogWidth;
-			global::BottomNavigationBar.Resource.Dimension.abc_control_corner_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_control_corner_material;
-			global::BottomNavigationBar.Resource.Dimension.abc_control_inset_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_control_inset_material;
-			global::BottomNavigationBar.Resource.Dimension.abc_control_padding_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_control_padding_material;
-			global::BottomNavigationBar.Resource.Dimension.abc_dialog_fixed_height_major = global::NRGScoutingApp.Droid.Resource.Dimension.abc_dialog_fixed_height_major;
-			global::BottomNavigationBar.Resource.Dimension.abc_dialog_fixed_height_minor = global::NRGScoutingApp.Droid.Resource.Dimension.abc_dialog_fixed_height_minor;
-			global::BottomNavigationBar.Resource.Dimension.abc_dialog_fixed_width_major = global::NRGScoutingApp.Droid.Resource.Dimension.abc_dialog_fixed_width_major;
-			global::BottomNavigationBar.Resource.Dimension.abc_dialog_fixed_width_minor = global::NRGScoutingApp.Droid.Resource.Dimension.abc_dialog_fixed_width_minor;
-			global::BottomNavigationBar.Resource.Dimension.abc_dialog_min_width_major = global::NRGScoutingApp.Droid.Resource.Dimension.abc_dialog_min_width_major;
-			global::BottomNavigationBar.Resource.Dimension.abc_dialog_min_width_minor = global::NRGScoutingApp.Droid.Resource.Dimension.abc_dialog_min_width_minor;
-			global::BottomNavigationBar.Resource.Dimension.abc_dialog_padding_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_dialog_padding_material;
-			global::BottomNavigationBar.Resource.Dimension.abc_dialog_padding_top_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_dialog_padding_top_material;
-			global::BottomNavigationBar.Resource.Dimension.abc_disabled_alpha_material_dark = global::NRGScoutingApp.Droid.Resource.Dimension.abc_disabled_alpha_material_dark;
-			global::BottomNavigationBar.Resource.Dimension.abc_disabled_alpha_material_light = global::NRGScoutingApp.Droid.Resource.Dimension.abc_disabled_alpha_material_light;
-			global::BottomNavigationBar.Resource.Dimension.abc_dropdownitem_icon_width = global::NRGScoutingApp.Droid.Resource.Dimension.abc_dropdownitem_icon_width;
-			global::BottomNavigationBar.Resource.Dimension.abc_dropdownitem_text_padding_left = global::NRGScoutingApp.Droid.Resource.Dimension.abc_dropdownitem_text_padding_left;
-			global::BottomNavigationBar.Resource.Dimension.abc_dropdownitem_text_padding_right = global::NRGScoutingApp.Droid.Resource.Dimension.abc_dropdownitem_text_padding_right;
-			global::BottomNavigationBar.Resource.Dimension.abc_edit_text_inset_bottom_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_edit_text_inset_bottom_material;
-			global::BottomNavigationBar.Resource.Dimension.abc_edit_text_inset_horizontal_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_edit_text_inset_horizontal_material;
-			global::BottomNavigationBar.Resource.Dimension.abc_edit_text_inset_top_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_edit_text_inset_top_material;
-			global::BottomNavigationBar.Resource.Dimension.abc_floating_window_z = global::NRGScoutingApp.Droid.Resource.Dimension.abc_floating_window_z;
-			global::BottomNavigationBar.Resource.Dimension.abc_list_item_padding_horizontal_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_list_item_padding_horizontal_material;
-			global::BottomNavigationBar.Resource.Dimension.abc_panel_menu_list_width = global::NRGScoutingApp.Droid.Resource.Dimension.abc_panel_menu_list_width;
-			global::BottomNavigationBar.Resource.Dimension.abc_progress_bar_height_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_progress_bar_height_material;
-			global::BottomNavigationBar.Resource.Dimension.abc_search_view_preferred_height = global::NRGScoutingApp.Droid.Resource.Dimension.abc_search_view_preferred_height;
-			global::BottomNavigationBar.Resource.Dimension.abc_search_view_preferred_width = global::NRGScoutingApp.Droid.Resource.Dimension.abc_search_view_preferred_width;
-			global::BottomNavigationBar.Resource.Dimension.abc_seekbar_track_background_height_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_seekbar_track_background_height_material;
-			global::BottomNavigationBar.Resource.Dimension.abc_seekbar_track_progress_height_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_seekbar_track_progress_height_material;
-			global::BottomNavigationBar.Resource.Dimension.abc_select_dialog_padding_start_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_select_dialog_padding_start_material;
-			global::BottomNavigationBar.Resource.Dimension.abc_switch_padding = global::NRGScoutingApp.Droid.Resource.Dimension.abc_switch_padding;
-			global::BottomNavigationBar.Resource.Dimension.abc_text_size_body_1_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_text_size_body_1_material;
-			global::BottomNavigationBar.Resource.Dimension.abc_text_size_body_2_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_text_size_body_2_material;
-			global::BottomNavigationBar.Resource.Dimension.abc_text_size_button_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_text_size_button_material;
-			global::BottomNavigationBar.Resource.Dimension.abc_text_size_caption_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_text_size_caption_material;
-			global::BottomNavigationBar.Resource.Dimension.abc_text_size_display_1_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_text_size_display_1_material;
-			global::BottomNavigationBar.Resource.Dimension.abc_text_size_display_2_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_text_size_display_2_material;
-			global::BottomNavigationBar.Resource.Dimension.abc_text_size_display_3_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_text_size_display_3_material;
-			global::BottomNavigationBar.Resource.Dimension.abc_text_size_display_4_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_text_size_display_4_material;
-			global::BottomNavigationBar.Resource.Dimension.abc_text_size_headline_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_text_size_headline_material;
-			global::BottomNavigationBar.Resource.Dimension.abc_text_size_large_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_text_size_large_material;
-			global::BottomNavigationBar.Resource.Dimension.abc_text_size_medium_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_text_size_medium_material;
-			global::BottomNavigationBar.Resource.Dimension.abc_text_size_menu_header_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_text_size_menu_header_material;
-			global::BottomNavigationBar.Resource.Dimension.abc_text_size_menu_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_text_size_menu_material;
-			global::BottomNavigationBar.Resource.Dimension.abc_text_size_small_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_text_size_small_material;
-			global::BottomNavigationBar.Resource.Dimension.abc_text_size_subhead_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_text_size_subhead_material;
-			global::BottomNavigationBar.Resource.Dimension.abc_text_size_subtitle_material_toolbar = global::NRGScoutingApp.Droid.Resource.Dimension.abc_text_size_subtitle_material_toolbar;
-			global::BottomNavigationBar.Resource.Dimension.abc_text_size_title_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_text_size_title_material;
-			global::BottomNavigationBar.Resource.Dimension.abc_text_size_title_material_toolbar = global::NRGScoutingApp.Droid.Resource.Dimension.abc_text_size_title_material_toolbar;
-			global::BottomNavigationBar.Resource.Dimension.activity_horizontal_margin = global::NRGScoutingApp.Droid.Resource.Dimension.activity_horizontal_margin;
-			global::BottomNavigationBar.Resource.Dimension.activity_vertical_margin = global::NRGScoutingApp.Droid.Resource.Dimension.activity_vertical_margin;
-			global::BottomNavigationBar.Resource.Dimension.bb_height = global::NRGScoutingApp.Droid.Resource.Dimension.bb_height;
-			global::BottomNavigationBar.Resource.Dimension.bottom_bar_elevation = global::NRGScoutingApp.Droid.Resource.Dimension.bottom_bar_elevation;
-			global::BottomNavigationBar.Resource.Dimension.design_appbar_elevation = global::NRGScoutingApp.Droid.Resource.Dimension.design_appbar_elevation;
-			global::BottomNavigationBar.Resource.Dimension.design_bottom_navigation_active_item_max_width = global::NRGScoutingApp.Droid.Resource.Dimension.design_bottom_navigation_active_item_max_width;
-			global::BottomNavigationBar.Resource.Dimension.design_bottom_navigation_active_text_size = global::NRGScoutingApp.Droid.Resource.Dimension.design_bottom_navigation_active_text_size;
-			global::BottomNavigationBar.Resource.Dimension.design_bottom_navigation_height = global::NRGScoutingApp.Droid.Resource.Dimension.design_bottom_navigation_height;
-			global::BottomNavigationBar.Resource.Dimension.design_bottom_navigation_item_max_width = global::NRGScoutingApp.Droid.Resource.Dimension.design_bottom_navigation_item_max_width;
-			global::BottomNavigationBar.Resource.Dimension.design_bottom_navigation_margin = global::NRGScoutingApp.Droid.Resource.Dimension.design_bottom_navigation_margin;
-			global::BottomNavigationBar.Resource.Dimension.design_bottom_navigation_text_size = global::NRGScoutingApp.Droid.Resource.Dimension.design_bottom_navigation_text_size;
-			global::BottomNavigationBar.Resource.Dimension.design_bottom_sheet_modal_elevation = global::NRGScoutingApp.Droid.Resource.Dimension.design_bottom_sheet_modal_elevation;
-			global::BottomNavigationBar.Resource.Dimension.design_bottom_sheet_peek_height_min = global::NRGScoutingApp.Droid.Resource.Dimension.design_bottom_sheet_peek_height_min;
-			global::BottomNavigationBar.Resource.Dimension.design_fab_border_width = global::NRGScoutingApp.Droid.Resource.Dimension.design_fab_border_width;
-			global::BottomNavigationBar.Resource.Dimension.design_fab_elevation = global::NRGScoutingApp.Droid.Resource.Dimension.design_fab_elevation;
-			global::BottomNavigationBar.Resource.Dimension.design_fab_image_size = global::NRGScoutingApp.Droid.Resource.Dimension.design_fab_image_size;
-			global::BottomNavigationBar.Resource.Dimension.design_fab_size_mini = global::NRGScoutingApp.Droid.Resource.Dimension.design_fab_size_mini;
-			global::BottomNavigationBar.Resource.Dimension.design_fab_size_normal = global::NRGScoutingApp.Droid.Resource.Dimension.design_fab_size_normal;
-			global::BottomNavigationBar.Resource.Dimension.design_fab_translation_z_pressed = global::NRGScoutingApp.Droid.Resource.Dimension.design_fab_translation_z_pressed;
-			global::BottomNavigationBar.Resource.Dimension.design_navigation_elevation = global::NRGScoutingApp.Droid.Resource.Dimension.design_navigation_elevation;
-			global::BottomNavigationBar.Resource.Dimension.design_navigation_icon_padding = global::NRGScoutingApp.Droid.Resource.Dimension.design_navigation_icon_padding;
-			global::BottomNavigationBar.Resource.Dimension.design_navigation_icon_size = global::NRGScoutingApp.Droid.Resource.Dimension.design_navigation_icon_size;
-			global::BottomNavigationBar.Resource.Dimension.design_navigation_max_width = global::NRGScoutingApp.Droid.Resource.Dimension.design_navigation_max_width;
-			global::BottomNavigationBar.Resource.Dimension.design_navigation_padding_bottom = global::NRGScoutingApp.Droid.Resource.Dimension.design_navigation_padding_bottom;
-			global::BottomNavigationBar.Resource.Dimension.design_navigation_separator_vertical_padding = global::NRGScoutingApp.Droid.Resource.Dimension.design_navigation_separator_vertical_padding;
-			global::BottomNavigationBar.Resource.Dimension.design_snackbar_action_inline_max_width = global::NRGScoutingApp.Droid.Resource.Dimension.design_snackbar_action_inline_max_width;
-			global::BottomNavigationBar.Resource.Dimension.design_snackbar_background_corner_radius = global::NRGScoutingApp.Droid.Resource.Dimension.design_snackbar_background_corner_radius;
-			global::BottomNavigationBar.Resource.Dimension.design_snackbar_elevation = global::NRGScoutingApp.Droid.Resource.Dimension.design_snackbar_elevation;
-			global::BottomNavigationBar.Resource.Dimension.design_snackbar_extra_spacing_horizontal = global::NRGScoutingApp.Droid.Resource.Dimension.design_snackbar_extra_spacing_horizontal;
-			global::BottomNavigationBar.Resource.Dimension.design_snackbar_max_width = global::NRGScoutingApp.Droid.Resource.Dimension.design_snackbar_max_width;
-			global::BottomNavigationBar.Resource.Dimension.design_snackbar_min_width = global::NRGScoutingApp.Droid.Resource.Dimension.design_snackbar_min_width;
-			global::BottomNavigationBar.Resource.Dimension.design_snackbar_padding_horizontal = global::NRGScoutingApp.Droid.Resource.Dimension.design_snackbar_padding_horizontal;
-			global::BottomNavigationBar.Resource.Dimension.design_snackbar_padding_vertical = global::NRGScoutingApp.Droid.Resource.Dimension.design_snackbar_padding_vertical;
-			global::BottomNavigationBar.Resource.Dimension.design_snackbar_padding_vertical_2lines = global::NRGScoutingApp.Droid.Resource.Dimension.design_snackbar_padding_vertical_2lines;
-			global::BottomNavigationBar.Resource.Dimension.design_snackbar_text_size = global::NRGScoutingApp.Droid.Resource.Dimension.design_snackbar_text_size;
-			global::BottomNavigationBar.Resource.Dimension.design_tab_max_width = global::NRGScoutingApp.Droid.Resource.Dimension.design_tab_max_width;
-			global::BottomNavigationBar.Resource.Dimension.design_tab_scrollable_min_width = global::NRGScoutingApp.Droid.Resource.Dimension.design_tab_scrollable_min_width;
-			global::BottomNavigationBar.Resource.Dimension.design_tab_text_size = global::NRGScoutingApp.Droid.Resource.Dimension.design_tab_text_size;
-			global::BottomNavigationBar.Resource.Dimension.design_tab_text_size_2line = global::NRGScoutingApp.Droid.Resource.Dimension.design_tab_text_size_2line;
-			global::BottomNavigationBar.Resource.Dimension.disabled_alpha_material_dark = global::NRGScoutingApp.Droid.Resource.Dimension.disabled_alpha_material_dark;
-			global::BottomNavigationBar.Resource.Dimension.disabled_alpha_material_light = global::NRGScoutingApp.Droid.Resource.Dimension.disabled_alpha_material_light;
-			global::BottomNavigationBar.Resource.Dimension.highlight_alpha_material_colored = global::NRGScoutingApp.Droid.Resource.Dimension.highlight_alpha_material_colored;
-			global::BottomNavigationBar.Resource.Dimension.highlight_alpha_material_dark = global::NRGScoutingApp.Droid.Resource.Dimension.highlight_alpha_material_dark;
-			global::BottomNavigationBar.Resource.Dimension.highlight_alpha_material_light = global::NRGScoutingApp.Droid.Resource.Dimension.highlight_alpha_material_light;
-			global::BottomNavigationBar.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame = global::NRGScoutingApp.Droid.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame;
-			global::BottomNavigationBar.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity = global::NRGScoutingApp.Droid.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity;
-			global::BottomNavigationBar.Resource.Dimension.item_touch_helper_swipe_escape_velocity = global::NRGScoutingApp.Droid.Resource.Dimension.item_touch_helper_swipe_escape_velocity;
-			global::BottomNavigationBar.Resource.Dimension.notification_large_icon_height = global::NRGScoutingApp.Droid.Resource.Dimension.notification_large_icon_height;
-			global::BottomNavigationBar.Resource.Dimension.notification_large_icon_width = global::NRGScoutingApp.Droid.Resource.Dimension.notification_large_icon_width;
-			global::BottomNavigationBar.Resource.Dimension.notification_subtext_size = global::NRGScoutingApp.Droid.Resource.Dimension.notification_subtext_size;
-			global::BottomNavigationBar.Resource.Drawable.abc_ab_share_pack_mtrl_alpha = global::NRGScoutingApp.Droid.Resource.Drawable.abc_ab_share_pack_mtrl_alpha;
-			global::BottomNavigationBar.Resource.Drawable.abc_action_bar_item_background_material = global::NRGScoutingApp.Droid.Resource.Drawable.abc_action_bar_item_background_material;
-			global::BottomNavigationBar.Resource.Drawable.abc_btn_borderless_material = global::NRGScoutingApp.Droid.Resource.Drawable.abc_btn_borderless_material;
-			global::BottomNavigationBar.Resource.Drawable.abc_btn_check_material = global::NRGScoutingApp.Droid.Resource.Drawable.abc_btn_check_material;
-			global::BottomNavigationBar.Resource.Drawable.abc_btn_check_to_on_mtrl_000 = global::NRGScoutingApp.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_000;
-			global::BottomNavigationBar.Resource.Drawable.abc_btn_check_to_on_mtrl_015 = global::NRGScoutingApp.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_015;
-			global::BottomNavigationBar.Resource.Drawable.abc_btn_colored_material = global::NRGScoutingApp.Droid.Resource.Drawable.abc_btn_colored_material;
-			global::BottomNavigationBar.Resource.Drawable.abc_btn_default_mtrl_shape = global::NRGScoutingApp.Droid.Resource.Drawable.abc_btn_default_mtrl_shape;
-			global::BottomNavigationBar.Resource.Drawable.abc_btn_radio_material = global::NRGScoutingApp.Droid.Resource.Drawable.abc_btn_radio_material;
-			global::BottomNavigationBar.Resource.Drawable.abc_btn_radio_to_on_mtrl_000 = global::NRGScoutingApp.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_000;
-			global::BottomNavigationBar.Resource.Drawable.abc_btn_radio_to_on_mtrl_015 = global::NRGScoutingApp.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_015;
-			global::BottomNavigationBar.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001 = global::NRGScoutingApp.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001;
-			global::BottomNavigationBar.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012 = global::NRGScoutingApp.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012;
-			global::BottomNavigationBar.Resource.Drawable.abc_cab_background_internal_bg = global::NRGScoutingApp.Droid.Resource.Drawable.abc_cab_background_internal_bg;
-			global::BottomNavigationBar.Resource.Drawable.abc_cab_background_top_material = global::NRGScoutingApp.Droid.Resource.Drawable.abc_cab_background_top_material;
-			global::BottomNavigationBar.Resource.Drawable.abc_cab_background_top_mtrl_alpha = global::NRGScoutingApp.Droid.Resource.Drawable.abc_cab_background_top_mtrl_alpha;
-			global::BottomNavigationBar.Resource.Drawable.abc_control_background_material = global::NRGScoutingApp.Droid.Resource.Drawable.abc_control_background_material;
-			global::BottomNavigationBar.Resource.Drawable.abc_dialog_material_background = global::NRGScoutingApp.Droid.Resource.Drawable.abc_dialog_material_background;
-			global::BottomNavigationBar.Resource.Drawable.abc_edit_text_material = global::NRGScoutingApp.Droid.Resource.Drawable.abc_edit_text_material;
-			global::BottomNavigationBar.Resource.Drawable.abc_ic_ab_back_material = global::NRGScoutingApp.Droid.Resource.Drawable.abc_ic_ab_back_material;
-			global::BottomNavigationBar.Resource.Drawable.abc_ic_arrow_drop_right_black_24dp = global::NRGScoutingApp.Droid.Resource.Drawable.abc_ic_arrow_drop_right_black_24dp;
-			global::BottomNavigationBar.Resource.Drawable.abc_ic_clear_material = global::NRGScoutingApp.Droid.Resource.Drawable.abc_ic_clear_material;
-			global::BottomNavigationBar.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha = global::NRGScoutingApp.Droid.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha;
-			global::BottomNavigationBar.Resource.Drawable.abc_ic_go_search_api_material = global::NRGScoutingApp.Droid.Resource.Drawable.abc_ic_go_search_api_material;
-			global::BottomNavigationBar.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha = global::NRGScoutingApp.Droid.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha;
-			global::BottomNavigationBar.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha = global::NRGScoutingApp.Droid.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha;
-			global::BottomNavigationBar.Resource.Drawable.abc_ic_menu_overflow_material = global::NRGScoutingApp.Droid.Resource.Drawable.abc_ic_menu_overflow_material;
-			global::BottomNavigationBar.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha = global::NRGScoutingApp.Droid.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha;
-			global::BottomNavigationBar.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha = global::NRGScoutingApp.Droid.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha;
-			global::BottomNavigationBar.Resource.Drawable.abc_ic_menu_share_mtrl_alpha = global::NRGScoutingApp.Droid.Resource.Drawable.abc_ic_menu_share_mtrl_alpha;
-			global::BottomNavigationBar.Resource.Drawable.abc_ic_search_api_material = global::NRGScoutingApp.Droid.Resource.Drawable.abc_ic_search_api_material;
-			global::BottomNavigationBar.Resource.Drawable.abc_ic_star_black_16dp = global::NRGScoutingApp.Droid.Resource.Drawable.abc_ic_star_black_16dp;
-			global::BottomNavigationBar.Resource.Drawable.abc_ic_star_black_36dp = global::NRGScoutingApp.Droid.Resource.Drawable.abc_ic_star_black_36dp;
-			global::BottomNavigationBar.Resource.Drawable.abc_ic_star_black_48dp = global::NRGScoutingApp.Droid.Resource.Drawable.abc_ic_star_black_48dp;
-			global::BottomNavigationBar.Resource.Drawable.abc_ic_star_half_black_16dp = global::NRGScoutingApp.Droid.Resource.Drawable.abc_ic_star_half_black_16dp;
-			global::BottomNavigationBar.Resource.Drawable.abc_ic_star_half_black_36dp = global::NRGScoutingApp.Droid.Resource.Drawable.abc_ic_star_half_black_36dp;
-			global::BottomNavigationBar.Resource.Drawable.abc_ic_star_half_black_48dp = global::NRGScoutingApp.Droid.Resource.Drawable.abc_ic_star_half_black_48dp;
-			global::BottomNavigationBar.Resource.Drawable.abc_ic_voice_search_api_material = global::NRGScoutingApp.Droid.Resource.Drawable.abc_ic_voice_search_api_material;
-			global::BottomNavigationBar.Resource.Drawable.abc_item_background_holo_dark = global::NRGScoutingApp.Droid.Resource.Drawable.abc_item_background_holo_dark;
-			global::BottomNavigationBar.Resource.Drawable.abc_item_background_holo_light = global::NRGScoutingApp.Droid.Resource.Drawable.abc_item_background_holo_light;
-			global::BottomNavigationBar.Resource.Drawable.abc_list_divider_mtrl_alpha = global::NRGScoutingApp.Droid.Resource.Drawable.abc_list_divider_mtrl_alpha;
-			global::BottomNavigationBar.Resource.Drawable.abc_list_focused_holo = global::NRGScoutingApp.Droid.Resource.Drawable.abc_list_focused_holo;
-			global::BottomNavigationBar.Resource.Drawable.abc_list_longpressed_holo = global::NRGScoutingApp.Droid.Resource.Drawable.abc_list_longpressed_holo;
-			global::BottomNavigationBar.Resource.Drawable.abc_list_pressed_holo_dark = global::NRGScoutingApp.Droid.Resource.Drawable.abc_list_pressed_holo_dark;
-			global::BottomNavigationBar.Resource.Drawable.abc_list_pressed_holo_light = global::NRGScoutingApp.Droid.Resource.Drawable.abc_list_pressed_holo_light;
-			global::BottomNavigationBar.Resource.Drawable.abc_list_selector_background_transition_holo_dark = global::NRGScoutingApp.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_dark;
-			global::BottomNavigationBar.Resource.Drawable.abc_list_selector_background_transition_holo_light = global::NRGScoutingApp.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_light;
-			global::BottomNavigationBar.Resource.Drawable.abc_list_selector_disabled_holo_dark = global::NRGScoutingApp.Droid.Resource.Drawable.abc_list_selector_disabled_holo_dark;
-			global::BottomNavigationBar.Resource.Drawable.abc_list_selector_disabled_holo_light = global::NRGScoutingApp.Droid.Resource.Drawable.abc_list_selector_disabled_holo_light;
-			global::BottomNavigationBar.Resource.Drawable.abc_list_selector_holo_dark = global::NRGScoutingApp.Droid.Resource.Drawable.abc_list_selector_holo_dark;
-			global::BottomNavigationBar.Resource.Drawable.abc_list_selector_holo_light = global::NRGScoutingApp.Droid.Resource.Drawable.abc_list_selector_holo_light;
-			global::BottomNavigationBar.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult = global::NRGScoutingApp.Droid.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult;
-			global::BottomNavigationBar.Resource.Drawable.abc_popup_background_mtrl_mult = global::NRGScoutingApp.Droid.Resource.Drawable.abc_popup_background_mtrl_mult;
-			global::BottomNavigationBar.Resource.Drawable.abc_ratingbar_indicator_material = global::NRGScoutingApp.Droid.Resource.Drawable.abc_ratingbar_indicator_material;
-			global::BottomNavigationBar.Resource.Drawable.abc_ratingbar_material = global::NRGScoutingApp.Droid.Resource.Drawable.abc_ratingbar_material;
-			global::BottomNavigationBar.Resource.Drawable.abc_ratingbar_small_material = global::NRGScoutingApp.Droid.Resource.Drawable.abc_ratingbar_small_material;
-			global::BottomNavigationBar.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha = global::NRGScoutingApp.Droid.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha;
-			global::BottomNavigationBar.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000 = global::NRGScoutingApp.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000;
-			global::BottomNavigationBar.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005 = global::NRGScoutingApp.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005;
-			global::BottomNavigationBar.Resource.Drawable.abc_scrubber_primary_mtrl_alpha = global::NRGScoutingApp.Droid.Resource.Drawable.abc_scrubber_primary_mtrl_alpha;
-			global::BottomNavigationBar.Resource.Drawable.abc_scrubber_track_mtrl_alpha = global::NRGScoutingApp.Droid.Resource.Drawable.abc_scrubber_track_mtrl_alpha;
-			global::BottomNavigationBar.Resource.Drawable.abc_seekbar_thumb_material = global::NRGScoutingApp.Droid.Resource.Drawable.abc_seekbar_thumb_material;
-			global::BottomNavigationBar.Resource.Drawable.abc_seekbar_tick_mark_material = global::NRGScoutingApp.Droid.Resource.Drawable.abc_seekbar_tick_mark_material;
-			global::BottomNavigationBar.Resource.Drawable.abc_seekbar_track_material = global::NRGScoutingApp.Droid.Resource.Drawable.abc_seekbar_track_material;
-			global::BottomNavigationBar.Resource.Drawable.abc_spinner_mtrl_am_alpha = global::NRGScoutingApp.Droid.Resource.Drawable.abc_spinner_mtrl_am_alpha;
-			global::BottomNavigationBar.Resource.Drawable.abc_spinner_textfield_background_material = global::NRGScoutingApp.Droid.Resource.Drawable.abc_spinner_textfield_background_material;
-			global::BottomNavigationBar.Resource.Drawable.abc_switch_thumb_material = global::NRGScoutingApp.Droid.Resource.Drawable.abc_switch_thumb_material;
-			global::BottomNavigationBar.Resource.Drawable.abc_switch_track_mtrl_alpha = global::NRGScoutingApp.Droid.Resource.Drawable.abc_switch_track_mtrl_alpha;
-			global::BottomNavigationBar.Resource.Drawable.abc_tab_indicator_material = global::NRGScoutingApp.Droid.Resource.Drawable.abc_tab_indicator_material;
-			global::BottomNavigationBar.Resource.Drawable.abc_tab_indicator_mtrl_alpha = global::NRGScoutingApp.Droid.Resource.Drawable.abc_tab_indicator_mtrl_alpha;
-			global::BottomNavigationBar.Resource.Drawable.abc_text_cursor_material = global::NRGScoutingApp.Droid.Resource.Drawable.abc_text_cursor_material;
-			global::BottomNavigationBar.Resource.Drawable.abc_text_select_handle_left_mtrl_dark = global::NRGScoutingApp.Droid.Resource.Drawable.abc_text_select_handle_left_mtrl_dark;
-			global::BottomNavigationBar.Resource.Drawable.abc_text_select_handle_left_mtrl_light = global::NRGScoutingApp.Droid.Resource.Drawable.abc_text_select_handle_left_mtrl_light;
-			global::BottomNavigationBar.Resource.Drawable.abc_text_select_handle_middle_mtrl_dark = global::NRGScoutingApp.Droid.Resource.Drawable.abc_text_select_handle_middle_mtrl_dark;
-			global::BottomNavigationBar.Resource.Drawable.abc_text_select_handle_middle_mtrl_light = global::NRGScoutingApp.Droid.Resource.Drawable.abc_text_select_handle_middle_mtrl_light;
-			global::BottomNavigationBar.Resource.Drawable.abc_text_select_handle_right_mtrl_dark = global::NRGScoutingApp.Droid.Resource.Drawable.abc_text_select_handle_right_mtrl_dark;
-			global::BottomNavigationBar.Resource.Drawable.abc_text_select_handle_right_mtrl_light = global::NRGScoutingApp.Droid.Resource.Drawable.abc_text_select_handle_right_mtrl_light;
-			global::BottomNavigationBar.Resource.Drawable.abc_textfield_activated_mtrl_alpha = global::NRGScoutingApp.Droid.Resource.Drawable.abc_textfield_activated_mtrl_alpha;
-			global::BottomNavigationBar.Resource.Drawable.abc_textfield_default_mtrl_alpha = global::NRGScoutingApp.Droid.Resource.Drawable.abc_textfield_default_mtrl_alpha;
-			global::BottomNavigationBar.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha = global::NRGScoutingApp.Droid.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha;
-			global::BottomNavigationBar.Resource.Drawable.abc_textfield_search_default_mtrl_alpha = global::NRGScoutingApp.Droid.Resource.Drawable.abc_textfield_search_default_mtrl_alpha;
-			global::BottomNavigationBar.Resource.Drawable.abc_textfield_search_material = global::NRGScoutingApp.Droid.Resource.Drawable.abc_textfield_search_material;
-			global::BottomNavigationBar.Resource.Drawable.abc_vector_test = global::NRGScoutingApp.Droid.Resource.Drawable.abc_vector_test;
-			global::BottomNavigationBar.Resource.Drawable.bb_bottom_bar_top_shadow = global::NRGScoutingApp.Droid.Resource.Drawable.bb_bottom_bar_top_shadow;
-			global::BottomNavigationBar.Resource.Drawable.design_fab_background = global::NRGScoutingApp.Droid.Resource.Drawable.design_fab_background;
-			global::BottomNavigationBar.Resource.Drawable.design_ic_visibility = global::NRGScoutingApp.Droid.Resource.Drawable.design_ic_visibility;
-			global::BottomNavigationBar.Resource.Drawable.design_snackbar_background = global::NRGScoutingApp.Droid.Resource.Drawable.design_snackbar_background;
-			global::BottomNavigationBar.Resource.Drawable.navigation_empty_icon = global::NRGScoutingApp.Droid.Resource.Drawable.navigation_empty_icon;
-			global::BottomNavigationBar.Resource.Drawable.notification_template_icon_bg = global::NRGScoutingApp.Droid.Resource.Drawable.notification_template_icon_bg;
-			global::BottomNavigationBar.Resource.Id.action0 = global::NRGScoutingApp.Droid.Resource.Id.action0;
-			global::BottomNavigationBar.Resource.Id.action_bar = global::NRGScoutingApp.Droid.Resource.Id.action_bar;
-			global::BottomNavigationBar.Resource.Id.action_bar_activity_content = global::NRGScoutingApp.Droid.Resource.Id.action_bar_activity_content;
-			global::BottomNavigationBar.Resource.Id.action_bar_container = global::NRGScoutingApp.Droid.Resource.Id.action_bar_container;
-			global::BottomNavigationBar.Resource.Id.action_bar_root = global::NRGScoutingApp.Droid.Resource.Id.action_bar_root;
-			global::BottomNavigationBar.Resource.Id.action_bar_spinner = global::NRGScoutingApp.Droid.Resource.Id.action_bar_spinner;
-			global::BottomNavigationBar.Resource.Id.action_bar_subtitle = global::NRGScoutingApp.Droid.Resource.Id.action_bar_subtitle;
-			global::BottomNavigationBar.Resource.Id.action_bar_title = global::NRGScoutingApp.Droid.Resource.Id.action_bar_title;
-			global::BottomNavigationBar.Resource.Id.action_context_bar = global::NRGScoutingApp.Droid.Resource.Id.action_context_bar;
-			global::BottomNavigationBar.Resource.Id.action_divider = global::NRGScoutingApp.Droid.Resource.Id.action_divider;
-			global::BottomNavigationBar.Resource.Id.action_menu_divider = global::NRGScoutingApp.Droid.Resource.Id.action_menu_divider;
-			global::BottomNavigationBar.Resource.Id.action_menu_presenter = global::NRGScoutingApp.Droid.Resource.Id.action_menu_presenter;
-			global::BottomNavigationBar.Resource.Id.action_mode_bar = global::NRGScoutingApp.Droid.Resource.Id.action_mode_bar;
-			global::BottomNavigationBar.Resource.Id.action_mode_bar_stub = global::NRGScoutingApp.Droid.Resource.Id.action_mode_bar_stub;
-			global::BottomNavigationBar.Resource.Id.action_mode_close_button = global::NRGScoutingApp.Droid.Resource.Id.action_mode_close_button;
-			global::BottomNavigationBar.Resource.Id.activity_chooser_view_content = global::NRGScoutingApp.Droid.Resource.Id.activity_chooser_view_content;
-			global::BottomNavigationBar.Resource.Id.add = global::NRGScoutingApp.Droid.Resource.Id.add;
-			global::BottomNavigationBar.Resource.Id.alertTitle = global::NRGScoutingApp.Droid.Resource.Id.alertTitle;
-			global::BottomNavigationBar.Resource.Id.all = global::NRGScoutingApp.Droid.Resource.Id.all;
-			global::BottomNavigationBar.Resource.Id.always = global::NRGScoutingApp.Droid.Resource.Id.always;
-			global::BottomNavigationBar.Resource.Id.auto = global::NRGScoutingApp.Droid.Resource.Id.auto;
-			global::BottomNavigationBar.Resource.Id.bb_bottom_bar_background_overlay = global::NRGScoutingApp.Droid.Resource.Id.bb_bottom_bar_background_overlay;
-			global::BottomNavigationBar.Resource.Id.bb_bottom_bar_background_view = global::NRGScoutingApp.Droid.Resource.Id.bb_bottom_bar_background_view;
-			global::BottomNavigationBar.Resource.Id.bb_bottom_bar_icon = global::NRGScoutingApp.Droid.Resource.Id.bb_bottom_bar_icon;
-			global::BottomNavigationBar.Resource.Id.bb_bottom_bar_item_container = global::NRGScoutingApp.Droid.Resource.Id.bb_bottom_bar_item_container;
-			global::BottomNavigationBar.Resource.Id.bb_bottom_bar_outer_container = global::NRGScoutingApp.Droid.Resource.Id.bb_bottom_bar_outer_container;
-			global::BottomNavigationBar.Resource.Id.bb_bottom_bar_shadow = global::NRGScoutingApp.Droid.Resource.Id.bb_bottom_bar_shadow;
-			global::BottomNavigationBar.Resource.Id.bb_bottom_bar_title = global::NRGScoutingApp.Droid.Resource.Id.bb_bottom_bar_title;
-			global::BottomNavigationBar.Resource.Id.bb_tablet_right_border = global::NRGScoutingApp.Droid.Resource.Id.bb_tablet_right_border;
-			global::BottomNavigationBar.Resource.Id.bb_user_content_container = global::NRGScoutingApp.Droid.Resource.Id.bb_user_content_container;
-			global::BottomNavigationBar.Resource.Id.beginning = global::NRGScoutingApp.Droid.Resource.Id.beginning;
-			global::BottomNavigationBar.Resource.Id.bottom = global::NRGScoutingApp.Droid.Resource.Id.bottom;
-			global::BottomNavigationBar.Resource.Id.buttonPanel = global::NRGScoutingApp.Droid.Resource.Id.buttonPanel;
-			global::BottomNavigationBar.Resource.Id.cancel_action = global::NRGScoutingApp.Droid.Resource.Id.cancel_action;
-			global::BottomNavigationBar.Resource.Id.center = global::NRGScoutingApp.Droid.Resource.Id.center;
-			global::BottomNavigationBar.Resource.Id.center_horizontal = global::NRGScoutingApp.Droid.Resource.Id.center_horizontal;
-			global::BottomNavigationBar.Resource.Id.center_vertical = global::NRGScoutingApp.Droid.Resource.Id.center_vertical;
-			global::BottomNavigationBar.Resource.Id.checkbox = global::NRGScoutingApp.Droid.Resource.Id.checkbox;
-			global::BottomNavigationBar.Resource.Id.chronometer = global::NRGScoutingApp.Droid.Resource.Id.chronometer;
-			global::BottomNavigationBar.Resource.Id.clip_horizontal = global::NRGScoutingApp.Droid.Resource.Id.clip_horizontal;
-			global::BottomNavigationBar.Resource.Id.clip_vertical = global::NRGScoutingApp.Droid.Resource.Id.clip_vertical;
-			global::BottomNavigationBar.Resource.Id.collapseActionView = global::NRGScoutingApp.Droid.Resource.Id.collapseActionView;
-			global::BottomNavigationBar.Resource.Id.contentPanel = global::NRGScoutingApp.Droid.Resource.Id.contentPanel;
-			global::BottomNavigationBar.Resource.Id.custom = global::NRGScoutingApp.Droid.Resource.Id.custom;
-			global::BottomNavigationBar.Resource.Id.customPanel = global::NRGScoutingApp.Droid.Resource.Id.customPanel;
-			global::BottomNavigationBar.Resource.Id.decor_content_parent = global::NRGScoutingApp.Droid.Resource.Id.decor_content_parent;
-			global::BottomNavigationBar.Resource.Id.default_activity_button = global::NRGScoutingApp.Droid.Resource.Id.default_activity_button;
-			global::BottomNavigationBar.Resource.Id.design_bottom_sheet = global::NRGScoutingApp.Droid.Resource.Id.design_bottom_sheet;
-			global::BottomNavigationBar.Resource.Id.design_menu_item_action_area = global::NRGScoutingApp.Droid.Resource.Id.design_menu_item_action_area;
-			global::BottomNavigationBar.Resource.Id.design_menu_item_action_area_stub = global::NRGScoutingApp.Droid.Resource.Id.design_menu_item_action_area_stub;
-			global::BottomNavigationBar.Resource.Id.design_menu_item_text = global::NRGScoutingApp.Droid.Resource.Id.design_menu_item_text;
-			global::BottomNavigationBar.Resource.Id.design_navigation_view = global::NRGScoutingApp.Droid.Resource.Id.design_navigation_view;
-			global::BottomNavigationBar.Resource.Id.disableHome = global::NRGScoutingApp.Droid.Resource.Id.disableHome;
-			global::BottomNavigationBar.Resource.Id.edit_query = global::NRGScoutingApp.Droid.Resource.Id.edit_query;
-			global::BottomNavigationBar.Resource.Id.end = global::NRGScoutingApp.Droid.Resource.Id.end;
-			global::BottomNavigationBar.Resource.Id.end_padder = global::NRGScoutingApp.Droid.Resource.Id.end_padder;
-			global::BottomNavigationBar.Resource.Id.enterAlways = global::NRGScoutingApp.Droid.Resource.Id.enterAlways;
-			global::BottomNavigationBar.Resource.Id.enterAlwaysCollapsed = global::NRGScoutingApp.Droid.Resource.Id.enterAlwaysCollapsed;
-			global::BottomNavigationBar.Resource.Id.exitUntilCollapsed = global::NRGScoutingApp.Droid.Resource.Id.exitUntilCollapsed;
-			global::BottomNavigationBar.Resource.Id.expand_activities_button = global::NRGScoutingApp.Droid.Resource.Id.expand_activities_button;
-			global::BottomNavigationBar.Resource.Id.expanded_menu = global::NRGScoutingApp.Droid.Resource.Id.expanded_menu;
-			global::BottomNavigationBar.Resource.Id.fill = global::NRGScoutingApp.Droid.Resource.Id.fill;
-			global::BottomNavigationBar.Resource.Id.fill_horizontal = global::NRGScoutingApp.Droid.Resource.Id.fill_horizontal;
-			global::BottomNavigationBar.Resource.Id.fill_vertical = global::NRGScoutingApp.Droid.Resource.Id.fill_vertical;
-			global::BottomNavigationBar.Resource.Id.@fixed = global::NRGScoutingApp.Droid.Resource.Id.@fixed;
-			global::BottomNavigationBar.Resource.Id.home = global::NRGScoutingApp.Droid.Resource.Id.home;
-			global::BottomNavigationBar.Resource.Id.homeAsUp = global::NRGScoutingApp.Droid.Resource.Id.homeAsUp;
-			global::BottomNavigationBar.Resource.Id.icon = global::NRGScoutingApp.Droid.Resource.Id.icon;
-			global::BottomNavigationBar.Resource.Id.ifRoom = global::NRGScoutingApp.Droid.Resource.Id.ifRoom;
-			global::BottomNavigationBar.Resource.Id.image = global::NRGScoutingApp.Droid.Resource.Id.image;
-			global::BottomNavigationBar.Resource.Id.info = global::NRGScoutingApp.Droid.Resource.Id.info;
-			global::BottomNavigationBar.Resource.Id.item_touch_helper_previous_elevation = global::NRGScoutingApp.Droid.Resource.Id.item_touch_helper_previous_elevation;
-			global::BottomNavigationBar.Resource.Id.left = global::NRGScoutingApp.Droid.Resource.Id.left;
-			global::BottomNavigationBar.Resource.Id.line1 = global::NRGScoutingApp.Droid.Resource.Id.line1;
-			global::BottomNavigationBar.Resource.Id.line3 = global::NRGScoutingApp.Droid.Resource.Id.line3;
-			global::BottomNavigationBar.Resource.Id.listMode = global::NRGScoutingApp.Droid.Resource.Id.listMode;
-			global::BottomNavigationBar.Resource.Id.list_item = global::NRGScoutingApp.Droid.Resource.Id.list_item;
-			global::BottomNavigationBar.Resource.Id.media_actions = global::NRGScoutingApp.Droid.Resource.Id.media_actions;
-			global::BottomNavigationBar.Resource.Id.middle = global::NRGScoutingApp.Droid.Resource.Id.middle;
-			global::BottomNavigationBar.Resource.Id.mini = global::NRGScoutingApp.Droid.Resource.Id.mini;
-			global::BottomNavigationBar.Resource.Id.multiply = global::NRGScoutingApp.Droid.Resource.Id.multiply;
-			global::BottomNavigationBar.Resource.Id.navigation_header_container = global::NRGScoutingApp.Droid.Resource.Id.navigation_header_container;
-			global::BottomNavigationBar.Resource.Id.never = global::NRGScoutingApp.Droid.Resource.Id.never;
-			global::BottomNavigationBar.Resource.Id.none = global::NRGScoutingApp.Droid.Resource.Id.none;
-			global::BottomNavigationBar.Resource.Id.normal = global::NRGScoutingApp.Droid.Resource.Id.normal;
-			global::BottomNavigationBar.Resource.Id.parallax = global::NRGScoutingApp.Droid.Resource.Id.parallax;
-			global::BottomNavigationBar.Resource.Id.parentPanel = global::NRGScoutingApp.Droid.Resource.Id.parentPanel;
-			global::BottomNavigationBar.Resource.Id.pin = global::NRGScoutingApp.Droid.Resource.Id.pin;
-			global::BottomNavigationBar.Resource.Id.progress_circular = global::NRGScoutingApp.Droid.Resource.Id.progress_circular;
-			global::BottomNavigationBar.Resource.Id.progress_horizontal = global::NRGScoutingApp.Droid.Resource.Id.progress_horizontal;
-			global::BottomNavigationBar.Resource.Id.radio = global::NRGScoutingApp.Droid.Resource.Id.radio;
-			global::BottomNavigationBar.Resource.Id.right = global::NRGScoutingApp.Droid.Resource.Id.right;
-			global::BottomNavigationBar.Resource.Id.screen = global::NRGScoutingApp.Droid.Resource.Id.screen;
-			global::BottomNavigationBar.Resource.Id.scroll = global::NRGScoutingApp.Droid.Resource.Id.scroll;
-			global::BottomNavigationBar.Resource.Id.scrollIndicatorDown = global::NRGScoutingApp.Droid.Resource.Id.scrollIndicatorDown;
-			global::BottomNavigationBar.Resource.Id.scrollIndicatorUp = global::NRGScoutingApp.Droid.Resource.Id.scrollIndicatorUp;
-			global::BottomNavigationBar.Resource.Id.scrollView = global::NRGScoutingApp.Droid.Resource.Id.scrollView;
-			global::BottomNavigationBar.Resource.Id.scrollable = global::NRGScoutingApp.Droid.Resource.Id.scrollable;
-			global::BottomNavigationBar.Resource.Id.search_badge = global::NRGScoutingApp.Droid.Resource.Id.search_badge;
-			global::BottomNavigationBar.Resource.Id.search_bar = global::NRGScoutingApp.Droid.Resource.Id.search_bar;
-			global::BottomNavigationBar.Resource.Id.search_button = global::NRGScoutingApp.Droid.Resource.Id.search_button;
-			global::BottomNavigationBar.Resource.Id.search_close_btn = global::NRGScoutingApp.Droid.Resource.Id.search_close_btn;
-			global::BottomNavigationBar.Resource.Id.search_edit_frame = global::NRGScoutingApp.Droid.Resource.Id.search_edit_frame;
-			global::BottomNavigationBar.Resource.Id.search_go_btn = global::NRGScoutingApp.Droid.Resource.Id.search_go_btn;
-			global::BottomNavigationBar.Resource.Id.search_mag_icon = global::NRGScoutingApp.Droid.Resource.Id.search_mag_icon;
-			global::BottomNavigationBar.Resource.Id.search_plate = global::NRGScoutingApp.Droid.Resource.Id.search_plate;
-			global::BottomNavigationBar.Resource.Id.search_src_text = global::NRGScoutingApp.Droid.Resource.Id.search_src_text;
-			global::BottomNavigationBar.Resource.Id.search_voice_btn = global::NRGScoutingApp.Droid.Resource.Id.search_voice_btn;
-			global::BottomNavigationBar.Resource.Id.select_dialog_listview = global::NRGScoutingApp.Droid.Resource.Id.select_dialog_listview;
-			global::BottomNavigationBar.Resource.Id.shortcut = global::NRGScoutingApp.Droid.Resource.Id.shortcut;
-			global::BottomNavigationBar.Resource.Id.showCustom = global::NRGScoutingApp.Droid.Resource.Id.showCustom;
-			global::BottomNavigationBar.Resource.Id.showHome = global::NRGScoutingApp.Droid.Resource.Id.showHome;
-			global::BottomNavigationBar.Resource.Id.showTitle = global::NRGScoutingApp.Droid.Resource.Id.showTitle;
-			global::BottomNavigationBar.Resource.Id.snackbar_action = global::NRGScoutingApp.Droid.Resource.Id.snackbar_action;
-			global::BottomNavigationBar.Resource.Id.snackbar_text = global::NRGScoutingApp.Droid.Resource.Id.snackbar_text;
-			global::BottomNavigationBar.Resource.Id.snap = global::NRGScoutingApp.Droid.Resource.Id.snap;
-			global::BottomNavigationBar.Resource.Id.spacer = global::NRGScoutingApp.Droid.Resource.Id.spacer;
-			global::BottomNavigationBar.Resource.Id.split_action_bar = global::NRGScoutingApp.Droid.Resource.Id.split_action_bar;
-			global::BottomNavigationBar.Resource.Id.src_atop = global::NRGScoutingApp.Droid.Resource.Id.src_atop;
-			global::BottomNavigationBar.Resource.Id.src_in = global::NRGScoutingApp.Droid.Resource.Id.src_in;
-			global::BottomNavigationBar.Resource.Id.src_over = global::NRGScoutingApp.Droid.Resource.Id.src_over;
-			global::BottomNavigationBar.Resource.Id.start = global::NRGScoutingApp.Droid.Resource.Id.start;
-			global::BottomNavigationBar.Resource.Id.status_bar_latest_event_content = global::NRGScoutingApp.Droid.Resource.Id.status_bar_latest_event_content;
-			global::BottomNavigationBar.Resource.Id.submenuarrow = global::NRGScoutingApp.Droid.Resource.Id.submenuarrow;
-			global::BottomNavigationBar.Resource.Id.submit_area = global::NRGScoutingApp.Droid.Resource.Id.submit_area;
-			global::BottomNavigationBar.Resource.Id.tabMode = global::NRGScoutingApp.Droid.Resource.Id.tabMode;
-			global::BottomNavigationBar.Resource.Id.text = global::NRGScoutingApp.Droid.Resource.Id.text;
-			global::BottomNavigationBar.Resource.Id.text2 = global::NRGScoutingApp.Droid.Resource.Id.text2;
-			global::BottomNavigationBar.Resource.Id.textSpacerNoButtons = global::NRGScoutingApp.Droid.Resource.Id.textSpacerNoButtons;
-			global::BottomNavigationBar.Resource.Id.text_input_password_toggle = global::NRGScoutingApp.Droid.Resource.Id.text_input_password_toggle;
-			global::BottomNavigationBar.Resource.Id.time = global::NRGScoutingApp.Droid.Resource.Id.time;
-			global::BottomNavigationBar.Resource.Id.title = global::NRGScoutingApp.Droid.Resource.Id.title;
-			global::BottomNavigationBar.Resource.Id.title_template = global::NRGScoutingApp.Droid.Resource.Id.title_template;
-			global::BottomNavigationBar.Resource.Id.top = global::NRGScoutingApp.Droid.Resource.Id.top;
-			global::BottomNavigationBar.Resource.Id.topPanel = global::NRGScoutingApp.Droid.Resource.Id.topPanel;
-			global::BottomNavigationBar.Resource.Id.touch_outside = global::NRGScoutingApp.Droid.Resource.Id.touch_outside;
-			global::BottomNavigationBar.Resource.Id.up = global::NRGScoutingApp.Droid.Resource.Id.up;
-			global::BottomNavigationBar.Resource.Id.useLogo = global::NRGScoutingApp.Droid.Resource.Id.useLogo;
-			global::BottomNavigationBar.Resource.Id.view_offset_helper = global::NRGScoutingApp.Droid.Resource.Id.view_offset_helper;
-			global::BottomNavigationBar.Resource.Id.withText = global::NRGScoutingApp.Droid.Resource.Id.withText;
-			global::BottomNavigationBar.Resource.Id.wrap_content = global::NRGScoutingApp.Droid.Resource.Id.wrap_content;
-			global::BottomNavigationBar.Resource.Integer.abc_config_activityDefaultDur = global::NRGScoutingApp.Droid.Resource.Integer.abc_config_activityDefaultDur;
-			global::BottomNavigationBar.Resource.Integer.abc_config_activityShortDur = global::NRGScoutingApp.Droid.Resource.Integer.abc_config_activityShortDur;
-			global::BottomNavigationBar.Resource.Integer.app_bar_elevation_anim_duration = global::NRGScoutingApp.Droid.Resource.Integer.app_bar_elevation_anim_duration;
-			global::BottomNavigationBar.Resource.Integer.bottom_sheet_slide_duration = global::NRGScoutingApp.Droid.Resource.Integer.bottom_sheet_slide_duration;
-			global::BottomNavigationBar.Resource.Integer.cancel_button_image_alpha = global::NRGScoutingApp.Droid.Resource.Integer.cancel_button_image_alpha;
-			global::BottomNavigationBar.Resource.Integer.design_snackbar_text_max_lines = global::NRGScoutingApp.Droid.Resource.Integer.design_snackbar_text_max_lines;
-			global::BottomNavigationBar.Resource.Integer.status_bar_notification_info_maxnum = global::NRGScoutingApp.Droid.Resource.Integer.status_bar_notification_info_maxnum;
-			global::BottomNavigationBar.Resource.Layout.abc_action_bar_title_item = global::NRGScoutingApp.Droid.Resource.Layout.abc_action_bar_title_item;
-			global::BottomNavigationBar.Resource.Layout.abc_action_bar_up_container = global::NRGScoutingApp.Droid.Resource.Layout.abc_action_bar_up_container;
-			global::BottomNavigationBar.Resource.Layout.abc_action_menu_item_layout = global::NRGScoutingApp.Droid.Resource.Layout.abc_action_menu_item_layout;
-			global::BottomNavigationBar.Resource.Layout.abc_action_menu_layout = global::NRGScoutingApp.Droid.Resource.Layout.abc_action_menu_layout;
-			global::BottomNavigationBar.Resource.Layout.abc_action_mode_bar = global::NRGScoutingApp.Droid.Resource.Layout.abc_action_mode_bar;
-			global::BottomNavigationBar.Resource.Layout.abc_action_mode_close_item_material = global::NRGScoutingApp.Droid.Resource.Layout.abc_action_mode_close_item_material;
-			global::BottomNavigationBar.Resource.Layout.abc_activity_chooser_view = global::NRGScoutingApp.Droid.Resource.Layout.abc_activity_chooser_view;
-			global::BottomNavigationBar.Resource.Layout.abc_activity_chooser_view_list_item = global::NRGScoutingApp.Droid.Resource.Layout.abc_activity_chooser_view_list_item;
-			global::BottomNavigationBar.Resource.Layout.abc_alert_dialog_button_bar_material = global::NRGScoutingApp.Droid.Resource.Layout.abc_alert_dialog_button_bar_material;
-			global::BottomNavigationBar.Resource.Layout.abc_alert_dialog_material = global::NRGScoutingApp.Droid.Resource.Layout.abc_alert_dialog_material;
-			global::BottomNavigationBar.Resource.Layout.abc_dialog_title_material = global::NRGScoutingApp.Droid.Resource.Layout.abc_dialog_title_material;
-			global::BottomNavigationBar.Resource.Layout.abc_expanded_menu_layout = global::NRGScoutingApp.Droid.Resource.Layout.abc_expanded_menu_layout;
-			global::BottomNavigationBar.Resource.Layout.abc_list_menu_item_checkbox = global::NRGScoutingApp.Droid.Resource.Layout.abc_list_menu_item_checkbox;
-			global::BottomNavigationBar.Resource.Layout.abc_list_menu_item_icon = global::NRGScoutingApp.Droid.Resource.Layout.abc_list_menu_item_icon;
-			global::BottomNavigationBar.Resource.Layout.abc_list_menu_item_layout = global::NRGScoutingApp.Droid.Resource.Layout.abc_list_menu_item_layout;
-			global::BottomNavigationBar.Resource.Layout.abc_list_menu_item_radio = global::NRGScoutingApp.Droid.Resource.Layout.abc_list_menu_item_radio;
-			global::BottomNavigationBar.Resource.Layout.abc_popup_menu_header_item_layout = global::NRGScoutingApp.Droid.Resource.Layout.abc_popup_menu_header_item_layout;
-			global::BottomNavigationBar.Resource.Layout.abc_popup_menu_item_layout = global::NRGScoutingApp.Droid.Resource.Layout.abc_popup_menu_item_layout;
-			global::BottomNavigationBar.Resource.Layout.abc_screen_content_include = global::NRGScoutingApp.Droid.Resource.Layout.abc_screen_content_include;
-			global::BottomNavigationBar.Resource.Layout.abc_screen_simple = global::NRGScoutingApp.Droid.Resource.Layout.abc_screen_simple;
-			global::BottomNavigationBar.Resource.Layout.abc_screen_simple_overlay_action_mode = global::NRGScoutingApp.Droid.Resource.Layout.abc_screen_simple_overlay_action_mode;
-			global::BottomNavigationBar.Resource.Layout.abc_screen_toolbar = global::NRGScoutingApp.Droid.Resource.Layout.abc_screen_toolbar;
-			global::BottomNavigationBar.Resource.Layout.abc_search_dropdown_item_icons_2line = global::NRGScoutingApp.Droid.Resource.Layout.abc_search_dropdown_item_icons_2line;
-			global::BottomNavigationBar.Resource.Layout.abc_search_view = global::NRGScoutingApp.Droid.Resource.Layout.abc_search_view;
-			global::BottomNavigationBar.Resource.Layout.abc_select_dialog_material = global::NRGScoutingApp.Droid.Resource.Layout.abc_select_dialog_material;
-			global::BottomNavigationBar.Resource.Layout.bb_bottom_bar_item_container = global::NRGScoutingApp.Droid.Resource.Layout.bb_bottom_bar_item_container;
-			global::BottomNavigationBar.Resource.Layout.bb_bottom_bar_item_container_tablet = global::NRGScoutingApp.Droid.Resource.Layout.bb_bottom_bar_item_container_tablet;
-			global::BottomNavigationBar.Resource.Layout.bb_bottom_bar_item_fixed = global::NRGScoutingApp.Droid.Resource.Layout.bb_bottom_bar_item_fixed;
-			global::BottomNavigationBar.Resource.Layout.bb_bottom_bar_item_fixed_tablet = global::NRGScoutingApp.Droid.Resource.Layout.bb_bottom_bar_item_fixed_tablet;
-			global::BottomNavigationBar.Resource.Layout.bb_bottom_bar_item_shifting = global::NRGScoutingApp.Droid.Resource.Layout.bb_bottom_bar_item_shifting;
-			global::BottomNavigationBar.Resource.Layout.design_bottom_sheet_dialog = global::NRGScoutingApp.Droid.Resource.Layout.design_bottom_sheet_dialog;
-			global::BottomNavigationBar.Resource.Layout.design_layout_snackbar = global::NRGScoutingApp.Droid.Resource.Layout.design_layout_snackbar;
-			global::BottomNavigationBar.Resource.Layout.design_layout_snackbar_include = global::NRGScoutingApp.Droid.Resource.Layout.design_layout_snackbar_include;
-			global::BottomNavigationBar.Resource.Layout.design_layout_tab_icon = global::NRGScoutingApp.Droid.Resource.Layout.design_layout_tab_icon;
-			global::BottomNavigationBar.Resource.Layout.design_layout_tab_text = global::NRGScoutingApp.Droid.Resource.Layout.design_layout_tab_text;
-			global::BottomNavigationBar.Resource.Layout.design_menu_item_action_area = global::NRGScoutingApp.Droid.Resource.Layout.design_menu_item_action_area;
-			global::BottomNavigationBar.Resource.Layout.design_navigation_item = global::NRGScoutingApp.Droid.Resource.Layout.design_navigation_item;
-			global::BottomNavigationBar.Resource.Layout.design_navigation_item_header = global::NRGScoutingApp.Droid.Resource.Layout.design_navigation_item_header;
-			global::BottomNavigationBar.Resource.Layout.design_navigation_item_separator = global::NRGScoutingApp.Droid.Resource.Layout.design_navigation_item_separator;
-			global::BottomNavigationBar.Resource.Layout.design_navigation_item_subheader = global::NRGScoutingApp.Droid.Resource.Layout.design_navigation_item_subheader;
-			global::BottomNavigationBar.Resource.Layout.design_navigation_menu = global::NRGScoutingApp.Droid.Resource.Layout.design_navigation_menu;
-			global::BottomNavigationBar.Resource.Layout.design_navigation_menu_item = global::NRGScoutingApp.Droid.Resource.Layout.design_navigation_menu_item;
-			global::BottomNavigationBar.Resource.Layout.design_text_input_password_icon = global::NRGScoutingApp.Droid.Resource.Layout.design_text_input_password_icon;
-			global::BottomNavigationBar.Resource.Layout.notification_media_action = global::NRGScoutingApp.Droid.Resource.Layout.notification_media_action;
-			global::BottomNavigationBar.Resource.Layout.notification_media_cancel_action = global::NRGScoutingApp.Droid.Resource.Layout.notification_media_cancel_action;
-			global::BottomNavigationBar.Resource.Layout.notification_template_big_media = global::NRGScoutingApp.Droid.Resource.Layout.notification_template_big_media;
-			global::BottomNavigationBar.Resource.Layout.notification_template_big_media_narrow = global::NRGScoutingApp.Droid.Resource.Layout.notification_template_big_media_narrow;
-			global::BottomNavigationBar.Resource.Layout.notification_template_media = global::NRGScoutingApp.Droid.Resource.Layout.notification_template_media;
-			global::BottomNavigationBar.Resource.Layout.notification_template_part_chronometer = global::NRGScoutingApp.Droid.Resource.Layout.notification_template_part_chronometer;
-			global::BottomNavigationBar.Resource.Layout.notification_template_part_time = global::NRGScoutingApp.Droid.Resource.Layout.notification_template_part_time;
-			global::BottomNavigationBar.Resource.Layout.select_dialog_item_material = global::NRGScoutingApp.Droid.Resource.Layout.select_dialog_item_material;
-			global::BottomNavigationBar.Resource.Layout.select_dialog_multichoice_material = global::NRGScoutingApp.Droid.Resource.Layout.select_dialog_multichoice_material;
-			global::BottomNavigationBar.Resource.Layout.select_dialog_singlechoice_material = global::NRGScoutingApp.Droid.Resource.Layout.select_dialog_singlechoice_material;
-			global::BottomNavigationBar.Resource.Layout.support_simple_spinner_dropdown_item = global::NRGScoutingApp.Droid.Resource.Layout.support_simple_spinner_dropdown_item;
-			global::BottomNavigationBar.Resource.String.abc_action_bar_home_description = global::NRGScoutingApp.Droid.Resource.String.abc_action_bar_home_description;
-			global::BottomNavigationBar.Resource.String.abc_action_bar_up_description = global::NRGScoutingApp.Droid.Resource.String.abc_action_bar_up_description;
-			global::BottomNavigationBar.Resource.String.abc_action_menu_overflow_description = global::NRGScoutingApp.Droid.Resource.String.abc_action_menu_overflow_description;
-			global::BottomNavigationBar.Resource.String.abc_action_mode_done = global::NRGScoutingApp.Droid.Resource.String.abc_action_mode_done;
-			global::BottomNavigationBar.Resource.String.abc_activity_chooser_view_see_all = global::NRGScoutingApp.Droid.Resource.String.abc_activity_chooser_view_see_all;
-			global::BottomNavigationBar.Resource.String.abc_activitychooserview_choose_application = global::NRGScoutingApp.Droid.Resource.String.abc_activitychooserview_choose_application;
-			global::BottomNavigationBar.Resource.String.abc_capital_off = global::NRGScoutingApp.Droid.Resource.String.abc_capital_off;
-			global::BottomNavigationBar.Resource.String.abc_capital_on = global::NRGScoutingApp.Droid.Resource.String.abc_capital_on;
-			global::BottomNavigationBar.Resource.String.abc_font_family_body_1_material = global::NRGScoutingApp.Droid.Resource.String.abc_font_family_body_1_material;
-			global::BottomNavigationBar.Resource.String.abc_font_family_body_2_material = global::NRGScoutingApp.Droid.Resource.String.abc_font_family_body_2_material;
-			global::BottomNavigationBar.Resource.String.abc_font_family_button_material = global::NRGScoutingApp.Droid.Resource.String.abc_font_family_button_material;
-			global::BottomNavigationBar.Resource.String.abc_font_family_caption_material = global::NRGScoutingApp.Droid.Resource.String.abc_font_family_caption_material;
-			global::BottomNavigationBar.Resource.String.abc_font_family_display_1_material = global::NRGScoutingApp.Droid.Resource.String.abc_font_family_display_1_material;
-			global::BottomNavigationBar.Resource.String.abc_font_family_display_2_material = global::NRGScoutingApp.Droid.Resource.String.abc_font_family_display_2_material;
-			global::BottomNavigationBar.Resource.String.abc_font_family_display_3_material = global::NRGScoutingApp.Droid.Resource.String.abc_font_family_display_3_material;
-			global::BottomNavigationBar.Resource.String.abc_font_family_display_4_material = global::NRGScoutingApp.Droid.Resource.String.abc_font_family_display_4_material;
-			global::BottomNavigationBar.Resource.String.abc_font_family_headline_material = global::NRGScoutingApp.Droid.Resource.String.abc_font_family_headline_material;
-			global::BottomNavigationBar.Resource.String.abc_font_family_menu_material = global::NRGScoutingApp.Droid.Resource.String.abc_font_family_menu_material;
-			global::BottomNavigationBar.Resource.String.abc_font_family_subhead_material = global::NRGScoutingApp.Droid.Resource.String.abc_font_family_subhead_material;
-			global::BottomNavigationBar.Resource.String.abc_font_family_title_material = global::NRGScoutingApp.Droid.Resource.String.abc_font_family_title_material;
-			global::BottomNavigationBar.Resource.String.abc_search_hint = global::NRGScoutingApp.Droid.Resource.String.abc_search_hint;
-			global::BottomNavigationBar.Resource.String.abc_searchview_description_clear = global::NRGScoutingApp.Droid.Resource.String.abc_searchview_description_clear;
-			global::BottomNavigationBar.Resource.String.abc_searchview_description_query = global::NRGScoutingApp.Droid.Resource.String.abc_searchview_description_query;
-			global::BottomNavigationBar.Resource.String.abc_searchview_description_search = global::NRGScoutingApp.Droid.Resource.String.abc_searchview_description_search;
-			global::BottomNavigationBar.Resource.String.abc_searchview_description_submit = global::NRGScoutingApp.Droid.Resource.String.abc_searchview_description_submit;
-			global::BottomNavigationBar.Resource.String.abc_searchview_description_voice = global::NRGScoutingApp.Droid.Resource.String.abc_searchview_description_voice;
-			global::BottomNavigationBar.Resource.String.abc_shareactionprovider_share_with = global::NRGScoutingApp.Droid.Resource.String.abc_shareactionprovider_share_with;
-			global::BottomNavigationBar.Resource.String.abc_shareactionprovider_share_with_application = global::NRGScoutingApp.Droid.Resource.String.abc_shareactionprovider_share_with_application;
-			global::BottomNavigationBar.Resource.String.abc_toolbar_collapse_description = global::NRGScoutingApp.Droid.Resource.String.abc_toolbar_collapse_description;
-			global::BottomNavigationBar.Resource.String.app_name = global::NRGScoutingApp.Droid.Resource.String.app_name;
-			global::BottomNavigationBar.Resource.String.appbar_scrolling_view_behavior = global::NRGScoutingApp.Droid.Resource.String.appbar_scrolling_view_behavior;
-			global::BottomNavigationBar.Resource.String.bottom_sheet_behavior = global::NRGScoutingApp.Droid.Resource.String.bottom_sheet_behavior;
-			global::BottomNavigationBar.Resource.String.character_counter_pattern = global::NRGScoutingApp.Droid.Resource.String.character_counter_pattern;
-			global::BottomNavigationBar.Resource.String.search_menu_title = global::NRGScoutingApp.Droid.Resource.String.search_menu_title;
-			global::BottomNavigationBar.Resource.String.status_bar_notification_info_overflow = global::NRGScoutingApp.Droid.Resource.String.status_bar_notification_info_overflow;
-			global::BottomNavigationBar.Resource.Style.AlertDialog_AppCompat = global::NRGScoutingApp.Droid.Resource.Style.AlertDialog_AppCompat;
-			global::BottomNavigationBar.Resource.Style.AlertDialog_AppCompat_Light = global::NRGScoutingApp.Droid.Resource.Style.AlertDialog_AppCompat_Light;
-			global::BottomNavigationBar.Resource.Style.Animation_AppCompat_Dialog = global::NRGScoutingApp.Droid.Resource.Style.Animation_AppCompat_Dialog;
-			global::BottomNavigationBar.Resource.Style.Animation_AppCompat_DropDownUp = global::NRGScoutingApp.Droid.Resource.Style.Animation_AppCompat_DropDownUp;
-			global::BottomNavigationBar.Resource.Style.Animation_Design_BottomSheetDialog = global::NRGScoutingApp.Droid.Resource.Style.Animation_Design_BottomSheetDialog;
-			global::BottomNavigationBar.Resource.Style.BB_BottomBarBadge_Text = global::NRGScoutingApp.Droid.Resource.Style.BB_BottomBarBadge_Text;
-			global::BottomNavigationBar.Resource.Style.BB_BottomBarItem = global::NRGScoutingApp.Droid.Resource.Style.BB_BottomBarItem;
-			global::BottomNavigationBar.Resource.Style.BB_BottomBarItem_Fixed = global::NRGScoutingApp.Droid.Resource.Style.BB_BottomBarItem_Fixed;
-			global::BottomNavigationBar.Resource.Style.BB_BottomBarItem_Fixed_TitleAppearance = global::NRGScoutingApp.Droid.Resource.Style.BB_BottomBarItem_Fixed_TitleAppearance;
-			global::BottomNavigationBar.Resource.Style.BB_BottomBarItem_Shifting = global::NRGScoutingApp.Droid.Resource.Style.BB_BottomBarItem_Shifting;
-			global::BottomNavigationBar.Resource.Style.BB_BottomBarItem_Shifting_TitleAppearance = global::NRGScoutingApp.Droid.Resource.Style.BB_BottomBarItem_Shifting_TitleAppearance;
-			global::BottomNavigationBar.Resource.Style.BB_BottomBarItem_Tablet = global::NRGScoutingApp.Droid.Resource.Style.BB_BottomBarItem_Tablet;
-			global::BottomNavigationBar.Resource.Style.BB_BottomBarItem_TitleStyle = global::NRGScoutingApp.Droid.Resource.Style.BB_BottomBarItem_TitleStyle;
-			global::BottomNavigationBar.Resource.Style.Base_AlertDialog_AppCompat = global::NRGScoutingApp.Droid.Resource.Style.Base_AlertDialog_AppCompat;
-			global::BottomNavigationBar.Resource.Style.Base_AlertDialog_AppCompat_Light = global::NRGScoutingApp.Droid.Resource.Style.Base_AlertDialog_AppCompat_Light;
-			global::BottomNavigationBar.Resource.Style.Base_Animation_AppCompat_Dialog = global::NRGScoutingApp.Droid.Resource.Style.Base_Animation_AppCompat_Dialog;
-			global::BottomNavigationBar.Resource.Style.Base_Animation_AppCompat_DropDownUp = global::NRGScoutingApp.Droid.Resource.Style.Base_Animation_AppCompat_DropDownUp;
-			global::BottomNavigationBar.Resource.Style.Base_DialogWindowTitle_AppCompat = global::NRGScoutingApp.Droid.Resource.Style.Base_DialogWindowTitle_AppCompat;
-			global::BottomNavigationBar.Resource.Style.Base_DialogWindowTitleBackground_AppCompat = global::NRGScoutingApp.Droid.Resource.Style.Base_DialogWindowTitleBackground_AppCompat;
-			global::BottomNavigationBar.Resource.Style.Base_TextAppearance_AppCompat = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat;
-			global::BottomNavigationBar.Resource.Style.Base_TextAppearance_AppCompat_Body1 = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body1;
-			global::BottomNavigationBar.Resource.Style.Base_TextAppearance_AppCompat_Body2 = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body2;
-			global::BottomNavigationBar.Resource.Style.Base_TextAppearance_AppCompat_Button = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Button;
-			global::BottomNavigationBar.Resource.Style.Base_TextAppearance_AppCompat_Caption = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Caption;
-			global::BottomNavigationBar.Resource.Style.Base_TextAppearance_AppCompat_Display1 = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display1;
-			global::BottomNavigationBar.Resource.Style.Base_TextAppearance_AppCompat_Display2 = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display2;
-			global::BottomNavigationBar.Resource.Style.Base_TextAppearance_AppCompat_Display3 = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display3;
-			global::BottomNavigationBar.Resource.Style.Base_TextAppearance_AppCompat_Display4 = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display4;
-			global::BottomNavigationBar.Resource.Style.Base_TextAppearance_AppCompat_Headline = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Headline;
-			global::BottomNavigationBar.Resource.Style.Base_TextAppearance_AppCompat_Inverse = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Inverse;
-			global::BottomNavigationBar.Resource.Style.Base_TextAppearance_AppCompat_Large = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large;
-			global::BottomNavigationBar.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse;
-			global::BottomNavigationBar.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
-			global::BottomNavigationBar.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
-			global::BottomNavigationBar.Resource.Style.Base_TextAppearance_AppCompat_Medium = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium;
-			global::BottomNavigationBar.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse;
-			global::BottomNavigationBar.Resource.Style.Base_TextAppearance_AppCompat_Menu = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Menu;
-			global::BottomNavigationBar.Resource.Style.Base_TextAppearance_AppCompat_SearchResult = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult;
-			global::BottomNavigationBar.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle;
-			global::BottomNavigationBar.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title;
-			global::BottomNavigationBar.Resource.Style.Base_TextAppearance_AppCompat_Small = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small;
-			global::BottomNavigationBar.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse;
-			global::BottomNavigationBar.Resource.Style.Base_TextAppearance_AppCompat_Subhead = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead;
-			global::BottomNavigationBar.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse;
-			global::BottomNavigationBar.Resource.Style.Base_TextAppearance_AppCompat_Title = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title;
-			global::BottomNavigationBar.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse;
-			global::BottomNavigationBar.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu;
-			global::BottomNavigationBar.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
-			global::BottomNavigationBar.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
-			global::BottomNavigationBar.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title;
-			global::BottomNavigationBar.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
-			global::BottomNavigationBar.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
-			global::BottomNavigationBar.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title;
-			global::BottomNavigationBar.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button;
-			global::BottomNavigationBar.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse;
-			global::BottomNavigationBar.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem;
-			global::BottomNavigationBar.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Header = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Header;
-			global::BottomNavigationBar.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large;
-			global::BottomNavigationBar.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small;
-			global::BottomNavigationBar.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch;
-			global::BottomNavigationBar.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
-			global::BottomNavigationBar.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
-			global::BottomNavigationBar.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
-			global::BottomNavigationBar.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title;
-			global::BottomNavigationBar.Resource.Style.Base_Theme_AppCompat = global::NRGScoutingApp.Droid.Resource.Style.Base_Theme_AppCompat;
-			global::BottomNavigationBar.Resource.Style.Base_Theme_AppCompat_CompactMenu = global::NRGScoutingApp.Droid.Resource.Style.Base_Theme_AppCompat_CompactMenu;
-			global::BottomNavigationBar.Resource.Style.Base_Theme_AppCompat_Dialog = global::NRGScoutingApp.Droid.Resource.Style.Base_Theme_AppCompat_Dialog;
-			global::BottomNavigationBar.Resource.Style.Base_Theme_AppCompat_Dialog_Alert = global::NRGScoutingApp.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_Alert;
-			global::BottomNavigationBar.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize = global::NRGScoutingApp.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize;
-			global::BottomNavigationBar.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth = global::NRGScoutingApp.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth;
-			global::BottomNavigationBar.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge = global::NRGScoutingApp.Droid.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge;
-			global::BottomNavigationBar.Resource.Style.Base_Theme_AppCompat_Light = global::NRGScoutingApp.Droid.Resource.Style.Base_Theme_AppCompat_Light;
-			global::BottomNavigationBar.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar = global::NRGScoutingApp.Droid.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar;
-			global::BottomNavigationBar.Resource.Style.Base_Theme_AppCompat_Light_Dialog = global::NRGScoutingApp.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog;
-			global::BottomNavigationBar.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert = global::NRGScoutingApp.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert;
-			global::BottomNavigationBar.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize = global::NRGScoutingApp.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize;
-			global::BottomNavigationBar.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth = global::NRGScoutingApp.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth;
-			global::BottomNavigationBar.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge = global::NRGScoutingApp.Droid.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge;
-			global::BottomNavigationBar.Resource.Style.Base_ThemeOverlay_AppCompat = global::NRGScoutingApp.Droid.Resource.Style.Base_ThemeOverlay_AppCompat;
-			global::BottomNavigationBar.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar = global::NRGScoutingApp.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar;
-			global::BottomNavigationBar.Resource.Style.Base_ThemeOverlay_AppCompat_Dark = global::NRGScoutingApp.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark;
-			global::BottomNavigationBar.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar = global::NRGScoutingApp.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar;
-			global::BottomNavigationBar.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog = global::NRGScoutingApp.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog;
-			global::BottomNavigationBar.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert = global::NRGScoutingApp.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert;
-			global::BottomNavigationBar.Resource.Style.Base_ThemeOverlay_AppCompat_Light = global::NRGScoutingApp.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Light;
-			global::BottomNavigationBar.Resource.Style.Base_V11_Theme_AppCompat_Dialog = global::NRGScoutingApp.Droid.Resource.Style.Base_V11_Theme_AppCompat_Dialog;
-			global::BottomNavigationBar.Resource.Style.Base_V11_Theme_AppCompat_Light_Dialog = global::NRGScoutingApp.Droid.Resource.Style.Base_V11_Theme_AppCompat_Light_Dialog;
-			global::BottomNavigationBar.Resource.Style.Base_V11_ThemeOverlay_AppCompat_Dialog = global::NRGScoutingApp.Droid.Resource.Style.Base_V11_ThemeOverlay_AppCompat_Dialog;
-			global::BottomNavigationBar.Resource.Style.Base_V12_Widget_AppCompat_AutoCompleteTextView = global::NRGScoutingApp.Droid.Resource.Style.Base_V12_Widget_AppCompat_AutoCompleteTextView;
-			global::BottomNavigationBar.Resource.Style.Base_V12_Widget_AppCompat_EditText = global::NRGScoutingApp.Droid.Resource.Style.Base_V12_Widget_AppCompat_EditText;
-			global::BottomNavigationBar.Resource.Style.Base_V21_Theme_AppCompat = global::NRGScoutingApp.Droid.Resource.Style.Base_V21_Theme_AppCompat;
-			global::BottomNavigationBar.Resource.Style.Base_V21_Theme_AppCompat_Dialog = global::NRGScoutingApp.Droid.Resource.Style.Base_V21_Theme_AppCompat_Dialog;
-			global::BottomNavigationBar.Resource.Style.Base_V21_Theme_AppCompat_Light = global::NRGScoutingApp.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light;
-			global::BottomNavigationBar.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog = global::NRGScoutingApp.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog;
-			global::BottomNavigationBar.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog = global::NRGScoutingApp.Droid.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog;
-			global::BottomNavigationBar.Resource.Style.Base_V22_Theme_AppCompat = global::NRGScoutingApp.Droid.Resource.Style.Base_V22_Theme_AppCompat;
-			global::BottomNavigationBar.Resource.Style.Base_V22_Theme_AppCompat_Light = global::NRGScoutingApp.Droid.Resource.Style.Base_V22_Theme_AppCompat_Light;
-			global::BottomNavigationBar.Resource.Style.Base_V23_Theme_AppCompat = global::NRGScoutingApp.Droid.Resource.Style.Base_V23_Theme_AppCompat;
-			global::BottomNavigationBar.Resource.Style.Base_V23_Theme_AppCompat_Light = global::NRGScoutingApp.Droid.Resource.Style.Base_V23_Theme_AppCompat_Light;
-			global::BottomNavigationBar.Resource.Style.Base_V7_Theme_AppCompat = global::NRGScoutingApp.Droid.Resource.Style.Base_V7_Theme_AppCompat;
-			global::BottomNavigationBar.Resource.Style.Base_V7_Theme_AppCompat_Dialog = global::NRGScoutingApp.Droid.Resource.Style.Base_V7_Theme_AppCompat_Dialog;
-			global::BottomNavigationBar.Resource.Style.Base_V7_Theme_AppCompat_Light = global::NRGScoutingApp.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light;
-			global::BottomNavigationBar.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog = global::NRGScoutingApp.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog;
-			global::BottomNavigationBar.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog = global::NRGScoutingApp.Droid.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog;
-			global::BottomNavigationBar.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView = global::NRGScoutingApp.Droid.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView;
-			global::BottomNavigationBar.Resource.Style.Base_V7_Widget_AppCompat_EditText = global::NRGScoutingApp.Droid.Resource.Style.Base_V7_Widget_AppCompat_EditText;
-			global::BottomNavigationBar.Resource.Style.Base_Widget_AppCompat_ActionBar = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar;
-			global::BottomNavigationBar.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid;
-			global::BottomNavigationBar.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar;
-			global::BottomNavigationBar.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText;
-			global::BottomNavigationBar.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView;
-			global::BottomNavigationBar.Resource.Style.Base_Widget_AppCompat_ActionButton = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton;
-			global::BottomNavigationBar.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode;
-			global::BottomNavigationBar.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow;
-			global::BottomNavigationBar.Resource.Style.Base_Widget_AppCompat_ActionMode = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_ActionMode;
-			global::BottomNavigationBar.Resource.Style.Base_Widget_AppCompat_ActivityChooserView = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_ActivityChooserView;
-			global::BottomNavigationBar.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView;
-			global::BottomNavigationBar.Resource.Style.Base_Widget_AppCompat_Button = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_Button;
-			global::BottomNavigationBar.Resource.Style.Base_Widget_AppCompat_Button_Borderless = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless;
-			global::BottomNavigationBar.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored;
-			global::BottomNavigationBar.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog;
-			global::BottomNavigationBar.Resource.Style.Base_Widget_AppCompat_Button_Colored = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_Button_Colored;
-			global::BottomNavigationBar.Resource.Style.Base_Widget_AppCompat_Button_Small = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_Button_Small;
-			global::BottomNavigationBar.Resource.Style.Base_Widget_AppCompat_ButtonBar = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar;
-			global::BottomNavigationBar.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog;
-			global::BottomNavigationBar.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox;
-			global::BottomNavigationBar.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton;
-			global::BottomNavigationBar.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch;
-			global::BottomNavigationBar.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle;
-			global::BottomNavigationBar.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common;
-			global::BottomNavigationBar.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner;
-			global::BottomNavigationBar.Resource.Style.Base_Widget_AppCompat_EditText = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_EditText;
-			global::BottomNavigationBar.Resource.Style.Base_Widget_AppCompat_ImageButton = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_ImageButton;
-			global::BottomNavigationBar.Resource.Style.Base_Widget_AppCompat_Light_ActionBar = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar;
-			global::BottomNavigationBar.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid;
-			global::BottomNavigationBar.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar;
-			global::BottomNavigationBar.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText;
-			global::BottomNavigationBar.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse;
-			global::BottomNavigationBar.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView;
-			global::BottomNavigationBar.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu;
-			global::BottomNavigationBar.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow;
-			global::BottomNavigationBar.Resource.Style.Base_Widget_AppCompat_ListMenuView = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_ListMenuView;
-			global::BottomNavigationBar.Resource.Style.Base_Widget_AppCompat_ListPopupWindow = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_ListPopupWindow;
-			global::BottomNavigationBar.Resource.Style.Base_Widget_AppCompat_ListView = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_ListView;
-			global::BottomNavigationBar.Resource.Style.Base_Widget_AppCompat_ListView_DropDown = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_ListView_DropDown;
-			global::BottomNavigationBar.Resource.Style.Base_Widget_AppCompat_ListView_Menu = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_ListView_Menu;
-			global::BottomNavigationBar.Resource.Style.Base_Widget_AppCompat_PopupMenu = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu;
-			global::BottomNavigationBar.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow;
-			global::BottomNavigationBar.Resource.Style.Base_Widget_AppCompat_PopupWindow = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_PopupWindow;
-			global::BottomNavigationBar.Resource.Style.Base_Widget_AppCompat_ProgressBar = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar;
-			global::BottomNavigationBar.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal;
-			global::BottomNavigationBar.Resource.Style.Base_Widget_AppCompat_RatingBar = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar;
-			global::BottomNavigationBar.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator;
-			global::BottomNavigationBar.Resource.Style.Base_Widget_AppCompat_RatingBar_Small = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Small;
-			global::BottomNavigationBar.Resource.Style.Base_Widget_AppCompat_SearchView = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_SearchView;
-			global::BottomNavigationBar.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar;
-			global::BottomNavigationBar.Resource.Style.Base_Widget_AppCompat_SeekBar = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar;
-			global::BottomNavigationBar.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete;
-			global::BottomNavigationBar.Resource.Style.Base_Widget_AppCompat_Spinner = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_Spinner;
-			global::BottomNavigationBar.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined;
-			global::BottomNavigationBar.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem;
-			global::BottomNavigationBar.Resource.Style.Base_Widget_AppCompat_Toolbar = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar;
-			global::BottomNavigationBar.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation;
-			global::BottomNavigationBar.Resource.Style.Base_Widget_Design_AppBarLayout = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_Design_AppBarLayout;
-			global::BottomNavigationBar.Resource.Style.Base_Widget_Design_TabLayout = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_Design_TabLayout;
-			global::BottomNavigationBar.Resource.Style.Platform_AppCompat = global::NRGScoutingApp.Droid.Resource.Style.Platform_AppCompat;
-			global::BottomNavigationBar.Resource.Style.Platform_AppCompat_Light = global::NRGScoutingApp.Droid.Resource.Style.Platform_AppCompat_Light;
-			global::BottomNavigationBar.Resource.Style.Platform_ThemeOverlay_AppCompat = global::NRGScoutingApp.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat;
-			global::BottomNavigationBar.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark = global::NRGScoutingApp.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark;
-			global::BottomNavigationBar.Resource.Style.Platform_ThemeOverlay_AppCompat_Light = global::NRGScoutingApp.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Light;
-			global::BottomNavigationBar.Resource.Style.Platform_V11_AppCompat = global::NRGScoutingApp.Droid.Resource.Style.Platform_V11_AppCompat;
-			global::BottomNavigationBar.Resource.Style.Platform_V11_AppCompat_Light = global::NRGScoutingApp.Droid.Resource.Style.Platform_V11_AppCompat_Light;
-			global::BottomNavigationBar.Resource.Style.Platform_V14_AppCompat = global::NRGScoutingApp.Droid.Resource.Style.Platform_V14_AppCompat;
-			global::BottomNavigationBar.Resource.Style.Platform_V14_AppCompat_Light = global::NRGScoutingApp.Droid.Resource.Style.Platform_V14_AppCompat_Light;
-			global::BottomNavigationBar.Resource.Style.Platform_Widget_AppCompat_Spinner = global::NRGScoutingApp.Droid.Resource.Style.Platform_Widget_AppCompat_Spinner;
-			global::BottomNavigationBar.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat = global::NRGScoutingApp.Droid.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat;
-			global::BottomNavigationBar.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem = global::NRGScoutingApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem;
-			global::BottomNavigationBar.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon = global::NRGScoutingApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon;
-			global::BottomNavigationBar.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem = global::NRGScoutingApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem;
-			global::BottomNavigationBar.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup = global::NRGScoutingApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup;
-			global::BottomNavigationBar.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text = global::NRGScoutingApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text;
-			global::BottomNavigationBar.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown = global::NRGScoutingApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown;
-			global::BottomNavigationBar.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1 = global::NRGScoutingApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1;
-			global::BottomNavigationBar.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2 = global::NRGScoutingApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2;
-			global::BottomNavigationBar.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query = global::NRGScoutingApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query;
-			global::BottomNavigationBar.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text = global::NRGScoutingApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text;
-			global::BottomNavigationBar.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon = global::NRGScoutingApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon;
-			global::BottomNavigationBar.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton = global::NRGScoutingApp.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton;
-			global::BottomNavigationBar.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow = global::NRGScoutingApp.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow;
-			global::BottomNavigationBar.Resource.Style.TextAppearance_AppCompat = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat;
-			global::BottomNavigationBar.Resource.Style.TextAppearance_AppCompat_Body1 = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Body1;
-			global::BottomNavigationBar.Resource.Style.TextAppearance_AppCompat_Body2 = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Body2;
-			global::BottomNavigationBar.Resource.Style.TextAppearance_AppCompat_Button = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Button;
-			global::BottomNavigationBar.Resource.Style.TextAppearance_AppCompat_Caption = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Caption;
-			global::BottomNavigationBar.Resource.Style.TextAppearance_AppCompat_Display1 = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Display1;
-			global::BottomNavigationBar.Resource.Style.TextAppearance_AppCompat_Display2 = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Display2;
-			global::BottomNavigationBar.Resource.Style.TextAppearance_AppCompat_Display3 = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Display3;
-			global::BottomNavigationBar.Resource.Style.TextAppearance_AppCompat_Display4 = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Display4;
-			global::BottomNavigationBar.Resource.Style.TextAppearance_AppCompat_Headline = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Headline;
-			global::BottomNavigationBar.Resource.Style.TextAppearance_AppCompat_Inverse = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Inverse;
-			global::BottomNavigationBar.Resource.Style.TextAppearance_AppCompat_Large = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Large;
-			global::BottomNavigationBar.Resource.Style.TextAppearance_AppCompat_Large_Inverse = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Large_Inverse;
-			global::BottomNavigationBar.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle;
-			global::BottomNavigationBar.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title;
-			global::BottomNavigationBar.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
-			global::BottomNavigationBar.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
-			global::BottomNavigationBar.Resource.Style.TextAppearance_AppCompat_Medium = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Medium;
-			global::BottomNavigationBar.Resource.Style.TextAppearance_AppCompat_Medium_Inverse = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Medium_Inverse;
-			global::BottomNavigationBar.Resource.Style.TextAppearance_AppCompat_Menu = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Menu;
-			global::BottomNavigationBar.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle;
-			global::BottomNavigationBar.Resource.Style.TextAppearance_AppCompat_SearchResult_Title = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Title;
-			global::BottomNavigationBar.Resource.Style.TextAppearance_AppCompat_Small = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Small;
-			global::BottomNavigationBar.Resource.Style.TextAppearance_AppCompat_Small_Inverse = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Small_Inverse;
-			global::BottomNavigationBar.Resource.Style.TextAppearance_AppCompat_Subhead = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Subhead;
-			global::BottomNavigationBar.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse;
-			global::BottomNavigationBar.Resource.Style.TextAppearance_AppCompat_Title = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Title;
-			global::BottomNavigationBar.Resource.Style.TextAppearance_AppCompat_Title_Inverse = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Title_Inverse;
-			global::BottomNavigationBar.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu;
-			global::BottomNavigationBar.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
-			global::BottomNavigationBar.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
-			global::BottomNavigationBar.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title;
-			global::BottomNavigationBar.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
-			global::BottomNavigationBar.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
-			global::BottomNavigationBar.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse;
-			global::BottomNavigationBar.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title;
-			global::BottomNavigationBar.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse;
-			global::BottomNavigationBar.Resource.Style.TextAppearance_AppCompat_Widget_Button = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button;
-			global::BottomNavigationBar.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse;
-			global::BottomNavigationBar.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem;
-			global::BottomNavigationBar.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Header = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Header;
-			global::BottomNavigationBar.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large;
-			global::BottomNavigationBar.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small;
-			global::BottomNavigationBar.Resource.Style.TextAppearance_AppCompat_Widget_Switch = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Switch;
-			global::BottomNavigationBar.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
-			global::BottomNavigationBar.Resource.Style.TextAppearance_Design_CollapsingToolbar_Expanded = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_Design_CollapsingToolbar_Expanded;
-			global::BottomNavigationBar.Resource.Style.TextAppearance_Design_Counter = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_Design_Counter;
-			global::BottomNavigationBar.Resource.Style.TextAppearance_Design_Counter_Overflow = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_Design_Counter_Overflow;
-			global::BottomNavigationBar.Resource.Style.TextAppearance_Design_Error = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_Design_Error;
-			global::BottomNavigationBar.Resource.Style.TextAppearance_Design_Hint = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_Design_Hint;
-			global::BottomNavigationBar.Resource.Style.TextAppearance_Design_Snackbar_Message = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_Design_Snackbar_Message;
-			global::BottomNavigationBar.Resource.Style.TextAppearance_Design_Tab = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_Design_Tab;
-			global::BottomNavigationBar.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
-			global::BottomNavigationBar.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
-			global::BottomNavigationBar.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title;
-			global::BottomNavigationBar.Resource.Style.Theme_AppCompat = global::NRGScoutingApp.Droid.Resource.Style.Theme_AppCompat;
-			global::BottomNavigationBar.Resource.Style.Theme_AppCompat_CompactMenu = global::NRGScoutingApp.Droid.Resource.Style.Theme_AppCompat_CompactMenu;
-			global::BottomNavigationBar.Resource.Style.Theme_AppCompat_DayNight = global::NRGScoutingApp.Droid.Resource.Style.Theme_AppCompat_DayNight;
-			global::BottomNavigationBar.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar = global::NRGScoutingApp.Droid.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar;
-			global::BottomNavigationBar.Resource.Style.Theme_AppCompat_DayNight_Dialog = global::NRGScoutingApp.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog;
-			global::BottomNavigationBar.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert = global::NRGScoutingApp.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert;
-			global::BottomNavigationBar.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth = global::NRGScoutingApp.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth;
-			global::BottomNavigationBar.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge = global::NRGScoutingApp.Droid.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge;
-			global::BottomNavigationBar.Resource.Style.Theme_AppCompat_DayNight_NoActionBar = global::NRGScoutingApp.Droid.Resource.Style.Theme_AppCompat_DayNight_NoActionBar;
-			global::BottomNavigationBar.Resource.Style.Theme_AppCompat_Dialog = global::NRGScoutingApp.Droid.Resource.Style.Theme_AppCompat_Dialog;
-			global::BottomNavigationBar.Resource.Style.Theme_AppCompat_Dialog_Alert = global::NRGScoutingApp.Droid.Resource.Style.Theme_AppCompat_Dialog_Alert;
-			global::BottomNavigationBar.Resource.Style.Theme_AppCompat_Dialog_MinWidth = global::NRGScoutingApp.Droid.Resource.Style.Theme_AppCompat_Dialog_MinWidth;
-			global::BottomNavigationBar.Resource.Style.Theme_AppCompat_DialogWhenLarge = global::NRGScoutingApp.Droid.Resource.Style.Theme_AppCompat_DialogWhenLarge;
-			global::BottomNavigationBar.Resource.Style.Theme_AppCompat_Light = global::NRGScoutingApp.Droid.Resource.Style.Theme_AppCompat_Light;
-			global::BottomNavigationBar.Resource.Style.Theme_AppCompat_Light_DarkActionBar = global::NRGScoutingApp.Droid.Resource.Style.Theme_AppCompat_Light_DarkActionBar;
-			global::BottomNavigationBar.Resource.Style.Theme_AppCompat_Light_Dialog = global::NRGScoutingApp.Droid.Resource.Style.Theme_AppCompat_Light_Dialog;
-			global::BottomNavigationBar.Resource.Style.Theme_AppCompat_Light_Dialog_Alert = global::NRGScoutingApp.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_Alert;
-			global::BottomNavigationBar.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth = global::NRGScoutingApp.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth;
-			global::BottomNavigationBar.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge = global::NRGScoutingApp.Droid.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge;
-			global::BottomNavigationBar.Resource.Style.Theme_AppCompat_Light_NoActionBar = global::NRGScoutingApp.Droid.Resource.Style.Theme_AppCompat_Light_NoActionBar;
-			global::BottomNavigationBar.Resource.Style.Theme_AppCompat_NoActionBar = global::NRGScoutingApp.Droid.Resource.Style.Theme_AppCompat_NoActionBar;
-			global::BottomNavigationBar.Resource.Style.Theme_Design = global::NRGScoutingApp.Droid.Resource.Style.Theme_Design;
-			global::BottomNavigationBar.Resource.Style.Theme_Design_BottomSheetDialog = global::NRGScoutingApp.Droid.Resource.Style.Theme_Design_BottomSheetDialog;
-			global::BottomNavigationBar.Resource.Style.Theme_Design_Light = global::NRGScoutingApp.Droid.Resource.Style.Theme_Design_Light;
-			global::BottomNavigationBar.Resource.Style.Theme_Design_Light_BottomSheetDialog = global::NRGScoutingApp.Droid.Resource.Style.Theme_Design_Light_BottomSheetDialog;
-			global::BottomNavigationBar.Resource.Style.Theme_Design_Light_NoActionBar = global::NRGScoutingApp.Droid.Resource.Style.Theme_Design_Light_NoActionBar;
-			global::BottomNavigationBar.Resource.Style.Theme_Design_NoActionBar = global::NRGScoutingApp.Droid.Resource.Style.Theme_Design_NoActionBar;
-			global::BottomNavigationBar.Resource.Style.ThemeOverlay_AppCompat = global::NRGScoutingApp.Droid.Resource.Style.ThemeOverlay_AppCompat;
-			global::BottomNavigationBar.Resource.Style.ThemeOverlay_AppCompat_ActionBar = global::NRGScoutingApp.Droid.Resource.Style.ThemeOverlay_AppCompat_ActionBar;
-			global::BottomNavigationBar.Resource.Style.ThemeOverlay_AppCompat_Dark = global::NRGScoutingApp.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark;
-			global::BottomNavigationBar.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar = global::NRGScoutingApp.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar;
-			global::BottomNavigationBar.Resource.Style.ThemeOverlay_AppCompat_Dialog = global::NRGScoutingApp.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog;
-			global::BottomNavigationBar.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert = global::NRGScoutingApp.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert;
-			global::BottomNavigationBar.Resource.Style.ThemeOverlay_AppCompat_Light = global::NRGScoutingApp.Droid.Resource.Style.ThemeOverlay_AppCompat_Light;
-			global::BottomNavigationBar.Resource.Style.Widget_AppCompat_ActionBar = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_ActionBar;
-			global::BottomNavigationBar.Resource.Style.Widget_AppCompat_ActionBar_Solid = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_ActionBar_Solid;
-			global::BottomNavigationBar.Resource.Style.Widget_AppCompat_ActionBar_TabBar = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabBar;
-			global::BottomNavigationBar.Resource.Style.Widget_AppCompat_ActionBar_TabText = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabText;
-			global::BottomNavigationBar.Resource.Style.Widget_AppCompat_ActionBar_TabView = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabView;
-			global::BottomNavigationBar.Resource.Style.Widget_AppCompat_ActionButton = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_ActionButton;
-			global::BottomNavigationBar.Resource.Style.Widget_AppCompat_ActionButton_CloseMode = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_ActionButton_CloseMode;
-			global::BottomNavigationBar.Resource.Style.Widget_AppCompat_ActionButton_Overflow = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_ActionButton_Overflow;
-			global::BottomNavigationBar.Resource.Style.Widget_AppCompat_ActionMode = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_ActionMode;
-			global::BottomNavigationBar.Resource.Style.Widget_AppCompat_ActivityChooserView = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_ActivityChooserView;
-			global::BottomNavigationBar.Resource.Style.Widget_AppCompat_AutoCompleteTextView = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_AutoCompleteTextView;
-			global::BottomNavigationBar.Resource.Style.Widget_AppCompat_Button = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Button;
-			global::BottomNavigationBar.Resource.Style.Widget_AppCompat_Button_Borderless = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Button_Borderless;
-			global::BottomNavigationBar.Resource.Style.Widget_AppCompat_Button_Borderless_Colored = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Button_Borderless_Colored;
-			global::BottomNavigationBar.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog;
-			global::BottomNavigationBar.Resource.Style.Widget_AppCompat_Button_Colored = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Button_Colored;
-			global::BottomNavigationBar.Resource.Style.Widget_AppCompat_Button_Small = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Button_Small;
-			global::BottomNavigationBar.Resource.Style.Widget_AppCompat_ButtonBar = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_ButtonBar;
-			global::BottomNavigationBar.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog;
-			global::BottomNavigationBar.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox;
-			global::BottomNavigationBar.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton;
-			global::BottomNavigationBar.Resource.Style.Widget_AppCompat_CompoundButton_Switch = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_CompoundButton_Switch;
-			global::BottomNavigationBar.Resource.Style.Widget_AppCompat_DrawerArrowToggle = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_DrawerArrowToggle;
-			global::BottomNavigationBar.Resource.Style.Widget_AppCompat_DropDownItem_Spinner = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_DropDownItem_Spinner;
-			global::BottomNavigationBar.Resource.Style.Widget_AppCompat_EditText = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_EditText;
-			global::BottomNavigationBar.Resource.Style.Widget_AppCompat_ImageButton = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_ImageButton;
-			global::BottomNavigationBar.Resource.Style.Widget_AppCompat_Light_ActionBar = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar;
-			global::BottomNavigationBar.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid;
-			global::BottomNavigationBar.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse;
-			global::BottomNavigationBar.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar;
-			global::BottomNavigationBar.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse;
-			global::BottomNavigationBar.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText;
-			global::BottomNavigationBar.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse;
-			global::BottomNavigationBar.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView;
-			global::BottomNavigationBar.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse;
-			global::BottomNavigationBar.Resource.Style.Widget_AppCompat_Light_ActionButton = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton;
-			global::BottomNavigationBar.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode;
-			global::BottomNavigationBar.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow;
-			global::BottomNavigationBar.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse;
-			global::BottomNavigationBar.Resource.Style.Widget_AppCompat_Light_ActivityChooserView = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Light_ActivityChooserView;
-			global::BottomNavigationBar.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView;
-			global::BottomNavigationBar.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner;
-			global::BottomNavigationBar.Resource.Style.Widget_AppCompat_Light_ListPopupWindow = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Light_ListPopupWindow;
-			global::BottomNavigationBar.Resource.Style.Widget_AppCompat_Light_ListView_DropDown = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Light_ListView_DropDown;
-			global::BottomNavigationBar.Resource.Style.Widget_AppCompat_Light_PopupMenu = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu;
-			global::BottomNavigationBar.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow;
-			global::BottomNavigationBar.Resource.Style.Widget_AppCompat_Light_SearchView = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Light_SearchView;
-			global::BottomNavigationBar.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar;
-			global::BottomNavigationBar.Resource.Style.Widget_AppCompat_ListMenuView = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_ListMenuView;
-			global::BottomNavigationBar.Resource.Style.Widget_AppCompat_ListPopupWindow = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_ListPopupWindow;
-			global::BottomNavigationBar.Resource.Style.Widget_AppCompat_ListView = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_ListView;
-			global::BottomNavigationBar.Resource.Style.Widget_AppCompat_ListView_DropDown = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_ListView_DropDown;
-			global::BottomNavigationBar.Resource.Style.Widget_AppCompat_ListView_Menu = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_ListView_Menu;
-			global::BottomNavigationBar.Resource.Style.Widget_AppCompat_PopupMenu = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_PopupMenu;
-			global::BottomNavigationBar.Resource.Style.Widget_AppCompat_PopupMenu_Overflow = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_PopupMenu_Overflow;
-			global::BottomNavigationBar.Resource.Style.Widget_AppCompat_PopupWindow = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_PopupWindow;
-			global::BottomNavigationBar.Resource.Style.Widget_AppCompat_ProgressBar = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_ProgressBar;
-			global::BottomNavigationBar.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal;
-			global::BottomNavigationBar.Resource.Style.Widget_AppCompat_RatingBar = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_RatingBar;
-			global::BottomNavigationBar.Resource.Style.Widget_AppCompat_RatingBar_Indicator = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_RatingBar_Indicator;
-			global::BottomNavigationBar.Resource.Style.Widget_AppCompat_RatingBar_Small = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_RatingBar_Small;
-			global::BottomNavigationBar.Resource.Style.Widget_AppCompat_SearchView = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_SearchView;
-			global::BottomNavigationBar.Resource.Style.Widget_AppCompat_SearchView_ActionBar = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_SearchView_ActionBar;
-			global::BottomNavigationBar.Resource.Style.Widget_AppCompat_SeekBar = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_SeekBar;
-			global::BottomNavigationBar.Resource.Style.Widget_AppCompat_SeekBar_Discrete = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_SeekBar_Discrete;
-			global::BottomNavigationBar.Resource.Style.Widget_AppCompat_Spinner = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Spinner;
-			global::BottomNavigationBar.Resource.Style.Widget_AppCompat_Spinner_DropDown = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown;
-			global::BottomNavigationBar.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar;
-			global::BottomNavigationBar.Resource.Style.Widget_AppCompat_Spinner_Underlined = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Spinner_Underlined;
-			global::BottomNavigationBar.Resource.Style.Widget_AppCompat_TextView_SpinnerItem = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_TextView_SpinnerItem;
-			global::BottomNavigationBar.Resource.Style.Widget_AppCompat_Toolbar = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Toolbar;
-			global::BottomNavigationBar.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation;
-			global::BottomNavigationBar.Resource.Style.Widget_Design_AppBarLayout = global::NRGScoutingApp.Droid.Resource.Style.Widget_Design_AppBarLayout;
-			global::BottomNavigationBar.Resource.Style.Widget_Design_BottomSheet_Modal = global::NRGScoutingApp.Droid.Resource.Style.Widget_Design_BottomSheet_Modal;
-			global::BottomNavigationBar.Resource.Style.Widget_Design_CollapsingToolbar = global::NRGScoutingApp.Droid.Resource.Style.Widget_Design_CollapsingToolbar;
-			global::BottomNavigationBar.Resource.Style.Widget_Design_CoordinatorLayout = global::NRGScoutingApp.Droid.Resource.Style.Widget_Design_CoordinatorLayout;
-			global::BottomNavigationBar.Resource.Style.Widget_Design_FloatingActionButton = global::NRGScoutingApp.Droid.Resource.Style.Widget_Design_FloatingActionButton;
-			global::BottomNavigationBar.Resource.Style.Widget_Design_NavigationView = global::NRGScoutingApp.Droid.Resource.Style.Widget_Design_NavigationView;
-			global::BottomNavigationBar.Resource.Style.Widget_Design_ScrimInsetsFrameLayout = global::NRGScoutingApp.Droid.Resource.Style.Widget_Design_ScrimInsetsFrameLayout;
-			global::BottomNavigationBar.Resource.Style.Widget_Design_Snackbar = global::NRGScoutingApp.Droid.Resource.Style.Widget_Design_Snackbar;
-			global::BottomNavigationBar.Resource.Style.Widget_Design_TabLayout = global::NRGScoutingApp.Droid.Resource.Style.Widget_Design_TabLayout;
-			global::BottomNavigationBar.Resource.Style.Widget_Design_TextInputLayout = global::NRGScoutingApp.Droid.Resource.Style.Widget_Design_TextInputLayout;
-			global::BottomNavigationBar.Resource.Styleable.ActionBar = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBar;
-			global::BottomNavigationBar.Resource.Styleable.ActionBar_background = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBar_background;
-			global::BottomNavigationBar.Resource.Styleable.ActionBar_backgroundSplit = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBar_backgroundSplit;
-			global::BottomNavigationBar.Resource.Styleable.ActionBar_backgroundStacked = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBar_backgroundStacked;
-			global::BottomNavigationBar.Resource.Styleable.ActionBar_contentInsetEnd = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBar_contentInsetEnd;
-			global::BottomNavigationBar.Resource.Styleable.ActionBar_contentInsetEndWithActions = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBar_contentInsetEndWithActions;
-			global::BottomNavigationBar.Resource.Styleable.ActionBar_contentInsetLeft = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBar_contentInsetLeft;
-			global::BottomNavigationBar.Resource.Styleable.ActionBar_contentInsetRight = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBar_contentInsetRight;
-			global::BottomNavigationBar.Resource.Styleable.ActionBar_contentInsetStart = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBar_contentInsetStart;
-			global::BottomNavigationBar.Resource.Styleable.ActionBar_contentInsetStartWithNavigation = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBar_contentInsetStartWithNavigation;
-			global::BottomNavigationBar.Resource.Styleable.ActionBar_customNavigationLayout = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBar_customNavigationLayout;
-			global::BottomNavigationBar.Resource.Styleable.ActionBar_displayOptions = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBar_displayOptions;
-			global::BottomNavigationBar.Resource.Styleable.ActionBar_divider = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBar_divider;
-			global::BottomNavigationBar.Resource.Styleable.ActionBar_elevation = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBar_elevation;
-			global::BottomNavigationBar.Resource.Styleable.ActionBar_height = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBar_height;
-			global::BottomNavigationBar.Resource.Styleable.ActionBar_hideOnContentScroll = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBar_hideOnContentScroll;
-			global::BottomNavigationBar.Resource.Styleable.ActionBar_homeAsUpIndicator = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBar_homeAsUpIndicator;
-			global::BottomNavigationBar.Resource.Styleable.ActionBar_homeLayout = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBar_homeLayout;
-			global::BottomNavigationBar.Resource.Styleable.ActionBar_icon = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBar_icon;
-			global::BottomNavigationBar.Resource.Styleable.ActionBar_indeterminateProgressStyle = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBar_indeterminateProgressStyle;
-			global::BottomNavigationBar.Resource.Styleable.ActionBar_itemPadding = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBar_itemPadding;
-			global::BottomNavigationBar.Resource.Styleable.ActionBar_logo = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBar_logo;
-			global::BottomNavigationBar.Resource.Styleable.ActionBar_navigationMode = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBar_navigationMode;
-			global::BottomNavigationBar.Resource.Styleable.ActionBar_popupTheme = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBar_popupTheme;
-			global::BottomNavigationBar.Resource.Styleable.ActionBar_progressBarPadding = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBar_progressBarPadding;
-			global::BottomNavigationBar.Resource.Styleable.ActionBar_progressBarStyle = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBar_progressBarStyle;
-			global::BottomNavigationBar.Resource.Styleable.ActionBar_subtitle = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBar_subtitle;
-			global::BottomNavigationBar.Resource.Styleable.ActionBar_subtitleTextStyle = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBar_subtitleTextStyle;
-			global::BottomNavigationBar.Resource.Styleable.ActionBar_title = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBar_title;
-			global::BottomNavigationBar.Resource.Styleable.ActionBar_titleTextStyle = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBar_titleTextStyle;
-			global::BottomNavigationBar.Resource.Styleable.ActionBarLayout = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBarLayout;
-			global::BottomNavigationBar.Resource.Styleable.ActionBarLayout_android_layout_gravity = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBarLayout_android_layout_gravity;
-			global::BottomNavigationBar.Resource.Styleable.ActionMenuItemView = global::NRGScoutingApp.Droid.Resource.Styleable.ActionMenuItemView;
-			global::BottomNavigationBar.Resource.Styleable.ActionMenuItemView_android_minWidth = global::NRGScoutingApp.Droid.Resource.Styleable.ActionMenuItemView_android_minWidth;
-			global::BottomNavigationBar.Resource.Styleable.ActionMenuView = global::NRGScoutingApp.Droid.Resource.Styleable.ActionMenuView;
-			global::BottomNavigationBar.Resource.Styleable.ActionMode = global::NRGScoutingApp.Droid.Resource.Styleable.ActionMode;
-			global::BottomNavigationBar.Resource.Styleable.ActionMode_background = global::NRGScoutingApp.Droid.Resource.Styleable.ActionMode_background;
-			global::BottomNavigationBar.Resource.Styleable.ActionMode_backgroundSplit = global::NRGScoutingApp.Droid.Resource.Styleable.ActionMode_backgroundSplit;
-			global::BottomNavigationBar.Resource.Styleable.ActionMode_closeItemLayout = global::NRGScoutingApp.Droid.Resource.Styleable.ActionMode_closeItemLayout;
-			global::BottomNavigationBar.Resource.Styleable.ActionMode_height = global::NRGScoutingApp.Droid.Resource.Styleable.ActionMode_height;
-			global::BottomNavigationBar.Resource.Styleable.ActionMode_subtitleTextStyle = global::NRGScoutingApp.Droid.Resource.Styleable.ActionMode_subtitleTextStyle;
-			global::BottomNavigationBar.Resource.Styleable.ActionMode_titleTextStyle = global::NRGScoutingApp.Droid.Resource.Styleable.ActionMode_titleTextStyle;
-			global::BottomNavigationBar.Resource.Styleable.ActivityChooserView = global::NRGScoutingApp.Droid.Resource.Styleable.ActivityChooserView;
-			global::BottomNavigationBar.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable = global::NRGScoutingApp.Droid.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable;
-			global::BottomNavigationBar.Resource.Styleable.ActivityChooserView_initialActivityCount = global::NRGScoutingApp.Droid.Resource.Styleable.ActivityChooserView_initialActivityCount;
-			global::BottomNavigationBar.Resource.Styleable.AlertDialog = global::NRGScoutingApp.Droid.Resource.Styleable.AlertDialog;
-			global::BottomNavigationBar.Resource.Styleable.AlertDialog_android_layout = global::NRGScoutingApp.Droid.Resource.Styleable.AlertDialog_android_layout;
-			global::BottomNavigationBar.Resource.Styleable.AlertDialog_buttonPanelSideLayout = global::NRGScoutingApp.Droid.Resource.Styleable.AlertDialog_buttonPanelSideLayout;
-			global::BottomNavigationBar.Resource.Styleable.AlertDialog_listItemLayout = global::NRGScoutingApp.Droid.Resource.Styleable.AlertDialog_listItemLayout;
-			global::BottomNavigationBar.Resource.Styleable.AlertDialog_listLayout = global::NRGScoutingApp.Droid.Resource.Styleable.AlertDialog_listLayout;
-			global::BottomNavigationBar.Resource.Styleable.AlertDialog_multiChoiceItemLayout = global::NRGScoutingApp.Droid.Resource.Styleable.AlertDialog_multiChoiceItemLayout;
-			global::BottomNavigationBar.Resource.Styleable.AlertDialog_singleChoiceItemLayout = global::NRGScoutingApp.Droid.Resource.Styleable.AlertDialog_singleChoiceItemLayout;
-			global::BottomNavigationBar.Resource.Styleable.AppBarLayout = global::NRGScoutingApp.Droid.Resource.Styleable.AppBarLayout;
-			global::BottomNavigationBar.Resource.Styleable.AppBarLayout_android_background = global::NRGScoutingApp.Droid.Resource.Styleable.AppBarLayout_android_background;
-			global::BottomNavigationBar.Resource.Styleable.AppBarLayout_elevation = global::NRGScoutingApp.Droid.Resource.Styleable.AppBarLayout_elevation;
-			global::BottomNavigationBar.Resource.Styleable.AppBarLayout_expanded = global::NRGScoutingApp.Droid.Resource.Styleable.AppBarLayout_expanded;
-			global::BottomNavigationBar.Resource.Styleable.AppBarLayoutStates = global::NRGScoutingApp.Droid.Resource.Styleable.AppBarLayoutStates;
-			global::BottomNavigationBar.Resource.Styleable.AppBarLayoutStates_state_collapsed = global::NRGScoutingApp.Droid.Resource.Styleable.AppBarLayoutStates_state_collapsed;
-			global::BottomNavigationBar.Resource.Styleable.AppBarLayoutStates_state_collapsible = global::NRGScoutingApp.Droid.Resource.Styleable.AppBarLayoutStates_state_collapsible;
-			global::BottomNavigationBar.Resource.Styleable.AppBarLayout_Layout = global::NRGScoutingApp.Droid.Resource.Styleable.AppBarLayout_Layout;
-			global::BottomNavigationBar.Resource.Styleable.AppBarLayout_Layout_layout_scrollFlags = global::NRGScoutingApp.Droid.Resource.Styleable.AppBarLayout_Layout_layout_scrollFlags;
-			global::BottomNavigationBar.Resource.Styleable.AppBarLayout_Layout_layout_scrollInterpolator = global::NRGScoutingApp.Droid.Resource.Styleable.AppBarLayout_Layout_layout_scrollInterpolator;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatImageView = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatImageView;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatImageView_android_src = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatImageView_android_src;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatImageView_srcCompat = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatImageView_srcCompat;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatSeekBar = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatSeekBar;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatSeekBar_android_thumb = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatSeekBar_android_thumb;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatSeekBar_tickMark = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatSeekBar_tickMark;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatSeekBar_tickMarkTint = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatSeekBar_tickMarkTint;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatSeekBar_tickMarkTintMode = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatSeekBar_tickMarkTintMode;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTextHelper = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTextHelper;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTextHelper_android_drawableBottom = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableBottom;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTextHelper_android_drawableEnd = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableEnd;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTextHelper_android_drawableLeft = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableLeft;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTextHelper_android_drawableRight = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableRight;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTextHelper_android_drawableStart = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableStart;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTextHelper_android_drawableTop = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableTop;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTextHelper_android_textAppearance = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTextHelper_android_textAppearance;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTextView = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTextView;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTextView_android_textAppearance = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTextView_android_textAppearance;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTextView_textAllCaps = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTextView_textAllCaps;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_actionBarDivider = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_actionBarDivider;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_actionBarItemBackground = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_actionBarItemBackground;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_actionBarPopupTheme = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_actionBarPopupTheme;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_actionBarSize = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_actionBarSize;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_actionBarSplitStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_actionBarSplitStyle;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_actionBarStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_actionBarStyle;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_actionBarTabStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_actionBarTabStyle;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_actionBarTheme = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_actionBarTheme;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_actionButtonStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_actionButtonStyle;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_actionDropDownStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_actionDropDownStyle;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_actionMenuTextColor = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextColor;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_actionModeBackground = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_actionModeBackground;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_actionModeCutDrawable = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_actionModeCutDrawable;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_actionModeFindDrawable = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_actionModeFindDrawable;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_actionModePasteDrawable = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_actionModePasteDrawable;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_actionModeShareDrawable = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_actionModeShareDrawable;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_actionModeSplitBackground = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_actionModeSplitBackground;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_actionModeStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_actionModeStyle;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_activityChooserViewStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_activityChooserViewStyle;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_alertDialogStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_alertDialogStyle;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_alertDialogTheme = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_alertDialogTheme;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_android_windowIsFloating = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_android_windowIsFloating;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_borderlessButtonStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_borderlessButtonStyle;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_buttonBarStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_buttonBarStyle;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_buttonStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_buttonStyle;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_buttonStyleSmall = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_buttonStyleSmall;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_checkboxStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_checkboxStyle;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_checkedTextViewStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_checkedTextViewStyle;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_colorAccent = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_colorAccent;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_colorBackgroundFloating = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_colorBackgroundFloating;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_colorButtonNormal = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_colorButtonNormal;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_colorControlActivated = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_colorControlActivated;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_colorControlHighlight = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_colorControlHighlight;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_colorControlNormal = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_colorControlNormal;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_colorPrimary = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_colorPrimary;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_colorPrimaryDark = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_colorPrimaryDark;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_controlBackground = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_controlBackground;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_dialogPreferredPadding = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_dialogPreferredPadding;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_dialogTheme = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_dialogTheme;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_dividerHorizontal = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_dividerHorizontal;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_dividerVertical = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_dividerVertical;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_dropDownListViewStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_dropDownListViewStyle;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_editTextBackground = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_editTextBackground;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_editTextColor = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_editTextColor;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_editTextStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_editTextStyle;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_homeAsUpIndicator = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_homeAsUpIndicator;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_imageButtonStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_imageButtonStyle;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_listDividerAlertDialog = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_listDividerAlertDialog;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_listMenuViewStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_listMenuViewStyle;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_listPopupWindowStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_listPopupWindowStyle;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_listPreferredItemHeight = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeight;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_panelBackground = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_panelBackground;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_panelMenuListTheme = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_panelMenuListTheme;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_panelMenuListWidth = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_panelMenuListWidth;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_popupMenuStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_popupMenuStyle;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_popupWindowStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_popupWindowStyle;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_radioButtonStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_radioButtonStyle;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_ratingBarStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyle;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_searchViewStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_searchViewStyle;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_seekBarStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_seekBarStyle;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_selectableItemBackground = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackground;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_spinnerStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_spinnerStyle;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_switchStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_switchStyle;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_textAppearanceListItem = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItem;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_textAppearancePopupMenuHeader = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_textAppearancePopupMenuHeader;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_textColorSearchUrl = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_textColorSearchUrl;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_toolbarStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_toolbarStyle;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_windowActionBar = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_windowActionBar;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_windowActionBarOverlay = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_windowActionBarOverlay;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_windowActionModeOverlay = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_windowActionModeOverlay;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_windowMinWidthMajor = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMajor;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_windowMinWidthMinor = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMinor;
-			global::BottomNavigationBar.Resource.Styleable.AppCompatTheme_windowNoTitle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_windowNoTitle;
-			global::BottomNavigationBar.Resource.Styleable.BottomSheetBehavior_Layout = global::NRGScoutingApp.Droid.Resource.Styleable.BottomSheetBehavior_Layout;
-			global::BottomNavigationBar.Resource.Styleable.BottomSheetBehavior_Layout_behavior_hideable = global::NRGScoutingApp.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_hideable;
-			global::BottomNavigationBar.Resource.Styleable.BottomSheetBehavior_Layout_behavior_peekHeight = global::NRGScoutingApp.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_peekHeight;
-			global::BottomNavigationBar.Resource.Styleable.BottomSheetBehavior_Layout_behavior_skipCollapsed = global::NRGScoutingApp.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_skipCollapsed;
-			global::BottomNavigationBar.Resource.Styleable.ButtonBarLayout = global::NRGScoutingApp.Droid.Resource.Styleable.ButtonBarLayout;
-			global::BottomNavigationBar.Resource.Styleable.ButtonBarLayout_allowStacking = global::NRGScoutingApp.Droid.Resource.Styleable.ButtonBarLayout_allowStacking;
-			global::BottomNavigationBar.Resource.Styleable.CollapsingToolbarLayout = global::NRGScoutingApp.Droid.Resource.Styleable.CollapsingToolbarLayout;
-			global::BottomNavigationBar.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity = global::NRGScoutingApp.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity;
-			global::BottomNavigationBar.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance = global::NRGScoutingApp.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance;
-			global::BottomNavigationBar.Resource.Styleable.CollapsingToolbarLayout_contentScrim = global::NRGScoutingApp.Droid.Resource.Styleable.CollapsingToolbarLayout_contentScrim;
-			global::BottomNavigationBar.Resource.Styleable.CollapsingToolbarLayout_expandedTitleGravity = global::NRGScoutingApp.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleGravity;
-			global::BottomNavigationBar.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMargin = global::NRGScoutingApp.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMargin;
-			global::BottomNavigationBar.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginBottom = global::NRGScoutingApp.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginBottom;
-			global::BottomNavigationBar.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginEnd = global::NRGScoutingApp.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginEnd;
-			global::BottomNavigationBar.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart = global::NRGScoutingApp.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart;
-			global::BottomNavigationBar.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop = global::NRGScoutingApp.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop;
-			global::BottomNavigationBar.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance = global::NRGScoutingApp.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance;
-			global::BottomNavigationBar.Resource.Styleable.CollapsingToolbarLayout_scrimAnimationDuration = global::NRGScoutingApp.Droid.Resource.Styleable.CollapsingToolbarLayout_scrimAnimationDuration;
-			global::BottomNavigationBar.Resource.Styleable.CollapsingToolbarLayout_scrimVisibleHeightTrigger = global::NRGScoutingApp.Droid.Resource.Styleable.CollapsingToolbarLayout_scrimVisibleHeightTrigger;
-			global::BottomNavigationBar.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim = global::NRGScoutingApp.Droid.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim;
-			global::BottomNavigationBar.Resource.Styleable.CollapsingToolbarLayout_title = global::NRGScoutingApp.Droid.Resource.Styleable.CollapsingToolbarLayout_title;
-			global::BottomNavigationBar.Resource.Styleable.CollapsingToolbarLayout_titleEnabled = global::NRGScoutingApp.Droid.Resource.Styleable.CollapsingToolbarLayout_titleEnabled;
-			global::BottomNavigationBar.Resource.Styleable.CollapsingToolbarLayout_toolbarId = global::NRGScoutingApp.Droid.Resource.Styleable.CollapsingToolbarLayout_toolbarId;
-			global::BottomNavigationBar.Resource.Styleable.CollapsingToolbarLayout_Layout = global::NRGScoutingApp.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout;
-			global::BottomNavigationBar.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseMode = global::NRGScoutingApp.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseMode;
-			global::BottomNavigationBar.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier = global::NRGScoutingApp.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier;
-			global::BottomNavigationBar.Resource.Styleable.ColorStateListItem = global::NRGScoutingApp.Droid.Resource.Styleable.ColorStateListItem;
-			global::BottomNavigationBar.Resource.Styleable.ColorStateListItem_alpha = global::NRGScoutingApp.Droid.Resource.Styleable.ColorStateListItem_alpha;
-			global::BottomNavigationBar.Resource.Styleable.ColorStateListItem_android_alpha = global::NRGScoutingApp.Droid.Resource.Styleable.ColorStateListItem_android_alpha;
-			global::BottomNavigationBar.Resource.Styleable.ColorStateListItem_android_color = global::NRGScoutingApp.Droid.Resource.Styleable.ColorStateListItem_android_color;
-			global::BottomNavigationBar.Resource.Styleable.CompoundButton = global::NRGScoutingApp.Droid.Resource.Styleable.CompoundButton;
-			global::BottomNavigationBar.Resource.Styleable.CompoundButton_android_button = global::NRGScoutingApp.Droid.Resource.Styleable.CompoundButton_android_button;
-			global::BottomNavigationBar.Resource.Styleable.CompoundButton_buttonTint = global::NRGScoutingApp.Droid.Resource.Styleable.CompoundButton_buttonTint;
-			global::BottomNavigationBar.Resource.Styleable.CompoundButton_buttonTintMode = global::NRGScoutingApp.Droid.Resource.Styleable.CompoundButton_buttonTintMode;
-			global::BottomNavigationBar.Resource.Styleable.CoordinatorLayout = global::NRGScoutingApp.Droid.Resource.Styleable.CoordinatorLayout;
-			global::BottomNavigationBar.Resource.Styleable.CoordinatorLayout_keylines = global::NRGScoutingApp.Droid.Resource.Styleable.CoordinatorLayout_keylines;
-			global::BottomNavigationBar.Resource.Styleable.CoordinatorLayout_statusBarBackground = global::NRGScoutingApp.Droid.Resource.Styleable.CoordinatorLayout_statusBarBackground;
-			global::BottomNavigationBar.Resource.Styleable.CoordinatorLayout_Layout = global::NRGScoutingApp.Droid.Resource.Styleable.CoordinatorLayout_Layout;
-			global::BottomNavigationBar.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity = global::NRGScoutingApp.Droid.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity;
-			global::BottomNavigationBar.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor = global::NRGScoutingApp.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor;
-			global::BottomNavigationBar.Resource.Styleable.CoordinatorLayout_Layout_layout_anchorGravity = global::NRGScoutingApp.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchorGravity;
-			global::BottomNavigationBar.Resource.Styleable.CoordinatorLayout_Layout_layout_behavior = global::NRGScoutingApp.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_behavior;
-			global::BottomNavigationBar.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges = global::NRGScoutingApp.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges;
-			global::BottomNavigationBar.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge = global::NRGScoutingApp.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge;
-			global::BottomNavigationBar.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline = global::NRGScoutingApp.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline;
-			global::BottomNavigationBar.Resource.Styleable.DesignTheme = global::NRGScoutingApp.Droid.Resource.Styleable.DesignTheme;
-			global::BottomNavigationBar.Resource.Styleable.DesignTheme_bottomSheetDialogTheme = global::NRGScoutingApp.Droid.Resource.Styleable.DesignTheme_bottomSheetDialogTheme;
-			global::BottomNavigationBar.Resource.Styleable.DesignTheme_bottomSheetStyle = global::NRGScoutingApp.Droid.Resource.Styleable.DesignTheme_bottomSheetStyle;
-			global::BottomNavigationBar.Resource.Styleable.DesignTheme_textColorError = global::NRGScoutingApp.Droid.Resource.Styleable.DesignTheme_textColorError;
-			global::BottomNavigationBar.Resource.Styleable.DrawerArrowToggle = global::NRGScoutingApp.Droid.Resource.Styleable.DrawerArrowToggle;
-			global::BottomNavigationBar.Resource.Styleable.DrawerArrowToggle_arrowHeadLength = global::NRGScoutingApp.Droid.Resource.Styleable.DrawerArrowToggle_arrowHeadLength;
-			global::BottomNavigationBar.Resource.Styleable.DrawerArrowToggle_arrowShaftLength = global::NRGScoutingApp.Droid.Resource.Styleable.DrawerArrowToggle_arrowShaftLength;
-			global::BottomNavigationBar.Resource.Styleable.DrawerArrowToggle_barLength = global::NRGScoutingApp.Droid.Resource.Styleable.DrawerArrowToggle_barLength;
-			global::BottomNavigationBar.Resource.Styleable.DrawerArrowToggle_color = global::NRGScoutingApp.Droid.Resource.Styleable.DrawerArrowToggle_color;
-			global::BottomNavigationBar.Resource.Styleable.DrawerArrowToggle_drawableSize = global::NRGScoutingApp.Droid.Resource.Styleable.DrawerArrowToggle_drawableSize;
-			global::BottomNavigationBar.Resource.Styleable.DrawerArrowToggle_gapBetweenBars = global::NRGScoutingApp.Droid.Resource.Styleable.DrawerArrowToggle_gapBetweenBars;
-			global::BottomNavigationBar.Resource.Styleable.DrawerArrowToggle_spinBars = global::NRGScoutingApp.Droid.Resource.Styleable.DrawerArrowToggle_spinBars;
-			global::BottomNavigationBar.Resource.Styleable.DrawerArrowToggle_thickness = global::NRGScoutingApp.Droid.Resource.Styleable.DrawerArrowToggle_thickness;
-			global::BottomNavigationBar.Resource.Styleable.FloatingActionButton = global::NRGScoutingApp.Droid.Resource.Styleable.FloatingActionButton;
-			global::BottomNavigationBar.Resource.Styleable.FloatingActionButton_backgroundTint = global::NRGScoutingApp.Droid.Resource.Styleable.FloatingActionButton_backgroundTint;
-			global::BottomNavigationBar.Resource.Styleable.FloatingActionButton_backgroundTintMode = global::NRGScoutingApp.Droid.Resource.Styleable.FloatingActionButton_backgroundTintMode;
-			global::BottomNavigationBar.Resource.Styleable.FloatingActionButton_borderWidth = global::NRGScoutingApp.Droid.Resource.Styleable.FloatingActionButton_borderWidth;
-			global::BottomNavigationBar.Resource.Styleable.FloatingActionButton_elevation = global::NRGScoutingApp.Droid.Resource.Styleable.FloatingActionButton_elevation;
-			global::BottomNavigationBar.Resource.Styleable.FloatingActionButton_fabSize = global::NRGScoutingApp.Droid.Resource.Styleable.FloatingActionButton_fabSize;
-			global::BottomNavigationBar.Resource.Styleable.FloatingActionButton_pressedTranslationZ = global::NRGScoutingApp.Droid.Resource.Styleable.FloatingActionButton_pressedTranslationZ;
-			global::BottomNavigationBar.Resource.Styleable.FloatingActionButton_rippleColor = global::NRGScoutingApp.Droid.Resource.Styleable.FloatingActionButton_rippleColor;
-			global::BottomNavigationBar.Resource.Styleable.FloatingActionButton_useCompatPadding = global::NRGScoutingApp.Droid.Resource.Styleable.FloatingActionButton_useCompatPadding;
-			global::BottomNavigationBar.Resource.Styleable.FloatingActionButton_Behavior_Layout = global::NRGScoutingApp.Droid.Resource.Styleable.FloatingActionButton_Behavior_Layout;
-			global::BottomNavigationBar.Resource.Styleable.FloatingActionButton_Behavior_Layout_behavior_autoHide = global::NRGScoutingApp.Droid.Resource.Styleable.FloatingActionButton_Behavior_Layout_behavior_autoHide;
-			global::BottomNavigationBar.Resource.Styleable.ForegroundLinearLayout = global::NRGScoutingApp.Droid.Resource.Styleable.ForegroundLinearLayout;
-			global::BottomNavigationBar.Resource.Styleable.ForegroundLinearLayout_android_foreground = global::NRGScoutingApp.Droid.Resource.Styleable.ForegroundLinearLayout_android_foreground;
-			global::BottomNavigationBar.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity = global::NRGScoutingApp.Droid.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity;
-			global::BottomNavigationBar.Resource.Styleable.ForegroundLinearLayout_foregroundInsidePadding = global::NRGScoutingApp.Droid.Resource.Styleable.ForegroundLinearLayout_foregroundInsidePadding;
-			global::BottomNavigationBar.Resource.Styleable.LinearLayoutCompat = global::NRGScoutingApp.Droid.Resource.Styleable.LinearLayoutCompat;
-			global::BottomNavigationBar.Resource.Styleable.LinearLayoutCompat_android_baselineAligned = global::NRGScoutingApp.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAligned;
-			global::BottomNavigationBar.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex = global::NRGScoutingApp.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex;
-			global::BottomNavigationBar.Resource.Styleable.LinearLayoutCompat_android_gravity = global::NRGScoutingApp.Droid.Resource.Styleable.LinearLayoutCompat_android_gravity;
-			global::BottomNavigationBar.Resource.Styleable.LinearLayoutCompat_android_orientation = global::NRGScoutingApp.Droid.Resource.Styleable.LinearLayoutCompat_android_orientation;
-			global::BottomNavigationBar.Resource.Styleable.LinearLayoutCompat_android_weightSum = global::NRGScoutingApp.Droid.Resource.Styleable.LinearLayoutCompat_android_weightSum;
-			global::BottomNavigationBar.Resource.Styleable.LinearLayoutCompat_divider = global::NRGScoutingApp.Droid.Resource.Styleable.LinearLayoutCompat_divider;
-			global::BottomNavigationBar.Resource.Styleable.LinearLayoutCompat_dividerPadding = global::NRGScoutingApp.Droid.Resource.Styleable.LinearLayoutCompat_dividerPadding;
-			global::BottomNavigationBar.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild = global::NRGScoutingApp.Droid.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild;
-			global::BottomNavigationBar.Resource.Styleable.LinearLayoutCompat_showDividers = global::NRGScoutingApp.Droid.Resource.Styleable.LinearLayoutCompat_showDividers;
-			global::BottomNavigationBar.Resource.Styleable.LinearLayoutCompat_Layout = global::NRGScoutingApp.Droid.Resource.Styleable.LinearLayoutCompat_Layout;
-			global::BottomNavigationBar.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity = global::NRGScoutingApp.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity;
-			global::BottomNavigationBar.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height = global::NRGScoutingApp.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height;
-			global::BottomNavigationBar.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight = global::NRGScoutingApp.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight;
-			global::BottomNavigationBar.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width = global::NRGScoutingApp.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width;
-			global::BottomNavigationBar.Resource.Styleable.ListPopupWindow = global::NRGScoutingApp.Droid.Resource.Styleable.ListPopupWindow;
-			global::BottomNavigationBar.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset = global::NRGScoutingApp.Droid.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset;
-			global::BottomNavigationBar.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset = global::NRGScoutingApp.Droid.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset;
-			global::BottomNavigationBar.Resource.Styleable.MenuGroup = global::NRGScoutingApp.Droid.Resource.Styleable.MenuGroup;
-			global::BottomNavigationBar.Resource.Styleable.MenuGroup_android_checkableBehavior = global::NRGScoutingApp.Droid.Resource.Styleable.MenuGroup_android_checkableBehavior;
-			global::BottomNavigationBar.Resource.Styleable.MenuGroup_android_enabled = global::NRGScoutingApp.Droid.Resource.Styleable.MenuGroup_android_enabled;
-			global::BottomNavigationBar.Resource.Styleable.MenuGroup_android_id = global::NRGScoutingApp.Droid.Resource.Styleable.MenuGroup_android_id;
-			global::BottomNavigationBar.Resource.Styleable.MenuGroup_android_menuCategory = global::NRGScoutingApp.Droid.Resource.Styleable.MenuGroup_android_menuCategory;
-			global::BottomNavigationBar.Resource.Styleable.MenuGroup_android_orderInCategory = global::NRGScoutingApp.Droid.Resource.Styleable.MenuGroup_android_orderInCategory;
-			global::BottomNavigationBar.Resource.Styleable.MenuGroup_android_visible = global::NRGScoutingApp.Droid.Resource.Styleable.MenuGroup_android_visible;
-			global::BottomNavigationBar.Resource.Styleable.MenuItem = global::NRGScoutingApp.Droid.Resource.Styleable.MenuItem;
-			global::BottomNavigationBar.Resource.Styleable.MenuItem_actionLayout = global::NRGScoutingApp.Droid.Resource.Styleable.MenuItem_actionLayout;
-			global::BottomNavigationBar.Resource.Styleable.MenuItem_actionProviderClass = global::NRGScoutingApp.Droid.Resource.Styleable.MenuItem_actionProviderClass;
-			global::BottomNavigationBar.Resource.Styleable.MenuItem_actionViewClass = global::NRGScoutingApp.Droid.Resource.Styleable.MenuItem_actionViewClass;
-			global::BottomNavigationBar.Resource.Styleable.MenuItem_android_alphabeticShortcut = global::NRGScoutingApp.Droid.Resource.Styleable.MenuItem_android_alphabeticShortcut;
-			global::BottomNavigationBar.Resource.Styleable.MenuItem_android_checkable = global::NRGScoutingApp.Droid.Resource.Styleable.MenuItem_android_checkable;
-			global::BottomNavigationBar.Resource.Styleable.MenuItem_android_checked = global::NRGScoutingApp.Droid.Resource.Styleable.MenuItem_android_checked;
-			global::BottomNavigationBar.Resource.Styleable.MenuItem_android_enabled = global::NRGScoutingApp.Droid.Resource.Styleable.MenuItem_android_enabled;
-			global::BottomNavigationBar.Resource.Styleable.MenuItem_android_icon = global::NRGScoutingApp.Droid.Resource.Styleable.MenuItem_android_icon;
-			global::BottomNavigationBar.Resource.Styleable.MenuItem_android_id = global::NRGScoutingApp.Droid.Resource.Styleable.MenuItem_android_id;
-			global::BottomNavigationBar.Resource.Styleable.MenuItem_android_menuCategory = global::NRGScoutingApp.Droid.Resource.Styleable.MenuItem_android_menuCategory;
-			global::BottomNavigationBar.Resource.Styleable.MenuItem_android_numericShortcut = global::NRGScoutingApp.Droid.Resource.Styleable.MenuItem_android_numericShortcut;
-			global::BottomNavigationBar.Resource.Styleable.MenuItem_android_onClick = global::NRGScoutingApp.Droid.Resource.Styleable.MenuItem_android_onClick;
-			global::BottomNavigationBar.Resource.Styleable.MenuItem_android_orderInCategory = global::NRGScoutingApp.Droid.Resource.Styleable.MenuItem_android_orderInCategory;
-			global::BottomNavigationBar.Resource.Styleable.MenuItem_android_title = global::NRGScoutingApp.Droid.Resource.Styleable.MenuItem_android_title;
-			global::BottomNavigationBar.Resource.Styleable.MenuItem_android_titleCondensed = global::NRGScoutingApp.Droid.Resource.Styleable.MenuItem_android_titleCondensed;
-			global::BottomNavigationBar.Resource.Styleable.MenuItem_android_visible = global::NRGScoutingApp.Droid.Resource.Styleable.MenuItem_android_visible;
-			global::BottomNavigationBar.Resource.Styleable.MenuItem_showAsAction = global::NRGScoutingApp.Droid.Resource.Styleable.MenuItem_showAsAction;
-			global::BottomNavigationBar.Resource.Styleable.MenuView = global::NRGScoutingApp.Droid.Resource.Styleable.MenuView;
-			global::BottomNavigationBar.Resource.Styleable.MenuView_android_headerBackground = global::NRGScoutingApp.Droid.Resource.Styleable.MenuView_android_headerBackground;
-			global::BottomNavigationBar.Resource.Styleable.MenuView_android_horizontalDivider = global::NRGScoutingApp.Droid.Resource.Styleable.MenuView_android_horizontalDivider;
-			global::BottomNavigationBar.Resource.Styleable.MenuView_android_itemBackground = global::NRGScoutingApp.Droid.Resource.Styleable.MenuView_android_itemBackground;
-			global::BottomNavigationBar.Resource.Styleable.MenuView_android_itemIconDisabledAlpha = global::NRGScoutingApp.Droid.Resource.Styleable.MenuView_android_itemIconDisabledAlpha;
-			global::BottomNavigationBar.Resource.Styleable.MenuView_android_itemTextAppearance = global::NRGScoutingApp.Droid.Resource.Styleable.MenuView_android_itemTextAppearance;
-			global::BottomNavigationBar.Resource.Styleable.MenuView_android_verticalDivider = global::NRGScoutingApp.Droid.Resource.Styleable.MenuView_android_verticalDivider;
-			global::BottomNavigationBar.Resource.Styleable.MenuView_android_windowAnimationStyle = global::NRGScoutingApp.Droid.Resource.Styleable.MenuView_android_windowAnimationStyle;
-			global::BottomNavigationBar.Resource.Styleable.MenuView_preserveIconSpacing = global::NRGScoutingApp.Droid.Resource.Styleable.MenuView_preserveIconSpacing;
-			global::BottomNavigationBar.Resource.Styleable.MenuView_subMenuArrow = global::NRGScoutingApp.Droid.Resource.Styleable.MenuView_subMenuArrow;
-			global::BottomNavigationBar.Resource.Styleable.NavigationView = global::NRGScoutingApp.Droid.Resource.Styleable.NavigationView;
-			global::BottomNavigationBar.Resource.Styleable.NavigationView_android_background = global::NRGScoutingApp.Droid.Resource.Styleable.NavigationView_android_background;
-			global::BottomNavigationBar.Resource.Styleable.NavigationView_android_fitsSystemWindows = global::NRGScoutingApp.Droid.Resource.Styleable.NavigationView_android_fitsSystemWindows;
-			global::BottomNavigationBar.Resource.Styleable.NavigationView_android_maxWidth = global::NRGScoutingApp.Droid.Resource.Styleable.NavigationView_android_maxWidth;
-			global::BottomNavigationBar.Resource.Styleable.NavigationView_elevation = global::NRGScoutingApp.Droid.Resource.Styleable.NavigationView_elevation;
-			global::BottomNavigationBar.Resource.Styleable.NavigationView_headerLayout = global::NRGScoutingApp.Droid.Resource.Styleable.NavigationView_headerLayout;
-			global::BottomNavigationBar.Resource.Styleable.NavigationView_itemBackground = global::NRGScoutingApp.Droid.Resource.Styleable.NavigationView_itemBackground;
-			global::BottomNavigationBar.Resource.Styleable.NavigationView_itemIconTint = global::NRGScoutingApp.Droid.Resource.Styleable.NavigationView_itemIconTint;
-			global::BottomNavigationBar.Resource.Styleable.NavigationView_itemTextAppearance = global::NRGScoutingApp.Droid.Resource.Styleable.NavigationView_itemTextAppearance;
-			global::BottomNavigationBar.Resource.Styleable.NavigationView_itemTextColor = global::NRGScoutingApp.Droid.Resource.Styleable.NavigationView_itemTextColor;
-			global::BottomNavigationBar.Resource.Styleable.NavigationView_menu = global::NRGScoutingApp.Droid.Resource.Styleable.NavigationView_menu;
-			global::BottomNavigationBar.Resource.Styleable.PopupWindow = global::NRGScoutingApp.Droid.Resource.Styleable.PopupWindow;
-			global::BottomNavigationBar.Resource.Styleable.PopupWindow_android_popupAnimationStyle = global::NRGScoutingApp.Droid.Resource.Styleable.PopupWindow_android_popupAnimationStyle;
-			global::BottomNavigationBar.Resource.Styleable.PopupWindow_android_popupBackground = global::NRGScoutingApp.Droid.Resource.Styleable.PopupWindow_android_popupBackground;
-			global::BottomNavigationBar.Resource.Styleable.PopupWindow_overlapAnchor = global::NRGScoutingApp.Droid.Resource.Styleable.PopupWindow_overlapAnchor;
-			global::BottomNavigationBar.Resource.Styleable.PopupWindowBackgroundState = global::NRGScoutingApp.Droid.Resource.Styleable.PopupWindowBackgroundState;
-			global::BottomNavigationBar.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor = global::NRGScoutingApp.Droid.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor;
-			global::BottomNavigationBar.Resource.Styleable.RecyclerView = global::NRGScoutingApp.Droid.Resource.Styleable.RecyclerView;
-			global::BottomNavigationBar.Resource.Styleable.RecyclerView_android_descendantFocusability = global::NRGScoutingApp.Droid.Resource.Styleable.RecyclerView_android_descendantFocusability;
-			global::BottomNavigationBar.Resource.Styleable.RecyclerView_android_orientation = global::NRGScoutingApp.Droid.Resource.Styleable.RecyclerView_android_orientation;
-			global::BottomNavigationBar.Resource.Styleable.RecyclerView_layoutManager = global::NRGScoutingApp.Droid.Resource.Styleable.RecyclerView_layoutManager;
-			global::BottomNavigationBar.Resource.Styleable.RecyclerView_reverseLayout = global::NRGScoutingApp.Droid.Resource.Styleable.RecyclerView_reverseLayout;
-			global::BottomNavigationBar.Resource.Styleable.RecyclerView_spanCount = global::NRGScoutingApp.Droid.Resource.Styleable.RecyclerView_spanCount;
-			global::BottomNavigationBar.Resource.Styleable.RecyclerView_stackFromEnd = global::NRGScoutingApp.Droid.Resource.Styleable.RecyclerView_stackFromEnd;
-			global::BottomNavigationBar.Resource.Styleable.ScrimInsetsFrameLayout = global::NRGScoutingApp.Droid.Resource.Styleable.ScrimInsetsFrameLayout;
-			global::BottomNavigationBar.Resource.Styleable.ScrimInsetsFrameLayout_insetForeground = global::NRGScoutingApp.Droid.Resource.Styleable.ScrimInsetsFrameLayout_insetForeground;
-			global::BottomNavigationBar.Resource.Styleable.ScrollingViewBehavior_Layout = global::NRGScoutingApp.Droid.Resource.Styleable.ScrollingViewBehavior_Layout;
-			global::BottomNavigationBar.Resource.Styleable.ScrollingViewBehavior_Layout_behavior_overlapTop = global::NRGScoutingApp.Droid.Resource.Styleable.ScrollingViewBehavior_Layout_behavior_overlapTop;
-			global::BottomNavigationBar.Resource.Styleable.SearchView = global::NRGScoutingApp.Droid.Resource.Styleable.SearchView;
-			global::BottomNavigationBar.Resource.Styleable.SearchView_android_focusable = global::NRGScoutingApp.Droid.Resource.Styleable.SearchView_android_focusable;
-			global::BottomNavigationBar.Resource.Styleable.SearchView_android_imeOptions = global::NRGScoutingApp.Droid.Resource.Styleable.SearchView_android_imeOptions;
-			global::BottomNavigationBar.Resource.Styleable.SearchView_android_inputType = global::NRGScoutingApp.Droid.Resource.Styleable.SearchView_android_inputType;
-			global::BottomNavigationBar.Resource.Styleable.SearchView_android_maxWidth = global::NRGScoutingApp.Droid.Resource.Styleable.SearchView_android_maxWidth;
-			global::BottomNavigationBar.Resource.Styleable.SearchView_closeIcon = global::NRGScoutingApp.Droid.Resource.Styleable.SearchView_closeIcon;
-			global::BottomNavigationBar.Resource.Styleable.SearchView_commitIcon = global::NRGScoutingApp.Droid.Resource.Styleable.SearchView_commitIcon;
-			global::BottomNavigationBar.Resource.Styleable.SearchView_defaultQueryHint = global::NRGScoutingApp.Droid.Resource.Styleable.SearchView_defaultQueryHint;
-			global::BottomNavigationBar.Resource.Styleable.SearchView_goIcon = global::NRGScoutingApp.Droid.Resource.Styleable.SearchView_goIcon;
-			global::BottomNavigationBar.Resource.Styleable.SearchView_iconifiedByDefault = global::NRGScoutingApp.Droid.Resource.Styleable.SearchView_iconifiedByDefault;
-			global::BottomNavigationBar.Resource.Styleable.SearchView_layout = global::NRGScoutingApp.Droid.Resource.Styleable.SearchView_layout;
-			global::BottomNavigationBar.Resource.Styleable.SearchView_queryBackground = global::NRGScoutingApp.Droid.Resource.Styleable.SearchView_queryBackground;
-			global::BottomNavigationBar.Resource.Styleable.SearchView_queryHint = global::NRGScoutingApp.Droid.Resource.Styleable.SearchView_queryHint;
-			global::BottomNavigationBar.Resource.Styleable.SearchView_searchHintIcon = global::NRGScoutingApp.Droid.Resource.Styleable.SearchView_searchHintIcon;
-			global::BottomNavigationBar.Resource.Styleable.SearchView_searchIcon = global::NRGScoutingApp.Droid.Resource.Styleable.SearchView_searchIcon;
-			global::BottomNavigationBar.Resource.Styleable.SearchView_submitBackground = global::NRGScoutingApp.Droid.Resource.Styleable.SearchView_submitBackground;
-			global::BottomNavigationBar.Resource.Styleable.SearchView_suggestionRowLayout = global::NRGScoutingApp.Droid.Resource.Styleable.SearchView_suggestionRowLayout;
-			global::BottomNavigationBar.Resource.Styleable.SearchView_voiceIcon = global::NRGScoutingApp.Droid.Resource.Styleable.SearchView_voiceIcon;
-			global::BottomNavigationBar.Resource.Styleable.SnackbarLayout = global::NRGScoutingApp.Droid.Resource.Styleable.SnackbarLayout;
-			global::BottomNavigationBar.Resource.Styleable.SnackbarLayout_android_maxWidth = global::NRGScoutingApp.Droid.Resource.Styleable.SnackbarLayout_android_maxWidth;
-			global::BottomNavigationBar.Resource.Styleable.SnackbarLayout_elevation = global::NRGScoutingApp.Droid.Resource.Styleable.SnackbarLayout_elevation;
-			global::BottomNavigationBar.Resource.Styleable.SnackbarLayout_maxActionInlineWidth = global::NRGScoutingApp.Droid.Resource.Styleable.SnackbarLayout_maxActionInlineWidth;
-			global::BottomNavigationBar.Resource.Styleable.Spinner = global::NRGScoutingApp.Droid.Resource.Styleable.Spinner;
-			global::BottomNavigationBar.Resource.Styleable.Spinner_android_dropDownWidth = global::NRGScoutingApp.Droid.Resource.Styleable.Spinner_android_dropDownWidth;
-			global::BottomNavigationBar.Resource.Styleable.Spinner_android_entries = global::NRGScoutingApp.Droid.Resource.Styleable.Spinner_android_entries;
-			global::BottomNavigationBar.Resource.Styleable.Spinner_android_popupBackground = global::NRGScoutingApp.Droid.Resource.Styleable.Spinner_android_popupBackground;
-			global::BottomNavigationBar.Resource.Styleable.Spinner_android_prompt = global::NRGScoutingApp.Droid.Resource.Styleable.Spinner_android_prompt;
-			global::BottomNavigationBar.Resource.Styleable.Spinner_popupTheme = global::NRGScoutingApp.Droid.Resource.Styleable.Spinner_popupTheme;
-			global::BottomNavigationBar.Resource.Styleable.SwitchCompat = global::NRGScoutingApp.Droid.Resource.Styleable.SwitchCompat;
-			global::BottomNavigationBar.Resource.Styleable.SwitchCompat_android_textOff = global::NRGScoutingApp.Droid.Resource.Styleable.SwitchCompat_android_textOff;
-			global::BottomNavigationBar.Resource.Styleable.SwitchCompat_android_textOn = global::NRGScoutingApp.Droid.Resource.Styleable.SwitchCompat_android_textOn;
-			global::BottomNavigationBar.Resource.Styleable.SwitchCompat_android_thumb = global::NRGScoutingApp.Droid.Resource.Styleable.SwitchCompat_android_thumb;
-			global::BottomNavigationBar.Resource.Styleable.SwitchCompat_showText = global::NRGScoutingApp.Droid.Resource.Styleable.SwitchCompat_showText;
-			global::BottomNavigationBar.Resource.Styleable.SwitchCompat_splitTrack = global::NRGScoutingApp.Droid.Resource.Styleable.SwitchCompat_splitTrack;
-			global::BottomNavigationBar.Resource.Styleable.SwitchCompat_switchMinWidth = global::NRGScoutingApp.Droid.Resource.Styleable.SwitchCompat_switchMinWidth;
-			global::BottomNavigationBar.Resource.Styleable.SwitchCompat_switchPadding = global::NRGScoutingApp.Droid.Resource.Styleable.SwitchCompat_switchPadding;
-			global::BottomNavigationBar.Resource.Styleable.SwitchCompat_switchTextAppearance = global::NRGScoutingApp.Droid.Resource.Styleable.SwitchCompat_switchTextAppearance;
-			global::BottomNavigationBar.Resource.Styleable.SwitchCompat_thumbTextPadding = global::NRGScoutingApp.Droid.Resource.Styleable.SwitchCompat_thumbTextPadding;
-			global::BottomNavigationBar.Resource.Styleable.SwitchCompat_thumbTint = global::NRGScoutingApp.Droid.Resource.Styleable.SwitchCompat_thumbTint;
-			global::BottomNavigationBar.Resource.Styleable.SwitchCompat_thumbTintMode = global::NRGScoutingApp.Droid.Resource.Styleable.SwitchCompat_thumbTintMode;
-			global::BottomNavigationBar.Resource.Styleable.SwitchCompat_track = global::NRGScoutingApp.Droid.Resource.Styleable.SwitchCompat_track;
-			global::BottomNavigationBar.Resource.Styleable.SwitchCompat_trackTint = global::NRGScoutingApp.Droid.Resource.Styleable.SwitchCompat_trackTint;
-			global::BottomNavigationBar.Resource.Styleable.SwitchCompat_trackTintMode = global::NRGScoutingApp.Droid.Resource.Styleable.SwitchCompat_trackTintMode;
-			global::BottomNavigationBar.Resource.Styleable.TabItem = global::NRGScoutingApp.Droid.Resource.Styleable.TabItem;
-			global::BottomNavigationBar.Resource.Styleable.TabItem_android_icon = global::NRGScoutingApp.Droid.Resource.Styleable.TabItem_android_icon;
-			global::BottomNavigationBar.Resource.Styleable.TabItem_android_layout = global::NRGScoutingApp.Droid.Resource.Styleable.TabItem_android_layout;
-			global::BottomNavigationBar.Resource.Styleable.TabItem_android_text = global::NRGScoutingApp.Droid.Resource.Styleable.TabItem_android_text;
-			global::BottomNavigationBar.Resource.Styleable.TabLayout = global::NRGScoutingApp.Droid.Resource.Styleable.TabLayout;
-			global::BottomNavigationBar.Resource.Styleable.TabLayout_tabBackground = global::NRGScoutingApp.Droid.Resource.Styleable.TabLayout_tabBackground;
-			global::BottomNavigationBar.Resource.Styleable.TabLayout_tabContentStart = global::NRGScoutingApp.Droid.Resource.Styleable.TabLayout_tabContentStart;
-			global::BottomNavigationBar.Resource.Styleable.TabLayout_tabGravity = global::NRGScoutingApp.Droid.Resource.Styleable.TabLayout_tabGravity;
-			global::BottomNavigationBar.Resource.Styleable.TabLayout_tabIndicatorColor = global::NRGScoutingApp.Droid.Resource.Styleable.TabLayout_tabIndicatorColor;
-			global::BottomNavigationBar.Resource.Styleable.TabLayout_tabIndicatorHeight = global::NRGScoutingApp.Droid.Resource.Styleable.TabLayout_tabIndicatorHeight;
-			global::BottomNavigationBar.Resource.Styleable.TabLayout_tabMaxWidth = global::NRGScoutingApp.Droid.Resource.Styleable.TabLayout_tabMaxWidth;
-			global::BottomNavigationBar.Resource.Styleable.TabLayout_tabMinWidth = global::NRGScoutingApp.Droid.Resource.Styleable.TabLayout_tabMinWidth;
-			global::BottomNavigationBar.Resource.Styleable.TabLayout_tabMode = global::NRGScoutingApp.Droid.Resource.Styleable.TabLayout_tabMode;
-			global::BottomNavigationBar.Resource.Styleable.TabLayout_tabPadding = global::NRGScoutingApp.Droid.Resource.Styleable.TabLayout_tabPadding;
-			global::BottomNavigationBar.Resource.Styleable.TabLayout_tabPaddingBottom = global::NRGScoutingApp.Droid.Resource.Styleable.TabLayout_tabPaddingBottom;
-			global::BottomNavigationBar.Resource.Styleable.TabLayout_tabPaddingEnd = global::NRGScoutingApp.Droid.Resource.Styleable.TabLayout_tabPaddingEnd;
-			global::BottomNavigationBar.Resource.Styleable.TabLayout_tabPaddingStart = global::NRGScoutingApp.Droid.Resource.Styleable.TabLayout_tabPaddingStart;
-			global::BottomNavigationBar.Resource.Styleable.TabLayout_tabPaddingTop = global::NRGScoutingApp.Droid.Resource.Styleable.TabLayout_tabPaddingTop;
-			global::BottomNavigationBar.Resource.Styleable.TabLayout_tabSelectedTextColor = global::NRGScoutingApp.Droid.Resource.Styleable.TabLayout_tabSelectedTextColor;
-			global::BottomNavigationBar.Resource.Styleable.TabLayout_tabTextAppearance = global::NRGScoutingApp.Droid.Resource.Styleable.TabLayout_tabTextAppearance;
-			global::BottomNavigationBar.Resource.Styleable.TabLayout_tabTextColor = global::NRGScoutingApp.Droid.Resource.Styleable.TabLayout_tabTextColor;
-			global::BottomNavigationBar.Resource.Styleable.TextAppearance = global::NRGScoutingApp.Droid.Resource.Styleable.TextAppearance;
-			global::BottomNavigationBar.Resource.Styleable.TextAppearance_android_shadowColor = global::NRGScoutingApp.Droid.Resource.Styleable.TextAppearance_android_shadowColor;
-			global::BottomNavigationBar.Resource.Styleable.TextAppearance_android_shadowDx = global::NRGScoutingApp.Droid.Resource.Styleable.TextAppearance_android_shadowDx;
-			global::BottomNavigationBar.Resource.Styleable.TextAppearance_android_shadowDy = global::NRGScoutingApp.Droid.Resource.Styleable.TextAppearance_android_shadowDy;
-			global::BottomNavigationBar.Resource.Styleable.TextAppearance_android_shadowRadius = global::NRGScoutingApp.Droid.Resource.Styleable.TextAppearance_android_shadowRadius;
-			global::BottomNavigationBar.Resource.Styleable.TextAppearance_android_textColor = global::NRGScoutingApp.Droid.Resource.Styleable.TextAppearance_android_textColor;
-			global::BottomNavigationBar.Resource.Styleable.TextAppearance_android_textSize = global::NRGScoutingApp.Droid.Resource.Styleable.TextAppearance_android_textSize;
-			global::BottomNavigationBar.Resource.Styleable.TextAppearance_android_textStyle = global::NRGScoutingApp.Droid.Resource.Styleable.TextAppearance_android_textStyle;
-			global::BottomNavigationBar.Resource.Styleable.TextAppearance_android_typeface = global::NRGScoutingApp.Droid.Resource.Styleable.TextAppearance_android_typeface;
-			global::BottomNavigationBar.Resource.Styleable.TextAppearance_textAllCaps = global::NRGScoutingApp.Droid.Resource.Styleable.TextAppearance_textAllCaps;
-			global::BottomNavigationBar.Resource.Styleable.TextInputLayout = global::NRGScoutingApp.Droid.Resource.Styleable.TextInputLayout;
-			global::BottomNavigationBar.Resource.Styleable.TextInputLayout_android_hint = global::NRGScoutingApp.Droid.Resource.Styleable.TextInputLayout_android_hint;
-			global::BottomNavigationBar.Resource.Styleable.TextInputLayout_android_textColorHint = global::NRGScoutingApp.Droid.Resource.Styleable.TextInputLayout_android_textColorHint;
-			global::BottomNavigationBar.Resource.Styleable.TextInputLayout_counterEnabled = global::NRGScoutingApp.Droid.Resource.Styleable.TextInputLayout_counterEnabled;
-			global::BottomNavigationBar.Resource.Styleable.TextInputLayout_counterMaxLength = global::NRGScoutingApp.Droid.Resource.Styleable.TextInputLayout_counterMaxLength;
-			global::BottomNavigationBar.Resource.Styleable.TextInputLayout_counterOverflowTextAppearance = global::NRGScoutingApp.Droid.Resource.Styleable.TextInputLayout_counterOverflowTextAppearance;
-			global::BottomNavigationBar.Resource.Styleable.TextInputLayout_counterTextAppearance = global::NRGScoutingApp.Droid.Resource.Styleable.TextInputLayout_counterTextAppearance;
-			global::BottomNavigationBar.Resource.Styleable.TextInputLayout_errorEnabled = global::NRGScoutingApp.Droid.Resource.Styleable.TextInputLayout_errorEnabled;
-			global::BottomNavigationBar.Resource.Styleable.TextInputLayout_errorTextAppearance = global::NRGScoutingApp.Droid.Resource.Styleable.TextInputLayout_errorTextAppearance;
-			global::BottomNavigationBar.Resource.Styleable.TextInputLayout_hintAnimationEnabled = global::NRGScoutingApp.Droid.Resource.Styleable.TextInputLayout_hintAnimationEnabled;
-			global::BottomNavigationBar.Resource.Styleable.TextInputLayout_hintEnabled = global::NRGScoutingApp.Droid.Resource.Styleable.TextInputLayout_hintEnabled;
-			global::BottomNavigationBar.Resource.Styleable.TextInputLayout_hintTextAppearance = global::NRGScoutingApp.Droid.Resource.Styleable.TextInputLayout_hintTextAppearance;
-			global::BottomNavigationBar.Resource.Styleable.TextInputLayout_passwordToggleContentDescription = global::NRGScoutingApp.Droid.Resource.Styleable.TextInputLayout_passwordToggleContentDescription;
-			global::BottomNavigationBar.Resource.Styleable.TextInputLayout_passwordToggleDrawable = global::NRGScoutingApp.Droid.Resource.Styleable.TextInputLayout_passwordToggleDrawable;
-			global::BottomNavigationBar.Resource.Styleable.TextInputLayout_passwordToggleEnabled = global::NRGScoutingApp.Droid.Resource.Styleable.TextInputLayout_passwordToggleEnabled;
-			global::BottomNavigationBar.Resource.Styleable.TextInputLayout_passwordToggleTint = global::NRGScoutingApp.Droid.Resource.Styleable.TextInputLayout_passwordToggleTint;
-			global::BottomNavigationBar.Resource.Styleable.TextInputLayout_passwordToggleTintMode = global::NRGScoutingApp.Droid.Resource.Styleable.TextInputLayout_passwordToggleTintMode;
-			global::BottomNavigationBar.Resource.Styleable.Toolbar = global::NRGScoutingApp.Droid.Resource.Styleable.Toolbar;
-			global::BottomNavigationBar.Resource.Styleable.Toolbar_android_gravity = global::NRGScoutingApp.Droid.Resource.Styleable.Toolbar_android_gravity;
-			global::BottomNavigationBar.Resource.Styleable.Toolbar_android_minHeight = global::NRGScoutingApp.Droid.Resource.Styleable.Toolbar_android_minHeight;
-			global::BottomNavigationBar.Resource.Styleable.Toolbar_buttonGravity = global::NRGScoutingApp.Droid.Resource.Styleable.Toolbar_buttonGravity;
-			global::BottomNavigationBar.Resource.Styleable.Toolbar_collapseContentDescription = global::NRGScoutingApp.Droid.Resource.Styleable.Toolbar_collapseContentDescription;
-			global::BottomNavigationBar.Resource.Styleable.Toolbar_collapseIcon = global::NRGScoutingApp.Droid.Resource.Styleable.Toolbar_collapseIcon;
-			global::BottomNavigationBar.Resource.Styleable.Toolbar_contentInsetEnd = global::NRGScoutingApp.Droid.Resource.Styleable.Toolbar_contentInsetEnd;
-			global::BottomNavigationBar.Resource.Styleable.Toolbar_contentInsetEndWithActions = global::NRGScoutingApp.Droid.Resource.Styleable.Toolbar_contentInsetEndWithActions;
-			global::BottomNavigationBar.Resource.Styleable.Toolbar_contentInsetLeft = global::NRGScoutingApp.Droid.Resource.Styleable.Toolbar_contentInsetLeft;
-			global::BottomNavigationBar.Resource.Styleable.Toolbar_contentInsetRight = global::NRGScoutingApp.Droid.Resource.Styleable.Toolbar_contentInsetRight;
-			global::BottomNavigationBar.Resource.Styleable.Toolbar_contentInsetStart = global::NRGScoutingApp.Droid.Resource.Styleable.Toolbar_contentInsetStart;
-			global::BottomNavigationBar.Resource.Styleable.Toolbar_contentInsetStartWithNavigation = global::NRGScoutingApp.Droid.Resource.Styleable.Toolbar_contentInsetStartWithNavigation;
-			global::BottomNavigationBar.Resource.Styleable.Toolbar_logo = global::NRGScoutingApp.Droid.Resource.Styleable.Toolbar_logo;
-			global::BottomNavigationBar.Resource.Styleable.Toolbar_logoDescription = global::NRGScoutingApp.Droid.Resource.Styleable.Toolbar_logoDescription;
-			global::BottomNavigationBar.Resource.Styleable.Toolbar_maxButtonHeight = global::NRGScoutingApp.Droid.Resource.Styleable.Toolbar_maxButtonHeight;
-			global::BottomNavigationBar.Resource.Styleable.Toolbar_navigationContentDescription = global::NRGScoutingApp.Droid.Resource.Styleable.Toolbar_navigationContentDescription;
-			global::BottomNavigationBar.Resource.Styleable.Toolbar_navigationIcon = global::NRGScoutingApp.Droid.Resource.Styleable.Toolbar_navigationIcon;
-			global::BottomNavigationBar.Resource.Styleable.Toolbar_popupTheme = global::NRGScoutingApp.Droid.Resource.Styleable.Toolbar_popupTheme;
-			global::BottomNavigationBar.Resource.Styleable.Toolbar_subtitle = global::NRGScoutingApp.Droid.Resource.Styleable.Toolbar_subtitle;
-			global::BottomNavigationBar.Resource.Styleable.Toolbar_subtitleTextAppearance = global::NRGScoutingApp.Droid.Resource.Styleable.Toolbar_subtitleTextAppearance;
-			global::BottomNavigationBar.Resource.Styleable.Toolbar_subtitleTextColor = global::NRGScoutingApp.Droid.Resource.Styleable.Toolbar_subtitleTextColor;
-			global::BottomNavigationBar.Resource.Styleable.Toolbar_title = global::NRGScoutingApp.Droid.Resource.Styleable.Toolbar_title;
-			global::BottomNavigationBar.Resource.Styleable.Toolbar_titleMargin = global::NRGScoutingApp.Droid.Resource.Styleable.Toolbar_titleMargin;
-			global::BottomNavigationBar.Resource.Styleable.Toolbar_titleMarginBottom = global::NRGScoutingApp.Droid.Resource.Styleable.Toolbar_titleMarginBottom;
-			global::BottomNavigationBar.Resource.Styleable.Toolbar_titleMarginEnd = global::NRGScoutingApp.Droid.Resource.Styleable.Toolbar_titleMarginEnd;
-			global::BottomNavigationBar.Resource.Styleable.Toolbar_titleMarginStart = global::NRGScoutingApp.Droid.Resource.Styleable.Toolbar_titleMarginStart;
-			global::BottomNavigationBar.Resource.Styleable.Toolbar_titleMarginTop = global::NRGScoutingApp.Droid.Resource.Styleable.Toolbar_titleMarginTop;
-			global::BottomNavigationBar.Resource.Styleable.Toolbar_titleMargins = global::NRGScoutingApp.Droid.Resource.Styleable.Toolbar_titleMargins;
-			global::BottomNavigationBar.Resource.Styleable.Toolbar_titleTextAppearance = global::NRGScoutingApp.Droid.Resource.Styleable.Toolbar_titleTextAppearance;
-			global::BottomNavigationBar.Resource.Styleable.Toolbar_titleTextColor = global::NRGScoutingApp.Droid.Resource.Styleable.Toolbar_titleTextColor;
-			global::BottomNavigationBar.Resource.Styleable.View = global::NRGScoutingApp.Droid.Resource.Styleable.View;
-			global::BottomNavigationBar.Resource.Styleable.View_android_focusable = global::NRGScoutingApp.Droid.Resource.Styleable.View_android_focusable;
-			global::BottomNavigationBar.Resource.Styleable.View_android_theme = global::NRGScoutingApp.Droid.Resource.Styleable.View_android_theme;
-			global::BottomNavigationBar.Resource.Styleable.View_paddingEnd = global::NRGScoutingApp.Droid.Resource.Styleable.View_paddingEnd;
-			global::BottomNavigationBar.Resource.Styleable.View_paddingStart = global::NRGScoutingApp.Droid.Resource.Styleable.View_paddingStart;
-			global::BottomNavigationBar.Resource.Styleable.View_theme = global::NRGScoutingApp.Droid.Resource.Styleable.View_theme;
-			global::BottomNavigationBar.Resource.Styleable.ViewBackgroundHelper = global::NRGScoutingApp.Droid.Resource.Styleable.ViewBackgroundHelper;
-			global::BottomNavigationBar.Resource.Styleable.ViewBackgroundHelper_android_background = global::NRGScoutingApp.Droid.Resource.Styleable.ViewBackgroundHelper_android_background;
-			global::BottomNavigationBar.Resource.Styleable.ViewBackgroundHelper_backgroundTint = global::NRGScoutingApp.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTint;
-			global::BottomNavigationBar.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode = global::NRGScoutingApp.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode;
-			global::BottomNavigationBar.Resource.Styleable.ViewStubCompat = global::NRGScoutingApp.Droid.Resource.Styleable.ViewStubCompat;
-			global::BottomNavigationBar.Resource.Styleable.ViewStubCompat_android_id = global::NRGScoutingApp.Droid.Resource.Styleable.ViewStubCompat_android_id;
-			global::BottomNavigationBar.Resource.Styleable.ViewStubCompat_android_inflatedId = global::NRGScoutingApp.Droid.Resource.Styleable.ViewStubCompat_android_inflatedId;
-			global::BottomNavigationBar.Resource.Styleable.ViewStubCompat_android_layout = global::NRGScoutingApp.Droid.Resource.Styleable.ViewStubCompat_android_layout;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.abc_fade_in = global::NRGScoutingApp.Droid.Resource.Animation.abc_fade_in;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.abc_fade_out = global::NRGScoutingApp.Droid.Resource.Animation.abc_fade_out;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.abc_grow_fade_in_from_bottom = global::NRGScoutingApp.Droid.Resource.Animation.abc_grow_fade_in_from_bottom;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.abc_popup_enter = global::NRGScoutingApp.Droid.Resource.Animation.abc_popup_enter;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.abc_popup_exit = global::NRGScoutingApp.Droid.Resource.Animation.abc_popup_exit;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.abc_shrink_fade_out_from_bottom = global::NRGScoutingApp.Droid.Resource.Animation.abc_shrink_fade_out_from_bottom;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.abc_slide_in_bottom = global::NRGScoutingApp.Droid.Resource.Animation.abc_slide_in_bottom;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.abc_slide_in_top = global::NRGScoutingApp.Droid.Resource.Animation.abc_slide_in_top;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.abc_slide_out_bottom = global::NRGScoutingApp.Droid.Resource.Animation.abc_slide_out_bottom;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.abc_slide_out_top = global::NRGScoutingApp.Droid.Resource.Animation.abc_slide_out_top;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.design_bottom_sheet_slide_in = global::NRGScoutingApp.Droid.Resource.Animation.design_bottom_sheet_slide_in;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.design_bottom_sheet_slide_out = global::NRGScoutingApp.Droid.Resource.Animation.design_bottom_sheet_slide_out;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.design_snackbar_in = global::NRGScoutingApp.Droid.Resource.Animation.design_snackbar_in;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.design_snackbar_out = global::NRGScoutingApp.Droid.Resource.Animation.design_snackbar_out;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.EnterFromLeft = global::NRGScoutingApp.Droid.Resource.Animation.EnterFromLeft;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.EnterFromRight = global::NRGScoutingApp.Droid.Resource.Animation.EnterFromRight;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.ExitToLeft = global::NRGScoutingApp.Droid.Resource.Animation.ExitToLeft;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.ExitToRight = global::NRGScoutingApp.Droid.Resource.Animation.ExitToRight;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.tooltip_enter = global::NRGScoutingApp.Droid.Resource.Animation.tooltip_enter;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.tooltip_exit = global::NRGScoutingApp.Droid.Resource.Animation.tooltip_exit;
+			global::Xamarin.Forms.Platform.Android.Resource.Animator.design_appbar_state_list_animator = global::NRGScoutingApp.Droid.Resource.Animator.design_appbar_state_list_animator;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarDivider = global::NRGScoutingApp.Droid.Resource.Attribute.actionBarDivider;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarItemBackground = global::NRGScoutingApp.Droid.Resource.Attribute.actionBarItemBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarPopupTheme = global::NRGScoutingApp.Droid.Resource.Attribute.actionBarPopupTheme;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::NRGScoutingApp.Droid.Resource.Attribute.actionBarSize;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSplitStyle = global::NRGScoutingApp.Droid.Resource.Attribute.actionBarSplitStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarStyle = global::NRGScoutingApp.Droid.Resource.Attribute.actionBarStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarTabBarStyle = global::NRGScoutingApp.Droid.Resource.Attribute.actionBarTabBarStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarTabStyle = global::NRGScoutingApp.Droid.Resource.Attribute.actionBarTabStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarTabTextStyle = global::NRGScoutingApp.Droid.Resource.Attribute.actionBarTabTextStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarTheme = global::NRGScoutingApp.Droid.Resource.Attribute.actionBarTheme;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarWidgetTheme = global::NRGScoutingApp.Droid.Resource.Attribute.actionBarWidgetTheme;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionButtonStyle = global::NRGScoutingApp.Droid.Resource.Attribute.actionButtonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionDropDownStyle = global::NRGScoutingApp.Droid.Resource.Attribute.actionDropDownStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionLayout = global::NRGScoutingApp.Droid.Resource.Attribute.actionLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionMenuTextAppearance = global::NRGScoutingApp.Droid.Resource.Attribute.actionMenuTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionMenuTextColor = global::NRGScoutingApp.Droid.Resource.Attribute.actionMenuTextColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionModeBackground = global::NRGScoutingApp.Droid.Resource.Attribute.actionModeBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionModeCloseButtonStyle = global::NRGScoutingApp.Droid.Resource.Attribute.actionModeCloseButtonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionModeCloseDrawable = global::NRGScoutingApp.Droid.Resource.Attribute.actionModeCloseDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionModeCopyDrawable = global::NRGScoutingApp.Droid.Resource.Attribute.actionModeCopyDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionModeCutDrawable = global::NRGScoutingApp.Droid.Resource.Attribute.actionModeCutDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionModeFindDrawable = global::NRGScoutingApp.Droid.Resource.Attribute.actionModeFindDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionModePasteDrawable = global::NRGScoutingApp.Droid.Resource.Attribute.actionModePasteDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionModePopupWindowStyle = global::NRGScoutingApp.Droid.Resource.Attribute.actionModePopupWindowStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionModeSelectAllDrawable = global::NRGScoutingApp.Droid.Resource.Attribute.actionModeSelectAllDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionModeShareDrawable = global::NRGScoutingApp.Droid.Resource.Attribute.actionModeShareDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionModeSplitBackground = global::NRGScoutingApp.Droid.Resource.Attribute.actionModeSplitBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionModeStyle = global::NRGScoutingApp.Droid.Resource.Attribute.actionModeStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionModeWebSearchDrawable = global::NRGScoutingApp.Droid.Resource.Attribute.actionModeWebSearchDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionOverflowButtonStyle = global::NRGScoutingApp.Droid.Resource.Attribute.actionOverflowButtonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionOverflowMenuStyle = global::NRGScoutingApp.Droid.Resource.Attribute.actionOverflowMenuStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionProviderClass = global::NRGScoutingApp.Droid.Resource.Attribute.actionProviderClass;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionViewClass = global::NRGScoutingApp.Droid.Resource.Attribute.actionViewClass;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.activityChooserViewStyle = global::NRGScoutingApp.Droid.Resource.Attribute.activityChooserViewStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.alertDialogButtonGroupStyle = global::NRGScoutingApp.Droid.Resource.Attribute.alertDialogButtonGroupStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.alertDialogCenterButtons = global::NRGScoutingApp.Droid.Resource.Attribute.alertDialogCenterButtons;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.alertDialogStyle = global::NRGScoutingApp.Droid.Resource.Attribute.alertDialogStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.alertDialogTheme = global::NRGScoutingApp.Droid.Resource.Attribute.alertDialogTheme;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.allowStacking = global::NRGScoutingApp.Droid.Resource.Attribute.allowStacking;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.alpha = global::NRGScoutingApp.Droid.Resource.Attribute.alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.alphabeticModifiers = global::NRGScoutingApp.Droid.Resource.Attribute.alphabeticModifiers;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.arrowHeadLength = global::NRGScoutingApp.Droid.Resource.Attribute.arrowHeadLength;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.arrowShaftLength = global::NRGScoutingApp.Droid.Resource.Attribute.arrowShaftLength;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.autoCompleteTextViewStyle = global::NRGScoutingApp.Droid.Resource.Attribute.autoCompleteTextViewStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.autoSizeMaxTextSize = global::NRGScoutingApp.Droid.Resource.Attribute.autoSizeMaxTextSize;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.autoSizeMinTextSize = global::NRGScoutingApp.Droid.Resource.Attribute.autoSizeMinTextSize;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.autoSizePresetSizes = global::NRGScoutingApp.Droid.Resource.Attribute.autoSizePresetSizes;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.autoSizeStepGranularity = global::NRGScoutingApp.Droid.Resource.Attribute.autoSizeStepGranularity;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.autoSizeTextType = global::NRGScoutingApp.Droid.Resource.Attribute.autoSizeTextType;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.background = global::NRGScoutingApp.Droid.Resource.Attribute.background;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.backgroundSplit = global::NRGScoutingApp.Droid.Resource.Attribute.backgroundSplit;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.backgroundStacked = global::NRGScoutingApp.Droid.Resource.Attribute.backgroundStacked;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.backgroundTint = global::NRGScoutingApp.Droid.Resource.Attribute.backgroundTint;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.backgroundTintMode = global::NRGScoutingApp.Droid.Resource.Attribute.backgroundTintMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.barLength = global::NRGScoutingApp.Droid.Resource.Attribute.barLength;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.behavior_autoHide = global::NRGScoutingApp.Droid.Resource.Attribute.behavior_autoHide;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.behavior_hideable = global::NRGScoutingApp.Droid.Resource.Attribute.behavior_hideable;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.behavior_overlapTop = global::NRGScoutingApp.Droid.Resource.Attribute.behavior_overlapTop;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.behavior_peekHeight = global::NRGScoutingApp.Droid.Resource.Attribute.behavior_peekHeight;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.behavior_skipCollapsed = global::NRGScoutingApp.Droid.Resource.Attribute.behavior_skipCollapsed;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.borderWidth = global::NRGScoutingApp.Droid.Resource.Attribute.borderWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.borderlessButtonStyle = global::NRGScoutingApp.Droid.Resource.Attribute.borderlessButtonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.bottomSheetDialogTheme = global::NRGScoutingApp.Droid.Resource.Attribute.bottomSheetDialogTheme;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.bottomSheetStyle = global::NRGScoutingApp.Droid.Resource.Attribute.bottomSheetStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.buttonBarButtonStyle = global::NRGScoutingApp.Droid.Resource.Attribute.buttonBarButtonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.buttonBarNegativeButtonStyle = global::NRGScoutingApp.Droid.Resource.Attribute.buttonBarNegativeButtonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.buttonBarNeutralButtonStyle = global::NRGScoutingApp.Droid.Resource.Attribute.buttonBarNeutralButtonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.buttonBarPositiveButtonStyle = global::NRGScoutingApp.Droid.Resource.Attribute.buttonBarPositiveButtonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.buttonBarStyle = global::NRGScoutingApp.Droid.Resource.Attribute.buttonBarStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.buttonGravity = global::NRGScoutingApp.Droid.Resource.Attribute.buttonGravity;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.buttonPanelSideLayout = global::NRGScoutingApp.Droid.Resource.Attribute.buttonPanelSideLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.buttonStyle = global::NRGScoutingApp.Droid.Resource.Attribute.buttonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.buttonStyleSmall = global::NRGScoutingApp.Droid.Resource.Attribute.buttonStyleSmall;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.buttonTint = global::NRGScoutingApp.Droid.Resource.Attribute.buttonTint;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.buttonTintMode = global::NRGScoutingApp.Droid.Resource.Attribute.buttonTintMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.cardBackgroundColor = global::NRGScoutingApp.Droid.Resource.Attribute.cardBackgroundColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.cardCornerRadius = global::NRGScoutingApp.Droid.Resource.Attribute.cardCornerRadius;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.cardElevation = global::NRGScoutingApp.Droid.Resource.Attribute.cardElevation;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.cardMaxElevation = global::NRGScoutingApp.Droid.Resource.Attribute.cardMaxElevation;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.cardPreventCornerOverlap = global::NRGScoutingApp.Droid.Resource.Attribute.cardPreventCornerOverlap;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.cardUseCompatPadding = global::NRGScoutingApp.Droid.Resource.Attribute.cardUseCompatPadding;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.checkboxStyle = global::NRGScoutingApp.Droid.Resource.Attribute.checkboxStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.checkedTextViewStyle = global::NRGScoutingApp.Droid.Resource.Attribute.checkedTextViewStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.closeIcon = global::NRGScoutingApp.Droid.Resource.Attribute.closeIcon;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.closeItemLayout = global::NRGScoutingApp.Droid.Resource.Attribute.closeItemLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.collapseContentDescription = global::NRGScoutingApp.Droid.Resource.Attribute.collapseContentDescription;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.collapseIcon = global::NRGScoutingApp.Droid.Resource.Attribute.collapseIcon;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.collapsedTitleGravity = global::NRGScoutingApp.Droid.Resource.Attribute.collapsedTitleGravity;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.collapsedTitleTextAppearance = global::NRGScoutingApp.Droid.Resource.Attribute.collapsedTitleTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.color = global::NRGScoutingApp.Droid.Resource.Attribute.color;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.colorAccent = global::NRGScoutingApp.Droid.Resource.Attribute.colorAccent;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.colorBackgroundFloating = global::NRGScoutingApp.Droid.Resource.Attribute.colorBackgroundFloating;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.colorButtonNormal = global::NRGScoutingApp.Droid.Resource.Attribute.colorButtonNormal;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.colorControlActivated = global::NRGScoutingApp.Droid.Resource.Attribute.colorControlActivated;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.colorControlHighlight = global::NRGScoutingApp.Droid.Resource.Attribute.colorControlHighlight;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.colorControlNormal = global::NRGScoutingApp.Droid.Resource.Attribute.colorControlNormal;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.colorError = global::NRGScoutingApp.Droid.Resource.Attribute.colorError;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.colorPrimary = global::NRGScoutingApp.Droid.Resource.Attribute.colorPrimary;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.colorPrimaryDark = global::NRGScoutingApp.Droid.Resource.Attribute.colorPrimaryDark;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.colorSwitchThumbNormal = global::NRGScoutingApp.Droid.Resource.Attribute.colorSwitchThumbNormal;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.commitIcon = global::NRGScoutingApp.Droid.Resource.Attribute.commitIcon;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.contentDescription = global::NRGScoutingApp.Droid.Resource.Attribute.contentDescription;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.contentInsetEnd = global::NRGScoutingApp.Droid.Resource.Attribute.contentInsetEnd;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.contentInsetEndWithActions = global::NRGScoutingApp.Droid.Resource.Attribute.contentInsetEndWithActions;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.contentInsetLeft = global::NRGScoutingApp.Droid.Resource.Attribute.contentInsetLeft;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.contentInsetRight = global::NRGScoutingApp.Droid.Resource.Attribute.contentInsetRight;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.contentInsetStart = global::NRGScoutingApp.Droid.Resource.Attribute.contentInsetStart;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.contentInsetStartWithNavigation = global::NRGScoutingApp.Droid.Resource.Attribute.contentInsetStartWithNavigation;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.contentPadding = global::NRGScoutingApp.Droid.Resource.Attribute.contentPadding;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.contentPaddingBottom = global::NRGScoutingApp.Droid.Resource.Attribute.contentPaddingBottom;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.contentPaddingLeft = global::NRGScoutingApp.Droid.Resource.Attribute.contentPaddingLeft;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.contentPaddingRight = global::NRGScoutingApp.Droid.Resource.Attribute.contentPaddingRight;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.contentPaddingTop = global::NRGScoutingApp.Droid.Resource.Attribute.contentPaddingTop;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.contentScrim = global::NRGScoutingApp.Droid.Resource.Attribute.contentScrim;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.controlBackground = global::NRGScoutingApp.Droid.Resource.Attribute.controlBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.counterEnabled = global::NRGScoutingApp.Droid.Resource.Attribute.counterEnabled;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.counterMaxLength = global::NRGScoutingApp.Droid.Resource.Attribute.counterMaxLength;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.counterOverflowTextAppearance = global::NRGScoutingApp.Droid.Resource.Attribute.counterOverflowTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.counterTextAppearance = global::NRGScoutingApp.Droid.Resource.Attribute.counterTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.customNavigationLayout = global::NRGScoutingApp.Droid.Resource.Attribute.customNavigationLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.defaultQueryHint = global::NRGScoutingApp.Droid.Resource.Attribute.defaultQueryHint;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.dialogPreferredPadding = global::NRGScoutingApp.Droid.Resource.Attribute.dialogPreferredPadding;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.dialogTheme = global::NRGScoutingApp.Droid.Resource.Attribute.dialogTheme;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.displayOptions = global::NRGScoutingApp.Droid.Resource.Attribute.displayOptions;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.divider = global::NRGScoutingApp.Droid.Resource.Attribute.divider;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.dividerHorizontal = global::NRGScoutingApp.Droid.Resource.Attribute.dividerHorizontal;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.dividerPadding = global::NRGScoutingApp.Droid.Resource.Attribute.dividerPadding;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.dividerVertical = global::NRGScoutingApp.Droid.Resource.Attribute.dividerVertical;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.drawableSize = global::NRGScoutingApp.Droid.Resource.Attribute.drawableSize;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.drawerArrowStyle = global::NRGScoutingApp.Droid.Resource.Attribute.drawerArrowStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.dropDownListViewStyle = global::NRGScoutingApp.Droid.Resource.Attribute.dropDownListViewStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.dropdownListPreferredItemHeight = global::NRGScoutingApp.Droid.Resource.Attribute.dropdownListPreferredItemHeight;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.editTextBackground = global::NRGScoutingApp.Droid.Resource.Attribute.editTextBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.editTextColor = global::NRGScoutingApp.Droid.Resource.Attribute.editTextColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.editTextStyle = global::NRGScoutingApp.Droid.Resource.Attribute.editTextStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.elevation = global::NRGScoutingApp.Droid.Resource.Attribute.elevation;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.errorEnabled = global::NRGScoutingApp.Droid.Resource.Attribute.errorEnabled;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.errorTextAppearance = global::NRGScoutingApp.Droid.Resource.Attribute.errorTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.expandActivityOverflowButtonDrawable = global::NRGScoutingApp.Droid.Resource.Attribute.expandActivityOverflowButtonDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.expanded = global::NRGScoutingApp.Droid.Resource.Attribute.expanded;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.expandedTitleGravity = global::NRGScoutingApp.Droid.Resource.Attribute.expandedTitleGravity;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.expandedTitleMargin = global::NRGScoutingApp.Droid.Resource.Attribute.expandedTitleMargin;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.expandedTitleMarginBottom = global::NRGScoutingApp.Droid.Resource.Attribute.expandedTitleMarginBottom;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.expandedTitleMarginEnd = global::NRGScoutingApp.Droid.Resource.Attribute.expandedTitleMarginEnd;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.expandedTitleMarginStart = global::NRGScoutingApp.Droid.Resource.Attribute.expandedTitleMarginStart;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.expandedTitleMarginTop = global::NRGScoutingApp.Droid.Resource.Attribute.expandedTitleMarginTop;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.expandedTitleTextAppearance = global::NRGScoutingApp.Droid.Resource.Attribute.expandedTitleTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.fabSize = global::NRGScoutingApp.Droid.Resource.Attribute.fabSize;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.fastScrollEnabled = global::NRGScoutingApp.Droid.Resource.Attribute.fastScrollEnabled;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.fastScrollHorizontalThumbDrawable = global::NRGScoutingApp.Droid.Resource.Attribute.fastScrollHorizontalThumbDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.fastScrollHorizontalTrackDrawable = global::NRGScoutingApp.Droid.Resource.Attribute.fastScrollHorizontalTrackDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.fastScrollVerticalThumbDrawable = global::NRGScoutingApp.Droid.Resource.Attribute.fastScrollVerticalThumbDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.fastScrollVerticalTrackDrawable = global::NRGScoutingApp.Droid.Resource.Attribute.fastScrollVerticalTrackDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.font = global::NRGScoutingApp.Droid.Resource.Attribute.font;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.fontFamily = global::NRGScoutingApp.Droid.Resource.Attribute.fontFamily;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.fontProviderAuthority = global::NRGScoutingApp.Droid.Resource.Attribute.fontProviderAuthority;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.fontProviderCerts = global::NRGScoutingApp.Droid.Resource.Attribute.fontProviderCerts;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.fontProviderFetchStrategy = global::NRGScoutingApp.Droid.Resource.Attribute.fontProviderFetchStrategy;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.fontProviderFetchTimeout = global::NRGScoutingApp.Droid.Resource.Attribute.fontProviderFetchTimeout;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.fontProviderPackage = global::NRGScoutingApp.Droid.Resource.Attribute.fontProviderPackage;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.fontProviderQuery = global::NRGScoutingApp.Droid.Resource.Attribute.fontProviderQuery;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.fontStyle = global::NRGScoutingApp.Droid.Resource.Attribute.fontStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.fontWeight = global::NRGScoutingApp.Droid.Resource.Attribute.fontWeight;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.foregroundInsidePadding = global::NRGScoutingApp.Droid.Resource.Attribute.foregroundInsidePadding;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.gapBetweenBars = global::NRGScoutingApp.Droid.Resource.Attribute.gapBetweenBars;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.goIcon = global::NRGScoutingApp.Droid.Resource.Attribute.goIcon;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.headerLayout = global::NRGScoutingApp.Droid.Resource.Attribute.headerLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.height = global::NRGScoutingApp.Droid.Resource.Attribute.height;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.hideOnContentScroll = global::NRGScoutingApp.Droid.Resource.Attribute.hideOnContentScroll;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.hintAnimationEnabled = global::NRGScoutingApp.Droid.Resource.Attribute.hintAnimationEnabled;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.hintEnabled = global::NRGScoutingApp.Droid.Resource.Attribute.hintEnabled;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.hintTextAppearance = global::NRGScoutingApp.Droid.Resource.Attribute.hintTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.homeAsUpIndicator = global::NRGScoutingApp.Droid.Resource.Attribute.homeAsUpIndicator;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.homeLayout = global::NRGScoutingApp.Droid.Resource.Attribute.homeLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.icon = global::NRGScoutingApp.Droid.Resource.Attribute.icon;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.iconTint = global::NRGScoutingApp.Droid.Resource.Attribute.iconTint;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.iconTintMode = global::NRGScoutingApp.Droid.Resource.Attribute.iconTintMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.iconifiedByDefault = global::NRGScoutingApp.Droid.Resource.Attribute.iconifiedByDefault;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.imageButtonStyle = global::NRGScoutingApp.Droid.Resource.Attribute.imageButtonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.indeterminateProgressStyle = global::NRGScoutingApp.Droid.Resource.Attribute.indeterminateProgressStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.initialActivityCount = global::NRGScoutingApp.Droid.Resource.Attribute.initialActivityCount;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.insetForeground = global::NRGScoutingApp.Droid.Resource.Attribute.insetForeground;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.isLightTheme = global::NRGScoutingApp.Droid.Resource.Attribute.isLightTheme;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.itemBackground = global::NRGScoutingApp.Droid.Resource.Attribute.itemBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.itemIconTint = global::NRGScoutingApp.Droid.Resource.Attribute.itemIconTint;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.itemPadding = global::NRGScoutingApp.Droid.Resource.Attribute.itemPadding;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.itemTextAppearance = global::NRGScoutingApp.Droid.Resource.Attribute.itemTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.itemTextColor = global::NRGScoutingApp.Droid.Resource.Attribute.itemTextColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.keylines = global::NRGScoutingApp.Droid.Resource.Attribute.keylines;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.layout = global::NRGScoutingApp.Droid.Resource.Attribute.layout;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.layoutManager = global::NRGScoutingApp.Droid.Resource.Attribute.layoutManager;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.layout_anchor = global::NRGScoutingApp.Droid.Resource.Attribute.layout_anchor;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.layout_anchorGravity = global::NRGScoutingApp.Droid.Resource.Attribute.layout_anchorGravity;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.layout_behavior = global::NRGScoutingApp.Droid.Resource.Attribute.layout_behavior;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.layout_collapseMode = global::NRGScoutingApp.Droid.Resource.Attribute.layout_collapseMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.layout_collapseParallaxMultiplier = global::NRGScoutingApp.Droid.Resource.Attribute.layout_collapseParallaxMultiplier;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.layout_dodgeInsetEdges = global::NRGScoutingApp.Droid.Resource.Attribute.layout_dodgeInsetEdges;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.layout_insetEdge = global::NRGScoutingApp.Droid.Resource.Attribute.layout_insetEdge;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.layout_keyline = global::NRGScoutingApp.Droid.Resource.Attribute.layout_keyline;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.layout_scrollFlags = global::NRGScoutingApp.Droid.Resource.Attribute.layout_scrollFlags;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.layout_scrollInterpolator = global::NRGScoutingApp.Droid.Resource.Attribute.layout_scrollInterpolator;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.listChoiceBackgroundIndicator = global::NRGScoutingApp.Droid.Resource.Attribute.listChoiceBackgroundIndicator;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.listDividerAlertDialog = global::NRGScoutingApp.Droid.Resource.Attribute.listDividerAlertDialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.listItemLayout = global::NRGScoutingApp.Droid.Resource.Attribute.listItemLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.listLayout = global::NRGScoutingApp.Droid.Resource.Attribute.listLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.listMenuViewStyle = global::NRGScoutingApp.Droid.Resource.Attribute.listMenuViewStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.listPopupWindowStyle = global::NRGScoutingApp.Droid.Resource.Attribute.listPopupWindowStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.listPreferredItemHeight = global::NRGScoutingApp.Droid.Resource.Attribute.listPreferredItemHeight;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.listPreferredItemHeightLarge = global::NRGScoutingApp.Droid.Resource.Attribute.listPreferredItemHeightLarge;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.listPreferredItemHeightSmall = global::NRGScoutingApp.Droid.Resource.Attribute.listPreferredItemHeightSmall;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.listPreferredItemPaddingLeft = global::NRGScoutingApp.Droid.Resource.Attribute.listPreferredItemPaddingLeft;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.listPreferredItemPaddingRight = global::NRGScoutingApp.Droid.Resource.Attribute.listPreferredItemPaddingRight;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.logo = global::NRGScoutingApp.Droid.Resource.Attribute.logo;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.logoDescription = global::NRGScoutingApp.Droid.Resource.Attribute.logoDescription;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.maxActionInlineWidth = global::NRGScoutingApp.Droid.Resource.Attribute.maxActionInlineWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.maxButtonHeight = global::NRGScoutingApp.Droid.Resource.Attribute.maxButtonHeight;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.measureWithLargestChild = global::NRGScoutingApp.Droid.Resource.Attribute.measureWithLargestChild;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.menu = global::NRGScoutingApp.Droid.Resource.Attribute.menu;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.multiChoiceItemLayout = global::NRGScoutingApp.Droid.Resource.Attribute.multiChoiceItemLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.navigationContentDescription = global::NRGScoutingApp.Droid.Resource.Attribute.navigationContentDescription;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.navigationIcon = global::NRGScoutingApp.Droid.Resource.Attribute.navigationIcon;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.navigationMode = global::NRGScoutingApp.Droid.Resource.Attribute.navigationMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.numericModifiers = global::NRGScoutingApp.Droid.Resource.Attribute.numericModifiers;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.overlapAnchor = global::NRGScoutingApp.Droid.Resource.Attribute.overlapAnchor;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.paddingBottomNoButtons = global::NRGScoutingApp.Droid.Resource.Attribute.paddingBottomNoButtons;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.paddingEnd = global::NRGScoutingApp.Droid.Resource.Attribute.paddingEnd;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.paddingStart = global::NRGScoutingApp.Droid.Resource.Attribute.paddingStart;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.paddingTopNoTitle = global::NRGScoutingApp.Droid.Resource.Attribute.paddingTopNoTitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.panelBackground = global::NRGScoutingApp.Droid.Resource.Attribute.panelBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.panelMenuListTheme = global::NRGScoutingApp.Droid.Resource.Attribute.panelMenuListTheme;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.panelMenuListWidth = global::NRGScoutingApp.Droid.Resource.Attribute.panelMenuListWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.passwordToggleContentDescription = global::NRGScoutingApp.Droid.Resource.Attribute.passwordToggleContentDescription;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.passwordToggleDrawable = global::NRGScoutingApp.Droid.Resource.Attribute.passwordToggleDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.passwordToggleEnabled = global::NRGScoutingApp.Droid.Resource.Attribute.passwordToggleEnabled;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.passwordToggleTint = global::NRGScoutingApp.Droid.Resource.Attribute.passwordToggleTint;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.passwordToggleTintMode = global::NRGScoutingApp.Droid.Resource.Attribute.passwordToggleTintMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.popupMenuStyle = global::NRGScoutingApp.Droid.Resource.Attribute.popupMenuStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.popupTheme = global::NRGScoutingApp.Droid.Resource.Attribute.popupTheme;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.popupWindowStyle = global::NRGScoutingApp.Droid.Resource.Attribute.popupWindowStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.preserveIconSpacing = global::NRGScoutingApp.Droid.Resource.Attribute.preserveIconSpacing;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.pressedTranslationZ = global::NRGScoutingApp.Droid.Resource.Attribute.pressedTranslationZ;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.progressBarPadding = global::NRGScoutingApp.Droid.Resource.Attribute.progressBarPadding;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.progressBarStyle = global::NRGScoutingApp.Droid.Resource.Attribute.progressBarStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.queryBackground = global::NRGScoutingApp.Droid.Resource.Attribute.queryBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.queryHint = global::NRGScoutingApp.Droid.Resource.Attribute.queryHint;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.radioButtonStyle = global::NRGScoutingApp.Droid.Resource.Attribute.radioButtonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.ratingBarStyle = global::NRGScoutingApp.Droid.Resource.Attribute.ratingBarStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.ratingBarStyleIndicator = global::NRGScoutingApp.Droid.Resource.Attribute.ratingBarStyleIndicator;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.ratingBarStyleSmall = global::NRGScoutingApp.Droid.Resource.Attribute.ratingBarStyleSmall;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.reverseLayout = global::NRGScoutingApp.Droid.Resource.Attribute.reverseLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.rippleColor = global::NRGScoutingApp.Droid.Resource.Attribute.rippleColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.scrimAnimationDuration = global::NRGScoutingApp.Droid.Resource.Attribute.scrimAnimationDuration;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.scrimVisibleHeightTrigger = global::NRGScoutingApp.Droid.Resource.Attribute.scrimVisibleHeightTrigger;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.searchHintIcon = global::NRGScoutingApp.Droid.Resource.Attribute.searchHintIcon;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.searchIcon = global::NRGScoutingApp.Droid.Resource.Attribute.searchIcon;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.searchViewStyle = global::NRGScoutingApp.Droid.Resource.Attribute.searchViewStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.seekBarStyle = global::NRGScoutingApp.Droid.Resource.Attribute.seekBarStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.selectableItemBackground = global::NRGScoutingApp.Droid.Resource.Attribute.selectableItemBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.selectableItemBackgroundBorderless = global::NRGScoutingApp.Droid.Resource.Attribute.selectableItemBackgroundBorderless;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.showAsAction = global::NRGScoutingApp.Droid.Resource.Attribute.showAsAction;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.showDividers = global::NRGScoutingApp.Droid.Resource.Attribute.showDividers;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.showText = global::NRGScoutingApp.Droid.Resource.Attribute.showText;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.showTitle = global::NRGScoutingApp.Droid.Resource.Attribute.showTitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.singleChoiceItemLayout = global::NRGScoutingApp.Droid.Resource.Attribute.singleChoiceItemLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.spanCount = global::NRGScoutingApp.Droid.Resource.Attribute.spanCount;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.spinBars = global::NRGScoutingApp.Droid.Resource.Attribute.spinBars;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.spinnerDropDownItemStyle = global::NRGScoutingApp.Droid.Resource.Attribute.spinnerDropDownItemStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.spinnerStyle = global::NRGScoutingApp.Droid.Resource.Attribute.spinnerStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.splitTrack = global::NRGScoutingApp.Droid.Resource.Attribute.splitTrack;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.srcCompat = global::NRGScoutingApp.Droid.Resource.Attribute.srcCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.stackFromEnd = global::NRGScoutingApp.Droid.Resource.Attribute.stackFromEnd;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.state_above_anchor = global::NRGScoutingApp.Droid.Resource.Attribute.state_above_anchor;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.state_collapsed = global::NRGScoutingApp.Droid.Resource.Attribute.state_collapsed;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.state_collapsible = global::NRGScoutingApp.Droid.Resource.Attribute.state_collapsible;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.statusBarBackground = global::NRGScoutingApp.Droid.Resource.Attribute.statusBarBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.statusBarScrim = global::NRGScoutingApp.Droid.Resource.Attribute.statusBarScrim;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.subMenuArrow = global::NRGScoutingApp.Droid.Resource.Attribute.subMenuArrow;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.submitBackground = global::NRGScoutingApp.Droid.Resource.Attribute.submitBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.subtitle = global::NRGScoutingApp.Droid.Resource.Attribute.subtitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.subtitleTextAppearance = global::NRGScoutingApp.Droid.Resource.Attribute.subtitleTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.subtitleTextColor = global::NRGScoutingApp.Droid.Resource.Attribute.subtitleTextColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.subtitleTextStyle = global::NRGScoutingApp.Droid.Resource.Attribute.subtitleTextStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.suggestionRowLayout = global::NRGScoutingApp.Droid.Resource.Attribute.suggestionRowLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.switchMinWidth = global::NRGScoutingApp.Droid.Resource.Attribute.switchMinWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.switchPadding = global::NRGScoutingApp.Droid.Resource.Attribute.switchPadding;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.switchStyle = global::NRGScoutingApp.Droid.Resource.Attribute.switchStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.switchTextAppearance = global::NRGScoutingApp.Droid.Resource.Attribute.switchTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tabBackground = global::NRGScoutingApp.Droid.Resource.Attribute.tabBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tabContentStart = global::NRGScoutingApp.Droid.Resource.Attribute.tabContentStart;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tabGravity = global::NRGScoutingApp.Droid.Resource.Attribute.tabGravity;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tabIndicatorColor = global::NRGScoutingApp.Droid.Resource.Attribute.tabIndicatorColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tabIndicatorHeight = global::NRGScoutingApp.Droid.Resource.Attribute.tabIndicatorHeight;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tabMaxWidth = global::NRGScoutingApp.Droid.Resource.Attribute.tabMaxWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tabMinWidth = global::NRGScoutingApp.Droid.Resource.Attribute.tabMinWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tabMode = global::NRGScoutingApp.Droid.Resource.Attribute.tabMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tabPadding = global::NRGScoutingApp.Droid.Resource.Attribute.tabPadding;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tabPaddingBottom = global::NRGScoutingApp.Droid.Resource.Attribute.tabPaddingBottom;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tabPaddingEnd = global::NRGScoutingApp.Droid.Resource.Attribute.tabPaddingEnd;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tabPaddingStart = global::NRGScoutingApp.Droid.Resource.Attribute.tabPaddingStart;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tabPaddingTop = global::NRGScoutingApp.Droid.Resource.Attribute.tabPaddingTop;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tabSelectedTextColor = global::NRGScoutingApp.Droid.Resource.Attribute.tabSelectedTextColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tabTextAppearance = global::NRGScoutingApp.Droid.Resource.Attribute.tabTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tabTextColor = global::NRGScoutingApp.Droid.Resource.Attribute.tabTextColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.textAllCaps = global::NRGScoutingApp.Droid.Resource.Attribute.textAllCaps;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.textAppearanceLargePopupMenu = global::NRGScoutingApp.Droid.Resource.Attribute.textAppearanceLargePopupMenu;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.textAppearanceListItem = global::NRGScoutingApp.Droid.Resource.Attribute.textAppearanceListItem;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.textAppearanceListItemSecondary = global::NRGScoutingApp.Droid.Resource.Attribute.textAppearanceListItemSecondary;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.textAppearanceListItemSmall = global::NRGScoutingApp.Droid.Resource.Attribute.textAppearanceListItemSmall;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.textAppearancePopupMenuHeader = global::NRGScoutingApp.Droid.Resource.Attribute.textAppearancePopupMenuHeader;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.textAppearanceSearchResultSubtitle = global::NRGScoutingApp.Droid.Resource.Attribute.textAppearanceSearchResultSubtitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.textAppearanceSearchResultTitle = global::NRGScoutingApp.Droid.Resource.Attribute.textAppearanceSearchResultTitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.textAppearanceSmallPopupMenu = global::NRGScoutingApp.Droid.Resource.Attribute.textAppearanceSmallPopupMenu;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.textColorAlertDialogListItem = global::NRGScoutingApp.Droid.Resource.Attribute.textColorAlertDialogListItem;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.textColorError = global::NRGScoutingApp.Droid.Resource.Attribute.textColorError;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.textColorSearchUrl = global::NRGScoutingApp.Droid.Resource.Attribute.textColorSearchUrl;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.theme = global::NRGScoutingApp.Droid.Resource.Attribute.theme;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.thickness = global::NRGScoutingApp.Droid.Resource.Attribute.thickness;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.thumbTextPadding = global::NRGScoutingApp.Droid.Resource.Attribute.thumbTextPadding;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.thumbTint = global::NRGScoutingApp.Droid.Resource.Attribute.thumbTint;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.thumbTintMode = global::NRGScoutingApp.Droid.Resource.Attribute.thumbTintMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tickMark = global::NRGScoutingApp.Droid.Resource.Attribute.tickMark;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tickMarkTint = global::NRGScoutingApp.Droid.Resource.Attribute.tickMarkTint;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tickMarkTintMode = global::NRGScoutingApp.Droid.Resource.Attribute.tickMarkTintMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tint = global::NRGScoutingApp.Droid.Resource.Attribute.tint;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tintMode = global::NRGScoutingApp.Droid.Resource.Attribute.tintMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.title = global::NRGScoutingApp.Droid.Resource.Attribute.title;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.titleEnabled = global::NRGScoutingApp.Droid.Resource.Attribute.titleEnabled;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.titleMargin = global::NRGScoutingApp.Droid.Resource.Attribute.titleMargin;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.titleMarginBottom = global::NRGScoutingApp.Droid.Resource.Attribute.titleMarginBottom;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.titleMarginEnd = global::NRGScoutingApp.Droid.Resource.Attribute.titleMarginEnd;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.titleMarginStart = global::NRGScoutingApp.Droid.Resource.Attribute.titleMarginStart;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.titleMarginTop = global::NRGScoutingApp.Droid.Resource.Attribute.titleMarginTop;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.titleMargins = global::NRGScoutingApp.Droid.Resource.Attribute.titleMargins;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.titleTextAppearance = global::NRGScoutingApp.Droid.Resource.Attribute.titleTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.titleTextColor = global::NRGScoutingApp.Droid.Resource.Attribute.titleTextColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.titleTextStyle = global::NRGScoutingApp.Droid.Resource.Attribute.titleTextStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.toolbarId = global::NRGScoutingApp.Droid.Resource.Attribute.toolbarId;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.toolbarNavigationButtonStyle = global::NRGScoutingApp.Droid.Resource.Attribute.toolbarNavigationButtonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.toolbarStyle = global::NRGScoutingApp.Droid.Resource.Attribute.toolbarStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tooltipForegroundColor = global::NRGScoutingApp.Droid.Resource.Attribute.tooltipForegroundColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tooltipFrameBackground = global::NRGScoutingApp.Droid.Resource.Attribute.tooltipFrameBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tooltipText = global::NRGScoutingApp.Droid.Resource.Attribute.tooltipText;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.track = global::NRGScoutingApp.Droid.Resource.Attribute.track;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.trackTint = global::NRGScoutingApp.Droid.Resource.Attribute.trackTint;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.trackTintMode = global::NRGScoutingApp.Droid.Resource.Attribute.trackTintMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.useCompatPadding = global::NRGScoutingApp.Droid.Resource.Attribute.useCompatPadding;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.voiceIcon = global::NRGScoutingApp.Droid.Resource.Attribute.voiceIcon;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.windowActionBar = global::NRGScoutingApp.Droid.Resource.Attribute.windowActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.windowActionBarOverlay = global::NRGScoutingApp.Droid.Resource.Attribute.windowActionBarOverlay;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.windowActionModeOverlay = global::NRGScoutingApp.Droid.Resource.Attribute.windowActionModeOverlay;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.windowFixedHeightMajor = global::NRGScoutingApp.Droid.Resource.Attribute.windowFixedHeightMajor;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.windowFixedHeightMinor = global::NRGScoutingApp.Droid.Resource.Attribute.windowFixedHeightMinor;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.windowFixedWidthMajor = global::NRGScoutingApp.Droid.Resource.Attribute.windowFixedWidthMajor;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.windowFixedWidthMinor = global::NRGScoutingApp.Droid.Resource.Attribute.windowFixedWidthMinor;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.windowMinWidthMajor = global::NRGScoutingApp.Droid.Resource.Attribute.windowMinWidthMajor;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.windowMinWidthMinor = global::NRGScoutingApp.Droid.Resource.Attribute.windowMinWidthMinor;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.windowNoTitle = global::NRGScoutingApp.Droid.Resource.Attribute.windowNoTitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Boolean.abc_action_bar_embed_tabs = global::NRGScoutingApp.Droid.Resource.Boolean.abc_action_bar_embed_tabs;
+			global::Xamarin.Forms.Platform.Android.Resource.Boolean.abc_allow_stacked_button_bar = global::NRGScoutingApp.Droid.Resource.Boolean.abc_allow_stacked_button_bar;
+			global::Xamarin.Forms.Platform.Android.Resource.Boolean.abc_config_actionMenuItemAllCaps = global::NRGScoutingApp.Droid.Resource.Boolean.abc_config_actionMenuItemAllCaps;
+			global::Xamarin.Forms.Platform.Android.Resource.Boolean.abc_config_closeDialogWhenTouchOutside = global::NRGScoutingApp.Droid.Resource.Boolean.abc_config_closeDialogWhenTouchOutside;
+			global::Xamarin.Forms.Platform.Android.Resource.Boolean.abc_config_showMenuShortcutsWhenKeyboardPresent = global::NRGScoutingApp.Droid.Resource.Boolean.abc_config_showMenuShortcutsWhenKeyboardPresent;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_background_cache_hint_selector_material_dark = global::NRGScoutingApp.Droid.Resource.Color.abc_background_cache_hint_selector_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_background_cache_hint_selector_material_light = global::NRGScoutingApp.Droid.Resource.Color.abc_background_cache_hint_selector_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_btn_colored_borderless_text_material = global::NRGScoutingApp.Droid.Resource.Color.abc_btn_colored_borderless_text_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_btn_colored_text_material = global::NRGScoutingApp.Droid.Resource.Color.abc_btn_colored_text_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_color_highlight_material = global::NRGScoutingApp.Droid.Resource.Color.abc_color_highlight_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_hint_foreground_material_dark = global::NRGScoutingApp.Droid.Resource.Color.abc_hint_foreground_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_hint_foreground_material_light = global::NRGScoutingApp.Droid.Resource.Color.abc_hint_foreground_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_input_method_navigation_guard = global::NRGScoutingApp.Droid.Resource.Color.abc_input_method_navigation_guard;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_primary_text_disable_only_material_dark = global::NRGScoutingApp.Droid.Resource.Color.abc_primary_text_disable_only_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_primary_text_disable_only_material_light = global::NRGScoutingApp.Droid.Resource.Color.abc_primary_text_disable_only_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_primary_text_material_dark = global::NRGScoutingApp.Droid.Resource.Color.abc_primary_text_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_primary_text_material_light = global::NRGScoutingApp.Droid.Resource.Color.abc_primary_text_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_search_url_text = global::NRGScoutingApp.Droid.Resource.Color.abc_search_url_text;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_search_url_text_normal = global::NRGScoutingApp.Droid.Resource.Color.abc_search_url_text_normal;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_search_url_text_pressed = global::NRGScoutingApp.Droid.Resource.Color.abc_search_url_text_pressed;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_search_url_text_selected = global::NRGScoutingApp.Droid.Resource.Color.abc_search_url_text_selected;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_secondary_text_material_dark = global::NRGScoutingApp.Droid.Resource.Color.abc_secondary_text_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_secondary_text_material_light = global::NRGScoutingApp.Droid.Resource.Color.abc_secondary_text_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_tint_btn_checkable = global::NRGScoutingApp.Droid.Resource.Color.abc_tint_btn_checkable;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_tint_default = global::NRGScoutingApp.Droid.Resource.Color.abc_tint_default;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_tint_edittext = global::NRGScoutingApp.Droid.Resource.Color.abc_tint_edittext;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_tint_seek_thumb = global::NRGScoutingApp.Droid.Resource.Color.abc_tint_seek_thumb;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_tint_spinner = global::NRGScoutingApp.Droid.Resource.Color.abc_tint_spinner;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_tint_switch_track = global::NRGScoutingApp.Droid.Resource.Color.abc_tint_switch_track;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.accent_material_dark = global::NRGScoutingApp.Droid.Resource.Color.accent_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.accent_material_light = global::NRGScoutingApp.Droid.Resource.Color.accent_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.background_floating_material_dark = global::NRGScoutingApp.Droid.Resource.Color.background_floating_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.background_floating_material_light = global::NRGScoutingApp.Droid.Resource.Color.background_floating_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.background_material_dark = global::NRGScoutingApp.Droid.Resource.Color.background_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.background_material_light = global::NRGScoutingApp.Droid.Resource.Color.background_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.bright_foreground_disabled_material_dark = global::NRGScoutingApp.Droid.Resource.Color.bright_foreground_disabled_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.bright_foreground_disabled_material_light = global::NRGScoutingApp.Droid.Resource.Color.bright_foreground_disabled_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.bright_foreground_inverse_material_dark = global::NRGScoutingApp.Droid.Resource.Color.bright_foreground_inverse_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.bright_foreground_inverse_material_light = global::NRGScoutingApp.Droid.Resource.Color.bright_foreground_inverse_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.bright_foreground_material_dark = global::NRGScoutingApp.Droid.Resource.Color.bright_foreground_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.bright_foreground_material_light = global::NRGScoutingApp.Droid.Resource.Color.bright_foreground_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.button_material_dark = global::NRGScoutingApp.Droid.Resource.Color.button_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.button_material_light = global::NRGScoutingApp.Droid.Resource.Color.button_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.cardview_dark_background = global::NRGScoutingApp.Droid.Resource.Color.cardview_dark_background;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.cardview_light_background = global::NRGScoutingApp.Droid.Resource.Color.cardview_light_background;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.cardview_shadow_end_color = global::NRGScoutingApp.Droid.Resource.Color.cardview_shadow_end_color;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.cardview_shadow_start_color = global::NRGScoutingApp.Droid.Resource.Color.cardview_shadow_start_color;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.design_bottom_navigation_shadow_color = global::NRGScoutingApp.Droid.Resource.Color.design_bottom_navigation_shadow_color;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.design_error = global::NRGScoutingApp.Droid.Resource.Color.design_error;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.design_fab_shadow_end_color = global::NRGScoutingApp.Droid.Resource.Color.design_fab_shadow_end_color;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.design_fab_shadow_mid_color = global::NRGScoutingApp.Droid.Resource.Color.design_fab_shadow_mid_color;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.design_fab_shadow_start_color = global::NRGScoutingApp.Droid.Resource.Color.design_fab_shadow_start_color;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.design_fab_stroke_end_inner_color = global::NRGScoutingApp.Droid.Resource.Color.design_fab_stroke_end_inner_color;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.design_fab_stroke_end_outer_color = global::NRGScoutingApp.Droid.Resource.Color.design_fab_stroke_end_outer_color;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.design_fab_stroke_top_inner_color = global::NRGScoutingApp.Droid.Resource.Color.design_fab_stroke_top_inner_color;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.design_fab_stroke_top_outer_color = global::NRGScoutingApp.Droid.Resource.Color.design_fab_stroke_top_outer_color;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.design_snackbar_background_color = global::NRGScoutingApp.Droid.Resource.Color.design_snackbar_background_color;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.design_tint_password_toggle = global::NRGScoutingApp.Droid.Resource.Color.design_tint_password_toggle;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.dim_foreground_disabled_material_dark = global::NRGScoutingApp.Droid.Resource.Color.dim_foreground_disabled_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.dim_foreground_disabled_material_light = global::NRGScoutingApp.Droid.Resource.Color.dim_foreground_disabled_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.dim_foreground_material_dark = global::NRGScoutingApp.Droid.Resource.Color.dim_foreground_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.dim_foreground_material_light = global::NRGScoutingApp.Droid.Resource.Color.dim_foreground_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.error_color_material = global::NRGScoutingApp.Droid.Resource.Color.error_color_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.foreground_material_dark = global::NRGScoutingApp.Droid.Resource.Color.foreground_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.foreground_material_light = global::NRGScoutingApp.Droid.Resource.Color.foreground_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.highlighted_text_material_dark = global::NRGScoutingApp.Droid.Resource.Color.highlighted_text_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.highlighted_text_material_light = global::NRGScoutingApp.Droid.Resource.Color.highlighted_text_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.material_blue_grey_800 = global::NRGScoutingApp.Droid.Resource.Color.material_blue_grey_800;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.material_blue_grey_900 = global::NRGScoutingApp.Droid.Resource.Color.material_blue_grey_900;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.material_blue_grey_950 = global::NRGScoutingApp.Droid.Resource.Color.material_blue_grey_950;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.material_deep_teal_200 = global::NRGScoutingApp.Droid.Resource.Color.material_deep_teal_200;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.material_deep_teal_500 = global::NRGScoutingApp.Droid.Resource.Color.material_deep_teal_500;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.material_grey_100 = global::NRGScoutingApp.Droid.Resource.Color.material_grey_100;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.material_grey_300 = global::NRGScoutingApp.Droid.Resource.Color.material_grey_300;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.material_grey_50 = global::NRGScoutingApp.Droid.Resource.Color.material_grey_50;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.material_grey_600 = global::NRGScoutingApp.Droid.Resource.Color.material_grey_600;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.material_grey_800 = global::NRGScoutingApp.Droid.Resource.Color.material_grey_800;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.material_grey_850 = global::NRGScoutingApp.Droid.Resource.Color.material_grey_850;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.material_grey_900 = global::NRGScoutingApp.Droid.Resource.Color.material_grey_900;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.notification_action_color_filter = global::NRGScoutingApp.Droid.Resource.Color.notification_action_color_filter;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.notification_icon_bg_color = global::NRGScoutingApp.Droid.Resource.Color.notification_icon_bg_color;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.notification_material_background_media_default_color = global::NRGScoutingApp.Droid.Resource.Color.notification_material_background_media_default_color;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.primary_dark_material_dark = global::NRGScoutingApp.Droid.Resource.Color.primary_dark_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.primary_dark_material_light = global::NRGScoutingApp.Droid.Resource.Color.primary_dark_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.primary_material_dark = global::NRGScoutingApp.Droid.Resource.Color.primary_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.primary_material_light = global::NRGScoutingApp.Droid.Resource.Color.primary_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.primary_text_default_material_dark = global::NRGScoutingApp.Droid.Resource.Color.primary_text_default_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.primary_text_default_material_light = global::NRGScoutingApp.Droid.Resource.Color.primary_text_default_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.primary_text_disabled_material_dark = global::NRGScoutingApp.Droid.Resource.Color.primary_text_disabled_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.primary_text_disabled_material_light = global::NRGScoutingApp.Droid.Resource.Color.primary_text_disabled_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.ripple_material_dark = global::NRGScoutingApp.Droid.Resource.Color.ripple_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.ripple_material_light = global::NRGScoutingApp.Droid.Resource.Color.ripple_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.secondary_text_default_material_dark = global::NRGScoutingApp.Droid.Resource.Color.secondary_text_default_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.secondary_text_default_material_light = global::NRGScoutingApp.Droid.Resource.Color.secondary_text_default_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.secondary_text_disabled_material_dark = global::NRGScoutingApp.Droid.Resource.Color.secondary_text_disabled_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.secondary_text_disabled_material_light = global::NRGScoutingApp.Droid.Resource.Color.secondary_text_disabled_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.switch_thumb_disabled_material_dark = global::NRGScoutingApp.Droid.Resource.Color.switch_thumb_disabled_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.switch_thumb_disabled_material_light = global::NRGScoutingApp.Droid.Resource.Color.switch_thumb_disabled_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.switch_thumb_material_dark = global::NRGScoutingApp.Droid.Resource.Color.switch_thumb_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.switch_thumb_material_light = global::NRGScoutingApp.Droid.Resource.Color.switch_thumb_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.switch_thumb_normal_material_dark = global::NRGScoutingApp.Droid.Resource.Color.switch_thumb_normal_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.switch_thumb_normal_material_light = global::NRGScoutingApp.Droid.Resource.Color.switch_thumb_normal_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.tooltip_background_dark = global::NRGScoutingApp.Droid.Resource.Color.tooltip_background_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.tooltip_background_light = global::NRGScoutingApp.Droid.Resource.Color.tooltip_background_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_action_bar_content_inset_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_action_bar_content_inset_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_action_bar_content_inset_with_nav = global::NRGScoutingApp.Droid.Resource.Dimension.abc_action_bar_content_inset_with_nav;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_action_bar_default_height_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_action_bar_default_height_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_action_bar_default_padding_end_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_action_bar_default_padding_end_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_action_bar_default_padding_start_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_action_bar_default_padding_start_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_action_bar_elevation_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_action_bar_elevation_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_action_bar_icon_vertical_padding_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_action_bar_icon_vertical_padding_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_action_bar_overflow_padding_end_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_action_bar_overflow_padding_end_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_action_bar_overflow_padding_start_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_action_bar_overflow_padding_start_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_action_bar_progress_bar_size = global::NRGScoutingApp.Droid.Resource.Dimension.abc_action_bar_progress_bar_size;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_action_bar_stacked_max_height = global::NRGScoutingApp.Droid.Resource.Dimension.abc_action_bar_stacked_max_height;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_action_bar_stacked_tab_max_width = global::NRGScoutingApp.Droid.Resource.Dimension.abc_action_bar_stacked_tab_max_width;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_action_bar_subtitle_top_margin_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_action_bar_subtitle_top_margin_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_action_button_min_height_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_action_button_min_height_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_action_button_min_width_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_action_button_min_width_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_action_button_min_width_overflow_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_action_button_min_width_overflow_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_alert_dialog_button_bar_height = global::NRGScoutingApp.Droid.Resource.Dimension.abc_alert_dialog_button_bar_height;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_button_inset_horizontal_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_button_inset_horizontal_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_button_inset_vertical_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_button_inset_vertical_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_button_padding_horizontal_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_button_padding_horizontal_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_button_padding_vertical_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_button_padding_vertical_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_cascading_menus_min_smallest_width = global::NRGScoutingApp.Droid.Resource.Dimension.abc_cascading_menus_min_smallest_width;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_config_prefDialogWidth = global::NRGScoutingApp.Droid.Resource.Dimension.abc_config_prefDialogWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_control_corner_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_control_corner_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_control_inset_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_control_inset_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_control_padding_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_control_padding_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_dialog_fixed_height_major = global::NRGScoutingApp.Droid.Resource.Dimension.abc_dialog_fixed_height_major;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_dialog_fixed_height_minor = global::NRGScoutingApp.Droid.Resource.Dimension.abc_dialog_fixed_height_minor;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_dialog_fixed_width_major = global::NRGScoutingApp.Droid.Resource.Dimension.abc_dialog_fixed_width_major;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_dialog_fixed_width_minor = global::NRGScoutingApp.Droid.Resource.Dimension.abc_dialog_fixed_width_minor;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_dialog_list_padding_bottom_no_buttons = global::NRGScoutingApp.Droid.Resource.Dimension.abc_dialog_list_padding_bottom_no_buttons;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_dialog_list_padding_top_no_title = global::NRGScoutingApp.Droid.Resource.Dimension.abc_dialog_list_padding_top_no_title;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_dialog_min_width_major = global::NRGScoutingApp.Droid.Resource.Dimension.abc_dialog_min_width_major;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_dialog_min_width_minor = global::NRGScoutingApp.Droid.Resource.Dimension.abc_dialog_min_width_minor;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_dialog_padding_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_dialog_padding_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_dialog_padding_top_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_dialog_padding_top_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_dialog_title_divider_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_dialog_title_divider_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_disabled_alpha_material_dark = global::NRGScoutingApp.Droid.Resource.Dimension.abc_disabled_alpha_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_disabled_alpha_material_light = global::NRGScoutingApp.Droid.Resource.Dimension.abc_disabled_alpha_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_dropdownitem_icon_width = global::NRGScoutingApp.Droid.Resource.Dimension.abc_dropdownitem_icon_width;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_dropdownitem_text_padding_left = global::NRGScoutingApp.Droid.Resource.Dimension.abc_dropdownitem_text_padding_left;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_dropdownitem_text_padding_right = global::NRGScoutingApp.Droid.Resource.Dimension.abc_dropdownitem_text_padding_right;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_edit_text_inset_bottom_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_edit_text_inset_bottom_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_edit_text_inset_horizontal_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_edit_text_inset_horizontal_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_edit_text_inset_top_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_edit_text_inset_top_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_floating_window_z = global::NRGScoutingApp.Droid.Resource.Dimension.abc_floating_window_z;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_list_item_padding_horizontal_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_list_item_padding_horizontal_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_panel_menu_list_width = global::NRGScoutingApp.Droid.Resource.Dimension.abc_panel_menu_list_width;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_progress_bar_height_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_progress_bar_height_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_search_view_preferred_height = global::NRGScoutingApp.Droid.Resource.Dimension.abc_search_view_preferred_height;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_search_view_preferred_width = global::NRGScoutingApp.Droid.Resource.Dimension.abc_search_view_preferred_width;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_seekbar_track_background_height_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_seekbar_track_background_height_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_seekbar_track_progress_height_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_seekbar_track_progress_height_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_select_dialog_padding_start_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_select_dialog_padding_start_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_switch_padding = global::NRGScoutingApp.Droid.Resource.Dimension.abc_switch_padding;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_text_size_body_1_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_text_size_body_1_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_text_size_body_2_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_text_size_body_2_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_text_size_button_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_text_size_button_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_text_size_caption_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_text_size_caption_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_text_size_display_1_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_text_size_display_1_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_text_size_display_2_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_text_size_display_2_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_text_size_display_3_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_text_size_display_3_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_text_size_display_4_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_text_size_display_4_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_text_size_headline_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_text_size_headline_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_text_size_large_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_text_size_large_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_text_size_medium_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_text_size_medium_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_text_size_menu_header_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_text_size_menu_header_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_text_size_menu_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_text_size_menu_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_text_size_small_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_text_size_small_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_text_size_subhead_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_text_size_subhead_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_text_size_subtitle_material_toolbar = global::NRGScoutingApp.Droid.Resource.Dimension.abc_text_size_subtitle_material_toolbar;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_text_size_title_material = global::NRGScoutingApp.Droid.Resource.Dimension.abc_text_size_title_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_text_size_title_material_toolbar = global::NRGScoutingApp.Droid.Resource.Dimension.abc_text_size_title_material_toolbar;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.cardview_compat_inset_shadow = global::NRGScoutingApp.Droid.Resource.Dimension.cardview_compat_inset_shadow;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.cardview_default_elevation = global::NRGScoutingApp.Droid.Resource.Dimension.cardview_default_elevation;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.cardview_default_radius = global::NRGScoutingApp.Droid.Resource.Dimension.cardview_default_radius;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.compat_button_inset_horizontal_material = global::NRGScoutingApp.Droid.Resource.Dimension.compat_button_inset_horizontal_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.compat_button_inset_vertical_material = global::NRGScoutingApp.Droid.Resource.Dimension.compat_button_inset_vertical_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.compat_button_padding_horizontal_material = global::NRGScoutingApp.Droid.Resource.Dimension.compat_button_padding_horizontal_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.compat_button_padding_vertical_material = global::NRGScoutingApp.Droid.Resource.Dimension.compat_button_padding_vertical_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.compat_control_corner_material = global::NRGScoutingApp.Droid.Resource.Dimension.compat_control_corner_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_appbar_elevation = global::NRGScoutingApp.Droid.Resource.Dimension.design_appbar_elevation;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_bottom_navigation_active_item_max_width = global::NRGScoutingApp.Droid.Resource.Dimension.design_bottom_navigation_active_item_max_width;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_bottom_navigation_active_text_size = global::NRGScoutingApp.Droid.Resource.Dimension.design_bottom_navigation_active_text_size;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_bottom_navigation_elevation = global::NRGScoutingApp.Droid.Resource.Dimension.design_bottom_navigation_elevation;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_bottom_navigation_height = global::NRGScoutingApp.Droid.Resource.Dimension.design_bottom_navigation_height;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_bottom_navigation_item_max_width = global::NRGScoutingApp.Droid.Resource.Dimension.design_bottom_navigation_item_max_width;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_bottom_navigation_item_min_width = global::NRGScoutingApp.Droid.Resource.Dimension.design_bottom_navigation_item_min_width;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_bottom_navigation_margin = global::NRGScoutingApp.Droid.Resource.Dimension.design_bottom_navigation_margin;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_bottom_navigation_shadow_height = global::NRGScoutingApp.Droid.Resource.Dimension.design_bottom_navigation_shadow_height;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_bottom_navigation_text_size = global::NRGScoutingApp.Droid.Resource.Dimension.design_bottom_navigation_text_size;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_bottom_sheet_modal_elevation = global::NRGScoutingApp.Droid.Resource.Dimension.design_bottom_sheet_modal_elevation;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_bottom_sheet_peek_height_min = global::NRGScoutingApp.Droid.Resource.Dimension.design_bottom_sheet_peek_height_min;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_fab_border_width = global::NRGScoutingApp.Droid.Resource.Dimension.design_fab_border_width;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_fab_elevation = global::NRGScoutingApp.Droid.Resource.Dimension.design_fab_elevation;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_fab_image_size = global::NRGScoutingApp.Droid.Resource.Dimension.design_fab_image_size;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_fab_size_mini = global::NRGScoutingApp.Droid.Resource.Dimension.design_fab_size_mini;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_fab_size_normal = global::NRGScoutingApp.Droid.Resource.Dimension.design_fab_size_normal;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_fab_translation_z_pressed = global::NRGScoutingApp.Droid.Resource.Dimension.design_fab_translation_z_pressed;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_navigation_elevation = global::NRGScoutingApp.Droid.Resource.Dimension.design_navigation_elevation;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_navigation_icon_padding = global::NRGScoutingApp.Droid.Resource.Dimension.design_navigation_icon_padding;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_navigation_icon_size = global::NRGScoutingApp.Droid.Resource.Dimension.design_navigation_icon_size;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_navigation_max_width = global::NRGScoutingApp.Droid.Resource.Dimension.design_navigation_max_width;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_navigation_padding_bottom = global::NRGScoutingApp.Droid.Resource.Dimension.design_navigation_padding_bottom;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_navigation_separator_vertical_padding = global::NRGScoutingApp.Droid.Resource.Dimension.design_navigation_separator_vertical_padding;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_snackbar_action_inline_max_width = global::NRGScoutingApp.Droid.Resource.Dimension.design_snackbar_action_inline_max_width;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_snackbar_background_corner_radius = global::NRGScoutingApp.Droid.Resource.Dimension.design_snackbar_background_corner_radius;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_snackbar_elevation = global::NRGScoutingApp.Droid.Resource.Dimension.design_snackbar_elevation;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_snackbar_extra_spacing_horizontal = global::NRGScoutingApp.Droid.Resource.Dimension.design_snackbar_extra_spacing_horizontal;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_snackbar_max_width = global::NRGScoutingApp.Droid.Resource.Dimension.design_snackbar_max_width;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_snackbar_min_width = global::NRGScoutingApp.Droid.Resource.Dimension.design_snackbar_min_width;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_snackbar_padding_horizontal = global::NRGScoutingApp.Droid.Resource.Dimension.design_snackbar_padding_horizontal;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_snackbar_padding_vertical = global::NRGScoutingApp.Droid.Resource.Dimension.design_snackbar_padding_vertical;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_snackbar_padding_vertical_2lines = global::NRGScoutingApp.Droid.Resource.Dimension.design_snackbar_padding_vertical_2lines;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_snackbar_text_size = global::NRGScoutingApp.Droid.Resource.Dimension.design_snackbar_text_size;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_tab_max_width = global::NRGScoutingApp.Droid.Resource.Dimension.design_tab_max_width;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_tab_scrollable_min_width = global::NRGScoutingApp.Droid.Resource.Dimension.design_tab_scrollable_min_width;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_tab_text_size = global::NRGScoutingApp.Droid.Resource.Dimension.design_tab_text_size;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_tab_text_size_2line = global::NRGScoutingApp.Droid.Resource.Dimension.design_tab_text_size_2line;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.disabled_alpha_material_dark = global::NRGScoutingApp.Droid.Resource.Dimension.disabled_alpha_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.disabled_alpha_material_light = global::NRGScoutingApp.Droid.Resource.Dimension.disabled_alpha_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.fastscroll_default_thickness = global::NRGScoutingApp.Droid.Resource.Dimension.fastscroll_default_thickness;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.fastscroll_margin = global::NRGScoutingApp.Droid.Resource.Dimension.fastscroll_margin;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.fastscroll_minimum_range = global::NRGScoutingApp.Droid.Resource.Dimension.fastscroll_minimum_range;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.highlight_alpha_material_colored = global::NRGScoutingApp.Droid.Resource.Dimension.highlight_alpha_material_colored;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.highlight_alpha_material_dark = global::NRGScoutingApp.Droid.Resource.Dimension.highlight_alpha_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.highlight_alpha_material_light = global::NRGScoutingApp.Droid.Resource.Dimension.highlight_alpha_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.hint_alpha_material_dark = global::NRGScoutingApp.Droid.Resource.Dimension.hint_alpha_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.hint_alpha_material_light = global::NRGScoutingApp.Droid.Resource.Dimension.hint_alpha_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.hint_pressed_alpha_material_dark = global::NRGScoutingApp.Droid.Resource.Dimension.hint_pressed_alpha_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.hint_pressed_alpha_material_light = global::NRGScoutingApp.Droid.Resource.Dimension.hint_pressed_alpha_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame = global::NRGScoutingApp.Droid.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity = global::NRGScoutingApp.Droid.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.item_touch_helper_swipe_escape_velocity = global::NRGScoutingApp.Droid.Resource.Dimension.item_touch_helper_swipe_escape_velocity;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.notification_action_icon_size = global::NRGScoutingApp.Droid.Resource.Dimension.notification_action_icon_size;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.notification_action_text_size = global::NRGScoutingApp.Droid.Resource.Dimension.notification_action_text_size;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.notification_big_circle_margin = global::NRGScoutingApp.Droid.Resource.Dimension.notification_big_circle_margin;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.notification_content_margin_start = global::NRGScoutingApp.Droid.Resource.Dimension.notification_content_margin_start;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.notification_large_icon_height = global::NRGScoutingApp.Droid.Resource.Dimension.notification_large_icon_height;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.notification_large_icon_width = global::NRGScoutingApp.Droid.Resource.Dimension.notification_large_icon_width;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.notification_main_column_padding_top = global::NRGScoutingApp.Droid.Resource.Dimension.notification_main_column_padding_top;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.notification_media_narrow_margin = global::NRGScoutingApp.Droid.Resource.Dimension.notification_media_narrow_margin;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.notification_right_icon_size = global::NRGScoutingApp.Droid.Resource.Dimension.notification_right_icon_size;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.notification_right_side_padding_top = global::NRGScoutingApp.Droid.Resource.Dimension.notification_right_side_padding_top;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.notification_small_icon_background_padding = global::NRGScoutingApp.Droid.Resource.Dimension.notification_small_icon_background_padding;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.notification_small_icon_size_as_large = global::NRGScoutingApp.Droid.Resource.Dimension.notification_small_icon_size_as_large;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.notification_subtext_size = global::NRGScoutingApp.Droid.Resource.Dimension.notification_subtext_size;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.notification_top_pad = global::NRGScoutingApp.Droid.Resource.Dimension.notification_top_pad;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.notification_top_pad_large_text = global::NRGScoutingApp.Droid.Resource.Dimension.notification_top_pad_large_text;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.tooltip_corner_radius = global::NRGScoutingApp.Droid.Resource.Dimension.tooltip_corner_radius;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.tooltip_horizontal_padding = global::NRGScoutingApp.Droid.Resource.Dimension.tooltip_horizontal_padding;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.tooltip_margin = global::NRGScoutingApp.Droid.Resource.Dimension.tooltip_margin;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.tooltip_precise_anchor_extra_offset = global::NRGScoutingApp.Droid.Resource.Dimension.tooltip_precise_anchor_extra_offset;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.tooltip_precise_anchor_threshold = global::NRGScoutingApp.Droid.Resource.Dimension.tooltip_precise_anchor_threshold;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.tooltip_vertical_padding = global::NRGScoutingApp.Droid.Resource.Dimension.tooltip_vertical_padding;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.tooltip_y_offset_non_touch = global::NRGScoutingApp.Droid.Resource.Dimension.tooltip_y_offset_non_touch;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.tooltip_y_offset_touch = global::NRGScoutingApp.Droid.Resource.Dimension.tooltip_y_offset_touch;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_ab_share_pack_mtrl_alpha = global::NRGScoutingApp.Droid.Resource.Drawable.abc_ab_share_pack_mtrl_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_action_bar_item_background_material = global::NRGScoutingApp.Droid.Resource.Drawable.abc_action_bar_item_background_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_btn_borderless_material = global::NRGScoutingApp.Droid.Resource.Drawable.abc_btn_borderless_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_btn_check_material = global::NRGScoutingApp.Droid.Resource.Drawable.abc_btn_check_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_btn_check_to_on_mtrl_000 = global::NRGScoutingApp.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_000;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_btn_check_to_on_mtrl_015 = global::NRGScoutingApp.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_015;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_btn_colored_material = global::NRGScoutingApp.Droid.Resource.Drawable.abc_btn_colored_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_btn_default_mtrl_shape = global::NRGScoutingApp.Droid.Resource.Drawable.abc_btn_default_mtrl_shape;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_btn_radio_material = global::NRGScoutingApp.Droid.Resource.Drawable.abc_btn_radio_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_btn_radio_to_on_mtrl_000 = global::NRGScoutingApp.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_000;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_btn_radio_to_on_mtrl_015 = global::NRGScoutingApp.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_015;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001 = global::NRGScoutingApp.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012 = global::NRGScoutingApp.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_cab_background_internal_bg = global::NRGScoutingApp.Droid.Resource.Drawable.abc_cab_background_internal_bg;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_cab_background_top_material = global::NRGScoutingApp.Droid.Resource.Drawable.abc_cab_background_top_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_cab_background_top_mtrl_alpha = global::NRGScoutingApp.Droid.Resource.Drawable.abc_cab_background_top_mtrl_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_control_background_material = global::NRGScoutingApp.Droid.Resource.Drawable.abc_control_background_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_dialog_material_background = global::NRGScoutingApp.Droid.Resource.Drawable.abc_dialog_material_background;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_edit_text_material = global::NRGScoutingApp.Droid.Resource.Drawable.abc_edit_text_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_ic_ab_back_material = global::NRGScoutingApp.Droid.Resource.Drawable.abc_ic_ab_back_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_ic_arrow_drop_right_black_24dp = global::NRGScoutingApp.Droid.Resource.Drawable.abc_ic_arrow_drop_right_black_24dp;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_ic_clear_material = global::NRGScoutingApp.Droid.Resource.Drawable.abc_ic_clear_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha = global::NRGScoutingApp.Droid.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_ic_go_search_api_material = global::NRGScoutingApp.Droid.Resource.Drawable.abc_ic_go_search_api_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha = global::NRGScoutingApp.Droid.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha = global::NRGScoutingApp.Droid.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_ic_menu_overflow_material = global::NRGScoutingApp.Droid.Resource.Drawable.abc_ic_menu_overflow_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha = global::NRGScoutingApp.Droid.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha = global::NRGScoutingApp.Droid.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_ic_menu_share_mtrl_alpha = global::NRGScoutingApp.Droid.Resource.Drawable.abc_ic_menu_share_mtrl_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_ic_search_api_material = global::NRGScoutingApp.Droid.Resource.Drawable.abc_ic_search_api_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_ic_star_black_16dp = global::NRGScoutingApp.Droid.Resource.Drawable.abc_ic_star_black_16dp;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_ic_star_black_36dp = global::NRGScoutingApp.Droid.Resource.Drawable.abc_ic_star_black_36dp;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_ic_star_black_48dp = global::NRGScoutingApp.Droid.Resource.Drawable.abc_ic_star_black_48dp;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_ic_star_half_black_16dp = global::NRGScoutingApp.Droid.Resource.Drawable.abc_ic_star_half_black_16dp;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_ic_star_half_black_36dp = global::NRGScoutingApp.Droid.Resource.Drawable.abc_ic_star_half_black_36dp;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_ic_star_half_black_48dp = global::NRGScoutingApp.Droid.Resource.Drawable.abc_ic_star_half_black_48dp;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_ic_voice_search_api_material = global::NRGScoutingApp.Droid.Resource.Drawable.abc_ic_voice_search_api_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_item_background_holo_dark = global::NRGScoutingApp.Droid.Resource.Drawable.abc_item_background_holo_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_item_background_holo_light = global::NRGScoutingApp.Droid.Resource.Drawable.abc_item_background_holo_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_list_divider_mtrl_alpha = global::NRGScoutingApp.Droid.Resource.Drawable.abc_list_divider_mtrl_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_list_focused_holo = global::NRGScoutingApp.Droid.Resource.Drawable.abc_list_focused_holo;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_list_longpressed_holo = global::NRGScoutingApp.Droid.Resource.Drawable.abc_list_longpressed_holo;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_list_pressed_holo_dark = global::NRGScoutingApp.Droid.Resource.Drawable.abc_list_pressed_holo_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_list_pressed_holo_light = global::NRGScoutingApp.Droid.Resource.Drawable.abc_list_pressed_holo_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_list_selector_background_transition_holo_dark = global::NRGScoutingApp.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_list_selector_background_transition_holo_light = global::NRGScoutingApp.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_list_selector_disabled_holo_dark = global::NRGScoutingApp.Droid.Resource.Drawable.abc_list_selector_disabled_holo_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_list_selector_disabled_holo_light = global::NRGScoutingApp.Droid.Resource.Drawable.abc_list_selector_disabled_holo_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_list_selector_holo_dark = global::NRGScoutingApp.Droid.Resource.Drawable.abc_list_selector_holo_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_list_selector_holo_light = global::NRGScoutingApp.Droid.Resource.Drawable.abc_list_selector_holo_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult = global::NRGScoutingApp.Droid.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_popup_background_mtrl_mult = global::NRGScoutingApp.Droid.Resource.Drawable.abc_popup_background_mtrl_mult;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_ratingbar_indicator_material = global::NRGScoutingApp.Droid.Resource.Drawable.abc_ratingbar_indicator_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_ratingbar_material = global::NRGScoutingApp.Droid.Resource.Drawable.abc_ratingbar_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_ratingbar_small_material = global::NRGScoutingApp.Droid.Resource.Drawable.abc_ratingbar_small_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha = global::NRGScoutingApp.Droid.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000 = global::NRGScoutingApp.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005 = global::NRGScoutingApp.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_scrubber_primary_mtrl_alpha = global::NRGScoutingApp.Droid.Resource.Drawable.abc_scrubber_primary_mtrl_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_scrubber_track_mtrl_alpha = global::NRGScoutingApp.Droid.Resource.Drawable.abc_scrubber_track_mtrl_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_seekbar_thumb_material = global::NRGScoutingApp.Droid.Resource.Drawable.abc_seekbar_thumb_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_seekbar_tick_mark_material = global::NRGScoutingApp.Droid.Resource.Drawable.abc_seekbar_tick_mark_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_seekbar_track_material = global::NRGScoutingApp.Droid.Resource.Drawable.abc_seekbar_track_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_spinner_mtrl_am_alpha = global::NRGScoutingApp.Droid.Resource.Drawable.abc_spinner_mtrl_am_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_spinner_textfield_background_material = global::NRGScoutingApp.Droid.Resource.Drawable.abc_spinner_textfield_background_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_switch_thumb_material = global::NRGScoutingApp.Droid.Resource.Drawable.abc_switch_thumb_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_switch_track_mtrl_alpha = global::NRGScoutingApp.Droid.Resource.Drawable.abc_switch_track_mtrl_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_tab_indicator_material = global::NRGScoutingApp.Droid.Resource.Drawable.abc_tab_indicator_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_tab_indicator_mtrl_alpha = global::NRGScoutingApp.Droid.Resource.Drawable.abc_tab_indicator_mtrl_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_text_cursor_material = global::NRGScoutingApp.Droid.Resource.Drawable.abc_text_cursor_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_text_select_handle_left_mtrl_dark = global::NRGScoutingApp.Droid.Resource.Drawable.abc_text_select_handle_left_mtrl_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_text_select_handle_left_mtrl_light = global::NRGScoutingApp.Droid.Resource.Drawable.abc_text_select_handle_left_mtrl_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_text_select_handle_middle_mtrl_dark = global::NRGScoutingApp.Droid.Resource.Drawable.abc_text_select_handle_middle_mtrl_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_text_select_handle_middle_mtrl_light = global::NRGScoutingApp.Droid.Resource.Drawable.abc_text_select_handle_middle_mtrl_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_text_select_handle_right_mtrl_dark = global::NRGScoutingApp.Droid.Resource.Drawable.abc_text_select_handle_right_mtrl_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_text_select_handle_right_mtrl_light = global::NRGScoutingApp.Droid.Resource.Drawable.abc_text_select_handle_right_mtrl_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_textfield_activated_mtrl_alpha = global::NRGScoutingApp.Droid.Resource.Drawable.abc_textfield_activated_mtrl_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_textfield_default_mtrl_alpha = global::NRGScoutingApp.Droid.Resource.Drawable.abc_textfield_default_mtrl_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha = global::NRGScoutingApp.Droid.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_textfield_search_default_mtrl_alpha = global::NRGScoutingApp.Droid.Resource.Drawable.abc_textfield_search_default_mtrl_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_textfield_search_material = global::NRGScoutingApp.Droid.Resource.Drawable.abc_textfield_search_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_vector_test = global::NRGScoutingApp.Droid.Resource.Drawable.abc_vector_test;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.avd_hide_password = global::NRGScoutingApp.Droid.Resource.Drawable.avd_hide_password;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.avd_hide_password_1 = global::NRGScoutingApp.Droid.Resource.Drawable.avd_hide_password_1;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.avd_hide_password_2 = global::NRGScoutingApp.Droid.Resource.Drawable.avd_hide_password_2;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.avd_hide_password_3 = global::NRGScoutingApp.Droid.Resource.Drawable.avd_hide_password_3;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.avd_show_password = global::NRGScoutingApp.Droid.Resource.Drawable.avd_show_password;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.avd_show_password_1 = global::NRGScoutingApp.Droid.Resource.Drawable.avd_show_password_1;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.avd_show_password_2 = global::NRGScoutingApp.Droid.Resource.Drawable.avd_show_password_2;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.avd_show_password_3 = global::NRGScoutingApp.Droid.Resource.Drawable.avd_show_password_3;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.design_bottom_navigation_item_background = global::NRGScoutingApp.Droid.Resource.Drawable.design_bottom_navigation_item_background;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.design_fab_background = global::NRGScoutingApp.Droid.Resource.Drawable.design_fab_background;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.design_ic_visibility = global::NRGScoutingApp.Droid.Resource.Drawable.design_ic_visibility;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.design_ic_visibility_off = global::NRGScoutingApp.Droid.Resource.Drawable.design_ic_visibility_off;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.design_password_eye = global::NRGScoutingApp.Droid.Resource.Drawable.design_password_eye;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.design_snackbar_background = global::NRGScoutingApp.Droid.Resource.Drawable.design_snackbar_background;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.navigation_empty_icon = global::NRGScoutingApp.Droid.Resource.Drawable.navigation_empty_icon;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.notification_action_background = global::NRGScoutingApp.Droid.Resource.Drawable.notification_action_background;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.notification_bg = global::NRGScoutingApp.Droid.Resource.Drawable.notification_bg;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.notification_bg_low = global::NRGScoutingApp.Droid.Resource.Drawable.notification_bg_low;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.notification_bg_low_normal = global::NRGScoutingApp.Droid.Resource.Drawable.notification_bg_low_normal;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.notification_bg_low_pressed = global::NRGScoutingApp.Droid.Resource.Drawable.notification_bg_low_pressed;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.notification_bg_normal = global::NRGScoutingApp.Droid.Resource.Drawable.notification_bg_normal;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.notification_bg_normal_pressed = global::NRGScoutingApp.Droid.Resource.Drawable.notification_bg_normal_pressed;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.notification_icon_background = global::NRGScoutingApp.Droid.Resource.Drawable.notification_icon_background;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.notification_template_icon_bg = global::NRGScoutingApp.Droid.Resource.Drawable.notification_template_icon_bg;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.notification_template_icon_low_bg = global::NRGScoutingApp.Droid.Resource.Drawable.notification_template_icon_low_bg;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.notification_tile_bg = global::NRGScoutingApp.Droid.Resource.Drawable.notification_tile_bg;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.notify_panel_notification_icon_bg = global::NRGScoutingApp.Droid.Resource.Drawable.notify_panel_notification_icon_bg;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.tooltip_frame_dark = global::NRGScoutingApp.Droid.Resource.Drawable.tooltip_frame_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.tooltip_frame_light = global::NRGScoutingApp.Droid.Resource.Drawable.tooltip_frame_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.ALT = global::NRGScoutingApp.Droid.Resource.Id.ALT;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.CTRL = global::NRGScoutingApp.Droid.Resource.Id.CTRL;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.FUNCTION = global::NRGScoutingApp.Droid.Resource.Id.FUNCTION;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.META = global::NRGScoutingApp.Droid.Resource.Id.META;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.SHIFT = global::NRGScoutingApp.Droid.Resource.Id.SHIFT;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.SYM = global::NRGScoutingApp.Droid.Resource.Id.SYM;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.action0 = global::NRGScoutingApp.Droid.Resource.Id.action0;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.action_bar = global::NRGScoutingApp.Droid.Resource.Id.action_bar;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.action_bar_activity_content = global::NRGScoutingApp.Droid.Resource.Id.action_bar_activity_content;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.action_bar_container = global::NRGScoutingApp.Droid.Resource.Id.action_bar_container;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.action_bar_root = global::NRGScoutingApp.Droid.Resource.Id.action_bar_root;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.action_bar_spinner = global::NRGScoutingApp.Droid.Resource.Id.action_bar_spinner;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.action_bar_subtitle = global::NRGScoutingApp.Droid.Resource.Id.action_bar_subtitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.action_bar_title = global::NRGScoutingApp.Droid.Resource.Id.action_bar_title;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.action_container = global::NRGScoutingApp.Droid.Resource.Id.action_container;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.action_context_bar = global::NRGScoutingApp.Droid.Resource.Id.action_context_bar;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.action_divider = global::NRGScoutingApp.Droid.Resource.Id.action_divider;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.action_image = global::NRGScoutingApp.Droid.Resource.Id.action_image;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.action_menu_divider = global::NRGScoutingApp.Droid.Resource.Id.action_menu_divider;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.action_menu_presenter = global::NRGScoutingApp.Droid.Resource.Id.action_menu_presenter;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.action_mode_bar = global::NRGScoutingApp.Droid.Resource.Id.action_mode_bar;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.action_mode_bar_stub = global::NRGScoutingApp.Droid.Resource.Id.action_mode_bar_stub;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.action_mode_close_button = global::NRGScoutingApp.Droid.Resource.Id.action_mode_close_button;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.action_text = global::NRGScoutingApp.Droid.Resource.Id.action_text;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.actions = global::NRGScoutingApp.Droid.Resource.Id.actions;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.activity_chooser_view_content = global::NRGScoutingApp.Droid.Resource.Id.activity_chooser_view_content;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.add = global::NRGScoutingApp.Droid.Resource.Id.add;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.alertTitle = global::NRGScoutingApp.Droid.Resource.Id.alertTitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.all = global::NRGScoutingApp.Droid.Resource.Id.all;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.always = global::NRGScoutingApp.Droid.Resource.Id.always;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.async = global::NRGScoutingApp.Droid.Resource.Id.async;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.auto = global::NRGScoutingApp.Droid.Resource.Id.auto;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.beginning = global::NRGScoutingApp.Droid.Resource.Id.beginning;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.blocking = global::NRGScoutingApp.Droid.Resource.Id.blocking;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.bottom = global::NRGScoutingApp.Droid.Resource.Id.bottom;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.bottomtab_navarea = global::NRGScoutingApp.Droid.Resource.Id.bottomtab_navarea;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.bottomtab_tabbar = global::NRGScoutingApp.Droid.Resource.Id.bottomtab_tabbar;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.buttonPanel = global::NRGScoutingApp.Droid.Resource.Id.buttonPanel;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.cancel_action = global::NRGScoutingApp.Droid.Resource.Id.cancel_action;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.center = global::NRGScoutingApp.Droid.Resource.Id.center;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.center_horizontal = global::NRGScoutingApp.Droid.Resource.Id.center_horizontal;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.center_vertical = global::NRGScoutingApp.Droid.Resource.Id.center_vertical;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.checkbox = global::NRGScoutingApp.Droid.Resource.Id.checkbox;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.chronometer = global::NRGScoutingApp.Droid.Resource.Id.chronometer;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.clip_horizontal = global::NRGScoutingApp.Droid.Resource.Id.clip_horizontal;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.clip_vertical = global::NRGScoutingApp.Droid.Resource.Id.clip_vertical;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.collapseActionView = global::NRGScoutingApp.Droid.Resource.Id.collapseActionView;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.container = global::NRGScoutingApp.Droid.Resource.Id.container;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.contentPanel = global::NRGScoutingApp.Droid.Resource.Id.contentPanel;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.coordinator = global::NRGScoutingApp.Droid.Resource.Id.coordinator;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.custom = global::NRGScoutingApp.Droid.Resource.Id.custom;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.customPanel = global::NRGScoutingApp.Droid.Resource.Id.customPanel;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.decor_content_parent = global::NRGScoutingApp.Droid.Resource.Id.decor_content_parent;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.default_activity_button = global::NRGScoutingApp.Droid.Resource.Id.default_activity_button;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.design_bottom_sheet = global::NRGScoutingApp.Droid.Resource.Id.design_bottom_sheet;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.design_menu_item_action_area = global::NRGScoutingApp.Droid.Resource.Id.design_menu_item_action_area;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.design_menu_item_action_area_stub = global::NRGScoutingApp.Droid.Resource.Id.design_menu_item_action_area_stub;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.design_menu_item_text = global::NRGScoutingApp.Droid.Resource.Id.design_menu_item_text;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.design_navigation_view = global::NRGScoutingApp.Droid.Resource.Id.design_navigation_view;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.disableHome = global::NRGScoutingApp.Droid.Resource.Id.disableHome;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.edit_query = global::NRGScoutingApp.Droid.Resource.Id.edit_query;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.end = global::NRGScoutingApp.Droid.Resource.Id.end;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.end_padder = global::NRGScoutingApp.Droid.Resource.Id.end_padder;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.enterAlways = global::NRGScoutingApp.Droid.Resource.Id.enterAlways;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.enterAlwaysCollapsed = global::NRGScoutingApp.Droid.Resource.Id.enterAlwaysCollapsed;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.exitUntilCollapsed = global::NRGScoutingApp.Droid.Resource.Id.exitUntilCollapsed;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.expand_activities_button = global::NRGScoutingApp.Droid.Resource.Id.expand_activities_button;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.expanded_menu = global::NRGScoutingApp.Droid.Resource.Id.expanded_menu;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.fill = global::NRGScoutingApp.Droid.Resource.Id.fill;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.fill_horizontal = global::NRGScoutingApp.Droid.Resource.Id.fill_horizontal;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.fill_vertical = global::NRGScoutingApp.Droid.Resource.Id.fill_vertical;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.@fixed = global::NRGScoutingApp.Droid.Resource.Id.@fixed;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.flyoutcontent_appbar = global::NRGScoutingApp.Droid.Resource.Id.flyoutcontent_appbar;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.flyoutcontent_recycler = global::NRGScoutingApp.Droid.Resource.Id.flyoutcontent_recycler;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.forever = global::NRGScoutingApp.Droid.Resource.Id.forever;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.ghost_view = global::NRGScoutingApp.Droid.Resource.Id.ghost_view;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.home = global::NRGScoutingApp.Droid.Resource.Id.home;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.homeAsUp = global::NRGScoutingApp.Droid.Resource.Id.homeAsUp;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.icon = global::NRGScoutingApp.Droid.Resource.Id.icon;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.icon_group = global::NRGScoutingApp.Droid.Resource.Id.icon_group;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.ifRoom = global::NRGScoutingApp.Droid.Resource.Id.ifRoom;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.image = global::NRGScoutingApp.Droid.Resource.Id.image;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.info = global::NRGScoutingApp.Droid.Resource.Id.info;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.italic = global::NRGScoutingApp.Droid.Resource.Id.italic;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.item_touch_helper_previous_elevation = global::NRGScoutingApp.Droid.Resource.Id.item_touch_helper_previous_elevation;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.largeLabel = global::NRGScoutingApp.Droid.Resource.Id.largeLabel;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.left = global::NRGScoutingApp.Droid.Resource.Id.left;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.line1 = global::NRGScoutingApp.Droid.Resource.Id.line1;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.line3 = global::NRGScoutingApp.Droid.Resource.Id.line3;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.listMode = global::NRGScoutingApp.Droid.Resource.Id.listMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.list_item = global::NRGScoutingApp.Droid.Resource.Id.list_item;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.main_appbar = global::NRGScoutingApp.Droid.Resource.Id.main_appbar;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.main_scrollview = global::NRGScoutingApp.Droid.Resource.Id.main_scrollview;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.main_tablayout = global::NRGScoutingApp.Droid.Resource.Id.main_tablayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.main_toolbar = global::NRGScoutingApp.Droid.Resource.Id.main_toolbar;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.masked = global::NRGScoutingApp.Droid.Resource.Id.masked;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.media_actions = global::NRGScoutingApp.Droid.Resource.Id.media_actions;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.message = global::NRGScoutingApp.Droid.Resource.Id.message;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.middle = global::NRGScoutingApp.Droid.Resource.Id.middle;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.mini = global::NRGScoutingApp.Droid.Resource.Id.mini;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.multiply = global::NRGScoutingApp.Droid.Resource.Id.multiply;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.navigation_header_container = global::NRGScoutingApp.Droid.Resource.Id.navigation_header_container;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.never = global::NRGScoutingApp.Droid.Resource.Id.never;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.none = global::NRGScoutingApp.Droid.Resource.Id.none;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.normal = global::NRGScoutingApp.Droid.Resource.Id.normal;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.notification_background = global::NRGScoutingApp.Droid.Resource.Id.notification_background;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.notification_main_column = global::NRGScoutingApp.Droid.Resource.Id.notification_main_column;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.notification_main_column_container = global::NRGScoutingApp.Droid.Resource.Id.notification_main_column_container;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.parallax = global::NRGScoutingApp.Droid.Resource.Id.parallax;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.parentPanel = global::NRGScoutingApp.Droid.Resource.Id.parentPanel;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.parent_matrix = global::NRGScoutingApp.Droid.Resource.Id.parent_matrix;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.pin = global::NRGScoutingApp.Droid.Resource.Id.pin;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.progress_circular = global::NRGScoutingApp.Droid.Resource.Id.progress_circular;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.progress_horizontal = global::NRGScoutingApp.Droid.Resource.Id.progress_horizontal;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.radio = global::NRGScoutingApp.Droid.Resource.Id.radio;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.right = global::NRGScoutingApp.Droid.Resource.Id.right;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.right_icon = global::NRGScoutingApp.Droid.Resource.Id.right_icon;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.right_side = global::NRGScoutingApp.Droid.Resource.Id.right_side;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.save_image_matrix = global::NRGScoutingApp.Droid.Resource.Id.save_image_matrix;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.save_non_transition_alpha = global::NRGScoutingApp.Droid.Resource.Id.save_non_transition_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.save_scale_type = global::NRGScoutingApp.Droid.Resource.Id.save_scale_type;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.screen = global::NRGScoutingApp.Droid.Resource.Id.screen;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.scroll = global::NRGScoutingApp.Droid.Resource.Id.scroll;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.scrollIndicatorDown = global::NRGScoutingApp.Droid.Resource.Id.scrollIndicatorDown;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.scrollIndicatorUp = global::NRGScoutingApp.Droid.Resource.Id.scrollIndicatorUp;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.scrollView = global::NRGScoutingApp.Droid.Resource.Id.scrollView;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.scrollable = global::NRGScoutingApp.Droid.Resource.Id.scrollable;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.search_badge = global::NRGScoutingApp.Droid.Resource.Id.search_badge;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.search_bar = global::NRGScoutingApp.Droid.Resource.Id.search_bar;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.search_button = global::NRGScoutingApp.Droid.Resource.Id.search_button;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.search_close_btn = global::NRGScoutingApp.Droid.Resource.Id.search_close_btn;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.search_edit_frame = global::NRGScoutingApp.Droid.Resource.Id.search_edit_frame;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.search_go_btn = global::NRGScoutingApp.Droid.Resource.Id.search_go_btn;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.search_mag_icon = global::NRGScoutingApp.Droid.Resource.Id.search_mag_icon;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.search_plate = global::NRGScoutingApp.Droid.Resource.Id.search_plate;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.search_src_text = global::NRGScoutingApp.Droid.Resource.Id.search_src_text;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.search_voice_btn = global::NRGScoutingApp.Droid.Resource.Id.search_voice_btn;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.select_dialog_listview = global::NRGScoutingApp.Droid.Resource.Id.select_dialog_listview;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.shellcontent_appbar = global::NRGScoutingApp.Droid.Resource.Id.shellcontent_appbar;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.shellcontent_scrollview = global::NRGScoutingApp.Droid.Resource.Id.shellcontent_scrollview;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.shellcontent_toolbar = global::NRGScoutingApp.Droid.Resource.Id.shellcontent_toolbar;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.shortcut = global::NRGScoutingApp.Droid.Resource.Id.shortcut;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.showCustom = global::NRGScoutingApp.Droid.Resource.Id.showCustom;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.showHome = global::NRGScoutingApp.Droid.Resource.Id.showHome;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.showTitle = global::NRGScoutingApp.Droid.Resource.Id.showTitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.smallLabel = global::NRGScoutingApp.Droid.Resource.Id.smallLabel;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.snackbar_action = global::NRGScoutingApp.Droid.Resource.Id.snackbar_action;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.snackbar_text = global::NRGScoutingApp.Droid.Resource.Id.snackbar_text;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.snap = global::NRGScoutingApp.Droid.Resource.Id.snap;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.spacer = global::NRGScoutingApp.Droid.Resource.Id.spacer;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.split_action_bar = global::NRGScoutingApp.Droid.Resource.Id.split_action_bar;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.src_atop = global::NRGScoutingApp.Droid.Resource.Id.src_atop;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.src_in = global::NRGScoutingApp.Droid.Resource.Id.src_in;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.src_over = global::NRGScoutingApp.Droid.Resource.Id.src_over;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.start = global::NRGScoutingApp.Droid.Resource.Id.start;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.status_bar_latest_event_content = global::NRGScoutingApp.Droid.Resource.Id.status_bar_latest_event_content;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.submenuarrow = global::NRGScoutingApp.Droid.Resource.Id.submenuarrow;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.submit_area = global::NRGScoutingApp.Droid.Resource.Id.submit_area;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.tabMode = global::NRGScoutingApp.Droid.Resource.Id.tabMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.tag_transition_group = global::NRGScoutingApp.Droid.Resource.Id.tag_transition_group;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.text = global::NRGScoutingApp.Droid.Resource.Id.text;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.text2 = global::NRGScoutingApp.Droid.Resource.Id.text2;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.textSpacerNoButtons = global::NRGScoutingApp.Droid.Resource.Id.textSpacerNoButtons;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.textSpacerNoTitle = global::NRGScoutingApp.Droid.Resource.Id.textSpacerNoTitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.text_input_password_toggle = global::NRGScoutingApp.Droid.Resource.Id.text_input_password_toggle;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.textinput_counter = global::NRGScoutingApp.Droid.Resource.Id.textinput_counter;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.textinput_error = global::NRGScoutingApp.Droid.Resource.Id.textinput_error;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.time = global::NRGScoutingApp.Droid.Resource.Id.time;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.title = global::NRGScoutingApp.Droid.Resource.Id.title;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.titleDividerNoCustom = global::NRGScoutingApp.Droid.Resource.Id.titleDividerNoCustom;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.title_template = global::NRGScoutingApp.Droid.Resource.Id.title_template;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.top = global::NRGScoutingApp.Droid.Resource.Id.top;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.topPanel = global::NRGScoutingApp.Droid.Resource.Id.topPanel;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.touch_outside = global::NRGScoutingApp.Droid.Resource.Id.touch_outside;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.transition_current_scene = global::NRGScoutingApp.Droid.Resource.Id.transition_current_scene;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.transition_layout_save = global::NRGScoutingApp.Droid.Resource.Id.transition_layout_save;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.transition_position = global::NRGScoutingApp.Droid.Resource.Id.transition_position;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.transition_scene_layoutid_cache = global::NRGScoutingApp.Droid.Resource.Id.transition_scene_layoutid_cache;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.transition_transform = global::NRGScoutingApp.Droid.Resource.Id.transition_transform;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.uniform = global::NRGScoutingApp.Droid.Resource.Id.uniform;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.up = global::NRGScoutingApp.Droid.Resource.Id.up;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.useLogo = global::NRGScoutingApp.Droid.Resource.Id.useLogo;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.view_offset_helper = global::NRGScoutingApp.Droid.Resource.Id.view_offset_helper;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.visible = global::NRGScoutingApp.Droid.Resource.Id.visible;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.withText = global::NRGScoutingApp.Droid.Resource.Id.withText;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.wrap_content = global::NRGScoutingApp.Droid.Resource.Id.wrap_content;
+			global::Xamarin.Forms.Platform.Android.Resource.Integer.abc_config_activityDefaultDur = global::NRGScoutingApp.Droid.Resource.Integer.abc_config_activityDefaultDur;
+			global::Xamarin.Forms.Platform.Android.Resource.Integer.abc_config_activityShortDur = global::NRGScoutingApp.Droid.Resource.Integer.abc_config_activityShortDur;
+			global::Xamarin.Forms.Platform.Android.Resource.Integer.app_bar_elevation_anim_duration = global::NRGScoutingApp.Droid.Resource.Integer.app_bar_elevation_anim_duration;
+			global::Xamarin.Forms.Platform.Android.Resource.Integer.bottom_sheet_slide_duration = global::NRGScoutingApp.Droid.Resource.Integer.bottom_sheet_slide_duration;
+			global::Xamarin.Forms.Platform.Android.Resource.Integer.cancel_button_image_alpha = global::NRGScoutingApp.Droid.Resource.Integer.cancel_button_image_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Integer.config_tooltipAnimTime = global::NRGScoutingApp.Droid.Resource.Integer.config_tooltipAnimTime;
+			global::Xamarin.Forms.Platform.Android.Resource.Integer.design_snackbar_text_max_lines = global::NRGScoutingApp.Droid.Resource.Integer.design_snackbar_text_max_lines;
+			global::Xamarin.Forms.Platform.Android.Resource.Integer.hide_password_duration = global::NRGScoutingApp.Droid.Resource.Integer.hide_password_duration;
+			global::Xamarin.Forms.Platform.Android.Resource.Integer.show_password_duration = global::NRGScoutingApp.Droid.Resource.Integer.show_password_duration;
+			global::Xamarin.Forms.Platform.Android.Resource.Integer.status_bar_notification_info_maxnum = global::NRGScoutingApp.Droid.Resource.Integer.status_bar_notification_info_maxnum;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_action_bar_title_item = global::NRGScoutingApp.Droid.Resource.Layout.abc_action_bar_title_item;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_action_bar_up_container = global::NRGScoutingApp.Droid.Resource.Layout.abc_action_bar_up_container;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_action_menu_item_layout = global::NRGScoutingApp.Droid.Resource.Layout.abc_action_menu_item_layout;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_action_menu_layout = global::NRGScoutingApp.Droid.Resource.Layout.abc_action_menu_layout;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_action_mode_bar = global::NRGScoutingApp.Droid.Resource.Layout.abc_action_mode_bar;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_action_mode_close_item_material = global::NRGScoutingApp.Droid.Resource.Layout.abc_action_mode_close_item_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_activity_chooser_view = global::NRGScoutingApp.Droid.Resource.Layout.abc_activity_chooser_view;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_activity_chooser_view_list_item = global::NRGScoutingApp.Droid.Resource.Layout.abc_activity_chooser_view_list_item;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_alert_dialog_button_bar_material = global::NRGScoutingApp.Droid.Resource.Layout.abc_alert_dialog_button_bar_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_alert_dialog_material = global::NRGScoutingApp.Droid.Resource.Layout.abc_alert_dialog_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_alert_dialog_title_material = global::NRGScoutingApp.Droid.Resource.Layout.abc_alert_dialog_title_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_dialog_title_material = global::NRGScoutingApp.Droid.Resource.Layout.abc_dialog_title_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_expanded_menu_layout = global::NRGScoutingApp.Droid.Resource.Layout.abc_expanded_menu_layout;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_list_menu_item_checkbox = global::NRGScoutingApp.Droid.Resource.Layout.abc_list_menu_item_checkbox;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_list_menu_item_icon = global::NRGScoutingApp.Droid.Resource.Layout.abc_list_menu_item_icon;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_list_menu_item_layout = global::NRGScoutingApp.Droid.Resource.Layout.abc_list_menu_item_layout;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_list_menu_item_radio = global::NRGScoutingApp.Droid.Resource.Layout.abc_list_menu_item_radio;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_popup_menu_header_item_layout = global::NRGScoutingApp.Droid.Resource.Layout.abc_popup_menu_header_item_layout;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_popup_menu_item_layout = global::NRGScoutingApp.Droid.Resource.Layout.abc_popup_menu_item_layout;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_screen_content_include = global::NRGScoutingApp.Droid.Resource.Layout.abc_screen_content_include;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_screen_simple = global::NRGScoutingApp.Droid.Resource.Layout.abc_screen_simple;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_screen_simple_overlay_action_mode = global::NRGScoutingApp.Droid.Resource.Layout.abc_screen_simple_overlay_action_mode;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_screen_toolbar = global::NRGScoutingApp.Droid.Resource.Layout.abc_screen_toolbar;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_search_dropdown_item_icons_2line = global::NRGScoutingApp.Droid.Resource.Layout.abc_search_dropdown_item_icons_2line;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_search_view = global::NRGScoutingApp.Droid.Resource.Layout.abc_search_view;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_select_dialog_material = global::NRGScoutingApp.Droid.Resource.Layout.abc_select_dialog_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.BottomTabLayout = global::NRGScoutingApp.Droid.Resource.Layout.BottomTabLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_bottom_navigation_item = global::NRGScoutingApp.Droid.Resource.Layout.design_bottom_navigation_item;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_bottom_sheet_dialog = global::NRGScoutingApp.Droid.Resource.Layout.design_bottom_sheet_dialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_layout_snackbar = global::NRGScoutingApp.Droid.Resource.Layout.design_layout_snackbar;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_layout_snackbar_include = global::NRGScoutingApp.Droid.Resource.Layout.design_layout_snackbar_include;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_layout_tab_icon = global::NRGScoutingApp.Droid.Resource.Layout.design_layout_tab_icon;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_layout_tab_text = global::NRGScoutingApp.Droid.Resource.Layout.design_layout_tab_text;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_menu_item_action_area = global::NRGScoutingApp.Droid.Resource.Layout.design_menu_item_action_area;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_navigation_item = global::NRGScoutingApp.Droid.Resource.Layout.design_navigation_item;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_navigation_item_header = global::NRGScoutingApp.Droid.Resource.Layout.design_navigation_item_header;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_navigation_item_separator = global::NRGScoutingApp.Droid.Resource.Layout.design_navigation_item_separator;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_navigation_item_subheader = global::NRGScoutingApp.Droid.Resource.Layout.design_navigation_item_subheader;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_navigation_menu = global::NRGScoutingApp.Droid.Resource.Layout.design_navigation_menu;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_navigation_menu_item = global::NRGScoutingApp.Droid.Resource.Layout.design_navigation_menu_item;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_text_input_password_icon = global::NRGScoutingApp.Droid.Resource.Layout.design_text_input_password_icon;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.FlyoutContent = global::NRGScoutingApp.Droid.Resource.Layout.FlyoutContent;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.notification_action = global::NRGScoutingApp.Droid.Resource.Layout.notification_action;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.notification_action_tombstone = global::NRGScoutingApp.Droid.Resource.Layout.notification_action_tombstone;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.notification_media_action = global::NRGScoutingApp.Droid.Resource.Layout.notification_media_action;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.notification_media_cancel_action = global::NRGScoutingApp.Droid.Resource.Layout.notification_media_cancel_action;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.notification_template_big_media = global::NRGScoutingApp.Droid.Resource.Layout.notification_template_big_media;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.notification_template_big_media_custom = global::NRGScoutingApp.Droid.Resource.Layout.notification_template_big_media_custom;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.notification_template_big_media_narrow = global::NRGScoutingApp.Droid.Resource.Layout.notification_template_big_media_narrow;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.notification_template_big_media_narrow_custom = global::NRGScoutingApp.Droid.Resource.Layout.notification_template_big_media_narrow_custom;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.notification_template_custom_big = global::NRGScoutingApp.Droid.Resource.Layout.notification_template_custom_big;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.notification_template_icon_group = global::NRGScoutingApp.Droid.Resource.Layout.notification_template_icon_group;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.notification_template_lines_media = global::NRGScoutingApp.Droid.Resource.Layout.notification_template_lines_media;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.notification_template_media = global::NRGScoutingApp.Droid.Resource.Layout.notification_template_media;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.notification_template_media_custom = global::NRGScoutingApp.Droid.Resource.Layout.notification_template_media_custom;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.notification_template_part_chronometer = global::NRGScoutingApp.Droid.Resource.Layout.notification_template_part_chronometer;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.notification_template_part_time = global::NRGScoutingApp.Droid.Resource.Layout.notification_template_part_time;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.RootLayout = global::NRGScoutingApp.Droid.Resource.Layout.RootLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.select_dialog_item_material = global::NRGScoutingApp.Droid.Resource.Layout.select_dialog_item_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.select_dialog_multichoice_material = global::NRGScoutingApp.Droid.Resource.Layout.select_dialog_multichoice_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.select_dialog_singlechoice_material = global::NRGScoutingApp.Droid.Resource.Layout.select_dialog_singlechoice_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.ShellContent = global::NRGScoutingApp.Droid.Resource.Layout.ShellContent;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.support_simple_spinner_dropdown_item = global::NRGScoutingApp.Droid.Resource.Layout.support_simple_spinner_dropdown_item;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.tooltip = global::NRGScoutingApp.Droid.Resource.Layout.tooltip;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_action_bar_home_description = global::NRGScoutingApp.Droid.Resource.String.abc_action_bar_home_description;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_action_bar_up_description = global::NRGScoutingApp.Droid.Resource.String.abc_action_bar_up_description;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_action_menu_overflow_description = global::NRGScoutingApp.Droid.Resource.String.abc_action_menu_overflow_description;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_action_mode_done = global::NRGScoutingApp.Droid.Resource.String.abc_action_mode_done;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_activity_chooser_view_see_all = global::NRGScoutingApp.Droid.Resource.String.abc_activity_chooser_view_see_all;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_activitychooserview_choose_application = global::NRGScoutingApp.Droid.Resource.String.abc_activitychooserview_choose_application;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_capital_off = global::NRGScoutingApp.Droid.Resource.String.abc_capital_off;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_capital_on = global::NRGScoutingApp.Droid.Resource.String.abc_capital_on;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_font_family_body_1_material = global::NRGScoutingApp.Droid.Resource.String.abc_font_family_body_1_material;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_font_family_body_2_material = global::NRGScoutingApp.Droid.Resource.String.abc_font_family_body_2_material;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_font_family_button_material = global::NRGScoutingApp.Droid.Resource.String.abc_font_family_button_material;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_font_family_caption_material = global::NRGScoutingApp.Droid.Resource.String.abc_font_family_caption_material;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_font_family_display_1_material = global::NRGScoutingApp.Droid.Resource.String.abc_font_family_display_1_material;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_font_family_display_2_material = global::NRGScoutingApp.Droid.Resource.String.abc_font_family_display_2_material;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_font_family_display_3_material = global::NRGScoutingApp.Droid.Resource.String.abc_font_family_display_3_material;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_font_family_display_4_material = global::NRGScoutingApp.Droid.Resource.String.abc_font_family_display_4_material;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_font_family_headline_material = global::NRGScoutingApp.Droid.Resource.String.abc_font_family_headline_material;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_font_family_menu_material = global::NRGScoutingApp.Droid.Resource.String.abc_font_family_menu_material;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_font_family_subhead_material = global::NRGScoutingApp.Droid.Resource.String.abc_font_family_subhead_material;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_font_family_title_material = global::NRGScoutingApp.Droid.Resource.String.abc_font_family_title_material;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_search_hint = global::NRGScoutingApp.Droid.Resource.String.abc_search_hint;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_searchview_description_clear = global::NRGScoutingApp.Droid.Resource.String.abc_searchview_description_clear;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_searchview_description_query = global::NRGScoutingApp.Droid.Resource.String.abc_searchview_description_query;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_searchview_description_search = global::NRGScoutingApp.Droid.Resource.String.abc_searchview_description_search;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_searchview_description_submit = global::NRGScoutingApp.Droid.Resource.String.abc_searchview_description_submit;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_searchview_description_voice = global::NRGScoutingApp.Droid.Resource.String.abc_searchview_description_voice;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_shareactionprovider_share_with = global::NRGScoutingApp.Droid.Resource.String.abc_shareactionprovider_share_with;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_shareactionprovider_share_with_application = global::NRGScoutingApp.Droid.Resource.String.abc_shareactionprovider_share_with_application;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_toolbar_collapse_description = global::NRGScoutingApp.Droid.Resource.String.abc_toolbar_collapse_description;
+			global::Xamarin.Forms.Platform.Android.Resource.String.appbar_scrolling_view_behavior = global::NRGScoutingApp.Droid.Resource.String.appbar_scrolling_view_behavior;
+			global::Xamarin.Forms.Platform.Android.Resource.String.bottom_sheet_behavior = global::NRGScoutingApp.Droid.Resource.String.bottom_sheet_behavior;
+			global::Xamarin.Forms.Platform.Android.Resource.String.character_counter_pattern = global::NRGScoutingApp.Droid.Resource.String.character_counter_pattern;
+			global::Xamarin.Forms.Platform.Android.Resource.String.password_toggle_content_description = global::NRGScoutingApp.Droid.Resource.String.password_toggle_content_description;
+			global::Xamarin.Forms.Platform.Android.Resource.String.path_password_eye = global::NRGScoutingApp.Droid.Resource.String.path_password_eye;
+			global::Xamarin.Forms.Platform.Android.Resource.String.path_password_eye_mask_strike_through = global::NRGScoutingApp.Droid.Resource.String.path_password_eye_mask_strike_through;
+			global::Xamarin.Forms.Platform.Android.Resource.String.path_password_eye_mask_visible = global::NRGScoutingApp.Droid.Resource.String.path_password_eye_mask_visible;
+			global::Xamarin.Forms.Platform.Android.Resource.String.path_password_strike_through = global::NRGScoutingApp.Droid.Resource.String.path_password_strike_through;
+			global::Xamarin.Forms.Platform.Android.Resource.String.search_menu_title = global::NRGScoutingApp.Droid.Resource.String.search_menu_title;
+			global::Xamarin.Forms.Platform.Android.Resource.String.status_bar_notification_info_overflow = global::NRGScoutingApp.Droid.Resource.String.status_bar_notification_info_overflow;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.AlertDialog_AppCompat = global::NRGScoutingApp.Droid.Resource.Style.AlertDialog_AppCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.AlertDialog_AppCompat_Light = global::NRGScoutingApp.Droid.Resource.Style.AlertDialog_AppCompat_Light;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Animation_AppCompat_Dialog = global::NRGScoutingApp.Droid.Resource.Style.Animation_AppCompat_Dialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Animation_AppCompat_DropDownUp = global::NRGScoutingApp.Droid.Resource.Style.Animation_AppCompat_DropDownUp;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Animation_AppCompat_Tooltip = global::NRGScoutingApp.Droid.Resource.Style.Animation_AppCompat_Tooltip;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Animation_Design_BottomSheetDialog = global::NRGScoutingApp.Droid.Resource.Style.Animation_Design_BottomSheetDialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_AlertDialog_AppCompat = global::NRGScoutingApp.Droid.Resource.Style.Base_AlertDialog_AppCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_AlertDialog_AppCompat_Light = global::NRGScoutingApp.Droid.Resource.Style.Base_AlertDialog_AppCompat_Light;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Animation_AppCompat_Dialog = global::NRGScoutingApp.Droid.Resource.Style.Base_Animation_AppCompat_Dialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Animation_AppCompat_DropDownUp = global::NRGScoutingApp.Droid.Resource.Style.Base_Animation_AppCompat_DropDownUp;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Animation_AppCompat_Tooltip = global::NRGScoutingApp.Droid.Resource.Style.Base_Animation_AppCompat_Tooltip;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_CardView = global::NRGScoutingApp.Droid.Resource.Style.Base_CardView;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_DialogWindowTitle_AppCompat = global::NRGScoutingApp.Droid.Resource.Style.Base_DialogWindowTitle_AppCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_DialogWindowTitleBackground_AppCompat = global::NRGScoutingApp.Droid.Resource.Style.Base_DialogWindowTitleBackground_AppCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Body1 = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body1;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Body2 = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body2;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Button = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Button;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Caption = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Caption;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Display1 = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display1;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Display2 = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display2;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Display3 = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display3;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Display4 = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display4;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Headline = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Headline;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Inverse = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Large = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Medium = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Menu = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Menu;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_SearchResult = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Small = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Subhead = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Title = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Tooltip = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Tooltip;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Colored = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Colored;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Header = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Header;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title = global::NRGScoutingApp.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_AppCompat = global::NRGScoutingApp.Droid.Resource.Style.Base_Theme_AppCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_AppCompat_CompactMenu = global::NRGScoutingApp.Droid.Resource.Style.Base_Theme_AppCompat_CompactMenu;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_AppCompat_Dialog = global::NRGScoutingApp.Droid.Resource.Style.Base_Theme_AppCompat_Dialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_AppCompat_Dialog_Alert = global::NRGScoutingApp.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_Alert;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize = global::NRGScoutingApp.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth = global::NRGScoutingApp.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge = global::NRGScoutingApp.Droid.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_AppCompat_Light = global::NRGScoutingApp.Droid.Resource.Style.Base_Theme_AppCompat_Light;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar = global::NRGScoutingApp.Droid.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog = global::NRGScoutingApp.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert = global::NRGScoutingApp.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize = global::NRGScoutingApp.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth = global::NRGScoutingApp.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge = global::NRGScoutingApp.Droid.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_ThemeOverlay_AppCompat = global::NRGScoutingApp.Droid.Resource.Style.Base_ThemeOverlay_AppCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar = global::NRGScoutingApp.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dark = global::NRGScoutingApp.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar = global::NRGScoutingApp.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog = global::NRGScoutingApp.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert = global::NRGScoutingApp.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Light = global::NRGScoutingApp.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Light;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V11_Theme_AppCompat_Dialog = global::NRGScoutingApp.Droid.Resource.Style.Base_V11_Theme_AppCompat_Dialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V11_Theme_AppCompat_Light_Dialog = global::NRGScoutingApp.Droid.Resource.Style.Base_V11_Theme_AppCompat_Light_Dialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V11_ThemeOverlay_AppCompat_Dialog = global::NRGScoutingApp.Droid.Resource.Style.Base_V11_ThemeOverlay_AppCompat_Dialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V12_Widget_AppCompat_AutoCompleteTextView = global::NRGScoutingApp.Droid.Resource.Style.Base_V12_Widget_AppCompat_AutoCompleteTextView;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V12_Widget_AppCompat_EditText = global::NRGScoutingApp.Droid.Resource.Style.Base_V12_Widget_AppCompat_EditText;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V14_Widget_Design_AppBarLayout = global::NRGScoutingApp.Droid.Resource.Style.Base_V14_Widget_Design_AppBarLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V21_Theme_AppCompat = global::NRGScoutingApp.Droid.Resource.Style.Base_V21_Theme_AppCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V21_Theme_AppCompat_Dialog = global::NRGScoutingApp.Droid.Resource.Style.Base_V21_Theme_AppCompat_Dialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V21_Theme_AppCompat_Light = global::NRGScoutingApp.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog = global::NRGScoutingApp.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog = global::NRGScoutingApp.Droid.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V21_Widget_Design_AppBarLayout = global::NRGScoutingApp.Droid.Resource.Style.Base_V21_Widget_Design_AppBarLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V22_Theme_AppCompat = global::NRGScoutingApp.Droid.Resource.Style.Base_V22_Theme_AppCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V22_Theme_AppCompat_Light = global::NRGScoutingApp.Droid.Resource.Style.Base_V22_Theme_AppCompat_Light;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V23_Theme_AppCompat = global::NRGScoutingApp.Droid.Resource.Style.Base_V23_Theme_AppCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V23_Theme_AppCompat_Light = global::NRGScoutingApp.Droid.Resource.Style.Base_V23_Theme_AppCompat_Light;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V26_Theme_AppCompat = global::NRGScoutingApp.Droid.Resource.Style.Base_V26_Theme_AppCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V26_Theme_AppCompat_Light = global::NRGScoutingApp.Droid.Resource.Style.Base_V26_Theme_AppCompat_Light;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V26_Widget_AppCompat_Toolbar = global::NRGScoutingApp.Droid.Resource.Style.Base_V26_Widget_AppCompat_Toolbar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V26_Widget_Design_AppBarLayout = global::NRGScoutingApp.Droid.Resource.Style.Base_V26_Widget_Design_AppBarLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V7_Theme_AppCompat = global::NRGScoutingApp.Droid.Resource.Style.Base_V7_Theme_AppCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V7_Theme_AppCompat_Dialog = global::NRGScoutingApp.Droid.Resource.Style.Base_V7_Theme_AppCompat_Dialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V7_Theme_AppCompat_Light = global::NRGScoutingApp.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog = global::NRGScoutingApp.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog = global::NRGScoutingApp.Droid.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView = global::NRGScoutingApp.Droid.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V7_Widget_AppCompat_EditText = global::NRGScoutingApp.Droid.Resource.Style.Base_V7_Widget_AppCompat_EditText;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V7_Widget_AppCompat_Toolbar = global::NRGScoutingApp.Droid.Resource.Style.Base_V7_Widget_AppCompat_Toolbar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_ActionBar = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_ActionButton = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_ActionMode = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_ActionMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_ActivityChooserView = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_ActivityChooserView;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_Button = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_Button;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_Button_Borderless = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_Button_Colored = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_Button_Colored;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_Button_Small = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_Button_Small;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_ButtonBar = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_EditText = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_EditText;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_ImageButton = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_ImageButton;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_ListMenuView = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_ListMenuView;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_ListPopupWindow = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_ListPopupWindow;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_ListView = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_ListView;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_ListView_DropDown = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_ListView_DropDown;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_ListView_Menu = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_ListView_Menu;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_PopupMenu = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_PopupWindow = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_PopupWindow;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_ProgressBar = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_RatingBar = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_RatingBar_Small = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Small;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_SearchView = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_SearchView;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_SeekBar = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_Spinner = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_Spinner;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_Toolbar = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_Design_AppBarLayout = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_Design_AppBarLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_Design_TabLayout = global::NRGScoutingApp.Droid.Resource.Style.Base_Widget_Design_TabLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.CardView = global::NRGScoutingApp.Droid.Resource.Style.CardView;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.CardView_Dark = global::NRGScoutingApp.Droid.Resource.Style.CardView_Dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.CardView_Light = global::NRGScoutingApp.Droid.Resource.Style.CardView_Light;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Platform_AppCompat = global::NRGScoutingApp.Droid.Resource.Style.Platform_AppCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Platform_AppCompat_Light = global::NRGScoutingApp.Droid.Resource.Style.Platform_AppCompat_Light;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Platform_ThemeOverlay_AppCompat = global::NRGScoutingApp.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark = global::NRGScoutingApp.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Platform_ThemeOverlay_AppCompat_Light = global::NRGScoutingApp.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Light;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Platform_V11_AppCompat = global::NRGScoutingApp.Droid.Resource.Style.Platform_V11_AppCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Platform_V11_AppCompat_Light = global::NRGScoutingApp.Droid.Resource.Style.Platform_V11_AppCompat_Light;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Platform_V14_AppCompat = global::NRGScoutingApp.Droid.Resource.Style.Platform_V14_AppCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Platform_V14_AppCompat_Light = global::NRGScoutingApp.Droid.Resource.Style.Platform_V14_AppCompat_Light;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Platform_V21_AppCompat = global::NRGScoutingApp.Droid.Resource.Style.Platform_V21_AppCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Platform_V21_AppCompat_Light = global::NRGScoutingApp.Droid.Resource.Style.Platform_V21_AppCompat_Light;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Platform_V25_AppCompat = global::NRGScoutingApp.Droid.Resource.Style.Platform_V25_AppCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Platform_V25_AppCompat_Light = global::NRGScoutingApp.Droid.Resource.Style.Platform_V25_AppCompat_Light;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Platform_Widget_AppCompat_Spinner = global::NRGScoutingApp.Droid.Resource.Style.Platform_Widget_AppCompat_Spinner;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat = global::NRGScoutingApp.Droid.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem = global::NRGScoutingApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon = global::NRGScoutingApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem = global::NRGScoutingApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup = global::NRGScoutingApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text = global::NRGScoutingApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown = global::NRGScoutingApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1 = global::NRGScoutingApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2 = global::NRGScoutingApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query = global::NRGScoutingApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text = global::NRGScoutingApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon = global::NRGScoutingApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton = global::NRGScoutingApp.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow = global::NRGScoutingApp.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Body1 = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Body1;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Body2 = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Body2;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Button = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Button;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Caption = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Caption;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Display1 = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Display1;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Display2 = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Display2;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Display3 = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Display3;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Display4 = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Display4;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Headline = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Headline;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Inverse = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Large = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Large;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Large_Inverse = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Large_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Medium = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Medium;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Medium_Inverse = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Medium_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Menu = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Menu;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_SearchResult_Title = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Title;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Small = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Small;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Small_Inverse = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Small_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Subhead = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Subhead;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Title = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Title;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Title_Inverse = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Title_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Tooltip = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Tooltip;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Widget_Button = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Widget_Button_Borderless_Colored = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Borderless_Colored;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Widget_Button_Colored = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Colored;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Header = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Header;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Widget_Switch = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Switch;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_Compat_Notification = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_Compat_Notification;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_Compat_Notification_Info = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_Compat_Notification_Info;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_Compat_Notification_Info_Media = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_Compat_Notification_Info_Media;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_Compat_Notification_Line2 = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_Compat_Notification_Line2;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_Compat_Notification_Line2_Media = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_Compat_Notification_Line2_Media;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_Compat_Notification_Media = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_Compat_Notification_Media;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_Compat_Notification_Time = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_Compat_Notification_Time;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_Compat_Notification_Time_Media = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_Compat_Notification_Time_Media;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_Compat_Notification_Title = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_Compat_Notification_Title;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_Compat_Notification_Title_Media = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_Compat_Notification_Title_Media;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_Design_CollapsingToolbar_Expanded = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_Design_CollapsingToolbar_Expanded;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_Design_Counter = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_Design_Counter;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_Design_Counter_Overflow = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_Design_Counter_Overflow;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_Design_Error = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_Design_Error;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_Design_Hint = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_Design_Hint;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_Design_Snackbar_Message = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_Design_Snackbar_Message;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_Design_Tab = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_Design_Tab;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title = global::NRGScoutingApp.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat = global::NRGScoutingApp.Droid.Resource.Style.Theme_AppCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_CompactMenu = global::NRGScoutingApp.Droid.Resource.Style.Theme_AppCompat_CompactMenu;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_DayNight = global::NRGScoutingApp.Droid.Resource.Style.Theme_AppCompat_DayNight;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar = global::NRGScoutingApp.Droid.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_DayNight_Dialog = global::NRGScoutingApp.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert = global::NRGScoutingApp.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth = global::NRGScoutingApp.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge = global::NRGScoutingApp.Droid.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_DayNight_NoActionBar = global::NRGScoutingApp.Droid.Resource.Style.Theme_AppCompat_DayNight_NoActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_Dialog = global::NRGScoutingApp.Droid.Resource.Style.Theme_AppCompat_Dialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_Dialog_Alert = global::NRGScoutingApp.Droid.Resource.Style.Theme_AppCompat_Dialog_Alert;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_Dialog_MinWidth = global::NRGScoutingApp.Droid.Resource.Style.Theme_AppCompat_Dialog_MinWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_DialogWhenLarge = global::NRGScoutingApp.Droid.Resource.Style.Theme_AppCompat_DialogWhenLarge;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_Light = global::NRGScoutingApp.Droid.Resource.Style.Theme_AppCompat_Light;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_Light_DarkActionBar = global::NRGScoutingApp.Droid.Resource.Style.Theme_AppCompat_Light_DarkActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_Light_Dialog = global::NRGScoutingApp.Droid.Resource.Style.Theme_AppCompat_Light_Dialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_Light_Dialog_Alert = global::NRGScoutingApp.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_Alert;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth = global::NRGScoutingApp.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge = global::NRGScoutingApp.Droid.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_Light_NoActionBar = global::NRGScoutingApp.Droid.Resource.Style.Theme_AppCompat_Light_NoActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_NoActionBar = global::NRGScoutingApp.Droid.Resource.Style.Theme_AppCompat_NoActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_Design = global::NRGScoutingApp.Droid.Resource.Style.Theme_Design;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_Design_BottomSheetDialog = global::NRGScoutingApp.Droid.Resource.Style.Theme_Design_BottomSheetDialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_Design_Light = global::NRGScoutingApp.Droid.Resource.Style.Theme_Design_Light;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_Design_Light_BottomSheetDialog = global::NRGScoutingApp.Droid.Resource.Style.Theme_Design_Light_BottomSheetDialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_Design_Light_NoActionBar = global::NRGScoutingApp.Droid.Resource.Style.Theme_Design_Light_NoActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_Design_NoActionBar = global::NRGScoutingApp.Droid.Resource.Style.Theme_Design_NoActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.ThemeOverlay_AppCompat = global::NRGScoutingApp.Droid.Resource.Style.ThemeOverlay_AppCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.ThemeOverlay_AppCompat_ActionBar = global::NRGScoutingApp.Droid.Resource.Style.ThemeOverlay_AppCompat_ActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.ThemeOverlay_AppCompat_Dark = global::NRGScoutingApp.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar = global::NRGScoutingApp.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.ThemeOverlay_AppCompat_Dialog = global::NRGScoutingApp.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert = global::NRGScoutingApp.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.ThemeOverlay_AppCompat_Light = global::NRGScoutingApp.Droid.Resource.Style.ThemeOverlay_AppCompat_Light;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_ActionBar = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_ActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_ActionBar_Solid = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_ActionBar_Solid;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_ActionBar_TabBar = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_ActionBar_TabText = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabText;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_ActionBar_TabView = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabView;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_ActionButton = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_ActionButton;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_ActionButton_CloseMode = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_ActionButton_CloseMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_ActionButton_Overflow = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_ActionButton_Overflow;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_ActionMode = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_ActionMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_ActivityChooserView = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_ActivityChooserView;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_AutoCompleteTextView = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_AutoCompleteTextView;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Button = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Button;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Button_Borderless = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Button_Borderless;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Button_Borderless_Colored = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Button_Borderless_Colored;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Button_Colored = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Button_Colored;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Button_Small = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Button_Small;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_ButtonBar = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_ButtonBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_CompoundButton_Switch = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_CompoundButton_Switch;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_DrawerArrowToggle = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_DrawerArrowToggle;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_DropDownItem_Spinner = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_DropDownItem_Spinner;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_EditText = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_EditText;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_ImageButton = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_ImageButton;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Light_ActionBar = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Light_ActionButton = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Light_ActivityChooserView = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Light_ActivityChooserView;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Light_ListPopupWindow = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Light_ListPopupWindow;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Light_ListView_DropDown = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Light_ListView_DropDown;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Light_PopupMenu = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Light_SearchView = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Light_SearchView;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_ListMenuView = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_ListMenuView;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_ListPopupWindow = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_ListPopupWindow;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_ListView = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_ListView;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_ListView_DropDown = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_ListView_DropDown;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_ListView_Menu = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_ListView_Menu;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_PopupMenu = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_PopupMenu;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_PopupMenu_Overflow = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_PopupMenu_Overflow;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_PopupWindow = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_PopupWindow;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_ProgressBar = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_ProgressBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_RatingBar = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_RatingBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_RatingBar_Indicator = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_RatingBar_Indicator;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_RatingBar_Small = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_RatingBar_Small;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_SearchView = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_SearchView;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_SearchView_ActionBar = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_SearchView_ActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_SeekBar = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_SeekBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_SeekBar_Discrete = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_SeekBar_Discrete;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Spinner = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Spinner;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Spinner_DropDown = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Spinner_Underlined = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Spinner_Underlined;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_TextView_SpinnerItem = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_TextView_SpinnerItem;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Toolbar = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Toolbar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation = global::NRGScoutingApp.Droid.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_Compat_NotificationActionContainer = global::NRGScoutingApp.Droid.Resource.Style.Widget_Compat_NotificationActionContainer;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_Compat_NotificationActionText = global::NRGScoutingApp.Droid.Resource.Style.Widget_Compat_NotificationActionText;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_Design_AppBarLayout = global::NRGScoutingApp.Droid.Resource.Style.Widget_Design_AppBarLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_Design_BottomNavigationView = global::NRGScoutingApp.Droid.Resource.Style.Widget_Design_BottomNavigationView;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_Design_BottomSheet_Modal = global::NRGScoutingApp.Droid.Resource.Style.Widget_Design_BottomSheet_Modal;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_Design_CollapsingToolbar = global::NRGScoutingApp.Droid.Resource.Style.Widget_Design_CollapsingToolbar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_Design_CoordinatorLayout = global::NRGScoutingApp.Droid.Resource.Style.Widget_Design_CoordinatorLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_Design_FloatingActionButton = global::NRGScoutingApp.Droid.Resource.Style.Widget_Design_FloatingActionButton;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_Design_NavigationView = global::NRGScoutingApp.Droid.Resource.Style.Widget_Design_NavigationView;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_Design_ScrimInsetsFrameLayout = global::NRGScoutingApp.Droid.Resource.Style.Widget_Design_ScrimInsetsFrameLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_Design_Snackbar = global::NRGScoutingApp.Droid.Resource.Style.Widget_Design_Snackbar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_Design_TabLayout = global::NRGScoutingApp.Droid.Resource.Style.Widget_Design_TabLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_Design_TextInputLayout = global::NRGScoutingApp.Droid.Resource.Style.Widget_Design_TextInputLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_background = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBar_background;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_backgroundSplit = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBar_backgroundSplit;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_backgroundStacked = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBar_backgroundStacked;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_contentInsetEnd = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBar_contentInsetEnd;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_contentInsetEndWithActions = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBar_contentInsetEndWithActions;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_contentInsetLeft = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBar_contentInsetLeft;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_contentInsetRight = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBar_contentInsetRight;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_contentInsetStart = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBar_contentInsetStart;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_contentInsetStartWithNavigation = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBar_contentInsetStartWithNavigation;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_customNavigationLayout = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBar_customNavigationLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_displayOptions = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBar_displayOptions;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_divider = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBar_divider;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_elevation = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBar_elevation;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_height = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBar_height;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_hideOnContentScroll = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBar_hideOnContentScroll;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_homeAsUpIndicator = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBar_homeAsUpIndicator;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_homeLayout = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBar_homeLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_icon = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBar_icon;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_indeterminateProgressStyle = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBar_indeterminateProgressStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_itemPadding = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBar_itemPadding;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_logo = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBar_logo;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_navigationMode = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBar_navigationMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_popupTheme = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBar_popupTheme;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_progressBarPadding = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBar_progressBarPadding;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_progressBarStyle = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBar_progressBarStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_subtitle = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBar_subtitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_subtitleTextStyle = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBar_subtitleTextStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_title = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBar_title;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_titleTextStyle = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBar_titleTextStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBarLayout = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBarLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBarLayout_android_layout_gravity = global::NRGScoutingApp.Droid.Resource.Styleable.ActionBarLayout_android_layout_gravity;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionMenuItemView = global::NRGScoutingApp.Droid.Resource.Styleable.ActionMenuItemView;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionMenuItemView_android_minWidth = global::NRGScoutingApp.Droid.Resource.Styleable.ActionMenuItemView_android_minWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionMenuView = global::NRGScoutingApp.Droid.Resource.Styleable.ActionMenuView;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionMode = global::NRGScoutingApp.Droid.Resource.Styleable.ActionMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionMode_background = global::NRGScoutingApp.Droid.Resource.Styleable.ActionMode_background;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionMode_backgroundSplit = global::NRGScoutingApp.Droid.Resource.Styleable.ActionMode_backgroundSplit;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionMode_closeItemLayout = global::NRGScoutingApp.Droid.Resource.Styleable.ActionMode_closeItemLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionMode_height = global::NRGScoutingApp.Droid.Resource.Styleable.ActionMode_height;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionMode_subtitleTextStyle = global::NRGScoutingApp.Droid.Resource.Styleable.ActionMode_subtitleTextStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionMode_titleTextStyle = global::NRGScoutingApp.Droid.Resource.Styleable.ActionMode_titleTextStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActivityChooserView = global::NRGScoutingApp.Droid.Resource.Styleable.ActivityChooserView;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable = global::NRGScoutingApp.Droid.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActivityChooserView_initialActivityCount = global::NRGScoutingApp.Droid.Resource.Styleable.ActivityChooserView_initialActivityCount;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AlertDialog = global::NRGScoutingApp.Droid.Resource.Styleable.AlertDialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AlertDialog_android_layout = global::NRGScoutingApp.Droid.Resource.Styleable.AlertDialog_android_layout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AlertDialog_buttonPanelSideLayout = global::NRGScoutingApp.Droid.Resource.Styleable.AlertDialog_buttonPanelSideLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AlertDialog_listItemLayout = global::NRGScoutingApp.Droid.Resource.Styleable.AlertDialog_listItemLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AlertDialog_listLayout = global::NRGScoutingApp.Droid.Resource.Styleable.AlertDialog_listLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AlertDialog_multiChoiceItemLayout = global::NRGScoutingApp.Droid.Resource.Styleable.AlertDialog_multiChoiceItemLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AlertDialog_showTitle = global::NRGScoutingApp.Droid.Resource.Styleable.AlertDialog_showTitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AlertDialog_singleChoiceItemLayout = global::NRGScoutingApp.Droid.Resource.Styleable.AlertDialog_singleChoiceItemLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppBarLayout = global::NRGScoutingApp.Droid.Resource.Styleable.AppBarLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppBarLayout_android_background = global::NRGScoutingApp.Droid.Resource.Styleable.AppBarLayout_android_background;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppBarLayout_android_keyboardNavigationCluster = global::NRGScoutingApp.Droid.Resource.Styleable.AppBarLayout_android_keyboardNavigationCluster;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppBarLayout_android_touchscreenBlocksFocus = global::NRGScoutingApp.Droid.Resource.Styleable.AppBarLayout_android_touchscreenBlocksFocus;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppBarLayout_elevation = global::NRGScoutingApp.Droid.Resource.Styleable.AppBarLayout_elevation;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppBarLayout_expanded = global::NRGScoutingApp.Droid.Resource.Styleable.AppBarLayout_expanded;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppBarLayoutStates = global::NRGScoutingApp.Droid.Resource.Styleable.AppBarLayoutStates;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppBarLayoutStates_state_collapsed = global::NRGScoutingApp.Droid.Resource.Styleable.AppBarLayoutStates_state_collapsed;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppBarLayoutStates_state_collapsible = global::NRGScoutingApp.Droid.Resource.Styleable.AppBarLayoutStates_state_collapsible;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppBarLayout_Layout = global::NRGScoutingApp.Droid.Resource.Styleable.AppBarLayout_Layout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppBarLayout_Layout_layout_scrollFlags = global::NRGScoutingApp.Droid.Resource.Styleable.AppBarLayout_Layout_layout_scrollFlags;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppBarLayout_Layout_layout_scrollInterpolator = global::NRGScoutingApp.Droid.Resource.Styleable.AppBarLayout_Layout_layout_scrollInterpolator;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatImageView = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatImageView;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatImageView_android_src = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatImageView_android_src;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatImageView_srcCompat = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatImageView_srcCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatImageView_tint = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatImageView_tint;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatImageView_tintMode = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatImageView_tintMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatSeekBar = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatSeekBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatSeekBar_android_thumb = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatSeekBar_android_thumb;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatSeekBar_tickMark = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatSeekBar_tickMark;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatSeekBar_tickMarkTint = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatSeekBar_tickMarkTint;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatSeekBar_tickMarkTintMode = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatSeekBar_tickMarkTintMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextHelper = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTextHelper;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextHelper_android_drawableBottom = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableBottom;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextHelper_android_drawableEnd = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableEnd;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextHelper_android_drawableLeft = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableLeft;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextHelper_android_drawableRight = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableRight;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextHelper_android_drawableStart = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableStart;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextHelper_android_drawableTop = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableTop;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextHelper_android_textAppearance = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTextHelper_android_textAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextView = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTextView;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextView_android_textAppearance = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTextView_android_textAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextView_autoSizeMaxTextSize = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTextView_autoSizeMaxTextSize;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextView_autoSizeMinTextSize = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTextView_autoSizeMinTextSize;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextView_autoSizePresetSizes = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTextView_autoSizePresetSizes;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextView_autoSizeStepGranularity = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTextView_autoSizeStepGranularity;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextView_autoSizeTextType = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTextView_autoSizeTextType;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextView_fontFamily = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTextView_fontFamily;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextView_textAllCaps = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTextView_textAllCaps;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionBarDivider = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_actionBarDivider;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionBarItemBackground = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_actionBarItemBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionBarPopupTheme = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_actionBarPopupTheme;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionBarSize = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_actionBarSize;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionBarSplitStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_actionBarSplitStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionBarStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_actionBarStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionBarTabStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_actionBarTabStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionBarTheme = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_actionBarTheme;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionButtonStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_actionButtonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionDropDownStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_actionDropDownStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionMenuTextColor = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionModeBackground = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_actionModeBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionModeCutDrawable = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_actionModeCutDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionModeFindDrawable = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_actionModeFindDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionModePasteDrawable = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_actionModePasteDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionModeShareDrawable = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_actionModeShareDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionModeSplitBackground = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_actionModeSplitBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionModeStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_actionModeStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_activityChooserViewStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_activityChooserViewStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_alertDialogStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_alertDialogStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_alertDialogTheme = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_alertDialogTheme;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_android_windowIsFloating = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_android_windowIsFloating;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_borderlessButtonStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_borderlessButtonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_buttonBarStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_buttonBarStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_buttonStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_buttonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_buttonStyleSmall = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_buttonStyleSmall;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_checkboxStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_checkboxStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_checkedTextViewStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_checkedTextViewStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_colorAccent = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_colorAccent;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_colorBackgroundFloating = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_colorBackgroundFloating;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_colorButtonNormal = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_colorButtonNormal;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_colorControlActivated = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_colorControlActivated;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_colorControlHighlight = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_colorControlHighlight;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_colorControlNormal = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_colorControlNormal;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_colorError = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_colorError;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_colorPrimary = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_colorPrimary;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_colorPrimaryDark = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_colorPrimaryDark;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_controlBackground = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_controlBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_dialogPreferredPadding = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_dialogPreferredPadding;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_dialogTheme = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_dialogTheme;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_dividerHorizontal = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_dividerHorizontal;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_dividerVertical = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_dividerVertical;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_dropDownListViewStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_dropDownListViewStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_editTextBackground = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_editTextBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_editTextColor = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_editTextColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_editTextStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_editTextStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_homeAsUpIndicator = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_homeAsUpIndicator;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_imageButtonStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_imageButtonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_listDividerAlertDialog = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_listDividerAlertDialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_listMenuViewStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_listMenuViewStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_listPopupWindowStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_listPopupWindowStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_listPreferredItemHeight = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeight;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_panelBackground = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_panelBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_panelMenuListTheme = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_panelMenuListTheme;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_panelMenuListWidth = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_panelMenuListWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_popupMenuStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_popupMenuStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_popupWindowStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_popupWindowStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_radioButtonStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_radioButtonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_ratingBarStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_searchViewStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_searchViewStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_seekBarStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_seekBarStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_selectableItemBackground = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_spinnerStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_spinnerStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_switchStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_switchStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_textAppearanceListItem = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItem;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_textAppearanceListItemSecondary = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItemSecondary;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_textAppearancePopupMenuHeader = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_textAppearancePopupMenuHeader;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_textColorSearchUrl = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_textColorSearchUrl;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_toolbarStyle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_toolbarStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_tooltipForegroundColor = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_tooltipForegroundColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_tooltipFrameBackground = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_tooltipFrameBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_windowActionBar = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_windowActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_windowActionBarOverlay = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_windowActionBarOverlay;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_windowActionModeOverlay = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_windowActionModeOverlay;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_windowMinWidthMajor = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMajor;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_windowMinWidthMinor = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMinor;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_windowNoTitle = global::NRGScoutingApp.Droid.Resource.Styleable.AppCompatTheme_windowNoTitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.BottomNavigationView = global::NRGScoutingApp.Droid.Resource.Styleable.BottomNavigationView;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.BottomNavigationView_elevation = global::NRGScoutingApp.Droid.Resource.Styleable.BottomNavigationView_elevation;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.BottomNavigationView_itemBackground = global::NRGScoutingApp.Droid.Resource.Styleable.BottomNavigationView_itemBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.BottomNavigationView_itemIconTint = global::NRGScoutingApp.Droid.Resource.Styleable.BottomNavigationView_itemIconTint;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.BottomNavigationView_itemTextColor = global::NRGScoutingApp.Droid.Resource.Styleable.BottomNavigationView_itemTextColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.BottomNavigationView_menu = global::NRGScoutingApp.Droid.Resource.Styleable.BottomNavigationView_menu;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.BottomSheetBehavior_Layout = global::NRGScoutingApp.Droid.Resource.Styleable.BottomSheetBehavior_Layout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.BottomSheetBehavior_Layout_behavior_hideable = global::NRGScoutingApp.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_hideable;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.BottomSheetBehavior_Layout_behavior_peekHeight = global::NRGScoutingApp.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_peekHeight;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.BottomSheetBehavior_Layout_behavior_skipCollapsed = global::NRGScoutingApp.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_skipCollapsed;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ButtonBarLayout = global::NRGScoutingApp.Droid.Resource.Styleable.ButtonBarLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ButtonBarLayout_allowStacking = global::NRGScoutingApp.Droid.Resource.Styleable.ButtonBarLayout_allowStacking;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CardView = global::NRGScoutingApp.Droid.Resource.Styleable.CardView;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CardView_android_minHeight = global::NRGScoutingApp.Droid.Resource.Styleable.CardView_android_minHeight;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CardView_android_minWidth = global::NRGScoutingApp.Droid.Resource.Styleable.CardView_android_minWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CardView_cardBackgroundColor = global::NRGScoutingApp.Droid.Resource.Styleable.CardView_cardBackgroundColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CardView_cardCornerRadius = global::NRGScoutingApp.Droid.Resource.Styleable.CardView_cardCornerRadius;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CardView_cardElevation = global::NRGScoutingApp.Droid.Resource.Styleable.CardView_cardElevation;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CardView_cardMaxElevation = global::NRGScoutingApp.Droid.Resource.Styleable.CardView_cardMaxElevation;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CardView_cardPreventCornerOverlap = global::NRGScoutingApp.Droid.Resource.Styleable.CardView_cardPreventCornerOverlap;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CardView_cardUseCompatPadding = global::NRGScoutingApp.Droid.Resource.Styleable.CardView_cardUseCompatPadding;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CardView_contentPadding = global::NRGScoutingApp.Droid.Resource.Styleable.CardView_contentPadding;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CardView_contentPaddingBottom = global::NRGScoutingApp.Droid.Resource.Styleable.CardView_contentPaddingBottom;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CardView_contentPaddingLeft = global::NRGScoutingApp.Droid.Resource.Styleable.CardView_contentPaddingLeft;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CardView_contentPaddingRight = global::NRGScoutingApp.Droid.Resource.Styleable.CardView_contentPaddingRight;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CardView_contentPaddingTop = global::NRGScoutingApp.Droid.Resource.Styleable.CardView_contentPaddingTop;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout = global::NRGScoutingApp.Droid.Resource.Styleable.CollapsingToolbarLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity = global::NRGScoutingApp.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance = global::NRGScoutingApp.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout_contentScrim = global::NRGScoutingApp.Droid.Resource.Styleable.CollapsingToolbarLayout_contentScrim;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleGravity = global::NRGScoutingApp.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleGravity;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMargin = global::NRGScoutingApp.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMargin;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginBottom = global::NRGScoutingApp.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginBottom;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginEnd = global::NRGScoutingApp.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginEnd;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart = global::NRGScoutingApp.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop = global::NRGScoutingApp.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance = global::NRGScoutingApp.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout_scrimAnimationDuration = global::NRGScoutingApp.Droid.Resource.Styleable.CollapsingToolbarLayout_scrimAnimationDuration;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout_scrimVisibleHeightTrigger = global::NRGScoutingApp.Droid.Resource.Styleable.CollapsingToolbarLayout_scrimVisibleHeightTrigger;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim = global::NRGScoutingApp.Droid.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout_title = global::NRGScoutingApp.Droid.Resource.Styleable.CollapsingToolbarLayout_title;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout_titleEnabled = global::NRGScoutingApp.Droid.Resource.Styleable.CollapsingToolbarLayout_titleEnabled;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout_toolbarId = global::NRGScoutingApp.Droid.Resource.Styleable.CollapsingToolbarLayout_toolbarId;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout_Layout = global::NRGScoutingApp.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseMode = global::NRGScoutingApp.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier = global::NRGScoutingApp.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ColorStateListItem = global::NRGScoutingApp.Droid.Resource.Styleable.ColorStateListItem;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ColorStateListItem_alpha = global::NRGScoutingApp.Droid.Resource.Styleable.ColorStateListItem_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ColorStateListItem_android_alpha = global::NRGScoutingApp.Droid.Resource.Styleable.ColorStateListItem_android_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ColorStateListItem_android_color = global::NRGScoutingApp.Droid.Resource.Styleable.ColorStateListItem_android_color;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CompoundButton = global::NRGScoutingApp.Droid.Resource.Styleable.CompoundButton;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CompoundButton_android_button = global::NRGScoutingApp.Droid.Resource.Styleable.CompoundButton_android_button;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CompoundButton_buttonTint = global::NRGScoutingApp.Droid.Resource.Styleable.CompoundButton_buttonTint;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CompoundButton_buttonTintMode = global::NRGScoutingApp.Droid.Resource.Styleable.CompoundButton_buttonTintMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CoordinatorLayout = global::NRGScoutingApp.Droid.Resource.Styleable.CoordinatorLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CoordinatorLayout_keylines = global::NRGScoutingApp.Droid.Resource.Styleable.CoordinatorLayout_keylines;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CoordinatorLayout_statusBarBackground = global::NRGScoutingApp.Droid.Resource.Styleable.CoordinatorLayout_statusBarBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CoordinatorLayout_Layout = global::NRGScoutingApp.Droid.Resource.Styleable.CoordinatorLayout_Layout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity = global::NRGScoutingApp.Droid.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor = global::NRGScoutingApp.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_anchorGravity = global::NRGScoutingApp.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchorGravity;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_behavior = global::NRGScoutingApp.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_behavior;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges = global::NRGScoutingApp.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge = global::NRGScoutingApp.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline = global::NRGScoutingApp.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.DesignTheme = global::NRGScoutingApp.Droid.Resource.Styleable.DesignTheme;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.DesignTheme_bottomSheetDialogTheme = global::NRGScoutingApp.Droid.Resource.Styleable.DesignTheme_bottomSheetDialogTheme;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.DesignTheme_bottomSheetStyle = global::NRGScoutingApp.Droid.Resource.Styleable.DesignTheme_bottomSheetStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.DesignTheme_textColorError = global::NRGScoutingApp.Droid.Resource.Styleable.DesignTheme_textColorError;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.DrawerArrowToggle = global::NRGScoutingApp.Droid.Resource.Styleable.DrawerArrowToggle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.DrawerArrowToggle_arrowHeadLength = global::NRGScoutingApp.Droid.Resource.Styleable.DrawerArrowToggle_arrowHeadLength;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.DrawerArrowToggle_arrowShaftLength = global::NRGScoutingApp.Droid.Resource.Styleable.DrawerArrowToggle_arrowShaftLength;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.DrawerArrowToggle_barLength = global::NRGScoutingApp.Droid.Resource.Styleable.DrawerArrowToggle_barLength;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.DrawerArrowToggle_color = global::NRGScoutingApp.Droid.Resource.Styleable.DrawerArrowToggle_color;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.DrawerArrowToggle_drawableSize = global::NRGScoutingApp.Droid.Resource.Styleable.DrawerArrowToggle_drawableSize;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.DrawerArrowToggle_gapBetweenBars = global::NRGScoutingApp.Droid.Resource.Styleable.DrawerArrowToggle_gapBetweenBars;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.DrawerArrowToggle_spinBars = global::NRGScoutingApp.Droid.Resource.Styleable.DrawerArrowToggle_spinBars;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.DrawerArrowToggle_thickness = global::NRGScoutingApp.Droid.Resource.Styleable.DrawerArrowToggle_thickness;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FloatingActionButton = global::NRGScoutingApp.Droid.Resource.Styleable.FloatingActionButton;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FloatingActionButton_backgroundTint = global::NRGScoutingApp.Droid.Resource.Styleable.FloatingActionButton_backgroundTint;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FloatingActionButton_backgroundTintMode = global::NRGScoutingApp.Droid.Resource.Styleable.FloatingActionButton_backgroundTintMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FloatingActionButton_borderWidth = global::NRGScoutingApp.Droid.Resource.Styleable.FloatingActionButton_borderWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FloatingActionButton_elevation = global::NRGScoutingApp.Droid.Resource.Styleable.FloatingActionButton_elevation;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FloatingActionButton_fabSize = global::NRGScoutingApp.Droid.Resource.Styleable.FloatingActionButton_fabSize;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FloatingActionButton_pressedTranslationZ = global::NRGScoutingApp.Droid.Resource.Styleable.FloatingActionButton_pressedTranslationZ;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FloatingActionButton_rippleColor = global::NRGScoutingApp.Droid.Resource.Styleable.FloatingActionButton_rippleColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FloatingActionButton_useCompatPadding = global::NRGScoutingApp.Droid.Resource.Styleable.FloatingActionButton_useCompatPadding;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FloatingActionButton_Behavior_Layout = global::NRGScoutingApp.Droid.Resource.Styleable.FloatingActionButton_Behavior_Layout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FloatingActionButton_Behavior_Layout_behavior_autoHide = global::NRGScoutingApp.Droid.Resource.Styleable.FloatingActionButton_Behavior_Layout_behavior_autoHide;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FontFamily = global::NRGScoutingApp.Droid.Resource.Styleable.FontFamily;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FontFamily_fontProviderAuthority = global::NRGScoutingApp.Droid.Resource.Styleable.FontFamily_fontProviderAuthority;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FontFamily_fontProviderCerts = global::NRGScoutingApp.Droid.Resource.Styleable.FontFamily_fontProviderCerts;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FontFamily_fontProviderFetchStrategy = global::NRGScoutingApp.Droid.Resource.Styleable.FontFamily_fontProviderFetchStrategy;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FontFamily_fontProviderFetchTimeout = global::NRGScoutingApp.Droid.Resource.Styleable.FontFamily_fontProviderFetchTimeout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FontFamily_fontProviderPackage = global::NRGScoutingApp.Droid.Resource.Styleable.FontFamily_fontProviderPackage;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FontFamily_fontProviderQuery = global::NRGScoutingApp.Droid.Resource.Styleable.FontFamily_fontProviderQuery;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FontFamilyFont = global::NRGScoutingApp.Droid.Resource.Styleable.FontFamilyFont;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FontFamilyFont_android_font = global::NRGScoutingApp.Droid.Resource.Styleable.FontFamilyFont_android_font;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FontFamilyFont_android_fontStyle = global::NRGScoutingApp.Droid.Resource.Styleable.FontFamilyFont_android_fontStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FontFamilyFont_android_fontWeight = global::NRGScoutingApp.Droid.Resource.Styleable.FontFamilyFont_android_fontWeight;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FontFamilyFont_font = global::NRGScoutingApp.Droid.Resource.Styleable.FontFamilyFont_font;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FontFamilyFont_fontStyle = global::NRGScoutingApp.Droid.Resource.Styleable.FontFamilyFont_fontStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FontFamilyFont_fontWeight = global::NRGScoutingApp.Droid.Resource.Styleable.FontFamilyFont_fontWeight;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ForegroundLinearLayout = global::NRGScoutingApp.Droid.Resource.Styleable.ForegroundLinearLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ForegroundLinearLayout_android_foreground = global::NRGScoutingApp.Droid.Resource.Styleable.ForegroundLinearLayout_android_foreground;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity = global::NRGScoutingApp.Droid.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ForegroundLinearLayout_foregroundInsidePadding = global::NRGScoutingApp.Droid.Resource.Styleable.ForegroundLinearLayout_foregroundInsidePadding;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.LinearLayoutCompat = global::NRGScoutingApp.Droid.Resource.Styleable.LinearLayoutCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.LinearLayoutCompat_android_baselineAligned = global::NRGScoutingApp.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAligned;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex = global::NRGScoutingApp.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.LinearLayoutCompat_android_gravity = global::NRGScoutingApp.Droid.Resource.Styleable.LinearLayoutCompat_android_gravity;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.LinearLayoutCompat_android_orientation = global::NRGScoutingApp.Droid.Resource.Styleable.LinearLayoutCompat_android_orientation;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.LinearLayoutCompat_android_weightSum = global::NRGScoutingApp.Droid.Resource.Styleable.LinearLayoutCompat_android_weightSum;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.LinearLayoutCompat_divider = global::NRGScoutingApp.Droid.Resource.Styleable.LinearLayoutCompat_divider;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.LinearLayoutCompat_dividerPadding = global::NRGScoutingApp.Droid.Resource.Styleable.LinearLayoutCompat_dividerPadding;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild = global::NRGScoutingApp.Droid.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.LinearLayoutCompat_showDividers = global::NRGScoutingApp.Droid.Resource.Styleable.LinearLayoutCompat_showDividers;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.LinearLayoutCompat_Layout = global::NRGScoutingApp.Droid.Resource.Styleable.LinearLayoutCompat_Layout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity = global::NRGScoutingApp.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height = global::NRGScoutingApp.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight = global::NRGScoutingApp.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width = global::NRGScoutingApp.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ListPopupWindow = global::NRGScoutingApp.Droid.Resource.Styleable.ListPopupWindow;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset = global::NRGScoutingApp.Droid.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset = global::NRGScoutingApp.Droid.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuGroup = global::NRGScoutingApp.Droid.Resource.Styleable.MenuGroup;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuGroup_android_checkableBehavior = global::NRGScoutingApp.Droid.Resource.Styleable.MenuGroup_android_checkableBehavior;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuGroup_android_enabled = global::NRGScoutingApp.Droid.Resource.Styleable.MenuGroup_android_enabled;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuGroup_android_id = global::NRGScoutingApp.Droid.Resource.Styleable.MenuGroup_android_id;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuGroup_android_menuCategory = global::NRGScoutingApp.Droid.Resource.Styleable.MenuGroup_android_menuCategory;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuGroup_android_orderInCategory = global::NRGScoutingApp.Droid.Resource.Styleable.MenuGroup_android_orderInCategory;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuGroup_android_visible = global::NRGScoutingApp.Droid.Resource.Styleable.MenuGroup_android_visible;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem = global::NRGScoutingApp.Droid.Resource.Styleable.MenuItem;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem_actionLayout = global::NRGScoutingApp.Droid.Resource.Styleable.MenuItem_actionLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem_actionProviderClass = global::NRGScoutingApp.Droid.Resource.Styleable.MenuItem_actionProviderClass;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem_actionViewClass = global::NRGScoutingApp.Droid.Resource.Styleable.MenuItem_actionViewClass;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem_alphabeticModifiers = global::NRGScoutingApp.Droid.Resource.Styleable.MenuItem_alphabeticModifiers;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem_android_alphabeticShortcut = global::NRGScoutingApp.Droid.Resource.Styleable.MenuItem_android_alphabeticShortcut;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem_android_checkable = global::NRGScoutingApp.Droid.Resource.Styleable.MenuItem_android_checkable;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem_android_checked = global::NRGScoutingApp.Droid.Resource.Styleable.MenuItem_android_checked;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem_android_enabled = global::NRGScoutingApp.Droid.Resource.Styleable.MenuItem_android_enabled;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem_android_icon = global::NRGScoutingApp.Droid.Resource.Styleable.MenuItem_android_icon;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem_android_id = global::NRGScoutingApp.Droid.Resource.Styleable.MenuItem_android_id;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem_android_menuCategory = global::NRGScoutingApp.Droid.Resource.Styleable.MenuItem_android_menuCategory;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem_android_numericShortcut = global::NRGScoutingApp.Droid.Resource.Styleable.MenuItem_android_numericShortcut;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem_android_onClick = global::NRGScoutingApp.Droid.Resource.Styleable.MenuItem_android_onClick;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem_android_orderInCategory = global::NRGScoutingApp.Droid.Resource.Styleable.MenuItem_android_orderInCategory;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem_android_title = global::NRGScoutingApp.Droid.Resource.Styleable.MenuItem_android_title;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem_android_titleCondensed = global::NRGScoutingApp.Droid.Resource.Styleable.MenuItem_android_titleCondensed;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem_android_visible = global::NRGScoutingApp.Droid.Resource.Styleable.MenuItem_android_visible;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem_contentDescription = global::NRGScoutingApp.Droid.Resource.Styleable.MenuItem_contentDescription;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem_iconTint = global::NRGScoutingApp.Droid.Resource.Styleable.MenuItem_iconTint;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem_iconTintMode = global::NRGScoutingApp.Droid.Resource.Styleable.MenuItem_iconTintMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem_numericModifiers = global::NRGScoutingApp.Droid.Resource.Styleable.MenuItem_numericModifiers;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem_showAsAction = global::NRGScoutingApp.Droid.Resource.Styleable.MenuItem_showAsAction;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem_tooltipText = global::NRGScoutingApp.Droid.Resource.Styleable.MenuItem_tooltipText;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuView = global::NRGScoutingApp.Droid.Resource.Styleable.MenuView;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuView_android_headerBackground = global::NRGScoutingApp.Droid.Resource.Styleable.MenuView_android_headerBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuView_android_horizontalDivider = global::NRGScoutingApp.Droid.Resource.Styleable.MenuView_android_horizontalDivider;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuView_android_itemBackground = global::NRGScoutingApp.Droid.Resource.Styleable.MenuView_android_itemBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuView_android_itemIconDisabledAlpha = global::NRGScoutingApp.Droid.Resource.Styleable.MenuView_android_itemIconDisabledAlpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuView_android_itemTextAppearance = global::NRGScoutingApp.Droid.Resource.Styleable.MenuView_android_itemTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuView_android_verticalDivider = global::NRGScoutingApp.Droid.Resource.Styleable.MenuView_android_verticalDivider;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuView_android_windowAnimationStyle = global::NRGScoutingApp.Droid.Resource.Styleable.MenuView_android_windowAnimationStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuView_preserveIconSpacing = global::NRGScoutingApp.Droid.Resource.Styleable.MenuView_preserveIconSpacing;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuView_subMenuArrow = global::NRGScoutingApp.Droid.Resource.Styleable.MenuView_subMenuArrow;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.NavigationView = global::NRGScoutingApp.Droid.Resource.Styleable.NavigationView;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.NavigationView_android_background = global::NRGScoutingApp.Droid.Resource.Styleable.NavigationView_android_background;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.NavigationView_android_fitsSystemWindows = global::NRGScoutingApp.Droid.Resource.Styleable.NavigationView_android_fitsSystemWindows;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.NavigationView_android_maxWidth = global::NRGScoutingApp.Droid.Resource.Styleable.NavigationView_android_maxWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.NavigationView_elevation = global::NRGScoutingApp.Droid.Resource.Styleable.NavigationView_elevation;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.NavigationView_headerLayout = global::NRGScoutingApp.Droid.Resource.Styleable.NavigationView_headerLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.NavigationView_itemBackground = global::NRGScoutingApp.Droid.Resource.Styleable.NavigationView_itemBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.NavigationView_itemIconTint = global::NRGScoutingApp.Droid.Resource.Styleable.NavigationView_itemIconTint;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.NavigationView_itemTextAppearance = global::NRGScoutingApp.Droid.Resource.Styleable.NavigationView_itemTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.NavigationView_itemTextColor = global::NRGScoutingApp.Droid.Resource.Styleable.NavigationView_itemTextColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.NavigationView_menu = global::NRGScoutingApp.Droid.Resource.Styleable.NavigationView_menu;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.PopupWindow = global::NRGScoutingApp.Droid.Resource.Styleable.PopupWindow;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.PopupWindow_android_popupAnimationStyle = global::NRGScoutingApp.Droid.Resource.Styleable.PopupWindow_android_popupAnimationStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.PopupWindow_android_popupBackground = global::NRGScoutingApp.Droid.Resource.Styleable.PopupWindow_android_popupBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.PopupWindow_overlapAnchor = global::NRGScoutingApp.Droid.Resource.Styleable.PopupWindow_overlapAnchor;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.PopupWindowBackgroundState = global::NRGScoutingApp.Droid.Resource.Styleable.PopupWindowBackgroundState;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor = global::NRGScoutingApp.Droid.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.RecycleListView = global::NRGScoutingApp.Droid.Resource.Styleable.RecycleListView;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.RecycleListView_paddingBottomNoButtons = global::NRGScoutingApp.Droid.Resource.Styleable.RecycleListView_paddingBottomNoButtons;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.RecycleListView_paddingTopNoTitle = global::NRGScoutingApp.Droid.Resource.Styleable.RecycleListView_paddingTopNoTitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.RecyclerView = global::NRGScoutingApp.Droid.Resource.Styleable.RecyclerView;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.RecyclerView_android_descendantFocusability = global::NRGScoutingApp.Droid.Resource.Styleable.RecyclerView_android_descendantFocusability;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.RecyclerView_android_orientation = global::NRGScoutingApp.Droid.Resource.Styleable.RecyclerView_android_orientation;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.RecyclerView_fastScrollEnabled = global::NRGScoutingApp.Droid.Resource.Styleable.RecyclerView_fastScrollEnabled;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.RecyclerView_fastScrollHorizontalThumbDrawable = global::NRGScoutingApp.Droid.Resource.Styleable.RecyclerView_fastScrollHorizontalThumbDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.RecyclerView_fastScrollHorizontalTrackDrawable = global::NRGScoutingApp.Droid.Resource.Styleable.RecyclerView_fastScrollHorizontalTrackDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.RecyclerView_fastScrollVerticalThumbDrawable = global::NRGScoutingApp.Droid.Resource.Styleable.RecyclerView_fastScrollVerticalThumbDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.RecyclerView_fastScrollVerticalTrackDrawable = global::NRGScoutingApp.Droid.Resource.Styleable.RecyclerView_fastScrollVerticalTrackDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.RecyclerView_layoutManager = global::NRGScoutingApp.Droid.Resource.Styleable.RecyclerView_layoutManager;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.RecyclerView_reverseLayout = global::NRGScoutingApp.Droid.Resource.Styleable.RecyclerView_reverseLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.RecyclerView_spanCount = global::NRGScoutingApp.Droid.Resource.Styleable.RecyclerView_spanCount;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.RecyclerView_stackFromEnd = global::NRGScoutingApp.Droid.Resource.Styleable.RecyclerView_stackFromEnd;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ScrimInsetsFrameLayout = global::NRGScoutingApp.Droid.Resource.Styleable.ScrimInsetsFrameLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ScrimInsetsFrameLayout_insetForeground = global::NRGScoutingApp.Droid.Resource.Styleable.ScrimInsetsFrameLayout_insetForeground;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ScrollingViewBehavior_Layout = global::NRGScoutingApp.Droid.Resource.Styleable.ScrollingViewBehavior_Layout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ScrollingViewBehavior_Layout_behavior_overlapTop = global::NRGScoutingApp.Droid.Resource.Styleable.ScrollingViewBehavior_Layout_behavior_overlapTop;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SearchView = global::NRGScoutingApp.Droid.Resource.Styleable.SearchView;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SearchView_android_focusable = global::NRGScoutingApp.Droid.Resource.Styleable.SearchView_android_focusable;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SearchView_android_imeOptions = global::NRGScoutingApp.Droid.Resource.Styleable.SearchView_android_imeOptions;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SearchView_android_inputType = global::NRGScoutingApp.Droid.Resource.Styleable.SearchView_android_inputType;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SearchView_android_maxWidth = global::NRGScoutingApp.Droid.Resource.Styleable.SearchView_android_maxWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SearchView_closeIcon = global::NRGScoutingApp.Droid.Resource.Styleable.SearchView_closeIcon;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SearchView_commitIcon = global::NRGScoutingApp.Droid.Resource.Styleable.SearchView_commitIcon;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SearchView_defaultQueryHint = global::NRGScoutingApp.Droid.Resource.Styleable.SearchView_defaultQueryHint;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SearchView_goIcon = global::NRGScoutingApp.Droid.Resource.Styleable.SearchView_goIcon;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SearchView_iconifiedByDefault = global::NRGScoutingApp.Droid.Resource.Styleable.SearchView_iconifiedByDefault;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SearchView_layout = global::NRGScoutingApp.Droid.Resource.Styleable.SearchView_layout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SearchView_queryBackground = global::NRGScoutingApp.Droid.Resource.Styleable.SearchView_queryBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SearchView_queryHint = global::NRGScoutingApp.Droid.Resource.Styleable.SearchView_queryHint;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SearchView_searchHintIcon = global::NRGScoutingApp.Droid.Resource.Styleable.SearchView_searchHintIcon;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SearchView_searchIcon = global::NRGScoutingApp.Droid.Resource.Styleable.SearchView_searchIcon;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SearchView_submitBackground = global::NRGScoutingApp.Droid.Resource.Styleable.SearchView_submitBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SearchView_suggestionRowLayout = global::NRGScoutingApp.Droid.Resource.Styleable.SearchView_suggestionRowLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SearchView_voiceIcon = global::NRGScoutingApp.Droid.Resource.Styleable.SearchView_voiceIcon;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SnackbarLayout = global::NRGScoutingApp.Droid.Resource.Styleable.SnackbarLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SnackbarLayout_android_maxWidth = global::NRGScoutingApp.Droid.Resource.Styleable.SnackbarLayout_android_maxWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SnackbarLayout_elevation = global::NRGScoutingApp.Droid.Resource.Styleable.SnackbarLayout_elevation;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SnackbarLayout_maxActionInlineWidth = global::NRGScoutingApp.Droid.Resource.Styleable.SnackbarLayout_maxActionInlineWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Spinner = global::NRGScoutingApp.Droid.Resource.Styleable.Spinner;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Spinner_android_dropDownWidth = global::NRGScoutingApp.Droid.Resource.Styleable.Spinner_android_dropDownWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Spinner_android_entries = global::NRGScoutingApp.Droid.Resource.Styleable.Spinner_android_entries;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Spinner_android_popupBackground = global::NRGScoutingApp.Droid.Resource.Styleable.Spinner_android_popupBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Spinner_android_prompt = global::NRGScoutingApp.Droid.Resource.Styleable.Spinner_android_prompt;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Spinner_popupTheme = global::NRGScoutingApp.Droid.Resource.Styleable.Spinner_popupTheme;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SwitchCompat = global::NRGScoutingApp.Droid.Resource.Styleable.SwitchCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SwitchCompat_android_textOff = global::NRGScoutingApp.Droid.Resource.Styleable.SwitchCompat_android_textOff;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SwitchCompat_android_textOn = global::NRGScoutingApp.Droid.Resource.Styleable.SwitchCompat_android_textOn;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SwitchCompat_android_thumb = global::NRGScoutingApp.Droid.Resource.Styleable.SwitchCompat_android_thumb;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SwitchCompat_showText = global::NRGScoutingApp.Droid.Resource.Styleable.SwitchCompat_showText;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SwitchCompat_splitTrack = global::NRGScoutingApp.Droid.Resource.Styleable.SwitchCompat_splitTrack;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SwitchCompat_switchMinWidth = global::NRGScoutingApp.Droid.Resource.Styleable.SwitchCompat_switchMinWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SwitchCompat_switchPadding = global::NRGScoutingApp.Droid.Resource.Styleable.SwitchCompat_switchPadding;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SwitchCompat_switchTextAppearance = global::NRGScoutingApp.Droid.Resource.Styleable.SwitchCompat_switchTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SwitchCompat_thumbTextPadding = global::NRGScoutingApp.Droid.Resource.Styleable.SwitchCompat_thumbTextPadding;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SwitchCompat_thumbTint = global::NRGScoutingApp.Droid.Resource.Styleable.SwitchCompat_thumbTint;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SwitchCompat_thumbTintMode = global::NRGScoutingApp.Droid.Resource.Styleable.SwitchCompat_thumbTintMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SwitchCompat_track = global::NRGScoutingApp.Droid.Resource.Styleable.SwitchCompat_track;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SwitchCompat_trackTint = global::NRGScoutingApp.Droid.Resource.Styleable.SwitchCompat_trackTint;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SwitchCompat_trackTintMode = global::NRGScoutingApp.Droid.Resource.Styleable.SwitchCompat_trackTintMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TabItem = global::NRGScoutingApp.Droid.Resource.Styleable.TabItem;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TabItem_android_icon = global::NRGScoutingApp.Droid.Resource.Styleable.TabItem_android_icon;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TabItem_android_layout = global::NRGScoutingApp.Droid.Resource.Styleable.TabItem_android_layout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TabItem_android_text = global::NRGScoutingApp.Droid.Resource.Styleable.TabItem_android_text;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TabLayout = global::NRGScoutingApp.Droid.Resource.Styleable.TabLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TabLayout_tabBackground = global::NRGScoutingApp.Droid.Resource.Styleable.TabLayout_tabBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TabLayout_tabContentStart = global::NRGScoutingApp.Droid.Resource.Styleable.TabLayout_tabContentStart;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TabLayout_tabGravity = global::NRGScoutingApp.Droid.Resource.Styleable.TabLayout_tabGravity;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TabLayout_tabIndicatorColor = global::NRGScoutingApp.Droid.Resource.Styleable.TabLayout_tabIndicatorColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TabLayout_tabIndicatorHeight = global::NRGScoutingApp.Droid.Resource.Styleable.TabLayout_tabIndicatorHeight;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TabLayout_tabMaxWidth = global::NRGScoutingApp.Droid.Resource.Styleable.TabLayout_tabMaxWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TabLayout_tabMinWidth = global::NRGScoutingApp.Droid.Resource.Styleable.TabLayout_tabMinWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TabLayout_tabMode = global::NRGScoutingApp.Droid.Resource.Styleable.TabLayout_tabMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TabLayout_tabPadding = global::NRGScoutingApp.Droid.Resource.Styleable.TabLayout_tabPadding;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TabLayout_tabPaddingBottom = global::NRGScoutingApp.Droid.Resource.Styleable.TabLayout_tabPaddingBottom;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TabLayout_tabPaddingEnd = global::NRGScoutingApp.Droid.Resource.Styleable.TabLayout_tabPaddingEnd;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TabLayout_tabPaddingStart = global::NRGScoutingApp.Droid.Resource.Styleable.TabLayout_tabPaddingStart;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TabLayout_tabPaddingTop = global::NRGScoutingApp.Droid.Resource.Styleable.TabLayout_tabPaddingTop;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TabLayout_tabSelectedTextColor = global::NRGScoutingApp.Droid.Resource.Styleable.TabLayout_tabSelectedTextColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TabLayout_tabTextAppearance = global::NRGScoutingApp.Droid.Resource.Styleable.TabLayout_tabTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TabLayout_tabTextColor = global::NRGScoutingApp.Droid.Resource.Styleable.TabLayout_tabTextColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextAppearance = global::NRGScoutingApp.Droid.Resource.Styleable.TextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextAppearance_android_fontFamily = global::NRGScoutingApp.Droid.Resource.Styleable.TextAppearance_android_fontFamily;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextAppearance_android_shadowColor = global::NRGScoutingApp.Droid.Resource.Styleable.TextAppearance_android_shadowColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextAppearance_android_shadowDx = global::NRGScoutingApp.Droid.Resource.Styleable.TextAppearance_android_shadowDx;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextAppearance_android_shadowDy = global::NRGScoutingApp.Droid.Resource.Styleable.TextAppearance_android_shadowDy;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextAppearance_android_shadowRadius = global::NRGScoutingApp.Droid.Resource.Styleable.TextAppearance_android_shadowRadius;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextAppearance_android_textColor = global::NRGScoutingApp.Droid.Resource.Styleable.TextAppearance_android_textColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextAppearance_android_textColorHint = global::NRGScoutingApp.Droid.Resource.Styleable.TextAppearance_android_textColorHint;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextAppearance_android_textColorLink = global::NRGScoutingApp.Droid.Resource.Styleable.TextAppearance_android_textColorLink;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextAppearance_android_textSize = global::NRGScoutingApp.Droid.Resource.Styleable.TextAppearance_android_textSize;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextAppearance_android_textStyle = global::NRGScoutingApp.Droid.Resource.Styleable.TextAppearance_android_textStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextAppearance_android_typeface = global::NRGScoutingApp.Droid.Resource.Styleable.TextAppearance_android_typeface;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextAppearance_fontFamily = global::NRGScoutingApp.Droid.Resource.Styleable.TextAppearance_fontFamily;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextAppearance_textAllCaps = global::NRGScoutingApp.Droid.Resource.Styleable.TextAppearance_textAllCaps;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextInputLayout = global::NRGScoutingApp.Droid.Resource.Styleable.TextInputLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextInputLayout_android_hint = global::NRGScoutingApp.Droid.Resource.Styleable.TextInputLayout_android_hint;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextInputLayout_android_textColorHint = global::NRGScoutingApp.Droid.Resource.Styleable.TextInputLayout_android_textColorHint;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextInputLayout_counterEnabled = global::NRGScoutingApp.Droid.Resource.Styleable.TextInputLayout_counterEnabled;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextInputLayout_counterMaxLength = global::NRGScoutingApp.Droid.Resource.Styleable.TextInputLayout_counterMaxLength;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextInputLayout_counterOverflowTextAppearance = global::NRGScoutingApp.Droid.Resource.Styleable.TextInputLayout_counterOverflowTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextInputLayout_counterTextAppearance = global::NRGScoutingApp.Droid.Resource.Styleable.TextInputLayout_counterTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextInputLayout_errorEnabled = global::NRGScoutingApp.Droid.Resource.Styleable.TextInputLayout_errorEnabled;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextInputLayout_errorTextAppearance = global::NRGScoutingApp.Droid.Resource.Styleable.TextInputLayout_errorTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextInputLayout_hintAnimationEnabled = global::NRGScoutingApp.Droid.Resource.Styleable.TextInputLayout_hintAnimationEnabled;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextInputLayout_hintEnabled = global::NRGScoutingApp.Droid.Resource.Styleable.TextInputLayout_hintEnabled;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextInputLayout_hintTextAppearance = global::NRGScoutingApp.Droid.Resource.Styleable.TextInputLayout_hintTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextInputLayout_passwordToggleContentDescription = global::NRGScoutingApp.Droid.Resource.Styleable.TextInputLayout_passwordToggleContentDescription;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextInputLayout_passwordToggleDrawable = global::NRGScoutingApp.Droid.Resource.Styleable.TextInputLayout_passwordToggleDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextInputLayout_passwordToggleEnabled = global::NRGScoutingApp.Droid.Resource.Styleable.TextInputLayout_passwordToggleEnabled;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextInputLayout_passwordToggleTint = global::NRGScoutingApp.Droid.Resource.Styleable.TextInputLayout_passwordToggleTint;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextInputLayout_passwordToggleTintMode = global::NRGScoutingApp.Droid.Resource.Styleable.TextInputLayout_passwordToggleTintMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar = global::NRGScoutingApp.Droid.Resource.Styleable.Toolbar;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_android_gravity = global::NRGScoutingApp.Droid.Resource.Styleable.Toolbar_android_gravity;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_android_minHeight = global::NRGScoutingApp.Droid.Resource.Styleable.Toolbar_android_minHeight;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_buttonGravity = global::NRGScoutingApp.Droid.Resource.Styleable.Toolbar_buttonGravity;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_collapseContentDescription = global::NRGScoutingApp.Droid.Resource.Styleable.Toolbar_collapseContentDescription;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_collapseIcon = global::NRGScoutingApp.Droid.Resource.Styleable.Toolbar_collapseIcon;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_contentInsetEnd = global::NRGScoutingApp.Droid.Resource.Styleable.Toolbar_contentInsetEnd;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_contentInsetEndWithActions = global::NRGScoutingApp.Droid.Resource.Styleable.Toolbar_contentInsetEndWithActions;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_contentInsetLeft = global::NRGScoutingApp.Droid.Resource.Styleable.Toolbar_contentInsetLeft;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_contentInsetRight = global::NRGScoutingApp.Droid.Resource.Styleable.Toolbar_contentInsetRight;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_contentInsetStart = global::NRGScoutingApp.Droid.Resource.Styleable.Toolbar_contentInsetStart;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_contentInsetStartWithNavigation = global::NRGScoutingApp.Droid.Resource.Styleable.Toolbar_contentInsetStartWithNavigation;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_logo = global::NRGScoutingApp.Droid.Resource.Styleable.Toolbar_logo;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_logoDescription = global::NRGScoutingApp.Droid.Resource.Styleable.Toolbar_logoDescription;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_maxButtonHeight = global::NRGScoutingApp.Droid.Resource.Styleable.Toolbar_maxButtonHeight;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_navigationContentDescription = global::NRGScoutingApp.Droid.Resource.Styleable.Toolbar_navigationContentDescription;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_navigationIcon = global::NRGScoutingApp.Droid.Resource.Styleable.Toolbar_navigationIcon;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_popupTheme = global::NRGScoutingApp.Droid.Resource.Styleable.Toolbar_popupTheme;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_subtitle = global::NRGScoutingApp.Droid.Resource.Styleable.Toolbar_subtitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_subtitleTextAppearance = global::NRGScoutingApp.Droid.Resource.Styleable.Toolbar_subtitleTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_subtitleTextColor = global::NRGScoutingApp.Droid.Resource.Styleable.Toolbar_subtitleTextColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_title = global::NRGScoutingApp.Droid.Resource.Styleable.Toolbar_title;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_titleMargin = global::NRGScoutingApp.Droid.Resource.Styleable.Toolbar_titleMargin;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_titleMarginBottom = global::NRGScoutingApp.Droid.Resource.Styleable.Toolbar_titleMarginBottom;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_titleMarginEnd = global::NRGScoutingApp.Droid.Resource.Styleable.Toolbar_titleMarginEnd;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_titleMarginStart = global::NRGScoutingApp.Droid.Resource.Styleable.Toolbar_titleMarginStart;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_titleMarginTop = global::NRGScoutingApp.Droid.Resource.Styleable.Toolbar_titleMarginTop;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_titleMargins = global::NRGScoutingApp.Droid.Resource.Styleable.Toolbar_titleMargins;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_titleTextAppearance = global::NRGScoutingApp.Droid.Resource.Styleable.Toolbar_titleTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_titleTextColor = global::NRGScoutingApp.Droid.Resource.Styleable.Toolbar_titleTextColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.View = global::NRGScoutingApp.Droid.Resource.Styleable.View;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.View_android_focusable = global::NRGScoutingApp.Droid.Resource.Styleable.View_android_focusable;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.View_android_theme = global::NRGScoutingApp.Droid.Resource.Styleable.View_android_theme;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.View_paddingEnd = global::NRGScoutingApp.Droid.Resource.Styleable.View_paddingEnd;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.View_paddingStart = global::NRGScoutingApp.Droid.Resource.Styleable.View_paddingStart;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.View_theme = global::NRGScoutingApp.Droid.Resource.Styleable.View_theme;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ViewBackgroundHelper = global::NRGScoutingApp.Droid.Resource.Styleable.ViewBackgroundHelper;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ViewBackgroundHelper_android_background = global::NRGScoutingApp.Droid.Resource.Styleable.ViewBackgroundHelper_android_background;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ViewBackgroundHelper_backgroundTint = global::NRGScoutingApp.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTint;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode = global::NRGScoutingApp.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ViewStubCompat = global::NRGScoutingApp.Droid.Resource.Styleable.ViewStubCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ViewStubCompat_android_id = global::NRGScoutingApp.Droid.Resource.Styleable.ViewStubCompat_android_id;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ViewStubCompat_android_inflatedId = global::NRGScoutingApp.Droid.Resource.Styleable.ViewStubCompat_android_inflatedId;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ViewStubCompat_android_layout = global::NRGScoutingApp.Droid.Resource.Styleable.ViewStubCompat_android_layout;
 		}
 		
 		public partial class Animation
@@ -3444,10 +2066,22 @@ namespace NRGScoutingApp.Droid
 			public const int design_snackbar_out = 2130968589;
 			
 			// aapt resource value: 0x7f04000e
-			public const int tooltip_enter = 2130968590;
+			public const int EnterFromLeft = 2130968590;
 			
 			// aapt resource value: 0x7f04000f
-			public const int tooltip_exit = 2130968591;
+			public const int EnterFromRight = 2130968591;
+			
+			// aapt resource value: 0x7f040010
+			public const int ExitToLeft = 2130968592;
+			
+			// aapt resource value: 0x7f040011
+			public const int ExitToRight = 2130968593;
+			
+			// aapt resource value: 0x7f040012
+			public const int tooltip_enter = 2130968594;
+			
+			// aapt resource value: 0x7f040013
+			public const int tooltip_exit = 2130968595;
 			
 			static Animation()
 			{
@@ -4619,9 +3253,6 @@ namespace NRGScoutingApp.Droid
 			// aapt resource value: 0x7f0d0004
 			public const int abc_config_showMenuShortcutsWhenKeyboardPresent = 2131558404;
 			
-			// aapt resource value: 0x7f0d0005
-			public const int bb_bottom_bar_is_tablet_mode = 2131558405;
-			
 			static Boolean()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
@@ -4635,50 +3266,50 @@ namespace NRGScoutingApp.Droid
 		public partial class Color
 		{
 			
-			// aapt resource value: 0x7f0c0050
-			public const int ListViewHighlighted = 2131492944;
+			// aapt resource value: 0x7f0c004c
+			public const int ListViewHighlighted = 2131492940;
+			
+			// aapt resource value: 0x7f0c004b
+			public const int ListViewSelected = 2131492939;
+			
+			// aapt resource value: 0x7f0c004d
+			public const int abc_background_cache_hint_selector_material_dark = 2131492941;
+			
+			// aapt resource value: 0x7f0c004e
+			public const int abc_background_cache_hint_selector_material_light = 2131492942;
 			
 			// aapt resource value: 0x7f0c004f
-			public const int ListViewSelected = 2131492943;
+			public const int abc_btn_colored_borderless_text_material = 2131492943;
+			
+			// aapt resource value: 0x7f0c0050
+			public const int abc_btn_colored_text_material = 2131492944;
 			
 			// aapt resource value: 0x7f0c0051
-			public const int abc_background_cache_hint_selector_material_dark = 2131492945;
+			public const int abc_color_highlight_material = 2131492945;
 			
 			// aapt resource value: 0x7f0c0052
-			public const int abc_background_cache_hint_selector_material_light = 2131492946;
+			public const int abc_hint_foreground_material_dark = 2131492946;
 			
 			// aapt resource value: 0x7f0c0053
-			public const int abc_btn_colored_borderless_text_material = 2131492947;
-			
-			// aapt resource value: 0x7f0c0054
-			public const int abc_btn_colored_text_material = 2131492948;
-			
-			// aapt resource value: 0x7f0c0055
-			public const int abc_color_highlight_material = 2131492949;
-			
-			// aapt resource value: 0x7f0c0056
-			public const int abc_hint_foreground_material_dark = 2131492950;
-			
-			// aapt resource value: 0x7f0c0057
-			public const int abc_hint_foreground_material_light = 2131492951;
+			public const int abc_hint_foreground_material_light = 2131492947;
 			
 			// aapt resource value: 0x7f0c0004
 			public const int abc_input_method_navigation_guard = 2131492868;
 			
+			// aapt resource value: 0x7f0c0054
+			public const int abc_primary_text_disable_only_material_dark = 2131492948;
+			
+			// aapt resource value: 0x7f0c0055
+			public const int abc_primary_text_disable_only_material_light = 2131492949;
+			
+			// aapt resource value: 0x7f0c0056
+			public const int abc_primary_text_material_dark = 2131492950;
+			
+			// aapt resource value: 0x7f0c0057
+			public const int abc_primary_text_material_light = 2131492951;
+			
 			// aapt resource value: 0x7f0c0058
-			public const int abc_primary_text_disable_only_material_dark = 2131492952;
-			
-			// aapt resource value: 0x7f0c0059
-			public const int abc_primary_text_disable_only_material_light = 2131492953;
-			
-			// aapt resource value: 0x7f0c005a
-			public const int abc_primary_text_material_dark = 2131492954;
-			
-			// aapt resource value: 0x7f0c005b
-			public const int abc_primary_text_material_light = 2131492955;
-			
-			// aapt resource value: 0x7f0c005c
-			public const int abc_search_url_text = 2131492956;
+			public const int abc_search_url_text = 2131492952;
 			
 			// aapt resource value: 0x7f0c0005
 			public const int abc_search_url_text_normal = 2131492869;
@@ -4689,29 +3320,29 @@ namespace NRGScoutingApp.Droid
 			// aapt resource value: 0x7f0c0007
 			public const int abc_search_url_text_selected = 2131492871;
 			
+			// aapt resource value: 0x7f0c0059
+			public const int abc_secondary_text_material_dark = 2131492953;
+			
+			// aapt resource value: 0x7f0c005a
+			public const int abc_secondary_text_material_light = 2131492954;
+			
+			// aapt resource value: 0x7f0c005b
+			public const int abc_tint_btn_checkable = 2131492955;
+			
+			// aapt resource value: 0x7f0c005c
+			public const int abc_tint_default = 2131492956;
+			
 			// aapt resource value: 0x7f0c005d
-			public const int abc_secondary_text_material_dark = 2131492957;
+			public const int abc_tint_edittext = 2131492957;
 			
 			// aapt resource value: 0x7f0c005e
-			public const int abc_secondary_text_material_light = 2131492958;
+			public const int abc_tint_seek_thumb = 2131492958;
 			
 			// aapt resource value: 0x7f0c005f
-			public const int abc_tint_btn_checkable = 2131492959;
+			public const int abc_tint_spinner = 2131492959;
 			
 			// aapt resource value: 0x7f0c0060
-			public const int abc_tint_default = 2131492960;
-			
-			// aapt resource value: 0x7f0c0061
-			public const int abc_tint_edittext = 2131492961;
-			
-			// aapt resource value: 0x7f0c0062
-			public const int abc_tint_seek_thumb = 2131492962;
-			
-			// aapt resource value: 0x7f0c0063
-			public const int abc_tint_spinner = 2131492963;
-			
-			// aapt resource value: 0x7f0c0064
-			public const int abc_tint_switch_track = 2131492964;
+			public const int abc_tint_switch_track = 2131492960;
 			
 			// aapt resource value: 0x7f0c0008
 			public const int accent_material_dark = 2131492872;
@@ -4730,18 +3361,6 @@ namespace NRGScoutingApp.Droid
 			
 			// aapt resource value: 0x7f0c000d
 			public const int background_material_light = 2131492877;
-			
-			// aapt resource value: 0x7f0c004d
-			public const int bb_darkBackgroundColor = 2131492941;
-			
-			// aapt resource value: 0x7f0c004c
-			public const int bb_darkInActiveBottomBarItemColor = 2131492940;
-			
-			// aapt resource value: 0x7f0c004b
-			public const int bb_inActiveBottomBarItemColor = 2131492939;
-			
-			// aapt resource value: 0x7f0c004e
-			public const int bb_tabletRightBorderDark = 2131492942;
 			
 			// aapt resource value: 0x7f0c000e
 			public const int bright_foreground_disabled_material_dark = 2131492878;
@@ -4782,8 +3401,8 @@ namespace NRGScoutingApp.Droid
 			// aapt resource value: 0x7f0c0040
 			public const int design_bottom_navigation_shadow_color = 2131492928;
 			
-			// aapt resource value: 0x7f0c0065
-			public const int design_error = 2131492965;
+			// aapt resource value: 0x7f0c0061
+			public const int design_error = 2131492961;
 			
 			// aapt resource value: 0x7f0c0041
 			public const int design_fab_shadow_end_color = 2131492929;
@@ -4809,8 +3428,8 @@ namespace NRGScoutingApp.Droid
 			// aapt resource value: 0x7f0c0048
 			public const int design_snackbar_background_color = 2131492936;
 			
-			// aapt resource value: 0x7f0c0066
-			public const int design_tint_password_toggle = 2131492966;
+			// aapt resource value: 0x7f0c0062
+			public const int design_tint_password_toggle = 2131492962;
 			
 			// aapt resource value: 0x7f0c0016
 			public const int dim_foreground_disabled_material_dark = 2131492886;
@@ -4932,11 +3551,11 @@ namespace NRGScoutingApp.Droid
 			// aapt resource value: 0x7f0c003a
 			public const int switch_thumb_disabled_material_light = 2131492922;
 			
-			// aapt resource value: 0x7f0c0067
-			public const int switch_thumb_material_dark = 2131492967;
+			// aapt resource value: 0x7f0c0063
+			public const int switch_thumb_material_dark = 2131492963;
 			
-			// aapt resource value: 0x7f0c0068
-			public const int switch_thumb_material_light = 2131492968;
+			// aapt resource value: 0x7f0c0064
+			public const int switch_thumb_material_light = 2131492964;
 			
 			// aapt resource value: 0x7f0c003b
 			public const int switch_thumb_normal_material_dark = 2131492923;
@@ -5184,18 +3803,6 @@ namespace NRGScoutingApp.Droid
 			
 			// aapt resource value: 0x7f070013
 			public const int abc_text_size_title_material_toolbar = 2131165203;
-			
-			// aapt resource value: 0x7f0700a4
-			public const int activity_horizontal_margin = 2131165348;
-			
-			// aapt resource value: 0x7f0700a5
-			public const int activity_vertical_margin = 2131165349;
-			
-			// aapt resource value: 0x7f0700a7
-			public const int bb_height = 2131165351;
-			
-			// aapt resource value: 0x7f0700a6
-			public const int bottom_bar_elevation = 2131165350;
 			
 			// aapt resource value: 0x7f07000c
 			public const int cardview_compat_inset_shadow = 2131165196;
@@ -5732,749 +4339,746 @@ namespace NRGScoutingApp.Droid
 			// aapt resource value: 0x7f020053
 			public const int avd_hide_password = 2130837587;
 			
+			// aapt resource value: 0x7f020145
+			public const int avd_hide_password_1 = 2130837829;
+			
 			// aapt resource value: 0x7f020146
-			public const int avd_hide_password_1 = 2130837830;
+			public const int avd_hide_password_2 = 2130837830;
 			
 			// aapt resource value: 0x7f020147
-			public const int avd_hide_password_2 = 2130837831;
-			
-			// aapt resource value: 0x7f020148
-			public const int avd_hide_password_3 = 2130837832;
+			public const int avd_hide_password_3 = 2130837831;
 			
 			// aapt resource value: 0x7f020054
 			public const int avd_show_password = 2130837588;
 			
+			// aapt resource value: 0x7f020148
+			public const int avd_show_password_1 = 2130837832;
+			
 			// aapt resource value: 0x7f020149
-			public const int avd_show_password_1 = 2130837833;
+			public const int avd_show_password_2 = 2130837833;
 			
 			// aapt resource value: 0x7f02014a
-			public const int avd_show_password_2 = 2130837834;
-			
-			// aapt resource value: 0x7f02014b
-			public const int avd_show_password_3 = 2130837835;
+			public const int avd_show_password_3 = 2130837834;
 			
 			// aapt resource value: 0x7f020055
-			public const int bb_bottom_bar_top_shadow = 2130837589;
+			public const int design_bottom_navigation_item_background = 2130837589;
 			
 			// aapt resource value: 0x7f020056
-			public const int design_bottom_navigation_item_background = 2130837590;
+			public const int design_fab_background = 2130837590;
 			
 			// aapt resource value: 0x7f020057
-			public const int design_fab_background = 2130837591;
+			public const int design_ic_visibility = 2130837591;
 			
 			// aapt resource value: 0x7f020058
-			public const int design_ic_visibility = 2130837592;
+			public const int design_ic_visibility_off = 2130837592;
 			
 			// aapt resource value: 0x7f020059
-			public const int design_ic_visibility_off = 2130837593;
+			public const int design_password_eye = 2130837593;
 			
 			// aapt resource value: 0x7f02005a
-			public const int design_password_eye = 2130837594;
+			public const int design_snackbar_background = 2130837594;
 			
 			// aapt resource value: 0x7f02005b
-			public const int design_snackbar_background = 2130837595;
+			public const int ic_assignment = 2130837595;
 			
 			// aapt resource value: 0x7f02005c
-			public const int ic_assignment = 2130837596;
+			public const int ic_audiotrack_dark = 2130837596;
 			
 			// aapt resource value: 0x7f02005d
-			public const int ic_audiotrack_dark = 2130837597;
+			public const int ic_audiotrack_light = 2130837597;
 			
 			// aapt resource value: 0x7f02005e
-			public const int ic_audiotrack_light = 2130837598;
+			public const int ic_boost_powerup = 2130837598;
 			
 			// aapt resource value: 0x7f02005f
-			public const int ic_boost_powerup = 2130837599;
+			public const int ic_cancel = 2130837599;
 			
 			// aapt resource value: 0x7f020060
-			public const int ic_cancel = 2130837600;
+			public const int ic_clear_data = 2130837600;
 			
 			// aapt resource value: 0x7f020061
-			public const int ic_clear_data = 2130837601;
+			public const int ic_climb = 2130837601;
 			
 			// aapt resource value: 0x7f020062
-			public const int ic_climb = 2130837602;
+			public const int ic_climb_yellow = 2130837602;
 			
 			// aapt resource value: 0x7f020063
-			public const int ic_climb_yellow = 2130837603;
+			public const int ic_dialog_close_dark = 2130837603;
 			
 			// aapt resource value: 0x7f020064
-			public const int ic_dialog_close_dark = 2130837604;
+			public const int ic_dialog_close_light = 2130837604;
 			
 			// aapt resource value: 0x7f020065
-			public const int ic_dialog_close_light = 2130837605;
+			public const int ic_drop_cube = 2130837605;
 			
 			// aapt resource value: 0x7f020066
-			public const int ic_drop_cube = 2130837606;
+			public const int ic_dropped_cube_yellow = 2130837606;
 			
 			// aapt resource value: 0x7f020067
-			public const int ic_dropped_cube_yellow = 2130837607;
+			public const int ic_edit = 2130837607;
 			
 			// aapt resource value: 0x7f020068
-			public const int ic_edit = 2130837608;
+			public const int ic_exchange = 2130837608;
 			
 			// aapt resource value: 0x7f020069
-			public const int ic_exchange = 2130837609;
+			public const int ic_export_web = 2130837609;
 			
 			// aapt resource value: 0x7f02006a
-			public const int ic_export_web = 2130837610;
+			public const int ic_force_powerup = 2130837610;
 			
 			// aapt resource value: 0x7f02006b
-			public const int ic_force_powerup = 2130837611;
+			public const int ic_group_collapse_00 = 2130837611;
 			
 			// aapt resource value: 0x7f02006c
-			public const int ic_group_collapse_00 = 2130837612;
+			public const int ic_group_collapse_01 = 2130837612;
 			
 			// aapt resource value: 0x7f02006d
-			public const int ic_group_collapse_01 = 2130837613;
+			public const int ic_group_collapse_02 = 2130837613;
 			
 			// aapt resource value: 0x7f02006e
-			public const int ic_group_collapse_02 = 2130837614;
+			public const int ic_group_collapse_03 = 2130837614;
 			
 			// aapt resource value: 0x7f02006f
-			public const int ic_group_collapse_03 = 2130837615;
+			public const int ic_group_collapse_04 = 2130837615;
 			
 			// aapt resource value: 0x7f020070
-			public const int ic_group_collapse_04 = 2130837616;
+			public const int ic_group_collapse_05 = 2130837616;
 			
 			// aapt resource value: 0x7f020071
-			public const int ic_group_collapse_05 = 2130837617;
+			public const int ic_group_collapse_06 = 2130837617;
 			
 			// aapt resource value: 0x7f020072
-			public const int ic_group_collapse_06 = 2130837618;
+			public const int ic_group_collapse_07 = 2130837618;
 			
 			// aapt resource value: 0x7f020073
-			public const int ic_group_collapse_07 = 2130837619;
+			public const int ic_group_collapse_08 = 2130837619;
 			
 			// aapt resource value: 0x7f020074
-			public const int ic_group_collapse_08 = 2130837620;
+			public const int ic_group_collapse_09 = 2130837620;
 			
 			// aapt resource value: 0x7f020075
-			public const int ic_group_collapse_09 = 2130837621;
+			public const int ic_group_collapse_10 = 2130837621;
 			
 			// aapt resource value: 0x7f020076
-			public const int ic_group_collapse_10 = 2130837622;
+			public const int ic_group_collapse_11 = 2130837622;
 			
 			// aapt resource value: 0x7f020077
-			public const int ic_group_collapse_11 = 2130837623;
+			public const int ic_group_collapse_12 = 2130837623;
 			
 			// aapt resource value: 0x7f020078
-			public const int ic_group_collapse_12 = 2130837624;
+			public const int ic_group_collapse_13 = 2130837624;
 			
 			// aapt resource value: 0x7f020079
-			public const int ic_group_collapse_13 = 2130837625;
+			public const int ic_group_collapse_14 = 2130837625;
 			
 			// aapt resource value: 0x7f02007a
-			public const int ic_group_collapse_14 = 2130837626;
+			public const int ic_group_collapse_15 = 2130837626;
 			
 			// aapt resource value: 0x7f02007b
-			public const int ic_group_collapse_15 = 2130837627;
+			public const int ic_group_expand_00 = 2130837627;
 			
 			// aapt resource value: 0x7f02007c
-			public const int ic_group_expand_00 = 2130837628;
+			public const int ic_group_expand_01 = 2130837628;
 			
 			// aapt resource value: 0x7f02007d
-			public const int ic_group_expand_01 = 2130837629;
+			public const int ic_group_expand_02 = 2130837629;
 			
 			// aapt resource value: 0x7f02007e
-			public const int ic_group_expand_02 = 2130837630;
+			public const int ic_group_expand_03 = 2130837630;
 			
 			// aapt resource value: 0x7f02007f
-			public const int ic_group_expand_03 = 2130837631;
+			public const int ic_group_expand_04 = 2130837631;
 			
 			// aapt resource value: 0x7f020080
-			public const int ic_group_expand_04 = 2130837632;
+			public const int ic_group_expand_05 = 2130837632;
 			
 			// aapt resource value: 0x7f020081
-			public const int ic_group_expand_05 = 2130837633;
+			public const int ic_group_expand_06 = 2130837633;
 			
 			// aapt resource value: 0x7f020082
-			public const int ic_group_expand_06 = 2130837634;
+			public const int ic_group_expand_07 = 2130837634;
 			
 			// aapt resource value: 0x7f020083
-			public const int ic_group_expand_07 = 2130837635;
+			public const int ic_group_expand_08 = 2130837635;
 			
 			// aapt resource value: 0x7f020084
-			public const int ic_group_expand_08 = 2130837636;
+			public const int ic_group_expand_09 = 2130837636;
 			
 			// aapt resource value: 0x7f020085
-			public const int ic_group_expand_09 = 2130837637;
+			public const int ic_group_expand_10 = 2130837637;
 			
 			// aapt resource value: 0x7f020086
-			public const int ic_group_expand_10 = 2130837638;
+			public const int ic_group_expand_11 = 2130837638;
 			
 			// aapt resource value: 0x7f020087
-			public const int ic_group_expand_11 = 2130837639;
+			public const int ic_group_expand_12 = 2130837639;
 			
 			// aapt resource value: 0x7f020088
-			public const int ic_group_expand_12 = 2130837640;
+			public const int ic_group_expand_13 = 2130837640;
 			
 			// aapt resource value: 0x7f020089
-			public const int ic_group_expand_13 = 2130837641;
+			public const int ic_group_expand_14 = 2130837641;
 			
 			// aapt resource value: 0x7f02008a
-			public const int ic_group_expand_14 = 2130837642;
+			public const int ic_group_expand_15 = 2130837642;
 			
 			// aapt resource value: 0x7f02008b
-			public const int ic_group_expand_15 = 2130837643;
+			public const int ic_import_web = 2130837643;
 			
 			// aapt resource value: 0x7f02008c
-			public const int ic_import_web = 2130837644;
+			public const int ic_leader = 2130837644;
 			
 			// aapt resource value: 0x7f02008d
-			public const int ic_leader = 2130837645;
+			public const int ic_match = 2130837645;
 			
 			// aapt resource value: 0x7f02008e
-			public const int ic_match = 2130837646;
+			public const int ic_media_pause_dark = 2130837646;
 			
 			// aapt resource value: 0x7f02008f
-			public const int ic_media_pause_dark = 2130837647;
+			public const int ic_media_pause_light = 2130837647;
 			
 			// aapt resource value: 0x7f020090
-			public const int ic_media_pause_light = 2130837648;
+			public const int ic_media_play_dark = 2130837648;
 			
 			// aapt resource value: 0x7f020091
-			public const int ic_media_play_dark = 2130837649;
+			public const int ic_media_play_light = 2130837649;
 			
 			// aapt resource value: 0x7f020092
-			public const int ic_media_play_light = 2130837650;
+			public const int ic_media_stop_dark = 2130837650;
 			
 			// aapt resource value: 0x7f020093
-			public const int ic_media_stop_dark = 2130837651;
+			public const int ic_media_stop_light = 2130837651;
 			
 			// aapt resource value: 0x7f020094
-			public const int ic_media_stop_light = 2130837652;
+			public const int ic_mr_button_connected_00_dark = 2130837652;
 			
 			// aapt resource value: 0x7f020095
-			public const int ic_mr_button_connected_00_dark = 2130837653;
+			public const int ic_mr_button_connected_00_light = 2130837653;
 			
 			// aapt resource value: 0x7f020096
-			public const int ic_mr_button_connected_00_light = 2130837654;
+			public const int ic_mr_button_connected_01_dark = 2130837654;
 			
 			// aapt resource value: 0x7f020097
-			public const int ic_mr_button_connected_01_dark = 2130837655;
+			public const int ic_mr_button_connected_01_light = 2130837655;
 			
 			// aapt resource value: 0x7f020098
-			public const int ic_mr_button_connected_01_light = 2130837656;
+			public const int ic_mr_button_connected_02_dark = 2130837656;
 			
 			// aapt resource value: 0x7f020099
-			public const int ic_mr_button_connected_02_dark = 2130837657;
+			public const int ic_mr_button_connected_02_light = 2130837657;
 			
 			// aapt resource value: 0x7f02009a
-			public const int ic_mr_button_connected_02_light = 2130837658;
+			public const int ic_mr_button_connected_03_dark = 2130837658;
 			
 			// aapt resource value: 0x7f02009b
-			public const int ic_mr_button_connected_03_dark = 2130837659;
+			public const int ic_mr_button_connected_03_light = 2130837659;
 			
 			// aapt resource value: 0x7f02009c
-			public const int ic_mr_button_connected_03_light = 2130837660;
+			public const int ic_mr_button_connected_04_dark = 2130837660;
 			
 			// aapt resource value: 0x7f02009d
-			public const int ic_mr_button_connected_04_dark = 2130837661;
+			public const int ic_mr_button_connected_04_light = 2130837661;
 			
 			// aapt resource value: 0x7f02009e
-			public const int ic_mr_button_connected_04_light = 2130837662;
+			public const int ic_mr_button_connected_05_dark = 2130837662;
 			
 			// aapt resource value: 0x7f02009f
-			public const int ic_mr_button_connected_05_dark = 2130837663;
+			public const int ic_mr_button_connected_05_light = 2130837663;
 			
 			// aapt resource value: 0x7f0200a0
-			public const int ic_mr_button_connected_05_light = 2130837664;
+			public const int ic_mr_button_connected_06_dark = 2130837664;
 			
 			// aapt resource value: 0x7f0200a1
-			public const int ic_mr_button_connected_06_dark = 2130837665;
+			public const int ic_mr_button_connected_06_light = 2130837665;
 			
 			// aapt resource value: 0x7f0200a2
-			public const int ic_mr_button_connected_06_light = 2130837666;
+			public const int ic_mr_button_connected_07_dark = 2130837666;
 			
 			// aapt resource value: 0x7f0200a3
-			public const int ic_mr_button_connected_07_dark = 2130837667;
+			public const int ic_mr_button_connected_07_light = 2130837667;
 			
 			// aapt resource value: 0x7f0200a4
-			public const int ic_mr_button_connected_07_light = 2130837668;
+			public const int ic_mr_button_connected_08_dark = 2130837668;
 			
 			// aapt resource value: 0x7f0200a5
-			public const int ic_mr_button_connected_08_dark = 2130837669;
+			public const int ic_mr_button_connected_08_light = 2130837669;
 			
 			// aapt resource value: 0x7f0200a6
-			public const int ic_mr_button_connected_08_light = 2130837670;
+			public const int ic_mr_button_connected_09_dark = 2130837670;
 			
 			// aapt resource value: 0x7f0200a7
-			public const int ic_mr_button_connected_09_dark = 2130837671;
+			public const int ic_mr_button_connected_09_light = 2130837671;
 			
 			// aapt resource value: 0x7f0200a8
-			public const int ic_mr_button_connected_09_light = 2130837672;
+			public const int ic_mr_button_connected_10_dark = 2130837672;
 			
 			// aapt resource value: 0x7f0200a9
-			public const int ic_mr_button_connected_10_dark = 2130837673;
+			public const int ic_mr_button_connected_10_light = 2130837673;
 			
 			// aapt resource value: 0x7f0200aa
-			public const int ic_mr_button_connected_10_light = 2130837674;
+			public const int ic_mr_button_connected_11_dark = 2130837674;
 			
 			// aapt resource value: 0x7f0200ab
-			public const int ic_mr_button_connected_11_dark = 2130837675;
+			public const int ic_mr_button_connected_11_light = 2130837675;
 			
 			// aapt resource value: 0x7f0200ac
-			public const int ic_mr_button_connected_11_light = 2130837676;
+			public const int ic_mr_button_connected_12_dark = 2130837676;
 			
 			// aapt resource value: 0x7f0200ad
-			public const int ic_mr_button_connected_12_dark = 2130837677;
+			public const int ic_mr_button_connected_12_light = 2130837677;
 			
 			// aapt resource value: 0x7f0200ae
-			public const int ic_mr_button_connected_12_light = 2130837678;
+			public const int ic_mr_button_connected_13_dark = 2130837678;
 			
 			// aapt resource value: 0x7f0200af
-			public const int ic_mr_button_connected_13_dark = 2130837679;
+			public const int ic_mr_button_connected_13_light = 2130837679;
 			
 			// aapt resource value: 0x7f0200b0
-			public const int ic_mr_button_connected_13_light = 2130837680;
+			public const int ic_mr_button_connected_14_dark = 2130837680;
 			
 			// aapt resource value: 0x7f0200b1
-			public const int ic_mr_button_connected_14_dark = 2130837681;
+			public const int ic_mr_button_connected_14_light = 2130837681;
 			
 			// aapt resource value: 0x7f0200b2
-			public const int ic_mr_button_connected_14_light = 2130837682;
+			public const int ic_mr_button_connected_15_dark = 2130837682;
 			
 			// aapt resource value: 0x7f0200b3
-			public const int ic_mr_button_connected_15_dark = 2130837683;
+			public const int ic_mr_button_connected_15_light = 2130837683;
 			
 			// aapt resource value: 0x7f0200b4
-			public const int ic_mr_button_connected_15_light = 2130837684;
+			public const int ic_mr_button_connected_16_dark = 2130837684;
 			
 			// aapt resource value: 0x7f0200b5
-			public const int ic_mr_button_connected_16_dark = 2130837685;
+			public const int ic_mr_button_connected_16_light = 2130837685;
 			
 			// aapt resource value: 0x7f0200b6
-			public const int ic_mr_button_connected_16_light = 2130837686;
+			public const int ic_mr_button_connected_17_dark = 2130837686;
 			
 			// aapt resource value: 0x7f0200b7
-			public const int ic_mr_button_connected_17_dark = 2130837687;
+			public const int ic_mr_button_connected_17_light = 2130837687;
 			
 			// aapt resource value: 0x7f0200b8
-			public const int ic_mr_button_connected_17_light = 2130837688;
+			public const int ic_mr_button_connected_18_dark = 2130837688;
 			
 			// aapt resource value: 0x7f0200b9
-			public const int ic_mr_button_connected_18_dark = 2130837689;
+			public const int ic_mr_button_connected_18_light = 2130837689;
 			
 			// aapt resource value: 0x7f0200ba
-			public const int ic_mr_button_connected_18_light = 2130837690;
+			public const int ic_mr_button_connected_19_dark = 2130837690;
 			
 			// aapt resource value: 0x7f0200bb
-			public const int ic_mr_button_connected_19_dark = 2130837691;
+			public const int ic_mr_button_connected_19_light = 2130837691;
 			
 			// aapt resource value: 0x7f0200bc
-			public const int ic_mr_button_connected_19_light = 2130837692;
+			public const int ic_mr_button_connected_20_dark = 2130837692;
 			
 			// aapt resource value: 0x7f0200bd
-			public const int ic_mr_button_connected_20_dark = 2130837693;
+			public const int ic_mr_button_connected_20_light = 2130837693;
 			
 			// aapt resource value: 0x7f0200be
-			public const int ic_mr_button_connected_20_light = 2130837694;
+			public const int ic_mr_button_connected_21_dark = 2130837694;
 			
 			// aapt resource value: 0x7f0200bf
-			public const int ic_mr_button_connected_21_dark = 2130837695;
+			public const int ic_mr_button_connected_21_light = 2130837695;
 			
 			// aapt resource value: 0x7f0200c0
-			public const int ic_mr_button_connected_21_light = 2130837696;
+			public const int ic_mr_button_connected_22_dark = 2130837696;
 			
 			// aapt resource value: 0x7f0200c1
-			public const int ic_mr_button_connected_22_dark = 2130837697;
+			public const int ic_mr_button_connected_22_light = 2130837697;
 			
 			// aapt resource value: 0x7f0200c2
-			public const int ic_mr_button_connected_22_light = 2130837698;
+			public const int ic_mr_button_connected_23_dark = 2130837698;
 			
 			// aapt resource value: 0x7f0200c3
-			public const int ic_mr_button_connected_23_dark = 2130837699;
+			public const int ic_mr_button_connected_23_light = 2130837699;
 			
 			// aapt resource value: 0x7f0200c4
-			public const int ic_mr_button_connected_23_light = 2130837700;
+			public const int ic_mr_button_connected_24_dark = 2130837700;
 			
 			// aapt resource value: 0x7f0200c5
-			public const int ic_mr_button_connected_24_dark = 2130837701;
+			public const int ic_mr_button_connected_24_light = 2130837701;
 			
 			// aapt resource value: 0x7f0200c6
-			public const int ic_mr_button_connected_24_light = 2130837702;
+			public const int ic_mr_button_connected_25_dark = 2130837702;
 			
 			// aapt resource value: 0x7f0200c7
-			public const int ic_mr_button_connected_25_dark = 2130837703;
+			public const int ic_mr_button_connected_25_light = 2130837703;
 			
 			// aapt resource value: 0x7f0200c8
-			public const int ic_mr_button_connected_25_light = 2130837704;
+			public const int ic_mr_button_connected_26_dark = 2130837704;
 			
 			// aapt resource value: 0x7f0200c9
-			public const int ic_mr_button_connected_26_dark = 2130837705;
+			public const int ic_mr_button_connected_26_light = 2130837705;
 			
 			// aapt resource value: 0x7f0200ca
-			public const int ic_mr_button_connected_26_light = 2130837706;
+			public const int ic_mr_button_connected_27_dark = 2130837706;
 			
 			// aapt resource value: 0x7f0200cb
-			public const int ic_mr_button_connected_27_dark = 2130837707;
+			public const int ic_mr_button_connected_27_light = 2130837707;
 			
 			// aapt resource value: 0x7f0200cc
-			public const int ic_mr_button_connected_27_light = 2130837708;
+			public const int ic_mr_button_connected_28_dark = 2130837708;
 			
 			// aapt resource value: 0x7f0200cd
-			public const int ic_mr_button_connected_28_dark = 2130837709;
+			public const int ic_mr_button_connected_28_light = 2130837709;
 			
 			// aapt resource value: 0x7f0200ce
-			public const int ic_mr_button_connected_28_light = 2130837710;
+			public const int ic_mr_button_connected_29_dark = 2130837710;
 			
 			// aapt resource value: 0x7f0200cf
-			public const int ic_mr_button_connected_29_dark = 2130837711;
+			public const int ic_mr_button_connected_29_light = 2130837711;
 			
 			// aapt resource value: 0x7f0200d0
-			public const int ic_mr_button_connected_29_light = 2130837712;
+			public const int ic_mr_button_connected_30_dark = 2130837712;
 			
 			// aapt resource value: 0x7f0200d1
-			public const int ic_mr_button_connected_30_dark = 2130837713;
+			public const int ic_mr_button_connected_30_light = 2130837713;
 			
 			// aapt resource value: 0x7f0200d2
-			public const int ic_mr_button_connected_30_light = 2130837714;
+			public const int ic_mr_button_connecting_00_dark = 2130837714;
 			
 			// aapt resource value: 0x7f0200d3
-			public const int ic_mr_button_connecting_00_dark = 2130837715;
+			public const int ic_mr_button_connecting_00_light = 2130837715;
 			
 			// aapt resource value: 0x7f0200d4
-			public const int ic_mr_button_connecting_00_light = 2130837716;
+			public const int ic_mr_button_connecting_01_dark = 2130837716;
 			
 			// aapt resource value: 0x7f0200d5
-			public const int ic_mr_button_connecting_01_dark = 2130837717;
+			public const int ic_mr_button_connecting_01_light = 2130837717;
 			
 			// aapt resource value: 0x7f0200d6
-			public const int ic_mr_button_connecting_01_light = 2130837718;
+			public const int ic_mr_button_connecting_02_dark = 2130837718;
 			
 			// aapt resource value: 0x7f0200d7
-			public const int ic_mr_button_connecting_02_dark = 2130837719;
+			public const int ic_mr_button_connecting_02_light = 2130837719;
 			
 			// aapt resource value: 0x7f0200d8
-			public const int ic_mr_button_connecting_02_light = 2130837720;
+			public const int ic_mr_button_connecting_03_dark = 2130837720;
 			
 			// aapt resource value: 0x7f0200d9
-			public const int ic_mr_button_connecting_03_dark = 2130837721;
+			public const int ic_mr_button_connecting_03_light = 2130837721;
 			
 			// aapt resource value: 0x7f0200da
-			public const int ic_mr_button_connecting_03_light = 2130837722;
+			public const int ic_mr_button_connecting_04_dark = 2130837722;
 			
 			// aapt resource value: 0x7f0200db
-			public const int ic_mr_button_connecting_04_dark = 2130837723;
+			public const int ic_mr_button_connecting_04_light = 2130837723;
 			
 			// aapt resource value: 0x7f0200dc
-			public const int ic_mr_button_connecting_04_light = 2130837724;
+			public const int ic_mr_button_connecting_05_dark = 2130837724;
 			
 			// aapt resource value: 0x7f0200dd
-			public const int ic_mr_button_connecting_05_dark = 2130837725;
+			public const int ic_mr_button_connecting_05_light = 2130837725;
 			
 			// aapt resource value: 0x7f0200de
-			public const int ic_mr_button_connecting_05_light = 2130837726;
+			public const int ic_mr_button_connecting_06_dark = 2130837726;
 			
 			// aapt resource value: 0x7f0200df
-			public const int ic_mr_button_connecting_06_dark = 2130837727;
+			public const int ic_mr_button_connecting_06_light = 2130837727;
 			
 			// aapt resource value: 0x7f0200e0
-			public const int ic_mr_button_connecting_06_light = 2130837728;
+			public const int ic_mr_button_connecting_07_dark = 2130837728;
 			
 			// aapt resource value: 0x7f0200e1
-			public const int ic_mr_button_connecting_07_dark = 2130837729;
+			public const int ic_mr_button_connecting_07_light = 2130837729;
 			
 			// aapt resource value: 0x7f0200e2
-			public const int ic_mr_button_connecting_07_light = 2130837730;
+			public const int ic_mr_button_connecting_08_dark = 2130837730;
 			
 			// aapt resource value: 0x7f0200e3
-			public const int ic_mr_button_connecting_08_dark = 2130837731;
+			public const int ic_mr_button_connecting_08_light = 2130837731;
 			
 			// aapt resource value: 0x7f0200e4
-			public const int ic_mr_button_connecting_08_light = 2130837732;
+			public const int ic_mr_button_connecting_09_dark = 2130837732;
 			
 			// aapt resource value: 0x7f0200e5
-			public const int ic_mr_button_connecting_09_dark = 2130837733;
+			public const int ic_mr_button_connecting_09_light = 2130837733;
 			
 			// aapt resource value: 0x7f0200e6
-			public const int ic_mr_button_connecting_09_light = 2130837734;
+			public const int ic_mr_button_connecting_10_dark = 2130837734;
 			
 			// aapt resource value: 0x7f0200e7
-			public const int ic_mr_button_connecting_10_dark = 2130837735;
+			public const int ic_mr_button_connecting_10_light = 2130837735;
 			
 			// aapt resource value: 0x7f0200e8
-			public const int ic_mr_button_connecting_10_light = 2130837736;
+			public const int ic_mr_button_connecting_11_dark = 2130837736;
 			
 			// aapt resource value: 0x7f0200e9
-			public const int ic_mr_button_connecting_11_dark = 2130837737;
+			public const int ic_mr_button_connecting_11_light = 2130837737;
 			
 			// aapt resource value: 0x7f0200ea
-			public const int ic_mr_button_connecting_11_light = 2130837738;
+			public const int ic_mr_button_connecting_12_dark = 2130837738;
 			
 			// aapt resource value: 0x7f0200eb
-			public const int ic_mr_button_connecting_12_dark = 2130837739;
+			public const int ic_mr_button_connecting_12_light = 2130837739;
 			
 			// aapt resource value: 0x7f0200ec
-			public const int ic_mr_button_connecting_12_light = 2130837740;
+			public const int ic_mr_button_connecting_13_dark = 2130837740;
 			
 			// aapt resource value: 0x7f0200ed
-			public const int ic_mr_button_connecting_13_dark = 2130837741;
+			public const int ic_mr_button_connecting_13_light = 2130837741;
 			
 			// aapt resource value: 0x7f0200ee
-			public const int ic_mr_button_connecting_13_light = 2130837742;
+			public const int ic_mr_button_connecting_14_dark = 2130837742;
 			
 			// aapt resource value: 0x7f0200ef
-			public const int ic_mr_button_connecting_14_dark = 2130837743;
+			public const int ic_mr_button_connecting_14_light = 2130837743;
 			
 			// aapt resource value: 0x7f0200f0
-			public const int ic_mr_button_connecting_14_light = 2130837744;
+			public const int ic_mr_button_connecting_15_dark = 2130837744;
 			
 			// aapt resource value: 0x7f0200f1
-			public const int ic_mr_button_connecting_15_dark = 2130837745;
+			public const int ic_mr_button_connecting_15_light = 2130837745;
 			
 			// aapt resource value: 0x7f0200f2
-			public const int ic_mr_button_connecting_15_light = 2130837746;
+			public const int ic_mr_button_connecting_16_dark = 2130837746;
 			
 			// aapt resource value: 0x7f0200f3
-			public const int ic_mr_button_connecting_16_dark = 2130837747;
+			public const int ic_mr_button_connecting_16_light = 2130837747;
 			
 			// aapt resource value: 0x7f0200f4
-			public const int ic_mr_button_connecting_16_light = 2130837748;
+			public const int ic_mr_button_connecting_17_dark = 2130837748;
 			
 			// aapt resource value: 0x7f0200f5
-			public const int ic_mr_button_connecting_17_dark = 2130837749;
+			public const int ic_mr_button_connecting_17_light = 2130837749;
 			
 			// aapt resource value: 0x7f0200f6
-			public const int ic_mr_button_connecting_17_light = 2130837750;
+			public const int ic_mr_button_connecting_18_dark = 2130837750;
 			
 			// aapt resource value: 0x7f0200f7
-			public const int ic_mr_button_connecting_18_dark = 2130837751;
+			public const int ic_mr_button_connecting_18_light = 2130837751;
 			
 			// aapt resource value: 0x7f0200f8
-			public const int ic_mr_button_connecting_18_light = 2130837752;
+			public const int ic_mr_button_connecting_19_dark = 2130837752;
 			
 			// aapt resource value: 0x7f0200f9
-			public const int ic_mr_button_connecting_19_dark = 2130837753;
+			public const int ic_mr_button_connecting_19_light = 2130837753;
 			
 			// aapt resource value: 0x7f0200fa
-			public const int ic_mr_button_connecting_19_light = 2130837754;
+			public const int ic_mr_button_connecting_20_dark = 2130837754;
 			
 			// aapt resource value: 0x7f0200fb
-			public const int ic_mr_button_connecting_20_dark = 2130837755;
+			public const int ic_mr_button_connecting_20_light = 2130837755;
 			
 			// aapt resource value: 0x7f0200fc
-			public const int ic_mr_button_connecting_20_light = 2130837756;
+			public const int ic_mr_button_connecting_21_dark = 2130837756;
 			
 			// aapt resource value: 0x7f0200fd
-			public const int ic_mr_button_connecting_21_dark = 2130837757;
+			public const int ic_mr_button_connecting_21_light = 2130837757;
 			
 			// aapt resource value: 0x7f0200fe
-			public const int ic_mr_button_connecting_21_light = 2130837758;
+			public const int ic_mr_button_connecting_22_dark = 2130837758;
 			
 			// aapt resource value: 0x7f0200ff
-			public const int ic_mr_button_connecting_22_dark = 2130837759;
+			public const int ic_mr_button_connecting_22_light = 2130837759;
 			
 			// aapt resource value: 0x7f020100
-			public const int ic_mr_button_connecting_22_light = 2130837760;
+			public const int ic_mr_button_connecting_23_dark = 2130837760;
 			
 			// aapt resource value: 0x7f020101
-			public const int ic_mr_button_connecting_23_dark = 2130837761;
+			public const int ic_mr_button_connecting_23_light = 2130837761;
 			
 			// aapt resource value: 0x7f020102
-			public const int ic_mr_button_connecting_23_light = 2130837762;
+			public const int ic_mr_button_connecting_24_dark = 2130837762;
 			
 			// aapt resource value: 0x7f020103
-			public const int ic_mr_button_connecting_24_dark = 2130837763;
+			public const int ic_mr_button_connecting_24_light = 2130837763;
 			
 			// aapt resource value: 0x7f020104
-			public const int ic_mr_button_connecting_24_light = 2130837764;
+			public const int ic_mr_button_connecting_25_dark = 2130837764;
 			
 			// aapt resource value: 0x7f020105
-			public const int ic_mr_button_connecting_25_dark = 2130837765;
+			public const int ic_mr_button_connecting_25_light = 2130837765;
 			
 			// aapt resource value: 0x7f020106
-			public const int ic_mr_button_connecting_25_light = 2130837766;
+			public const int ic_mr_button_connecting_26_dark = 2130837766;
 			
 			// aapt resource value: 0x7f020107
-			public const int ic_mr_button_connecting_26_dark = 2130837767;
+			public const int ic_mr_button_connecting_26_light = 2130837767;
 			
 			// aapt resource value: 0x7f020108
-			public const int ic_mr_button_connecting_26_light = 2130837768;
+			public const int ic_mr_button_connecting_27_dark = 2130837768;
 			
 			// aapt resource value: 0x7f020109
-			public const int ic_mr_button_connecting_27_dark = 2130837769;
+			public const int ic_mr_button_connecting_27_light = 2130837769;
 			
 			// aapt resource value: 0x7f02010a
-			public const int ic_mr_button_connecting_27_light = 2130837770;
+			public const int ic_mr_button_connecting_28_dark = 2130837770;
 			
 			// aapt resource value: 0x7f02010b
-			public const int ic_mr_button_connecting_28_dark = 2130837771;
+			public const int ic_mr_button_connecting_28_light = 2130837771;
 			
 			// aapt resource value: 0x7f02010c
-			public const int ic_mr_button_connecting_28_light = 2130837772;
+			public const int ic_mr_button_connecting_29_dark = 2130837772;
 			
 			// aapt resource value: 0x7f02010d
-			public const int ic_mr_button_connecting_29_dark = 2130837773;
+			public const int ic_mr_button_connecting_29_light = 2130837773;
 			
 			// aapt resource value: 0x7f02010e
-			public const int ic_mr_button_connecting_29_light = 2130837774;
+			public const int ic_mr_button_connecting_30_dark = 2130837774;
 			
 			// aapt resource value: 0x7f02010f
-			public const int ic_mr_button_connecting_30_dark = 2130837775;
+			public const int ic_mr_button_connecting_30_light = 2130837775;
 			
 			// aapt resource value: 0x7f020110
-			public const int ic_mr_button_connecting_30_light = 2130837776;
+			public const int ic_mr_button_disabled_dark = 2130837776;
 			
 			// aapt resource value: 0x7f020111
-			public const int ic_mr_button_disabled_dark = 2130837777;
+			public const int ic_mr_button_disabled_light = 2130837777;
 			
 			// aapt resource value: 0x7f020112
-			public const int ic_mr_button_disabled_light = 2130837778;
+			public const int ic_mr_button_disconnected_dark = 2130837778;
 			
 			// aapt resource value: 0x7f020113
-			public const int ic_mr_button_disconnected_dark = 2130837779;
+			public const int ic_mr_button_disconnected_light = 2130837779;
 			
 			// aapt resource value: 0x7f020114
-			public const int ic_mr_button_disconnected_light = 2130837780;
+			public const int ic_mr_button_grey = 2130837780;
 			
 			// aapt resource value: 0x7f020115
-			public const int ic_mr_button_grey = 2130837781;
+			public const int ic_picked_cube = 2130837781;
 			
 			// aapt resource value: 0x7f020116
-			public const int ic_picked_cube = 2130837782;
+			public const int ic_picked_cube_yellow = 2130837782;
 			
 			// aapt resource value: 0x7f020117
-			public const int ic_picked_cube_yellow = 2130837783;
+			public const int ic_scale = 2130837783;
 			
 			// aapt resource value: 0x7f020118
-			public const int ic_scale = 2130837784;
+			public const int ic_switch = 2130837784;
 			
 			// aapt resource value: 0x7f020119
-			public const int ic_switch = 2130837785;
+			public const int ic_timer = 2130837785;
 			
 			// aapt resource value: 0x7f02011a
-			public const int ic_timer = 2130837786;
+			public const int ic_vol_type_speaker_dark = 2130837786;
 			
 			// aapt resource value: 0x7f02011b
-			public const int ic_vol_type_speaker_dark = 2130837787;
+			public const int ic_vol_type_speaker_group_dark = 2130837787;
 			
 			// aapt resource value: 0x7f02011c
-			public const int ic_vol_type_speaker_group_dark = 2130837788;
+			public const int ic_vol_type_speaker_group_light = 2130837788;
 			
 			// aapt resource value: 0x7f02011d
-			public const int ic_vol_type_speaker_group_light = 2130837789;
+			public const int ic_vol_type_speaker_light = 2130837789;
 			
 			// aapt resource value: 0x7f02011e
-			public const int ic_vol_type_speaker_light = 2130837790;
+			public const int ic_vol_type_tv_dark = 2130837790;
 			
 			// aapt resource value: 0x7f02011f
-			public const int ic_vol_type_tv_dark = 2130837791;
+			public const int ic_vol_type_tv_light = 2130837791;
 			
 			// aapt resource value: 0x7f020120
-			public const int ic_vol_type_tv_light = 2130837792;
+			public const int icon = 2130837792;
 			
 			// aapt resource value: 0x7f020121
-			public const int icon = 2130837793;
+			public const int mr_button_connected_dark = 2130837793;
 			
 			// aapt resource value: 0x7f020122
-			public const int mr_button_connected_dark = 2130837794;
+			public const int mr_button_connected_light = 2130837794;
 			
 			// aapt resource value: 0x7f020123
-			public const int mr_button_connected_light = 2130837795;
+			public const int mr_button_connecting_dark = 2130837795;
 			
 			// aapt resource value: 0x7f020124
-			public const int mr_button_connecting_dark = 2130837796;
+			public const int mr_button_connecting_light = 2130837796;
 			
 			// aapt resource value: 0x7f020125
-			public const int mr_button_connecting_light = 2130837797;
+			public const int mr_button_dark = 2130837797;
 			
 			// aapt resource value: 0x7f020126
-			public const int mr_button_dark = 2130837798;
+			public const int mr_button_light = 2130837798;
 			
 			// aapt resource value: 0x7f020127
-			public const int mr_button_light = 2130837799;
+			public const int mr_dialog_close_dark = 2130837799;
 			
 			// aapt resource value: 0x7f020128
-			public const int mr_dialog_close_dark = 2130837800;
+			public const int mr_dialog_close_light = 2130837800;
 			
 			// aapt resource value: 0x7f020129
-			public const int mr_dialog_close_light = 2130837801;
+			public const int mr_dialog_material_background_dark = 2130837801;
 			
 			// aapt resource value: 0x7f02012a
-			public const int mr_dialog_material_background_dark = 2130837802;
+			public const int mr_dialog_material_background_light = 2130837802;
 			
 			// aapt resource value: 0x7f02012b
-			public const int mr_dialog_material_background_light = 2130837803;
+			public const int mr_group_collapse = 2130837803;
 			
 			// aapt resource value: 0x7f02012c
-			public const int mr_group_collapse = 2130837804;
+			public const int mr_group_expand = 2130837804;
 			
 			// aapt resource value: 0x7f02012d
-			public const int mr_group_expand = 2130837805;
+			public const int mr_media_pause_dark = 2130837805;
 			
 			// aapt resource value: 0x7f02012e
-			public const int mr_media_pause_dark = 2130837806;
+			public const int mr_media_pause_light = 2130837806;
 			
 			// aapt resource value: 0x7f02012f
-			public const int mr_media_pause_light = 2130837807;
+			public const int mr_media_play_dark = 2130837807;
 			
 			// aapt resource value: 0x7f020130
-			public const int mr_media_play_dark = 2130837808;
+			public const int mr_media_play_light = 2130837808;
 			
 			// aapt resource value: 0x7f020131
-			public const int mr_media_play_light = 2130837809;
+			public const int mr_media_stop_dark = 2130837809;
 			
 			// aapt resource value: 0x7f020132
-			public const int mr_media_stop_dark = 2130837810;
+			public const int mr_media_stop_light = 2130837810;
 			
 			// aapt resource value: 0x7f020133
-			public const int mr_media_stop_light = 2130837811;
+			public const int mr_vol_type_audiotrack_dark = 2130837811;
 			
 			// aapt resource value: 0x7f020134
-			public const int mr_vol_type_audiotrack_dark = 2130837812;
+			public const int mr_vol_type_audiotrack_light = 2130837812;
 			
 			// aapt resource value: 0x7f020135
-			public const int mr_vol_type_audiotrack_light = 2130837813;
+			public const int navigation_empty_icon = 2130837813;
 			
 			// aapt resource value: 0x7f020136
-			public const int navigation_empty_icon = 2130837814;
+			public const int notification_action_background = 2130837814;
 			
 			// aapt resource value: 0x7f020137
-			public const int notification_action_background = 2130837815;
+			public const int notification_bg = 2130837815;
 			
 			// aapt resource value: 0x7f020138
-			public const int notification_bg = 2130837816;
+			public const int notification_bg_low = 2130837816;
 			
 			// aapt resource value: 0x7f020139
-			public const int notification_bg_low = 2130837817;
+			public const int notification_bg_low_normal = 2130837817;
 			
 			// aapt resource value: 0x7f02013a
-			public const int notification_bg_low_normal = 2130837818;
+			public const int notification_bg_low_pressed = 2130837818;
 			
 			// aapt resource value: 0x7f02013b
-			public const int notification_bg_low_pressed = 2130837819;
+			public const int notification_bg_normal = 2130837819;
 			
 			// aapt resource value: 0x7f02013c
-			public const int notification_bg_normal = 2130837820;
+			public const int notification_bg_normal_pressed = 2130837820;
 			
 			// aapt resource value: 0x7f02013d
-			public const int notification_bg_normal_pressed = 2130837821;
-			
-			// aapt resource value: 0x7f02013e
-			public const int notification_icon_background = 2130837822;
-			
-			// aapt resource value: 0x7f020144
-			public const int notification_template_icon_bg = 2130837828;
-			
-			// aapt resource value: 0x7f020145
-			public const int notification_template_icon_low_bg = 2130837829;
-			
-			// aapt resource value: 0x7f02013f
-			public const int notification_tile_bg = 2130837823;
-			
-			// aapt resource value: 0x7f020140
-			public const int notify_panel_notification_icon_bg = 2130837824;
-			
-			// aapt resource value: 0x7f020141
-			public const int plus = 2130837825;
-			
-			// aapt resource value: 0x7f020142
-			public const int tooltip_frame_dark = 2130837826;
+			public const int notification_icon_background = 2130837821;
 			
 			// aapt resource value: 0x7f020143
-			public const int tooltip_frame_light = 2130837827;
+			public const int notification_template_icon_bg = 2130837827;
+			
+			// aapt resource value: 0x7f020144
+			public const int notification_template_icon_low_bg = 2130837828;
+			
+			// aapt resource value: 0x7f02013e
+			public const int notification_tile_bg = 2130837822;
+			
+			// aapt resource value: 0x7f02013f
+			public const int notify_panel_notification_icon_bg = 2130837823;
+			
+			// aapt resource value: 0x7f020140
+			public const int plus = 2130837824;
+			
+			// aapt resource value: 0x7f020141
+			public const int tooltip_frame_dark = 2130837825;
+			
+			// aapt resource value: 0x7f020142
+			public const int tooltip_frame_light = 2130837826;
 			
 			static Drawable()
 			{
@@ -6507,8 +5111,8 @@ namespace NRGScoutingApp.Droid
 			// aapt resource value: 0x7f080037
 			public const int SYM = 2131230775;
 			
-			// aapt resource value: 0x7f0800bf
-			public const int action0 = 2131230911;
+			// aapt resource value: 0x7f0800ba
+			public const int action0 = 2131230906;
 			
 			// aapt resource value: 0x7f08007c
 			public const int action_bar = 2131230844;
@@ -6531,17 +5135,17 @@ namespace NRGScoutingApp.Droid
 			// aapt resource value: 0x7f08005a
 			public const int action_bar_title = 2131230810;
 			
-			// aapt resource value: 0x7f0800bc
-			public const int action_container = 2131230908;
+			// aapt resource value: 0x7f0800b7
+			public const int action_container = 2131230903;
 			
 			// aapt resource value: 0x7f08007d
 			public const int action_context_bar = 2131230845;
 			
-			// aapt resource value: 0x7f0800c3
-			public const int action_divider = 2131230915;
+			// aapt resource value: 0x7f0800be
+			public const int action_divider = 2131230910;
 			
-			// aapt resource value: 0x7f0800bd
-			public const int action_image = 2131230909;
+			// aapt resource value: 0x7f0800b8
+			public const int action_image = 2131230904;
 			
 			// aapt resource value: 0x7f080003
 			public const int action_menu_divider = 2131230723;
@@ -6558,11 +5162,11 @@ namespace NRGScoutingApp.Droid
 			// aapt resource value: 0x7f08005c
 			public const int action_mode_close_button = 2131230812;
 			
-			// aapt resource value: 0x7f0800be
-			public const int action_text = 2131230910;
+			// aapt resource value: 0x7f0800b9
+			public const int action_text = 2131230905;
 			
-			// aapt resource value: 0x7f0800cc
-			public const int actions = 2131230924;
+			// aapt resource value: 0x7f0800c7
+			public const int actions = 2131230919;
 			
 			// aapt resource value: 0x7f08005d
 			public const int activity_chooser_view_content = 2131230813;
@@ -6585,33 +5189,6 @@ namespace NRGScoutingApp.Droid
 			// aapt resource value: 0x7f080044
 			public const int auto = 2131230788;
 			
-			// aapt resource value: 0x7f08008f
-			public const int bb_bottom_bar_background_overlay = 2131230863;
-			
-			// aapt resource value: 0x7f08008e
-			public const int bb_bottom_bar_background_view = 2131230862;
-			
-			// aapt resource value: 0x7f080092
-			public const int bb_bottom_bar_icon = 2131230866;
-			
-			// aapt resource value: 0x7f080090
-			public const int bb_bottom_bar_item_container = 2131230864;
-			
-			// aapt resource value: 0x7f08008c
-			public const int bb_bottom_bar_outer_container = 2131230860;
-			
-			// aapt resource value: 0x7f08008d
-			public const int bb_bottom_bar_shadow = 2131230861;
-			
-			// aapt resource value: 0x7f080093
-			public const int bb_bottom_bar_title = 2131230867;
-			
-			// aapt resource value: 0x7f080091
-			public const int bb_tablet_right_border = 2131230865;
-			
-			// aapt resource value: 0x7f08008b
-			public const int bb_user_content_container = 2131230859;
-			
 			// aapt resource value: 0x7f08002f
 			public const int beginning = 2131230767;
 			
@@ -6621,11 +5198,17 @@ namespace NRGScoutingApp.Droid
 			// aapt resource value: 0x7f08003d
 			public const int bottom = 2131230781;
 			
+			// aapt resource value: 0x7f08008b
+			public const int bottomtab_navarea = 2131230859;
+			
+			// aapt resource value: 0x7f08008c
+			public const int bottomtab_tabbar = 2131230860;
+			
 			// aapt resource value: 0x7f080063
 			public const int buttonPanel = 2131230819;
 			
-			// aapt resource value: 0x7f0800c0
-			public const int cancel_action = 2131230912;
+			// aapt resource value: 0x7f0800bb
+			public const int cancel_action = 2131230907;
 			
 			// aapt resource value: 0x7f080045
 			public const int center = 2131230789;
@@ -6639,8 +5222,8 @@ namespace NRGScoutingApp.Droid
 			// aapt resource value: 0x7f080073
 			public const int checkbox = 2131230835;
 			
-			// aapt resource value: 0x7f0800c8
-			public const int chronometer = 2131230920;
+			// aapt resource value: 0x7f0800c3
+			public const int chronometer = 2131230915;
 			
 			// aapt resource value: 0x7f08004e
 			public const int clip_horizontal = 2131230798;
@@ -6651,14 +5234,14 @@ namespace NRGScoutingApp.Droid
 			// aapt resource value: 0x7f080039
 			public const int collapseActionView = 2131230777;
 			
-			// aapt resource value: 0x7f080096
-			public const int container = 2131230870;
+			// aapt resource value: 0x7f08008f
+			public const int container = 2131230863;
 			
 			// aapt resource value: 0x7f080066
 			public const int contentPanel = 2131230822;
 			
-			// aapt resource value: 0x7f080097
-			public const int coordinator = 2131230871;
+			// aapt resource value: 0x7f080090
+			public const int coordinator = 2131230864;
 			
 			// aapt resource value: 0x7f08006d
 			public const int custom = 2131230829;
@@ -6672,20 +5255,20 @@ namespace NRGScoutingApp.Droid
 			// aapt resource value: 0x7f080060
 			public const int default_activity_button = 2131230816;
 			
+			// aapt resource value: 0x7f080092
+			public const int design_bottom_sheet = 2131230866;
+			
 			// aapt resource value: 0x7f080099
-			public const int design_bottom_sheet = 2131230873;
+			public const int design_menu_item_action_area = 2131230873;
 			
-			// aapt resource value: 0x7f0800a0
-			public const int design_menu_item_action_area = 2131230880;
+			// aapt resource value: 0x7f080098
+			public const int design_menu_item_action_area_stub = 2131230872;
 			
-			// aapt resource value: 0x7f08009f
-			public const int design_menu_item_action_area_stub = 2131230879;
+			// aapt resource value: 0x7f080097
+			public const int design_menu_item_text = 2131230871;
 			
-			// aapt resource value: 0x7f08009e
-			public const int design_menu_item_text = 2131230878;
-			
-			// aapt resource value: 0x7f08009d
-			public const int design_navigation_view = 2131230877;
+			// aapt resource value: 0x7f080096
+			public const int design_navigation_view = 2131230870;
 			
 			// aapt resource value: 0x7f080020
 			public const int disableHome = 2131230752;
@@ -6696,8 +5279,8 @@ namespace NRGScoutingApp.Droid
 			// aapt resource value: 0x7f080030
 			public const int end = 2131230768;
 			
-			// aapt resource value: 0x7f0800ce
-			public const int end_padder = 2131230926;
+			// aapt resource value: 0x7f0800c9
+			public const int end_padder = 2131230921;
 			
 			// aapt resource value: 0x7f08003f
 			public const int enterAlways = 2131230783;
@@ -6726,6 +5309,12 @@ namespace NRGScoutingApp.Droid
 			// aapt resource value: 0x7f080054
 			public const int @fixed = 2131230804;
 			
+			// aapt resource value: 0x7f08009b
+			public const int flyoutcontent_appbar = 2131230875;
+			
+			// aapt resource value: 0x7f08009c
+			public const int flyoutcontent_recycler = 2131230876;
+			
 			// aapt resource value: 0x7f080058
 			public const int forever = 2131230808;
 			
@@ -6741,8 +5330,8 @@ namespace NRGScoutingApp.Droid
 			// aapt resource value: 0x7f080062
 			public const int icon = 2131230818;
 			
-			// aapt resource value: 0x7f0800cd
-			public const int icon_group = 2131230925;
+			// aapt resource value: 0x7f0800c8
+			public const int icon_group = 2131230920;
 			
 			// aapt resource value: 0x7f08003a
 			public const int ifRoom = 2131230778;
@@ -6750,8 +5339,8 @@ namespace NRGScoutingApp.Droid
 			// aapt resource value: 0x7f08005f
 			public const int image = 2131230815;
 			
-			// aapt resource value: 0x7f0800c9
-			public const int info = 2131230921;
+			// aapt resource value: 0x7f0800c4
+			public const int info = 2131230916;
 			
 			// aapt resource value: 0x7f080059
 			public const int italic = 2131230809;
@@ -6759,8 +5348,8 @@ namespace NRGScoutingApp.Droid
 			// aapt resource value: 0x7f080000
 			public const int item_touch_helper_previous_elevation = 2131230720;
 			
-			// aapt resource value: 0x7f080095
-			public const int largeLabel = 2131230869;
+			// aapt resource value: 0x7f08008e
+			public const int largeLabel = 2131230862;
 			
 			// aapt resource value: 0x7f080049
 			public const int left = 2131230793;
@@ -6777,14 +5366,26 @@ namespace NRGScoutingApp.Droid
 			// aapt resource value: 0x7f080061
 			public const int list_item = 2131230817;
 			
+			// aapt resource value: 0x7f0800ca
+			public const int main_appbar = 2131230922;
+			
+			// aapt resource value: 0x7f0800cd
+			public const int main_scrollview = 2131230925;
+			
+			// aapt resource value: 0x7f0800cc
+			public const int main_tablayout = 2131230924;
+			
+			// aapt resource value: 0x7f0800cb
+			public const int main_toolbar = 2131230923;
+			
+			// aapt resource value: 0x7f0800d5
+			public const int masked = 2131230933;
+			
+			// aapt resource value: 0x7f0800bd
+			public const int media_actions = 2131230909;
+			
 			// aapt resource value: 0x7f0800d3
-			public const int masked = 2131230931;
-			
-			// aapt resource value: 0x7f0800c2
-			public const int media_actions = 2131230914;
-			
-			// aapt resource value: 0x7f0800d1
-			public const int message = 2131230929;
+			public const int message = 2131230931;
 			
 			// aapt resource value: 0x7f080031
 			public const int middle = 2131230769;
@@ -6792,86 +5393,86 @@ namespace NRGScoutingApp.Droid
 			// aapt resource value: 0x7f080053
 			public const int mini = 2131230803;
 			
-			// aapt resource value: 0x7f0800ae
-			public const int mr_art = 2131230894;
+			// aapt resource value: 0x7f0800a9
+			public const int mr_art = 2131230889;
 			
-			// aapt resource value: 0x7f0800a3
-			public const int mr_chooser_list = 2131230883;
+			// aapt resource value: 0x7f08009e
+			public const int mr_chooser_list = 2131230878;
+			
+			// aapt resource value: 0x7f0800a1
+			public const int mr_chooser_route_desc = 2131230881;
+			
+			// aapt resource value: 0x7f08009f
+			public const int mr_chooser_route_icon = 2131230879;
+			
+			// aapt resource value: 0x7f0800a0
+			public const int mr_chooser_route_name = 2131230880;
+			
+			// aapt resource value: 0x7f08009d
+			public const int mr_chooser_title = 2131230877;
 			
 			// aapt resource value: 0x7f0800a6
-			public const int mr_chooser_route_desc = 2131230886;
-			
-			// aapt resource value: 0x7f0800a4
-			public const int mr_chooser_route_icon = 2131230884;
-			
-			// aapt resource value: 0x7f0800a5
-			public const int mr_chooser_route_name = 2131230885;
-			
-			// aapt resource value: 0x7f0800a2
-			public const int mr_chooser_title = 2131230882;
-			
-			// aapt resource value: 0x7f0800ab
-			public const int mr_close = 2131230891;
-			
-			// aapt resource value: 0x7f0800b1
-			public const int mr_control_divider = 2131230897;
-			
-			// aapt resource value: 0x7f0800b7
-			public const int mr_control_playback_ctrl = 2131230903;
-			
-			// aapt resource value: 0x7f0800ba
-			public const int mr_control_subtitle = 2131230906;
-			
-			// aapt resource value: 0x7f0800b9
-			public const int mr_control_title = 2131230905;
-			
-			// aapt resource value: 0x7f0800b8
-			public const int mr_control_title_container = 2131230904;
+			public const int mr_close = 2131230886;
 			
 			// aapt resource value: 0x7f0800ac
-			public const int mr_custom_control = 2131230892;
-			
-			// aapt resource value: 0x7f0800ad
-			public const int mr_default_control = 2131230893;
-			
-			// aapt resource value: 0x7f0800a8
-			public const int mr_dialog_area = 2131230888;
-			
-			// aapt resource value: 0x7f0800a7
-			public const int mr_expandable_area = 2131230887;
-			
-			// aapt resource value: 0x7f0800bb
-			public const int mr_group_expand_collapse = 2131230907;
-			
-			// aapt resource value: 0x7f0800af
-			public const int mr_media_main_control = 2131230895;
-			
-			// aapt resource value: 0x7f0800aa
-			public const int mr_name = 2131230890;
-			
-			// aapt resource value: 0x7f0800b0
-			public const int mr_playback_control = 2131230896;
-			
-			// aapt resource value: 0x7f0800a9
-			public const int mr_title_bar = 2131230889;
+			public const int mr_control_divider = 2131230892;
 			
 			// aapt resource value: 0x7f0800b2
-			public const int mr_volume_control = 2131230898;
-			
-			// aapt resource value: 0x7f0800b3
-			public const int mr_volume_group_list = 2131230899;
+			public const int mr_control_playback_ctrl = 2131230898;
 			
 			// aapt resource value: 0x7f0800b5
-			public const int mr_volume_item_icon = 2131230901;
+			public const int mr_control_subtitle = 2131230901;
+			
+			// aapt resource value: 0x7f0800b4
+			public const int mr_control_title = 2131230900;
+			
+			// aapt resource value: 0x7f0800b3
+			public const int mr_control_title_container = 2131230899;
+			
+			// aapt resource value: 0x7f0800a7
+			public const int mr_custom_control = 2131230887;
+			
+			// aapt resource value: 0x7f0800a8
+			public const int mr_default_control = 2131230888;
+			
+			// aapt resource value: 0x7f0800a3
+			public const int mr_dialog_area = 2131230883;
+			
+			// aapt resource value: 0x7f0800a2
+			public const int mr_expandable_area = 2131230882;
 			
 			// aapt resource value: 0x7f0800b6
-			public const int mr_volume_slider = 2131230902;
+			public const int mr_group_expand_collapse = 2131230902;
+			
+			// aapt resource value: 0x7f0800aa
+			public const int mr_media_main_control = 2131230890;
+			
+			// aapt resource value: 0x7f0800a5
+			public const int mr_name = 2131230885;
+			
+			// aapt resource value: 0x7f0800ab
+			public const int mr_playback_control = 2131230891;
+			
+			// aapt resource value: 0x7f0800a4
+			public const int mr_title_bar = 2131230884;
+			
+			// aapt resource value: 0x7f0800ad
+			public const int mr_volume_control = 2131230893;
+			
+			// aapt resource value: 0x7f0800ae
+			public const int mr_volume_group_list = 2131230894;
+			
+			// aapt resource value: 0x7f0800b0
+			public const int mr_volume_item_icon = 2131230896;
+			
+			// aapt resource value: 0x7f0800b1
+			public const int mr_volume_slider = 2131230897;
 			
 			// aapt resource value: 0x7f080028
 			public const int multiply = 2131230760;
 			
-			// aapt resource value: 0x7f08009c
-			public const int navigation_header_container = 2131230876;
+			// aapt resource value: 0x7f080095
+			public const int navigation_header_container = 2131230869;
 			
 			// aapt resource value: 0x7f08003b
 			public const int never = 2131230779;
@@ -6882,14 +5483,14 @@ namespace NRGScoutingApp.Droid
 			// aapt resource value: 0x7f08001e
 			public const int normal = 2131230750;
 			
-			// aapt resource value: 0x7f0800cb
-			public const int notification_background = 2131230923;
+			// aapt resource value: 0x7f0800c6
+			public const int notification_background = 2131230918;
 			
-			// aapt resource value: 0x7f0800c5
-			public const int notification_main_column = 2131230917;
+			// aapt resource value: 0x7f0800c0
+			public const int notification_main_column = 2131230912;
 			
-			// aapt resource value: 0x7f0800c4
-			public const int notification_main_column_container = 2131230916;
+			// aapt resource value: 0x7f0800bf
+			public const int notification_main_column_container = 2131230911;
 			
 			// aapt resource value: 0x7f08004c
 			public const int parallax = 2131230796;
@@ -6915,11 +5516,11 @@ namespace NRGScoutingApp.Droid
 			// aapt resource value: 0x7f08004a
 			public const int right = 2131230794;
 			
-			// aapt resource value: 0x7f0800ca
-			public const int right_icon = 2131230922;
+			// aapt resource value: 0x7f0800c5
+			public const int right_icon = 2131230917;
 			
-			// aapt resource value: 0x7f0800c6
-			public const int right_side = 2131230918;
+			// aapt resource value: 0x7f0800c1
+			public const int right_side = 2131230913;
 			
 			// aapt resource value: 0x7f08000c
 			public const int save_image_matrix = 2131230732;
@@ -6981,6 +5582,15 @@ namespace NRGScoutingApp.Droid
 			// aapt resource value: 0x7f08008a
 			public const int select_dialog_listview = 2131230858;
 			
+			// aapt resource value: 0x7f0800ce
+			public const int shellcontent_appbar = 2131230926;
+			
+			// aapt resource value: 0x7f0800d0
+			public const int shellcontent_scrollview = 2131230928;
+			
+			// aapt resource value: 0x7f0800cf
+			public const int shellcontent_toolbar = 2131230927;
+			
 			// aapt resource value: 0x7f080074
 			public const int shortcut = 2131230836;
 			
@@ -6993,17 +5603,17 @@ namespace NRGScoutingApp.Droid
 			// aapt resource value: 0x7f080025
 			public const int showTitle = 2131230757;
 			
-			// aapt resource value: 0x7f0800cf
-			public const int sliding_tabs = 2131230927;
+			// aapt resource value: 0x7f0800d1
+			public const int sliding_tabs = 2131230929;
+			
+			// aapt resource value: 0x7f08008d
+			public const int smallLabel = 2131230861;
 			
 			// aapt resource value: 0x7f080094
-			public const int smallLabel = 2131230868;
+			public const int snackbar_action = 2131230868;
 			
-			// aapt resource value: 0x7f08009b
-			public const int snackbar_action = 2131230875;
-			
-			// aapt resource value: 0x7f08009a
-			public const int snackbar_text = 2131230874;
+			// aapt resource value: 0x7f080093
+			public const int snackbar_text = 2131230867;
 			
 			// aapt resource value: 0x7f080043
 			public const int snap = 2131230787;
@@ -7026,8 +5636,8 @@ namespace NRGScoutingApp.Droid
 			// aapt resource value: 0x7f08004b
 			public const int start = 2131230795;
 			
-			// aapt resource value: 0x7f0800c1
-			public const int status_bar_latest_event_content = 2131230913;
+			// aapt resource value: 0x7f0800bc
+			public const int status_bar_latest_event_content = 2131230908;
 			
 			// aapt resource value: 0x7f080076
 			public const int submenuarrow = 2131230838;
@@ -7053,8 +5663,8 @@ namespace NRGScoutingApp.Droid
 			// aapt resource value: 0x7f080069
 			public const int textSpacerNoTitle = 2131230825;
 			
-			// aapt resource value: 0x7f0800a1
-			public const int text_input_password_toggle = 2131230881;
+			// aapt resource value: 0x7f08009a
+			public const int text_input_password_toggle = 2131230874;
 			
 			// aapt resource value: 0x7f080014
 			public const int textinput_counter = 2131230740;
@@ -7062,8 +5672,8 @@ namespace NRGScoutingApp.Droid
 			// aapt resource value: 0x7f080015
 			public const int textinput_error = 2131230741;
 			
-			// aapt resource value: 0x7f0800c7
-			public const int time = 2131230919;
+			// aapt resource value: 0x7f0800c2
+			public const int time = 2131230914;
 			
 			// aapt resource value: 0x7f08001c
 			public const int title = 2131230748;
@@ -7074,8 +5684,8 @@ namespace NRGScoutingApp.Droid
 			// aapt resource value: 0x7f08006f
 			public const int title_template = 2131230831;
 			
-			// aapt resource value: 0x7f0800d0
-			public const int toolbar = 2131230928;
+			// aapt resource value: 0x7f0800d2
+			public const int toolbar = 2131230930;
 			
 			// aapt resource value: 0x7f08003e
 			public const int top = 2131230782;
@@ -7083,8 +5693,8 @@ namespace NRGScoutingApp.Droid
 			// aapt resource value: 0x7f08006e
 			public const int topPanel = 2131230830;
 			
-			// aapt resource value: 0x7f080098
-			public const int touch_outside = 2131230872;
+			// aapt resource value: 0x7f080091
+			public const int touch_outside = 2131230865;
 			
 			// aapt resource value: 0x7f08000f
 			public const int transition_current_scene = 2131230735;
@@ -7113,11 +5723,11 @@ namespace NRGScoutingApp.Droid
 			// aapt resource value: 0x7f080016
 			public const int view_offset_helper = 2131230742;
 			
-			// aapt resource value: 0x7f0800d2
-			public const int visible = 2131230930;
+			// aapt resource value: 0x7f0800d4
+			public const int visible = 2131230932;
 			
-			// aapt resource value: 0x7f0800b4
-			public const int volume_item_container = 2131230900;
+			// aapt resource value: 0x7f0800af
+			public const int volume_item_container = 2131230895;
 			
 			// aapt resource value: 0x7f08003c
 			public const int withText = 2131230780;
@@ -7288,145 +5898,142 @@ namespace NRGScoutingApp.Droid
 			public const int abc_select_dialog_material = 2130903065;
 			
 			// aapt resource value: 0x7f03001a
-			public const int bb_bottom_bar_item_container = 2130903066;
+			public const int BottomTabLayout = 2130903066;
 			
 			// aapt resource value: 0x7f03001b
-			public const int bb_bottom_bar_item_container_tablet = 2130903067;
+			public const int design_bottom_navigation_item = 2130903067;
 			
 			// aapt resource value: 0x7f03001c
-			public const int bb_bottom_bar_item_fixed = 2130903068;
+			public const int design_bottom_sheet_dialog = 2130903068;
 			
 			// aapt resource value: 0x7f03001d
-			public const int bb_bottom_bar_item_fixed_tablet = 2130903069;
+			public const int design_layout_snackbar = 2130903069;
 			
 			// aapt resource value: 0x7f03001e
-			public const int bb_bottom_bar_item_shifting = 2130903070;
+			public const int design_layout_snackbar_include = 2130903070;
 			
 			// aapt resource value: 0x7f03001f
-			public const int design_bottom_navigation_item = 2130903071;
+			public const int design_layout_tab_icon = 2130903071;
 			
 			// aapt resource value: 0x7f030020
-			public const int design_bottom_sheet_dialog = 2130903072;
+			public const int design_layout_tab_text = 2130903072;
 			
 			// aapt resource value: 0x7f030021
-			public const int design_layout_snackbar = 2130903073;
+			public const int design_menu_item_action_area = 2130903073;
 			
 			// aapt resource value: 0x7f030022
-			public const int design_layout_snackbar_include = 2130903074;
+			public const int design_navigation_item = 2130903074;
 			
 			// aapt resource value: 0x7f030023
-			public const int design_layout_tab_icon = 2130903075;
+			public const int design_navigation_item_header = 2130903075;
 			
 			// aapt resource value: 0x7f030024
-			public const int design_layout_tab_text = 2130903076;
+			public const int design_navigation_item_separator = 2130903076;
 			
 			// aapt resource value: 0x7f030025
-			public const int design_menu_item_action_area = 2130903077;
+			public const int design_navigation_item_subheader = 2130903077;
 			
 			// aapt resource value: 0x7f030026
-			public const int design_navigation_item = 2130903078;
+			public const int design_navigation_menu = 2130903078;
 			
 			// aapt resource value: 0x7f030027
-			public const int design_navigation_item_header = 2130903079;
+			public const int design_navigation_menu_item = 2130903079;
 			
 			// aapt resource value: 0x7f030028
-			public const int design_navigation_item_separator = 2130903080;
+			public const int design_text_input_password_icon = 2130903080;
 			
 			// aapt resource value: 0x7f030029
-			public const int design_navigation_item_subheader = 2130903081;
+			public const int FlyoutContent = 2130903081;
 			
 			// aapt resource value: 0x7f03002a
-			public const int design_navigation_menu = 2130903082;
+			public const int mr_chooser_dialog = 2130903082;
 			
 			// aapt resource value: 0x7f03002b
-			public const int design_navigation_menu_item = 2130903083;
+			public const int mr_chooser_list_item = 2130903083;
 			
 			// aapt resource value: 0x7f03002c
-			public const int design_text_input_password_icon = 2130903084;
+			public const int mr_controller_material_dialog_b = 2130903084;
 			
 			// aapt resource value: 0x7f03002d
-			public const int mr_chooser_dialog = 2130903085;
+			public const int mr_controller_volume_item = 2130903085;
 			
 			// aapt resource value: 0x7f03002e
-			public const int mr_chooser_list_item = 2130903086;
+			public const int mr_playback_control = 2130903086;
 			
 			// aapt resource value: 0x7f03002f
-			public const int mr_controller_material_dialog_b = 2130903087;
+			public const int mr_volume_control = 2130903087;
 			
 			// aapt resource value: 0x7f030030
-			public const int mr_controller_volume_item = 2130903088;
+			public const int notification_action = 2130903088;
 			
 			// aapt resource value: 0x7f030031
-			public const int mr_playback_control = 2130903089;
+			public const int notification_action_tombstone = 2130903089;
 			
 			// aapt resource value: 0x7f030032
-			public const int mr_volume_control = 2130903090;
+			public const int notification_media_action = 2130903090;
 			
 			// aapt resource value: 0x7f030033
-			public const int notification_action = 2130903091;
+			public const int notification_media_cancel_action = 2130903091;
 			
 			// aapt resource value: 0x7f030034
-			public const int notification_action_tombstone = 2130903092;
+			public const int notification_template_big_media = 2130903092;
 			
 			// aapt resource value: 0x7f030035
-			public const int notification_media_action = 2130903093;
+			public const int notification_template_big_media_custom = 2130903093;
 			
 			// aapt resource value: 0x7f030036
-			public const int notification_media_cancel_action = 2130903094;
+			public const int notification_template_big_media_narrow = 2130903094;
 			
 			// aapt resource value: 0x7f030037
-			public const int notification_template_big_media = 2130903095;
+			public const int notification_template_big_media_narrow_custom = 2130903095;
 			
 			// aapt resource value: 0x7f030038
-			public const int notification_template_big_media_custom = 2130903096;
+			public const int notification_template_custom_big = 2130903096;
 			
 			// aapt resource value: 0x7f030039
-			public const int notification_template_big_media_narrow = 2130903097;
+			public const int notification_template_icon_group = 2130903097;
 			
 			// aapt resource value: 0x7f03003a
-			public const int notification_template_big_media_narrow_custom = 2130903098;
+			public const int notification_template_lines_media = 2130903098;
 			
 			// aapt resource value: 0x7f03003b
-			public const int notification_template_custom_big = 2130903099;
+			public const int notification_template_media = 2130903099;
 			
 			// aapt resource value: 0x7f03003c
-			public const int notification_template_icon_group = 2130903100;
+			public const int notification_template_media_custom = 2130903100;
 			
 			// aapt resource value: 0x7f03003d
-			public const int notification_template_lines_media = 2130903101;
+			public const int notification_template_part_chronometer = 2130903101;
 			
 			// aapt resource value: 0x7f03003e
-			public const int notification_template_media = 2130903102;
+			public const int notification_template_part_time = 2130903102;
 			
 			// aapt resource value: 0x7f03003f
-			public const int notification_template_media_custom = 2130903103;
+			public const int RootLayout = 2130903103;
 			
 			// aapt resource value: 0x7f030040
-			public const int notification_template_part_chronometer = 2130903104;
+			public const int select_dialog_item_material = 2130903104;
 			
 			// aapt resource value: 0x7f030041
-			public const int notification_template_part_time = 2130903105;
+			public const int select_dialog_multichoice_material = 2130903105;
 			
 			// aapt resource value: 0x7f030042
-			public const int select_dialog_item_material = 2130903106;
+			public const int select_dialog_singlechoice_material = 2130903106;
 			
 			// aapt resource value: 0x7f030043
-			public const int select_dialog_multichoice_material = 2130903107;
+			public const int ShellContent = 2130903107;
 			
 			// aapt resource value: 0x7f030044
-			public const int select_dialog_singlechoice_material = 2130903108;
+			public const int support_simple_spinner_dropdown_item = 2130903108;
 			
 			// aapt resource value: 0x7f030045
-			public const int support_simple_spinner_dropdown_item = 2130903109;
+			public const int Tabbar = 2130903109;
 			
 			// aapt resource value: 0x7f030046
-			public const int Tabbar = 2130903110;
+			public const int Toolbar = 2130903110;
 			
 			// aapt resource value: 0x7f030047
-			public const int Toolbar = 2130903111;
-			
-			// aapt resource value: 0x7f030048
-			public const int tooltip = 2130903112;
+			public const int tooltip = 2130903111;
 			
 			static Layout()
 			{
@@ -7528,9 +6135,6 @@ namespace NRGScoutingApp.Droid
 			// aapt resource value: 0x7f090025
 			public const int abc_toolbar_collapse_description = 2131296293;
 			
-			// aapt resource value: 0x7f09003c
-			public const int app_name = 2131296316;
-			
 			// aapt resource value: 0x7f090033
 			public const int appbar_scrolling_view_behavior = 2131296307;
 			
@@ -7539,9 +6143,6 @@ namespace NRGScoutingApp.Droid
 			
 			// aapt resource value: 0x7f090035
 			public const int character_counter_pattern = 2131296309;
-			
-			// aapt resource value: 0x7f09003d
-			public const int library_name = 2131296317;
 			
 			// aapt resource value: 0x7f090000
 			public const int mr_button_content_description = 2131296256;
@@ -7657,30 +6258,6 @@ namespace NRGScoutingApp.Droid
 			
 			// aapt resource value: 0x7f0b016e
 			public const int Animation_Design_BottomSheetDialog = 2131427694;
-			
-			// aapt resource value: 0x7f0b0196
-			public const int BB_BottomBarBadge_Text = 2131427734;
-			
-			// aapt resource value: 0x7f0b018f
-			public const int BB_BottomBarItem = 2131427727;
-			
-			// aapt resource value: 0x7f0b0190
-			public const int BB_BottomBarItem_Fixed = 2131427728;
-			
-			// aapt resource value: 0x7f0b0192
-			public const int BB_BottomBarItem_Fixed_TitleAppearance = 2131427730;
-			
-			// aapt resource value: 0x7f0b0193
-			public const int BB_BottomBarItem_Shifting = 2131427731;
-			
-			// aapt resource value: 0x7f0b0194
-			public const int BB_BottomBarItem_Shifting_TitleAppearance = 2131427732;
-			
-			// aapt resource value: 0x7f0b0195
-			public const int BB_BottomBarItem_Tablet = 2131427733;
-			
-			// aapt resource value: 0x7f0b0191
-			public const int BB_BottomBarItem_TitleStyle = 2131427729;
 			
 			// aapt resource value: 0x7f0b00a9
 			public const int Base_AlertDialog_AppCompat = 2131427497;
@@ -8183,11 +6760,11 @@ namespace NRGScoutingApp.Droid
 			// aapt resource value: 0x7f0b000e
 			public const int CardView_Light = 2131427342;
 			
-			// aapt resource value: 0x7f0b0197
-			public const int MyTheme = 2131427735;
+			// aapt resource value: 0x7f0b018f
+			public const int MyTheme = 2131427727;
 			
-			// aapt resource value: 0x7f0b0198
-			public const int MyTheme_Base = 2131427736;
+			// aapt resource value: 0x7f0b0190
+			public const int MyTheme_Base = 2131427728;
 			
 			// aapt resource value: 0x7f0b002d
 			public const int Platform_AppCompat = 2131427373;
@@ -8606,14 +7183,14 @@ namespace NRGScoutingApp.Droid
 			// aapt resource value: 0x7f0b0008
 			public const int ThemeOverlay_MediaRouter_Light = 2131427336;
 			
-			// aapt resource value: 0x7f0b0199
-			public const int TodoActionBar = 2131427737;
+			// aapt resource value: 0x7f0b0191
+			public const int TodoActionBar = 2131427729;
 			
-			// aapt resource value: 0x7f0b019b
-			public const int TodoActionBar_MenuTextStyle = 2131427739;
+			// aapt resource value: 0x7f0b0193
+			public const int TodoActionBar_MenuTextStyle = 2131427731;
 			
-			// aapt resource value: 0x7f0b019a
-			public const int TodoActionBarTitle = 2131427738;
+			// aapt resource value: 0x7f0b0192
+			public const int TodoActionBarTitle = 2131427730;
 			
 			// aapt resource value: 0x7f0b011d
 			public const int Widget_AppCompat_ActionBar = 2131427613;
