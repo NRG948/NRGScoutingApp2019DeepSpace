@@ -97,9 +97,10 @@ namespace NRGScoutingApp {
 
         // This is just examples of multiplier, should be changed soon
         public static readonly double TIME_NERF = 10000;
-        public static double CARGO_MULTIPLIER = 3;
+        public static readonly double OVERALL_MULT = 10;
+        public static readonly double CARGO_MULTIPLIER = 3 / TIME_NERF;
         public static readonly double HATCHER_MULTIPLIER = 2 / TIME_NERF;
-        public static readonly double CLIMB_MULTIPLIER = 1 / TIME_NERF;
+        public static readonly double CLIMB_MULTIPLIER = 1;
         public static readonly double DROP_1_MULTIPLIER = 1 / TIME_NERF;
         public static readonly double DROP_2_MULTIPLIER = 2 / TIME_NERF;
         public static readonly double DROP_3_MULTIPLIER = 3 / TIME_NERF;

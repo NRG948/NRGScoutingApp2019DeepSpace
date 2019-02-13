@@ -186,8 +186,8 @@ namespace NRGScoutingApp {
                 if (hatcherData.ContainsKey (entry.Key)) {
                     point += hatcherData[entry.Key] * ConstantVars.HATCHER_MULTIPLIER;
                 }
-                point += climbData[entry.Key] * ConstantVars.CLIMB_MULTIPLIER;
-                data.Add (entry.Key, point);
+                point -= (climbData[entry.Key] * ConstantVars.CLIMB_MULTIPLIER);
+                data.Add (entry.Key, point * ConstantVars.OVERALL_MULT);
             }
             return data;
         }
