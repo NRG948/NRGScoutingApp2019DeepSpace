@@ -32,7 +32,7 @@
         <Editor IsSpellCheckEnabled="false"
                         MinimumWidthRequest="100"
                     HorizontalOptions="FillAndExpand"
-                    Placeholder="Enter Here&#x0a;----"
+                    Placeholder="Enter Here"
                     VerticalOptions="CenterAndExpand"
                     TextChanged="Handle_TextChanged"
                        x:Name="importData"/>
