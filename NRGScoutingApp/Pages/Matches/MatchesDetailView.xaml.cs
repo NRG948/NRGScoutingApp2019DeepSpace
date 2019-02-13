@@ -43,8 +43,8 @@ namespace NRGScoutingApp {
         }
 
         async void deleteClicked (object sender, System.EventArgs e) {
-            var delete = await DisplayAlert ("Alert", "Are you sure you want to delete this entry?", "No", "Yes");
-            if (!delete) {
+            var delete = await DisplayAlert ("Alert", "Are you sure you want to delete this entry?", "Yes", "No");
+            if (delete) {
                 deleteMatchAtIndex (jsonIndex);
                 await Navigation.PopAsync ();
             }

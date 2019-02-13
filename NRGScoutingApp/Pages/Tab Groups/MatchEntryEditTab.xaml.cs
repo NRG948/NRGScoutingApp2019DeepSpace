@@ -9,6 +9,9 @@ namespace NRGScoutingApp {
             Children.Add (new MatchParameters ());
             BindingContext = this;
             Preferences.Set ("newAppear", 1);
+            NavigationPage.SetHasNavigationBar(this, false);
+            NavigationPage.SetHasNavigationBar(this, true);
+            NavigationPage.SetHasBackButton(this, true);
             NavigationPage.SetHasBackButton (this, false);
             InitializeComponent ();
         }

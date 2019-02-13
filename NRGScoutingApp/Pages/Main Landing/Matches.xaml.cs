@@ -83,10 +83,12 @@ namespace NRGScoutingApp {
             } else if (!String.IsNullOrWhiteSpace (Preferences.Get ("tempMatchEvents", "")) || !String.IsNullOrWhiteSpace (Preferences.Get ("tempParams", ""))) //App.Current.Properties["appState"].ToString() == "1"
             {
                 appRestore = true;
+                NavigationPage.SetHasNavigationBar(this, false);
                 Navigation.PushAsync (new MatchEntryEditTab () { Title = Preferences.Get ("teamStart", "") });
-            } else if (!String.IsNullOrWhiteSpace (Preferences.Get ("tempPitNotes", ""))) //App.Current.Properties["appState"].ToString() == "2"
+            } else if (!String.IsNullOrWhiteSpace (Preferences.Get ("tempPitNotes", "")))
             {
                 appRestore = true;
+                NavigationPage.SetHasNavigationBar(this, false);
                 Navigation.PushAsync (new PitEntry (true) { Title = Preferences.Get ("teamStart", "") });
             } else if (Preferences.Get ("appState", 0) == 0) {
                 appRestore = false;

@@ -107,8 +107,8 @@ namespace NRGScoutingApp {
 
         async void eventTapped (object sender, Xamarin.Forms.ItemTappedEventArgs e) {
             int index = (listView.ItemsSource as List<EventListFormat>).IndexOf (e.Item as EventListFormat);
-            var del = await DisplayAlert ("Alert", "Are you sure you want to delete this event?", "No", "Yes");
-            if (!del) {
+            var del = await DisplayAlert ("Alert", "Are you sure you want to delete this event?", "Yes", "No");
+            if (del) {
                 if (eventsList[index].eventName.Contains (ConstantVars.PICK_KEYWORD)) {
                     if ((index + 1) < eventsList.Count && eventsList[index + 1].eventName.Contains (ConstantVars.DROP_KEYWORD)) {
                         removeAtIndex (index + 1);

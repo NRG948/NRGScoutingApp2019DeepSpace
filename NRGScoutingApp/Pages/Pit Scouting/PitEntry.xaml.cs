@@ -112,8 +112,8 @@ namespace NRGScoutingApp {
         }
 
         async void backClicked (object sender, System.EventArgs e) {
-            bool text = await DisplayAlert ("Alert", "Do you want to discard progress?", "No", "Yes");
-            if (!text) {
+            bool text = await DisplayAlert ("Alert", "Do you want to discard progress?", "Yes", "No");
+            if (text) {
                 clearMatchItems ();
                 try {
                     if (Matches.appRestore == false) {
@@ -267,6 +267,5 @@ namespace NRGScoutingApp {
             updateAllBoxes ();
             updateItems ();
         }
-
     }
 }
