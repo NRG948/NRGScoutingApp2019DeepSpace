@@ -1,49 +1,40 @@
 ﻿using System;
-using System.Collections.Generic;
-using Xamarin.Forms;
-using Rg.Plugins.Popup.Services;
-using System.Security.Cryptography.X509Certificates;
-using System.Globalization;
-using Plugin.Clipboard;
-using Newtonsoft.Json.Linq;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using Plugin.Clipboard;
+using Rg.Plugins.Popup.Services;
+using Xamarin.Essentials;
 
-
-namespace NRGScoutingApp
-{
-    public partial class ExportDialog
-    {
-        public ExportDialog()
-        {
-            InitializeComponent();
-            setExportEntries();
+namespace NRGScoutingApp {
+    public partial class ExportDialog {
+        public ExportDialog () {
+            InitializeComponent ();
+            setExportEntries ();
         }
-       void cancelClicked(object sender, System.EventArgs e)
-        {
-            PopupNavigation.Instance.PopAsync(true);
+        void cancelClicked (object sender, System.EventArgs e) {
+            PopupNavigation.Instance.PopAsync (true);
         }
-        void copyClicked(object sender, System.EventArgs e)
-        {
-            CrossClipboard.Current.SetText(exportDisplay.Text);
-            PopupNavigation.Instance.PopAsync(true);
+        void copyClicked (object sender, System.EventArgs e) {
+            CrossClipboard.Current.SetText (exportDisplay.Text);
+            PopupNavigation.Instance.PopAsync (true);
         }
 
         //Gets entries from device storage and sets them into the text field (or disables field if empty)
-        void setExportEntries()
-        {
-            if(!String.IsNullOrWhiteSpace(App.Current.Properties["matchEventsString"].ToString()))
-            {
-                String exportEntries = JsonConvert.SerializeObject(
-                JObject.Parse(App.Current.Properties["matchEventsString"].ToString()),Formatting.None);
-                exportDisplay.Text = exportEntries;
+        void setExportEntries () {
+            JObject x;
+            try {
+                x = (JObject) JsonConvert.DeserializeObject (Preferences.Get ("matchEventsString", ""));
+            } catch (JsonException) {
+                x = new JObject ();
             }
-            else
-            {
+            if (x.Count > 0) {
+                String exportEntries = JsonConvert.SerializeObject (
+                    JObject.Parse (Preferences.Get ("matchEventsString", "")), Formatting.None);
+                exportDisplay.Text = exportEntries;
+            } else {
                 copyButton.IsEnabled = false;
                 exportDisplay.Text = "No Entries Yet!";
             }
         }
     }
 }
-
-

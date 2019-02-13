@@ -1,17 +1,14 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using System.Collections;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
-namespace NRGScoutingApp
-{
-    public class MatchFormat
-    {
+namespace NRGScoutingApp {
+    public class MatchFormat {
         //Object to store all params
-        public class EntryParams
-        {
+        public class EntryParams {
             public String team { get; set; }
             public int matchNum { get; set; }
             public int side { get; set; }
@@ -34,15 +31,13 @@ namespace NRGScoutingApp
 
         }
 
-        public enum DEATH_TYPE 
-        {
+        public enum DEATH_TYPE {
             noDeath,
             halfDeath,
             fullDeath
         }
 
-        public enum ACTION
-        {
+        public enum ACTION {
             dropNone, //Drop None
             drop1, //Rocket lvl 1
             drop2, //Rocket lvl 2
@@ -53,8 +48,7 @@ namespace NRGScoutingApp
             startClimb //Start Climb
         }
 
-        public enum CHOOSE_RANK_TYPE
-        {
+        public enum CHOOSE_RANK_TYPE {
             overallRank, //Overall Team Rank
             drop1, //Lvl1
             drop2, //Lvl2
@@ -65,8 +59,7 @@ namespace NRGScoutingApp
             climb //Climb
         }
 
-        public enum MATCH_SIDES
-        {
+        public enum MATCH_SIDES {
             Red1,
             Red2,
             Red3,
@@ -80,35 +73,40 @@ namespace NRGScoutingApp
             public int time { get; set; }
             public int type { get; set; }
         }
-        public static JObject eventsListToJSONEvents(List<Data> datas)
-        {
 
-            JObject events = new JObject();
-            Data[] eventArray = sortListByTime(datas);
-            events.Add("numEvents", eventArray.Length);
-            for (int i = 0; i < eventArray.Length; i++)
-            {
-                events.Add("TE" + i + "_0", eventArray[i].time);
-                events.Add("TE" + i + "_1", eventArray[i].type);
+        public static List<Data> JSONEventsToObject (JObject val) {
+            List<Data> toGive = new List<Data> ();
+            for (int i = 0; i < Convert.ToInt32 (val.Property ("numEvents").Value); i++) {
+                toGive.Add (new MatchFormat.Data {
+                    time = Convert.ToInt32 (val.Property ("TE" + i + "_0").Value),
+                        type = Convert.ToInt32 (val.Property ("TE" + i + "_1").Value)
+                });
+            }
+            return toGive;
+        }
+
+        public static JObject eventsListToJSONEvents (List<Data> datas) {
+
+            JObject events = new JObject ();
+            Data[] eventArray = sortListByTime (datas);
+            events.Add ("numEvents", eventArray.Length);
+            for (int i = 0; i < eventArray.Length; i++) {
+                events.Add ("TE" + i + "_0", eventArray[i].time);
+                events.Add ("TE" + i + "_1", eventArray[i].type);
             }
             return events;
         }
 
-        public static Data[] sortListByTime(List<Data> datas)
-        {
-            Data[] input = datas.ToArray();
+        public static Data[] sortListByTime (List<Data> datas) {
+            Data[] input = datas.ToArray ();
             Data[] outputArray = new Data[input.Length];
-            for (int i = 0; i < input.Length; i++)
-            {
+            for (int i = 0; i < input.Length; i++) {
                 outputArray[i] = input[i];
             }
-            for (int i = 0; i < input.Length; i++)
-            {
-                for (int j = 0; j < input.Length - i; j++)
-                {
+            for (int i = 0; i < input.Length; i++) {
+                for (int j = 0; j < input.Length - i; j++) {
                     // Use ">" for ascending and "<" for descending 
-                    if (outputArray[i].time > outputArray[j + i].time)
-                    {
+                    if (outputArray[i].time > outputArray[j + i].time) {
                         MatchFormat.Data c = outputArray[i];
                         MatchFormat.Data d = outputArray[j + i];
                         outputArray[i] = d;
@@ -120,21 +118,19 @@ namespace NRGScoutingApp
             return outputArray;
         }
 
-        public static String matchSideFromEnum(int side)
-        {
-            switch (side)
-            {
-                case (int)MATCH_SIDES.Red1:
+        public static String matchSideFromEnum (int side) {
+            switch (side) {
+                case (int) MATCH_SIDES.Red1:
                     return ConstantVars.RED_1_TEXT;
-                case (int)MATCH_SIDES.Red2:
+                case (int) MATCH_SIDES.Red2:
                     return ConstantVars.RED_2_TEXT;
-                case (int)MATCH_SIDES.Red3:
+                case (int) MATCH_SIDES.Red3:
                     return ConstantVars.RED_3_TEXT;
-                case (int)MATCH_SIDES.Blue1:
+                case (int) MATCH_SIDES.Blue1:
                     return ConstantVars.BLUE_1_TEXT;
-                case (int)MATCH_SIDES.Blue2:
+                case (int) MATCH_SIDES.Blue2:
                     return ConstantVars.BLUE_2_TEXT;
-                case (int)MATCH_SIDES.Blue3:
+                case (int) MATCH_SIDES.Blue3:
                     return ConstantVars.BLUE_3_TEXT;
             }
             return "Error";

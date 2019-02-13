@@ -1,14 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Collections;
+using System.Collections.Generic;
 
-namespace NRGScoutingApp
-{
-    public class TeamsNames
-    {
-        public TeamsNames()
-        { }
-        public static readonly List<string> teams = new List<string>(){
+namespace NRGScoutingApp {
+    public class TeamsNames {
+        public TeamsNames () { }
+        public static readonly List<string> teams = new List<string> () {
             "1 - The Juggernauts",
             "4 - Team 4 ELEMENT",
             "5 - Robocards",

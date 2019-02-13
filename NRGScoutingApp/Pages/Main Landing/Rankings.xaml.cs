@@ -1,18 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
-using Xamarin.Forms;
 using System.Linq;
+using Xamarin.Essentials;
+using Xamarin.Forms;
 
-namespace NRGScoutingApp
-{
+namespace NRGScoutingApp {
     /*ADD Ranking Chooser Replacement for iOS 
      *like a picker acts as the distribution center to choose the type
-     */    
-    public partial class Rankings : ContentPage
-    {
-        public Rankings()
-        {
-            InitializeComponent();
+     */
+    public partial class Rankings : ContentPage {
+        public Rankings () {
+            InitializeComponent ();
             rankPicker.SelectedIndex = 0;
         }
 
@@ -21,12 +19,10 @@ namespace NRGScoutingApp
         MatchFormat.CHOOSE_RANK_TYPE rankChoice;
 
         //Initializes the ranking object
-        Ranker mainRank = new Ranker(App.Current.Properties["matchEventsString"].ToString());
+        Ranker mainRank = new Ranker (Preferences.Get ("matchEventsString", ""));
 
-        void rankTypeDelta(object sender, System.EventArgs e)
-        {
-            switch (rankPicker.SelectedIndex)
-            {
+        void rankTypeDelta (object sender, System.EventArgs e) {
+            switch (rankPicker.SelectedIndex) {
                 case 0:
                     rankChoice = MatchFormat.CHOOSE_RANK_TYPE.overallRank;
                     break;
@@ -48,29 +44,27 @@ namespace NRGScoutingApp
                 case 6:
                     rankChoice = MatchFormat.CHOOSE_RANK_TYPE.drop3; //lvl3
                     break;
-                 default:
+                default:
                     rankChoice = MatchFormat.CHOOSE_RANK_TYPE.overallRank;
                     break;
             }
-            updateEvents();
+            updateEvents ();
         }
 
-        protected override void OnAppearing()
-        {
-            updateEvents();
+        protected override void OnAppearing () {
+            updateEvents ();
         }
 
         //Updates events with given enum
-        private void updateEvents()
-        {
+        private void updateEvents () {
             //Updates string data from matches
-            mainRank.setData(App.Current.Properties["matchEventsString"].ToString());
+            mainRank.setData (Preferences.Get ("matchEventsString", ""));
             //Gets all data and sets it into ascending order based on each team's average time
-            Dictionary<string, double> x = mainRank.getRank(rankChoice);
+            Dictionary<string, double> x = mainRank.getRank (rankChoice);
             var y = from pair in x
-                    orderby pair.Value ascending
-                    select pair;
-            setListVisibility(y.Count());
+            orderby pair.Value ascending
+            select pair;
+            setListVisibility (y.Count ());
             listView.ItemsSource = y;
         }
 
@@ -78,18 +72,16 @@ namespace NRGScoutingApp
          * Sets the visibility of the list based on boolean and the sad error opposite
          * So if list.IsVisible = true, then sadNoMatch.IsVisible = false
          */
-        private void setListVisibility(int setList)
-        {
+        private void setListVisibility (int setList) {
             listView.IsVisible = setList > 0;
             sadNoMatch.IsVisible = !listView.IsVisible;
         }
 
-        async void teamClicked(object sender, Xamarin.Forms.ItemTappedEventArgs e)
-        {
-            var x = (listView.ItemsSource as IEnumerable<KeyValuePair<String,double>>).ToList();
-            String item = x.Find(y => y.Equals(e.Item)).Key;
+        async void teamClicked (object sender, Xamarin.Forms.ItemTappedEventArgs e) {
+            var x = (listView.ItemsSource as IEnumerable<KeyValuePair<String, double>>).ToList ();
+            String item = x.Find (y => y.Equals (e.Item)).Key;
             teamSend = item;
-            await Navigation.PushAsync(new RankingsDetailView(mainRank.returnTeamTimes(item)) { Title = item});
+            await Navigation.PushAsync (new RankingsDetailView (mainRank.returnTeamTimes (item)) { Title = item });
         }
     }
 }

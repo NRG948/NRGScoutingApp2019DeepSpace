@@ -1,8 +1,6 @@
 ﻿using System;
-namespace NRGScoutingApp
-{
-    public class ConstantVars
-    {
+namespace NRGScoutingApp {
+    public class ConstantVars {
         /*
          * IMPORTANT NOTE:
          * VARIABLES CONTAINING "LIVE" ARE USED IN the NewMatchStart page
@@ -79,11 +77,10 @@ namespace NRGScoutingApp
         public static readonly String LVL_2_CLIMB = "Level 2";
         public static readonly String LVL_3_CLIMB = "Level 3";
 
-
         /*
          * RANKER VALUES
          * NOTE: THE LOWER THE VALUES FOR RANK, THE BETTER
-         */        
+         */
         //Autonomous
         public static readonly int AUTO_LENGTH = 15000;
         public static readonly double MULT_SANDSTORM_MANUAL = 1;
@@ -93,7 +90,7 @@ namespace NRGScoutingApp
         public static readonly double PTS_BASELINE_LVL_2 = 3;
 
         //Game Piece Manipulation
-        public static readonly double PTS_GAME_PIECE= 1;
+        public static readonly double PTS_GAME_PIECE = 1;
         public static readonly double PTS_DROP_LVL_1 = 1;
         public static readonly double PTS_DROP_LVL_2 = 2;
         public static readonly double PTS_DROP_LVL_3 = 3;
@@ -117,11 +114,10 @@ namespace NRGScoutingApp
         public static readonly double PTS_HELPED_LVL_2 = 1;
         public static readonly double PTS_HELPED_LVL_3 = 2;
 
-
         /*
          * Rankings Detail View Page
          */
-        public static readonly String[] scoreBaseVals = { "Overall: ", "Cargo: ", "Hatch: ", "Climb: ", "Low: ", "Medium: ", "High: ", "Ship: "};
+        public static readonly String[] scoreBaseVals = { "Overall: ", "Cargo: ", "Hatch: ", "Climb: ", "Low: ", "Medium: ", "High: ", "Ship: " };
         public static readonly int numRankTypes = scoreBaseVals.Length;
         public static readonly String noVal = "Empty";
 
@@ -130,17 +126,18 @@ namespace NRGScoutingApp
          */
         //Separates the entries if same team was scouted twice
         public static readonly String entrySeparator = "\nANOTHER PIT ENTRY:::::::\n";
-        public static readonly String[] QUESTIONS =
-        {"Hours practiced?",
-        "Drive base?",
-        "How many hatch panels/cargo do you average per match?",
-        "What do you focus on (rocket/cargo ship)?",
-        "What level(s) can your bot reach?",
-        "All positions in auto for sandstorm?",
-        "Auto vs tele for sandstorm?",
-        "Can you get to the highest platform in the hab? What is your prefered method in endgame?",
-        "Speed?",
-        "Mechanism?",
-        "Placement?" };
+        public static readonly String[] QUESTIONS = {
+            "Hours practiced?",
+            "Drive base?",
+            "How many hatch panels/cargo do you average per match?",
+            "What do you focus on (rocket/cargo ship)?",
+            "What level(s) can your bot reach?",
+            "All positions in auto for sandstorm?",
+            "Auto vs tele for sandstorm?",
+            "Can you get to the highest platform in the hab? What is your prefered method in endgame?",
+            "Speed?",
+            "Mechanism?",
+            "Placement?"
+        };
     }
 }
