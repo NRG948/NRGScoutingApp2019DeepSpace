@@ -41,6 +41,7 @@
                 Margin="5,5">
             <Grid.RowDefinitions>
               <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
               </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                <ColumnDefinition Width="*" />
@@ -51,7 +52,7 @@
                      Margin="5,3"
                    Grid.Row="0"
                    Grid.Column="0"
-                   HorizontalOptions="EndAndExpand"/>
+                   HorizontalOptions="StartAndExpand"/>
             <Button x:Name="copyButton"
                     Text="Clipboard" 
                     Margin="10,3" 
@@ -59,6 +60,14 @@
                     Grid.Row="0"
                     Grid.Column="1"
                     HorizontalOptions="EndAndExpand"/>
+                    <Button Text="Share"
+                            Clicked="Share_Clicked"
+                            x:Name="shareButton"
+                            Margin="5,3"
+                   Grid.Row="1"
+                   Grid.Column="0"
+                            Grid.ColumnSpan="2"
+                   HorizontalOptions="CenterAndExpand"/>
                 </Grid>
                 </StackLayout>
                 </Frame>

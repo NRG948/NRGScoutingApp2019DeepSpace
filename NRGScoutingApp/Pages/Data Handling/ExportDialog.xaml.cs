@@ -2,6 +2,7 @@
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using Plugin.Clipboard;
+using System.Threading.Tasks;
 using Rg.Plugins.Popup.Services;
 using Xamarin.Essentials;
 
@@ -19,13 +20,30 @@ namespace NRGScoutingApp {
             PopupNavigation.Instance.PopAsync (true);
         }
 
-        //Gets entries from device storage and sets them into the text field (or disables field if empty)
-        void setExportEntries () {
+        async void Share_Clicked(object sender, System.EventArgs e)
+        {
+            await ShareText(exportDisplay.Text);
+        }
+        public async Task ShareText(string text)
+        {
+            await Share.RequestAsync(new ShareTextRequest
+            {
+                Text = text,
+                Title = "Share Match"
+            });
+        }
+
+            //Gets entries from device storage and sets them into the text field (or disables field if empty)
+            void setExportEntries () {
             JObject x;
             try {
                 x = (JObject) JsonConvert.DeserializeObject (Preferences.Get ("matchEventsString", ""));
             } catch (JsonException) {
                 x = new JObject ();
+            }
+            if (Object.Equals(x, null))
+            {
+                x = new JObject();
             }
             if (x.Count > 0) {
                 String exportEntries = JsonConvert.SerializeObject (
@@ -33,6 +51,7 @@ namespace NRGScoutingApp {
                 exportDisplay.Text = exportEntries;
             } else {
                 copyButton.IsEnabled = false;
+                shareButton.IsEnabled = false;
                 exportDisplay.Text = "No Entries Yet!";
             }
         }
