@@ -9,7 +9,7 @@
 	<key>CFBundleIdentifier</key>
 	<string>com.NRG.ScoutingApp.NRG-Scouting</string>
 	<key>CFBundleVersion</key>
-	<string>v0.7-beta</string>
+	<string>v0.8-beta</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>MinimumOSVersion</key>
@@ -43,6 +43,6 @@
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
 	<key>CFBundleShortVersionString</key>
-	<string>v0.7-beta</string>
+	<string>v0.8-beta</string>
 </dict>
 </plist>
