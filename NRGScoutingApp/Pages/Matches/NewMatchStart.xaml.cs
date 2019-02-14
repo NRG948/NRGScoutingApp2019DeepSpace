@@ -30,7 +30,6 @@ namespace NRGScoutingApp {
             setEventButtons (isTimerRunning);
         }
 
-        private static int min = 0, sec = 0, ms = 0; //Values for Timer
         public static int timerValue = 0;
         private bool firstTimerStart = true;
         public static int pickedTime = 0;
@@ -116,19 +115,9 @@ namespace NRGScoutingApp {
         }
         private void Timer_Elapsed () {
             if (Device.RuntimePlatform == "iOS") {
-                ms += ConstantVars.TIMER_INTERVAL_IOS;
-                timerValue += ConstantVars.TIMER_INTERVAL_IOS;
+               timerValue += ConstantVars.TIMER_INTERVAL_IOS;
             } else if (Device.RuntimePlatform == "Android") {
-                ms += ConstantVars.TIMER_INTERVAL_ANDROID;
                 timerValue += ConstantVars.TIMER_INTERVAL_ANDROID;
-            }
-            if (ms >= ConstantVars.SEC_MS) {
-                sec++;
-                ms = 0;
-            }
-            if (sec == 60) {
-                min++;
-                sec = 0;
             }
             Device.BeginInvokeOnMainThread (() => {
                 timeSlider.Value = timerValue;

@@ -63,7 +63,7 @@ namespace NRGScoutingApp {
         public static readonly int NUM_DROP_OPTIONS = 4;
 
         public static readonly int TIMER_INTERVAL_ANDROID = 100;
-        public static readonly int TIMER_INTERVAL_IOS = 1;
+        public static readonly int TIMER_INTERVAL_IOS = 10;
 
         public static readonly String RED_1_TEXT = "Red 1";
         public static readonly String RED_2_TEXT = "Red 2";
