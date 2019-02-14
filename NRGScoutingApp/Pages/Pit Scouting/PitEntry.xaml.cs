@@ -147,7 +147,6 @@ namespace NRGScoutingApp {
             vals.team = Preferences.Get ("teamStart", "oof");
             Console.WriteLine (vals.team);
             JObject notes = JObject.FromObject (vals);
-            Console.WriteLine (notes["team"]);
             if (isAllEmpty (notes)) {
                 try {
                     if (Matches.appRestore == false) {
@@ -186,7 +185,6 @@ namespace NRGScoutingApp {
             Preferences.Set ("matchEventsString", JsonConvert.SerializeObject (data));
             Console.WriteLine (Preferences.Get ("matchEventsString", ""));
             try {
-                Console.WriteLine ("trying");
                 if (!Matches.appRestore) {
                     await Navigation.PopToRootAsync (true);
                 } else if (Matches.appRestore) {
@@ -231,7 +229,6 @@ namespace NRGScoutingApp {
                 temp = JsonConvert.DeserializeObject<PitQs> (Preferences.Get ("tempPitNotes", ""));
                 Console.WriteLine (Preferences.Get ("tempPitNotes", ""));
             } catch (JsonException) {
-                Console.WriteLine ("caught json exception");
                 temp = vals;
             }
             //Attempting to set all text boxes

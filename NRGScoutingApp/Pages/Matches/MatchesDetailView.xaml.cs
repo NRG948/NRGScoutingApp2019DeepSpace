@@ -30,7 +30,6 @@ namespace NRGScoutingApp {
                         break;
                     }
                 }
-                Console.WriteLine (parameters);
                 Preferences.Set ("tempParams", JsonConvert.SerializeObject (parameters.ToObject<MatchFormat.EntryParams> ()));
                 NewMatchStart.events = MatchFormat.JSONEventsToObject (val);
                 CubeDroppedDialog.saveEvents ();
@@ -49,9 +48,9 @@ namespace NRGScoutingApp {
                 await Navigation.PopAsync ();
             }
         }
-
+         
         //Returns the Json String based on the index of the given match selected in the Matches page
-        String returnMatchJSONText (int index) {
+        public static String returnMatchJSONText (int index) {
             JObject matchesJSON = JObject.Parse (Preferences.Get ("matchEventsString", ""));
             JArray temp = (JArray) matchesJSON["Matches"];
             return temp[index].ToString ();

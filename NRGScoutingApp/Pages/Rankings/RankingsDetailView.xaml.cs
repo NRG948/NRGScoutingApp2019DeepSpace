@@ -1,8 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
+using Xamarin.Essentials;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
+using System.Threading.Tasks;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 namespace NRGScoutingApp {
     public partial class RankingsDetailView : ContentPage {
@@ -28,8 +30,32 @@ namespace NRGScoutingApp {
             score7.Text = ConstantVars.scoreBaseVals[7] + times[7];
         }
 
-        void matchTapped (object sender, Xamarin.Forms.ItemTappedEventArgs e) {
+        async void matchTapped (object sender, Xamarin.Forms.ItemTappedEventArgs e) {
+            int jsonIndex = Matches.matchesList.IndexOf(e.Item as Matches.MatchesListFormat);
 
+            await Task.Run(async () => {
+                JObject val = JObject.Parse(MatchesDetailView.returnMatchJSONText(jsonIndex));
+                JObject parameters = new JObject();
+                foreach (var x in val)
+                {
+                    if (!x.Key.Equals("numEvents"))
+                    {
+                        parameters.Add(x.Key, x.Value);
+                    }
+                    else
+                    {
+                        break;
+                    }
+                }
+                Preferences.Set("tempParams", JsonConvert.SerializeObject(parameters.ToObject<MatchFormat.EntryParams>()));
+                NewMatchStart.events = MatchFormat.JSONEventsToObject(val);
+                CubeDroppedDialog.saveEvents();
+                Preferences.Set("timerValue", Convert.ToInt32(val.Property("timerValue").Value));
+                Preferences.Set("teamStart", val.Property("team").Value.ToString());
+                Device.BeginInvokeOnMainThread(() => {
+                    Navigation.PushAsync(new MatchEntryEditTab() { Title = val.Property("team").Value.ToString() });
+                });
+            });
         }
     }
 }
