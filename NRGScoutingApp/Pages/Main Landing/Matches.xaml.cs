@@ -50,7 +50,12 @@ namespace NRGScoutingApp {
         }
 
         void importClicked (object sender, System.EventArgs e) {
-            PopupNavigation.Instance.PushAsync (new ImportDialog ());
+            popupInit();
+        }
+        private void popupInit() {
+            var popup = new ImportDialog();
+            popup.Disappearing += (sender, e) => { this.OnAppearing(); };
+            PopupNavigation.Instance.PushAsync(popup);
         }
 
         void exportClicked (object sender, System.EventArgs e) {
@@ -116,10 +121,6 @@ namespace NRGScoutingApp {
                 index = (listView.ItemsSource as List<MatchesListFormat>).IndexOf (e.Item as MatchesListFormat);
             }
             Navigation.PushAsync (new MatchesDetailView (index));
-        }
-
-        void refreshMatches (object sender, System.EventArgs e) {
-            populateMatchesList ();
         }
 
         public class MatchesListFormat {

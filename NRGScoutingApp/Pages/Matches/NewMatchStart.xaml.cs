@@ -115,7 +115,7 @@ namespace NRGScoutingApp {
         }
         private void Timer_Elapsed () {
             if (Device.RuntimePlatform == "iOS") {
-               timerValue += ConstantVars.TIMER_INTERVAL_IOS;
+                timerValue += ConstantVars.TIMER_INTERVAL_IOS;
             } else if (Device.RuntimePlatform == "Android") {
                 timerValue += ConstantVars.TIMER_INTERVAL_ANDROID;
             }

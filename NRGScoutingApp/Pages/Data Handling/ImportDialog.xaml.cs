@@ -26,31 +26,16 @@ namespace NRGScoutingApp {
                 JObject importJSON = (JObject) JsonConvert.DeserializeObject (importData.Text);
                 if (importJSON.ContainsKey ("Matches") || importJSON.ContainsKey ("PitNotes")) {
                     if (importJSON.ContainsKey ("Matches")) {
-                        int numMatches;
-                        if (data.Count <= 0) {
-                            JArray matchesArray = (JArray) importJSON["Matches"];
-                            numMatches = matchesArray.Count;
-                        } else {
-                            if (!data.ContainsKey ("Matches")) {
-                                data.Add (new JProperty ("Matches", new JArray ()));
-                            }
-                            JArray matchesArray = (JArray) data["Matches"];
-                            numMatches = matchesArray.Count;
-                            await addMatchItemsChecker (data, importJSON);
-                            numMatches = matchesArray.Count - numMatches;
+                        if (!data.ContainsKey ("Matches")) {
+                            data.Add (new JProperty ("Matches", new JArray ()));
                         }
+                        await addMatchItemsChecker (data, importJSON);
                     }
                     if (importJSON.ContainsKey ("PitNotes")) {
-                        if (data.Count <= 0) {
-                            JArray matchesArray = (JArray) importJSON["PitNotes"];
-                            data = new JObject (importJSON);
-                        } else {
-                            if (!data.ContainsKey ("PitNotes")) {
-                                data.Add (new JProperty ("PitNotes", new JArray ()));
-                            }
-                            JArray matchesArray = (JArray) data["PitNotes"];
-                            addPitItemsChecker (data, importJSON);
+                       if (!data.ContainsKey ("PitNotes")) {
+                            data.Add (new JProperty ("PitNotes", new JArray ()));
                         }
+                        await addPitItemsChecker (data, importJSON);
                     }
                     Preferences.Set ("matchEventsString", JsonConvert.SerializeObject (data));
                     await PopupNavigation.Instance.PopAsync (true);
@@ -62,7 +47,7 @@ namespace NRGScoutingApp {
             }
         }
 
-        private void addPitItemsChecker (JObject data, JObject importJSON) {
+        private async Task addPitItemsChecker (JObject data, JObject importJSON) {
             JArray temp = (JArray) data["PitNotes"];
             JArray importTemp = (JArray) importJSON["PitNotes"];
             var tempList = temp.ToList ();
@@ -76,6 +61,8 @@ namespace NRGScoutingApp {
                         }
                     }
                     temp.Add (item);
+                } else {
+                    temp.Add (match);
                 }
             }
         }
@@ -87,9 +74,7 @@ namespace NRGScoutingApp {
             foreach (var match in importTemp.ToList ()) {
                 if (tempList.Exists (x => x["matchNum"].Equals (match["matchNum"]) && x["side"].Equals (match["side"]))) {
                     var item = tempList.Find (x => x["matchNum"].Equals (match["matchNum"]) && x["side"].Equals (match["side"]));
-                    if (item["team"] == match["team"]) {
-                        temp.Add (match);
-                    } else {
+                    if (!item["team"].Equals (match["team"])) {
                         var add = await DisplayAlert ("Warning!", "Match: " + item["matchNum"] +
                             "\nTeam: " + item["team"] +
                             "\nSide: " + MatchFormat.matchSideFromEnum (Convert.ToInt32 (item["side"])) +
@@ -104,6 +89,5 @@ namespace NRGScoutingApp {
                 }
             }
         }
-
     }
 }

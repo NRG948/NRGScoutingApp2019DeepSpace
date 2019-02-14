@@ -81,7 +81,7 @@ namespace NRGScoutingApp {
                         JArray temp = (JArray) data["Matches"];
                         if (temp.ToList ().Exists (x => x["matchNum"].Equals (parameters["matchNum"]) && x["side"].Equals (parameters["side"]))) {
                             var item = temp.ToList ().Find (x => x["matchNum"].Equals (parameters["matchNum"]) && x["side"].Equals (parameters["side"]));
-                            if (item["team"] != parameters["team"]) {
+                            if (!item["team"].Equals (parameters["team"])) {
                                 Device.BeginInvokeOnMainThread (async () => {
                                     bool remove = await DisplayAlert ("Error", "Overwrite Old Match with New Data?", "No", "Yes");
                                     if (!remove) {
