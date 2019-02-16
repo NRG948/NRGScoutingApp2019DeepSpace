@@ -64,10 +64,16 @@
                             Clicked="Share_Clicked"
                             x:Name="shareButton"
                             Margin="5,3"
-                   Grid.Row="1"
-                   Grid.Column="0"
-                            Grid.ColumnSpan="2"
-                   HorizontalOptions="CenterAndExpand"/>
+                            Grid.Row="1"
+                            Grid.Column="0"
+                            HorizontalOptions="StartAndExpand"/>
+                    <Button Text="Excel"
+                            Clicked="Rank_Clicked"
+                            x:Name="rankExportButton"
+                            Margin="5,3"
+                            Grid.Row="1"
+                            Grid.Column="1"
+                            HorizontalOptions="EndAndExpand"/>
                 </Grid>
                 </StackLayout>
                 </Frame>

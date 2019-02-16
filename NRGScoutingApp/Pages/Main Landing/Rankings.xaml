@@ -45,7 +45,7 @@
                             <ViewCell>
                                 <ContentView Margin="0" Padding="0">
                                     <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
-                                        <Label Text="{Binding Path=Key}" x:Name="key" HorizontalTextAlignment="Start"/>
+                                        <Label Text="{Binding Path=Key}" TextColor="Black" x:Name="key" HorizontalTextAlignment="Start"/>
                                         <Label Text="{Binding Path=Value}" x:Name="value" HorizontalTextAlignment="Start"/>
                                     </StackLayout>
                                 </ContentView>

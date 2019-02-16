@@ -48,6 +48,7 @@ namespace NRGScoutingApp {
             } else {
                 copyButton.IsEnabled = false;
                 shareButton.IsEnabled = false;
+                rankExportButton.IsEnabled = false;
                 exportDisplay.Text = "No Entries Yet!";
             }
         }

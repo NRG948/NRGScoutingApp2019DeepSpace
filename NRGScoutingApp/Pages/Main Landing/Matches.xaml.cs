@@ -130,8 +130,8 @@ namespace NRGScoutingApp {
 
         async void deleteClicked (object sender, System.EventArgs e) {
             await DisplayAlert ("Hold it", "Make sure export to data first", "OK");
-            var del = await DisplayAlert ("Notice", "Do you want to delete all matches? Data CANNOT be recovered.", "No", "Yes");
-            if (!del) {
+            var del = await DisplayAlert ("Notice", "Do you want to delete all matches? Data CANNOT be recovered.", "Yes", "No");
+            if (del) {
                 Preferences.Set ("matchEventsString", "");
                 populateMatchesList ();
             }

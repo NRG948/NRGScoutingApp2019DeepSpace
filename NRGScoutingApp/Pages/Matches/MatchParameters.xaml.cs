@@ -240,8 +240,8 @@ namespace NRGScoutingApp {
                 death.SelectedIndex = entries.deathType;
                 climbSwitch.IsToggled = entries.climb;
                 climbLvl.SelectedIndex = entries.climbLvl;
-                assisted.IsToggled = entries.needAstClimb;
-                needed.IsToggled = entries.giveAstClimb;
+                assisted.IsToggled = entries.giveAstClimb;
+                needed.IsToggled = entries.needAstClimb;
                 giveAssistClimbLvl.SelectedIndex = entries.giveAstClimbLvl;
 
                 fouls.Text = entries.fouls.ToString ();
