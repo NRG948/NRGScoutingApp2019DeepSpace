@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using Xamarin.Essentials;
+using Xamarin.Forms;
 
 namespace NRGScoutingApp {
     public class Ranker {
@@ -23,6 +24,7 @@ namespace NRGScoutingApp {
         private Dictionary<String, double> drop3Data = new Dictionary<String, double> ();
         private Dictionary<String, double> drop4Data = new Dictionary<String, double> ();
         private Dictionary<String, double> drop1_4Data = new Dictionary<String, double> ();
+        private Dictionary<String, Color> colorData = new Dictionary<String, Color>();
 
         //PRE: data is in JSON Format
         public Ranker (String data) {
@@ -33,6 +35,11 @@ namespace NRGScoutingApp {
         public void setData (String data) {
             fullData = getJSON (data);
             refresh ();
+        }
+
+        public JArray getDataAsJArray()
+        {
+            return fullData;
         }
 
         /*
@@ -96,6 +103,10 @@ namespace NRGScoutingApp {
             }
         }
 
+        public Dictionary<string,Color> getColors() {
+            return colorData;
+        }
+
         /*
          * Switchboard operator for getting match Ranks
          * PRE: Rank type is provided
@@ -139,6 +150,7 @@ namespace NRGScoutingApp {
             drop2Data = getDropData ((int) MatchFormat.ACTION.drop2);
             drop3Data = getDropData ((int) MatchFormat.ACTION.drop3);
             drop4Data = getDropData ((int) MatchFormat.ACTION.drop4);
+            colorData = cardColor();
             drop1_4Data = getDrop1_4Data ();
             climbData = getClimbData ();
             overallData = getOverallData ();
@@ -154,6 +166,53 @@ namespace NRGScoutingApp {
                 }
             }
             return returnData;
+        }
+
+        public Dictionary<string,Color> cardColor() 
+        {
+            Dictionary<string, Color> teamCards = new Dictionary<string, Color>();
+            foreach(var match in fullData)
+            {
+                if (teamCards.ContainsKey(match["team"].ToString()))
+                {
+                    Color temp = Color.Black;
+                    if ((bool)match["redCard"])
+                    {
+                        temp = Color.Red;
+                    }
+                    else if ((bool)match["yellowCard"])
+                    {
+                        temp = Color.Yellow;
+                    }
+                    teamCards[match["team"].ToString()] = mainColor(teamCards[match["team"].ToString()], temp);
+                }
+                else
+                {
+                    Color temp = Color.Black;
+                    if ((bool)match["redCard"])
+                    {
+                        teamCards[match["team"].ToString()] = Color.Red;
+                    }
+                    else if ((bool)match["yellowCard"])
+                    {
+                        teamCards[match["team"].ToString()] = Color.Yellow;
+                    }
+                    teamCards.Add(match["team"].ToString(), temp);
+                }
+            }
+            return teamCards;
+        }
+
+        private Color mainColor(Color old, Color current) {
+            if (old.Equals(Color.Red) || current.Equals(Color.Red)) {
+                return Color.Red; 
+            }
+            else if(old.Equals(Color.Yellow) || current.Equals(Color.Yellow)) {
+                return Color.Yellow;
+            }
+            else {
+                return Color.Black;
+            }
         }
 
         // Pre: climbData returns a dictionary that consist of every team appeared

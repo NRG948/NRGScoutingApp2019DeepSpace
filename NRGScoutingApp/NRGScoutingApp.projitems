@@ -65,6 +65,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Pages\Rankings\RankingsDetailView.xaml.cs">
       <DependentUpon>RankingsDetailView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Helper Classes\CSVRanker.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)App.xaml" />

@@ -68,12 +68,19 @@ namespace NRGScoutingApp {
             listView.ItemsSource = y;
         }
 
+        public class rankStruct
+        {
+            string Key { get; set; }
+            string Value { get; set; }
+            Color text { get; set; }
+        }
 
         public Color cellColor
         {
             set
             {
-                Console.WriteLine(this);
+                Console.WriteLine(this + "wrote this");
+                Console.WriteLine(value + "wrote val");
                 cellColor = getTeamColor(this.ToString());
             }
             get
