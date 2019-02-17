@@ -106,12 +106,12 @@ namespace NRGScoutingApp
                 }
                 for (int i = 1; i < reps; i++)
                 {
-                    if ((int)match["TE" + i + "_1"] == levelEnum)
+                    if (Convert.ToInt32(match["TE" + i + "_1"]) == levelEnum)
                     {
-                        if (((int)match["TE" + (i - 1) + "_1"] != (int)MatchFormat.ACTION.startClimb) && ((int)match["TE" + (i - 1) + "_1"] != (int)MatchFormat.ACTION.dropNone))
+                        if ((Convert.ToInt32(match["TE" + (i - 1) + "_1"]) != (int)MatchFormat.ACTION.startClimb) && ((int)match["TE" + (i - 1) + "_1"] != (int)MatchFormat.ACTION.dropNone))
                         {
-                            int doTime = (int)match["TE" + (i) + "_0"] - (int)match["TE" + (i - 1) + "_0"];
-                            if ((int)match["TE" + (i) + "_0"] <= ConstantVars.AUTO_LENGTH && !(bool)match["autoOTele"])
+                            int doTime = Convert.ToInt32(match["TE" + (i) + "_0"]) - Convert.ToInt32(match["TE" + (i - 1) + "_0"]);
+                            if (Convert.ToInt32(match["TE" + (i) + "_0"]) <= ConstantVars.AUTO_LENGTH && !(bool)match["autoOTele"])
                             {
                                 doTime /= 2;
                             }
@@ -153,14 +153,17 @@ namespace NRGScoutingApp
                 {
                     reps = 0;
                 }
+                Console.WriteLine(reps);
                 for (int i = 0; i < reps; i++)
                 {
-                    if ((int)match["TE" + i + "_1"] == sortType && i != reps - 1)
+                    Console.WriteLine(match["TE" + i + "_1"]);
+                    Convert.ToInt32(match["TE" + i + "_1"]);
+                    if (Convert.ToInt32(match["TE" + i + "_1"]) == sortType && i != reps - 1)
                     {
-                        if (((int)match["TE" + (i + 1) + "_1"] != (int)MatchFormat.ACTION.startClimb) && ((int)match["TE" + (i + 1) + "_1"] != (int)MatchFormat.ACTION.dropNone))
+                        if ((Convert.ToInt32(match["TE" + (i + 1) + "_1"]) != (int)MatchFormat.ACTION.startClimb) && ((int)match["TE" + (i + 1) + "_1"] != (int)MatchFormat.ACTION.dropNone))
                         {
-                            int doTime = (int)match["TE" + (i + 1) + "_0"] - (int)match["TE" + i + "_0"];
-                            if ((int)match["TE" + (i + 1) + "_0"] <= ConstantVars.AUTO_LENGTH && !(bool)match["autoOTele"])
+                            int doTime = Convert.ToInt32(match["TE" + (i + 1) + "_0"]) - Convert.ToInt32(match["TE" + i + "_0"]);
+                            if (Convert.ToInt32(match["TE" + (i + 1) + "_0"]) <= ConstantVars.AUTO_LENGTH && !(bool)match["autoOTele"])
                             {
                                 doTime /= 2;
                             }

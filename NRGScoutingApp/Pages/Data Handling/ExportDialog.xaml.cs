@@ -39,11 +39,10 @@ namespace NRGScoutingApp {
         }
         public async Task RankText()
         {
-            Console.WriteLine(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "excel.csv"));
-            Console.WriteLine(File.ReadAllText("excel.csv"));
+            string path = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
             await Share.RequestAsync(new ShareTextRequest
             {
-                Uri = "file://" + Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "excel.csv"),
+                Uri = "file://" + path + "/excel.csv",
                 Title = "Share Ranks"
             });
         }
@@ -82,7 +81,8 @@ namespace NRGScoutingApp {
                 {
                     csvString += singleMatch.matchCalc(match) + "\n";
                 }
-                File.WriteAllText("excel.csv", csvString);
+                string path = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+                File.WriteAllText( path + "/excel.csv", csvString);
             });
         }
     }
