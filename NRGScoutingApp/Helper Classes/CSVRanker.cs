@@ -17,6 +17,8 @@ namespace NRGScoutingApp
             total += pickCalc((int)MatchFormat.CHOOSE_RANK_TYPE.pick1) + "," +
                 pickCalc((int)MatchFormat.CHOOSE_RANK_TYPE.pick2) + ",";
 
+            total += climbCalc() + ",";
+
             total += dropCalc((int)MatchFormat.CHOOSE_RANK_TYPE.drop1) + "," +
             dropCalc((int)MatchFormat.CHOOSE_RANK_TYPE.drop2) + "," +
             dropCalc((int)MatchFormat.CHOOSE_RANK_TYPE.drop3) + "," +
