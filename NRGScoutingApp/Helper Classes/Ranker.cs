@@ -197,7 +197,7 @@ namespace NRGScoutingApp {
                     {
                         teamCards[match["team"].ToString()] = Color.Yellow;
                     }
-                    teamCards.Add(match["team"].ToString(), temp);
+                    teamCards[match["team"].ToString()] = temp;
                 }
             }
             return teamCards;

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
@@ -40,6 +41,9 @@ namespace NRGScoutingApp {
         public static bool setItemToDefault;
         public static List<MatchFormat.Data> events = new List<MatchFormat.Data> ();
 
+        private DateTime timeStartDate;
+        private int timerStartVal;
+
         protected override void OnAppearing () {
 
             if (cubeSetDrop) {
@@ -75,11 +79,13 @@ namespace NRGScoutingApp {
                     timerText.Text = timeToString ((int) timerValue);
                     firstTimerStart = false;
                 }
-                timeSlider.IsEnabled = false;
                 isTimerRunning = true;
                 startTimer.Text = ConstantVars.TIMER_PAUSE;
                 setEventButtons (true);
                 setClimbButton ();
+                timeStartDate = DateTime.Now;
+                timerStartVal = 0;
+                setCubeButton ();
                 await Task.Run (async () => {
                     if (Device.RuntimePlatform == "iOS") {
                         Device.StartTimer (TimeSpan.FromMilliseconds (ConstantVars.TIMER_INTERVAL_IOS), () => {
@@ -88,6 +94,7 @@ namespace NRGScoutingApp {
                                     startTimer.Text = ConstantVars.TIMER_START;
                                 });
                                 isTimerRunning = false;
+                                setEventButtons (isTimerRunning);
                                 return false;
                             }
                             Timer_Elapsed ();
@@ -103,12 +110,12 @@ namespace NRGScoutingApp {
                             startTimer.Text = ConstantVars.TIMER_START;
                         });
                         isTimerRunning = false;
+                        setEventButtons (isTimerRunning);
                     }
                 });
             } else if (isTimerRunning) {
                 startTimer.Text = ConstantVars.TIMER_START;
                 isTimerRunning = false;
-                timeSlider.IsEnabled = true;
             }
             setEventButtons (isTimerRunning);
             setClimbButton ();
@@ -116,9 +123,19 @@ namespace NRGScoutingApp {
         private void Timer_Elapsed () {
             if (Device.RuntimePlatform == "iOS") {
                 timerValue += ConstantVars.TIMER_INTERVAL_IOS;
+                timerStartVal += ConstantVars.TIMER_INTERVAL_IOS;
             } else if (Device.RuntimePlatform == "Android") {
                 timerValue += ConstantVars.TIMER_INTERVAL_ANDROID;
+                timerStartVal += ConstantVars.TIMER_INTERVAL_ANDROID;
             }
+
+            if (timerStartVal >= ConstantVars.TIMER_CHECK_INTERVAL) {
+                Console.WriteLine (DateTime.Now.Subtract (timeStartDate).TotalMilliseconds - timerStartVal);
+                timerValue += (int) DateTime.Now.Subtract (timeStartDate).TotalMilliseconds - timerStartVal;
+                timerStartVal = 0;
+                timeStartDate = DateTime.Now;
+            }
+
             Device.BeginInvokeOnMainThread (() => {
                 timeSlider.Value = timerValue;
                 timerText.Text = timeToString ((int) timerValue);
@@ -138,6 +155,9 @@ namespace NRGScoutingApp {
             double value = e.NewValue;
             timerText.Text = timeToString ((int) e.NewValue);
             timerValue = (int) (e.NewValue);
+            if (!isTimerRunning) {
+                setEventButtons (isTimerRunning);
+            }
         }
 
         void climbClicked (object sender, System.EventArgs e) {
@@ -194,6 +214,13 @@ namespace NRGScoutingApp {
             }
             climbStart.IsEnabled = setter;
             cubePicked.IsEnabled = setter;
+            timeSlider.IsEnabled = !isTimerRunning;
+            if (timerValue >= ConstantVars.MATCH_SPAN_MS) {
+                timerValue = (int) ConstantVars.MATCH_SPAN_MS;
+                startTimer.IsEnabled = false;
+            } else {
+                startTimer.IsEnabled = true;
+            }
         }
 
         //Sets the value of the time if app crashed or match was restored
@@ -220,16 +247,13 @@ namespace NRGScoutingApp {
             try {
                 try {
                     events = MatchFormat.JSONEventsToObject (JObject.Parse (Preferences.Get ("tempMatchEvents", "")));
-                } catch (JsonReaderException) {
-                    Console.WriteLine ("jsonreader exceptions");
-                }
+                } catch (JsonReaderException) { }
                 if (Object.ReferenceEquals (events, null)) {
-                    Console.WriteLine ("found null");
                     events = new List<MatchFormat.Data> ();
                 }
-            } catch (System.InvalidCastException) {
-                //events = new List<MatchFormat.Data>();
-            }
+            } catch (System.InvalidCastException) { }
+            setEventButtons (isTimerRunning);
+            setCubeButton ();
         }
 
         //sets robot action buttons based on climb start
@@ -252,6 +276,17 @@ namespace NRGScoutingApp {
             timeValue %= (int) ConstantVars.SEC_MS;
             milliseconds = timeValue;
             return minutes + ":" + seconds.ToString ("D2") + "." + (milliseconds / 10).ToString ("D2");
+        }
+
+        private void setCubeButton () {
+            if (events.Count > 0 && (events[events.Count - 1].type == (int) MatchFormat.ACTION.pick1 || events[events.Count - 1].type == (int) MatchFormat.ACTION.pick2)) {
+                cubePicked.Text = ConstantVars.ITEM_DROPPED_TEXT_LIVE;
+                cubePicked.Image = ConstantVars.ITEM_DROPPED_IMAGE_LIVE;
+                pickedTime = events[events.Count - 1].time;
+            } else {
+                cubePicked.Text = ConstantVars.ITEM_PICKED_TEXT_LIVE;
+                cubePicked.Image = ConstantVars.ITEM_PICKED_IMAGE_LIVE;
+            }
         }
     }
 }

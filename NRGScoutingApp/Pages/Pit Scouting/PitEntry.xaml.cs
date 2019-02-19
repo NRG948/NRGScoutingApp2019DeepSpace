@@ -145,7 +145,6 @@ namespace NRGScoutingApp {
             saveButton.IsEnabled = false;
 
             vals.team = Preferences.Get ("teamStart", "oof");
-            Console.WriteLine (vals.team);
             JObject notes = JObject.FromObject (vals);
             if (isAllEmpty (notes)) {
                 try {
@@ -165,7 +164,6 @@ namespace NRGScoutingApp {
                     pushBackToHome (data, new JArray (), notes);
                 } else {
                     JArray temp = (JArray) data["PitNotes"];
-                    Console.WriteLine ("temp");
                     if (temp.ToList ().Exists (x => x["team"].Equals (notes["team"]))) {
                         var item = temp.ToList ().Find (x => x["team"].Equals (notes["team"]));
                         temp.Remove (item);

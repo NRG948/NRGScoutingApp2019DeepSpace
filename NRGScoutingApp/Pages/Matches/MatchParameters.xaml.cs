@@ -274,7 +274,6 @@ namespace NRGScoutingApp {
         void pushBackToHome (JObject data, JArray temp, JObject parameters) {
             temp.Add (new JObject (parameters));
             data["Matches"] = temp;
-            Console.WriteLine ("setting prefs");
             Preferences.Set ("matchEventsString", JsonConvert.SerializeObject (data));
             clearMatchItems ();
             try {

@@ -48,7 +48,7 @@ namespace NRGScoutingApp {
                 await Navigation.PopAsync ();
             }
         }
-         
+
         //Returns the Json String based on the index of the given match selected in the Matches page
         public static String returnMatchJSONText (int index) {
             JObject matchesJSON = JObject.Parse (Preferences.Get ("matchEventsString", ""));

@@ -10,6 +10,7 @@ namespace NRGScoutingApp {
      */
     public partial class Rankings : ContentPage {
         public Rankings() {
+            BindingContext = this;
             InitializeComponent();
             rankPicker.SelectedIndex = 0;
         }
@@ -85,6 +86,7 @@ namespace NRGScoutingApp {
             }
             get
             {
+                Console.WriteLine(this + "wrote this");
                 return cellColor;
             }
         }
