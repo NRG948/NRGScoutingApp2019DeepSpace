@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
@@ -92,9 +91,9 @@ namespace NRGScoutingApp {
                             if (timerValue >= ConstantVars.MATCH_SPAN_MS || !isTimerRunning) {
                                 Device.BeginInvokeOnMainThread (() => {
                                     startTimer.Text = ConstantVars.TIMER_START;
+                                    isTimerRunning = false;
+                                    setEventButtons(isTimerRunning);
                                 });
-                                isTimerRunning = false;
-                                setEventButtons (isTimerRunning);
                                 return false;
                             }
                             Timer_Elapsed ();
@@ -108,9 +107,9 @@ namespace NRGScoutingApp {
                         }
                         Device.BeginInvokeOnMainThread (() => {
                             startTimer.Text = ConstantVars.TIMER_START;
+                            isTimerRunning = false;
+                            setEventButtons(isTimerRunning);
                         });
-                        isTimerRunning = false;
-                        setEventButtons (isTimerRunning);
                     }
                 });
             } else if (isTimerRunning) {
