@@ -24,7 +24,8 @@ Should be live by week 1
 #### Install builds w/o Play Store
 Head to the [releases](https://github.com/NRG948/NRGScoutingApp2019DeepSpace/releases) page and download the ".apk" file containing "Download.this.one" in the file name (onto your android phone/tablet). Then, click the file and you should be prompted with a dialog asking you enable unknown sources. Do so and install the app.
 
-## Features (images coming soon)
+## Features 
+(images coming soon)
 
 ### Exporting and Importing Data
 #### Exporting Data
