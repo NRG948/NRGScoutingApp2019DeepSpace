@@ -1,18 +1,28 @@
 # NRGScoutingApp2019DeepSpace
 NRG Scouting app for 2019 Deep Space FRC Game
+
+## Table of Contents
+- [How to Install](#how-to-install)
+  - [iOS](#ios)
+  - [Android](#android)
+- [Features](#features)
+  - [Exporting and Importing Data](#exporting-and-importing-data)
+  - [Match Scouting](#match-scouting)
+  - [Pit Scouting](#pit-scouting)
+
 ## How to Install?
 
 ### iOS
 #### App Store Link Coming Soon...
 Check here by week 2, it should be live
 #### Install builds w/o App Store 
-Head to the [https://github.com/NRG948/NRGScoutingApp2019DeepSpace/releases](releases) page and download the ".ipa" file for the latest version of the application. Then, go to the [https://docs.google.com/document/d/1pQ8tAQsyVpHBQo1SHUSvb6X0ylbjBsiniisp-dAJFd8/edit#bookmark=id.g6e35tc9zquw](install instructions) and follow the steps to install the app without the App Store
+Head to the [releases](https://github.com/NRG948/NRGScoutingApp2019DeepSpace/releases) page and download the ".ipa" file for the latest version of the application. Then, go to the [install instructions](https://docs.google.com/document/d/1pQ8tAQsyVpHBQo1SHUSvb6X0ylbjBsiniisp-dAJFd8/edit#bookmark=id.g6e35tc9zquw) and follow the steps to install the app without the App Store
 
 ### Android
 #### Play Store Link Coming Soon...
 Should be live by week 1
 #### Install builds w/o Play Store
-Head to the [https://github.com/NRG948/NRGScoutingApp2019DeepSpace/releases](releases) page and download the ".apk" file containing "Download.this.one" in the file name (onto your android phone/tablet). Then, click the file and you should be prompted with a dialog asking you enable unknown sources. Do so and install the app.
+Head to the [releases](https://github.com/NRG948/NRGScoutingApp2019DeepSpace/releases) page and download the ".apk" file containing "Download.this.one" in the file name (onto your android phone/tablet). Then, click the file and you should be prompted with a dialog asking you enable unknown sources. Do so and install the app.
 
 ## Features (images coming soon)
 
