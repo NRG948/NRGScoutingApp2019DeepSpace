@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using Xamarin.Essentials;
 using Xamarin.Forms;
@@ -8,10 +9,9 @@ namespace NRGScoutingApp {
     /*ADD Ranking Chooser Replacement for iOS 
      *like a picker acts as the distribution center to choose the type
      */
-    public partial class Rankings : ContentPage {
-        public Rankings() {
-            BindingContext = this;
-            InitializeComponent();
+    public partial class Rankings : INotifyPropertyChanged {
+        public Rankings () {
+            InitializeComponent ();
             rankPicker.SelectedIndex = 0;
         }
 
@@ -20,9 +20,9 @@ namespace NRGScoutingApp {
         MatchFormat.CHOOSE_RANK_TYPE rankChoice;
 
         //Initializes the ranking object
-        Ranker mainRank = new Ranker(Preferences.Get("matchEventsString", ""));
+        Ranker mainRank = new Ranker (Preferences.Get ("matchEventsString", ""));
 
-        void rankTypeDelta(object sender, System.EventArgs e) {
+        void rankTypeDelta (object sender, System.EventArgs e) {
             switch (rankPicker.SelectedIndex) {
                 case 0:
                     rankChoice = MatchFormat.CHOOSE_RANK_TYPE.overallRank;
@@ -49,51 +49,39 @@ namespace NRGScoutingApp {
                     rankChoice = MatchFormat.CHOOSE_RANK_TYPE.overallRank;
                     break;
             }
-            updateEvents();
+            updateEvents ();
         }
 
-        protected override void OnAppearing() {
-            updateEvents();
+        protected override void OnAppearing () {
+            updateEvents ();
         }
 
         //Updates events with given enum
-        private void updateEvents() {
+        private void updateEvents () {
             //Updates string data from matches
-            mainRank.setData(Preferences.Get("matchEventsString", ""));
+            mainRank.setData (Preferences.Get ("matchEventsString", ""));
             //Gets all data and sets it into ascending order based on each team's average time
-            Dictionary<string, double> x = mainRank.getRank(rankChoice);
+            Dictionary<string, double> x = mainRank.getRank (rankChoice);
             var y = from pair in x
-                    orderby pair.Value ascending
-                    select pair;
-            setListVisibility(y.Count());
-            listView.ItemsSource = y;
-        }
-
-        public class rankStruct
-        {
-            string Key { get; set; }
-            string Value { get; set; }
-            Color text { get; set; }
-        }
-
-        public Color cellColor
-        {
-            set
-            {
-                Console.WriteLine(this + "wrote this");
-                Console.WriteLine(value + "wrote val");
-                cellColor = getTeamColor(this.ToString());
+            orderby pair.Value ascending
+            select pair;
+            setListVisibility (y.Count ());
+            List<RankStruct> ranks = new List<RankStruct> ();
+            foreach (var s in y) {
+                ranks.Add (new RankStruct { Key = s.Key, Value = s.Value, color = getTeamColor (s.Key) });
+                Console.WriteLine (getTeamColor (s.Key).ToString ());
             }
-            get
-            {
-                Console.WriteLine(this + "wrote this");
-                return cellColor;
-            }
+            listView.ItemsSource = ranks;
         }
 
-        private Color getTeamColor(String team)
-        {
-            return mainRank.getColors()[team];
+        public class RankStruct {
+            public string Key { get; set; }
+            public double Value { get; set; }
+            public Color color { get; set; }
+        }
+
+        private Color getTeamColor (String team) {
+            return mainRank.getColors () [team];
         }
 
         /*
@@ -106,7 +94,7 @@ namespace NRGScoutingApp {
         }
 
         async void teamClicked (object sender, Xamarin.Forms.ItemTappedEventArgs e) {
-            var x = (listView.ItemsSource as IEnumerable<KeyValuePair<String, double>>).ToList ();
+            var x = (listView.ItemsSource as IEnumerable<RankStruct>).ToList ();
             String item = x.Find (y => y.Equals (e.Item)).Key;
             teamSend = item;
             await Navigation.PushAsync (new RankingsDetailView (mainRank.returnTeamTimes (item)) { Title = item });
