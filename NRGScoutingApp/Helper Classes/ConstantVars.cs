@@ -1,5 +1,4 @@
 ﻿using System;
-
 namespace NRGScoutingApp {
     public class ConstantVars {
         /*

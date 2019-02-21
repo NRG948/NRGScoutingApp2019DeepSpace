@@ -31,7 +31,6 @@
 
                                         <Button x:Name="cubePicked" BackgroundColor="#fdad13" TextColor="White" Text="Item Picked" Grid.Row="1" Grid.Column="1" ContentLayout="Top,0" Image="ic_picked_cube.png" Clicked="cubeClicked" FontSize="Medium" Margin="0"/>
                                 </Grid>
-                <Entry Placeholder="timer change?" Keyboard="Numeric" TextChanged="Handle_TextChanged"/>
                         </StackLayout>
                 </ScrollView>
         </ContentPage.Content>

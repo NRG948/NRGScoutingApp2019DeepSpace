@@ -40,8 +40,6 @@ namespace NRGScoutingApp {
         public static bool setItemToDefault;
         public static List<MatchFormat.Data> events = new List<MatchFormat.Data> ();
 
-        private int TIMER_INTERVAL_ANDROID = 10;
-
         private DateTime timeStartDate;
         private int timerStartVal;
 
@@ -104,7 +102,7 @@ namespace NRGScoutingApp {
                     } else if (Device.RuntimePlatform == "Android") {
 
                         while (!(timerValue >= ConstantVars.MATCH_SPAN_MS || !isTimerRunning)) {
-                            await Task.Delay (TIMER_INTERVAL_ANDROID);
+                            await Task.Delay (ConstantVars.TIMER_INTERVAL_ANDROID);
                             Timer_Elapsed ();
                         }
                         Device.BeginInvokeOnMainThread (() => {
@@ -121,19 +119,6 @@ namespace NRGScoutingApp {
             setEventButtons (isTimerRunning);
             setClimbButton ();
         }
-
-        void Handle_TextChanged(object sender, Xamarin.Forms.TextChangedEventArgs e)
-        {
-            try
-            {
-                TIMER_INTERVAL_ANDROID = Convert.ToInt32(e.NewTextValue);
-            }
-            catch (FormatException)
-            {
-
-            }
-        }
-
         private void Timer_Elapsed () {
             if (Device.RuntimePlatform == "iOS") {
                 timerValue += ConstantVars.TIMER_INTERVAL_IOS;
