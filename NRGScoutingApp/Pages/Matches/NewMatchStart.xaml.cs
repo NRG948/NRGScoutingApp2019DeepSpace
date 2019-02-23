@@ -173,7 +173,7 @@ namespace NRGScoutingApp {
 
         async void cubeClicked (object sender, System.EventArgs e) {
             if (!isTimerRunning) {
-                DisplayAlert ("Error", "Timer not Started", "OK");
+                await DisplayAlert ("Error", "Timer not Started", "OK");
             } else if (cubePicked.Text == ConstantVars.ITEM_PICKED_TEXT_LIVE) {
                 //Performs actions to open popup for adding cube dropped, etc
                 pickedTime = (int) timerValue;
@@ -196,7 +196,7 @@ namespace NRGScoutingApp {
             } else if (cubePicked.Text == ConstantVars.ITEM_DROPPED_TEXT_LIVE) {
                 //Performs action/s to open popup for adding cube dropped, etc
                 droppedTime = (int) timerValue;
-                Navigation.PushAsync (new CubeDroppedDialog ());
+                await Navigation.PushAsync (new CubeDroppedDialog ());
                 cubePicked.Image = ConstantVars.ITEM_PICKED_IMAGE_LIVE;
                 cubePicked.Text = ConstantVars.ITEM_PICKED_TEXT_LIVE;
             }
@@ -229,7 +229,7 @@ namespace NRGScoutingApp {
                 Preferences.Set ("lastItemDroppped", 0);
                 Preferences.Set ("tempEventString", "");
                 Preferences.Set ("tempMatchEvents", "");
-                App.Current.SavePropertiesAsync ();
+                Application.Current.SavePropertiesAsync ();
             } else if (Preferences.Get ("lastItemPicked", 0) == 0 || Preferences.Get ("lastItemDropped", 0) == 0) { } else if (Preferences.Get ("lastItemDroppped", 0) > Preferences.Get ("lastItemDropped", 0)) {
                 cubePicked.Image = ConstantVars.ITEM_DROPPED_IMAGE_LIVE;
                 cubePicked.Text = ConstantVars.ITEM_DROPPED_TEXT_LIVE;
@@ -250,7 +250,7 @@ namespace NRGScoutingApp {
                 if (Object.ReferenceEquals (events, null)) {
                     events = new List<MatchFormat.Data> ();
                 }
-            } catch (System.InvalidCastException) { }
+            } catch (InvalidCastException) { }
             setEventButtons (isTimerRunning);
             setCubeButton ();
         }

@@ -10,6 +10,7 @@ namespace NRGScoutingApp {
             setListVisibility (false);
         }
 
+        public static Boolean update;
         protected override bool OnBackButtonPressed () {
             return true;
         }
@@ -24,9 +25,10 @@ namespace NRGScoutingApp {
         List<EventListFormat> eventsList;
 
         protected override void OnAppearing () {
-            if (NewMatchStart.events.Count > 0) {
+            if (NewMatchStart.events.Count > 0 && update) {
                 eventsList = EventViewList (NewMatchStart.events);
                 setListVisibility ();
+                update = false;
                 listView.ItemsSource = eventsList;
             } else {
                 setListVisibility ();
@@ -42,8 +44,7 @@ namespace NRGScoutingApp {
             sadNoEvent.IsVisible = !setList;
         }
         private void setListVisibility () {
-            listView.IsVisible = NewMatchStart.events.Count > 0;
-            sadNoEvent.IsVisible = !listView.IsVisible;
+            setListVisibility(NewMatchStart.events.Count > 0);
         }
 
         //Populates List that contains all data for each timer event to appear on the Match Events Screen
