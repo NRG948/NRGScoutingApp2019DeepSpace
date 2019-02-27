@@ -414,7 +414,14 @@ namespace NRGScoutingApp {
             } else {
                 tempJSON = new JObject (new JProperty ("Matches"));
             }
-            return (JArray) tempJSON["Matches"];
+            if (tempJSON.ContainsKey("Matches"))
+            {
+                return (JArray)tempJSON["Matches"];
+            }
+            else
+            {
+                return new JArray();
+            }
         }
     }
 }

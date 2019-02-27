@@ -70,7 +70,7 @@ Global
 		SolutionGuid = {5D08523F-70D7-41E2-B656-B2C13AAE7A31}
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		version = v0.9.2-beta
+		version = 0.9.3
 		Policies = $0
 		$0.DotNetNamingPolicy = $1
 		$1.DirectoryNamespaceAssociation = PrefixedHierarchical
