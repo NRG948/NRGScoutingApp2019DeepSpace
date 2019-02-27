@@ -10,7 +10,7 @@
     <RootNamespace>NRGScoutingApp.iOS</RootNamespace>
     <AssemblyName>NRGScoutingApp.iOS</AssemblyName>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-    <ReleaseVersion>v0.9.1-beta</ReleaseVersion>
+    <ReleaseVersion>v0.9.2-beta</ReleaseVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
     <DebugSymbols>true</DebugSymbols>
@@ -35,7 +35,7 @@
     <OutputPath>bin\iPhone\Release</OutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <CodesignKey>iPhone Developer: nrg948infotech@gmail.com (M38472HNQV)</CodesignKey>
+    <CodesignKey>iPhone Distribution: Robert Doran (TCL24SVD7H)</CodesignKey>
     <MtouchFloat32>true</MtouchFloat32>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
     <MtouchLink>SdkOnly</MtouchLink>
@@ -43,9 +43,10 @@
     <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
     <PlatformTarget>x86</PlatformTarget>
     <BuildIpa>true</BuildIpa>
-    <CodesignProvision>iOS Team Provisioning Profile: *</CodesignProvision>
     <MtouchUseLlvm>true</MtouchUseLlvm>
     <MtouchEnableSGenConc>true</MtouchEnableSGenConc>
+<AssemblyName>NRGScoutingApp</AssemblyName>
+<CodesignProvision>NRG Scouting 2019</CodesignProvision>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
     <DebugType>pdbonly</DebugType>
@@ -81,6 +82,7 @@
     <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
     <PlatformTarget>x86</PlatformTarget>
     <CodesignProvision>iOS Team Provisioning Profile: *</CodesignProvision>
+<AssemblyName>NRGScoutingApp</AssemblyName>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Rg.Plugins.Popup, Version=1.1.4.168, Culture=neutral, processorArchitecture=MSIL">
@@ -171,6 +173,7 @@
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\1024.png">
       <Visible>false</Visible>
     </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\Contents.json" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\tab_about.png" />
