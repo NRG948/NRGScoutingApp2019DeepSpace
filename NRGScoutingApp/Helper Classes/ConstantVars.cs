@@ -139,7 +139,9 @@ namespace NRGScoutingApp {
             "Can you get to the highest platform in the hab? What is your prefered method in endgame?",
             "Speed?",
             "Mechanism?",
-            "Placement?"
+            "Placement?",
+            "Anything you noticed about the team?",
+            "Other"
         };
     }
 }
