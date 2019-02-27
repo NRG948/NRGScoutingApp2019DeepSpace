@@ -7,7 +7,7 @@
 	<key>CFBundleName</key>
 	<string>NRG Scouting</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.NRG.ScoutingApp.NRG-Scouting</string>
+	<string>com.NRG.ScoutingApp.2019</string>
 	<key>CFBundleVersion</key>
 	<string>v0.9.1-beta</string>
 	<key>LSRequiresIPhoneOS</key>
@@ -28,6 +28,7 @@
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>

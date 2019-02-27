@@ -175,7 +175,7 @@ namespace NRGScoutingApp {
             Dictionary<string, Color> teamCards = new Dictionary<string, Color> ();
             foreach (var match in fullData) {
                 if (teamCards.ContainsKey (match["team"].ToString ())) {
-                    Color temp = Color.Black;
+                    Color temp = Color.White;
                     if ((bool) match["redCard"]) {
                         temp = Color.Red;
                     } else if ((bool) match["yellowCard"]) {
@@ -186,7 +186,7 @@ namespace NRGScoutingApp {
                     }
                     teamCards[match["team"].ToString ()] = mainColor (teamCards[match["team"].ToString ()], temp);
                 } else {
-                    Color temp = Color.Black;
+                    Color temp = Color.White;
                     if ((bool) match["redCard"]) {
                         temp = Color.Red;
                     } else if ((bool) match["yellowCard"]) {
@@ -204,7 +204,7 @@ namespace NRGScoutingApp {
             } else if (old.Equals (Color.Yellow) || current.Equals (Color.Yellow)) {
                 return Color.Yellow;
             } else {
-                return Color.Black;
+                return Color.White;
             }
         }
 

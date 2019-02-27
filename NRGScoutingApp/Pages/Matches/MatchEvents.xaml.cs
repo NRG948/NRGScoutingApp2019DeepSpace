@@ -10,7 +10,7 @@ namespace NRGScoutingApp {
             setListVisibility (false);
         }
 
-        public static Boolean update;
+        public static Boolean update = true;
         protected override bool OnBackButtonPressed () {
             return true;
         }
