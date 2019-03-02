@@ -45,8 +45,8 @@
     <BuildIpa>true</BuildIpa>
     <MtouchUseLlvm>true</MtouchUseLlvm>
     <MtouchEnableSGenConc>true</MtouchEnableSGenConc>
-<AssemblyName>NRGScoutingApp</AssemblyName>
-<CodesignProvision>NRG Scouting 2019</CodesignProvision>
+    <AssemblyName>NRGScoutingApp</AssemblyName>
+    <CodesignProvision>NRG Scouting 2019</CodesignProvision>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
     <DebugType>pdbonly</DebugType>
@@ -82,7 +82,7 @@
     <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
     <PlatformTarget>x86</PlatformTarget>
     <CodesignProvision>iOS Team Provisioning Profile: *</CodesignProvision>
-<AssemblyName>NRGScoutingApp</AssemblyName>
+    <AssemblyName>NRGScoutingApp</AssemblyName>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Rg.Plugins.Popup, Version=1.1.4.168, Culture=neutral, processorArchitecture=MSIL">
@@ -173,7 +173,9 @@
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\1024.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\tab_about.png" />
