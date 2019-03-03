@@ -28,7 +28,7 @@
                FontSize="20" 
                Margin="2,10"
                FontAttributes="Bold"/>
-        <ScrollView Orientation="Vertical">
+        <ScrollView Orientation="Vertical" VerticalOptions="Center" MinimumHeightRequest="50">
             <Label Text="" 
                    LineBreakMode="CharacterWrap" 
                    x:Name="exportDisplay"
@@ -83,4 +83,5 @@
                  ios:Page.UseSafeArea="true"
                  ios:NavigationPage.PrefersLargeTitles="true">
     -->
-    <!--     AlignItems="Center"-->
+    <!--     AlignItems="Center"
+MaxLines="30"-->
