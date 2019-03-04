@@ -23,8 +23,9 @@ namespace NRGScoutingApp {
             return total;
         }
 
-        private double climbCalc () {
+        private int climbCalc () {
             int point = 0;
+            String total = "";
             try {
                 if ((bool) match["climb"]) {
                     if ((bool) match["needAstClimb"]) {
@@ -42,14 +43,13 @@ namespace NRGScoutingApp {
                     } else {
                         switch ((int) match["climbLvl"]) {
                             case 0:
-                                point += (int) ConstantVars.PTS_SELF_LVL_1;
+                                point = (int) ConstantVars.PTS_LVL_1_CLIMB;
                                 break;
                             case 1:
-                                point += (int) ConstantVars.PTS_SELF_LVL_2;
+                                point = (int) ConstantVars.PTS_LVL_2_CLIMB;
                                 break;
                             case 2:
-                                point += (int) ConstantVars.PTS_SELF_LVL_3;
-                                System.Diagnostics.Debug.WriteLine ("dam 2");
+                                point = (int) ConstantVars.PTS_LVL_3_CLIMB;
                                 break;
                             default:
                                 point += 0;

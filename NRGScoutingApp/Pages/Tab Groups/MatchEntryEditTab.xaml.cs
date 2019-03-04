@@ -1,5 +1,6 @@
 ﻿using Xamarin.Essentials;
 using Xamarin.Forms;
+using System;
 
 namespace NRGScoutingApp {
     public partial class MatchEntryEditTab : Xamarin.Forms.TabbedPage {
@@ -24,14 +25,7 @@ namespace NRGScoutingApp {
             var text = await DisplayAlert ("Alert", "Do you want to discard progress?", "Yes", "No");
             if (text) {
                 MatchParameters.clearMatchItems ();
-                if (Matches.appRestore == false) {
-                    Matches.appRestore = false;
-                    Navigation.PopToRootAsync (true);
-                } else if (Matches.appRestore == true) {
-                    Matches.appRestore = false;
-                    Navigation.PopAsync (true);
-                }
-
+                await Navigation.PopAsync();
             }
         }
     }

@@ -100,12 +100,7 @@ namespace NRGScoutingApp {
                 }
                 Preferences.Set ("matchEventsString", JsonConvert.SerializeObject (data));
                 try {
-                    if (!Matches.appRestore) {
-                        await Navigation.PopToRootAsync (true);
-                    } else if (Matches.appRestore) {
-                        Matches.appRestore = false;
-                        await Navigation.PopAsync (true);
-                    }
+                    Navigation.PopAsync();
                 } catch (System.NullReferenceException) { }
                 clearMatchItems ();
             }
@@ -116,13 +111,7 @@ namespace NRGScoutingApp {
             if (text) {
                 clearMatchItems ();
                 try {
-                    if (Matches.appRestore == false) {
-                        Matches.appRestore = false;
-                        await Navigation.PopToRootAsync (true);
-                    } else if (Matches.appRestore == true) {
-                        Matches.appRestore = false;
-                        await Navigation.PopAsync (true);
-                    }
+                    Navigation.PopAsync();
                 } catch (System.NullReferenceException) {
 
                 }
@@ -148,12 +137,7 @@ namespace NRGScoutingApp {
             JObject notes = JObject.FromObject (vals);
             if (isAllEmpty (notes)) {
                 try {
-                    if (Matches.appRestore == false) {
-                        Navigation.PopToRootAsync (true);
-                    } else if (Matches.appRestore == true) {
-                        Matches.appRestore = false;
-                        Navigation.PopAsync (true);
-                    }
+                    Navigation.PopAsync();
                 } catch (System.InvalidOperationException) { }
                 clearMatchItems ();
             } else {
@@ -183,12 +167,7 @@ namespace NRGScoutingApp {
             Preferences.Set ("matchEventsString", JsonConvert.SerializeObject (data));
             Console.WriteLine (Preferences.Get ("matchEventsString", ""));
             try {
-                if (!Matches.appRestore) {
-                    await Navigation.PopToRootAsync (true);
-                } else if (Matches.appRestore) {
-                    Matches.appRestore = false;
-                    await Navigation.PopAsync (true);
-                }
+                Navigation.PopAsync();
             } catch (System.NullReferenceException) { }
             clearMatchItems ();
         }

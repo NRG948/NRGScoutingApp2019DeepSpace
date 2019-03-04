@@ -46,14 +46,7 @@ namespace NRGScoutingApp {
             var text = await DisplayAlert ("Alert", "Do you want to discard progress?", "Yes", "No");
             if (text) {
                 clearMatchItems ();
-                if (Matches.appRestore == false) {
-                    Matches.appRestore = false;
-                    await Navigation.PopToRootAsync (true);
-                } else if (Matches.appRestore == true) {
-                    Matches.appRestore = false;
-                    await Navigation.PopAsync (true);
-                }
-
+                await Navigation.PopAsync();
             }
         }
 
@@ -277,16 +270,7 @@ namespace NRGScoutingApp {
             Preferences.Set ("matchEventsString", JsonConvert.SerializeObject (data));
             clearMatchItems ();
             try {
-                if (Matches.appRestore == false) {
-                    Device.BeginInvokeOnMainThread (() => {
-                        Navigation.PopToRootAsync (true);
-                    });
-                } else if (Matches.appRestore == true) {
-                    Matches.appRestore = false;
-                    Device.BeginInvokeOnMainThread (() => {
-                        Navigation.PopAsync (true);
-                    });
-                }
+                Navigation.PopAsync();
             } catch (System.InvalidOperationException) {
 
             }
