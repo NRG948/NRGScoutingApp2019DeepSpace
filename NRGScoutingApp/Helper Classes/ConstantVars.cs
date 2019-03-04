@@ -115,6 +115,9 @@ namespace NRGScoutingApp {
         public static readonly double PTS_SELF_LVL_3 = 4;
         public static readonly double PTS_HELPED_LVL_2 = 1;
         public static readonly double PTS_HELPED_LVL_3 = 2;
+        public static readonly int PTS_LVL_1_CLIMB = 3;
+        public static readonly int PTS_LVL_2_CLIMB = 6;
+        public static readonly int PTS_LVL_3_CLIMB = 12;
 
         /*
          * Rankings Detail View Page
