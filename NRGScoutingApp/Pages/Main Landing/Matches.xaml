@@ -12,6 +12,7 @@
         <ToolbarItem Icon="ic_import_web.png" Clicked="importClicked"/>
         <ToolbarItem Icon="ic_export_web.png" Clicked="exportClicked"/>
         <ToolbarItem Icon="ic_clear_data.png" Clicked="deleteClicked"/>
+        <ToolbarItem Text="Copy" Clicked="Handle_Clicked"/>
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <Grid HorizontalOptions="CenterAndExpand" RowSpacing="0" ColumnSpacing="0" Margin="0" Padding="0">
