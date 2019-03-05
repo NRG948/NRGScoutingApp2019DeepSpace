@@ -14,14 +14,55 @@ namespace NRGScoutingApp {
             setExportEntries ();
         }
 
+        private string excelFileBase = "scoutDataExport_" + DateTime.Now.Month + "_" + DateTime.Now.Day + "_" + DateTime.Now.TimeOfDay;
+
         private string exportText = "";
         private string csvString = "";
         void cancelClicked (object sender, System.EventArgs e) {
             PopupNavigation.Instance.PopAsync (true);
         }
-        void copyClicked (object sender, System.EventArgs e) {
-            CrossClipboard.Current.SetText (exportText);
-            PopupNavigation.Instance.PopAsync (true);
+        async void copyClicked (object sender, System.EventArgs e) {
+            String exportText = null;
+            String action = "";
+            while (String.IsNullOrWhiteSpace(action))
+            {
+                action = await DisplayActionSheet("Choose Export Type:", ConstantVars.exportTypes[0], null, ConstantVars.exportTypes[1], ConstantVars.exportTypes[2], ConstantVars.exportTypes[3]);
+            }
+            if (action.Equals(ConstantVars.exportTypes[1]))
+            {
+                exportText = this.exportText;
+                CrossClipboard.Current.SetText(exportText);
+            }
+            else if (action.Equals(ConstantVars.exportTypes[2]))
+            {
+                JObject datas = JObject.Parse(this.exportText);
+                if (datas.ContainsKey("Matches"))
+                {
+                    exportText = JsonConvert.SerializeObject((JArray)datas["Matches"]);
+                    CrossClipboard.Current.SetText(exportText);
+                }
+                else
+                {
+                    await DisplayAlert("Oops!", "No " + ConstantVars.exportTypes[2] + " data", "OK");
+                }
+            }
+            else if (action.Equals(ConstantVars.exportTypes[3]))
+            {
+                JObject datas = JObject.Parse(this.exportText);
+                if (datas.ContainsKey("Matches"))
+                {
+                    exportText = JsonConvert.SerializeObject((JArray)datas["PitNotes"]);
+                    CrossClipboard.Current.SetText(exportText);
+                }
+                else
+                {
+                    await DisplayAlert("Oops!", "No " + ConstantVars.exportTypes[3] + " data", "OK");
+                }
+            }
+            if (!action.Equals(ConstantVars.exportTypes[0]))
+            {
+                await PopupNavigation.Instance.PopAsync(true);
+            }
         }
 
         async void Share_Clicked (object sender, System.EventArgs e) {
@@ -41,7 +82,7 @@ namespace NRGScoutingApp {
             initCSV();
             string path = Environment.GetFolderPath (Environment.SpecialFolder.MyDocuments);
             await Share.RequestAsync (new ShareTextRequest {
-                Uri = "file://" + path + "/excel.csv",
+                Uri = "file://" + path + "/" + excelFileBase + ".csv",
                     Title = "Share Ranks"
             });
         }
@@ -79,7 +120,7 @@ namespace NRGScoutingApp {
                     csvString += singleMatch.matchCalc (match) + "\n";
                 }
                 string path = Environment.GetFolderPath (Environment.SpecialFolder.MyDocuments);
-                File.WriteAllText (path + "/excel.csv", csvString);
+                File.WriteAllText (path + "/" + excelFileBase + ".csv", csvString);
             });
         }
     }

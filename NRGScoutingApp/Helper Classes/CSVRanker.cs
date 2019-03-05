@@ -23,25 +23,14 @@ namespace NRGScoutingApp {
             return total;
         }
 
-        private int climbCalc () {
+        private String climbCalc () {
             int point = 0;
             String total = "";
+            Boolean needHelp = (bool)match["needAstClimb"];
+            Boolean gaveHelp = (bool)match["giveAstClimb"];
             try {
                 if ((bool) match["climb"]) {
-                    if ((bool) match["needAstClimb"]) {
-                        switch ((int) match["climbLvl"]) {
-                            case 1:
-                                point += (int) ConstantVars.PTS_NEED_HELP_LVL_2;
-                                break;
-                            case 2:
-                                point += (int) ConstantVars.PTS_NEED_HELP_LVL_3;
-                                break;
-                            default:
-                                point += 0;
-                                break;
-                        }
-                    } else {
-                        switch ((int) match["climbLvl"]) {
+                    switch ((int) match["climbLvl"]) {
                             case 0:
                                 point = (int) ConstantVars.PTS_LVL_1_CLIMB;
                                 break;
@@ -54,32 +43,27 @@ namespace NRGScoutingApp {
                             default:
                                 point += 0;
                                 break;
-                        }
-                    }
-                }
-                if ((bool) match["giveAstClimb"]) {
-                    switch ((int) match["giveAstClimbLvl"]) {
-                        case 0:
-                            point += (int) ConstantVars.PTS_HELPED_LVL_2;
-                            break;
-                        case 1:
-                            point += (int) ConstantVars.PTS_HELPED_LVL_3;
-                            System.Diagnostics.Debug.WriteLine ("dam 3");
-                            break;
-                        default:
-                            point += 0;
-                            break;
                     }
                 }
             } catch (System.NullReferenceException) {
 
             }
-            return point;
+            if (needHelp)
+            {
+                total += "NeedA";
+            }
+            else if (gaveHelp)
+            {
+                total += "A";
+            }
+            total += point;
+            return total;
         }
 
         private double dropCalc (int levelEnum) {
             double totalData = 0;
             int reps = 0;
+            int eventReps = 0;
             try {
                 try {
                     reps = (int) match["numEvents"];
@@ -94,7 +78,7 @@ namespace NRGScoutingApp {
                                 doTime /= 2;
                             }
                             totalData += doTime;
-                            reps++;
+                            eventReps++;
                         }
                     }
                 }
@@ -102,10 +86,10 @@ namespace NRGScoutingApp {
             } catch (System.NullReferenceException) {
 
             }
-            if (reps != 0) {
-                return totalData / reps;
+            if (eventReps > 0) {
+                return totalData / eventReps;
             } else {
-                return 0;
+                return Double.NaN;
             }
 
         }
@@ -113,6 +97,7 @@ namespace NRGScoutingApp {
         private double pickCalc (int sortType) {
             double total = 0;
             int reps = 0;
+            int eventReps = 0;
             try {
                 try {
                     reps = (int) match["numEvents"];
@@ -130,17 +115,17 @@ namespace NRGScoutingApp {
                                 doTime /= 2;
                             }
                             total += doTime;
-                            reps++;
+                            eventReps++;
                         }
                     }
                 }
             } catch (System.NullReferenceException) {
 
             }
-            if (reps != 0) {
-                return total / reps;
+            if (eventReps > 0) {
+                return total / eventReps;
             } else {
-                return 0;
+                return Double.NaN;
             }
         }
     }

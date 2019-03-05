@@ -175,7 +175,7 @@ namespace NRGScoutingApp {
             Dictionary<string, Color> teamCards = new Dictionary<string, Color> ();
             foreach (var match in fullData) {
                 if (teamCards.ContainsKey (match["team"].ToString ())) {
-                    Color temp = Color.White;
+                    Color temp = Color.Transparent;
                     if ((bool) match["redCard"]) {
                         temp = Color.Red;
                     } else if ((bool) match["yellowCard"]) {
@@ -186,7 +186,7 @@ namespace NRGScoutingApp {
                     }
                     teamCards[match["team"].ToString ()] = mainColor (teamCards[match["team"].ToString ()], temp);
                 } else {
-                    Color temp = Color.White;
+                    Color temp = Color.Transparent;
                     if ((bool) match["redCard"]) {
                         temp = Color.Red;
                     } else if ((bool) match["yellowCard"]) {
@@ -239,7 +239,7 @@ namespace NRGScoutingApp {
                     point += hatcherData[entry.Key] * ConstantVars.HATCHER_MULTIPLIER;
                 }
                 point -= (climbData[entry.Key] * ConstantVars.CLIMB_MULTIPLIER);
-                data.Add (entry.Key, point * ConstantVars.OVERALL_MULT);
+                data.Add (entry.Key, Math.Round(point * ConstantVars.OVERALL_MULT,2));
             }
             return data;
         }
@@ -279,7 +279,7 @@ namespace NRGScoutingApp {
             }
             Dictionary<string, double> pushData = new Dictionary<string, double> ();
             foreach (var data in totalData) {
-                pushData.Add (data.Key, data.Value / numsData[data.Key]);
+                pushData.Add (data.Key, Math.Round(data.Value / numsData[data.Key],2));
             }
             return pushData;
         }
@@ -351,7 +351,7 @@ namespace NRGScoutingApp {
             }
             Dictionary<string, double> data = new Dictionary<string, double> ();
             foreach (KeyValuePair<string, double> entry in totalPoint) {
-                data.Add (entry.Key, entry.Value / amountOfMatch[entry.Key]);
+                data.Add (entry.Key, Math.Round(entry.Value / amountOfMatch[entry.Key],2));
             }
             return data;
         }
@@ -391,7 +391,7 @@ namespace NRGScoutingApp {
 
             }
             foreach (var data in totalData) {
-                pushData.Add (data.Key, data.Value / numsData[data.Key]);
+                pushData.Add (data.Key, Math.Round(data.Value / numsData[data.Key],2));
             }
             return pushData;
         }

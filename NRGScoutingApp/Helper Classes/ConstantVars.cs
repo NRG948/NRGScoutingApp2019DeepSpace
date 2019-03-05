@@ -144,5 +144,11 @@ namespace NRGScoutingApp {
             "Mechanism?",
             "Placement?"
         };
+
+        /*
+         * Export Dialog Text
+         */
+         public static readonly String[] exportTypes = 
+            {"Cancel", "All", "Match", "Pit" };
     }
 }
