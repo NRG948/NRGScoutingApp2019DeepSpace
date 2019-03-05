@@ -12,19 +12,20 @@ namespace NRGScoutingApp {
         public ExportDialog () {
             InitializeComponent ();
             setExportEntries ();
-            initCSV ();
         }
+
+        private string exportText = "";
         private string csvString = "";
         void cancelClicked (object sender, System.EventArgs e) {
             PopupNavigation.Instance.PopAsync (true);
         }
         void copyClicked (object sender, System.EventArgs e) {
-            CrossClipboard.Current.SetText (exportDisplay.Text);
+            CrossClipboard.Current.SetText (exportText);
             PopupNavigation.Instance.PopAsync (true);
         }
 
         async void Share_Clicked (object sender, System.EventArgs e) {
-            await ShareText (exportDisplay.Text);
+            await ShareText (exportText);
         }
         public async Task ShareText (string text) {
             await Share.RequestAsync (new ShareTextRequest {
@@ -37,6 +38,7 @@ namespace NRGScoutingApp {
             await RankText ();
         }
         public async Task RankText () {
+            initCSV();
             string path = Environment.GetFolderPath (Environment.SpecialFolder.MyDocuments);
             await Share.RequestAsync (new ShareTextRequest {
                 Uri = "file://" + path + "/excel.csv",
@@ -58,12 +60,12 @@ namespace NRGScoutingApp {
             if (x.Count > 0) {
                 String exportEntries = JsonConvert.SerializeObject (
                     JObject.Parse (Preferences.Get ("matchEventsString", "")), Formatting.None);
-                exportDisplay.Text = exportEntries;
+                exportText = exportEntries;
             } else {
                 copyButton.IsEnabled = false;
                 shareButton.IsEnabled = false;
                 rankExportButton.IsEnabled = false;
-                exportDisplay.Text = "No Entries Yet!";
+                //exportDisplay.Text = "No Entries Yet!";
             }
         }
 

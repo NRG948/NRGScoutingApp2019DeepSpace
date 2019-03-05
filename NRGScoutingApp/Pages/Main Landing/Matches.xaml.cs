@@ -5,8 +5,6 @@ using Newtonsoft.Json.Linq;
 using Rg.Plugins.Popup.Services;
 using Xamarin.Essentials;
 using Xamarin.Forms;
-using Newtonsoft.Json;
-using Plugin.Clipboard;
 
 namespace NRGScoutingApp {
     public partial class Matches : ContentPage {
@@ -112,13 +110,6 @@ namespace NRGScoutingApp {
                 Preferences.Set ("tempPitNotes", "");
             }
             populateMatchesList ();
-        }
-
-        void Handle_Clicked(object sender, System.EventArgs e)
-        {
-            String exportEntries = JsonConvert.SerializeObject(
-                    JObject.Parse(Preferences.Get("matchEventsString", "")), Formatting.None);
-            CrossClipboard.Current.SetText(exportEntries);
         }
 
         void Handle_ItemTapped (object sender, Xamarin.Forms.ItemTappedEventArgs e) {

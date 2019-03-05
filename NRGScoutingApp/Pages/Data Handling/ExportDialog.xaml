@@ -28,13 +28,7 @@
                FontSize="20" 
                Margin="2,10"
                FontAttributes="Bold"/>
-        <ScrollView Orientation="Vertical" VerticalOptions="Center" MinimumHeightRequest="50">
-            <Label Text="" 
-                   LineBreakMode="CharacterWrap" 
-                   x:Name="exportDisplay"
-                   MinimumHeightRequest="50"/>
-        </ScrollView>
-        <Grid HorizontalOptions="Center"
+       <Grid HorizontalOptions="Center"
                 VerticalOptions="Center"
                 RowSpacing="5"
                 ColumnSpacing="2"
@@ -79,9 +73,3 @@
                 </Frame>
     </StackLayout>
 </pages:PopupPage>
-<!--xmlns:animations="clr-namespace:Rg.Plugins.Popup.Animations;assembly=Rg.Plugins.Popup"
-                 ios:Page.UseSafeArea="true"
-                 ios:NavigationPage.PrefersLargeTitles="true">
-    -->
-    <!--     AlignItems="Center"
-MaxLines="30"-->
