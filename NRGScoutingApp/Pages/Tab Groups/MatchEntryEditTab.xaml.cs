@@ -25,7 +25,7 @@ namespace NRGScoutingApp {
             var text = await DisplayAlert ("Alert", "Do you want to discard progress?", "Yes", "No");
             if (text) {
                 MatchParameters.clearMatchItems ();
-                await Navigation.PopAsync();
+                Navigation.PopAsync();
             }
         }
     }
