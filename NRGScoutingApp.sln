@@ -10,6 +10,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NRGScoutingApp.Droid", "Dro
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NRGScoutingApp.MobileAppService", "MobileAppService\NRGScoutingApp.MobileAppService.csproj", "{3161CCE4-89A9-423C-AC47-6C59EE04B6AC}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{962886B8-E1CB-43D4-AB34-0969C63582BF}"
+	ProjectSection(SolutionItems) = preProject
+		NRGScoutingApp.sln = NRGScoutingApp.sln
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		NRGScoutingApp\NRGScoutingApp.projitems*{621fcc7a-e611-45fc-a6a0-77b54b3136d9}*SharedItemsImports = 4
@@ -70,7 +75,7 @@ Global
 		SolutionGuid = {5D08523F-70D7-41E2-B656-B2C13AAE7A31}
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		version = 0.9.6
+		version = 0.9.7
 		Policies = $0
 		$0.DotNetNamingPolicy = $1
 		$1.DirectoryNamespaceAssociation = PrefixedHierarchical
