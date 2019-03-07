@@ -94,7 +94,7 @@ namespace NRGScoutingApp {
             {
                 appRestore = true;
                 NavigationPage.SetHasNavigationBar(this, false);
-                Navigation.PushAsync (new PitEntry (true) { Title = Preferences.Get ("teamStart", "") });
+                Navigation.PushAsync (new PitEntry (true, Preferences.Get("teamStart", "")) { Title = Preferences.Get ("teamStart", "") });
             } else if (Preferences.Get ("appState", 0) == 0) {
                 appRestore = false;
                 Preferences.Set ("appState", 0);

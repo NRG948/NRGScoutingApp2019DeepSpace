@@ -32,7 +32,7 @@ namespace NRGScoutingApp {
                 await Navigation.PushAsync(new MatchEntryEditTab() { Title = teamName });
                 Navigation.RemovePage(this);
             } else {
-                await Navigation.PushAsync (new PitEntry (true) { Title = teamName });
+                await Navigation.PushAsync (new PitEntry (true, teamName) { Title = teamName });
                 Navigation.RemovePage(this);
             }
         }

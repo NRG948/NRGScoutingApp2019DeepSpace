@@ -224,7 +224,13 @@ namespace NRGScoutingApp {
                         var final = scoutArray.ToList().Find(x => x["team"].ToString().Equals(team));
                         for (int i = 0; i < inputs.Length; i++)
                         {
-                            inputs[i].Text = (final["q" + i].ToString());
+                            try
+                            {
+                                inputs[i].Text = (final["q" + i].ToString());
+                            }
+                            catch{
+                                inputs[i].Text = "";
+                            }
                         }
                     }
                 }
@@ -236,7 +242,13 @@ namespace NRGScoutingApp {
                 {
                     for (int i = 0; i < inputs.Length; i++)
                     {
-                        inputs[i].Text = temp["q" + i];
+                        try
+                        {
+                            inputs[i].Text = temp["q" + i];
+                        }
+                        catch {
+                            inputs[i].Text = "";
+                        }
                     }
                 }
                 catch (NullReferenceException e)
