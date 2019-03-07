@@ -16,8 +16,10 @@ namespace NRGScoutingApp {
         }
         private Editor[] inputs = new Editor[ConstantVars.QUESTIONS.Length];
         private Label[] questions = new Label[ConstantVars.QUESTIONS.Length];
+        String teamName;
         //The boolean will hide the delete button if the entry is new
-        public PitEntry (bool newCreation) {
+        public PitEntry (bool newCreation, String teamName) {
+            this.teamName = teamName;
             NavigationPage.SetHasBackButton (this, false);
             InitializeComponent ();
             vals[vals.Length - 1] = Preferences.Get("teamStart", "memes not recieve");
@@ -75,12 +77,7 @@ namespace NRGScoutingApp {
                 }
                 Preferences.Set ("matchEventsString", JsonConvert.SerializeObject (data));
                 try {
-                    if (!Matches.appRestore) {
-                        await Navigation.PopToRootAsync (true);
-                    } else if (Matches.appRestore) {
-                        Matches.appRestore = false;
-                        await Navigation.PopAsync (true);
-                    }
+                    await Navigation.PopAsync(true);
                 } catch (System.NullReferenceException) { }
                 clearMatchItems ();
             }
@@ -91,13 +88,7 @@ namespace NRGScoutingApp {
             if (text) {
                 clearMatchItems ();
                 try {
-                    if (Matches.appRestore == false) {
-                        Matches.appRestore = false;
-                        await Navigation.PopToRootAsync (true);
-                    } else if (Matches.appRestore == true) {
-                        Matches.appRestore = false;
-                        await Navigation.PopAsync (true);
-                    }
+                    await Navigation.PopAsync();
                 } catch (System.NullReferenceException) {
 
                 }
@@ -126,7 +117,7 @@ namespace NRGScoutingApp {
             //Disables save button so app doesn't crash when user taps many times
             saveButton.IsEnabled = false;
 
-            vals[vals.Length-1] = Preferences.Get ("teamStart", "oof");
+            vals[vals.Length-1] = teamName;
             Console.WriteLine("team");
             Console.WriteLine(vals[vals.Length - 1]);
             Console.WriteLine(Preferences.Get("teamStart", "oof"));
@@ -135,16 +126,12 @@ namespace NRGScoutingApp {
                 s.Add("q" + i,vals[i]);
             }
             s.Add("team", vals[vals.Length - 1]);
+            Console.WriteLine(teamName);
             JObject notes = JObject.FromObject(s);
             Console.WriteLine(notes);
             if (isAllEmpty (notes)) {
                 try {
-                    if (Matches.appRestore == false) {
-                        Navigation.PopToRootAsync (true);
-                    } else if (Matches.appRestore == true) {
-                        Matches.appRestore = false;
-                        Navigation.PopAsync (true);
-                    }
+                    Navigation.PopAsync(true);
                 } catch (System.InvalidOperationException) { }
                 clearMatchItems ();
             } else {
@@ -175,12 +162,7 @@ namespace NRGScoutingApp {
             Preferences.Set ("matchEventsString", JsonConvert.SerializeObject (data));
             Console.WriteLine (Preferences.Get ("matchEventsString", ""));
             try {
-                if (!Matches.appRestore) {
-                    await Navigation.PopToRootAsync (true);
-                } else if (Matches.appRestore) {
-                    Matches.appRestore = false;
-                    await Navigation.PopAsync (true);
-                }
+                await Navigation.PopAsync(true);
             } catch (System.NullReferenceException) { }
             clearMatchItems ();
         }
@@ -203,84 +185,22 @@ namespace NRGScoutingApp {
 
         //Populates and checks in case of app crash
         void cacheCheck () {
-            //JObject mainObject = new JObject ();
-            //if (!String.IsNullOrWhiteSpace (Preferences.Get ("matchEventsString", ""))) {
-            //    mainObject = JObject.Parse (Preferences.Get ("matchEventsString", ""));
-            //}
-            //JArray scoutArray = new JArray ();
-            //if (mainObject.ContainsKey ("PitNotes")) {
-            //    scoutArray = (JArray) mainObject["PitNotes"];
-            //} else {
-            //    scoutArray = new JArray ();
-            //}
-            //Console.WriteLine(scoutArray);
-            //String team = Preferences.Get ("teamStart", "oof");
-            //Console.WriteLine("tempPit");
-            //Console.WriteLine(team);
-            //Dictionary<String, String> jsonNotes;
-            //try
-            //{
-            //    jsonNotes = JsonConvert.DeserializeObject<Dictionary<String, String>>(Preferences.Get("tempPitNotes", ""));
-            //}
-            //catch (JsonException)
-            //{
-            //    jsonNotes = new Dictionary<string, string>();
-            //}
-            //String[] s = new string[ConstantVars.QUESTIONS.Length];
-            //for (int i = 0; i < s.Length; i++)
-            //{
-            //    s[i] = "";
-            //}
-            //try
-            //{
-            //    if (scoutArray.Count > 0 && scoutArray.ToList().Exists(x => x["team"].ToString().Equals(team)))
-            //    {
-            //        var final = scoutArray.ToList().Find(x => x["team"].ToString().Equals(team));
-            //        Console.WriteLine("DAM 1");
-            //        for (int i = 0; i < vals.Length - 1; i++)
-            //        {
-            //            s[i] =  (final["q" + i].ToString());
-            //            Console.WriteLine(s[i].ToString());
-            //        }
-            //    }
-            //}
-            //catch (System.NullReferenceException) { }m
-            //try {
-            //    if(!Preferences.Get("tempPitNotes", "").Equals("")) {
-            //        for(int i = 0; i < jsonNotes.Count - 1; i++)
-            //        {
-            //            Console.WriteLine(jsonNotes["q"+i]);
-            //        }
-            //        Console.WriteLine("DAM 2");
-            //        for (int i = 0; i < jsonNotes.Count - 1; i++)
-            //        {
-            //            s[i] += jsonNotes["q" + i];
-            //            Console.WriteLine(s[i].ToString());
-            //        }
-            //        }
-            //    else
-            //    {}
-            //} catch (JsonException) {}
-            //Console.WriteLine("DAM 3");
-            //for (int i = 0; i < ConstantVars.QUESTIONS.Length; i++)
-            //{
-            //    inputs[i].Text += s[i];
-            //    Console.WriteLine(s[i].ToString());
-            //}
-            //vals[vals.Length - 1] = team;
-            ////Attempting to set all text boxes
-            //updateAllBoxes();
-            //updateItems ();
             String team = Preferences.Get("teamStart", "oof");
-            Dictionary<String, String> temp;
-            try
+            Dictionary<String, String> temp = new Dictionary<string, string>();
+            String tempNotes = Preferences.Get("tempPitNotes", "");
+            if (!String.IsNullOrWhiteSpace(tempNotes))
             {
-                temp = JsonConvert.DeserializeObject<Dictionary<String, String>>(Preferences.Get("tempPitNotes", ""));
+                try
+                {
+                    temp = JsonConvert.DeserializeObject<Dictionary<String, String>>(tempNotes);
+                }
+                catch (JsonException e)
+                {
+                    Console.WriteLine(e.StackTrace);
+                    temp = new Dictionary<String, String>();
+                }
             }
-            catch (JsonException e)
-            {
-                temp = new Dictionary<string, string>();
-            }
+
             if (temp.Count == 0)
             {
                 JObject mainObject = new JObject();

@@ -31,7 +31,7 @@ namespace NRGScoutingApp {
             if (goToMatch) {
                 await Navigation.PushAsync (new MatchEntryEditTab () { Title = teamName });
             } else {
-                await Navigation.PushAsync (new PitEntry (true) { Title = teamName });
+                await Navigation.PushAsync (new PitEntry (true, teamName) { Title = teamName });
             }
         }
 
