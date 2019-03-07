@@ -203,75 +203,129 @@ namespace NRGScoutingApp {
 
         //Populates and checks in case of app crash
         void cacheCheck () {
-            JObject mainObject = new JObject ();
-            if (!String.IsNullOrWhiteSpace (Preferences.Get ("matchEventsString", ""))) {
-                mainObject = JObject.Parse (Preferences.Get ("matchEventsString", ""));
-            }
-            JArray scoutArray = new JArray ();
-            if (mainObject.ContainsKey ("PitNotes")) {
-                scoutArray = (JArray) mainObject["PitNotes"];
-            } else {
-                scoutArray = new JArray ();
-            }
-            Console.WriteLine(scoutArray);
-            String team = Preferences.Get ("teamStart", "oof");
-            Console.WriteLine("tempPit");
-            Console.WriteLine(team);
-            Dictionary<String, String> jsonNotes;
+            //JObject mainObject = new JObject ();
+            //if (!String.IsNullOrWhiteSpace (Preferences.Get ("matchEventsString", ""))) {
+            //    mainObject = JObject.Parse (Preferences.Get ("matchEventsString", ""));
+            //}
+            //JArray scoutArray = new JArray ();
+            //if (mainObject.ContainsKey ("PitNotes")) {
+            //    scoutArray = (JArray) mainObject["PitNotes"];
+            //} else {
+            //    scoutArray = new JArray ();
+            //}
+            //Console.WriteLine(scoutArray);
+            //String team = Preferences.Get ("teamStart", "oof");
+            //Console.WriteLine("tempPit");
+            //Console.WriteLine(team);
+            //Dictionary<String, String> jsonNotes;
+            //try
+            //{
+            //    jsonNotes = JsonConvert.DeserializeObject<Dictionary<String, String>>(Preferences.Get("tempPitNotes", ""));
+            //}
+            //catch (JsonException)
+            //{
+            //    jsonNotes = new Dictionary<string, string>();
+            //}
+            //String[] s = new string[ConstantVars.QUESTIONS.Length];
+            //for (int i = 0; i < s.Length; i++)
+            //{
+            //    s[i] = "";
+            //}
+            //try
+            //{
+            //    if (scoutArray.Count > 0 && scoutArray.ToList().Exists(x => x["team"].ToString().Equals(team)))
+            //    {
+            //        var final = scoutArray.ToList().Find(x => x["team"].ToString().Equals(team));
+            //        Console.WriteLine("DAM 1");
+            //        for (int i = 0; i < vals.Length - 1; i++)
+            //        {
+            //            s[i] =  (final["q" + i].ToString());
+            //            Console.WriteLine(s[i].ToString());
+            //        }
+            //    }
+            //}
+            //catch (System.NullReferenceException) { }m
+            //try {
+            //    if(!Preferences.Get("tempPitNotes", "").Equals("")) {
+            //        for(int i = 0; i < jsonNotes.Count - 1; i++)
+            //        {
+            //            Console.WriteLine(jsonNotes["q"+i]);
+            //        }
+            //        Console.WriteLine("DAM 2");
+            //        for (int i = 0; i < jsonNotes.Count - 1; i++)
+            //        {
+            //            s[i] += jsonNotes["q" + i];
+            //            Console.WriteLine(s[i].ToString());
+            //        }
+            //        }
+            //    else
+            //    {}
+            //} catch (JsonException) {}
+            //Console.WriteLine("DAM 3");
+            //for (int i = 0; i < ConstantVars.QUESTIONS.Length; i++)
+            //{
+            //    inputs[i].Text += s[i];
+            //    Console.WriteLine(s[i].ToString());
+            //}
+            //vals[vals.Length - 1] = team;
+            ////Attempting to set all text boxes
+            //updateAllBoxes();
+            //updateItems ();
+            String team = Preferences.Get("teamStart", "oof");
+            Dictionary<String, String> temp;
             try
             {
-                jsonNotes = JsonConvert.DeserializeObject<Dictionary<String, String>>(Preferences.Get("tempPitNotes", ""));
+                temp = JsonConvert.DeserializeObject<Dictionary<String, String>>(Preferences.Get("tempPitNotes", ""));
             }
-            catch (JsonException)
+            catch (JsonException e)
             {
-                jsonNotes = new Dictionary<string, string>();
+                temp = new Dictionary<string, string>();
             }
-            String[] s = new string[ConstantVars.QUESTIONS.Length];
-            for (int i = 0; i < s.Length; i++)
+            if (temp.Count == 0)
             {
-                s[i] = "";
-            }
-            try
-            {
-                if (scoutArray.Count > 0 && scoutArray.ToList().Exists(x => x["team"].ToString().Equals(team)))
+                JObject mainObject = new JObject();
+                if (!String.IsNullOrWhiteSpace(Preferences.Get("matchEventsString", "")))
                 {
-                    var final = scoutArray.ToList().Find(x => x["team"].ToString().Equals(team));
-                    Console.WriteLine("DAM 1");
-                    for (int i = 0; i < vals.Length - 1; i++)
+                    mainObject = JObject.Parse(Preferences.Get("matchEventsString", ""));
+                }
+                JArray scoutArray = new JArray();
+                if (mainObject.ContainsKey("PitNotes"))
+                {
+                    scoutArray = (JArray)mainObject["PitNotes"];
+                }
+                else
+                {
+                    scoutArray = new JArray();
+                }
+                try
+                {
+                    if (scoutArray.Count > 0 && scoutArray.ToList().Exists(x => x["team"].ToString().Equals(team)))
                     {
-                        s[i] =  (final["q" + i].ToString());
-                        Console.WriteLine(s[i].ToString());
+                        var final = scoutArray.ToList().Find(x => x["team"].ToString().Equals(team));
+                        for (int i = 0; i < inputs.Length; i++)
+                        {
+                            inputs[i].Text = (final["q" + i].ToString());
+                        }
                     }
                 }
+                catch (System.NullReferenceException) { }
             }
-            catch (System.NullReferenceException) { }
-            try {
-                if(!Preferences.Get("tempPitNotes", "").Equals("")) {
-                    for(int i = 0; i < jsonNotes.Count - 1; i++)
-                    {
-                        Console.WriteLine(jsonNotes["q"+i]);
-                    }
-                    Console.WriteLine("DAM 2");
-                    for (int i = 0; i < jsonNotes.Count - 1; i++)
-                    {
-                        s[i] += jsonNotes["q" + i];
-                        Console.WriteLine(s[i].ToString());
-                    }
-                    }
-                else
-                {}
-            } catch (JsonException) {}
-            Console.WriteLine("DAM 3");
-            for (int i = 0; i < ConstantVars.QUESTIONS.Length; i++)
+            else
             {
-                inputs[i].Text += s[i];
-                Console.WriteLine(s[i].ToString());
+                try
+                {
+                    for (int i = 0; i < inputs.Length; i++)
+                    {
+                        inputs[i].Text = temp["q" + i];
+                    }
+                }
+                catch (NullReferenceException e)
+                {
+
+                }
             }
-            vals[vals.Length - 1] = team;
-            //Attempting to set all text boxes
             updateAllBoxes();
             updateItems ();
-
         }
     }
 }
