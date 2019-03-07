@@ -94,7 +94,7 @@ namespace NRGScoutingApp {
             {
                 appRestore = true;
                 NavigationPage.SetHasNavigationBar(this, false);
-                Navigation.PushAsync (new PitEntry (true) { Title = Preferences.Get ("teamStart", "") });
+                Navigation.PushAsync (new PitEntry (true, Preferences.Get("teamStart", "")) { Title = Preferences.Get ("teamStart", "") });
             } else if (Preferences.Get ("appState", 0) == 0) {
                 appRestore = false;
                 Preferences.Set ("appState", 0);
@@ -166,11 +166,22 @@ namespace NRGScoutingApp {
 
                 for (int i = 0; i < count; i++) {
                     JObject match = (JObject) temp[i];
-                    String teamIdentifier = match["team"].ToString ().Split ('-') [MatchFormat.teamNameOrNum];
-                    if (MatchFormat.teamNameOrNum == 0) {
-                        teamIdentifier = teamIdentifier.Substring (0, teamIdentifier.Length - 1);
-                    } else {
-                        teamIdentifier = teamIdentifier.Substring (1);
+                    String teamIdentifier = "";
+                    string teamName = match["team"].ToString();
+                    Console.WriteLine(teamName);
+                    for(int j = 0; j < teamName.Length; j++) {
+                        Console.WriteLine(j);
+                        Console.WriteLine(teamName[j]);
+                        if (teamName[j] == ('-')) {
+                            if (MatchFormat.teamNameOrNum == 1)
+                            {
+                                teamIdentifier = teamName.Substring(j + 1);
+                            }
+                            else {
+                                teamIdentifier = teamName.Substring(0, j-1);
+                            }
+                            j = teamName.Length;
+                        }
                     }
 
                     matchesList.Add (new MatchesListFormat {
