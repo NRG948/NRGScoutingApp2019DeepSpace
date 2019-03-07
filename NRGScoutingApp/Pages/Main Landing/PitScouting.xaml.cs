@@ -35,7 +35,7 @@ namespace NRGScoutingApp {
             String teamName = e.Item.ToString ();
             JArray pitValues = (JArray) JObject.Parse (Preferences.Get ("matchEventsString", "")) ["PitNotes"];
             Preferences.Set ("teamStart", teamName);
-            await Navigation.PushAsync (new PitEntry (false, teamName) { Title = teamName });
+            await Navigation.PushAsync (new PitEntry (false) { Title = teamName });
         }
 
         /*
