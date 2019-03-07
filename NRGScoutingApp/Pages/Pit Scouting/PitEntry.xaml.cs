@@ -253,7 +253,7 @@ namespace NRGScoutingApp {
                 }
                 catch (NullReferenceException e)
                 {
-
+                    Console.WriteLine(e.StackTrace);
                 }
             }
             updateAllBoxes();

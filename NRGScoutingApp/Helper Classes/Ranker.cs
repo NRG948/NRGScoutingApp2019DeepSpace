@@ -4,6 +4,7 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using Xamarin.Essentials;
 using Xamarin.Forms;
+using System.Linq;
 
 namespace NRGScoutingApp {
     public class Ranker {
@@ -63,7 +64,7 @@ namespace NRGScoutingApp {
                 retValues[3] = ConstantVars.noVal;
             }
             if (drop1Data.ContainsKey (team)) {
-                retValues[4] = timeAdaptiveString ((int) drop1Data[team]); //timeAdaptiveString
+                retValues[4] = timeAdaptiveString ((int) drop1Data[team]);
             } else {
                 retValues[4] = ConstantVars.noVal;
             }
@@ -120,15 +121,15 @@ namespace NRGScoutingApp {
             refresh ();
             switch (x) {
                 case MatchFormat.CHOOSE_RANK_TYPE.pick1: //hatch
-                    return hatchData;
+                    return timeFixer(hatchData);
                 case MatchFormat.CHOOSE_RANK_TYPE.pick2: //cargo
-                    return cargoData;
+                    return timeFixer(cargoData);
                 case MatchFormat.CHOOSE_RANK_TYPE.drop1:
-                    return drop1_4Data;
+                    return timeFixer(drop1_4Data);
                 case MatchFormat.CHOOSE_RANK_TYPE.drop2:
-                    return drop2Data;
+                    return timeFixer(drop2Data);
                 case MatchFormat.CHOOSE_RANK_TYPE.drop3:
-                    return drop3Data;
+                    return timeFixer(drop3Data);
                 case MatchFormat.CHOOSE_RANK_TYPE.climb:
                     return climbData;
                 case MatchFormat.CHOOSE_RANK_TYPE.overallRank:
@@ -137,6 +138,14 @@ namespace NRGScoutingApp {
                     Console.WriteLine ("ERROR: WRONG RANK TYPE");
                     return new Dictionary<string, double> ();
             }
+        }
+
+        public Dictionary<String,double> timeFixer(Dictionary<string, double> input) {
+            Dictionary<String, double> temp = new Dictionary<string, double>(input);
+            foreach(var s in input.ToList()) {
+                temp[s.Key] = Math.Round(ConstantVars.MATCH_SPAN_MS / input[s.Key],2);
+            }
+            return temp;
         }
 
         public Dictionary<string, string> returnDataAsTime (Dictionary<string, double> input) {
@@ -220,26 +229,26 @@ namespace NRGScoutingApp {
             Dictionary<string, double> climbData = getClimbData ();
             foreach (KeyValuePair<string, double> entry in climbData) {
                 double point = 0;
-                if (dropData1.ContainsKey (entry.Key)) {
-                    point += dropData1[entry.Key] * ConstantVars.DROP_1_MULTIPLIER;
+                if (dropData1.ContainsKey (entry.Key) && drop1Data[entry.Key] > 0) {
+                    point +=  ConstantVars.DROP_1_MULTIPLIER / dropData1[entry.Key];
                 }
-                if (dropData2.ContainsKey (entry.Key)) {
-                    point += dropData2[entry.Key] * ConstantVars.DROP_2_MULTIPLIER;
+                if (dropData2.ContainsKey (entry.Key) && drop2Data[entry.Key] > 0) {
+                    point +=  ConstantVars.DROP_2_MULTIPLIER/ dropData2[entry.Key];
                 }
-                if (dropData3.ContainsKey (entry.Key)) {
-                    point += dropData3[entry.Key] * ConstantVars.DROP_3_MULTIPLIER;
+                if (dropData3.ContainsKey (entry.Key) && drop3Data[entry.Key] > 0) {
+                    point += ConstantVars.DROP_3_MULTIPLIER/ dropData3[entry.Key];
                 }
-                if (dropData4.ContainsKey (entry.Key)) {
-                    point += dropData4[entry.Key] * ConstantVars.DROP_4_MULTIPLIER;
+                if (dropData4.ContainsKey (entry.Key) && drop4Data[entry.Key] > 0) {
+                    point += ConstantVars.DROP_4_MULTIPLIER/ dropData4[entry.Key];
                 }
-                if (cargoData.ContainsKey (entry.Key)) {
-                    point += cargoData[entry.Key] * ConstantVars.CARGO_MULTIPLIER;
+                if (cargoData.ContainsKey (entry.Key) && cargoData[entry.Key] > 0) {
+                    point +=  ConstantVars.CARGO_MULTIPLIER/ cargoData[entry.Key];
                 }
-                if (hatcherData.ContainsKey (entry.Key)) {
-                    point += hatcherData[entry.Key] * ConstantVars.HATCHER_MULTIPLIER;
+                if (hatcherData.ContainsKey (entry.Key) && hatcherData[entry.Key] > 0) {
+                    point +=  ConstantVars.HATCHER_MULTIPLIER/ hatcherData[entry.Key];
                 }
-                point -= (climbData[entry.Key] * ConstantVars.CLIMB_MULTIPLIER);
-                data.Add (entry.Key, Math.Round(point * ConstantVars.OVERALL_MULT,2));
+                point += (climbData[entry.Key] * ConstantVars.CLIMB_MULTIPLIER);
+                data.Add (entry.Key, Math.Round(point,2)); //* ConstantVars.OVERALL_MULT
             }
             return data;
         }

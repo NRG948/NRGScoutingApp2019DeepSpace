@@ -63,7 +63,7 @@ namespace NRGScoutingApp {
             //Gets all data and sets it into ascending order based on each team's average time
             Dictionary<string, double> x = mainRank.getRank (rankChoice);
             var y = from pair in x
-            orderby pair.Value ascending
+            orderby pair.Value descending
             select pair;
             setListVisibility (y.Count ());
             List<RankStruct> ranks = new List<RankStruct> ();
