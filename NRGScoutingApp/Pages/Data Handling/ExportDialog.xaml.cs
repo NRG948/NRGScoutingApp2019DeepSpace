@@ -38,7 +38,7 @@ namespace NRGScoutingApp {
                 JObject datas = JObject.Parse(this.exportText);
                 if (datas.ContainsKey("Matches"))
                 {
-                    exportText = JsonConvert.SerializeObject((JArray)datas["Matches"]);
+                    exportText = JsonConvert.SerializeObject(new JObject(new JProperty("Matches",(JArray)datas["Matches"])));
                     CrossClipboard.Current.SetText(exportText);
                 }
                 else
@@ -51,7 +51,7 @@ namespace NRGScoutingApp {
                 JObject datas = JObject.Parse(this.exportText);
                 if (datas.ContainsKey("Matches"))
                 {
-                    exportText = JsonConvert.SerializeObject((JArray)datas["PitNotes"]);
+                    exportText = JsonConvert.SerializeObject(new JObject(new JProperty("PitNotes",(JArray)datas["PitNotes"])));
                     CrossClipboard.Current.SetText(exportText);
                 }
                 else
