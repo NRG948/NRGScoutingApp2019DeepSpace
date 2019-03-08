@@ -213,7 +213,7 @@ namespace NRGScoutingApp {
             } else if (old.Equals (Color.Yellow) || current.Equals (Color.Yellow)) {
                 return Color.Yellow;
             } else {
-                return Color.White;
+                return Color.Transparent;
             }
         }
 

@@ -166,11 +166,18 @@ namespace NRGScoutingApp {
 
                 for (int i = 0; i < count; i++) {
                     JObject match = (JObject) temp[i];
-                    String teamIdentifier = match["team"].ToString ().Split ('-') [MatchFormat.teamNameOrNum];
-                    if (MatchFormat.teamNameOrNum == 0) {
-                        teamIdentifier = teamIdentifier.Substring (0, teamIdentifier.Length - 1);
-                    } else {
-                        teamIdentifier = teamIdentifier.Substring (1);
+                    string teamTemp = match["team"].ToString();
+                    String teamIdentifier = "";
+                    for(int j = 0; j < teamTemp.Length; j++) {
+                        if(teamTemp[j] == '-') {
+                            if(MatchFormat.teamNameOrNum == 1) {
+                                teamIdentifier = teamTemp.Substring(j+2);
+                            }
+                            else {
+                                teamIdentifier = teamTemp.Substring(0, j - 1);
+                            }
+                            j = teamTemp.Length;
+                         }
                     }
 
                     matchesList.Add (new MatchesListFormat {

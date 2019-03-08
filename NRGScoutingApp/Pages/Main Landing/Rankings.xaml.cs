@@ -69,7 +69,6 @@ namespace NRGScoutingApp {
             List<RankStruct> ranks = new List<RankStruct> ();
             foreach (var s in y) {
                 ranks.Add (new RankStruct { Key = s.Key, Value = s.Value, color = getTeamColor (s.Key) });
-                Console.WriteLine (getTeamColor (s.Key).ToString ());
             }
             listView.ItemsSource = ranks;
         }
