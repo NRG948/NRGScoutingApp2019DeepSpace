@@ -130,7 +130,7 @@ namespace NRGScoutingApp {
          * PIT SCOUTING
          */
         //Separates the entries if same team was scouted twice
-        public static readonly String entrySeparator = "\nANOTHER PIT ENTRY:::::::\n";
+        public static readonly String entrySeparator = "\n:::::::\n";
         public static readonly String[] QUESTIONS = {
             "Hours practiced?",
             "Drive base?",
@@ -142,7 +142,9 @@ namespace NRGScoutingApp {
             "Can you get to the highest platform in the hab? What is your prefered method in endgame?",
             "Speed?",
             "Mechanism?",
-            "Placement?"
+            "Placement?",
+            "Anything you noticed about the team?",
+            "Other"
         };
 
         /*
