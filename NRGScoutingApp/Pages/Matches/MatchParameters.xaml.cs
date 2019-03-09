@@ -261,6 +261,7 @@ namespace NRGScoutingApp {
             Preferences.Set ("tempParams", "");
             Preferences.Set ("tempMatchEvents", "");
             NewMatchStart.events.Clear ();
+            MatchParameters.Entry = new MatchFormat.EntryParams();
         }
 
         //Takes all objects and adds items while returning the main page
@@ -269,11 +270,17 @@ namespace NRGScoutingApp {
             data["Matches"] = temp;
             Preferences.Set ("matchEventsString", JsonConvert.SerializeObject (data));
             clearMatchItems ();
-            try {
-                Navigation.PopAsync();
-            } catch (System.InvalidOperationException) {
+            Device.BeginInvokeOnMainThread(() =>
+           {
+               try
+               {
+                   Navigation.PopAsync();
+               }
+               catch (System.InvalidOperationException)
+               {
 
-            }
+               }
+           });
         }
 
         //Disables Auto Buttons if certain button is not toggled
