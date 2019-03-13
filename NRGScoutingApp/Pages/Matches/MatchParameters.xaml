@@ -10,6 +10,15 @@
     <ContentPage.Content NavigationPage.HasNavigationBar="False">
         <ScrollView>
         <StackLayout>
+                <Label Text="Change Team" 
+                        Margin="10" 
+                           FontSize="20"
+                       TextColor="Blue"
+                       x:Name="teamChanger">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="teamChanged"/>
+                        </Label.GestureRecognizers>
+                    </Label>
         <FlexLayout 
             Direction="Row"
             AlignItems="Center">

@@ -22,6 +22,15 @@
     <ContentPage.Content>
         <ScrollView>
         <StackLayout Padding="5" x:Name="mainLayout">
+                <Label Text="Change Team" 
+                        Margin="10" 
+                           FontSize="20"
+                       TextColor="Blue"
+                       x:Name="teamChanger">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="teamChanged"/>
+                        </Label.GestureRecognizers>
+                    </Label>
                 <Button Text="Delete Entry" Clicked="deleteClicked" x:Name="deleteButton"/>
         </StackLayout>
             </ScrollView> 

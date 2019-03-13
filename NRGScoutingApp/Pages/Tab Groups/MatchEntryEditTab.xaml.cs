@@ -21,6 +21,16 @@ namespace NRGScoutingApp {
             return true;
         }
 
+        private String teamName = Preferences.Get("teamStart", "");
+
+        protected override void OnAppearing()
+        {
+            if (!teamName.Equals(Preferences.Get("teamStart", "")))
+            {
+                teamName = Preferences.Get("teamStart", "hello");
+                this.Title = teamName;
+            }
+        }
         async void backClicked (object sender, System.EventArgs e) {
             var text = await DisplayAlert ("Alert", "Do you want to discard progress?", "Yes", "No");
             if (text) {
