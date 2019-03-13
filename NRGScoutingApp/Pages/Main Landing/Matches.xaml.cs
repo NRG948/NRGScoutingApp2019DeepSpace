@@ -65,7 +65,7 @@ namespace NRGScoutingApp {
         async void newClicked (object sender, System.EventArgs e) {
             popNav = false;
             appRestore = false;
-            await Navigation.PushAsync (new MatchEntryStart (true));
+            await Navigation.PushAsync (new MatchEntryStart (ConstantVars.TEAM_SELECTION_TYPES.match));
         }
 
         private void SearchBar_OnTextChanged (object sender, TextChangedEventArgs e) {
@@ -168,21 +168,11 @@ namespace NRGScoutingApp {
                     JObject match = (JObject) temp[i];
                     string teamTemp = match["team"].ToString();
                     String teamIdentifier = "";
-                    for(int j = 0; j < teamTemp.Length; j++) {
-                        if(teamTemp[j] == '-') {
-                            if(MatchFormat.teamNameOrNum == 1) {
-                                teamIdentifier = teamTemp.Substring(j+2);
-                            }
-                            else {
-                                teamIdentifier = teamTemp.Substring(0, j - 1);
-                            }
-                            j = teamTemp.Length;
-                         }
-                    }
+                    teamIdentifier = teamTemp.Split("-", 2)[MatchFormat.teamNameOrNum].Trim();
 
                     matchesList.Add (new MatchesListFormat {
-                        matchNum = "Match " + match["matchNum"].ToString (),
-                            teamNameAndSide = teamIdentifier + " - " + MatchFormat.matchSideFromEnum ((int) match["side"])
+                        matchNum = "Match " + match["matchNum"],
+                        teamNameAndSide = teamIdentifier + " - " + MatchFormat.matchSideFromEnum ((int) match["side"])
                     });
                 }
                 listView.ItemsSource = matchesList;

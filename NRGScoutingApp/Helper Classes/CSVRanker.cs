@@ -4,15 +4,18 @@ using Newtonsoft.Json.Linq;
 
 namespace NRGScoutingApp {
     public class CSVRanker {
-        //ORDERL Team,Match Num,Side,Avg. Hatch,Avg. Cargo,Climb,Lvl1,Lvl2,Lvl3,Cargoship
+        //ORDERL Team,Match Num,Side,Avg. Hatch,Num Hatch,Avg. Cargo,Num Cargo,Climb,Lvl1,Lvl2,Lvl3,Cargoship
         private JObject match;
+
         public string matchCalc (JObject match) {
             this.match = match;
             String total = this.match["team"] + "," +
                 this.match["matchNum"] + "," +
-                MatchFormat.matchSideFromEnum ((int) this.match["side"]) + ",";
-            total += pickCalc ((int) MatchFormat.CHOOSE_RANK_TYPE.pick1) + "," +
-                pickCalc ((int) MatchFormat.CHOOSE_RANK_TYPE.pick2) + ",";
+                MatchFormat.matchSideFromEnum ((int) this.match["side"]) + ","; //Side
+            total += pickCalc ((int) MatchFormat.CHOOSE_RANK_TYPE.pick1) + "," + //Hatch
+                numCalc((int) MatchFormat.CHOOSE_RANK_TYPE.pick1) + "," +
+                pickCalc ((int) MatchFormat.CHOOSE_RANK_TYPE.pick2) + "," + //Cargo
+                numCalc((int)MatchFormat.CHOOSE_RANK_TYPE.pick2) + ",";
 
             total += climbCalc () + ",";
 
@@ -73,8 +76,8 @@ namespace NRGScoutingApp {
                 for (int i = 1; i < reps; i++) {
                     if (Convert.ToInt32 (match["TE" + i + "_1"]) == levelEnum) {
                         if ((Convert.ToInt32 (match["TE" + (i - 1) + "_1"]) != (int) MatchFormat.ACTION.startClimb) && ((int) match["TE" + (i - 1) + "_1"] != (int) MatchFormat.ACTION.dropNone)) {
-                            int doTime = Convert.ToInt32 (match["TE" + (i) + "_0"]) - Convert.ToInt32 (match["TE" + (i - 1) + "_0"]);
-                            if (Convert.ToInt32 (match["TE" + (i) + "_0"]) <= ConstantVars.AUTO_LENGTH && !(bool) match["autoOTele"]) {
+                            int doTime = Convert.ToInt32 (match["TE" + i + "_0"]) - Convert.ToInt32 (match["TE" + (i - 1) + "_0"]);
+                            if (Convert.ToInt32 (match["TE" + i + "_0"]) <= ConstantVars.AUTO_LENGTH && !(bool) match["autoOTele"]) {
                                 doTime /= 2;
                             }
                             totalData += doTime;
@@ -86,12 +89,43 @@ namespace NRGScoutingApp {
             } catch (System.NullReferenceException) {
 
             }
+
             if (eventReps > 0) {
                 return totalData / eventReps;
             } else {
                 return Double.NaN;
             }
 
+        }
+
+        private double numCalc(int sortType)
+        {
+            int total = 0;
+            int reps = 0;
+            try
+            {
+                try
+                {
+                    reps = (int)match["numEvents"];
+                }
+                catch (JsonException e)
+                {
+                    Console.WriteLine(e.StackTrace);
+                    reps = 0;
+                }
+                for (int i = 0; i < reps; i++)
+                {
+                    if (Convert.ToInt32(match["TE" + i + "_1"]) == sortType && i != reps - 1)
+                    {
+                        if ((Convert.ToInt32(match["TE" + (i + 1) + "_1"]) != (int)MatchFormat.ACTION.startClimb) && ((int)match["TE" + (i + 1) + "_1"] != (int)MatchFormat.ACTION.dropNone))
+                        {
+                            total++;
+                        }
+                    }
+                }
+            }
+            catch (NullReferenceException){}
+            return total;
         }
 
         private double pickCalc (int sortType) {
@@ -104,10 +138,7 @@ namespace NRGScoutingApp {
                 } catch (JsonException) {
                     reps = 0;
                 }
-                Console.WriteLine (reps);
                 for (int i = 0; i < reps; i++) {
-                    Console.WriteLine (match["TE" + i + "_1"]);
-                    Convert.ToInt32 (match["TE" + i + "_1"]);
                     if (Convert.ToInt32 (match["TE" + i + "_1"]) == sortType && i != reps - 1) {
                         if ((Convert.ToInt32 (match["TE" + (i + 1) + "_1"]) != (int) MatchFormat.ACTION.startClimb) && ((int) match["TE" + (i + 1) + "_1"] != (int) MatchFormat.ACTION.dropNone)) {
                             int doTime = Convert.ToInt32 (match["TE" + (i + 1) + "_0"]) - Convert.ToInt32 (match["TE" + i + "_0"]);

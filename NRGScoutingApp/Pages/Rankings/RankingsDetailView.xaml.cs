@@ -15,7 +15,7 @@ namespace NRGScoutingApp {
         public RankingsDetailView (String[] times) {
             InitializeComponent ();
             setScoreValues (times);
-            Rankings.teamSend = Rankings.teamSend.Split ('-') [MatchFormat.teamNameOrNum].Trim ();
+            Rankings.teamSend = Rankings.teamSend.Split ('-',2) [MatchFormat.teamNameOrNum].Trim();
             listView.ItemsSource = Matches.matchesList.Where (matchesList => matchesList.teamNameAndSide.ToLower ().Contains (Rankings.teamSend.ToLower ()));
         }
 
