@@ -10,7 +10,7 @@ namespace NRGScoutingApp {
     public partial class PitEntry : ContentPage {
        //Object for storing all the pit notes for JSON conversion
         public String[] vals = new string[ConstantVars.QUESTIONS.Length + 1];
-       
+
         protected override bool OnBackButtonPressed () {
             return true;
         }
@@ -19,17 +19,20 @@ namespace NRGScoutingApp {
         {
             if (!teamName.Equals(Preferences.Get("teamStart", "")))
             {
-                teamName = Preferences.Get("teamStart", "rip");
-                this.Title = teamName;
+                newName = Preferences.Get("teamStart", "rip");
+                this.Title = newName;
             }
         }
 
         private Editor[] inputs = new Editor[ConstantVars.QUESTIONS.Length];
         private Label[] questions = new Label[ConstantVars.QUESTIONS.Length];
         String teamName;
+        String newName;
+
         //The boolean will hide the delete button if the entry is new
         public PitEntry (bool newCreation, String teamName) {
             this.teamName = teamName;
+            newName = teamName;
             NavigationPage.SetHasBackButton (this, false);
             InitializeComponent ();
             vals[vals.Length - 1] = Preferences.Get("teamStart", "memes not recieve");
@@ -131,23 +134,17 @@ namespace NRGScoutingApp {
         void saveClicked (object sender, System.EventArgs e) {
             //Disables save button so app doesn't crash when user taps many times
             saveButton.IsEnabled = false;
-
-            vals[vals.Length-1] = teamName;
-            Console.WriteLine("team");
-            Console.WriteLine(vals[vals.Length - 1]);
-            Console.WriteLine(Preferences.Get("teamStart", "oof"));
+            vals[vals.Length-1] = newName;
             Dictionary<String,String> s = new Dictionary<String,String>();
             for(int i = 0; i < vals.Length-1; i++) {
                 s.Add("q" + i,vals[i]);
             }
             s.Add("team", vals[vals.Length - 1]);
-            Console.WriteLine(teamName);
             JObject notes = JObject.FromObject(s);
-            Console.WriteLine(notes);
             if (isAllEmpty (notes)) {
                 try {
                     Navigation.PopAsync(true);
-                } catch (System.InvalidOperationException) { }
+                } catch (InvalidOperationException) { }
                 clearMatchItems ();
             } else {
                 //Adds or creates new JObject to start all data in app cache
@@ -161,7 +158,7 @@ namespace NRGScoutingApp {
                         var item = temp.ToList ().Find (x => x["team"].Equals (notes["team"]));
                         temp.Remove (item);
                         for (int i = 0; i < ConstantVars.QUESTIONS.Length; i++) {
-                            item["q" + (i)] = giveNewString (item["q" + (i)].ToString (), notes["q" + (i)].ToString ());
+                            item["q" + (i)] = giveNewString (item["q" + i].ToString (), notes["q" + (i)].ToString ());
                         }
                     }
                     pushBackToHome (data, temp, notes);
@@ -173,7 +170,11 @@ namespace NRGScoutingApp {
         async void pushBackToHome (JObject data, JArray temp, JObject parameters) {
             temp.Add (new JObject (parameters));
             data["PitNotes"] = temp;
-            Console.WriteLine(temp);
+            if (deleteButton.IsVisible && teamName != newName)
+            {
+                var delItem = data["PitNotes"].ToList().Find(x => x["team"].ToString().Equals(teamName));
+                temp.Remove(delItem);
+            }
             Preferences.Set ("matchEventsString", JsonConvert.SerializeObject (data));
             Console.WriteLine (Preferences.Get ("matchEventsString", ""));
             try {
@@ -191,9 +192,9 @@ namespace NRGScoutingApp {
 
         //Checks if all the question answers are empty
         private bool isAllEmpty (JObject valsIn) {
-            bool total = true;
+            bool total = false;
             for (int i = 0; i < ConstantVars.QUESTIONS.Length; i++) {
-                total = String.IsNullOrWhiteSpace (valsIn["q" + i].ToString ()) && total;
+                total = !String.IsNullOrWhiteSpace (valsIn["q" + i].ToString ()) || total;
             }
             return total;
         }
