@@ -20,7 +20,7 @@ namespace NRGScoutingApp {
         }
 
         void newPit (object sender, System.EventArgs e) {
-            Navigation.PushAsync (new MatchEntryStart (false));
+            Navigation.PushAsync (new MatchEntryStart (ConstantVars.TEAM_SELECTION_TYPES.pit));
         }
 
         void SearchBar_OnTextChanged (object sender, Xamarin.Forms.TextChangedEventArgs e) {

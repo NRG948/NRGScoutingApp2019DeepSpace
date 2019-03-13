@@ -12,6 +12,12 @@ namespace NRGScoutingApp {
             return true;
         }
 
+        public static Boolean updateTeam = false;
+
+        protected override void OnAppearing() {
+            teamName = Preferences.Get("teamStart", "");
+        }
+
         public String teamName = Preferences.Get ("teamStart", "");
         public static MatchFormat.EntryParams Entry = new MatchFormat.EntryParams {
             team = Preferences.Get ("teamStart", ""),
@@ -39,6 +45,11 @@ namespace NRGScoutingApp {
             InitializeComponent ();
             cacheCheck ();
             onParamUpdate ();
+        }
+
+        void teamChanged(object sender, System.EventArgs e)
+        {
+            Navigation.PushAsync(new MatchEntryStart(ConstantVars.TEAM_SELECTION_TYPES.teamSelection));
         }
 
         //Confirms user action to go back and clears all data for next match
@@ -260,8 +271,9 @@ namespace NRGScoutingApp {
             Preferences.Set ("lastItemDropped", 0);
             Preferences.Set ("tempParams", "");
             Preferences.Set ("tempMatchEvents", "");
+            MatchEvents.update = true;
             NewMatchStart.events.Clear ();
-            MatchParameters.Entry = new MatchFormat.EntryParams();
+            Entry = new MatchFormat.EntryParams();
         }
 
         //Takes all objects and adds items while returning the main page

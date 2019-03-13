@@ -113,7 +113,7 @@ namespace NRGScoutingApp {
         async public void initCSV () {
             await Task.Run (async () => {
                 Ranker rank = new Ranker (Preferences.Get ("matchEventsString", ""));
-                csvString = "Team,Match Num,Side,Avg. Hatch,Avg. Cargo,Climb,Lvl1,Lvl2,Lvl3,Cargoship\n";
+                csvString = "Team,Match Num,Side,Avg. Hatch,Num Hatch,Avg. Cargo,Num Cargo,Climb,Lvl1,Lvl2,Lvl3,Cargoship\n";
                 JArray matches = rank.getDataAsJArray ();
                 CSVRanker singleMatch = new CSVRanker ();
                 foreach (JObject match in matches) {

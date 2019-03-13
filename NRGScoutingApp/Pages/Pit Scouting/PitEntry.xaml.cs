@@ -14,6 +14,16 @@ namespace NRGScoutingApp {
         protected override bool OnBackButtonPressed () {
             return true;
         }
+
+        protected override void OnAppearing()
+        {
+            if (!teamName.Equals(Preferences.Get("teamStart", "")))
+            {
+                teamName = Preferences.Get("teamStart", "rip");
+                this.Title = teamName;
+            }
+        }
+
         private Editor[] inputs = new Editor[ConstantVars.QUESTIONS.Length];
         private Label[] questions = new Label[ConstantVars.QUESTIONS.Length];
         String teamName;
@@ -54,6 +64,11 @@ namespace NRGScoutingApp {
         protected void Comment_Box_Updated (object sender, Xamarin.Forms.TextChangedEventArgs e) {
             updateAllBoxes ();
             updateItems ();
+        }
+
+        void teamChanged(object sender, System.EventArgs e)
+        {
+            Navigation.PushAsync(new MatchEntryStart(ConstantVars.TEAM_SELECTION_TYPES.teamSelection));
         }
 
         void updateAllBoxes () {
