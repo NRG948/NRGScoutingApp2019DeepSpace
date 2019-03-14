@@ -115,10 +115,8 @@ namespace NRGScoutingApp {
 
         void updateItems () {
             Dictionary<String, String> temp = new Dictionary<string, string>();
-            Console.WriteLine("DAM IT");
             for (int i = 0; i < vals.Length-1; i++) {
                 temp.Add("q" + i, vals[i]);
-                Console.WriteLine(vals[i]);
             }
             temp["team"] =  vals[vals.Length-1];
             Preferences.Set("tempPitNotes", JsonConvert.SerializeObject(temp));
@@ -146,7 +144,7 @@ namespace NRGScoutingApp {
                     Navigation.PopAsync(true);
                 } catch (InvalidOperationException) { }
                 clearMatchItems ();
-            } else {
+                } else {
                 //Adds or creates new JObject to start all data in app cache
                 JObject data = MatchParameters.initializeEventsObject ();
                 if (!data.ContainsKey ("PitNotes")) {
@@ -158,7 +156,11 @@ namespace NRGScoutingApp {
                         var item = temp.ToList ().Find (x => x["team"].Equals (notes["team"]));
                         temp.Remove (item);
                         for (int i = 0; i < ConstantVars.QUESTIONS.Length; i++) {
-                            item["q" + (i)] = giveNewString (item["q" + i].ToString (), notes["q" + (i)].ToString ());
+                            try
+                            {
+                                item["q" + (i)] = giveNewString(item["q" + i].ToString(), notes["q" + (i)].ToString());
+                            }
+                            catch{}
                         }
                     }
                     pushBackToHome (data, temp, notes);
@@ -169,14 +171,13 @@ namespace NRGScoutingApp {
         //calls all final methods to return to home as it updates all the data
         async void pushBackToHome (JObject data, JArray temp, JObject parameters) {
             temp.Add (new JObject (parameters));
-            data["PitNotes"] = temp;
             if (deleteButton.IsVisible && teamName != newName)
             {
                 var delItem = data["PitNotes"].ToList().Find(x => x["team"].ToString().Equals(teamName));
                 temp.Remove(delItem);
             }
+            data["PitNotes"] = temp;
             Preferences.Set ("matchEventsString", JsonConvert.SerializeObject (data));
-            Console.WriteLine (Preferences.Get ("matchEventsString", ""));
             try {
                 await Navigation.PopAsync(true);
             } catch (System.NullReferenceException) { }
@@ -192,9 +193,9 @@ namespace NRGScoutingApp {
 
         //Checks if all the question answers are empty
         private bool isAllEmpty (JObject valsIn) {
-            bool total = false;
+            bool total = true;
             for (int i = 0; i < ConstantVars.QUESTIONS.Length; i++) {
-                total = !String.IsNullOrWhiteSpace (valsIn["q" + i].ToString ()) || total;
+                total = String.IsNullOrWhiteSpace (valsIn["q" + i].ToString ()) && total;
             }
             return total;
         }
