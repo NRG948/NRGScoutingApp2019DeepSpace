@@ -2,17 +2,21 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+using System.Threading;
 
+using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace NRGScoutingApp.Pages.Main_Landing
 {
 
-	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class Settings : ContentPage
-	{
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class Settings : ContentPage
+    {
+        private DateTime timer;
+        private Thread a;
+
         public static readonly double MULT_SANDSTORM_MANUAL = 1;
         public static readonly double MULT_SANDSTORM_AUTO = 0.5;
         public static readonly double PTS_BASELINE_NONE = 0;
@@ -48,9 +52,24 @@ namespace NRGScoutingApp.Pages.Main_Landing
         public static readonly int PTS_LVL_2_CLIMB = 6;
         public static readonly int PTS_LVL_3_CLIMB = 12;
 
-        public Settings ()
-		{
-			InitializeComponent ();
-		}
-	}
+        public Settings()
+        {
+            InitializeComponent();
+            a = new Thread(new ThreadStart(TitleColorChange));
+
+        }
+
+        void TitleColorChange()
+        {
+            timer = DateTime.Now;
+            while (true)
+            {
+                double span = (double) DateTime.Now.Subtract(timer).TotalMilliseconds;
+                span %= 8000;
+                span -= 4000;
+                span = Math.Abs(span);
+                fancy.TextColor = Color.FromRgb(255, (int) (span * 255 / 4000), 0);
+            }
+        }
+    }
 }
