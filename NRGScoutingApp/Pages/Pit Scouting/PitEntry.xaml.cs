@@ -10,7 +10,7 @@ namespace NRGScoutingApp {
     public partial class PitEntry : ContentPage {
        //Object for storing all the pit notes for JSON conversion
         public String[] vals = new string[ConstantVars.QUESTIONS.Length + 1];
-       
+
         protected override bool OnBackButtonPressed () {
             return true;
         }
@@ -19,17 +19,20 @@ namespace NRGScoutingApp {
         {
             if (!teamName.Equals(Preferences.Get("teamStart", "")))
             {
-                teamName = Preferences.Get("teamStart", "rip");
-                this.Title = teamName;
+                newName = Preferences.Get("teamStart", "rip");
+                this.Title = newName;
             }
         }
 
         private Editor[] inputs = new Editor[ConstantVars.QUESTIONS.Length];
         private Label[] questions = new Label[ConstantVars.QUESTIONS.Length];
         String teamName;
+        String newName;
+
         //The boolean will hide the delete button if the entry is new
         public PitEntry (bool newCreation, String teamName) {
             this.teamName = teamName;
+            newName = teamName;
             NavigationPage.SetHasBackButton (this, false);
             InitializeComponent ();
             vals[vals.Length - 1] = Preferences.Get("teamStart", "memes not recieve");
@@ -112,10 +115,8 @@ namespace NRGScoutingApp {
 
         void updateItems () {
             Dictionary<String, String> temp = new Dictionary<string, string>();
-            Console.WriteLine("DAM IT");
             for (int i = 0; i < vals.Length-1; i++) {
                 temp.Add("q" + i, vals[i]);
-                Console.WriteLine(vals[i]);
             }
             temp["team"] =  vals[vals.Length-1];
             Preferences.Set("tempPitNotes", JsonConvert.SerializeObject(temp));
@@ -131,25 +132,19 @@ namespace NRGScoutingApp {
         void saveClicked (object sender, System.EventArgs e) {
             //Disables save button so app doesn't crash when user taps many times
             saveButton.IsEnabled = false;
-
-            vals[vals.Length-1] = teamName;
-            Console.WriteLine("team");
-            Console.WriteLine(vals[vals.Length - 1]);
-            Console.WriteLine(Preferences.Get("teamStart", "oof"));
+            vals[vals.Length-1] = newName;
             Dictionary<String,String> s = new Dictionary<String,String>();
             for(int i = 0; i < vals.Length-1; i++) {
                 s.Add("q" + i,vals[i]);
             }
             s.Add("team", vals[vals.Length - 1]);
-            Console.WriteLine(teamName);
             JObject notes = JObject.FromObject(s);
-            Console.WriteLine(notes);
             if (isAllEmpty (notes)) {
                 try {
                     Navigation.PopAsync(true);
-                } catch (System.InvalidOperationException) { }
+                } catch (InvalidOperationException) { }
                 clearMatchItems ();
-            } else {
+                } else {
                 //Adds or creates new JObject to start all data in app cache
                 JObject data = MatchParameters.initializeEventsObject ();
                 if (!data.ContainsKey ("PitNotes")) {
@@ -161,7 +156,11 @@ namespace NRGScoutingApp {
                         var item = temp.ToList ().Find (x => x["team"].Equals (notes["team"]));
                         temp.Remove (item);
                         for (int i = 0; i < ConstantVars.QUESTIONS.Length; i++) {
-                            item["q" + (i)] = giveNewString (item["q" + (i)].ToString (), notes["q" + (i)].ToString ());
+                            try
+                            {
+                                item["q" + (i)] = giveNewString(item["q" + i].ToString(), notes["q" + (i)].ToString());
+                            }
+                            catch{}
                         }
                     }
                     pushBackToHome (data, temp, notes);
@@ -172,10 +171,13 @@ namespace NRGScoutingApp {
         //calls all final methods to return to home as it updates all the data
         async void pushBackToHome (JObject data, JArray temp, JObject parameters) {
             temp.Add (new JObject (parameters));
+            if (deleteButton.IsVisible && teamName != newName)
+            {
+                var delItem = data["PitNotes"].ToList().Find(x => x["team"].ToString().Equals(teamName));
+                temp.Remove(delItem);
+            }
             data["PitNotes"] = temp;
-            Console.WriteLine(temp);
             Preferences.Set ("matchEventsString", JsonConvert.SerializeObject (data));
-            Console.WriteLine (Preferences.Get ("matchEventsString", ""));
             try {
                 await Navigation.PopAsync(true);
             } catch (System.NullReferenceException) { }
