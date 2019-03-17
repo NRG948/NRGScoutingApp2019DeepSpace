@@ -11,12 +11,12 @@ namespace NRGScoutingApp {
 
         public App () {
             InitializeComponent ();
-            MainPage = new NavigationPage(new NavTab());
+            MainPage = new NavigationPage (new NavTab ());
             Application.Current.MainPage = new NavigationPage (new NavTab ());
             if (UseMockDataStore)
                 DependencyService.Register<MockDataStore> ();
             else
                 DependencyService.Register<CloudDataStore> ();
         }
-        }
+    }
 }

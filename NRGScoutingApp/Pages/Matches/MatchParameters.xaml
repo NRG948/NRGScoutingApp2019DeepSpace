@@ -1,230 +1,230 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-             x:Class="NRGScoutingApp.MatchParameters"
-             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
-             ios:Page.UseSafeArea="true"
-             Icon="ic_assignment.png"
-             ios:Title="Match Info"
-             ios:NavigationPage.PrefersLargeTitles="true">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="NRGScoutingApp.MatchParameters"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    ios:Page.UseSafeArea="true"
+    Icon="ic_assignment.png"
+    ios:Title="Match Info"
+    ios:NavigationPage.PrefersLargeTitles="true">
     <ContentPage.Content NavigationPage.HasNavigationBar="False">
         <ScrollView>
-        <StackLayout>
-                <Label Text="Change Team" 
-                        Margin="10" 
-                           FontSize="20"
-                       TextColor="Blue"
-                       x:Name="teamChanger">
+            <StackLayout>
+                <Label Text="Change Team"
+                    Margin="10"
+                    FontSize="20"
+                    TextColor="Blue"
+                    x:Name="teamChanger">
                     <Label.GestureRecognizers>
                         <TapGestureRecognizer Tapped="teamChanged"/>
-                        </Label.GestureRecognizers>
-                    </Label>
-        <FlexLayout 
-            Direction="Row"
-            AlignItems="Center">
-            <Label Text="Match Number:"
-                   Margin="10"
-                   FontSize="20"/>
-        <Entry Placeholder="(Type Here)"
-               x:Name="matchnum"
-               TextChanged="Match_Num_Updated"
-               Keyboard="Numeric"
-               MaxLength="8"/>
+                    </Label.GestureRecognizers>
+                </Label>
+                <FlexLayout
+                    Direction="Row"
+                    AlignItems="Center">
+                    <Label Text="Match Number:"
+                        Margin="10"
+                        FontSize="20"/>
+                    <Entry Placeholder="(Type Here)"
+                        x:Name="matchnum"
+                        TextChanged="Match_Num_Updated"
+                        Keyboard="Numeric"
+                        MaxLength="8"/>
                 </FlexLayout>
-            <Picker x:Name="PositionPicker"
-                    Title="Team Identifier" 
+                <Picker x:Name="PositionPicker"
+                    Title="Team Identifier"
                     HorizontalOptions="StartAndExpand"
                     Margin="10,5,0,0"
                     FontSize="20"
                     SelectedIndexChanged="Handle_SelectedIndexChanged">
-                <Picker.Items>
-                    <x:String>Red 1</x:String>
-                    <x:String>Red 2</x:String>
-                    <x:String>Red 3</x:String>
-                    <x:String>Blue 1</x:String>
-                    <x:String>Blue 2</x:String>
-                    <x:String>Blue 3</x:String>
-                 </Picker.Items>
-            </Picker>
-            <Label Text="Autonomous" 
-                   FontSize="25" 
-                   FontAttributes="Bold" 
-                   HorizontalOptions="CenterAndExpand"/>
-            <FlexLayout 
-            Direction="Row"
-            AlignItems="Center">
-            <Switch x:Name="crossbase"
-                    Toggled="Handle_Toggled"
-                    Margin="10,5,0,0" 
-                    VerticalOptions="CenterAndExpand" />
-                <Label Text="Crossed Baseline" 
-                       Margin="10,3" 
-                       VerticalOptions="CenterAndExpand"/>
+                    <Picker.Items>
+                        <x:String>Red 1</x:String>
+                        <x:String>Red 2</x:String>
+                        <x:String>Red 3</x:String>
+                        <x:String>Blue 1</x:String>
+                        <x:String>Blue 2</x:String>
+                        <x:String>Blue 3</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Label Text="Autonomous"
+                    FontSize="25"
+                    FontAttributes="Bold"
+                    HorizontalOptions="CenterAndExpand"/>
+                <FlexLayout
+                    Direction="Row"
+                    AlignItems="Center">
+                    <Switch x:Name="crossbase"
+                        Toggled="Handle_Toggled"
+                        Margin="10,5,0,0"
+                        VerticalOptions="CenterAndExpand" />
+                    <Label Text="Crossed Baseline"
+                        Margin="10,3"
+                        VerticalOptions="CenterAndExpand"/>
                 </FlexLayout>
-            <Picker x:Name="autoLvl"
-                    Title="Sandstorm Level" 
+                <Picker x:Name="autoLvl"
+                    Title="Sandstorm Level"
                     HorizontalOptions="StartAndExpand"
                     Margin="10,5,0,0"
                     FontSize="20"
                     SelectedIndexChanged="Auto_Level_Changed">
-                <Picker.Items>
-                    <x:String>1</x:String>
-                    <x:String>2</x:String>
-               </Picker.Items>
-            </Picker>
-           <FlexLayout 
-            Direction="Row"
-            AlignItems="Center"
-                Margin="0,0">
-                <Label Text="Auto" 
-                   Margin="10,3" 
-                   VerticalOptions="CenterAndExpand"/>
-                <Switch Margin="10,5,0,0"
-                    x:Name="autoOTele"
-                    Toggled="autoOrTeleSandstorm"
-                    VerticalOptions="CenterAndExpand" />
-                <Label Text="Manual" 
-                       Margin="10,3" 
-                       VerticalOptions="CenterAndExpand"/>
+                    <Picker.Items>
+                        <x:String>1</x:String>
+                        <x:String>2</x:String>
+                    </Picker.Items>
+                </Picker>
+                <FlexLayout
+                    Direction="Row"
+                    AlignItems="Center"
+                    Margin="0,0">
+                    <Label Text="Auto"
+                        Margin="10,3"
+                        VerticalOptions="CenterAndExpand"/>
+                    <Switch Margin="10,5,0,0"
+                        x:Name="autoOTele"
+                        Toggled="autoOrTeleSandstorm"
+                        VerticalOptions="CenterAndExpand" />
+                    <Label Text="Manual"
+                        Margin="10,3"
+                        VerticalOptions="CenterAndExpand"/>
                 </FlexLayout>
-            <Label Text="In-Game" 
-                   FontSize="25" 
-                   FontAttributes="Bold" 
-                   HorizontalOptions="CenterAndExpand"/>
+                <Label Text="In-Game"
+                    FontSize="25"
+                    FontAttributes="Bold"
+                    HorizontalOptions="CenterAndExpand"/>
                 <Picker x:Name="death"
-                    Title="Death Type" 
+                    Title="Death Type"
                     HorizontalOptions="StartAndExpand"
                     Margin="10,5,0,0"
                     FontSize="20"
                     SelectedIndexChanged="deathSelector">
-                <Picker.Items>
-                    <x:String>No Death</x:String>
-                    <x:String>Partial Death</x:String>
-                    <x:String>Full Death</x:String>
-               </Picker.Items>
-            </Picker>
-            <Label Text="End-Game" 
-                   FontSize="25" 
-                   FontAttributes="Bold" 
-                   HorizontalOptions="CenterAndExpand"/>
-            <FlexLayout 
-            Direction="Row"
-            AlignItems="Center">
-            <Switch Margin="10,5,0,0"
-                    x:Name="climbSwitch"
-                    Toggled="climb"
-                    VerticalOptions="CenterAndExpand" />
-                <Label Text="Climb" 
-                       Margin="10,3" 
-                       VerticalOptions="CenterAndExpand"/>
-                </FlexLayout>
-                <Picker x:Name="climbLvl"
-                        Title="Climb Level"
-                        HorizontalOptions="StartAndExpand"
-                        Margin="10,5,0,0"
-                        FontSize="20"
-                        SelectedIndexChanged="climbLvlSelector">
-                <Picker.Items>
-                    <x:String>Level 1</x:String>
-                    <x:String>Level 2</x:String>
-                    <x:String>Level 3</x:String>
-               </Picker.Items>
-            </Picker>
-            <FlexLayout 
-            Direction="Row"
-            AlignItems="Center">
-            <Switch Margin="10,5,0,0" 
-                    x:Name="needed"
-                    Toggled="needAssistToggle"
-                    VerticalOptions="CenterAndExpand" />
-                <Label Text="Needed Assist" 
-                       Margin="10,3" 
-                       VerticalOptions="CenterAndExpand"/>
-                </FlexLayout>
-            <FlexLayout 
-            Direction="Row"
-            AlignItems="Center">
-            <Switch Margin="10,5,0,0"
-                    x:Name="assisted"
-                    Toggled="helpedClimb"
-                    VerticalOptions="CenterAndExpand" />
-                <Label Text="Assisted Climb" 
-                       Margin="10,3" 
-                       VerticalOptions="CenterAndExpand"/>
-                </FlexLayout>
-             <Picker x:Name="giveAssistClimbLvl"
-                        Title="Climb Level"
-                        HorizontalOptions="StartAndExpand"
-                        Margin="10,5,0,0"
-                        FontSize="20"
-                        SelectedIndexChanged="giveAssistClimbLvlSelector">
-                <Picker.Items>
-                    <x:String>Level 2</x:String>
-                    <x:String>Level 3</x:String>
-               </Picker.Items>
-            </Picker>
-            <Label Text="Penalties" 
-                   FontSize="25" 
-                   FontAttributes="Bold" 
-                   HorizontalOptions="CenterAndExpand"/>
-            <Label Text="Fouls:"
-                   Margin="10"
-                   FontSize="20"/>
-            <Entry Placeholder="0"
-                   x:Name="fouls"
-               Keyboard="Numeric"
-                   TextChanged="Fouls_Updated"
-                   HorizontalOptions="StartAndExpand"
-                   Margin="10,5,0,0"
-                   WidthRequest="50"
-                   MaxLength="8"/>
-            <FlexLayout 
+                    <Picker.Items>
+                        <x:String>No Death</x:String>
+                        <x:String>Partial Death</x:String>
+                        <x:String>Full Death</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Label Text="End-Game"
+                    FontSize="25"
+                    FontAttributes="Bold"
+                    HorizontalOptions="CenterAndExpand"/>
+                <FlexLayout
                     Direction="Row"
                     AlignItems="Center">
-            <Switch Margin="10,5,0,0" 
-                    x:Name="yellow"
-                    Toggled="Handle_Toggled_11"
-                    VerticalOptions="CenterAndExpand" />
-                <Label Text="Received Yellow Card" 
-                       Margin="10,3" 
-                       VerticalOptions="CenterAndExpand"/>
+                    <Switch Margin="10,5,0,0"
+                        x:Name="climbSwitch"
+                        Toggled="climb"
+                        VerticalOptions="CenterAndExpand" />
+                    <Label Text="Climb"
+                        Margin="10,3"
+                        VerticalOptions="CenterAndExpand"/>
                 </FlexLayout>
-            <FlexLayout 
-            Direction="Row"
-            AlignItems="Center">
-            <Switch Margin="10,5,0,0" 
-                    x:Name="red"
-                    Toggled="Handle_Toggled_12"
-                    VerticalOptions="CenterAndExpand" />
-                <Label Text="Received Red Card" 
-                       Margin="10,3" 
-                       VerticalOptions="CenterAndExpand"/>
+                <Picker x:Name="climbLvl"
+                    Title="Climb Level"
+                    HorizontalOptions="StartAndExpand"
+                    Margin="10,5,0,0"
+                    FontSize="20"
+                    SelectedIndexChanged="climbLvlSelector">
+                    <Picker.Items>
+                        <x:String>Level 1</x:String>
+                        <x:String>Level 2</x:String>
+                        <x:String>Level 3</x:String>
+                    </Picker.Items>
+                </Picker>
+                <FlexLayout
+                    Direction="Row"
+                    AlignItems="Center">
+                    <Switch Margin="10,5,0,0"
+                        x:Name="needed"
+                        Toggled="needAssistToggle"
+                        VerticalOptions="CenterAndExpand" />
+                    <Label Text="Needed Assist"
+                        Margin="10,3"
+                        VerticalOptions="CenterAndExpand"/>
                 </FlexLayout>
-            <Label Text="Extra Comments:"
-                   Margin="10"
-                   FontSize="20"/>
-            <Editor x:Name="comments"
+                <FlexLayout
+                    Direction="Row"
+                    AlignItems="Center">
+                    <Switch Margin="10,5,0,0"
+                        x:Name="assisted"
+                        Toggled="helpedClimb"
+                        VerticalOptions="CenterAndExpand" />
+                    <Label Text="Assisted Climb"
+                        Margin="10,3"
+                        VerticalOptions="CenterAndExpand"/>
+                </FlexLayout>
+                <Picker x:Name="giveAssistClimbLvl"
+                    Title="Climb Level"
+                    HorizontalOptions="StartAndExpand"
+                    Margin="10,5,0,0"
+                    FontSize="20"
+                    SelectedIndexChanged="giveAssistClimbLvlSelector">
+                    <Picker.Items>
+                        <x:String>Level 2</x:String>
+                        <x:String>Level 3</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Label Text="Penalties"
+                    FontSize="25"
+                    FontAttributes="Bold"
+                    HorizontalOptions="CenterAndExpand"/>
+                <Label Text="Fouls:"
+                    Margin="10"
+                    FontSize="20"/>
+                <Entry Placeholder="0"
+                    x:Name="fouls"
+                    Keyboard="Numeric"
+                    TextChanged="Fouls_Updated"
+                    HorizontalOptions="StartAndExpand"
+                    Margin="10,5,0,0"
+                    WidthRequest="50"
+                    MaxLength="8"/>
+                <FlexLayout
+                    Direction="Row"
+                    AlignItems="Center">
+                    <Switch Margin="10,5,0,0"
+                        x:Name="yellow"
+                        Toggled="Handle_Toggled_11"
+                        VerticalOptions="CenterAndExpand" />
+                    <Label Text="Received Yellow Card"
+                        Margin="10,3"
+                        VerticalOptions="CenterAndExpand"/>
+                </FlexLayout>
+                <FlexLayout
+                    Direction="Row"
+                    AlignItems="Center">
+                    <Switch Margin="10,5,0,0"
+                        x:Name="red"
+                        Toggled="Handle_Toggled_12"
+                        VerticalOptions="CenterAndExpand" />
+                    <Label Text="Received Red Card"
+                        Margin="10,3"
+                        VerticalOptions="CenterAndExpand"/>
+                </FlexLayout>
+                <Label Text="Extra Comments:"
+                    Margin="10"
+                    FontSize="20"/>
+                <Editor x:Name="comments"
                     MinimumWidthRequest="1000"
                     MinimumHeightRequest="300"
-                    Margin="10,5,0,0" 
+                    Margin="10,5,0,0"
                     Placeholder="Type Here!"
                     TextChanged="Comment_Box_Updated"
                     Keyboard="Text"
                     AutoSize="TextChanges"/>
-                <FlexLayout 
-                Direction="Row"
-                AlignItems="Center"
-                JustifyContent="Center">
-                <Button Text="Back" 
-                        Clicked="backClicked" 
+                <FlexLayout
+                    Direction="Row"
+                    AlignItems="Center"
+                    JustifyContent="Center">
+                    <Button Text="Back"
+                        Clicked="backClicked"
                         Margin="5,1"/>
-                <Button x:Name="saveButton"
-                        Text="Save" 
-                        Clicked="saveClicked" 
+                    <Button x:Name="saveButton"
+                        Text="Save"
+                        Clicked="saveClicked"
                         Margin="5,1"/>
-            </FlexLayout>
-           </StackLayout>
-          </ScrollView>
+                </FlexLayout>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
 <!--AutoSize="TextChanges"

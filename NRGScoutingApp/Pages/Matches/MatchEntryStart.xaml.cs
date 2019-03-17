@@ -28,23 +28,22 @@ namespace NRGScoutingApp {
             teamName = e.Item.ToString ();
             Preferences.Set ("teamStart", teamName);
             await App.Current.SavePropertiesAsync ();
-            switch (goToMatch)
-            {
+            switch (goToMatch) {
                 case ConstantVars.TEAM_SELECTION_TYPES.match:
-                    await Navigation.PushAsync(new MatchEntryEditTab() { Title = teamName });
-                    Navigation.RemovePage(this);
+                    await Navigation.PushAsync (new MatchEntryEditTab () { Title = teamName });
+                    Navigation.RemovePage (this);
                     break;
                 case ConstantVars.TEAM_SELECTION_TYPES.pit:
-                    await Navigation.PushAsync(new PitEntry(true, teamName) { Title = teamName });
-                    Navigation.RemovePage(this);
+                    await Navigation.PushAsync (new PitEntry (true, teamName) { Title = teamName });
+                    Navigation.RemovePage (this);
                     break;
                 case ConstantVars.TEAM_SELECTION_TYPES.teamSelection:
-                    await Navigation.PopAsync();
+                    await Navigation.PopAsync ();
                     break;
 
             }
 
-            }
+        }
 
         private void SearchBar_OnTextChanged (object sender, TextChangedEventArgs e) {
             // MatchesList.BeginRefresh();

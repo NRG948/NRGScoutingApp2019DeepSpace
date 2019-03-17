@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="NRGScoutingApp.MatchEvents" 
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="NRGScoutingApp.MatchEvents"
     xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" Icon="ic_edit.png" ios:Title="Match Events" ios:Page.UseSafeArea="true" ios:NavigationPage.PrefersLargeTitles="true">
 
     <ContentPage.Content>
@@ -12,37 +12,37 @@
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-            <ListView x:Name="listView" 
-                      Margin="0,10,10,10"
-                      ItemTapped="eventTapped" 
-                      HorizontalOptions="FillAndExpand" 
-                      VerticalOptions="CenterAndExpand" 
-                      Grid.Row="0" Grid.Column="0" HasUnevenRows="true"
-                      Footer="">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <ViewCell>
-                            <ContentView Margin="0">
-                                <Grid>
-                                    <Grid.RowDefinitions>
-                                        <RowDefinition Height="*" />
-                                        <RowDefinition Height="*" />
-                                    </Grid.RowDefinitions>
-                                    <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="*" />
-                                        <ColumnDefinition Width="3*" />
-                                    </Grid.ColumnDefinitions>
-                                    <Image Grid.RowSpan="2" Grid.Column="0" Source="{Binding image}"/>
-                                    <Label Text="{Binding eventName}" x:Name="key" Grid.Row="0" Grid.Column="1" HorizontalTextAlignment="Start"/>
-                                    <Label Text="{Binding timeOccur}" x:Name="value" Grid.Row="1" Grid.Column="1" HorizontalTextAlignment="Start"/>
-                                </Grid>
-                            </ContentView>
-                        </ViewCell>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
-                 <Label x:Name="sadNoEvent" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" HorizontalTextAlignment="Center" Grid.Row="0" Grid.Column="0" Text=":( No Events.&#x0a;Add a Match and Come Back" FontAttributes="Bold" TextColor="Gray" FontSize="Large"/>
-                </Grid>
+                <ListView x:Name="listView"
+                    Margin="0,10,10,10"
+                    ItemTapped="eventTapped"
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="CenterAndExpand"
+                    Grid.Row="0" Grid.Column="0" HasUnevenRows="true"
+                    Footer="">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <ContentView Margin="0">
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="*" />
+                                            <RowDefinition Height="*" />
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="3*" />
+                                        </Grid.ColumnDefinitions>
+                                        <Image Grid.RowSpan="2" Grid.Column="0" Source="{Binding image}"/>
+                                        <Label Text="{Binding eventName}" x:Name="key" Grid.Row="0" Grid.Column="1" HorizontalTextAlignment="Start"/>
+                                        <Label Text="{Binding timeOccur}" x:Name="value" Grid.Row="1" Grid.Column="1" HorizontalTextAlignment="Start"/>
+                                    </Grid>
+                                </ContentView>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                <Label x:Name="sadNoEvent" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" HorizontalTextAlignment="Center" Grid.Row="0" Grid.Column="0" Text=":( No Events.&#x0a;Add a Match and Come Back" FontAttributes="Bold" TextColor="Gray" FontSize="Large"/>
+            </Grid>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

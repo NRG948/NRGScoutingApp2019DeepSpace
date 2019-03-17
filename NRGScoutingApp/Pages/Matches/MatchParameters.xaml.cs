@@ -14,8 +14,8 @@ namespace NRGScoutingApp {
 
         public static Boolean updateTeam = false;
 
-        protected override void OnAppearing() {
-            teamName = Preferences.Get("teamStart", "");
+        protected override void OnAppearing () {
+            teamName = Preferences.Get ("teamStart", "");
         }
 
         public String teamName = Preferences.Get ("teamStart", "");
@@ -47,9 +47,8 @@ namespace NRGScoutingApp {
             onParamUpdate ();
         }
 
-        void teamChanged(object sender, System.EventArgs e)
-        {
-            Navigation.PushAsync(new MatchEntryStart(ConstantVars.TEAM_SELECTION_TYPES.teamSelection));
+        void teamChanged (object sender, System.EventArgs e) {
+            Navigation.PushAsync (new MatchEntryStart (ConstantVars.TEAM_SELECTION_TYPES.teamSelection));
         }
 
         //Confirms user action to go back and clears all data for next match
@@ -57,7 +56,7 @@ namespace NRGScoutingApp {
             var text = await DisplayAlert ("Alert", "Do you want to discard progress?", "Yes", "No");
             if (text) {
                 clearMatchItems ();
-                Navigation.PopAsync();
+                Navigation.PopAsync ();
             }
         }
 
@@ -273,7 +272,7 @@ namespace NRGScoutingApp {
             Preferences.Set ("tempMatchEvents", "");
             MatchEvents.update = true;
             NewMatchStart.events.Clear ();
-            Entry = new MatchFormat.EntryParams();
+            Entry = new MatchFormat.EntryParams ();
         }
 
         //Takes all objects and adds items while returning the main page
@@ -282,17 +281,13 @@ namespace NRGScoutingApp {
             data["Matches"] = temp;
             Preferences.Set ("matchEventsString", JsonConvert.SerializeObject (data));
             clearMatchItems ();
-            Device.BeginInvokeOnMainThread(() =>
-           {
-               try
-               {
-                   Navigation.PopAsync();
-               }
-               catch (System.InvalidOperationException)
-               {
+            Device.BeginInvokeOnMainThread (() => {
+                try {
+                    Navigation.PopAsync ();
+                } catch (System.InvalidOperationException) {
 
-               }
-           });
+                }
+            });
         }
 
         //Disables Auto Buttons if certain button is not toggled

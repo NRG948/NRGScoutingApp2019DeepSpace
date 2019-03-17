@@ -92,7 +92,7 @@ namespace NRGScoutingApp {
                                 Device.BeginInvokeOnMainThread (() => {
                                     startTimer.Text = ConstantVars.TIMER_START;
                                     isTimerRunning = false;
-                                    setEventButtons(isTimerRunning);
+                                    setEventButtons (isTimerRunning);
                                 });
                                 return false;
                             }
@@ -108,7 +108,7 @@ namespace NRGScoutingApp {
                         Device.BeginInvokeOnMainThread (() => {
                             startTimer.Text = ConstantVars.TIMER_START;
                             isTimerRunning = false;
-                            setEventButtons(isTimerRunning);
+                            setEventButtons (isTimerRunning);
                         });
                     }
                 });

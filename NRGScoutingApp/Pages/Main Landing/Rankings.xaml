@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-             x:Class="NRGScoutingApp.Rankings" 
-             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
-             ios:Page.UseSafeArea="true" 
-             Title="Rankings" 
-             Icon="ic_leader.png" 
-             ios:NavigationPage.PrefersLargeTitles="true">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="NRGScoutingApp.Rankings"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    ios:Page.UseSafeArea="true"
+    Title="Rankings"
+    Icon="ic_leader.png"
+    ios:NavigationPage.PrefersLargeTitles="true">
     <ContentPage.Content>
         <StackLayout>
             <Picker x:Name="rankPicker"
-                    Title="Team Identifier" 
-                    HorizontalOptions="EndAndExpand"
-                    Margin="10,5,10,0"
-                    FontSize="20"
-                    SelectedIndexChanged="rankTypeDelta">
+                Title="Team Identifier"
+                HorizontalOptions="EndAndExpand"
+                Margin="10,5,10,0"
+                FontSize="20"
+                SelectedIndexChanged="rankTypeDelta">
                 <Picker.Items>
                     <x:String>Overall</x:String>
                     <x:String>Hatch</x:String>
@@ -25,7 +25,7 @@
                     <x:String>High</x:String>
                 </Picker.Items>
             </Picker>
-           <Grid HorizontalOptions="CenterAndExpand" RowSpacing="0" ColumnSpacing="0" Margin="0" VerticalOptions="CenterAndExpand">
+            <Grid HorizontalOptions="CenterAndExpand" RowSpacing="0" ColumnSpacing="0" Margin="0" VerticalOptions="CenterAndExpand">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
@@ -33,19 +33,19 @@
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
                 <ListView x:Name="listView"
-                          Margin="0,0,0,0" 
-                          Grid.Row="0" 
-                          Grid.Column="0" 
-                          VerticalOptions="CenterAndExpand"
-                          ItemTapped="teamClicked"
-                          HasUnevenRows="true"
-                          Footer="">
+                    Margin="0,0,0,0"
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    VerticalOptions="CenterAndExpand"
+                    ItemTapped="teamClicked"
+                    HasUnevenRows="true"
+                    Footer="">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>
                                 <ContentView Margin="0" Padding="0">
                                     <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
-                                        <Label Text="{Binding Path=Key}"  TextColor="Black" BackgroundColor="{Binding color}" x:Name="key" HorizontalTextAlignment="Start"/>
+                                        <Label Text="{Binding Path=Key}" TextColor="Black" BackgroundColor="{Binding color}" x:Name="key" HorizontalTextAlignment="Start"/>
                                         <Label Text="{Binding Path=Value}" x:Name="value" HorizontalTextAlignment="Start"/>
                                     </StackLayout>
                                 </ContentView>

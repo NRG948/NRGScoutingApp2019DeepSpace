@@ -13,9 +13,9 @@ namespace NRGScoutingApp {
                 this.match["matchNum"] + "," +
                 MatchFormat.matchSideFromEnum ((int) this.match["side"]) + ","; //Side
             total += pickCalc ((int) MatchFormat.CHOOSE_RANK_TYPE.pick1) + "," + //Hatch
-                numCalc((int) MatchFormat.CHOOSE_RANK_TYPE.pick1) + "," +
+                numCalc ((int) MatchFormat.CHOOSE_RANK_TYPE.pick1) + "," +
                 pickCalc ((int) MatchFormat.CHOOSE_RANK_TYPE.pick2) + "," + //Cargo
-                numCalc((int)MatchFormat.CHOOSE_RANK_TYPE.pick2) + ",";
+                numCalc ((int) MatchFormat.CHOOSE_RANK_TYPE.pick2) + ",";
 
             total += climbCalc () + ",";
 
@@ -29,34 +29,31 @@ namespace NRGScoutingApp {
         private String climbCalc () {
             int point = 0;
             String total = "";
-            Boolean needHelp = (bool)match["needAstClimb"];
-            Boolean gaveHelp = (bool)match["giveAstClimb"];
+            Boolean needHelp = (bool) match["needAstClimb"];
+            Boolean gaveHelp = (bool) match["giveAstClimb"];
             try {
                 if ((bool) match["climb"]) {
                     switch ((int) match["climbLvl"]) {
-                            case 0:
-                                point = (int) ConstantVars.PTS_LVL_1_CLIMB;
-                                break;
-                            case 1:
-                                point = (int) ConstantVars.PTS_LVL_2_CLIMB;
-                                break;
-                            case 2:
-                                point = (int) ConstantVars.PTS_LVL_3_CLIMB;
-                                break;
-                            default:
-                                point += 0;
-                                break;
+                        case 0:
+                            point = (int) ConstantVars.PTS_LVL_1_CLIMB;
+                            break;
+                        case 1:
+                            point = (int) ConstantVars.PTS_LVL_2_CLIMB;
+                            break;
+                        case 2:
+                            point = (int) ConstantVars.PTS_LVL_3_CLIMB;
+                            break;
+                        default:
+                            point += 0;
+                            break;
                     }
                 }
             } catch (System.NullReferenceException) {
 
             }
-            if (needHelp)
-            {
+            if (needHelp) {
                 total += "NeedA";
-            }
-            else if (gaveHelp)
-            {
+            } else if (gaveHelp) {
                 total += "A";
             }
             total += point;
@@ -98,33 +95,24 @@ namespace NRGScoutingApp {
 
         }
 
-        private double numCalc(int sortType)
-        {
+        private double numCalc (int sortType) {
             int total = 0;
             int reps = 0;
-            try
-            {
-                try
-                {
-                    reps = (int)match["numEvents"];
-                }
-                catch (JsonException e)
-                {
-                    Console.WriteLine(e.StackTrace);
+            try {
+                try {
+                    reps = (int) match["numEvents"];
+                } catch (JsonException e) {
+                    Console.WriteLine (e.StackTrace);
                     reps = 0;
                 }
-                for (int i = 0; i < reps; i++)
-                {
-                    if (Convert.ToInt32(match["TE" + i + "_1"]) == sortType && i != reps - 1)
-                    {
-                        if ((Convert.ToInt32(match["TE" + (i + 1) + "_1"]) != (int)MatchFormat.ACTION.startClimb) && ((int)match["TE" + (i + 1) + "_1"] != (int)MatchFormat.ACTION.dropNone))
-                        {
+                for (int i = 0; i < reps; i++) {
+                    if (Convert.ToInt32 (match["TE" + i + "_1"]) == sortType && i != reps - 1) {
+                        if ((Convert.ToInt32 (match["TE" + (i + 1) + "_1"]) != (int) MatchFormat.ACTION.startClimb) && ((int) match["TE" + (i + 1) + "_1"] != (int) MatchFormat.ACTION.dropNone)) {
                             total++;
                         }
                     }
                 }
-            }
-            catch (NullReferenceException){}
+            } catch (NullReferenceException) { }
             return total;
         }
 

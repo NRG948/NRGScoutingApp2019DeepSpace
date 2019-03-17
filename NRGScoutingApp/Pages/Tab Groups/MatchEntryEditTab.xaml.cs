@@ -1,6 +1,6 @@
-﻿using Xamarin.Essentials;
+﻿using System;
+using Xamarin.Essentials;
 using Xamarin.Forms;
-using System;
 
 namespace NRGScoutingApp {
     public partial class MatchEntryEditTab : Xamarin.Forms.TabbedPage {
@@ -10,9 +10,9 @@ namespace NRGScoutingApp {
             Children.Add (new MatchParameters ());
             BindingContext = this;
             Preferences.Set ("newAppear", 1);
-            NavigationPage.SetHasNavigationBar(this, false);
-            NavigationPage.SetHasNavigationBar(this, true);
-            NavigationPage.SetHasBackButton(this, true);
+            NavigationPage.SetHasNavigationBar (this, false);
+            NavigationPage.SetHasNavigationBar (this, true);
+            NavigationPage.SetHasBackButton (this, true);
             NavigationPage.SetHasBackButton (this, false);
             InitializeComponent ();
         }
@@ -21,13 +21,11 @@ namespace NRGScoutingApp {
             return true;
         }
 
-        private String teamName = Preferences.Get("teamStart", "");
+        private String teamName = Preferences.Get ("teamStart", "");
 
-        protected override void OnAppearing()
-        {
-            if (!teamName.Equals(Preferences.Get("teamStart", "")))
-            {
-                teamName = Preferences.Get("teamStart", "hello");
+        protected override void OnAppearing () {
+            if (!teamName.Equals (Preferences.Get ("teamStart", ""))) {
+                teamName = Preferences.Get ("teamStart", "hello");
                 this.Title = teamName;
             }
         }
@@ -35,7 +33,7 @@ namespace NRGScoutingApp {
             var text = await DisplayAlert ("Alert", "Do you want to discard progress?", "Yes", "No");
             if (text) {
                 MatchParameters.clearMatchItems ();
-                Navigation.PopAsync();
+                Navigation.PopAsync ();
             }
         }
     }

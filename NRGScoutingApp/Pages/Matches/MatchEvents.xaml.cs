@@ -44,7 +44,7 @@ namespace NRGScoutingApp {
             sadNoEvent.IsVisible = !setList;
         }
         private void setListVisibility () {
-            setListVisibility(NewMatchStart.events.Count > 0);
+            setListVisibility (NewMatchStart.events.Count > 0);
         }
 
         //Populates List that contains all data for each timer event to appear on the Match Events Screen

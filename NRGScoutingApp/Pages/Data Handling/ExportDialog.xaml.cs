@@ -24,44 +24,31 @@ namespace NRGScoutingApp {
         async void copyClicked (object sender, System.EventArgs e) {
             String exportText = null;
             String action = "";
-            while (String.IsNullOrWhiteSpace(action))
-            {
-                action = await DisplayActionSheet("Choose Export Type:", ConstantVars.exportTypes[0], null, ConstantVars.exportTypes[1], ConstantVars.exportTypes[2], ConstantVars.exportTypes[3]);
+            while (String.IsNullOrWhiteSpace (action)) {
+                action = await DisplayActionSheet ("Choose Export Type:", ConstantVars.exportTypes[0], null, ConstantVars.exportTypes[1], ConstantVars.exportTypes[2], ConstantVars.exportTypes[3]);
             }
-            if (action.Equals(ConstantVars.exportTypes[1]))
-            {
+            if (action.Equals (ConstantVars.exportTypes[1])) {
                 exportText = this.exportText;
-                CrossClipboard.Current.SetText(exportText);
-            }
-            else if (action.Equals(ConstantVars.exportTypes[2]))
-            {
-                JObject datas = JObject.Parse(this.exportText);
-                if (datas.ContainsKey("Matches"))
-                {
-                    exportText = JsonConvert.SerializeObject(new JObject(new JProperty("Matches",(JArray)datas["Matches"])));
-                    CrossClipboard.Current.SetText(exportText);
+                CrossClipboard.Current.SetText (exportText);
+            } else if (action.Equals (ConstantVars.exportTypes[2])) {
+                JObject datas = JObject.Parse (this.exportText);
+                if (datas.ContainsKey ("Matches")) {
+                    exportText = JsonConvert.SerializeObject (new JObject (new JProperty ("Matches", (JArray) datas["Matches"])));
+                    CrossClipboard.Current.SetText (exportText);
+                } else {
+                    await DisplayAlert ("Oops!", "No " + ConstantVars.exportTypes[2] + " data", "OK");
                 }
-                else
-                {
-                    await DisplayAlert("Oops!", "No " + ConstantVars.exportTypes[2] + " data", "OK");
-                }
-            }
-            else if (action.Equals(ConstantVars.exportTypes[3]))
-            {
-                JObject datas = JObject.Parse(this.exportText);
-                if (datas.ContainsKey("Matches"))
-                {
-                    exportText = JsonConvert.SerializeObject(new JObject(new JProperty("PitNotes",(JArray)datas["PitNotes"])));
-                    CrossClipboard.Current.SetText(exportText);
-                }
-                else
-                {
-                    await DisplayAlert("Oops!", "No " + ConstantVars.exportTypes[3] + " data", "OK");
+            } else if (action.Equals (ConstantVars.exportTypes[3])) {
+                JObject datas = JObject.Parse (this.exportText);
+                if (datas.ContainsKey ("Matches")) {
+                    exportText = JsonConvert.SerializeObject (new JObject (new JProperty ("PitNotes", (JArray) datas["PitNotes"])));
+                    CrossClipboard.Current.SetText (exportText);
+                } else {
+                    await DisplayAlert ("Oops!", "No " + ConstantVars.exportTypes[3] + " data", "OK");
                 }
             }
-            if (!action.Equals(ConstantVars.exportTypes[0]))
-            {
-                await PopupNavigation.Instance.PopAsync(true);
+            if (!action.Equals (ConstantVars.exportTypes[0])) {
+                await PopupNavigation.Instance.PopAsync (true);
             }
         }
 
@@ -79,7 +66,7 @@ namespace NRGScoutingApp {
             await RankText ();
         }
         public async Task RankText () {
-            initCSV();
+            initCSV ();
             string path = Environment.GetFolderPath (Environment.SpecialFolder.MyDocuments);
             await Share.RequestAsync (new ShareTextRequest {
                 Uri = "file://" + path + "/" + excelFileBase + ".csv",
