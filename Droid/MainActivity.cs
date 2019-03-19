@@ -1,5 +1,5 @@
 ﻿using System;
-
+using NRGScoutingApp.Droid;
 using Android.App;
 using Android.Content;
 using Android.Content.PM;
@@ -7,6 +7,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+
 
 namespace NRGScoutingApp.Droid
 {
@@ -16,8 +17,9 @@ namespace NRGScoutingApp.Droid
         App app;
         protected override void OnCreate(Bundle bundle)
         {
-            TabLayoutResource = Resource.Layout.Tabbar;
+           // TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
+
 
             base.OnCreate(bundle);
 
