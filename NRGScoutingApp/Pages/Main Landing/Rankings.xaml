@@ -23,6 +23,7 @@
                     <x:String>Low</x:String>
                     <x:String>Medium</x:String>
                     <x:String>High</x:String>
+                    <x:String>Num</x:String>
                 </Picker.Items>
             </Picker>
             <Grid HorizontalOptions="CenterAndExpand" RowSpacing="0" ColumnSpacing="0" Margin="0" VerticalOptions="CenterAndExpand">
