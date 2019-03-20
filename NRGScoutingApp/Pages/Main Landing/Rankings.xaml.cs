@@ -45,6 +45,9 @@ namespace NRGScoutingApp {
                 case 6:
                     rankChoice = MatchFormat.CHOOSE_RANK_TYPE.drop3; //lvl3
                     break;
+                case 7:
+                    rankChoice = MatchFormat.CHOOSE_RANK_TYPE.overallRank; // teamNum
+                    break;
                 default:
                     rankChoice = MatchFormat.CHOOSE_RANK_TYPE.overallRank;
                     break;
@@ -62,15 +65,33 @@ namespace NRGScoutingApp {
             mainRank.setData (Preferences.Get ("matchEventsString", ""));
             //Gets all data and sets it into ascending order based on each team's average time
             Dictionary<string, double> x = mainRank.getRank (rankChoice);
-            var y = from pair in x
-            orderby pair.Value descending
-            select pair;
-            setListVisibility (y.Count ());
+            Dictionary<string,double> y = new Dictionary<string,double>();  
             List<RankStruct> ranks = new List<RankStruct> ();
+            if (!(rankPicker.SelectedIndex == 7))
+                {
+                    y = (from pair in x
+                    orderby pair.Value descending
+                    select pair).ToDictionary(pair => pair.Key, pair => pair.Value);
+            }
+                else
+                {
+                try
+                {
+                    y = (from pair in x
+                         orderby Convert.ToInt32(pair.Key.Split(" - ", 2)[0]) ascending
+                         select pair).ToDictionary(pair => pair.Key, pair => pair.Value);
+                }
+                catch
+                {
+                    y = new Dictionary<string, double>();
+                }
+            }
+
             foreach (var s in y) {
                 ranks.Add (new RankStruct { Key = s.Key, Value = s.Value, color = getTeamColor (s.Key) });
             }
             listView.ItemsSource = ranks;
+            setListVisibility (y.Count ());
         }
 
         public class RankStruct {

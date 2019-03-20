@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-             x:Class="NRGScoutingApp.RankingsDetailView"
-             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
-             ios:Page.UseSafeArea="true" 
-             ios:NavigationPage.PrefersLargeTitles="true">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="NRGScoutingApp.RankingsDetailView"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    ios:Page.UseSafeArea="true"
+    ios:NavigationPage.PrefersLargeTitles="true">
     <ContentPage.Content>
         <StackLayout>
             <Label Text="Overall Score: 0" x:Name="score0" VerticalOptions="Start" HorizontalOptions="CenterAndExpand" TextColor="Green" FontSize="30"/>
@@ -20,35 +20,35 @@
                 </Grid.ColumnDefinitions>
 
                 <Label Text="" x:Name="score1" TextColor="Black" FontSize="12"
-                       Grid.Row="0" Grid.Column="0"/>
+                    Grid.Row="0" Grid.Column="0"/>
                 <Label Text="" x:Name="score2" TextColor="Black" FontSize="12"
-                       Grid.Row="0" Grid.Column="1"/>
-                <Label Text="" x:Name="score3" TextColor="Black" FontSize= "12"
-                       Grid.Row="0" Grid.Column="2"/>
+                    Grid.Row="0" Grid.Column="1"/>
+                <Label Text="" x:Name="score3" TextColor="Black" FontSize="12"
+                    Grid.Row="0" Grid.Column="2"/>
                 <Label Text="" x:Name="score4" TextColor="Black" FontSize="12"
-                       Grid.Row="1" Grid.Column="0"/>
+                    Grid.Row="1" Grid.Column="0"/>
                 <Label Text="" x:Name="score5" TextColor="Black" FontSize="12"
-                       Grid.Row="1" Grid.Column="1"/>
+                    Grid.Row="1" Grid.Column="1"/>
                 <Label Text="" x:Name="score6" TextColor="Black" FontSize="12"
-                       Grid.Row="1" Grid.Column="2"/>
+                    Grid.Row="1" Grid.Column="2"/>
             </Grid>
             <Label Text="" x:Name="score7" TextColor="Black" FontSize="12" HorizontalOptions="CenterAndExpand"/>
             <ListView x:Name="listView"
-                      Margin="0,0,0,0" 
-                      ItemTapped="matchTapped"
-                      HasUnevenRows="true"
-                      Footer="">
-                    <ListView.ItemTemplate>
-                        <DataTemplate>
-                            <ViewCell>
-                                <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Padding="0" Margin="0">
-                                    <Label Text="{Binding matchNum}" x:Name="key" HorizontalTextAlignment="Start" Margin="0"/>
-                                    <Label Text="{Binding teamNameAndSide}" x:Name="value" HorizontalTextAlignment="Start" Margin="0"/>
-                                </StackLayout>
-                            </ViewCell>
-                        </DataTemplate>
-                    </ListView.ItemTemplate>
-                </ListView>
-           </StackLayout>
+                Margin="0,0,0,0"
+                ItemTapped="matchTapped"
+                HasUnevenRows="true"
+                Footer="">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Padding="0" Margin="0">
+                                <Label Text="{Binding matchNum}" x:Name="key" HorizontalTextAlignment="Start" Margin="0"/>
+                                <Label Text="{Binding teamNameAndSide}" x:Name="value" HorizontalTextAlignment="Start" Margin="0"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>

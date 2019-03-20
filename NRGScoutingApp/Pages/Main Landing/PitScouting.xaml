@@ -1,34 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-             x:Class="NRGScoutingApp.PitScouting"
-             Title="Pit Scout"
-             Icon="ic_assignment.png">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="NRGScoutingApp.PitScouting"
+    Title="Pit Scout"
+    Icon="ic_assignment.png">
     <ContentPage.ToolbarItems>
         <ToolbarItem Icon="plus.png" Clicked="newPit"/>
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <Grid HorizontalOptions="CenterAndExpand"
-              RowSpacing="0"
-              ColumnSpacing="0"
-              Margin="0"
-              Padding="0">
+            RowSpacing="0"
+            ColumnSpacing="0"
+            Margin="0"
+            Padding="0">
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"/>
-                </Grid.RowDefinitions>
+            </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
-                </Grid.ColumnDefinitions>
+            </Grid.ColumnDefinitions>
             <StackLayout x:Name="scoutView" Orientation="Vertical" HorizontalOptions="FillAndExpand" Grid.Row="0" Grid.Column="0">
                 <SearchBar x:Name="searchBar" Placeholder="Team Name" TextChanged="SearchBar_OnTextChanged"/>
-                <ListView x:Name="listView" 
-                          Margin="0,0,0,0" 
-                          ItemTapped="teamClicked" 
-                          HasUnevenRows="true"
-                          Footer=""/>
+                <ListView x:Name="listView"
+                    Margin="0,0,0,0"
+                    ItemTapped="teamClicked"
+                    HasUnevenRows="true"
+                    Footer=""/>
             </StackLayout>
             <Label x:Name="sadNoPit" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" HorizontalTextAlignment="Center" Grid.Row="0" Grid.Column="0" Text=":( No Notes.&#x0a;
 Add Notes and Come Back" FontAttributes="Bold" TextColor="Gray" FontSize="Large"/>
-            </Grid>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>

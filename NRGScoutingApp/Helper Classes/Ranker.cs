@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using Xamarin.Essentials;
 using Xamarin.Forms;
-using System.Linq;
 
 namespace NRGScoutingApp {
     public class Ranker {
@@ -104,10 +104,6 @@ namespace NRGScoutingApp {
         }
 
         public Dictionary<string, Color> getColors () {
-            foreach (var s in colorData) {
-                Console.WriteLine (s.Key.ToString ());
-                Console.WriteLine (s.Value.ToString ());
-            }
             return colorData;
         }
 
@@ -121,15 +117,15 @@ namespace NRGScoutingApp {
             refresh ();
             switch (x) {
                 case MatchFormat.CHOOSE_RANK_TYPE.pick1: //hatch
-                    return timeFixer(hatchData);
+                    return timeFixer (hatchData);
                 case MatchFormat.CHOOSE_RANK_TYPE.pick2: //cargo
-                    return timeFixer(cargoData);
+                    return timeFixer (cargoData);
                 case MatchFormat.CHOOSE_RANK_TYPE.drop1:
-                    return timeFixer(drop1_4Data);
+                    return timeFixer (drop1_4Data);
                 case MatchFormat.CHOOSE_RANK_TYPE.drop2:
-                    return timeFixer(drop2Data);
+                    return timeFixer (drop2Data);
                 case MatchFormat.CHOOSE_RANK_TYPE.drop3:
-                    return timeFixer(drop3Data);
+                    return timeFixer (drop3Data);
                 case MatchFormat.CHOOSE_RANK_TYPE.climb:
                     return climbData;
                 case MatchFormat.CHOOSE_RANK_TYPE.overallRank:
@@ -140,10 +136,10 @@ namespace NRGScoutingApp {
             }
         }
 
-        public Dictionary<String,double> timeFixer(Dictionary<string, double> input) {
-            Dictionary<String, double> temp = new Dictionary<string, double>(input);
-            foreach(var s in input.ToList()) {
-                temp[s.Key] = Math.Round(ConstantVars.MATCH_SPAN_MS / input[s.Key],2);
+        public Dictionary<String, double> timeFixer (Dictionary<string, double> input) {
+            Dictionary<String, double> temp = new Dictionary<string, double> (input);
+            foreach (var s in input.ToList ()) {
+                temp[s.Key] = Math.Round (ConstantVars.MATCH_SPAN_MS / input[s.Key], 2);
             }
             return temp;
         }
@@ -230,25 +226,25 @@ namespace NRGScoutingApp {
             foreach (KeyValuePair<string, double> entry in climbData) {
                 double point = 0;
                 if (dropData1.ContainsKey (entry.Key) && drop1Data[entry.Key] > 0) {
-                    point +=  ConstantVars.DROP_1_MULTIPLIER / dropData1[entry.Key];
+                    point += ConstantVars.DROP_1_MULTIPLIER / dropData1[entry.Key];
                 }
                 if (dropData2.ContainsKey (entry.Key) && drop2Data[entry.Key] > 0) {
-                    point +=  ConstantVars.DROP_2_MULTIPLIER/ dropData2[entry.Key];
+                    point += ConstantVars.DROP_2_MULTIPLIER / dropData2[entry.Key];
                 }
                 if (dropData3.ContainsKey (entry.Key) && drop3Data[entry.Key] > 0) {
-                    point += ConstantVars.DROP_3_MULTIPLIER/ dropData3[entry.Key];
+                    point += ConstantVars.DROP_3_MULTIPLIER / dropData3[entry.Key];
                 }
                 if (dropData4.ContainsKey (entry.Key) && drop4Data[entry.Key] > 0) {
-                    point += ConstantVars.DROP_4_MULTIPLIER/ dropData4[entry.Key];
+                    point += ConstantVars.DROP_4_MULTIPLIER / dropData4[entry.Key];
                 }
                 if (cargoData.ContainsKey (entry.Key) && cargoData[entry.Key] > 0) {
-                    point +=  ConstantVars.CARGO_MULTIPLIER/ cargoData[entry.Key];
+                    point += ConstantVars.CARGO_MULTIPLIER / cargoData[entry.Key];
                 }
                 if (hatcherData.ContainsKey (entry.Key) && hatcherData[entry.Key] > 0) {
-                    point +=  ConstantVars.HATCHER_MULTIPLIER/ hatcherData[entry.Key];
+                    point += ConstantVars.HATCHER_MULTIPLIER / hatcherData[entry.Key];
                 }
                 point += (climbData[entry.Key] * ConstantVars.CLIMB_MULTIPLIER);
-                data.Add (entry.Key, Math.Round(point,2)); //* ConstantVars.OVERALL_MULT
+                data.Add (entry.Key, Math.Round (point, 2)); //* ConstantVars.OVERALL_MULT
             }
             return data;
         }
@@ -288,7 +284,7 @@ namespace NRGScoutingApp {
             }
             Dictionary<string, double> pushData = new Dictionary<string, double> ();
             foreach (var data in totalData) {
-                pushData.Add (data.Key, Math.Round(data.Value / numsData[data.Key],2));
+                pushData.Add (data.Key, Math.Round (data.Value / numsData[data.Key], 2));
             }
             return pushData;
         }
@@ -360,7 +356,7 @@ namespace NRGScoutingApp {
             }
             Dictionary<string, double> data = new Dictionary<string, double> ();
             foreach (KeyValuePair<string, double> entry in totalPoint) {
-                data.Add (entry.Key, Math.Round(entry.Value / amountOfMatch[entry.Key],2));
+                data.Add (entry.Key, Math.Round (entry.Value / amountOfMatch[entry.Key], 2));
             }
             return data;
         }
@@ -400,7 +396,7 @@ namespace NRGScoutingApp {
 
             }
             foreach (var data in totalData) {
-                pushData.Add (data.Key, Math.Round(data.Value / numsData[data.Key],2));
+                pushData.Add (data.Key, Math.Round (data.Value / numsData[data.Key], 2));
             }
             return pushData;
         }
@@ -423,13 +419,10 @@ namespace NRGScoutingApp {
             } else {
                 tempJSON = new JObject (new JProperty ("Matches"));
             }
-            if (tempJSON.ContainsKey("Matches"))
-            {
-                return (JArray)tempJSON["Matches"];
-            }
-            else
-            {
-                return new JArray();
+            if (tempJSON.ContainsKey ("Matches")) {
+                return (JArray) tempJSON["Matches"];
+            } else {
+                return new JArray ();
             }
         }
     }

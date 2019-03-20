@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
-            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="NRGScoutingApp.NewMatchStart" 
-            xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
-            ios:Page.UseSafeArea="true"
-            Title="Match Timer" 
-             Icon="ic_timer_icon.png" 
-             ios:NavigationPage.PrefersLargeTitles="true">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="NRGScoutingApp.NewMatchStart"
+        xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+        ios:Page.UseSafeArea="true"
+        Title="Match Timer"
+        Icon="ic_timer_icon.png"
+        ios:NavigationPage.PrefersLargeTitles="true">
         <ContentPage.Content>
                 <ScrollView HorizontalOptions="CenterAndExpand">
                         <StackLayout HorizontalOptions="CenterAndExpand">

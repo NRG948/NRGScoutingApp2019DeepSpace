@@ -50,12 +50,12 @@ namespace NRGScoutingApp {
         }
 
         void importClicked (object sender, System.EventArgs e) {
-            popupInit();
+            popupInit ();
         }
-        private void popupInit() {
-            var popup = new ImportDialog();
-            popup.Disappearing += (sender, e) => { this.OnAppearing(); };
-            PopupNavigation.Instance.PushAsync(popup);
+        private void popupInit () {
+            var popup = new ImportDialog ();
+            popup.Disappearing += (sender, e) => { this.OnAppearing (); };
+            PopupNavigation.Instance.PushAsync (popup);
         }
 
         void exportClicked (object sender, System.EventArgs e) {
@@ -88,13 +88,12 @@ namespace NRGScoutingApp {
             } else if (!String.IsNullOrWhiteSpace (Preferences.Get ("tempMatchEvents", "")) || !String.IsNullOrWhiteSpace (Preferences.Get ("tempParams", ""))) //App.Current.Properties["appState"].ToString() == "1"
             {
                 appRestore = true;
-                NavigationPage.SetHasNavigationBar(this, false);
+                NavigationPage.SetHasNavigationBar (this, false);
                 Navigation.PushAsync (new MatchEntryEditTab () { Title = Preferences.Get ("teamStart", "") });
-            } else if (!String.IsNullOrWhiteSpace (Preferences.Get ("tempPitNotes", "")))
-            {
+            } else if (!String.IsNullOrWhiteSpace (Preferences.Get ("tempPitNotes", ""))) {
                 appRestore = true;
-                NavigationPage.SetHasNavigationBar(this, false);
-                Navigation.PushAsync (new PitEntry (true, Preferences.Get("teamStart", "")) { Title = Preferences.Get ("teamStart", "") });
+                NavigationPage.SetHasNavigationBar (this, false);
+                Navigation.PushAsync (new PitEntry (true, Preferences.Get ("teamStart", "")) { Title = Preferences.Get ("teamStart", "") });
             } else if (Preferences.Get ("appState", 0) == 0) {
                 appRestore = false;
                 Preferences.Set ("appState", 0);
@@ -166,13 +165,13 @@ namespace NRGScoutingApp {
 
                 for (int i = 0; i < count; i++) {
                     JObject match = (JObject) temp[i];
-                    string teamTemp = match["team"].ToString();
+                    string teamTemp = match["team"].ToString ();
                     String teamIdentifier = "";
-                    teamIdentifier = teamTemp.Split("-", 2)[MatchFormat.teamNameOrNum].Trim();
+                    teamIdentifier = teamTemp.Split ("-", 2) [MatchFormat.teamNameOrNum].Trim ();
 
                     matchesList.Add (new MatchesListFormat {
                         matchNum = "Match " + match["matchNum"],
-                        teamNameAndSide = teamIdentifier + " - " + MatchFormat.matchSideFromEnum ((int) match["side"])
+                            teamNameAndSide = teamIdentifier + " - " + MatchFormat.matchSideFromEnum ((int) match["side"])
                     });
                 }
                 listView.ItemsSource = matchesList;

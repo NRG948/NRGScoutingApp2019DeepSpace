@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-             x:Class="NRGScoutingApp.PitEntry"
-             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
-             ios:Page.UseSafeArea="true" 
-             ios:NavigationPage.PrefersLargeTitles="true" 
-             Title="{Binding teamName}">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="NRGScoutingApp.PitEntry"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    ios:Page.UseSafeArea="true"
+    ios:NavigationPage.PrefersLargeTitles="true"
+    Title="{Binding teamName}">
     <ContentPage.Resources>
         <ResourceDictionary>
             <Style x:Key="labels" TargetType="Label">
-                 <Setter Property="FontSize" Value="Medium"/>
+                <Setter Property="FontSize" Value="Medium"/>
                 <Setter Property="TextColor" Value="Black"/>
                 <Setter Property="FontAttributes" Value="Bold"/>
             </Style>
@@ -18,21 +18,21 @@
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Back" Clicked="backClicked" x:Name="backButton"/>
         <ToolbarItem Text="Save" Clicked="saveClicked" x:Name="saveButton"/>
-        </ContentPage.ToolbarItems>
+    </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <ScrollView>
-        <StackLayout Padding="5" x:Name="mainLayout">
-                <Label Text="Change Team" 
-                        Margin="10" 
-                           FontSize="20"
-                       TextColor="Blue"
-                       x:Name="teamChanger">
+            <StackLayout Padding="5" x:Name="mainLayout">
+                <Label Text="Change Team"
+                    Margin="10"
+                    FontSize="20"
+                    TextColor="Blue"
+                    x:Name="teamChanger">
                     <Label.GestureRecognizers>
                         <TapGestureRecognizer Tapped="teamChanged"/>
-                        </Label.GestureRecognizers>
-                    </Label>
+                    </Label.GestureRecognizers>
+                </Label>
                 <Button Text="Delete Entry" Clicked="deleteClicked" x:Name="deleteButton"/>
-        </StackLayout>
-            </ScrollView> 
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

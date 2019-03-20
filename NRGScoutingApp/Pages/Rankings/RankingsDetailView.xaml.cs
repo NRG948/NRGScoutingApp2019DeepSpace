@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Linq;
-using Xamarin.Essentials;
-using Xamarin.Forms;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using Xamarin.Essentials;
+using Xamarin.Forms;
 
 namespace NRGScoutingApp {
     public partial class RankingsDetailView : ContentPage {
@@ -15,7 +15,7 @@ namespace NRGScoutingApp {
         public RankingsDetailView (String[] times) {
             InitializeComponent ();
             setScoreValues (times);
-            Rankings.teamSend = Rankings.teamSend.Split ('-',2) [MatchFormat.teamNameOrNum].Trim();
+            Rankings.teamSend = Rankings.teamSend.Split ('-', 2) [MatchFormat.teamNameOrNum].Trim ();
             listView.ItemsSource = Matches.matchesList.Where (matchesList => matchesList.teamNameAndSide.ToLower ().Contains (Rankings.teamSend.ToLower ()));
         }
 
@@ -31,29 +31,25 @@ namespace NRGScoutingApp {
         }
 
         async void matchTapped (object sender, Xamarin.Forms.ItemTappedEventArgs e) {
-            int jsonIndex = Matches.matchesList.IndexOf(e.Item as Matches.MatchesListFormat);
+            int jsonIndex = Matches.matchesList.IndexOf (e.Item as Matches.MatchesListFormat);
 
-            await Task.Run(async () => {
-                JObject val = JObject.Parse(MatchesDetailView.returnMatchJSONText(jsonIndex));
-                JObject parameters = new JObject();
-                foreach (var x in val)
-                {
-                    if (!x.Key.Equals("numEvents"))
-                    {
-                        parameters.Add(x.Key, x.Value);
-                    }
-                    else
-                    {
+            await Task.Run (async () => {
+                JObject val = JObject.Parse (MatchesDetailView.returnMatchJSONText (jsonIndex));
+                JObject parameters = new JObject ();
+                foreach (var x in val) {
+                    if (!x.Key.Equals ("numEvents")) {
+                        parameters.Add (x.Key, x.Value);
+                    } else {
                         break;
                     }
                 }
-                Preferences.Set("tempParams", JsonConvert.SerializeObject(parameters.ToObject<MatchFormat.EntryParams>()));
-                NewMatchStart.events = MatchFormat.JSONEventsToObject(val);
-                CubeDroppedDialog.saveEvents();
-                Preferences.Set("timerValue", Convert.ToInt32(val.Property("timerValue").Value));
-                Preferences.Set("teamStart", val.Property("team").Value.ToString());
-                Device.BeginInvokeOnMainThread(() => {
-                    Navigation.PushAsync(new MatchEntryEditTab() { Title = val.Property("team").Value.ToString() });
+                Preferences.Set ("tempParams", JsonConvert.SerializeObject (parameters.ToObject<MatchFormat.EntryParams> ()));
+                NewMatchStart.events = MatchFormat.JSONEventsToObject (val);
+                CubeDroppedDialog.saveEvents ();
+                Preferences.Set ("timerValue", Convert.ToInt32 (val.Property ("timerValue").Value));
+                Preferences.Set ("teamStart", val.Property ("team").Value.ToString ());
+                Device.BeginInvokeOnMainThread (() => {
+                    Navigation.PushAsync (new MatchEntryEditTab () { Title = val.Property ("team").Value.ToString () });
                 });
             });
         }

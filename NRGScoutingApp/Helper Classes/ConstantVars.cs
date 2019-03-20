@@ -147,9 +147,7 @@ namespace NRGScoutingApp {
             "Other"
         };
 
-
-        public enum TEAM_SELECTION_TYPES 
-        {
+        public enum TEAM_SELECTION_TYPES {
             match,
             pit,
             teamSelection
@@ -158,7 +156,6 @@ namespace NRGScoutingApp {
         /*
          * Export Dialog Text
          */
-        public static readonly String[] exportTypes = 
-            {"Cancel", "All", "Match", "Pit" };
+        public static readonly String[] exportTypes = { "Cancel", "All", "Match", "Pit" };
     }
 }

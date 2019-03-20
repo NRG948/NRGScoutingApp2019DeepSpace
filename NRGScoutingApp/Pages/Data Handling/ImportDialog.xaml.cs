@@ -32,7 +32,7 @@ namespace NRGScoutingApp {
                         await addMatchItemsChecker (data, importJSON);
                     }
                     if (importJSON.ContainsKey ("PitNotes")) {
-                       if (!data.ContainsKey ("PitNotes")) {
+                        if (!data.ContainsKey ("PitNotes")) {
                             data.Add (new JProperty ("PitNotes", new JArray ()));
                         }
                         await addPitItemsChecker (data, importJSON);
