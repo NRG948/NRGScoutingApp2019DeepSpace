@@ -20,11 +20,12 @@ namespace NRGScoutingApp {
         private Dictionary<String, double> cargoData = new Dictionary<String, double> ();
         private Dictionary<String, double> hatchData = new Dictionary<String, double> ();
         private Dictionary<String, double> climbData = new Dictionary<String, double> ();
-        private Dictionary<String, double> drop1Data = new Dictionary<String, double> ();
-        private Dictionary<String, double> drop2Data = new Dictionary<String, double> ();
-        private Dictionary<String, double> drop3Data = new Dictionary<String, double> ();
-        private Dictionary<String, double> drop4Data = new Dictionary<String, double> ();
+        private Dictionary<String, double> drop1Data = new Dictionary<String, double> (); // low rocket
+        private Dictionary<String, double> drop2Data = new Dictionary<String, double> (); // mid rocket
+        private Dictionary<String, double> drop3Data = new Dictionary<String, double> (); // high rocket
+        private Dictionary<String, double> drop4Data = new Dictionary<String, double> (); // cargoship
         private Dictionary<String, double> drop1_4Data = new Dictionary<String, double> ();
+        private Dictionary<String, int> dropAmount = new Dictionary<String, int>();
         private Dictionary<String, Color> colorData = new Dictionary<String, Color> ();
 
         //PRE: data is in JSON Format
@@ -164,6 +165,45 @@ namespace NRGScoutingApp {
             overallData = getOverallData ();
         }
 
+        //private Dictionary<string, int> getDropAmount()
+        //{
+        //    Dictionary<string, int> numsData = new Dictionary<string, int>();
+        //    try
+        //    {
+        //        foreach (var match in fullData)
+        //        {
+        //            int reps;
+        //            try
+        //            {
+        //                reps = (int)match["numEvents"];
+        //            }
+        //            catch (JsonException)
+        //            {
+        //                reps = 0;
+        //            }
+        //            for (int i = 1; i < reps; i++)
+        //            {
+        //                if ((int)match["TE" + i + "_1"] <= 4 && (int)match["TE" + i + "_1"] >= 1)
+        //                {
+        //                    if (numsData.ContainsKey(match["team"].ToString()))
+        //                    {
+        //                        numsData[match["team"].ToString()]++;
+        //                    }
+        //                    else
+        //                    {
+        //                        numsData.Add(match["team"].ToString(), 1);
+        //                    }
+        //                }
+        //            }
+        //        }
+        //    }
+        //    catch (System.NullReferenceException)
+        //    {
+
+        //    }
+        //    return numsData;
+        //}
+
         private Dictionary<string, double> getDrop1_4Data () {
             Dictionary<string, double> returnData = new Dictionary<string, double> (drop1Data);
             foreach (KeyValuePair<string, double> y in drop4Data) {
@@ -243,6 +283,10 @@ namespace NRGScoutingApp {
                 if (hatcherData.ContainsKey (entry.Key) && hatcherData[entry.Key] > 0) {
                     point += ConstantVars.HATCHER_MULTIPLIER / hatcherData[entry.Key];
                 }
+                if (dropAmount.ContainsKey(entry.Key) && dropAmount[entry.Key] > 0)
+                {
+                    point += ConstantVars.DROP_AMOUNT_MULTIPLIER * dropAmount[entry.Key];
+                }
                 point += (climbData[entry.Key] * ConstantVars.CLIMB_MULTIPLIER);
                 data.Add (entry.Key, Math.Round (point, 2)); //* ConstantVars.OVERALL_MULT
             }
@@ -286,6 +330,7 @@ namespace NRGScoutingApp {
             foreach (var data in totalData) {
                 pushData.Add (data.Key, Math.Round (data.Value / numsData[data.Key], 2));
             }
+            dropAmount = numsData;
             return pushData;
         }
 
