@@ -110,9 +110,9 @@ namespace NRGScoutingApp {
         //Climb
         public static readonly double PTS_NEED_HELP_LVL_2 = 1;
         public static readonly double PTS_NEED_HELP_LVL_3 = 1;
-        public static readonly double PTS_SELF_LVL_1 = 1;
-        public static readonly double PTS_SELF_LVL_2 = 2;
-        public static readonly double PTS_SELF_LVL_3 = 4;
+        public static readonly double PTS_SELF_LVL_1 = 3;
+        public static readonly double PTS_SELF_LVL_2 = 6;
+        public static readonly double PTS_SELF_LVL_3 = 12;
         public static readonly double PTS_HELPED_LVL_2 = 1;
         public static readonly double PTS_HELPED_LVL_3 = 2;
         public static readonly int PTS_LVL_1_CLIMB = 3;
