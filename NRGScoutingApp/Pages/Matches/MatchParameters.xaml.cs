@@ -270,6 +270,7 @@ namespace NRGScoutingApp {
             Preferences.Set ("lastItemDropped", 0);
             Preferences.Set ("tempParams", "");
             Preferences.Set ("tempMatchEvents", "");
+            NewMatchStart.timerValue = 0;
             MatchEvents.update = true;
             NewMatchStart.events.Clear ();
             Entry = new MatchFormat.EntryParams ();

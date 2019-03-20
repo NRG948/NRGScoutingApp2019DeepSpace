@@ -4,8 +4,9 @@ using Xamarin.Forms;
 
 namespace NRGScoutingApp {
     public partial class MatchEntryEditTab : Xamarin.Forms.TabbedPage {
+        NewMatchStart s = new NewMatchStart();
         public MatchEntryEditTab () {
-            Children.Add (new NewMatchStart ());
+            Children.Add (s);
             Children.Add (new MatchEvents ());
             Children.Add (new MatchParameters ());
             BindingContext = this;
@@ -32,7 +33,11 @@ namespace NRGScoutingApp {
         async void backClicked (object sender, System.EventArgs e) {
             var text = await DisplayAlert ("Alert", "Do you want to discard progress?", "Yes", "No");
             if (text) {
+                NewMatchStart.isTimerRunning = false;
+                s.setEventButtons(true);
+                s.setSlider(0);
                 MatchParameters.clearMatchItems ();
+                Children.Remove(s);
                 Navigation.PopAsync ();
             }
         }

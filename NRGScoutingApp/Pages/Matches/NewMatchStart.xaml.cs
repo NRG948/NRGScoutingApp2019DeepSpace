@@ -36,7 +36,7 @@ namespace NRGScoutingApp {
         public static int droppedTime = 0;
         int climbTime = 0;
         public static bool cubeSetDrop;
-        private static bool isTimerRunning;
+        public static bool isTimerRunning;
         public static bool setItemToDefault;
         public static List<MatchFormat.Data> events = new List<MatchFormat.Data> ();
 
@@ -202,8 +202,12 @@ namespace NRGScoutingApp {
             }
         }
 
+        public void setSlider(double value) {
+            timeSlider.Value = value;
+        }
+
         //Sets buttons to not clickable if timer is/not running.
-        private void setEventButtons (bool setter) {
+        public void setEventButtons (bool setter) {
             if (setter && isTimerRunning) {
                 climbStart.BackgroundColor = Color.FromHex ("fdad13");
                 cubePicked.BackgroundColor = Color.FromHex ("fdad13");
