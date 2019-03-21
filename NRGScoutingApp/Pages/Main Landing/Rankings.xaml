@@ -7,6 +7,9 @@
     Title="Rankings"
     Icon="ic_leader.png"
     ios:NavigationPage.PrefersLargeTitles="true">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Icon="ic_settings.png" Clicked="settingsClicked"/>
+    </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <StackLayout>
             <Picker x:Name="rankPicker"

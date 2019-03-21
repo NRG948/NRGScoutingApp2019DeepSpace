@@ -282,6 +282,11 @@
     <AndroidResource Include="Resources\drawable-xhdpi\ic_picked_cube_yellow.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\ic_picked_cube_yellow.png" />
     <AndroidResource Include="Resources\drawable\ic_timer_icon.png" />
+    <AndroidResource Include="Resources\drawable\ic_settings.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_settings.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_settings.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_settings.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_settings.png" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="..\NRGScoutingApp\NRGScoutingApp.projitems" Label="Shared" Condition="Exists('..\NRGScoutingApp\NRGScoutingApp.projitems')" />

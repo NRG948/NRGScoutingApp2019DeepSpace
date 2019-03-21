@@ -209,6 +209,7 @@
     <BundleResource Include="Resources\ic_drop_cube.png" />
     <BundleResource Include="Resources\ic_clear_data.png" />
     <BundleResource Include="Resources\ic_picked_cube_yellow.png" />
+    <BundleResource Include="Resources\ic_settings.png" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppDelegate.cs" />
