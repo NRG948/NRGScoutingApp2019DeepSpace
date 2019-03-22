@@ -1,5 +1,6 @@
 ﻿using System;
 using NRGScoutingApp.Droid;
+using NRGScouting;
 using Android.App;
 using Android.Content;
 using Android.Content.PM;
@@ -17,7 +18,7 @@ namespace NRGScoutingApp.Droid
         App app;
         protected override void OnCreate(Bundle bundle)
         {
-           // TabLayoutResource = Resource.Layout.Tabbar;
+            TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
 
 
@@ -38,37 +39,5 @@ namespace NRGScoutingApp.Droid
         {
             base.OnActivityResult(requestCode, resultCode, data);
         }
-
-
-        /*
-        public override bool OnOptionsItemSelected(IMenuItem item)
-        {
-            var app = App.Current;
-            if (item.ItemId == 16908332) 
-            {
-                var navPage = ((app.MainPage.Navigation.ModalStack[0] as MasterDetailPage).Detail as NavigationPage);
-
-                if (app != null && navPage.Navigation.NavigationStack.Count > 0)
-                {
-                    int index = navPage.Navigation.NavigationStack.Count - 1;
-
-                    var currentPage = navPage.Navigation.NavigationStack[index];
-
-                    var vm = currentPage.BindingContext as ViewModel;
-
-                    if (vm != null)
-                    {
-                        var answer = vm.OnBackButtonPressed();
-                        if (answer)
-                            return true;
-                    }
-
-                }
-            }
-
-            return base.OnOptionsItemSelected(item);
-        }*/
-
     }
-
 }
