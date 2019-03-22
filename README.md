@@ -14,13 +14,13 @@ NRG Scouting app for 2019 Deep Space FRC Game
 
 ### iOS
 #### App Store Link Coming Soon...
-[App Store Link] (https://itunes.apple.com/us/app/nrg-scouting/id1454165539?mt=8)
+[App Store Link](https://itunes.apple.com/us/app/nrg-scouting/id1454165539?mt=8)
 
 #### Install builds w/o App Store 
 Head to the [releases](https://github.com/NRG948/NRGScoutingApp2019DeepSpace/releases) page and download the ".ipa" file for the latest version of the application. Then, go to the [install instructions](https://docs.google.com/document/d/1pQ8tAQsyVpHBQo1SHUSvb6X0ylbjBsiniisp-dAJFd8/edit#bookmark=id.g6e35tc9zquw) and follow the steps to install the app without the App Store
 
 ### Android
-[Play Store Link] (https://play.google.com/store/apps/details?id=com.NRG.ScoutingApp.NRG_Scouting)
+[Play Store Link](https://play.google.com/store/apps/details?id=com.NRG.ScoutingApp.NRG_Scouting)
 
 #### Install builds w/o Play Store
 Head to the [releases](https://github.com/NRG948/NRGScoutingApp2019DeepSpace/releases) page and download the ".apk" file containing "Download.this.one" in the file name (onto your android phone/tablet). Then, click the file and you should be prompted with a dialog asking you enable unknown sources. Do so and install the app.
