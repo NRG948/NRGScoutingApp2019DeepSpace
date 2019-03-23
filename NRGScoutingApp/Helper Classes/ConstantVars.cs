@@ -106,6 +106,7 @@ namespace NRGScoutingApp {
         public static readonly double DROP_2_MULTIPLIER = 2 * MATCH_SPAN_MS;
         public static readonly double DROP_3_MULTIPLIER = 3 * MATCH_SPAN_MS;
         public static readonly double DROP_4_MULTIPLIER = 3 * MATCH_SPAN_MS;
+        public static readonly double DROP_AMOUNT_MULTIPLIER = 3;
 
         //Climb
         public static readonly double PTS_NEED_HELP_LVL_2 = 1;

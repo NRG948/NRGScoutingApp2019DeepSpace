@@ -22,6 +22,11 @@ namespace NRGScoutingApp {
         //Initializes the ranking object
         Ranker mainRank = new Ranker (Preferences.Get ("matchEventsString", ""));
 
+        void settingsClicked(object sender, System.EventArgs e)
+        {
+            Navigation.PushAsync(new Settings());
+        }
+
         void rankTypeDelta (object sender, System.EventArgs e) {
             switch (rankPicker.SelectedIndex) {
                 case 0:
