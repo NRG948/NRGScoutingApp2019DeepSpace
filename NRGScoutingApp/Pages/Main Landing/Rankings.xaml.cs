@@ -16,6 +16,7 @@ namespace NRGScoutingApp {
         }
 
         public static string teamSend;
+        private List<RankStruct> rankList;
 
         MatchFormat.CHOOSE_RANK_TYPE rankChoice;
 
@@ -96,6 +97,7 @@ namespace NRGScoutingApp {
                 ranks.Add (new RankStruct { Key = s.Key, Value = s.Value, color = getTeamColor (s.Key) });
             }
             listView.ItemsSource = ranks;
+            rankList = ranks;
             setListVisibility (y.Count ());
         }
 
@@ -114,8 +116,36 @@ namespace NRGScoutingApp {
          * So if list.IsVisible = true, then sadNoMatch.IsVisible = false
          */
         private void setListVisibility (int setList) {
-            listView.IsVisible = setList > 0;
-            sadNoMatch.IsVisible = !listView.IsVisible;
+            rankingsView.IsVisible = setList > 0;
+            sadNoMatch.IsVisible = !rankingsView.IsVisible;
+        }
+
+        void SearchBar_TextChanged(object sender, Xamarin.Forms.TextChangedEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(e.NewTextValue))
+            {
+                listView.ItemsSource = rankList;
+            }
+            else
+            {
+                listView.ItemsSource = rankList.Where(rankList => rankList.Key.ToLower().Contains(e.NewTextValue.ToLower()) || 
+                rankList.Key.ToLower().Contains(e.NewTextValue.ToLower()) || 
+                getColorString(rankList.color).ToLower().Contains(e.NewTextValue.ToLower()));
+            }
+        }
+
+    private String getColorString(Color input) {
+            if (input.Equals(Color.Red)) {
+                return "Red";
+            }
+            else if (input.Equals(Color.Yellow))
+            {
+                return "Yellow";
+            }
+            else
+            {
+                return "None";
+            }
         }
 
         async void teamClicked (object sender, Xamarin.Forms.ItemTappedEventArgs e) {

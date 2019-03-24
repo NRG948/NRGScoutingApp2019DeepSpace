@@ -22,7 +22,7 @@
             RowSpacing="0"
             ColumnSpacing="0"
             Margin="0"
-            Padding="0">
+            Padding="0" VerticalOptions="CenterAndExpand">
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
@@ -31,7 +31,8 @@
             </Grid.ColumnDefinitions>
             <StackLayout x:Name="matchesView"
                 Orientation="Vertical"
-                HorizontalOptions="FillAndExpand"
+                 VerticalOptions="CenterAndExpand"
+                HorizontalOptions="CenterAndExpand"
                 Grid.Row="0"
                 Grid.Column="0">
                 <SearchBar x:Name="searchBar"
