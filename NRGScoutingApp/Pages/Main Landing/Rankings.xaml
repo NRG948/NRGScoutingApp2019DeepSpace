@@ -12,11 +12,26 @@
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <StackLayout>
+            <Grid HorizontalOptions="Center" RowSpacing="0" ColumnSpacing="0" Margin="0" VerticalOptions="Start">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"/>
+                </Grid.ColumnDefinitions>
+                <Button Text="Alliance Selection" Clicked="allianceClicked"
+                        Grid.Row="0"
+                        Grid.Column="0"
+                        HorizontalOptions="StartAndExpand"
+                        Padding="10"
+                        FontSize="Large"/>
             <Picker x:Name="rankPicker"
                 Title="Team Identifier"
                 HorizontalOptions="EndAndExpand"
                 Margin="10,5,10,0"
                 FontSize="20"
+                    Grid.Row="0"
+                    Grid.Column="1"
                 SelectedIndexChanged="rankTypeDelta">
                 <Picker.Items>
                     <x:String>Overall</x:String>
@@ -29,6 +44,7 @@
                     <x:String>Num</x:String>
                 </Picker.Items>
             </Picker>
+                </Grid>
             <Grid HorizontalOptions="CenterAndExpand" RowSpacing="0" ColumnSpacing="0" Margin="0" VerticalOptions="CenterAndExpand">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*"/>

@@ -34,7 +34,7 @@ namespace NRGScoutingApp {
                     Navigation.RemovePage (this);
                     break;
                 case ConstantVars.TEAM_SELECTION_TYPES.pit:
-                    await Navigation.PushAsync (new PitEntry (true, teamName) { Title = teamName });
+                    await Navigation.PushAsync (new PitEntry (true, teamName, true) { Title = teamName });
                     Navigation.RemovePage (this);
                     break;
                 case ConstantVars.TEAM_SELECTION_TYPES.teamSelection:

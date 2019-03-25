@@ -13,7 +13,7 @@ namespace NRGScoutingApp {
             setListView (Preferences.Get ("matchEventsString", ""));
         }
 
-        List<string> pitItems = new List<string> ();
+        public static List<string> pitItems = new List<string> ();
 
         protected override void OnAppearing () {
             setListView (Preferences.Get ("matchEventsString", ""));
@@ -35,7 +35,7 @@ namespace NRGScoutingApp {
             String teamName = e.Item.ToString ();
             JArray pitValues = (JArray) JObject.Parse (Preferences.Get ("matchEventsString", "")) ["PitNotes"];
             Preferences.Set ("teamStart", teamName);
-            await Navigation.PushAsync (new PitEntry (false, teamName) { Title = teamName });
+            await Navigation.PushAsync (new PitEntry (false, teamName, true) { Title = teamName });
         }
 
         /*
@@ -47,7 +47,7 @@ namespace NRGScoutingApp {
             sadNoPit.IsVisible = !listView.IsVisible;
         }
 
-        private List<string> getListVals (JObject input) {
+        public static List<string> getListVals (JObject input) {
             List<string> teamsInclude = new List<string> ();
             if (input.ContainsKey ("PitNotes")) {
                 JArray pits = (JArray) input["PitNotes"];

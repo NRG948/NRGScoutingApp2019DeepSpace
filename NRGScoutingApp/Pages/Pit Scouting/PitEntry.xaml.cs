@@ -28,11 +28,12 @@ namespace NRGScoutingApp {
         String newName;
 
         //The boolean will hide the delete button if the entry is new
-        public PitEntry (bool newCreation, String teamName) {
+        public PitEntry (bool newCreation, String teamName, bool teamChange) {
             this.teamName = teamName;
             newName = teamName;
             NavigationPage.SetHasBackButton (this, false);
             InitializeComponent ();
+            teamChanger.IsVisible = teamChange;
             vals[vals.Length - 1] = Preferences.Get ("teamStart", "memes not recieve");
             for (int i = 0; i < inputs.Length; i++) {
                 questions[i] = new Label {

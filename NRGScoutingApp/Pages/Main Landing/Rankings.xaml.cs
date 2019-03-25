@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Linq;
 using Xamarin.Essentials;
 using Xamarin.Forms;
+using Newtonsoft.Json.Linq;
 
 namespace NRGScoutingApp {
     /*ADD Ranking Chooser Replacement for iOS 
@@ -17,6 +18,7 @@ namespace NRGScoutingApp {
 
         public static string teamSend;
         private List<RankStruct> rankList;
+        public static List<string> pitTeams;
 
         MatchFormat.CHOOSE_RANK_TYPE rankChoice;
 
@@ -63,6 +65,8 @@ namespace NRGScoutingApp {
 
         protected override void OnAppearing () {
             updateEvents ();
+            setPitTeams();
+
         }
 
         //Updates events with given enum
@@ -153,6 +157,25 @@ namespace NRGScoutingApp {
             String item = x.Find (y => y.Equals (e.Item)).Key;
             teamSend = item;
             await Navigation.PushAsync (new RankingsDetailView (mainRank.returnTeamTimes (item)) { Title = item });
+        }
+
+        private void setPitTeams()
+        {
+            JObject input;
+            try
+            {
+                input = JObject.Parse(Preferences.Get("matchEventsString", ""));
+            }
+            catch (Newtonsoft.Json.JsonException)
+            {
+                input = new JObject();
+            }
+            pitTeams = PitScouting.getListVals(input);
+        }
+
+        void allianceClicked(object sender, System.EventArgs e)
+        {
+
         }
     }
 }

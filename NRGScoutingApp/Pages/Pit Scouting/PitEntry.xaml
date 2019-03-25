@@ -23,7 +23,7 @@
         <ScrollView>
             <StackLayout Padding="5" x:Name="mainLayout">
                 <Label Text="Change Team"
-                    Margin="10"
+                       Margin="10"
                     FontSize="20"
                     TextColor="Blue"
                     x:Name="teamChanger">
