@@ -7,10 +7,7 @@
     Title="Rankings"
     Icon="ic_leader.png"
     ios:NavigationPage.PrefersLargeTitles="true">
-    <ContentPage.ToolbarItems>
-        <ToolbarItem Icon="ic_settings.png" Clicked="settingsClicked"/>
-    </ContentPage.ToolbarItems>
-    <ContentPage.Content>
+   <ContentPage.Content>
         <StackLayout>
             <Grid HorizontalOptions="Center" RowSpacing="0" ColumnSpacing="0" Margin="0" VerticalOptions="Start">
                 <Grid.RowDefinitions>
@@ -24,6 +21,7 @@
                         Grid.Column="0"
                         HorizontalOptions="StartAndExpand"
                         Padding="10"
+                        IsVisible="false"
                         FontSize="Large"/>
             <Picker x:Name="rankPicker"
                 Title="Team Identifier"
@@ -91,3 +89,7 @@
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
+<!--
+ <ContentPage.ToolbarItems>
+        <ToolbarItem Icon="ic_settings.png" Clicked="settingsClicked"/>
+    </ContentPage.ToolbarItems>-->
