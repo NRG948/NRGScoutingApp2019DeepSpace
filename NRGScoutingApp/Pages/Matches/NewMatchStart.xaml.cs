@@ -130,7 +130,8 @@ namespace NRGScoutingApp {
 
             if (timerStartVal >= ConstantVars.TIMER_CHECK_INTERVAL) {
                 Console.WriteLine (DateTime.Now.Subtract (timeStartDate).TotalMilliseconds - timerStartVal);
-                timerValue += (int) DateTime.Now.Subtract (timeStartDate).TotalMilliseconds - timerStartVal;
+                timerValue += (int) DateTime.Now.Subtract (timeStartDate).TotalMilliseconds
+                    - timerStartVal;
                 timerStartVal = 0;
                 timeStartDate = DateTime.Now;
             }

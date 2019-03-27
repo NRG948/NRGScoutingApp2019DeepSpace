@@ -6,7 +6,6 @@ using Xamarin.Forms.Xaml;
 namespace NRGScoutingApp
 {
 
-    [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Settings : ContentPage
     {
         private DateTime timer;
@@ -50,20 +49,21 @@ namespace NRGScoutingApp
         public Settings()
         {
             InitializeComponent();
-            a = new Thread(new ThreadStart(TitleColorChange));
-
+            
         }
+        
 
-        void TitleColorChange()
+        async void TitleColorChange()
         {
             timer = DateTime.Now;
             while (true)
             {
-                double span = (double) DateTime.Now.Subtract(timer).TotalMilliseconds;
+                double span = (double)DateTime.Now.Subtract(timer).TotalMilliseconds;
                 span %= 8000;
                 span -= 4000;
                 span = Math.Abs(span);
-                fancy.TextColor = Color.FromRgb(255, (int) (span * 255 / 4000), 0);
+                fancy.TextColor = Color.FromRgb(255, (int)(span * 255 / 4000), 0);
+                
             }
         }
     }
