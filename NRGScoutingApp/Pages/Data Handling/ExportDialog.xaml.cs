@@ -6,6 +6,8 @@ using Newtonsoft.Json.Linq;
 using Plugin.Clipboard;
 using Rg.Plugins.Popup.Services;
 using Xamarin.Essentials;
+using Xamarin.Forms;
+
 
 namespace NRGScoutingApp {
     public partial class ExportDialog {
@@ -65,13 +67,23 @@ namespace NRGScoutingApp {
         async void Rank_Clicked (object sender, System.EventArgs e) {
             await RankText ();
         }
-        public async Task RankText () {
-            initCSV ();
-            string path = Environment.GetFolderPath (Environment.SpecialFolder.MyDocuments);
-            await Share.RequestAsync (new ShareTextRequest {
-                Uri = "file://" + path + "/" + excelFileBase + ".csv",
-                    Title = "Share Ranks"
-            });
+        public async Task RankText() {
+            initCSV();
+
+            switch (Device.RuntimePlatform) {
+                case Device.iOS:
+                    string path = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+                    await Share.RequestAsync(new ShareTextRequest
+                    {
+                        Uri = "file://" + path + "/" + excelFileBase + ".csv",
+                        Title = "Share Ranks"
+                    });
+                    break;
+                case Device.Android:
+                    File.WriteAllText("/storage/emulated/0/Downloads/NRGScoutingExcel/" + excelFileBase + ".csv", csvString);
+                    break;
+            
+            }
         }
 
         //Gets entries from device storage and sets them into the text field (or disables field if empty)
