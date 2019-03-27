@@ -80,7 +80,12 @@ namespace NRGScoutingApp {
                     });
                     break;
                 case Device.Android:
-                    File.WriteAllText("/storage/emulated/0/Downloads/NRGScoutingExcel/" + excelFileBase + ".csv", csvString);
+                    String filePathDir = "/storage/emulated/0/Downloads/NRGScoutingExcel/";
+                    if (!File.Exists(filePathDir))
+                    {
+                        Directory.CreateDirectory(filePathDir);
+                    }
+                    File.WriteAllText(filePathDir + excelFileBase + ".csv", csvString);
                     break;
             
             }
