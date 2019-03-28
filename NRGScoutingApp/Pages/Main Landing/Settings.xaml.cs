@@ -3,11 +3,9 @@ using System.Threading;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace NRGScoutingApp
-{
+namespace NRGScoutingApp {
 
-    public partial class Settings : ContentPage
-    {
+    public partial class Settings : ContentPage {
         private DateTime timer;
         private Thread a;
 
@@ -46,24 +44,20 @@ namespace NRGScoutingApp
         public static readonly int PTS_LVL_2_CLIMB = 6;
         public static readonly int PTS_LVL_3_CLIMB = 12;
 
-        public Settings()
-        {
-            InitializeComponent();
-            
-        }
-        
+        public Settings () {
+            InitializeComponent ();
 
-        async void TitleColorChange()
-        {
+        }
+
+        async void TitleColorChange () {
             timer = DateTime.Now;
-            while (true)
-            {
-                double span = (double)DateTime.Now.Subtract(timer).TotalMilliseconds;
+            while (true) {
+                double span = (double) DateTime.Now.Subtract (timer).TotalMilliseconds;
                 span %= 8000;
                 span -= 4000;
-                span = Math.Abs(span);
-                fancy.TextColor = Color.FromRgb(255, (int)(span * 255 / 4000), 0);
-                
+                span = Math.Abs (span);
+                fancy.TextColor = Color.FromRgb (255, (int) (span * 255 / 4000), 0);
+
             }
         }
     }

@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
+using Newtonsoft.Json.Linq;
 using Xamarin.Essentials;
 using Xamarin.Forms;
-using Newtonsoft.Json.Linq;
 
 namespace NRGScoutingApp {
     /*ADD Ranking Chooser Replacement for iOS 
@@ -25,9 +25,8 @@ namespace NRGScoutingApp {
         //Initializes the ranking object
         Ranker mainRank = new Ranker (Preferences.Get ("matchEventsString", ""));
 
-        void settingsClicked(object sender, System.EventArgs e)
-        {
-            Navigation.PushAsync(new Settings());
+        void settingsClicked (object sender, System.EventArgs e) {
+            Navigation.PushAsync (new Settings ());
         }
 
         void rankTypeDelta (object sender, System.EventArgs e) {
@@ -65,7 +64,7 @@ namespace NRGScoutingApp {
 
         protected override void OnAppearing () {
             updateEvents ();
-            setPitTeams();
+            setPitTeams ();
 
         }
 
@@ -75,25 +74,15 @@ namespace NRGScoutingApp {
             mainRank.setData (Preferences.Get ("matchEventsString", ""));
             //Gets all data and sets it into ascending order based on each team's average time
             Dictionary<string, double> x = mainRank.getRank (rankChoice);
-            Dictionary<string,double> y = new Dictionary<string,double>();  
+            Dictionary<string, double> y = new Dictionary<string, double> ();
             List<RankStruct> ranks = new List<RankStruct> ();
-            if (!(rankPicker.SelectedIndex == 7))
-                {
-                    y = (from pair in x
-                    orderby pair.Value descending
-                    select pair).ToDictionary(pair => pair.Key, pair => pair.Value);
-            }
-                else
-                {
-                try
-                {
-                    y = (from pair in x
-                         orderby Convert.ToInt32(pair.Key.Split(" - ", 2)[0]) ascending
-                         select pair).ToDictionary(pair => pair.Key, pair => pair.Value);
-                }
-                catch
-                {
-                    y = new Dictionary<string, double>();
+            if (!(rankPicker.SelectedIndex == 7)) {
+                y = (from pair in x orderby pair.Value descending select pair).ToDictionary (pair => pair.Key, pair => pair.Value);
+            } else {
+                try {
+                    y = (from pair in x orderby Convert.ToInt32 (pair.Key.Split (" - ", 2) [0]) ascending select pair).ToDictionary (pair => pair.Key, pair => pair.Value);
+                } catch {
+                    y = new Dictionary<string, double> ();
                 }
             }
 
@@ -124,30 +113,22 @@ namespace NRGScoutingApp {
             sadNoMatch.IsVisible = !rankingsView.IsVisible;
         }
 
-        void SearchBar_TextChanged(object sender, Xamarin.Forms.TextChangedEventArgs e)
-        {
-            if (string.IsNullOrWhiteSpace(e.NewTextValue))
-            {
+        void SearchBar_TextChanged (object sender, Xamarin.Forms.TextChangedEventArgs e) {
+            if (string.IsNullOrWhiteSpace (e.NewTextValue)) {
                 listView.ItemsSource = rankList;
-            }
-            else
-            {
-                listView.ItemsSource = rankList.Where(rankList => rankList.Key.ToLower().Contains(e.NewTextValue.ToLower()) || 
-                rankList.Key.ToLower().Contains(e.NewTextValue.ToLower()) || 
-                getColorString(rankList.color).ToLower().Contains(e.NewTextValue.ToLower()));
+            } else {
+                listView.ItemsSource = rankList.Where (rankList => rankList.Key.ToLower ().Contains (e.NewTextValue.ToLower ()) ||
+                    rankList.Key.ToLower ().Contains (e.NewTextValue.ToLower ()) ||
+                    getColorString (rankList.color).ToLower ().Contains (e.NewTextValue.ToLower ()));
             }
         }
 
-    private String getColorString(Color input) {
-            if (input.Equals(Color.Red)) {
+        private String getColorString (Color input) {
+            if (input.Equals (Color.Red)) {
                 return "Red";
-            }
-            else if (input.Equals(Color.Yellow))
-            {
+            } else if (input.Equals (Color.Yellow)) {
                 return "Yellow";
-            }
-            else
-            {
+            } else {
                 return "None";
             }
         }
@@ -159,22 +140,17 @@ namespace NRGScoutingApp {
             await Navigation.PushAsync (new RankingsDetailView (mainRank.returnTeamTimes (item)) { Title = item });
         }
 
-        private void setPitTeams()
-        {
+        private void setPitTeams () {
             JObject input;
-            try
-            {
-                input = JObject.Parse(Preferences.Get("matchEventsString", ""));
+            try {
+                input = JObject.Parse (Preferences.Get ("matchEventsString", ""));
+            } catch (Newtonsoft.Json.JsonException) {
+                input = new JObject ();
             }
-            catch (Newtonsoft.Json.JsonException)
-            {
-                input = new JObject();
-            }
-            pitTeams = PitScouting.getListVals(input);
+            pitTeams = PitScouting.getListVals (input);
         }
 
-        void allianceClicked(object sender, System.EventArgs e)
-        {
+        void allianceClicked (object sender, System.EventArgs e) {
 
         }
     }

@@ -25,7 +25,7 @@ namespace NRGScoutingApp {
         private Dictionary<String, double> drop3Data = new Dictionary<String, double> (); // high rocket
         private Dictionary<String, double> drop4Data = new Dictionary<String, double> (); // cargoship
         private Dictionary<String, double> drop1_4Data = new Dictionary<String, double> ();
-        private Dictionary<String, int> dropAmount = new Dictionary<String, int>();
+        private Dictionary<String, int> dropAmount = new Dictionary<String, int> ();
         private Dictionary<String, Color> colorData = new Dictionary<String, Color> ();
 
         //PRE: data is in JSON Format
@@ -154,7 +154,7 @@ namespace NRGScoutingApp {
         }
         public void refresh () {
             hatchData = getPickAvgData ((int) MatchFormat.ACTION.pick1);
-            cargoData = getPickAvgData((int)MatchFormat.ACTION.pick2);
+            cargoData = getPickAvgData ((int) MatchFormat.ACTION.pick2);
             drop1Data = getDropData ((int) MatchFormat.ACTION.drop1);
             drop2Data = getDropData ((int) MatchFormat.ACTION.drop2);
             drop3Data = getDropData ((int) MatchFormat.ACTION.drop3);
@@ -244,8 +244,7 @@ namespace NRGScoutingApp {
                 if (hatcherData.ContainsKey (entry.Key) && hatcherData[entry.Key] > 0) {
                     point += ConstantVars.HATCHER_MULTIPLIER / hatcherData[entry.Key];
                 }
-                if (dropAmount.ContainsKey(entry.Key) && dropAmount[entry.Key] > 0)
-                {
+                if (dropAmount.ContainsKey (entry.Key) && dropAmount[entry.Key] > 0) {
                     point += ConstantVars.DROP_AMOUNT_MULTIPLIER * dropAmount[entry.Key];
                 }
                 point += (climbData[entry.Key] * ConstantVars.CLIMB_MULTIPLIER);

@@ -1,11 +1,11 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using Xamarin.Essentials;
 using Xamarin.Forms;
-using System.Collections.Generic;
 
 namespace NRGScoutingApp {
     public partial class RankingsDetailView : ContentPage {
@@ -16,8 +16,8 @@ namespace NRGScoutingApp {
         public RankingsDetailView (String[] times) {
             InitializeComponent ();
             setScoreValues (times);
-            pitButton.IsVisible = Rankings.pitTeams.Contains(Rankings.teamSend);
-            String team = Rankings.teamSend.Split('-', 2)[MatchFormat.teamNameOrNum].Trim();
+            pitButton.IsVisible = Rankings.pitTeams.Contains (Rankings.teamSend);
+            String team = Rankings.teamSend.Split ('-', 2) [MatchFormat.teamNameOrNum].Trim ();
             listView.ItemsSource = Matches.matchesList.Where (matchesList => matchesList.teamNameAndSide.ToLower ().Contains (team.ToLower ()));
         }
 
@@ -56,10 +56,9 @@ namespace NRGScoutingApp {
             });
         }
 
-        async void pitClicked(object sender, System.EventArgs e)
-        {
-            Preferences.Set("teamStart", Rankings.teamSend);
-            await Navigation.PushAsync(new PitEntry(true, Rankings.teamSend, false) { Title = Rankings.teamSend });
+        async void pitClicked (object sender, System.EventArgs e) {
+            Preferences.Set ("teamStart", Rankings.teamSend);
+            await Navigation.PushAsync (new PitEntry (true, Rankings.teamSend, false) { Title = Rankings.teamSend });
         }
     }
 }
