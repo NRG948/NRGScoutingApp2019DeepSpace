@@ -31,7 +31,7 @@
             </Grid.ColumnDefinitions>
             <StackLayout x:Name="matchesView"
                 Orientation="Vertical"
-                 VerticalOptions="CenterAndExpand"
+                VerticalOptions="CenterAndExpand"
                 HorizontalOptions="CenterAndExpand"
                 Grid.Row="0"
                 Grid.Column="0">

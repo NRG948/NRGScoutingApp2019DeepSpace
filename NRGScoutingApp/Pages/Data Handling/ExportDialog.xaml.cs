@@ -4,18 +4,21 @@ using System.Threading.Tasks;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using Plugin.Clipboard;
+using Plugin.Permissions;
+using Plugin.Permissions.Abstractions;
 using Rg.Plugins.Popup.Services;
 using Xamarin.Essentials;
+using Xamarin.Forms;
 
 namespace NRGScoutingApp {
     public partial class ExportDialog {
         public ExportDialog () {
             InitializeComponent ();
             setExportEntries ();
+
         }
 
-        private string excelFileBase = "scoutDataExport_" + DateTime.Now.Month + "_" + DateTime.Now.Day + "_" + DateTime.Now.TimeOfDay;
-
+        private string excelFileBase = "scoutDataExport_" + DateTime.Now.Month + "_" + DateTime.Now.Day + "_" + DateTime.Now.Hour + ":" + DateTime.Now.Minute + ":" + DateTime.Now.Second;
         private string exportText = "";
         private string csvString = "";
         void cancelClicked (object sender, System.EventArgs e) {
@@ -65,13 +68,25 @@ namespace NRGScoutingApp {
         async void Rank_Clicked (object sender, System.EventArgs e) {
             await RankText ();
         }
-        public async Task RankText () {
+        private async Task RankText () {
             initCSV ();
-            string path = Environment.GetFolderPath (Environment.SpecialFolder.MyDocuments);
-            await Share.RequestAsync (new ShareTextRequest {
-                Uri = "file://" + path + "/" + excelFileBase + ".csv",
-                    Title = "Share Ranks"
-            });
+
+            switch (Device.RuntimePlatform) {
+                case Device.iOS:
+                    string path = Environment.GetFolderPath (Environment.SpecialFolder.MyDocuments);
+                    await Share.RequestAsync (new ShareTextRequest {
+                        Uri = "file://" + path + "/" + excelFileBase + ".csv",
+                            Title = "Share Ranks"
+                    });
+                    break;
+                default:
+                    //var response = await CrossPermissions.Current.RequestPermissionsAsync (Permission.Storage);
+                    //String fileDir = Path.Combine (Android.OS.Environment.GetExternalStoragePublicDirectory (Android.OS.Environment.DirectoryDownloads).ToString (), excelFileBase + ".csv");
+                    //File.WriteAllText (fileDir, "");
+                    //File.WriteAllText (fileDir, csvString);
+                    break;
+
+            }
         }
 
         //Gets entries from device storage and sets them into the text field (or disables field if empty)

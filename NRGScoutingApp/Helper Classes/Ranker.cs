@@ -25,7 +25,7 @@ namespace NRGScoutingApp {
         private Dictionary<String, double> drop3Data = new Dictionary<String, double> (); // high rocket
         private Dictionary<String, double> drop4Data = new Dictionary<String, double> (); // cargoship
         private Dictionary<String, double> drop1_4Data = new Dictionary<String, double> ();
-        private Dictionary<String, int> dropAmount = new Dictionary<String, int>();
+        private Dictionary<String, int> dropAmount = new Dictionary<String, int> ();
         private Dictionary<String, Color> colorData = new Dictionary<String, Color> ();
 
         //PRE: data is in JSON Format
@@ -153,8 +153,8 @@ namespace NRGScoutingApp {
             return result;
         }
         public void refresh () {
-            cargoData = getPickAvgData ((int) MatchFormat.ACTION.pick1);
-            hatchData = getPickAvgData ((int) MatchFormat.ACTION.pick2);
+            hatchData = getPickAvgData ((int) MatchFormat.ACTION.pick1);
+            cargoData = getPickAvgData ((int) MatchFormat.ACTION.pick2);
             drop1Data = getDropData ((int) MatchFormat.ACTION.drop1);
             drop2Data = getDropData ((int) MatchFormat.ACTION.drop2);
             drop3Data = getDropData ((int) MatchFormat.ACTION.drop3);
@@ -164,45 +164,6 @@ namespace NRGScoutingApp {
             climbData = getClimbData ();
             overallData = getOverallData ();
         }
-
-        //private Dictionary<string, int> getDropAmount()
-        //{
-        //    Dictionary<string, int> numsData = new Dictionary<string, int>();
-        //    try
-        //    {
-        //        foreach (var match in fullData)
-        //        {
-        //            int reps;
-        //            try
-        //            {
-        //                reps = (int)match["numEvents"];
-        //            }
-        //            catch (JsonException)
-        //            {
-        //                reps = 0;
-        //            }
-        //            for (int i = 1; i < reps; i++)
-        //            {
-        //                if ((int)match["TE" + i + "_1"] <= 4 && (int)match["TE" + i + "_1"] >= 1)
-        //                {
-        //                    if (numsData.ContainsKey(match["team"].ToString()))
-        //                    {
-        //                        numsData[match["team"].ToString()]++;
-        //                    }
-        //                    else
-        //                    {
-        //                        numsData.Add(match["team"].ToString(), 1);
-        //                    }
-        //                }
-        //            }
-        //        }
-        //    }
-        //    catch (System.NullReferenceException)
-        //    {
-
-        //    }
-        //    return numsData;
-        //}
 
         private Dictionary<string, double> getDrop1_4Data () {
             Dictionary<string, double> returnData = new Dictionary<string, double> (drop1Data);
@@ -283,8 +244,7 @@ namespace NRGScoutingApp {
                 if (hatcherData.ContainsKey (entry.Key) && hatcherData[entry.Key] > 0) {
                     point += ConstantVars.HATCHER_MULTIPLIER / hatcherData[entry.Key];
                 }
-                if (dropAmount.ContainsKey(entry.Key) && dropAmount[entry.Key] > 0)
-                {
+                if (dropAmount.ContainsKey (entry.Key) && dropAmount[entry.Key] > 0) {
                     point += ConstantVars.DROP_AMOUNT_MULTIPLIER * dropAmount[entry.Key];
                 }
                 point += (climbData[entry.Key] * ConstantVars.CLIMB_MULTIPLIER);
