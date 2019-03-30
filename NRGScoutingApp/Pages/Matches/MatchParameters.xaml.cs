@@ -343,6 +343,11 @@ namespace NRGScoutingApp {
                 errors += "\n- Give Climb Options";
                 toPrint = true;
             }
+            if (String.IsNullOrWhiteSpace(Entry.team))
+            {
+                errors+= "\n- Select Team \"Change Team\"";
+                toPrint = true;
+            }
             if (toPrint) {
                 DisplayAlert ("The Following Errors Occured", errors, "OK");
             }

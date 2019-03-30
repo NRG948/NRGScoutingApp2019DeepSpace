@@ -80,10 +80,10 @@ namespace NRGScoutingApp {
                     });
                     break;
                 default:
-                    var response = await CrossPermissions.Current.RequestPermissionsAsync (Permission.Storage);
-                    String fileDir = Path.Combine (Android.OS.Environment.GetExternalStoragePublicDirectory (Android.OS.Environment.DirectoryDownloads).ToString (), excelFileBase + ".csv");
-                    File.WriteAllText (fileDir, "");
-                    File.WriteAllText (fileDir, csvString);
+                    //var response = await CrossPermissions.Current.RequestPermissionsAsync (Permission.Storage);
+                    //String fileDir = Path.Combine (Android.OS.Environment.GetExternalStoragePublicDirectory (Android.OS.Environment.DirectoryDownloads).ToString (), excelFileBase + ".csv");
+                    //File.WriteAllText (fileDir, "");
+                    //File.WriteAllText (fileDir, csvString);
                     break;
 
             }

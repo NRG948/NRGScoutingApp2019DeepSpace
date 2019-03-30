@@ -33,16 +33,15 @@ namespace NRGScoutingApp {
             }
             if (!Preferences.ContainsKey ("newAppear")) { } //DEBUG PURPOSES
             else if (Preferences.Get ("newAppear", 0) == 1) {
-                Preferences.Set ("appState", 0);
+                Preferences.Set ("appState", 1);
                 Preferences.Set ("timerValue", 0);
-                Preferences.Set ("teamStart", "");
                 Preferences.Set ("newAppear", 0);
                 Preferences.Set ("tempMatchEvents", "");
                 populateMatchesList ();
             } else if (Preferences.Get ("newAppear", 0) == 0) {
                 Preferences.Set ("appState", 0);
                 Preferences.Set ("timerValue", 0);
-                Preferences.Set ("teamStart", "");
+                //Preferences.Set ("teamStart", "");
                 Preferences.Set ("newAppear", 0);
                 Preferences.Set ("tempMatchEvents", "");
             }
@@ -141,7 +140,7 @@ namespace NRGScoutingApp {
             if (!String.IsNullOrWhiteSpace (Preferences.Get ("matchEventsString", ""))) {
                 try {
                     x = JObject.Parse (Preferences.Get ("matchEventsString", ""));
-                } catch (NullReferenceException) {
+                } catch {
                     Console.WriteLine ("Caught NullRepEx for populateMatchesList");
                     x = new JObject ();
                 }
@@ -159,15 +158,26 @@ namespace NRGScoutingApp {
                 int count;
                 try {
                     count = temp.Count;
-                } catch (System.NullReferenceException) {
+                } catch {
                     count = -1;
                 }
 
                 for (int i = 0; i < count; i++) {
                     JObject match = (JObject) temp[i];
-                    string teamTemp = match["team"].ToString ();
+                    string teamTemp = "";
+                    try
+                    {
+                        teamTemp = match["team"].ToString();
+                    }
+                    catch {}
                     String teamIdentifier = "";
-                    teamIdentifier = teamTemp.Split ("-", 2) [MatchFormat.teamNameOrNum].Trim ();
+                    try
+                    {
+                        teamIdentifier = teamTemp.Split("-", 2)[MatchFormat.teamNameOrNum].Trim();
+                    }
+                    catch {
+                        teamIdentifier = teamTemp;
+                    }
 
                     matchesList.Add (new MatchesListFormat {
                         matchNum = "Match " + match["matchNum"],
@@ -179,7 +189,7 @@ namespace NRGScoutingApp {
             try {
                 matchesView.IsVisible = matchesList.Count > 0;
                 sadNoMatch.IsVisible = !matchesView.IsVisible;
-            } catch (NullReferenceException) {
+            } catch {
                 matchesView.IsVisible = false;
                 sadNoMatch.IsVisible = true;
             }
