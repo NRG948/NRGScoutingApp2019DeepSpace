@@ -21,7 +21,7 @@
     <AotAssemblies>True</AotAssemblies>
     <EnableLLVM>True</EnableLLVM>
     <AndroidLinkMode>None</AndroidLinkMode>
-    <ReleaseVersion>1.0.4</ReleaseVersion>
+    <ReleaseVersion>1.5</ReleaseVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
