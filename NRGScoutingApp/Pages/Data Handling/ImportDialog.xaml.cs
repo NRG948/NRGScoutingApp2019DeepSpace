@@ -5,7 +5,7 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using Rg.Plugins.Popup.Services;
 using Xamarin.Essentials;
-using System.Collections;
+using System.Net;
 using System.Collections.Generic;
 
 namespace NRGScoutingApp {
@@ -24,6 +24,17 @@ namespace NRGScoutingApp {
 
         async void importClicked (object sender, System.EventArgs e) {
             JObject data = MatchParameters.initializeEventsObject ();
+            if (importData.Text.ToLower().Contains("https://pastebin.com/raw/")) {
+                try
+                {
+                    String response = new WebClient().DownloadString(importData.Text);
+                    importData.Text = response;
+                }
+                catch {
+                    await DisplayAlert("Error", "No Internet!", "OK");
+                    return;
+                }
+            }
             try {
                 JObject importJSON = (JObject) JsonConvert.DeserializeObject (importData.Text);
                 if (importJSON.ContainsKey ("Matches") || importJSON.ContainsKey ("PitNotes")) {
