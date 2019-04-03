@@ -60,9 +60,7 @@ namespace NRGScoutingApp {
                     for (int i = 0; i < ConstantVars.QUESTIONS.Length; i++) {
                         try
                         {
-                            if (!item["q" + i].ToString().Replace("&","and").Equals(match["q" + i].ToString().Replace("&","and")))
-                            {
-                                List<String> vals = new List<String>();
+                            List<String> vals = new List<String>();
                                 String[] import = { match["q" + i].ToString() };
                                 String[] existing = { item["q" + i].ToString() };
                                 if (match["q" + i].ToString().Contains(ConstantVars.entrySeparator))
@@ -103,7 +101,6 @@ namespace NRGScoutingApp {
                                 Console.WriteLine(total);
                                 item["q" + i] = total;
                             }
-                        }
                         catch
                         {
                             Console.WriteLine("oof");
