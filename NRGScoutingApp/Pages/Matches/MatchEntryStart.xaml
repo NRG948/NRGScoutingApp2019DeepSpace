@@ -3,7 +3,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="NRGScoutingApp.MatchEntryStart"
     xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
-    Title="New Match"
+    Title="Pick Team"
     ios:Page.UseSafeArea="true"
     ios:NavigationPage.PrefersLargeTitles="true">
     <ContentPage.Content>
