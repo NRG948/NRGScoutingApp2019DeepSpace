@@ -6,6 +6,8 @@
     Icon="ic_assignment.png">
     <ContentPage.ToolbarItems>
         <ToolbarItem Icon="plus.png" Clicked="newPit"/>
+        <ToolbarItem Icon="ic_clear_data.png"
+            Clicked="deleteClicked"/>
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <Grid HorizontalOptions="CenterAndExpand"

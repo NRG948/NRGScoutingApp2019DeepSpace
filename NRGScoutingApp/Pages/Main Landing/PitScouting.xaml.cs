@@ -75,5 +75,21 @@ namespace NRGScoutingApp {
             scoutView.IsVisible = pitItems.Count > 0;
             sadNoPit.IsVisible = !scoutView.IsVisible;
         }
+
+        async void deleteClicked(object sender, System.EventArgs e)
+        {
+            await DisplayAlert("Hold it", "Make sure export to data first", "OK");
+            var del = await DisplayAlert("Notice", "Do you want to delete all pit notes? Data CANNOT be recovered.", "Yes", "No");
+            if (del)
+            {
+                JObject s = JObject.Parse(Preferences.Get("matchEventsString", ""));
+                if (s.ContainsKey("PitNotes"))
+                {
+                    s.Remove("PitNotes");
+                }
+                Preferences.Set("matchEventsString", JsonConvert.SerializeObject(s));
+                setListView(Preferences.Get("matchEventsString", ""));
+            }
+        }
     }
 }

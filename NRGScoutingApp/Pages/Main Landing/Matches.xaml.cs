@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using Rg.Plugins.Popup.Services;
 using Xamarin.Essentials;
@@ -130,7 +131,12 @@ namespace NRGScoutingApp {
             await DisplayAlert ("Hold it", "Make sure export to data first", "OK");
             var del = await DisplayAlert ("Notice", "Do you want to delete all matches? Data CANNOT be recovered.", "Yes", "No");
             if (del) {
-                Preferences.Set ("matchEventsString", "");
+                JObject s = JObject.Parse(Preferences.Get("matchEventsString", ""));
+                if (s.ContainsKey("Matches"))
+                {
+                    s.Remove("Matches");
+                }
+                Preferences.Set("matchEventsString", JsonConvert.SerializeObject(s));
                 populateMatchesList ();
             }
         }
