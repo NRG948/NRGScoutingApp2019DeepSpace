@@ -60,7 +60,7 @@ namespace NRGScoutingApp {
                     for (int i = 0; i < ConstantVars.QUESTIONS.Length; i++) {
                         try
                         {
-                            if (!item["q" + i].Equals(match["q" + i]))
+                            if (!item["q" + i].ToString().Replace("&","and").Equals(match["q" + i].ToString().Replace("&","and")))
                             {
                                 List<String> vals = new List<String>();
                                 String[] import = { match["q" + i].ToString() };
@@ -83,20 +83,18 @@ namespace NRGScoutingApp {
                                 }
                                 foreach (String input in import)
                                 {
-                                    if (!vals.Contains(input)) {
-                                        vals.Add(input);
-                                        Console.WriteLine("input exists");
+                                    String replaced = input.Replace("&", "and");
+                                    if (!vals.Contains(replaced)) {
+                                        vals.Add(replaced);
                                     }
-                                    Console.WriteLine(input);
                                 }
-                                foreach (String exist in existing)
+                                foreach (String input in existing)
                                 {
-                                    if (!vals.Contains(exist))
+                                    String replaced = input.Replace("&", "and");
+                                    if (!vals.Contains(replaced))
                                     {
-                                        vals.Add(exist);
-                                        Console.WriteLine("exist exists");
+                                        vals.Add(replaced);
                                     }
-                                    Console.WriteLine(exist);
                                 }
                                 String total = vals[0];
                                 for(int j = 1; j < vals.Count; j++) {

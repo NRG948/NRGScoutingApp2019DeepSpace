@@ -62,27 +62,34 @@ namespace NRGScoutingApp {
         }
 
         async private Task pasteRequest() {
-            String temp;
-            JObject datas = JObject.Parse(exportText);
-            temp = JsonConvert.SerializeObject(new JObject(new JProperty("Matches", (JArray)datas["Matches"])), Formatting.None);
-            HttpClient client = new HttpClient();
+            String temp = exportText.Replace("&","and");
             var s = new WebClient();
-            var values = new {
-                api_option = "paste",
-                 api_dev_key = "",
-                api_paste_code = temp,
-                };
-            //api_paste_format = "php"
-            //api_paste_private =  "0",
-            var stringPayload = JsonConvert.SerializeObject(values, Formatting.None);
-            Console.WriteLine(stringPayload);
-            var content = new StringContent(stringPayload, Encoding.UTF8, "application/json");
-            var response = await client.PostAsync("https://pastebin.com/api/api_post.php" , content);
-            var result = response.Content.ReadAsStringAsync();
-            String output = result.ToString();
-            CrossClipboard.Current.SetText(output);
-            Console.WriteLine(output);
-            await DisplayAlert("Success", "Pastebin Link Copied to Clipboard", "OK");
+
+            try
+            {
+                WebRequest req = WebRequest.Create("http://pastebin.com/api/api_post.php");
+
+                req.Method = "POST";
+                req.ContentType = "application/x-www-form-urlencoded";
+
+                string postData = "api_option=" + "paste" + "&api_paste_code=" + temp + "&api_dev_key=" + "add_api_key";
+                byte[] byteArray = Encoding.UTF8.GetBytes(postData);
+                req.ContentLength = byteArray.Length;
+
+                Stream ds = req.GetRequestStream();
+                ds.Write(byteArray, 0, byteArray.Length);
+                ds.Close();
+                WebResponse wr = req.GetResponse();
+                ds = wr.GetResponseStream();
+                StreamReader reader = new StreamReader(ds);
+
+                String ret = await reader.ReadToEndAsync();
+                CrossClipboard.Current.SetText(ret);
+                await DisplayAlert("Success", "Pastebin Link Copied to Clipboard", "OK");
+            }
+            catch {
+                await DisplayAlert("Error", "No Internet!", "OK");
+            }
         }
 
         async void Share_Clicked (object sender, System.EventArgs e) {
