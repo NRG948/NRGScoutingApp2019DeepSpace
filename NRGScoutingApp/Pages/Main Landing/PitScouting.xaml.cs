@@ -79,7 +79,7 @@ namespace NRGScoutingApp {
         async void deleteClicked(object sender, System.EventArgs e)
         {
             await DisplayAlert("Hold it", "Make sure export to data first", "OK");
-            var del = await DisplayAlert("Notice", "Do you want to delete all pit notes? Data CANNOT be recovered.", "Yes", "No");
+            var del = await DisplayAlert("Notice", "Do you want to delete all Pit Notes? Data CANNOT be recovered.", "Yes", "No");
             if (del)
             {
                 JObject s = JObject.Parse(Preferences.Get("matchEventsString", ""));
