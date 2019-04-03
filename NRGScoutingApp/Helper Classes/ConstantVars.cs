@@ -157,6 +157,6 @@ namespace NRGScoutingApp {
         /*
          * Export Dialog Text
          */
-        public static readonly String[] exportTypes = { "Cancel", "All", "Match", "Pit" };
+        public static readonly String[] exportTypes = { "Cancel", "All", "Match", "Pit", "Online Paste Bin" };
     }
 }

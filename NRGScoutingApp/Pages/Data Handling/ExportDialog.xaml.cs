@@ -4,11 +4,13 @@ using System.Threading.Tasks;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using Plugin.Clipboard;
-using Plugin.Permissions;
-using Plugin.Permissions.Abstractions;
 using Rg.Plugins.Popup.Services;
 using Xamarin.Essentials;
 using Xamarin.Forms;
+using System.Net.Http;
+using System.Collections.Generic;
+using System.Text;
+using System.Net;
 
 namespace NRGScoutingApp {
     public partial class ExportDialog {
@@ -28,7 +30,7 @@ namespace NRGScoutingApp {
             String exportText = null;
             String action = "";
             while (String.IsNullOrWhiteSpace (action)) {
-                action = await DisplayActionSheet ("Choose Export Type:", ConstantVars.exportTypes[0], null, ConstantVars.exportTypes[1], ConstantVars.exportTypes[2], ConstantVars.exportTypes[3]);
+                action = await DisplayActionSheet ("Choose Export Type:", ConstantVars.exportTypes[0], null, ConstantVars.exportTypes[1], ConstantVars.exportTypes[2], ConstantVars.exportTypes[3], ConstantVars.exportTypes[4]);
             }
             if (action.Equals (ConstantVars.exportTypes[1])) {
                 exportText = this.exportText;
@@ -43,16 +45,44 @@ namespace NRGScoutingApp {
                 }
             } else if (action.Equals (ConstantVars.exportTypes[3])) {
                 JObject datas = JObject.Parse (this.exportText);
-                if (datas.ContainsKey ("Matches")) {
+                if (datas.ContainsKey ("PitNotes")) {
                     exportText = JsonConvert.SerializeObject (new JObject (new JProperty ("PitNotes", (JArray) datas["PitNotes"])));
                     CrossClipboard.Current.SetText (exportText);
                 } else {
                     await DisplayAlert ("Oops!", "No " + ConstantVars.exportTypes[3] + " data", "OK");
                 }
             }
+            else if (action.Equals(ConstantVars.exportTypes[4]))
+            {
+               await pasteRequest();
+            }
             if (!action.Equals (ConstantVars.exportTypes[0])) {
                 await PopupNavigation.Instance.PopAsync (true);
             }
+        }
+
+        async private Task pasteRequest() {
+            String temp;
+            JObject datas = JObject.Parse(exportText);
+            temp = JsonConvert.SerializeObject(new JObject(new JProperty("Matches", (JArray)datas["Matches"])), Formatting.None);
+            HttpClient client = new HttpClient();
+            var s = new WebClient();
+            var values = new {
+                api_option = "paste",
+                 api_dev_key = "",
+                api_paste_code = temp,
+                };
+            //api_paste_format = "php"
+            //api_paste_private =  "0",
+            var stringPayload = JsonConvert.SerializeObject(values, Formatting.None);
+            Console.WriteLine(stringPayload);
+            var content = new StringContent(stringPayload, Encoding.UTF8, "application/json");
+            var response = await client.PostAsync("https://pastebin.com/api/api_post.php" , content);
+            var result = response.Content.ReadAsStringAsync();
+            String output = result.ToString();
+            CrossClipboard.Current.SetText(output);
+            Console.WriteLine(output);
+            await DisplayAlert("Success", "Pastebin Link Copied to Clipboard", "OK");
         }
 
         async void Share_Clicked (object sender, System.EventArgs e) {
@@ -80,10 +110,10 @@ namespace NRGScoutingApp {
                     });
                     break;
                 default:
-                    var response = await CrossPermissions.Current.RequestPermissionsAsync (Permission.Storage);
-                    String fileDir = Path.Combine (Android.OS.Environment.GetExternalStoragePublicDirectory (Android.OS.Environment.DirectoryDownloads).ToString (), excelFileBase + ".csv");
-                    File.WriteAllText (fileDir, "");
-                    File.WriteAllText (fileDir, csvString);
+                    //var response = await CrossPermissions.Current.RequestPermissionsAsync (Permission.Storage);
+                    //String fileDir = Path.Combine (Android.OS.Environment.GetExternalStoragePublicDirectory (Android.OS.Environment.DirectoryDownloads).ToString (), excelFileBase + ".csv");
+                    //File.WriteAllText (fileDir, "");
+                    //File.WriteAllText (fileDir, csvString);
                     break;
 
             }

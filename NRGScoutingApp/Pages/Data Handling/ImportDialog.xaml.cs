@@ -5,6 +5,8 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using Rg.Plugins.Popup.Services;
 using Xamarin.Essentials;
+using System.Collections;
+using System.Collections.Generic;
 
 namespace NRGScoutingApp {
     public partial class ImportDialog {
@@ -56,8 +58,57 @@ namespace NRGScoutingApp {
                     var item = tempList.Find (x => x["team"].Equals (match["team"]));
                     temp.Remove (item);
                     for (int i = 0; i < ConstantVars.QUESTIONS.Length; i++) {
-                        if (!item["q" + i].Equals (match["q" + i])) {
-                            item["q" + i] += ConstantVars.entrySeparator + match["q" + i];
+                        try
+                        {
+                            if (!item["q" + i].Equals(match["q" + i]))
+                            {
+                                List<String> vals = new List<String>();
+                                String[] import = { match["q" + i].ToString() };
+                                String[] existing = { item["q" + i].ToString() };
+                                if (match["q" + i].ToString().Contains(ConstantVars.entrySeparator))
+                                {
+                                    try
+                                    {
+                                        import = match["q" + i].ToString().Split(ConstantVars.entrySeparator);
+                                    }
+                                    catch { }
+                                }
+                                if (item["q" + i].ToString().Contains(ConstantVars.entrySeparator))
+                                {
+                                    try
+                                    {
+                                        existing = item["q" + i].ToString().Split(ConstantVars.entrySeparator);
+                                    }
+                                    catch { }
+                                }
+                                foreach (String input in import)
+                                {
+                                    if (!vals.Contains(input)) {
+                                        vals.Add(input);
+                                        Console.WriteLine("input exists");
+                                    }
+                                    Console.WriteLine(input);
+                                }
+                                foreach (String exist in existing)
+                                {
+                                    if (!vals.Contains(exist))
+                                    {
+                                        vals.Add(exist);
+                                        Console.WriteLine("exist exists");
+                                    }
+                                    Console.WriteLine(exist);
+                                }
+                                String total = vals[0];
+                                for(int j = 1; j < vals.Count; j++) {
+                                    total += ConstantVars.entrySeparator + vals[j];
+                                }
+                                Console.WriteLine(total);
+                                item["q" + i] = total;
+                            }
+                        }
+                        catch
+                        {
+                            Console.WriteLine("oof");
                         }
                     }
                     temp.Add (item);
