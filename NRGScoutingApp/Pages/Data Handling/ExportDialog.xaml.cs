@@ -7,8 +7,6 @@ using Plugin.Clipboard;
 using Rg.Plugins.Popup.Services;
 using Xamarin.Essentials;
 using Xamarin.Forms;
-using System.Net.Http;
-using System.Collections.Generic;
 using System.Text;
 using System.Net;
 
@@ -64,6 +62,39 @@ namespace NRGScoutingApp {
         async private Task pasteRequest() {
             String temp = exportText.Replace("&","and");
             var s = new WebClient();
+            String action = "";
+            while (String.IsNullOrWhiteSpace(action))
+            {
+                action = await DisplayActionSheet("Choose PasteBin Export Type:", ConstantVars.exportTypes[0], null, ConstantVars.exportTypes[1], ConstantVars.exportTypes[2], ConstantVars.exportTypes[3]);
+            }
+            if (action.Equals(ConstantVars.exportTypes[1]))
+            {
+                temp = this.exportText;
+            }
+            else if (action.Equals(ConstantVars.exportTypes[2]))
+            {
+                JObject datas = JObject.Parse(temp);
+                if (datas.ContainsKey("Matches"))
+                {
+                    temp = JsonConvert.SerializeObject(new JObject(new JProperty("Matches", (JArray)datas["Matches"])));
+                }
+                else
+                {
+                    await DisplayAlert("Oops!", "No " + ConstantVars.exportTypes[2] + " data", "OK");
+                }
+            }
+            else if (action.Equals(ConstantVars.exportTypes[3]))
+            {
+                JObject datas = JObject.Parse(temp);
+                if (datas.ContainsKey("PitNotes"))
+                {
+                    temp = JsonConvert.SerializeObject(new JObject(new JProperty("PitNotes", (JArray)datas["PitNotes"])));
+                }
+                else
+                {
+                    await DisplayAlert("Oops!", "No " + ConstantVars.exportTypes[3] + " data", "OK");
+                }
+            }
 
             try
             {
