@@ -10,10 +10,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)Models\Item.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Pages\Main Landing\Settings.xaml.cs">
-      <DependentUpon>Settings.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Services\CloudDataStore.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Services\IDataStore.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Services\MockDataStore.cs" />
@@ -147,15 +143,8 @@
     <Folder Include="$(MSBuildThisFileDirectory)Helper Classes\" />
     <Folder Include="$(MSBuildThisFileDirectory)Pages\Matches\" />
     <Folder Include="$(MSBuildThisFileDirectory)Pages\Data Handling\" />
-    <Folder Include="$(MSBuildThisFileDirectory)Pages\Settings\" />
     <Folder Include="$(MSBuildThisFileDirectory)Pages\Tab Groups\" />
     <Folder Include="$(MSBuildThisFileDirectory)Pages\Pit Scouting\" />
     <Folder Include="$(MSBuildThisFileDirectory)Pages\Rankings\" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\Main Landing\Settings.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
   </ItemGroup>
 </Project>

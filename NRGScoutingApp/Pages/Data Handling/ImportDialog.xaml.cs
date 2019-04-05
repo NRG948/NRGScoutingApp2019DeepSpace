@@ -125,6 +125,8 @@ namespace NRGScoutingApp {
         }
 
         private async Task addMatchItemsChecker (JObject data, JObject importJSON) {
+            int tooMuch = 0;
+            int mode = 0; // 1 for overwite all, 2 for ignore all
             JArray temp = (JArray) data["Matches"];
             JArray importTemp = (JArray) importJSON["Matches"];
             var tempList = temp.ToList ();
@@ -132,13 +134,47 @@ namespace NRGScoutingApp {
                 if (tempList.Exists (x => x["matchNum"].Equals (match["matchNum"]) && x["side"].Equals (match["side"]))) {
                     var item = tempList.Find (x => x["matchNum"].Equals (match["matchNum"]) && x["side"].Equals (match["side"]));
                     if (!item["team"].Equals (match["team"])) {
-                        var add = await DisplayAlert ("Warning!", "Match: " + item["matchNum"] +
-                            "\nTeam: " + item["team"] +
-                            "\nSide: " + MatchFormat.matchSideFromEnum (Convert.ToInt32 (item["side"])) +
-                            "\nConflicts with Existing Match", "Overwite", "Ignore");
-                        if (add) {
-                            temp.Remove (item);
-                            temp.Add (match);
+                        if (mode == 1)
+                        {
+                            temp.Remove(item);
+                            temp.Add(match);
+                        }
+                        else if (mode == 0)
+                        {
+                            tooMuch++;
+                            if (tooMuch <= 1)
+                            {
+                                var add = await DisplayAlert ("Warning!", "Match: " + item["matchNum"] +
+                                    "\nTeam: " + item["team"] +
+                                    "\nSide: " + MatchFormat.matchSideFromEnum (Convert.ToInt32 (item["side"])) +
+                                    "\nConflicts with Existing Match", "Overwite", "Ignore");
+                                if (add) {
+                                    temp.Remove (item);
+                                    temp.Add (match);
+                                }
+                            }
+                            else
+                            {
+                                var add = await DisplayActionSheet ("Warning!" + "\nMatch: " + item["matchNum"] +
+                                    "\nTeam: " + item["team"] +
+                                    "\nSide: " + MatchFormat.matchSideFromEnum(Convert.ToInt32(item["side"])) +
+                                    "\nConflicts with Existing Match", null, null, "Overwite", "Ignore", "Overwite All", "Ignore All");
+                                if (add.Equals("Overwite"))
+                                {
+                                    temp.Remove(item);
+                                    temp.Add(match);
+                                }
+                                else if (add.Equals("Overwite All"))
+                                {
+                                    temp.Remove(item);
+                                    temp.Add(match);
+                                    mode = 1;
+                                }
+                                else if (add.Equals("Ignore All"))
+                                {
+                                    mode = 2;
+                                }
+                            }
                         }
                     }
                 } else {
