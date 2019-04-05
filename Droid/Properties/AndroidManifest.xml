@@ -3,5 +3,6 @@
 	<uses-sdk android:minSdkVersion="21" android:targetSdkVersion="27" />
 	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.INTERNET" />
 	<application android:label="NRGScouting" android:theme="@style/MyTheme" android:icon="@drawable/icon"></application>
 </manifest>
