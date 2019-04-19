@@ -9,7 +9,7 @@
 	<key>CFBundleIdentifier</key>
 	<string>com.NRG.ScoutingApp.2019</string>
 	<key>CFBundleVersion</key>
-	<string>1.6</string>
+	<string>1.6.5</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>MinimumOSVersion</key>
@@ -44,6 +44,6 @@
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
 	<key>CFBundleShortVersionString</key>
-	<string>1.6</string>
+	<string>1.6.5</string>
 </dict>
 </plist>
