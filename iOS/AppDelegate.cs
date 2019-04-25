@@ -14,7 +14,7 @@ namespace NRGScoutingApp.iOS
         {
 
             Rg.Plugins.Popup.Popup.Init();
-
+            Firebase.Core.App.Configure();
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
 

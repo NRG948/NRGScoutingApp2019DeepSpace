@@ -13,7 +13,7 @@ namespace NRGScoutingApp.Droid {
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
             base.OnCreate (bundle);
-
+            Plugin.CloudFirestore.CloudFirestore.Init(this);
             Xamarin.Essentials.Platform.Init (this, bundle);
             Rg.Plugins.Popup.Popup.Init (this, bundle);
             Plugin.CurrentActivity.CrossCurrentActivity.Current.Init (this, bundle);

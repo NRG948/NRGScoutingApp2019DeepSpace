@@ -3,10 +3,12 @@ using System.Linq;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using Plugin.CloudFirestore;
 using Rg.Plugins.Popup.Services;
 using Xamarin.Essentials;
 using System.Net;
 using System.Collections.Generic;
+using Firebase.CloudFirestore;
 
 namespace NRGScoutingApp {
     public partial class ImportDialog {
@@ -123,6 +125,31 @@ namespace NRGScoutingApp {
                 }
             }
         }
+
+        async void fireBaseClicked(object sender, System.EventArgs e)
+        {
+            try
+            {
+                importButton.IsEnabled = false;
+                fireBase.Text = "Getting Data...";
+                IDocumentSnapshot document = await CrossCloudFirestore.Current
+                                            .Instance
+                                            .GetCollection("948")
+                                            .GetDocument("2019")
+                                            .GetDocumentAsync();
+                String s = document.Data["AllData"].ToString();
+                importData.Text = s;
+                fireBase.IsEnabled = false;
+                importClicked(sender, e);
+            }
+            catch (Exception s)
+            {
+                fireBase.Text = "FireBase Test";
+                importButton.IsEnabled = true;
+                Console.WriteLine (s.StackTrace);
+            }
+        }
+
 
         private async Task addMatchItemsChecker (JObject data, JObject importJSON) {
             int tooMuch = 0;
