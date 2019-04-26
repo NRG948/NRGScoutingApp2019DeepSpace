@@ -37,28 +37,50 @@ namespace NRGScoutingApp {
                     return;
                 }
             }
-            try {
-                JObject importJSON = (JObject) JsonConvert.DeserializeObject (importData.Text);
-                if (importJSON.ContainsKey ("Matches") || importJSON.ContainsKey ("PitNotes")) {
-                    if (importJSON.ContainsKey ("Matches")) {
-                        if (!data.ContainsKey ("Matches")) {
-                            data.Add (new JProperty ("Matches", new JArray ()));
+            try
+            {
+                JObject importJSON = (JObject)JsonConvert.DeserializeObject(importData.Text);
+                await getCombinedJSON(importJSON, data);
+            }
+            catch (Exception s){ 
+            Console.WriteLine(s.StackTrace);
+                await DisplayAlert("Alert", "Error in Data", "OK");
+            }
+            Preferences.Set("matchEventsString", JsonConvert.SerializeObject(data));
+        }
+
+        async public Task getCombinedJSON (JObject importJSON, JObject data)
+        {
+            try
+            {
+               if (importJSON.ContainsKey("Matches") || importJSON.ContainsKey("PitNotes"))
+                {
+                    if (importJSON.ContainsKey("Matches"))
+                    {
+                        if (!data.ContainsKey("Matches"))
+                        {
+                            data.Add(new JProperty("Matches", new JArray()));
                         }
-                        await addMatchItemsChecker (data, importJSON);
+                        await addMatchItemsChecker(data, importJSON);
                     }
-                    if (importJSON.ContainsKey ("PitNotes")) {
-                        if (!data.ContainsKey ("PitNotes")) {
-                            data.Add (new JProperty ("PitNotes", new JArray ()));
+                    if (importJSON.ContainsKey("PitNotes"))
+                    {
+                        if (!data.ContainsKey("PitNotes"))
+                        {
+                            data.Add(new JProperty("PitNotes", new JArray()));
                         }
-                        await addPitItemsChecker (data, importJSON);
+                        await addPitItemsChecker(data, importJSON);
                     }
-                    Preferences.Set ("matchEventsString", JsonConvert.SerializeObject (data));
-                    await PopupNavigation.Instance.PopAsync (true);
-                } else {
-                    await DisplayAlert ("Alert", "Error in Data", "OK");
+                    await PopupNavigation.Instance.PopAsync(true);
                 }
-            } catch (JsonReaderException) {
-                await DisplayAlert ("Alert", "Error in Data", "OK");
+                else
+                {
+                    await DisplayAlert("Alert", "Error in Data", "OK");
+                }
+            }
+            catch (JsonReaderException)
+            {
+                await DisplayAlert("Alert", "Error in Data", "OK");
             }
         }
 
@@ -95,18 +117,30 @@ namespace NRGScoutingApp {
                                 foreach (String input in import)
                                 {
                                     String replaced = input.Replace("&", "and");
-                                    if (!vals.Contains(replaced)) {
+                                    if (!vals.Any(s => s.ToLower().Contains(replaced.ToLower()))) {
+                                        vals.Add(replaced);
+                                    }
+                                    if (vals.Any(s => replaced.ToLower().Contains(s.ToLower())))
+                                    {
+                                        var test = vals.Find(s => replaced.ToLower().Contains(s.ToLower()));
+                                        vals.Remove(test);
                                         vals.Add(replaced);
                                     }
                                 }
                                 foreach (String input in existing)
                                 {
                                     String replaced = input.Replace("&", "and");
-                                    if (!vals.Contains(replaced))
+                                    if (!vals.Any(s => s.ToLower().Contains(replaced.ToLower())))
                                     {
                                         vals.Add(replaced);
                                     }
-                                }
+                                    if (vals.Any(s => replaced.ToLower().Contains(s.ToLower())))
+                                    {
+                                        var test = vals.Find(s => replaced.ToLower().Contains(s.ToLower()));
+                                        vals.Remove(test);
+                                        vals.Add(replaced);
+                                    }
+                            }
                                 String total = vals[0];
                                 for(int j = 1; j < vals.Count; j++) {
                                     total += ConstantVars.entrySeparator + vals[j];
