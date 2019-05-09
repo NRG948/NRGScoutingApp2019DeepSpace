@@ -23,6 +23,7 @@
     <EnableLLVM>True</EnableLLVM>
     <AndroidLinkMode>None</AndroidLinkMode>
     <ReleaseVersion>1.6.6</ReleaseVersion>
+    <AndroidExplicitCrunch>true</AndroidExplicitCrunch>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
