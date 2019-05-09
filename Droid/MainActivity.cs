@@ -17,7 +17,7 @@ namespace NRGScoutingApp.Droid {
             Xamarin.Essentials.Platform.Init (this, bundle);
             Rg.Plugins.Popup.Popup.Init (this, bundle);
             Plugin.CurrentActivity.CrossCurrentActivity.Current.Init (this, bundle);
-
+            Plugin.FirebaseAuth.FirebaseAuth.Init(this);
             global::Xamarin.Forms.Forms.Init (this, bundle);
 
             app = new App ();

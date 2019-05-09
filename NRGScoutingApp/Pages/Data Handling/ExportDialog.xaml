@@ -24,6 +24,8 @@
       CornerRadius="10"
       Margin="40,20">
       <StackLayout>
+        <Button Text="FireBase Test" x:Name="fireBase" Clicked="fireBaseClicked"/>
+        <Button Text="LougOut" Clicked="LogoutClicked"/>
         <Label Text="Export Entries"
           FontSize="20"
           Margin="2,10"

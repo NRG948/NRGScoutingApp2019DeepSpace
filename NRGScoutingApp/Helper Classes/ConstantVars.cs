@@ -154,6 +154,8 @@ namespace NRGScoutingApp {
             teamSelection
         }
 
+        public static readonly String APP_YEAR = "2019";
+
         /*
          * Export Dialog Text
          */

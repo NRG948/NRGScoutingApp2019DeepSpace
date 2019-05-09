@@ -25,7 +25,7 @@
       Margin="40,20">
       <StackLayout MinimumHeightRequest="100">
         <Button Text="FireBase Test" x:Name="fireBase" Clicked="fireBaseClicked"/>
-                <Label Text="Import Entries"
+        <Label Text="Import Entries"
           FontSize="20"
           FontAttributes="Bold"
           VerticalOptions="Start"
