@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using Newtonsoft.Json;
+using System.Threading.Tasks;
 using Newtonsoft.Json.Linq;
 using Rg.Plugins.Popup.Services;
 using Xamarin.Essentials;
@@ -14,44 +15,22 @@ namespace NRGScoutingApp {
         {
             Navigation.PushAsync(new BlueAllianceMatches());
         } */
-
-        public static Boolean appRestore;
-        public Boolean popNav;
+            
         public static List<MatchesListFormat> matchesList;
 
         public Matches () {
             InitializeComponent ();
             matchConfirm ();
-            Preferences.Set ("newAppear", 0);
-            populateMatchesList ();
         }
 
         protected override void OnAppearing () {
-            popNav = false;
-            if (!Preferences.ContainsKey ("matchEventsString")) {
-                Preferences.Set ("matchEventsString", "");
-                Preferences.Set ("tempMatchEvents", "");
-            }
-            if (!Preferences.ContainsKey ("newAppear")) { } //DEBUG PURPOSES
-            else if (Preferences.Get ("newAppear", 0) == 1) {
-                Preferences.Set ("appState", 1);
-                Preferences.Set ("timerValue", 0);
-                Preferences.Set ("newAppear", 0);
-                Preferences.Set ("tempMatchEvents", "");
-                populateMatchesList ();
-            } else if (Preferences.Get ("newAppear", 0) == 0) {
-                Preferences.Set ("appState", 0);
-                Preferences.Set ("timerValue", 0);
-                //Preferences.Set ("teamStart", "");
-                Preferences.Set ("newAppear", 0);
-                Preferences.Set ("tempMatchEvents", "");
-            }
-            populateMatchesList ();
+            populateMatchesList();
         }
 
         void importClicked (object sender, System.EventArgs e) {
             popupInit ();
         }
+
         private void popupInit () {
             var popup = new ImportDialog ();
             popup.Disappearing += (sender, e) => { this.OnAppearing (); };
@@ -63,8 +42,6 @@ namespace NRGScoutingApp {
         }
 
         async void newClicked (object sender, System.EventArgs e) {
-            popNav = false;
-            appRestore = false;
             await Navigation.PushAsync (new MatchEntryStart (ConstantVars.TEAM_SELECTION_TYPES.match));
         }
 
@@ -76,39 +53,14 @@ namespace NRGScoutingApp {
             }
         }
 
-        void matchConfirm () {
-            if (!Preferences.ContainsKey ("appState")) {
-                appRestore = false;
-                Preferences.Set ("appState", 0);
-                Preferences.Set ("teamStart", "");
-                Preferences.Set ("timerValue", (int) 0);
-                Preferences.Set ("tempParams", "");
-                Preferences.Set ("tempMatchEvents", "");
-                Preferences.Set ("tempPitNotes", "");
-            } else if (!String.IsNullOrWhiteSpace (Preferences.Get ("tempMatchEvents", "")) || !String.IsNullOrWhiteSpace (Preferences.Get ("tempParams", ""))) //App.Current.Properties["appState"].ToString() == "1"
+        private void matchConfirm () {
+            if (!String.IsNullOrWhiteSpace (Preferences.Get ("tempMatchEvents", "")) || !String.IsNullOrWhiteSpace (Preferences.Get ("tempParams", "")))
             {
-                appRestore = true;
-                NavigationPage.SetHasNavigationBar (this, false);
                 Navigation.PushAsync (new MatchEntryEditTab () { Title = Preferences.Get ("teamStart", "") });
             } else if (!String.IsNullOrWhiteSpace (Preferences.Get ("tempPitNotes", ""))) {
-                appRestore = true;
-                NavigationPage.SetHasNavigationBar (this, false);
                 Navigation.PushAsync (new PitEntry (true, Preferences.Get ("teamStart", ""), true) { Title = Preferences.Get ("teamStart", "") });
-            } else if (Preferences.Get ("appState", 0) == 0) {
-                appRestore = false;
-                Preferences.Set ("appState", 0);
-                Preferences.Set ("timerValue", (int) 0);
-                Preferences.Set ("teamStart", "");
-                Preferences.Set ("tempMatchEvents", "");
-                Preferences.Set ("tempParams", "");
-                Preferences.Set ("tempPitNotes", "");
             }
-            if (!Preferences.ContainsKey ("matchEventsString")) {
-                Preferences.Set ("matchEventsString", "");
-                Preferences.Set ("tempMatchEvents", "");
-                Preferences.Set ("tempPitNotes", "");
-            }
-            populateMatchesList ();
+            populateMatchesList();
         }
 
         void Handle_ItemTapped (object sender, Xamarin.Forms.ItemTappedEventArgs e) {
@@ -141,65 +93,90 @@ namespace NRGScoutingApp {
             }
         }
 
+        async void refreshList()
+        {
+            listView.IsRefreshing = true;
+            await Task.Run(async () => {
+                populateMatchesList();
+            });
+            listView.IsRefreshing = false;
+        }
+
         void populateMatchesList () {
             JObject x;
-            if (!String.IsNullOrWhiteSpace (Preferences.Get ("matchEventsString", ""))) {
-                try {
-                    x = JObject.Parse (Preferences.Get ("matchEventsString", ""));
-                } catch {
-                    Console.WriteLine ("Caught NullRepEx for populateMatchesList");
-                    x = new JObject ();
+            if (!String.IsNullOrWhiteSpace(Preferences.Get("matchEventsString", "")))
+            {
+                try
+                {
+                    x = JObject.Parse(Preferences.Get("matchEventsString", ""));
                 }
-            } else {
-                x = new JObject ();
+                catch
+                {
+                    Console.WriteLine("Caught NullRepEx for populateMatchesList");
+                    x = new JObject();
+                }
             }
-            if (!x.HasValues) {
+            else
+            {
+                x = new JObject();
+            }
+            if (!x.HasValues)
+            {
                 matchesList = null;
-                listView.ItemsSource = null;
-            } else {
-                JObject matchesJSON = JObject.Parse (Preferences.Get ("matchEventsString", ""));
-                JArray temp = (JArray) matchesJSON["Matches"];
+            }
+            else
+            {
+                JObject matchesJSON = JObject.Parse(Preferences.Get("matchEventsString", ""));
+                JArray temp = (JArray)matchesJSON["Matches"];
                 //Will Contain all items for matches list
-                matchesList = new List<MatchesListFormat> ();
+                matchesList = new List<MatchesListFormat>();
                 int count;
-                try {
+                try
+                {
                     count = temp.Count;
-                } catch {
+                }
+                catch
+                {
                     count = -1;
                 }
 
-                for (int i = 0; i < count; i++) {
-                    JObject match = (JObject) temp[i];
+                for (int i = 0; i < count; i++)
+                {
+                    JObject match = (JObject)temp[i];
                     string teamTemp = "";
                     try
                     {
                         teamTemp = match["team"].ToString();
                     }
-                    catch {}
+                    catch { }
                     String teamIdentifier = "";
                     try
                     {
                         teamIdentifier = teamTemp.Split("-", 2)[MatchFormat.teamNameOrNum].Trim();
                     }
-                    catch {
+                    catch
+                    {
                         teamIdentifier = teamTemp;
                     }
 
-                    matchesList.Add (new MatchesListFormat {
+                    matchesList.Add(new MatchesListFormat
+                    {
                         matchNum = "Match " + match["matchNum"],
-                            teamNameAndSide = teamIdentifier + " - " + MatchFormat.matchSideFromEnum ((int) match["side"])
+                        teamNameAndSide = teamIdentifier + " - " + MatchFormat.matchSideFromEnum((int)match["side"])
                     });
                 }
-                listView.ItemsSource = matchesList;
             }
-            try {
+            try
+            {
                 matchesView.IsVisible = matchesList.Count > 0;
                 sadNoMatch.IsVisible = !matchesView.IsVisible;
-            } catch {
+            }
+            catch
+            {
                 matchesView.IsVisible = false;
                 sadNoMatch.IsVisible = true;
             }
-
+            listView.ItemsSource = matchesList;
         }
     }
 }

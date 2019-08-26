@@ -41,3 +41,7 @@ Thumbs.db
 *.dotCover
 iOS/GoogleService-Info.plist
 Droid/google-services.json
+
+iOS/\._GoogleService-Info\.plist
+
+Droid/\._google-services\.json

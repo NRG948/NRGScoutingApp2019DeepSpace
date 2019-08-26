@@ -30,35 +30,7 @@ namespace NRGScoutingApp {
         //}
 
         void rankTypeDelta (object sender, System.EventArgs e) {
-            switch (rankPicker.SelectedIndex) {
-                case 0:
-                    rankChoice = MatchFormat.CHOOSE_RANK_TYPE.overallRank;
-                    break;
-                case 1:
-                    rankChoice = MatchFormat.CHOOSE_RANK_TYPE.pick1; //Hatch
-                    break;
-                case 2:
-                    rankChoice = MatchFormat.CHOOSE_RANK_TYPE.pick2; //Cargo
-                    break;
-                case 3:
-                    rankChoice = MatchFormat.CHOOSE_RANK_TYPE.climb; //Climb
-                    break;
-                case 4:
-                    rankChoice = MatchFormat.CHOOSE_RANK_TYPE.drop1; //Lvl1
-                    break;
-                case 5:
-                    rankChoice = MatchFormat.CHOOSE_RANK_TYPE.drop2; //lvl2
-                    break;
-                case 6:
-                    rankChoice = MatchFormat.CHOOSE_RANK_TYPE.drop3; //lvl3
-                    break;
-                case 7:
-                    rankChoice = MatchFormat.CHOOSE_RANK_TYPE.overallRank; // teamNum
-                    break;
-                default:
-                    rankChoice = MatchFormat.CHOOSE_RANK_TYPE.overallRank;
-                    break;
-            }
+            rankChoice = (MatchFormat.CHOOSE_RANK_TYPE) rankPicker.SelectedIndex;
             updateEvents ();
         }
 
@@ -71,7 +43,7 @@ namespace NRGScoutingApp {
         //Updates events with given enum
         private void updateEvents () {
             //Updates string data from matches
-            mainRank.setData (Preferences.Get ("matchEventsString", ""));
+            mainRank.setDat (Preferences.Get ("matchEventsString", ""));
             //Gets all data and sets it into ascending order based on each team's average time
             Dictionary<string, double> x = mainRank.getRank (rankChoice);
             Dictionary<string, double> y = new Dictionary<string, double> ();
