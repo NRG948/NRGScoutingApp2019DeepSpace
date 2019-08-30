@@ -44,7 +44,7 @@ namespace NRGScoutingApp {
         }
 
         /*
-         * This is the order in which the array is ordered       
+         * This is the order in which the array is ordered
          * overall, cargoTime, hatchTime, climb, lvl1, lvl2, lvl3
          */
         public String[] returnTeamTimes (string team) {

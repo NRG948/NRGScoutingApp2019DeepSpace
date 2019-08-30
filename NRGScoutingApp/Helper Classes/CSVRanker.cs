@@ -9,9 +9,17 @@ namespace NRGScoutingApp {
 
         public string matchCalc (JObject match) {
             this.match = match;
-            String total = this.match["team"] + "," +
-                this.match["matchNum"] + "," +
-                MatchFormat.matchSideFromEnum ((int) this.match["side"]) + ","; //Side
+            String total;
+            try
+            {
+                total = this.match["team"] + "," +
+                    this.match["matchNum"] + "," +
+                    MatchFormat.matchSideFromEnum((int)this.match["side"]) + ","; //Side
+            }
+            catch
+            {
+                total = ",,,";
+            }
             total += pickCalc ((int) MatchFormat.CHOOSE_RANK_TYPE.pick1) + "," + //Hatch
                 numCalc ((int) MatchFormat.CHOOSE_RANK_TYPE.pick1) + "," +
                 pickCalc ((int) MatchFormat.CHOOSE_RANK_TYPE.pick2) + "," + //Cargo
@@ -60,7 +68,7 @@ namespace NRGScoutingApp {
             return total;
         }
 
-        private double dropCalc (int levelEnum) {
+        private String dropCalc (int levelEnum) {
             double totalData = 0;
             int reps = 0;
             int eventReps = 0;
@@ -88,9 +96,9 @@ namespace NRGScoutingApp {
             }
 
             if (eventReps > 0) {
-                return totalData / eventReps;
+                return (totalData / eventReps).ToString();
             } else {
-                return Double.NaN;
+                return "";
             }
 
         }
@@ -116,7 +124,7 @@ namespace NRGScoutingApp {
             return total;
         }
 
-        private double pickCalc (int sortType) {
+        private String pickCalc (int sortType) {
             double total = 0;
             int reps = 0;
             int eventReps = 0;
@@ -142,9 +150,9 @@ namespace NRGScoutingApp {
 
             }
             if (eventReps > 0) {
-                return total / eventReps;
+                return (total / eventReps).ToString();
             } else {
-                return Double.NaN;
+                return "";
             }
         }
     }
