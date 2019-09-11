@@ -39,3 +39,7 @@ Thumbs.db
 
 # dotCover
 *.dotCover
+
+Droid/google-services.json
+
+iOS/GoogleService-Info.plist

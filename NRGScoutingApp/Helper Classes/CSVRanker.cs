@@ -1,11 +1,25 @@
 ﻿using System;
+using System.Collections.Generic;
+using Microcharts;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using SkiaSharp;
 
 namespace NRGScoutingApp {
     public class CSVRanker {
         //ORDERL Team,Match Num,Side,Avg. Hatch,Num Hatch,Avg. Cargo,Num Cargo,Climb,Lvl1,Lvl2,Lvl3,Cargoship
         private JObject match;
+
+
+        public Entry graphCalc(JObject match)
+        {
+            this.match = match;
+            return new Entry((float)(numCalc((int)MatchFormat.CHOOSE_RANK_TYPE.pick1) + numCalc((int)MatchFormat.CHOOSE_RANK_TYPE.pick1)))
+            {
+                Color = SKColor.FromHsl(0, 100, 50),
+                Label = match["matchNum"].ToString()
+            };
+        }
 
         public string matchCalc (JObject match) {
             this.match = match;
@@ -103,6 +117,8 @@ namespace NRGScoutingApp {
 
         }
 
+
+        //Number of Game Pieces
         private double numCalc (int sortType) {
             int total = 0;
             int reps = 0;
@@ -124,6 +140,7 @@ namespace NRGScoutingApp {
             return total;
         }
 
+        //Avg game piece time
         private String pickCalc (int sortType) {
             double total = 0;
             int reps = 0;
