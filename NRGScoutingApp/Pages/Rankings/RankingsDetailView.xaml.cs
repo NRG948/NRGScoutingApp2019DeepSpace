@@ -8,6 +8,7 @@ using Xamarin.Essentials;
 using Xamarin.Forms;
 using Entry = Microcharts.Entry;
 using Microcharts;
+using SkiaSharp;
 
 namespace NRGScoutingApp {
     public partial class RankingsDetailView : ContentPage {
@@ -15,6 +16,7 @@ namespace NRGScoutingApp {
          * This is the order in which the array is ordered       
          * overall, cargoTime, hatchTime, climb, lvl1, lvl2, lvl3
          */
+        Ranker r = new Ranker(Preferences.Get("matchEventsString", ""));
         List<Entry> entries = new List<Entry>();
         public RankingsDetailView (String[] times) {
             InitializeComponent ();
@@ -22,10 +24,17 @@ namespace NRGScoutingApp {
             pitButton.IsVisible = Rankings.pitTeams.Contains (Rankings.teamSend);
             String team = Rankings.teamSend.Split ('-', 2) [MatchFormat.teamNameOrNum].Trim ();
             var list = Matches.matchesList.Where(matchesList => matchesList.teamNameAndSide.ToLower().Contains(team.ToLower()));
-            var list2 = (from match in list orderby match.matchNum descending select match);
+            var list2 = (from match in list orderby match.matchNum ascending select match);
             listView.ItemsSource = list2;
-            chart1.Chart = new LineChart { Entries = datas };
-            updateGraph();
+            chart1.Chart = new RadarChart {
+                Entries = datas
+            };
+
+            updateGraph2();
+            chart2.Chart = new LineChart
+            {
+                Entries = entries
+            };
         }
         List<Entry> datas = new List<Entry>();
         void setScoreValues (String[] times) {
@@ -37,8 +46,32 @@ namespace NRGScoutingApp {
             score5.Text = ConstantVars.scoreBaseVals[5] + times[5];
             score6.Text = ConstantVars.scoreBaseVals[6] + times[6];
             score7.Text = ConstantVars.scoreBaseVals[7] + times[7];
+            updateGraph(times);
         }
-        void updateGraph()
+        void updateGraph(String[] times)
+        {
+            for (int i = 1; i < 7; i++) // start from cargo to lvl3
+            {
+                System.Diagnostics.Debug.WriteLine(times[i]);
+                if (!String.IsNullOrEmpty(times[i]) && times[i] != "Empty")
+                {
+                    datas.Add(new Entry(float.Parse(times[i]))
+                    {
+                        Color = SKColor.FromHsl(0, 100, 50),
+                        Label = ConstantVars.scoreBaseVals[i],
+                        
+                    });
+                } else
+                {
+                    datas.Add(new Entry(0)
+                    {
+                        Color = SKColor.FromHsl(0, 100, 50),
+                        Label = ConstantVars.scoreBaseVals[i]
+                    });
+                }
+            }
+        }
+        void updateGraph2()
         {
 
         }
