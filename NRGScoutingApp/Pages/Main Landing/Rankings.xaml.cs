@@ -6,6 +6,7 @@ using Newtonsoft.Json.Linq;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 
+
 namespace NRGScoutingApp {
     /*ADD Ranking Chooser Replacement for iOS 
      *like a picker acts as the distribution center to choose the type
@@ -14,7 +15,9 @@ namespace NRGScoutingApp {
         public Rankings () {
             InitializeComponent ();
             rankPicker.SelectedIndex = 0;
+
         }
+
 
         public static string teamSend;
         private List<RankStruct> rankList;

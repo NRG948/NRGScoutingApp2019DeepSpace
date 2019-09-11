@@ -6,6 +6,8 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using Xamarin.Essentials;
 using Xamarin.Forms;
+using Entry = Microcharts.Entry;
+using Microcharts;
 
 namespace NRGScoutingApp {
     public partial class RankingsDetailView : ContentPage {
@@ -13,14 +15,19 @@ namespace NRGScoutingApp {
          * This is the order in which the array is ordered       
          * overall, cargoTime, hatchTime, climb, lvl1, lvl2, lvl3
          */
+        List<Entry> entries = new List<Entry>();
         public RankingsDetailView (String[] times) {
             InitializeComponent ();
             setScoreValues (times);
             pitButton.IsVisible = Rankings.pitTeams.Contains (Rankings.teamSend);
             String team = Rankings.teamSend.Split ('-', 2) [MatchFormat.teamNameOrNum].Trim ();
-            listView.ItemsSource = Matches.matchesList.Where (matchesList => matchesList.teamNameAndSide.ToLower ().Contains (team.ToLower ()));
+            var list = Matches.matchesList.Where(matchesList => matchesList.teamNameAndSide.ToLower().Contains(team.ToLower()));
+            var list2 = (from match in list orderby match.matchNum descending select match);
+            listView.ItemsSource = list2;
+            chart1.Chart = new LineChart { Entries = datas };
+            updateGraph();
         }
-
+        List<Entry> datas = new List<Entry>();
         void setScoreValues (String[] times) {
             score0.Text = ConstantVars.scoreBaseVals[0] + times[0];
             score1.Text = ConstantVars.scoreBaseVals[1] + times[1];
@@ -30,6 +37,10 @@ namespace NRGScoutingApp {
             score5.Text = ConstantVars.scoreBaseVals[5] + times[5];
             score6.Text = ConstantVars.scoreBaseVals[6] + times[6];
             score7.Text = ConstantVars.scoreBaseVals[7] + times[7];
+        }
+        void updateGraph()
+        {
+
         }
 
         async void matchTapped (object sender, Xamarin.Forms.ItemTappedEventArgs e) {

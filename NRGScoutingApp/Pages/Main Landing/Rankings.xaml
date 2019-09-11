@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="NRGScoutingApp.Rankings" xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" ios:Page.UseSafeArea="true" Title="Rankings" Icon="ic_leader.png" ios:NavigationPage.PrefersLargeTitles="true">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="NRGScoutingApp.Rankings" xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             ios:Page.UseSafeArea="true" Title="Rankings" Icon="ic_leader.png" ios:NavigationPage.PrefersLargeTitles="true">
+
     <ContentPage.Content>
         <StackLayout>
             <Grid  MinimumHeightRequest="150" HorizontalOptions="CenterAndExpand" RowSpacing="0" ColumnSpacing="0" Margin="0" VerticalOptions="StartAndExpand">
@@ -49,8 +51,10 @@
                 </StackLayout>
                 <Label x:Name="sadNoMatch" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" VerticalOptions="CenterAndExpand" Grid.Row="0" Grid.Column="0" Text=":( No Matches.&#x0a;Add a Match and Come Back" FontAttributes="Bold" TextColor="Gray" FontSize="Large" />
             </Grid>
+            
         </StackLayout>
     </ContentPage.Content>
+    
 </ContentPage><!--
  <ContentPage.ToolbarItems>
         <ToolbarItem Icon="ic_settings.png" Clicked="settingsClicked"/>
