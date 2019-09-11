@@ -253,10 +253,7 @@ namespace NRGScoutingApp {
             return data;
         }
 
-        public double getSingleMatchData(Matches.MatchesListFormat m) {
-            fullData[];
-            return 0.0;
-        }
+
 
         //Returns average data for drop level passed through (enum int is passed through sortType)
         public Dictionary<string, double> getDropData (int levelEnum) {
