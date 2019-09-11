@@ -16,7 +16,7 @@ namespace NRGScoutingApp {
          * This is the order in which the array is ordered       
          * overall, cargoTime, hatchTime, climb, lvl1, lvl2, lvl3
          */
-        Ranker r = new Ranker(Preferences.Get("matchEventsString", ""));
+        CSVRanker r = new CSVRanker();
         List<Entry> entries = new List<Entry>();
         public RankingsDetailView (String[] times) {
             InitializeComponent ();
@@ -24,7 +24,7 @@ namespace NRGScoutingApp {
             pitButton.IsVisible = Rankings.pitTeams.Contains (Rankings.teamSend);
             String team = Rankings.teamSend.Split ('-', 2) [MatchFormat.teamNameOrNum].Trim ();
             var list = Matches.matchesList.Where(matchesList => matchesList.teamNameAndSide.ToLower().Contains(team.ToLower()));
-            var list2 = (from match in list orderby match.matchNum ascending select match);
+            list2 = (from match in list orderby match.matchNum ascending select match);
             listView.ItemsSource = list2;
             chart1.Chart = new RadarChart {
                 Entries = datas
@@ -36,6 +36,8 @@ namespace NRGScoutingApp {
                 Entries = entries
             };
         }
+
+        IOrderedEnumerable<Matches.MatchesListFormat> list2;
         List<Entry> datas = new List<Entry>();
         void setScoreValues (String[] times) {
             score0.Text = ConstantVars.scoreBaseVals[0] + times[0];
@@ -73,6 +75,13 @@ namespace NRGScoutingApp {
         }
         void updateGraph2()
         {
+            foreach (Matches.MatchesListFormat match in list2)
+            {
+                int jsonIndex = Matches.matchesList.IndexOf(match);
+                JObject theMatch = JObject.Parse(MatchesDetailView.returnMatchJSONText(jsonIndex));
+                entries.Add(r.graphCalc(theMatch));
+
+            }
 
         }
 
