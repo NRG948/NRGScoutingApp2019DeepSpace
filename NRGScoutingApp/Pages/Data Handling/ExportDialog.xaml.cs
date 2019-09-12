@@ -61,7 +61,7 @@ namespace NRGScoutingApp {
         }
 
         async private Task pasteRequest () {
-            String temp = exportText.Replace ("&", "and");
+            String temp = "";
             var s = new WebClient ();
             String action = "";
             while (String.IsNullOrWhiteSpace (action)) {
@@ -84,6 +84,7 @@ namespace NRGScoutingApp {
                     await DisplayAlert ("Oops!", "No " + ConstantVars.exportTypes[3] + " data", "OK");
                 }
             }
+            temp = temp.Replace("&", "and");
 
             try {
                 WebRequest req = WebRequest.Create ("http://pastebin.com/api/api_post.php");

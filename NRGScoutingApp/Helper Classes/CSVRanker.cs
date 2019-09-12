@@ -14,10 +14,14 @@ namespace NRGScoutingApp {
         public Entry graphCalc(JObject match)
         {
             this.match = match;
-            return new Entry((float)(numCalc((int)MatchFormat.CHOOSE_RANK_TYPE.pick1) + numCalc((int)MatchFormat.CHOOSE_RANK_TYPE.pick1)))
+            
+            int total = (int)(numCalc((int)MatchFormat.CHOOSE_RANK_TYPE.pick1) + numCalc((int)MatchFormat.CHOOSE_RANK_TYPE.pick2));
+            Console.WriteLine(total);
+            return new Entry((float)total)
             {
                 Color = SKColor.FromHsl(0, 100, 50),
-                Label = match["matchNum"].ToString()
+                Label = match["matchNum"].ToString(),
+                ValueLabel = total.ToString()
             };
         }
 
