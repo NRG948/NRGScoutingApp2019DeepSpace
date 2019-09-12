@@ -21,19 +21,19 @@ namespace NRGScoutingApp {
             switch (lvl)
             {
                 case 0:
-                    c = SKColor.Parse("#0000FF");
+                    c = SKColor.Parse("#0000F0");
                     break;
                 case 1:
-                    c = SKColor.Parse("#00FFFF");
+                    c = SKColor.Parse("#00F0F0");
                     break;
                 case 2:
-                    c = SKColor.Parse("#00FF00");
+                    c = SKColor.Parse("#00F000");
                     break;
                 case 3:
-                    c = SKColor.Parse("#FFFF00");
+                    c = SKColor.Parse("#F0F000");
                     break;
                 default:
-                    c = SKColor.Parse("#FF0000");
+                    c = SKColor.Parse("#F00000");
                     break;
             }
             Console.WriteLine(total);

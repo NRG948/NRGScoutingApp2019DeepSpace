@@ -24,7 +24,11 @@ namespace NRGScoutingApp {
             pitButton.IsVisible = Rankings.pitTeams.Contains (Rankings.teamSend);
             String team = Rankings.teamSend.Split ('-', 2) [MatchFormat.teamNameOrNum].Trim ();
             var list = Matches.matchesList.Where(matchesList => matchesList.teamNameAndSide.ToLower().Contains(team.ToLower()));
-            list2 = (from match in list orderby match.matchNum ascending select match);
+            list2 = (from match in list orderby Int32.Parse(match.matchNum.Substring(6)) ascending select match);
+            foreach (Matches.MatchesListFormat match in list2)
+            {
+                Console.WriteLine(match.matchNum);
+            }
             listView.ItemsSource = list2;
             chart1.Chart = new RadarChart {
                 Entries = datas
@@ -57,7 +61,7 @@ namespace NRGScoutingApp {
         {
             for (int i = 1; i < 7; i++) // start from cargo to lvl3
             {
-                SKColor c = SKColor.FromHsl(60 - (i % 2) * 60, 100, 50);
+                SKColor c = SKColor.FromHsl(60 - (i % 2) * 60, 92, 48);
                 
                 if (!String.IsNullOrEmpty(times[i]) && times[i] != "Empty")
                 {
