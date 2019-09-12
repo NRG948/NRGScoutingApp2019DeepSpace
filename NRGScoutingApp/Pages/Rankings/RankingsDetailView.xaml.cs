@@ -57,11 +57,13 @@ namespace NRGScoutingApp {
         {
             for (int i = 1; i < 7; i++) // start from cargo to lvl3
             {
+                SKColor c = SKColor.FromHsl(60 - (i % 2) * 60, 100, 50);
+                
                 if (!String.IsNullOrEmpty(times[i]) && times[i] != "Empty")
                 {
                     datas.Add(new Entry(float.Parse(times[i]))
                     {
-                        Color = SKColor.FromHsl(0, 100, 50),
+                        Color = c,
                         Label = ConstantVars.scoreBaseVals[i],
                         
                     });
@@ -69,7 +71,7 @@ namespace NRGScoutingApp {
                 {
                     datas.Add(new Entry(0)
                     {
-                        Color = SKColor.FromHsl(0, 100, 50),
+                        Color = c,
                         Label = ConstantVars.scoreBaseVals[i]
                     });
                 }
@@ -82,7 +84,6 @@ namespace NRGScoutingApp {
                 int jsonIndex = Matches.matchesList.IndexOf(match);
                 JObject theMatch = JObject.Parse(MatchesDetailView.returnMatchJSONText(jsonIndex));
                 entries.Add(r.graphCalc(theMatch));
-
             }
 
         }

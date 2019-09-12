@@ -10,16 +10,36 @@ namespace NRGScoutingApp {
         //ORDERL Team,Match Num,Side,Avg. Hatch,Num Hatch,Avg. Cargo,Num Cargo,Climb,Lvl1,Lvl2,Lvl3,Cargoship
         private JObject match;
 
+        
 
         public Entry graphCalc(JObject match)
         {
             this.match = match;
-            
+            SKColor c;
             int total = (int)(numCalc((int)MatchFormat.CHOOSE_RANK_TYPE.pick1) + numCalc((int)MatchFormat.CHOOSE_RANK_TYPE.pick2));
-            Console.WriteLine(total);
-            return new Entry((float)total)
+            int lvl = (int)(total / 5);
+            switch (lvl)
             {
-                Color = SKColor.FromHsl(0, 100, 50),
+                case 0:
+                    c = SKColor.Parse("#0000FF");
+                    break;
+                case 1:
+                    c = SKColor.Parse("#00FFFF");
+                    break;
+                case 2:
+                    c = SKColor.Parse("#00FF00");
+                    break;
+                case 3:
+                    c = SKColor.Parse("#FFFF00");
+                    break;
+                default:
+                    c = SKColor.Parse("#FF0000");
+                    break;
+            }
+            Console.WriteLine(total);
+            return new Entry(total)
+            {
+                Color = c,
                 Label = match["matchNum"].ToString(),
                 ValueLabel = total.ToString()
             };
