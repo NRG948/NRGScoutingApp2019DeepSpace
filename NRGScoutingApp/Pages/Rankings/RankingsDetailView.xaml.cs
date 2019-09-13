@@ -61,7 +61,7 @@ namespace NRGScoutingApp {
         {
             for (int i = 1; i < 7; i++) // start from cargo to lvl3
             {
-                SKColor c = SKColor.FromHsl(60 - (i % 2) * 60, 92, 48);
+                SKColor c = SKColor.FromHsl(60 - (i % 2) * 60, 80, 50);
                 
                 if (!String.IsNullOrEmpty(times[i]) && times[i] != "Empty")
                 {

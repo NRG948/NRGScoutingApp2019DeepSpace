@@ -35,7 +35,7 @@
                     Grid.Row="1" Grid.Column="1"/>
                 <Label Text="" x:Name="score6" TextColor="Black"
                     Grid.Row="1" Grid.Column="2"/>
-                  <Label Text="" x:Name="score7" TextColor="Black"
+                <Label Text="" x:Name="score7" TextColor="Black"
                     Grid.Row="2" Grid.ColumnSpan="3" HorizontalOptions="CenterAndExpand"/>
             </Grid>
           
@@ -49,10 +49,10 @@
                     <micro:ChartView x:Name="chart1" HeightRequest="270" />
                     <micro:ChartView x:Name="chart2" HeightRequest="200"/>
                     <ListView x:Name="listView"
-                Margin="0,0,0,0"
-                ItemTapped="matchTapped"
-                HasUnevenRows="true"
-                Footer="">
+                        Margin="0,0,0,0"
+                        ItemTapped="matchTapped"
+                        HasUnevenRows="true"
+                        Footer="">
                         <ListView.ItemTemplate>
                             <DataTemplate>
                                 <ViewCell>
