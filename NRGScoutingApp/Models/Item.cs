@@ -2,6 +2,7 @@
 
 namespace NRGScoutingApp
 {
+    [Preserve(AllMembers = true)]
     public class Item
     {
         public string Id { get; set; }
