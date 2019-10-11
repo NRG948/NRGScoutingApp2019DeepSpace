@@ -10,6 +10,8 @@ namespace NRGScoutingApp.Droid {
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity {
         App app;
         protected override void OnCreate (Bundle bundle) {
+            global::Xamarin.Forms.Forms.Init(this, bundle);
+            app = new App();
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
             base.OnCreate (bundle);
@@ -18,9 +20,6 @@ namespace NRGScoutingApp.Droid {
             Rg.Plugins.Popup.Popup.Init (this, bundle);
             Plugin.CurrentActivity.CrossCurrentActivity.Current.Init (this, bundle);
 
-            global::Xamarin.Forms.Forms.Init (this, bundle);
-
-            app = new App ();
 
             LoadApplication (app);
         }
