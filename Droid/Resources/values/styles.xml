@@ -22,7 +22,7 @@
         <item name="statusBarColor">#000000</item>
         <item name="textColorPrimary">#ffffff</item>-->
         <item name="windowActionModeOverlay">true
-        <item name="android:itemTextAppearance">@style/TodoActionBar.MenuTextStyle</item>
+        <item name="android:itemTextAppearance">TodoActionBar.MenuTextStyle</item>
         </item>
         <item name="android:colorPressedHighlight">@color/ListViewSelected</item>
    <item name="android:colorLongPressedHighlight">@color/ListViewHighlighted</item>
