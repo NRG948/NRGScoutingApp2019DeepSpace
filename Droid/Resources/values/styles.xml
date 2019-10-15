@@ -37,7 +37,7 @@
     <style name="TodoActionBarTitle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
     </style>
     
-    <style name="TodoActionBar.MenuTextStyle" parent="style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+    <style name="TodoActionBar.MenuTextStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
        <item name="android:textSize">20sp</item>
    </style>
    <color name="ListViewSelected">#ffffff</color>
