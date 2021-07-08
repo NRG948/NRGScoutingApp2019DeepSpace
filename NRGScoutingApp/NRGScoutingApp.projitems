@@ -141,7 +141,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Helper Classes\" />
-    <Folder Include="$(MSBuildThisFileDirectory)Pages\Matches\" />
     <Folder Include="$(MSBuildThisFileDirectory)Pages\Data Handling\" />
     <Folder Include="$(MSBuildThisFileDirectory)Pages\Tab Groups\" />
     <Folder Include="$(MSBuildThisFileDirectory)Pages\Pit Scouting\" />

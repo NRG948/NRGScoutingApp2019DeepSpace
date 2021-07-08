@@ -6,7 +6,7 @@ using Android.OS;
 using NRGScouting;
 
 namespace NRGScoutingApp.Droid {
-    [Activity (Label = "NRGScoutingApp.Droid", Icon = "@drawable/icon", Theme = "@style/MyTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+    [Activity (Label = "NRGScoutingApp.Droid", Icon = "@drawable/icon", Theme = "@style/MyTheme", MainLauncher = false, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity {
         App app;
         protected override void OnCreate (Bundle bundle) {

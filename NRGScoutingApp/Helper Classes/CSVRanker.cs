@@ -1,11 +1,49 @@
 ﻿using System;
+using System.Collections.Generic;
+using Microcharts;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using SkiaSharp;
 
 namespace NRGScoutingApp {
     public class CSVRanker {
         //ORDERL Team,Match Num,Side,Avg. Hatch,Num Hatch,Avg. Cargo,Num Cargo,Climb,Lvl1,Lvl2,Lvl3,Cargoship
         private JObject match;
+
+        
+
+        public Entry graphCalc(JObject match)
+        {
+            this.match = match;
+            SKColor c;
+            int total = (int)(numCalc((int)MatchFormat.CHOOSE_RANK_TYPE.pick1) + numCalc((int)MatchFormat.CHOOSE_RANK_TYPE.pick2));
+            int lvl = (int)(total / 5);
+            switch (lvl)
+            {
+                case 0:
+                    c = SKColor.Parse("#0000F0");
+                    break;
+                case 1:
+                    c = SKColor.Parse("#00F0F0");
+                    break;
+                case 2:
+                    c = SKColor.Parse("#00F000");
+                    break;
+                case 3:
+                    c = SKColor.Parse("#F0F000");
+                    break;
+                default:
+                    c = SKColor.Parse("#F00000");
+                    break;
+            }
+            Console.WriteLine(total);
+            return new Entry(total)
+            {
+                Color = c,
+                Label = match["matchNum"].ToString(),
+                ValueLabel = total.ToString()
+            };
+        }
 
         public string matchCalc (JObject match) {
             this.match = match;
@@ -103,6 +141,8 @@ namespace NRGScoutingApp {
 
         }
 
+
+        //Number of Game Pieces
         private double numCalc (int sortType) {
             int total = 0;
             int reps = 0;
@@ -124,6 +164,7 @@ namespace NRGScoutingApp {
             return total;
         }
 
+        //Avg game piece time
         private String pickCalc (int sortType) {
             double total = 0;
             int reps = 0;

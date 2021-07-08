@@ -40,6 +40,12 @@
     <style name="TodoActionBar.MenuTextStyle" parent="style/TextAppearance.AppCompat.Widget.ActionBar.Title">
        <item name="android:textSize">20sp</item>
    </style>
-   <color name="ListViewSelected">#ffffff</color>
+    <style name="MyTheme.Splash" parent ="Theme.AppCompat.Light.NoActionBar">
+      <item name="android:windowBackground">@drawable/splash_screen</item>
+      <item name="android:windowNoTitle">true</item>
+      <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <color name="ListViewSelected">#ffffff</color>
 <color name="ListViewHighlighted">#ffffff</color>
 </resources>

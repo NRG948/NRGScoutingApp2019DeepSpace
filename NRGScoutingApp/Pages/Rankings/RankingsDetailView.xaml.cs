@@ -6,6 +6,9 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using Xamarin.Essentials;
 using Xamarin.Forms;
+using Entry = Microcharts.Entry;
+using Microcharts;
+using SkiaSharp;
 
 namespace NRGScoutingApp {
     public partial class RankingsDetailView : ContentPage {
@@ -13,14 +16,36 @@ namespace NRGScoutingApp {
          * This is the order in which the array is ordered       
          * overall, cargoTime, hatchTime, climb, lvl1, lvl2, lvl3
          */
+        CSVRanker r = new CSVRanker();
+        List<Entry> entries = new List<Entry>();
         public RankingsDetailView (String[] times) {
             InitializeComponent ();
             setScoreValues (times);
             pitButton.IsVisible = Rankings.pitTeams.Contains (Rankings.teamSend);
             String team = Rankings.teamSend.Split ('-', 2) [MatchFormat.teamNameOrNum].Trim ();
-            listView.ItemsSource = Matches.matchesList.Where (matchesList => matchesList.teamNameAndSide.ToLower ().Contains (team.ToLower ()));
+            var list = Matches.matchesList.Where(matchesList => matchesList.teamNameAndSide.ToLower().Contains(team.ToLower()));
+            list2 = (from match in list orderby Int32.Parse(match.matchNum.Substring(6)) ascending select match);
+            foreach (Matches.MatchesListFormat match in list2)
+            {
+                Console.WriteLine(match.matchNum);
+            }
+            listView.ItemsSource = list2;
+            chart1.Chart = new RadarChart {
+                Entries = datas
+            };
+
+            updateGraph2();
+            
+            chart2.Chart = new LineChart
+            {
+                Entries = entries
+            };
+            chart1.Chart.LabelTextSize = 30;
+            chart2.Chart.LabelTextSize = 40;
         }
 
+        IOrderedEnumerable<Matches.MatchesListFormat> list2;
+        List<Entry> datas = new List<Entry>();
         void setScoreValues (String[] times) {
             score0.Text = ConstantVars.scoreBaseVals[0] + times[0];
             score1.Text = ConstantVars.scoreBaseVals[1] + times[1];
@@ -30,6 +55,41 @@ namespace NRGScoutingApp {
             score5.Text = ConstantVars.scoreBaseVals[5] + times[5];
             score6.Text = ConstantVars.scoreBaseVals[6] + times[6];
             score7.Text = ConstantVars.scoreBaseVals[7] + times[7];
+            updateGraph(times);
+        }
+        void updateGraph(String[] times)
+        {
+            for (int i = 1; i < 7; i++) // start from cargo to lvl3
+            {
+                SKColor c = SKColor.FromHsl(60 - (i % 2) * 60, 80, 50);
+                
+                if (!String.IsNullOrEmpty(times[i]) && times[i] != "Empty")
+                {
+                    datas.Add(new Entry(float.Parse(times[i]))
+                    {
+                        Color = c,
+                        Label = ConstantVars.scoreBaseVals[i],
+                        
+                    });
+                } else
+                {
+                    datas.Add(new Entry(0)
+                    {
+                        Color = c,
+                        Label = ConstantVars.scoreBaseVals[i]
+                    });
+                }
+            }
+        }
+        void updateGraph2()
+        {
+            foreach (Matches.MatchesListFormat match in list2)
+            {
+                int jsonIndex = Matches.matchesList.IndexOf(match);
+                JObject theMatch = JObject.Parse(MatchesDetailView.returnMatchJSONText(jsonIndex));
+                entries.Add(r.graphCalc(theMatch));
+            }
+
         }
 
         async void matchTapped (object sender, Xamarin.Forms.ItemTappedEventArgs e) {

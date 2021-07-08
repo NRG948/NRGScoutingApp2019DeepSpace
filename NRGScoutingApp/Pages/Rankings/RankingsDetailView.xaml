@@ -3,13 +3,17 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="NRGScoutingApp.RankingsDetailView"
     xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
-    ios:Page.UseSafeArea="true"
+             xmlns:micro="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms"
+             ios:Page.UseSafeArea="true"
+   
     ios:NavigationPage.PrefersLargeTitles="true">
+
     <ContentPage.Content>
         <StackLayout>
             <Label Text="Overall Score: 0" x:Name="score0" VerticalOptions="Start" HorizontalOptions="CenterAndExpand" TextColor="Green" FontSize="30"/>
-            <Grid HorizontalOptions="Center" VerticalOptions="Center" RowSpacing="5" ColumnSpacing="2" Margin="5,5">
+            <Grid HorizontalOptions="Center" VerticalOptions="Center" RowSpacing="15" ColumnSpacing="15" Padding="0,0" MinimumHeightRequest="80">
                 <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
                     <RowDefinition Height="*" />
                     <RowDefinition Height="*" />
                 </Grid.RowDefinitions>
@@ -19,41 +23,49 @@
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
 
-                <Label Text="" x:Name="score1" TextColor="Black" FontSize="12"
+                <Label Text="" x:Name="score1" TextColor="Black"
                     Grid.Row="0" Grid.Column="0"/>
-                <Label Text="" x:Name="score2" TextColor="Black" FontSize="12"
+                <Label Text="" x:Name="score2" TextColor="Black"
                     Grid.Row="0" Grid.Column="1"/>
-                <Label Text="" x:Name="score3" TextColor="Black" FontSize="12"
+                <Label Text="" x:Name="score3" TextColor="Black"
                     Grid.Row="0" Grid.Column="2"/>
-                <Label Text="" x:Name="score4" TextColor="Black" FontSize="12"
+                <Label Text="" x:Name="score4" TextColor="Black"
                     Grid.Row="1" Grid.Column="0"/>
-                <Label Text="" x:Name="score5" TextColor="Black" FontSize="12"
+                <Label Text="" x:Name="score5" TextColor="Black"
                     Grid.Row="1" Grid.Column="1"/>
-                <Label Text="" x:Name="score6" TextColor="Black" FontSize="12"
+                <Label Text="" x:Name="score6" TextColor="Black"
                     Grid.Row="1" Grid.Column="2"/>
+                <Label Text="" x:Name="score7" TextColor="Black"
+                    Grid.Row="2" Grid.ColumnSpan="3" HorizontalOptions="CenterAndExpand"/>
             </Grid>
-            <Label Text="" x:Name="score7" TextColor="Black" FontSize="12" HorizontalOptions="CenterAndExpand"/>
+          
             <Button x:Name="pitButton"
                 Text="Pit Notes"
                 HorizontalOptions="Center"
                 Clicked="pitClicked"
                 FontSize="Medium"/>
-            <ListView x:Name="listView"
-                Margin="0,0,0,0"
-                ItemTapped="matchTapped"
-                HasUnevenRows="true"
-                Footer="">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <ViewCell>
-                            <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Padding="0" Margin="0">
-                                <Label Text="{Binding matchNum}" x:Name="key" HorizontalTextAlignment="Start" Margin="0"/>
-                                <Label Text="{Binding teamNameAndSide}" x:Name="value" HorizontalTextAlignment="Start" Margin="0"/>
-                            </StackLayout>
-                        </ViewCell>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
+            <ScrollView>
+                <StackLayout>
+                    <micro:ChartView x:Name="chart1" HeightRequest="270" />
+                    <micro:ChartView x:Name="chart2" HeightRequest="200"/>
+                    <ListView x:Name="listView"
+                        Margin="0,0,0,0"
+                        ItemTapped="matchTapped"
+                        HasUnevenRows="true"
+                        Footer="">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Padding="0" Margin="0">
+                                        <Label Text="{Binding matchNum}" x:Name="key" HorizontalTextAlignment="Start" Margin="0"/>
+                                        <Label Text="{Binding teamNameAndSide}" x:Name="value" HorizontalTextAlignment="Start" Margin="0"/>
+                                    </StackLayout>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </StackLayout>
+            </ScrollView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -253,6 +253,8 @@ namespace NRGScoutingApp {
             return data;
         }
 
+
+
         //Returns average data for drop level passed through (enum int is passed through sortType)
         public Dictionary<string, double> getDropData (int levelEnum) {
             Dictionary<string, double> totalData = new Dictionary<string, double> ();
