@@ -90,8 +90,7 @@ namespace NRGScoutingApp {
 
                 req.Method = "POST";
                 req.ContentType = "application/x-www-form-urlencoded";
-
-                string postData = "api_option=" + "paste" + "&api_paste_code=" + temp + "&api_dev_key=" + "add_api_key";
+                string postData = "api_option=" + "paste" + "&api_paste_code=" + temp + "&api_dev_key=" + Environment.GetEnvironmentVariable("PASTEBIN_KEY");
                 byte[] byteArray = Encoding.UTF8.GetBytes (postData);
                 req.ContentLength = byteArray.Length;
 
@@ -104,6 +103,8 @@ namespace NRGScoutingApp {
 
                 String ret = await reader.ReadToEndAsync ();
                 CrossClipboard.Current.SetText (ret);
+                Console.WriteLine(ret);
+                Console.WriteLine(Environment.GetEnvironmentVariable("PASTEBIN_KEY"));
                 await DisplayAlert ("Success", "Pastebin Link Copied to Clipboard", "OK");
             } catch {
                 await DisplayAlert ("Error", "No Internet!", "OK");

@@ -5,6 +5,13 @@ using System.Security.Principal;
 using Xamarin.Forms;
 
 namespace NRGScoutingApp {
+
+    public sealed class PreserveAttribute : System.Attribute
+    {
+        public bool AllMembers;
+        public bool Conditional;
+    }
+
     public partial class App : Application {
         public static bool UseMockDataStore = true;
         public static string BackendUrl = "https://localhost:5000";

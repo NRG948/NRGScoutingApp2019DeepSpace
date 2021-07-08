@@ -7,6 +7,7 @@ using Xamarin.Essentials;
 using Xamarin.Forms;
 
 namespace NRGScoutingApp {
+    [Preserve(AllMembers = true)]
     public class Ranker {
         // not used because switch case only accept constant variables
         private readonly int CLIMB_LVL_1_INDEX = 0;

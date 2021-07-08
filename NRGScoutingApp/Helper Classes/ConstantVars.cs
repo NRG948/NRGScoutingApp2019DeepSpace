@@ -1,5 +1,6 @@
 ﻿using System;
 namespace NRGScoutingApp {
+    [Preserve(AllMembers = true)]
     public class ConstantVars {
         /*
          * IMPORTANT NOTE:

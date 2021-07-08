@@ -6,6 +6,7 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
 namespace NRGScoutingApp {
+    [Preserve(AllMembers = true)]
     public class MatchFormat {
         //Object to store all params
         public class EntryParams {
